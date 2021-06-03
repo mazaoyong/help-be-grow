@@ -1,0 +1,39 @@
+.wsc-decorate-updgrade {
+  background: #fff;
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  padding-top: 200px;
+
+  &-img {
+    width: 200px;
+    margin: 0 auto 13px;
+  }
+
+  &-text, &-download {
+    font-size: 14px;
+    color: #323233;
+    line-height: 12px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  &-download {
+    .btn {
+      height: 30px;
+      font-size: 14px;
+      background-color: transparent;
+      border: 1px solid #ddd;
+      width: 112px;
+      display: inline-block;
+      border-radius: 2px;
+      color: #323233;
+      line-height: 30px;
+      margin-top: 30px;
+    }
+  }
+}

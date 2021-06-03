@@ -1,0 +1,85 @@
+@import 'common/ellipsis';
+
+.live-list__item {
+  display: flex;
+
+  &__price {
+    color: #323233;
+    margin-right: 5px;
+  }
+
+  &__cover {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 80px;
+    margin: auto 0;
+    width: 80px;
+    height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    background-color: #e2eefd;
+
+    img {
+      max-width: 80px;
+      max-height: 45px;
+    }
+  }
+
+  &__content {
+    margin-left: 5px;
+    width: calc(100% - 85px);
+  }
+
+  &__title {
+    display: flex;
+    min-width: 100px;
+    min-height: 34px;
+    color: #38f;
+    word-break: break-all;
+    line-height: 17px;
+    cursor: pointer;
+
+    > .zent-tag {
+      margin-left: 5px;
+      height: 12px;
+      word-break: keep-all;
+    }
+
+    .free {
+      display: inline-block;
+      box-sizing: border-box;
+      margin-left: 5px;
+      padding: 0 5px;
+      height: 20px;
+      border: 1px solid #4b0;
+      border-radius: 2px;
+      color: #4b0;
+      vertical-align: middle;
+      line-height: 18px;
+    }
+  }
+
+  &__type {
+    margin-right: 4px;
+    background-color: #edf4ff;
+    border-color: #94b4eb !important;
+    color: #155bd4 !important;
+  }
+
+  &__time {
+    overflow: hidden;
+    min-width: 100px;
+    width: 100%;
+    color: #9b9b9b;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 14px;
+
+    > span {
+      margin-left: 5px;
+      vertical-align: baseline;
+      font-size: 14px;
+    }
+  }
+}

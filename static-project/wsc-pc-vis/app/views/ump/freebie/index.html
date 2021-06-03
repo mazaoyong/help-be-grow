@@ -1,0 +1,38 @@
+{% extends '../base/ump.html' %}
+
+{% block page_title %}
+  买赠
+{% endblock %}
+
+
+{% block app_nav %}
+  <div class="zent-breadcrumb" id="js-page-breadcrumb">
+
+    {% if isYZEdu %}
+
+      <a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+      <a href="{{ URL.site('/ump/appcenter/edu', 'v4') }}">督学互动</a>
+      <span class="project" data-href="{{ URL.site('/vis/pct/page/freebie', 'v4') }}">买赠</span>
+
+    {% else %}
+
+      <a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+      <span class="project" data-href="{{ URL.site('/vis/pct/page/freebie', 'v4') }}">买赠</span>
+
+    {% endif %}
+
+  </div>
+{% endblock %}
+
+
+{% block page_style %}
+  {{ loadCss('version_css.ump/freebie') | safe }}
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.ump/freebie') | safe }}
+{% endblock %}

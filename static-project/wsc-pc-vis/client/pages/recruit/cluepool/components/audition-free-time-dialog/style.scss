@@ -1,0 +1,39 @@
+.auditon-free-time-dialog {
+  &-alert {
+    margin-bottom: 20px;
+  }
+
+  &-content {
+    .zent-form__control-label {
+      width: 100px;
+    }
+
+    .zent-form {
+      margin-bottom: 0;
+    }
+
+    .zent-dialog-r-footer {
+      text-align: right;
+      padding-top: 0;
+      padding-right: 0;
+    }
+  }
+
+  &-table {
+    margin-bottom: 24px;
+
+    & > p {
+      font-size: 12px;
+      color: #969799;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// 产品说 不能允许选择秒
+// .time-panel__preview {
+//   .time__number:last-child {
+//     display: none;
+//   }
+// }

@@ -1,0 +1,15 @@
+@import 'vars/colors';
+@import 'vars/font';
+
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+
+.title {
+  color: $normalColor;
+  font-weight: $weight-medium;
+  font-size: 18px;
+  margin: 0 0 40px;
+}

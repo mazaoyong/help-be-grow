@@ -1,0 +1,182 @@
+.decorate {
+  // 课程分组编辑器
+  &-edu-goods-group-editor {
+    .goods-from-mode {
+      width: 100%;
+      display: flex;
+      .zent-input-wrapper {
+        width: 80px;
+      }
+      .zent-radio-wrap {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .edu-goods-group__text {
+      font-size: 12px;
+      padding: 4px 16px;
+      &--main {
+        color: #323233;
+      }
+      &--desc {
+        color: #969799;
+      }
+    }
+
+    .deco-editor-card {
+      width: 100%;
+    }
+
+    .deco-control-group {
+      .zent-select {
+        width: 180px;
+      }
+    }
+
+    .icon {
+
+      &-drag {
+        flex: 0 0 auto;
+        margin-right: 8px;
+        background-position: center;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        background-image: url(https://img.yzcdn.cn/public_files/2019/02/11/6c383209a91d0cba0c46b906f3d027d2.png);
+        cursor: move;
+      }
+
+      &-delete {
+        position: absolute;
+        bottom: 16px;
+        right: 0;
+        visibility: hidden;
+        flex: 0 0 auto;
+        margin-left: 12px;
+        margin-right: 8px;
+        background-position: center;
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        background-image: url(https://img.yzcdn.cn/public_files/2019/01/25/9b128a3927c6e1484058d2c70cf2e11f.png);
+        cursor: pointer;
+      }
+    }
+
+    .subentry-item {
+      position: relative;
+      display: flex;
+      white-space: nowrap;
+      flex-direction: column;
+      font-size: 14px;
+      padding: 9px 16px;
+
+      &__field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        padding: 9px 0;
+      }
+
+      &__content {
+        flex-grow: 1;
+      }
+
+      &__source {}
+
+      &__name {}
+
+      &__number {}
+
+      a {
+        flex: 1 1 auto;
+        margin-left: 8px;
+        color: #155bd4;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      &:hover {
+        .icon-delete {
+          visibility: visible;
+        }
+      }
+    }
+
+    &__ipt-block {
+      margin-bottom: 10px;
+
+      .has-error {
+        .deco-help-desc {
+          position: relative;
+          top: -2px;
+          margin-top: 0;
+        }
+      }
+
+      .deco-control-group__content {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .zent-input-wrapper {
+          width: 100%;
+        }
+
+        .deco-control-group {
+          width: 100%;
+          padding: 0;
+
+          &-container {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          &__header {
+            margin: 10px 0;
+          }
+
+          &__content {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .zent-select--auto-width {
+      margin-right: 0;
+    }
+  }
+
+  // 样式编辑器
+  &-edu-goods-style-editor {
+    // 商品样式
+    &__goods-style {
+      .deco-radio-button .zent-btn {
+        padding: 0;
+      }
+    }
+
+    .zent-collapse-panel__title {
+      padding: 10px 16px;
+      border-bottom: 0;
+    }
+
+    .zent-collapse-panel__content {
+      padding: 0;
+    }
+
+    .zent-collapse-panel__content-box {
+      padding: 0;
+      border-bottom: 0;
+    }
+
+    .zent-checkbox-group {
+      display: block;
+    }
+  }
+}

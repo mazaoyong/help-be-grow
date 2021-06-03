@@ -1,0 +1,41 @@
+{% extends '../../common/base.html' %}
+
+{% block page_title %}
+	{% if isYZEdu %}
+		教育培训
+	{% else %} 
+		知识付费
+	{% endif %}
+{% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb js-page-breadcrumb-main" id="js-page-breadcrumb">
+		{% if isYZEdu %}
+			<a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+      
+			{% if isEduChainStore !== true %}
+        <a href="{{ URL.site('/ump/appcenter/edu', 'v4') }}">督学互动</a>
+      {% endif %}
+			
+			<span class="project" data-href="{{ URL.site('/vis/pct/page/punch#/list', 'v4') }}">群打卡</span>
+		{% else %}
+      <a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+			<a class="second" href="{{ URL.site('/vis/pct/page/tabs#/ump', 'v4') }}">知识付费</a>
+			<span class="project" data-href="{{ URL.site('/vis/pct/page/tabs#/punch', 'v4') }}">群打卡</span>
+		{% endif %}
+	</div>
+{% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.ump/punch') | safe }}
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+	{% include "../../common/config.html" %}
+	{% include "../../common/ueditor.html" %}
+  {{ loadJs('version_js.ump/punch') | safe }}
+{% endblock %}

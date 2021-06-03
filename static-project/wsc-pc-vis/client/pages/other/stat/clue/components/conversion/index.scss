@@ -1,0 +1,150 @@
+@import 'shared/sass/mixins/ellipsis';
+
+.vis-filter {
+  &_region {
+    margin: 20px 0;
+    padding: 16px;
+    background-color: #F7F8FA;
+  }
+
+  &_item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 16px;
+
+    &.date-range-quick-picker {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &_label {
+    display: inline-block;
+    overflow: hidden;
+    color: #323233;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 32px;
+    height: 32px;
+  }
+
+  &_controls {
+    display: inline-block;
+    color: #666;
+    vertical-align: middle;
+    margin: 0 12px 0 5px;
+
+    .zent-daterange-picker .picker-input .zenticon{
+      font-size: 16px;
+    }
+
+    .zent-daterange-picker .picker-seperator {
+      color: #323233;
+    }
+  }
+
+  &_bottom {
+    padding-left: 5px;
+    margin-left: 100px;
+  }
+
+  &_action {
+
+    > a {
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .link {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.distribution-container {
+  border-bottom: 16px solid #f7f8fa;
+  padding: 20px 16px;
+
+  &__header {
+    display: flex;
+    margin-bottom: 24px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 28px;
+      display: inline-block;
+    }
+
+    .date-input {
+      display: inline-block;
+      flex: 1;
+      text-align: right;
+    }
+  }
+
+  &__content {
+    height: 388px;
+
+    &-chart {
+      float: left;
+      margin-right: 48px;
+      width: 485px;
+      position: relative;
+
+      .conversion-img {
+        position: absolute;
+        left: 60px;
+      }
+
+      .conversion-item {
+        position: absolute;
+        width: 56px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+      }
+
+      .clue-item {
+        float: right;
+        width: 236px;
+        height: 94px;
+        box-sizing: border-box;
+        margin: 0 0 4px 250px;
+        padding: 24px 0 24px 116px;
+
+        &__stat {
+          margin-top: 4px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &-table {
+      position: relative;
+      margin-left: 533px;
+
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      .help-icon {
+        font-weight: normal;
+        margin-left: 4px;
+        color: #c8c9cc;
+
+        &:hover {
+          color: #c8c9cc;
+        }
+      }
+    }
+  }
+}
+
+.common-hint-pop {
+  max-width: 350px;
+}

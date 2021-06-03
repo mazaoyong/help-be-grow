@@ -1,0 +1,130 @@
+.poster-container {
+  .subtitle {
+    margin: 66px auto 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    .max-price {
+      padding: 0 4px;
+      color: #FFF664;
+    }
+  }
+
+  .shop-info {
+    padding: 22px 32px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+
+    .logo {
+      flex-direction: column;
+      height: 100%;
+      flex-shrink: 0;
+    }
+
+    .desc {
+      margin-left: 9px;
+      font-size: 12px;
+      flex-direction: row;
+      align-self: flex-start;
+
+      .shop-name {
+        font-weight: 600;
+        color: #000000;
+        font-size: 14px;
+        line-height: 20px;
+        width: 160px;
+        vertical-align: bottom;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .slogan {
+        font-size: 13px;
+        color: #646566;
+      }
+    }
+  }
+
+  .price {
+    position: absolute;
+    width: 180px;
+    top: 218px;
+    font-size: 24px;
+    left: 59px;
+    color: #FF4A00;
+    text-align: center;
+
+    .max-icon {
+      writing-mode: lr-tb;
+      display: inline-block;
+      width: 16px;
+      height: 30px;
+      font-size: 10px;
+      line-height: 13px;
+      color: #FFFFFF;
+      border: 1px solid #FF6800;
+      border-radius: 8px;
+      background-color: #FF4A00;
+      opacity: 0.6;
+
+      .content {
+        background-color: transparent;
+        padding-top: 2px;
+      }
+    }
+
+    .max-price {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 28px;
+      margin-left: 4px;
+      vertical-align: 5px;
+    }
+
+    .suffix {
+      display: inline-block;
+      font-size: 22px;
+      vertical-align: 7px;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    display: flex;
+    top: 330px;
+    left: 32px;
+
+    .tips-container {
+      font-size: 12px;
+      margin: 8px 16px 8px 8px;
+
+      .tips {
+        white-space: nowrap;
+      }
+
+      .source {
+        line-height: 17px;
+
+        .source-prefix {
+          color: #969799;
+        }
+
+        .shop-name {
+          color: #000000;
+          margin-left: 4px;
+          font-weight: 500;
+          width: 120px;
+          vertical-align: bottom;
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

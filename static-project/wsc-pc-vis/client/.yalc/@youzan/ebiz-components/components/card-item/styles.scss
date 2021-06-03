@@ -1,0 +1,75 @@
+.card-item {
+  &-zent-card {
+    // 重写内部边距
+    .zent-card-header,
+    .zent-card-body {
+      padding: 16px !important;
+      box-sizing: content-box !important;
+    }
+  }
+
+  &-container {
+    & + & {
+      margin-top: 16px;
+    }
+
+    &.no-card-body {
+      .zent-card-body {
+        // 如果没有指定内容，就隐藏这部分
+        height: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+      }
+      .zent-card-header {
+        border-bottom: 0 !important;
+      }
+    }
+
+    &.no-border {
+      .card-item-zent-card {
+        border: none !important;
+      }
+    }
+  }
+
+  &-header {
+    position: relative;
+    font-weight: 500;
+
+    &-title {
+      line-height: 24px;
+      font-size: 16px;
+    }
+
+    &-subtitle {
+      margin-top: 8px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+
+    &-operations {
+      align-self: flex-end;
+
+      .operations-item {
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+
+  &-content {
+    position: relative;
+
+    .card-content__line {
+      line-height: 20px;
+
+      div:nth-child(2) {
+        margin-top: 4px;
+      }
+    }
+
+    .card-content__line + .card-content__line {
+      margin-top: 16px;
+    }
+  }
+}

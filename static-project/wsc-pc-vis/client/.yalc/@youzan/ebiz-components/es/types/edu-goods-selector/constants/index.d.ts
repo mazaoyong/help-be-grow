@@ -1,0 +1,18 @@
+import { ITypeFilterOption } from '@youzan/react-components/typings/components/goods-selector-v2';
+export declare const BASE_URL: any;
+export declare const COURSE_MANAGE_URL: string;
+export declare const DEFAULT_GOODS_MANAGE_URL: string;
+export declare const GOODS_MANAGE_URL: string;
+export declare const MAX_INVENTORY = 10000000;
+export declare const ALL_TYPE: ITypeFilterOption;
+export declare const NORMAL_TYPE: ITypeFilterOption;
+export declare const VIRTUAL_TYPE: ITypeFilterOption;
+export declare const ECARD_TYPE: ITypeFilterOption;
+export declare const MEMBER_CARD_TYPE: ITypeFilterOption;
+export declare const HOTEL_TYPE: ITypeFilterOption;
+export declare const PERIOD_BUY_TYPE: ITypeFilterOption;
+export declare const FEN_XIAO_TYPE: ITypeFilterOption;
+export declare const HAI_TAO_TYPE: ITypeFilterOption;
+export declare const BAKE_TYPE: ITypeFilterOption;
+export declare const TIMED_PRODUCT_LAUNCH_TYPE: ITypeFilterOption;
+export declare const KNOWLEDGE_TYPE: ITypeFilterOption;

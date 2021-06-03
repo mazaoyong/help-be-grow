@@ -1,0 +1,26 @@
+module.exports = [
+  [
+    'GET',
+    '/v4/vis/edu/page/clueStat',
+    'other.stat.ClueStatController',
+    'getIndexHtml',
+  ],
+  [
+    'GET',
+    '/v4/vis/edu/clueStat/getOverview.json',
+    'other.stat.ClueStatController',
+    'getOverview',
+  ],
+  [
+    'GET',
+    '/v4/vis/edu/clueStat/getSourceAnalyse.json',
+    'other.stat.ClueStatController',
+    'getSourceAnalyse',
+  ],
+  [
+    'GET',
+    '/v4/vis/edu/clueStat/getCVRAnalyse.json',
+    'other.stat.ClueStatController',
+    'getCVRAnalyse',
+  ],
+];

@@ -1,0 +1,68 @@
+@import "~@youzan/react-components/es/components/video-upload/style/index.css";
+
+.update-video-wrapper {
+  padding-top: 6px;
+
+  .select-video-entry {
+    display: block;
+    margin-bottom: 6px;
+    width: 90px;
+    height: 45px;
+    border: 2px dashed #ddd;
+    color: #ddd;
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .uploaded-video-block {
+    .video-cover-img {
+      position: relative;
+      display: inline-block;
+      // border: 1px solid #e5e5e5;
+      margin-right: 5px;
+      max-width: 80px;
+      max-height: 80px;
+      text-align: center;
+
+      img {
+        width: 80px;
+        height: 45px;
+      }
+
+      .close-video {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        border-radius: 50%;
+        background: #fff;
+        font-size: 16px;
+      }
+    }
+
+    .edit-video {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+
+  .video-error {
+    padding-left: 0;
+    background: #fff;
+  }
+
+  .error-circle {
+    margin-right: 5px;
+    color: #ff4343;
+  }
+}
+
+.rc-video-upload__dialog {
+  width: 700px;
+}
+
+.rc-video-upload__publish {
+  position: static;
+  float: right;
+  margin-top: 15px;
+}

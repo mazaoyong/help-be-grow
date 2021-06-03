@@ -1,0 +1,74 @@
+@import 'vars/colors';
+
+.content-form {
+  .new-title {
+    margin-left: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  & > textarea {
+    display: none;
+  }
+
+  .zent-form__control-label {
+    width: 156px;
+  }
+
+  .zent-form__help-desc {
+    margin-top: 8px;
+  }
+
+  & > .desc {
+    margin-bottom: 20px;
+    margin-left: 65px;
+  }
+
+  .size-110 {
+    width: 110px;
+  }
+
+  .publish-type-group {
+    position: relative;
+
+    .zent-radio-wrap {
+      display: block;
+      line-height: 30px;
+    }
+
+    .zent-datetime-picker {
+      position: absolute;
+      top: 50%;
+      left: 195px;
+      margin-top: -15px;
+    }
+  }
+
+  .checkbox-desc {
+    margin-left: 18px;
+  }
+
+  .selltype-check {
+    line-height: 31px;
+  }
+}
+
+.field-size-320 {
+  .zent-input {
+    width: 320px;
+  }
+}
+
+.summary-textarea {
+  textarea {
+    width: 320px;
+    height: 60px;
+  }
+}
+
+// 引导购买提示
+.intro-order span {
+  margin-right: 8px;
+}

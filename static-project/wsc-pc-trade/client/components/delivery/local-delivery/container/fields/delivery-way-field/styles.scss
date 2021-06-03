@@ -1,0 +1,268 @@
+.custom-delivery-way {
+  margin-top: 3px;
+
+  a {
+    color: #155bd4;
+  }
+
+  &__business {
+    margin-bottom: 15px;
+  }
+
+  &__third {
+    margin-bottom: 10px;
+
+    .address {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__content {
+    width: 640px;
+    padding: 0 10px 10px 0;
+    font-size: 12px;
+    // background: #f8f8f8;
+
+    .desc {
+      color: var(--theme-stroke-3, #969799);
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 17px;
+      margin-top: 2px;
+      margin-right: -148px;
+    }
+
+    .youzan-app-store-tip {
+      margin-top: 6px;
+      color: #969799;
+    }
+
+    &--types {
+      margin-bottom: 20px;
+      margin-left: -90px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .type-label {
+        display: block;
+        width: 86px;
+        text-align: right;
+        float: left;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .type-wrapper {
+        margin-left: 90px;
+        width: 560px;
+
+        .type-name {
+          font-size: 14px;
+          line-height: 22px;
+        }
+
+        .change {
+          margin-left: 5px;
+          font-size: 14px;
+        }
+
+        .warning {
+          line-height: 25px;
+          color: #999;
+        }
+      }
+
+      .selector {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .zent-radio-group {
+        margin-bottom: 5px;
+        display: block;
+        background: #fff;
+      }
+
+      .zent-radio-wrap {
+        margin-bottom: 10px;
+      }
+    }
+
+    &--provider {
+      .provider-item {
+        line-height: 24px;
+      }
+
+      span {
+        vertical-align: middle;
+
+        .again {
+          margin-left: 5px;
+          cursor: hover;
+        }
+
+        i {
+          color: #9b9b9b;
+        }
+      }
+
+      .pass {
+        color: #30b700;
+      }
+
+      .fail {
+        color: #f44;
+      }
+
+      .open {
+        color: #999;
+      }
+    }
+
+    &--auto {
+      margin-top: 10px;
+      margin-left: -90px;
+
+      .pop-wraper {
+        display: inherit !important; // 消除pop内置display: inline-block 带来的排版异常
+      }
+
+      .type-label {
+        display: block;
+        width: 86px;
+        text-align: right;
+        float: left;
+        font-size: 14px;
+        line-height: 23px;
+      }
+
+      .type-label-select {
+        display: block;
+        width: 86px;
+        text-align: right;
+        float: left;
+        font-size: 14px;
+        line-height: 32px;
+      }
+
+      .type-wrapper {
+        margin-left: 90px;
+        width: 620px;
+
+        .smart-simulation-info {
+          font-size: 14px;
+          line-height: 32px;
+        }
+
+        .change {
+          margin-left: 5px;
+        }
+
+        .warning {
+          line-height: 20px;
+          color: #999;
+        }
+
+        .mt8 {
+          margin-top: 8px;
+        }
+
+        .radio {
+          margin-bottom: 16px;
+
+          &_prev {
+            margin-right: 10px;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .type-name {
+        margin: 0 0.4em;
+      }
+
+      .status-wrapper {
+        margin: 5px 0;
+        line-height: 18px;
+      }
+
+      .delay-settings {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 32px;
+
+        .zent-select {
+          margin-left: 5px;
+        }
+      }
+
+      .help-icon {
+        color: #999;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__addr {
+    vertical-align: middle;
+
+    .custom-addr-picker__desc {
+      color: #9b9b9b;
+    }
+  }
+}
+
+.pop-self-settlement {
+  width: 400px;
+}
+
+.enable-pop {
+  display: inline-block;
+
+  &.tip {
+    margin-right: 10px;
+  }
+}
+
+.delay-settings-info {
+  color: #999;
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.simulation-btn {
+  margin: 0 5px;
+  color: #155bd4;
+  cursor: pointer;
+}
+
+.call_time_row {
+  margin-top: 10px;
+}
+
+.pop {
+  margin-left: 25px;
+}
+
+.pop_content {
+  width: 280px;
+  padding-top: 6px;
+
+  &_btns {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &_btn {
+    height: 24px !important;
+    line-height: 16px !important;
+  }
+}

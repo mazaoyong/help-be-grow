@@ -1,0 +1,103 @@
+.clue-reacords__edit {
+  font-size: 14px;
+  
+  &__textarea {
+    border: 0 !important;
+    outline: none;
+    box-shadow: none !important;
+
+    .zent-textarea {
+      max-height: 80px;
+      border: 0;
+      box-shadow: none;
+      resize: none;
+
+      &::-webkit-input-placeholder {
+        color: #c8c9cc;
+      }
+    }
+    
+    &-wrap {
+      min-height: 80px;
+      padding-bottom: 10px;
+      border: 1px solid #dcdee0;
+      border-radius: 2px;
+      box-sizing: border-box;
+
+      .input-tip {
+        padding-right: 10px;
+        font-size: 14px;
+        color: #c8c9cc;
+        text-align: right;
+      }
+
+      .zent-tag-content {
+        color: #333;
+      }
+    }
+  }
+
+  &__img {
+    &-wrap {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+
+    &__item {
+      position: relative;
+      margin-left: 10px;
+
+      .img-wrap {
+        overflow: hidden;
+        border-radius: 3px;
+      }
+
+      .zenticon {
+        position: absolute;
+        top: -9px;
+        right: -9px;
+        font-size: 18px;
+        color: #7d7e80;
+      }
+    }
+  }
+
+  &__revist-list-wrap {
+    margin: 10px 10px 0;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+
+    &__left {
+      display: flex;
+
+      .cursor-link {
+        color: #646566;
+
+        &:hover {
+          color: #155bd4;
+        }
+      }
+
+
+      dl,
+      .trigger {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 14px;
+      }
+      
+      .trigger{
+        margin-right: 20px;
+      }
+
+      dt {
+        margin-right: 6px;
+      }
+    }
+  }
+}

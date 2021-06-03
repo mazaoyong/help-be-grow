@@ -1,0 +1,106 @@
+.custom-richtext {
+    padding: 0 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    overflow: hidden;
+    text-align: left;
+    word-wrap: break-word;
+    position: relative;
+
+    img + br {
+        display: block;
+        padding: 4px 0;
+        content: ' ';
+    }
+    p {
+        margin: 0 0 1em 0;
+    }
+    // 兼容秀米新版
+    .Powered-by-XIUMI p {
+        margin: 0;
+    }
+    a {
+        color: #07d;
+    }
+    img {
+        background: none;
+        max-width: 100% !important;
+        min-height: 1px;
+        width: auto !important;
+        height: auto !important;
+        vertical-align: bottom;
+    }
+    ul,ol {
+        list-style-position: inside;
+        padding-left: 0;
+    }
+    ol {
+        width: auto !important;
+    }
+    blockquote {
+        padding: 0 0 0 15px;
+        margin: 0 0 18px;
+        border-left: 5px solid #EEE;
+    }
+    em, i {
+        font-style: italic;
+    }
+    strong, b {
+        font-weight: bold;
+    }
+    .selectTdClass{
+        background-color:#edf5fa !important;
+    }
+    table.noBorderTable td,
+    table.noBorderTable th,
+    table.noBorderTable caption{
+        border:1px dashed #ddd !important;
+    }
+    table{
+        margin-bottom:10px;
+        border-collapse:collapse;
+        display:table;
+        width: auto ! important;
+    }
+    td,th{
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+    }
+    caption{
+        border:1px dashed #ddd;
+        border-bottom:0;
+        padding:3px;
+        text-align:center;
+    }
+    th{
+        border-top:2px solid #bbb;
+        background:#f7f7f7;
+    }
+    .ue-table-interlace-color-single{
+        background-color: #fcfcfc;
+    }
+    .ue-table-interlace-color-double{
+        background-color: #f7faff;
+    }
+    td p{
+        margin:0;
+        padding:0;
+    }
+    // 冷面活动页，富文本，图片固定底部
+    .bottom-floating-banner {
+        position: fixed !important;
+        bottom: 0;
+    }
+    iframe {
+        width: 100%!important;
+        height: 100%!important;
+        border: 0;
+    }
+}
+.custom-richtext-fullscreen {
+    padding: 0;
+    margin-top: 0;
+}

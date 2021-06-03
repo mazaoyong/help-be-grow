@@ -1,0 +1,137 @@
+{% from "./base.html" import punchInfoBlock %}
+
+<style>
+/* punch-share */
+.punch-share {
+  width: 325px;
+  background: #fff;
+}
+
+.punch-share__body {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.punch-share__footer {
+  height: 90px;
+  overflow: hidden;
+}
+
+.img-background-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 325px;
+  height: 400px;
+  z-index: 1;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 37%, rgba(112, 112, 112, .1) , transparent 100%);
+}
+
+.img-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 325px;
+  height: 400px;
+  object-fit: fill;
+  z-index: 0;
+}
+
+.img-quota {
+  position: absolute;
+  top: 42px;
+  right: 21px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+}
+
+/* user-info */
+.user-info {
+  position: relative;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.user-info__header {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.user-info__avatar {
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.user-info__name {
+  flex: 1 1 auto;
+  margin-left: 5px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-info__body {
+  margin-top: 15px;
+}
+
+.user-info__motto {
+  font-size: 15px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.text--a {
+  margin-top: 52px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #fff;
+  text-align: center;
+}
+
+.user-info__punch-days {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 105px;
+  color: #fff;
+  text-align: center;
+}
+</style>
+
+<div class="punch-share">
+  <div class="punch-share__body">
+    <img class="img-background" src="{{ punchInfo.background }}">
+    <div class="img-background-mask"></div>
+    <img class="img-quota" src="https://b.yzcdn.cn/public_files/c0ad3d7a74772ac741529456f03db606.png!small.png">
+
+    <div class="user-info">
+      <div class="user-info__header">
+        <img class="user-info__avatar" src="{{ userInfo.avatar }}">
+        <div class="user-info__name">
+          {{ userInfo.name }}
+        </div>
+      </div>
+      <div class="user-info__body">
+        <div class="user-info__motto">
+          {{ punchInfo.motto }}
+        </div>
+        <div class="text--a">
+          已坚持打卡/天
+        </div>
+        <div class="user-info__punch-days">
+          {{ userInfo.punchDays }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="punch-share__footer">
+    {{ punchInfoBlock(punchInfo) }}
+  </div>
+</div>

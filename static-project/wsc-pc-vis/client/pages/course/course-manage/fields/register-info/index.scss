@@ -1,0 +1,27 @@
+@import 'shared/sass/vars/colors';
+
+.register-type-group {
+  margin-bottom: 0;
+
+  .zent-form__control-label {
+    width: 0 !important;
+  }
+
+  .zent-checkbox-wrap {
+    line-height: 30px;
+    display: block;
+  }
+
+  .intent-address-tip {
+    margin-left: 5px;
+    color: $theme-stroke-4;
+  }
+
+  .zent-form__control-group  {
+    margin-bottom: 10px;
+  }
+
+  &__tip {
+    color: $theme-stroke-4;
+  }
+}

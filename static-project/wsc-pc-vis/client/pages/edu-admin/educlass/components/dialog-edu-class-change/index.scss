@@ -1,0 +1,75 @@
+.class-change-dialog-content {
+  &__desc {
+    color: #333333;
+    font-size: 12px;
+    word-break: break-all;
+  }
+
+  &__form {
+    margin-top: 10px;
+  }
+
+  .class-dialog-form__actions {
+    margin-top: 30px;
+    text-align: right;
+  }
+
+  .zent-form {
+    margin-bottom: 0;
+  }
+
+  .zent-form__control-label {
+    width: 84px;
+  }
+
+  &__mark {
+    height: 80px;
+  }
+}
+
+.option-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: -5px -10px;
+  padding: 5px 10px;
+  font-size: 12px;
+
+  .option-item-left {
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      max-width: 120px;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+
+    &__tip {
+      margin-left: 13px;
+      white-space: pre-wrap;
+      word-break: break-all;
+      flex: 1;
+      color: #c8c9cc;
+    }
+  }
+
+  .option-item-right {
+    color: #3283fa;
+    // cursor: pointer;
+  }
+}
+
+.class-select-popup {
+  .zent-select-option {
+    height: auto;
+
+    // &.current {
+    //   .option-item-left,
+    //   .option-item-right {
+    //     color: #fff;
+    //   }
+    // }
+  }
+}

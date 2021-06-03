@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/线下课</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/线下课" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="3" y="2" width="2" height="16"></rect>
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="5" y="2" width="10" height="2"></rect>
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="5" y="16" width="10" height="2"></rect>
+        <rect id="Rectangle-Copy" fill="#7D7E80" fill-rule="nonzero" x="15" y="2" width="2" height="16"></rect>
+        <polygon id="Rectangle" fill="#7D7E80" fill-rule="nonzero" points="11 4 13 4 13 8 12.0025928 7 11 8"></polygon>
+    </g>
+</svg>

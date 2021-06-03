@@ -1,0 +1,23 @@
+@import 'vars/colors';
+
+.result-detail-dialog {
+
+  .title {
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .result-detail-grid {
+    margin-top: 16px;
+
+    .zent-pagination-page-number-button {
+      font-weight: 500 !important;
+    }
+  }
+
+  .agenda-name {
+    color: $blueColor;
+    cursor: pointer;
+  }
+}

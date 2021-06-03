@@ -1,0 +1,322 @@
+[
+  {
+    "payWay": "DEFAULT",
+    "payWayNo": 0,
+    "payWayDesc": "默认值,未支付"
+  },
+  {
+    "payWay": "WXPAY",
+    "payWayNo": 1,
+    "payWayDesc": "微信自有支付"
+  },
+  {
+    "payWay": "ALIWAP",
+    "payWayNo": 2,
+    "payWayDesc": "支付宝wap"
+  },
+  {
+    "payWay": "ALIPAY",
+    "payWayNo": 3,
+    "payWayDesc": "支付宝wap"
+  },
+  {
+    "payWay": "UNIONPAY",
+    "payWayNo": 4,
+    "payWayDesc": ""
+  },
+  {
+    "payWay": "TENPAY",
+    "payWayNo": 5,
+    "payWayDesc": "财付通"
+  },
+  {
+    "payWay": "UNIONWAP",
+    "payWayNo": 6,
+    "payWayDesc": ""
+  },
+  {
+    "payWay": "PEERPAY",
+    "payWayNo": 7,
+    "payWayDesc": "代付"
+  },
+  {
+    "payWay": "UMPAY",
+    "payWayNo": 8,
+    "payWayDesc": "联动优势"
+  },
+  {
+    "payWay": "CODPAY",
+    "payWayNo": 9,
+    "payWayDesc": "货到付款"
+  },
+  {
+    "payWay": "WXPAY_DAIXIAO",
+    "payWayNo": 10,
+    "payWayDesc": "微信支付"
+  },
+  {
+    "payWay": "WXPAY_SHOULI",
+    "payWayNo": 11,
+    "payWayDesc": "受理模式"
+  },
+  {
+    "payWay": "BAIDUWAP",
+    "payWayNo": 12,
+    "payWayDesc": "百付宝"
+  },
+  {
+    "payWay": "WX_APPPAY",
+    "payWayNo": 13,
+    "payWayDesc": "sdk支付"
+  },
+  {
+    "payWay": "FX_MERGED",
+    "payWayNo": 14,
+    "payWayDesc": "合并付货款"
+  },
+  {
+    "payWay": "UMP_PRESENT",
+    "payWayNo": 15,
+    "payWayDesc": "领取赠品"
+  },
+  {
+    "payWay": "UMP_COUPON",
+    "payWayNo": 16,
+    "payWayDesc": "优惠兑换"
+  },
+  {
+    "payWay": "FX_SPLITTING",
+    "payWayNo": 17,
+    "payWayDesc": "自动付货款"
+  },
+  {
+    "payWay": "AIXUEDAI",
+    "payWayNo": 18,
+    "payWayDesc": "爱学贷"
+  },
+  {
+    "payWay": "WX_WAPPAY",
+    "payWayNo": 19,
+    "payWayDesc": "微信wap"
+  },
+  {
+    "payWay": "WX_HB",
+    "payWayNo": 20,
+    "payWayDesc": "微信红包支付"
+  },
+  {
+    "payWay": "UMP_REBATE",
+    "payWayNo": 21,
+    "payWayDesc": "返利"
+  },
+  {
+    "payWay": "UMP_HB",
+    "payWayNo": 22,
+    "payWayDesc": "ump红包"
+  },
+  {
+    "payWay": "PAYZA",
+    "payWayNo": 23,
+    "payWayDesc": ""
+  },
+  {
+    "payWay": "YZPAY",
+    "payWayNo": 24,
+    "payWayDesc": "易宝支付"
+  },
+  {
+    "payWay": "PREPAID_CARD",
+    "payWayNo": 25,
+    "payWayDesc": "储值卡"
+  },
+  {
+    "payWay": "PAYPAL",
+    "payWayNo": 26,
+    "payWayDesc": ""
+  },
+  {
+    "payWay": "QQPAY",
+    "payWayNo": 27,
+    "payWayDesc": "qq支付"
+  },
+  {
+    "payWay": "ECARD",
+    "payWayNo": 28,
+    "payWayDesc": "有赞E卡支付"
+  },
+  {
+    "payWay": "BARCODE_WX",
+    "payWayNo": 29,
+    "payWayDesc": "微信条码"
+  },
+  {
+    "payWay": "BARCODE_ALIPAY",
+    "payWayNo": 30,
+    "payWayDesc": "支付宝条码"
+  },
+  {
+    "payWay": "GIFT_CARD",
+    "payWayNo": 33,
+    "payWayDesc": "礼品卡支付"
+  },
+  {
+    "payWay": "UNIFIED_PREPAID_CARD",
+    "payWayNo": 35,
+    "payWayDesc": "会员余额"
+  },
+  {
+    "payWay": "CREDIT_CARD_UNIONPAY",
+    "payWayNo": 36,
+    "payWayDesc": "信用卡银联支付"
+  },
+  {
+    "payWay": "DEBIT_CARD_UNIONPAY",
+    "payWayNo": 37,
+    "payWayDesc": "储蓄卡银联支付"
+  },
+  {
+    "payWay": "INSTALMENT",
+    "payWayNo": 40,
+    "payWayDesc": "分期支付"
+  },
+  {
+    "payWay": "WX_NATIVE",
+    "payWayNo": 72,
+    "payWayDesc": "微信扫码二维码支付"
+  },
+  {
+    "payWay": "UN_SETTLED_AMOUNT_PAY",
+    "payWayNo": 80,
+    "payWayDesc": "待结算&余额支付"
+  },
+  {
+    "payWay": "ENCHASHMENT_GIFT_CARD",
+    "payWayNo": 90,
+    "payWayDesc": "礼品卡支付"
+  },
+  {
+    "payWay": "OF_ONLINE_ACCOUNT",
+    "payWayNo": 100,
+    "payWayDesc": "代收账户"
+  },
+  {
+    "payWay": "OF_ONLINE_PREPAID_ACCOUNT",
+    "payWayNo": 300,
+    "payWayDesc": "储值账户"
+  },
+  {
+    "payWay": "OF_ONLINE_DEPOSIT_ACCOUNT",
+    "payWayNo": 400,
+    "payWayDesc": "保证金账户"
+  },
+  {
+    "payWay": "OF_YOUZAN_QR",
+    "payWayNo": 101,
+    "payWayDesc": "收款码"
+  },
+  {
+    "payWay": "OF_WEIXIN",
+    "payWayNo": 102,
+    "payWayDesc": "微信"
+  },
+  {
+    "payWay": "OF_ALIPAY",
+    "payWayNo": 103,
+    "payWayDesc": "支付宝"
+  },
+  {
+    "payWay": "OF_POS",
+    "payWayNo": 104,
+    "payWayDesc": "刷卡"
+  },
+  {
+    "payWay": "OF_TABLE_CARD",
+    "payWayNo": 105,
+    "payWayDesc": "二维码台卡"
+  },
+  {
+    "payWay": "OF_PREPAID_CARD",
+    "payWayNo": 106,
+    "payWayDesc": "储值卡"
+  },
+  {
+    "payWay": "OF_E_CARD",
+    "payWayNo": 107,
+    "payWayDesc": "有赞E卡"
+  },
+  {
+    "payWay": "MARK_PAY_WXPAY",
+    "payWayNo": 110,
+    "payWayDesc": "自有微信支付收款账户",
+    "isMark": true
+  },
+  {
+    "payWay": "MARK_PAY_ALIPAY",
+    "payWayNo": 111,
+    "payWayDesc": "自有支付宝收款账户",
+    "isMark": true
+  },
+  {
+    "payWay": "MARK_PAY_POS",
+    "payWayNo": 112,
+    "payWayDesc": "自有POS刷卡收款账户",
+    "isMark": true
+  },
+  {
+    "payWay": "ALLIN_SWIPECARD",
+    "payWayNo": 113,
+    "payWayDesc": "通联刷卡支付"
+  },
+  {
+    "payWay": "MARK_PAY_DIY",
+    "payWayNo": 114,
+    "payWayDesc": "自定义收款账户",
+    "isMark": true
+  },
+  {
+    "payWay": "CHANGE_PAY",
+    "payWayNo": 115,
+    "payWayDesc": "有赞零钱支付"
+  },
+  {
+    "payWay": "UMP_PAY",
+    "payWayNo": 116,
+    "payWayDesc": "优惠全额抵扣"
+  },
+  {
+    "payWay": "SUNMI_WX",
+    "payWayNo": 117,
+    "payWayDesc": "商米支付"
+  },
+  {
+    "payWay": "SUNMI_ALIPAY",
+    "payWayNo": 118,
+    "payWayDesc": "商米支付-支付宝"
+  },
+  {
+    "payWay": "SUNMI_SWIPECARD",
+    "payWayNo": 119,
+    "payWayDesc": "商米pos"
+  },
+  {
+    "payWay": "OF_OFFLINE_ACCOUNT",
+    "payWayNo": 200,
+    "payWayDesc": "记账账户"
+  },
+  {
+    "payWay": "OF_CASH",
+    "payWayNo": 201,
+    "payWayDesc": "现金收款账户",
+    "isMark": true
+  },
+  {
+    "payWay": "MIXED_PAYMENT",
+    "payWayNo": 202,
+    "payWayDesc": "组合支付"
+  },
+  {
+    "payWay": "OUTSIDE_PAYMENT",
+    "payWayNo": 203,
+    "payWayDesc": "外部支付"
+  }
+]

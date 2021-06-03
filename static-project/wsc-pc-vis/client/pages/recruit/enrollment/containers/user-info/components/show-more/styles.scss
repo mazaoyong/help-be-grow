@@ -1,0 +1,17 @@
+.edu-enrollment-show-more {
+  margin-bottom: 24px;
+  &-icon {
+    margin-left: 7px;
+    margin-right: 3px;
+    transition: all 0.125s;
+    &-closed {
+      transform: rotate(-90deg);
+    }
+  }
+  &-block {
+    .zent-region-select {
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+  }
+}

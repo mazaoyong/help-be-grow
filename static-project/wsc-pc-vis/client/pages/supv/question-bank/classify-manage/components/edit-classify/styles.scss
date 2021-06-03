@@ -1,0 +1,35 @@
+.classify-list__edit-container {
+  .dialog-r-body {
+    display: flex;
+    padding-bottom: 0;
+    font-size: 16px;
+
+    .zent-form-label {
+      margin-right: 1em;
+      font-size: 14px;
+      line-height: 32px;
+      flex-basis: auto;
+    }
+
+    input {
+      padding-right: 4em !important;
+      color: #323233 !important;
+    }
+
+    .zent-form-control-content {
+      position: relative;
+
+      .input-count {
+        position: absolute;
+        right: 1em;
+        font-size: 14px;
+        line-height: 32px;
+        color: #c8c9cc;
+      }
+    }
+
+    .has-error .input-count {
+      color: #df4545;
+    }
+  }
+}

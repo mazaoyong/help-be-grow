@@ -1,0 +1,24 @@
+.punch-task {
+  &__title {
+    h3 {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    span {
+      margin-left: 10px;
+      color: #999999;
+      font-size: 14px;
+    }
+  }
+
+  .daySignQuotes-field {
+    margin-top: -10px;
+  }
+
+  .zent-checkbox-wrap {
+    margin-right: 32px;
+  }
+}

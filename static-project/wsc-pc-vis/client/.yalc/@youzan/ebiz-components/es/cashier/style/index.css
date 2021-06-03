@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.edu-enrollment-tab-btn {
+  width: 130px;
+  height: 48px !important;
+  font-size: 16px !important;
+  line-height: 48px !important;
+}
+.edu-enrollment-price-wrapper::before {
+  display: inline-block;
+  content: "￥";
+  position: relative;
+  transform: translateY(4%);
+}
+.edu-enrollment-payment {
+  width: 848px;
+  min-height: 640px;
+}
+.edu-enrollment-payment-price {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 36px;
+}
+.edu-enrollment-payment-price span {
+  font-size: 30px;
+  color: #f44;
+  vertical-align: baseline;
+}
+.edu-enrollment-payment-calc {
+  width: 240px;
+  margin: auto;
+  margin-top: 40px;
+}
+.edu-enrollment-payment-calc-change {
+  margin-top: 10px;
+  line-height: 24px;
+  vertical-align: baseline;
+  text-align: right;
+}
+.edu-enrollment-payment-calc-change :first-child {
+  color: #969799;
+  font-size: 16px;
+}
+.edu-enrollment-payment-calc-change :last-child {
+  color: #F44;
+  font-size: 20px;
+}
+.edu-enrollment-payment-calc .zent-input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 48px !important;
+  max-height: 48px !important;
+  line-height: 48px !important;
+}
+.edu-enrollment-payment-calc .zent-input-wrapper::before {
+  display: inline-block;
+  content: "实收金额";
+  position: absolute;
+  font-size: 14px;
+  line-height: 20px;
+  left: 16px;
+  top: 14px;
+}
+.edu-enrollment-payment-calc .zent-input {
+  font-size: 20px;
+  padding: 14px 16px;
+  text-align: right;
+}
+.edu-enrollment-payment-body {
+  text-align: center;
+}
+.edu-enrollment-payment-btn {
+  width: 240px !important;
+  height: 48px !important;
+  font-size: 18px !important;
+}
+.edu-enrollment-payment-btn-cash {
+  margin-top: 24px;
+}
+.edu-enrollment-payment-btn:nth-child(2) {
+  margin-left: 24px;
+}
+.edu-enrollment-payment-btn img {
+  width: 20px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+.edu-enrollment-payment-scan {
+  width: 160px;
+  height: 160px;
+  margin-top: 32px;
+}
+.edu-enrollment-payment-scan-tips {
+  margin: 50px 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+.edu-enrollment-payment-qrcode {
+  animation: fadeIn 0.25s;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(200, 201, 204, 0.5);
+  display: inline-block;
+  margin-top: 16px;
+  padding: 30px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.edu-enrollment-payment-qrcode::after {
+  border-top: solid 8px #fff;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+  bottom: -8px;
+  content: "";
+  display: inline-block;
+  left: 250px;
+  position: absolute;
+}
+.edu-enrollment-payment-card {
+  align-items: center;
+  background: #fff;
+  border: solid 1px transparent;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px;
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  font-size: 16px;
+  margin: 12px;
+  padding: 28px 24px;
+  position: relative;
+  text-align: left;
+  transition: all 0.25s;
+}
+.edu-enrollment-payment-card:last-of-type {
+  margin-right: 0;
+}
+.edu-enrollment-payment-card-title {
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 35px;
+}
+.edu-enrollment-payment-card-content {
+  width: 130px;
+}
+.edu-enrollment-payment-card-tip {
+  display: flex;
+  color: #999;
+  width: 520px;
+  margin: 5px auto 50px auto;
+  text-align: left;
+}
+.edu-enrollment-payment-card-tip::before {
+  display: block;
+  content: "注：";
+}
+.edu-enrollment-payment-card-active {
+  border: solid 1px #1989fa;
+}
+.edu-enrollment-payment-card-active::after {
+  animation: fadeIn 0.25s;
+  background-image: url(//img.yzcdn.cn/publicPath/2019/07/02/selected-card.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+}
+.edu-enrollment-payment-card-icon {
+  height: 24px;
+  margin-right: 24px;
+  width: 24px;
+}
+.edu-enrollment-payment-card-type {
+  font-weight: bold;
+  height: 24px;
+  margin-bottom: 6px;
+}
+.edu-enrollment-payment-card-subtype {
+  color: #969799;
+  height: 24px;
+}
+.edu-enrollment-payment-card-box {
+  width: 100%;
+  max-height: 450px;
+  text-align: center;
+}
+.edu-enrollment-payment-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}

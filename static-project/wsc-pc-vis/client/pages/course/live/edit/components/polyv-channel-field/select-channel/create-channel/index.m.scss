@@ -1,0 +1,11 @@
+:local(.create-channel) {
+  margin-bottom: 0;
+
+  :global(.zent-form__control-label) {
+    width: 80px;
+  }
+
+  .button-wrap {
+    text-align: right;
+  }
+}

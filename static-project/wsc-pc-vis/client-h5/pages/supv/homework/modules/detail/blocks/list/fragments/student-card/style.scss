@@ -1,0 +1,58 @@
+@import '../../../../../../../../../assets/styles/mixins/border-retina';
+
+.student-card {
+  position: relative;
+  display: flex;
+  background: #fff;
+  align-items: center;
+
+  &::before {
+    @include border-retina(top, #ebedf0);
+
+    z-index: 1;
+  }
+
+  &:first-child {
+
+    &::before {
+      border: none;
+    }
+  }
+
+  a {
+    flex: 1 1 auto;
+  }
+
+  .van-cell {
+    padding: 10px 0 10px 8px;
+
+    &__right-icon {
+      height: 14px !important;
+      line-height: 14px !important;
+    }
+
+    &__title {
+      .custom-title {
+        vertical-align: middle;
+      }
+
+      .van-tag {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .van-cell__value {
+    flex: 0 0 auto;
+  }
+
+  &__score {
+    &--pass {
+      color: #f44;
+    }
+
+    &--nopass {
+      color: #646566;
+    }
+  }
+}

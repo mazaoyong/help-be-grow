@@ -1,0 +1,16 @@
+@import 'vars/colors';
+
+.view-example-dialog {
+  width: 452px;
+
+  &__tip {
+    margin-bottom: 15px;
+    line-height: 20px;
+    color: $theme-stroke-3;
+    font-size: 14px;
+  }
+
+  &__img-wrap {
+    text-align: center;
+  }
+}

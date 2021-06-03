@@ -1,0 +1,63 @@
+@import 'common/ellipsis';
+@import 'vars/colors';
+
+.course-select {
+  padding-top: 4px;
+
+  &__option:first-of-type {
+    .zent-radio-wrap {
+      margin-bottom: 16px;
+    }
+  }
+
+  .gsv2-selector-dialog {
+    margin: 10px auto 6px 24px;
+
+    .dialog-btn {
+      line-height: 20px;
+    }
+  }
+
+  .form-description {
+    color: $grayColor;
+    font-size: 12px;
+    line-height: 17px;
+    padding-top: 8px;
+
+    &.error-msg {
+      margin: 0 auto 7px 24px;
+      color: $redColor;
+    }
+  }
+
+  .zent-grid-td {
+    .selected-course {
+      display: flex;
+  
+      &__wrapper {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .img-wrap {
+        flex-shrink: 0;
+        margin-right: 8px;
+      }
+    }
+
+    .operation {
+      color: $blueColor;
+      cursor: pointer;
+
+      &.disabled {
+        color: #B9B9B9;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .course-select-grid {
+    margin-left: 24px;
+  }
+}

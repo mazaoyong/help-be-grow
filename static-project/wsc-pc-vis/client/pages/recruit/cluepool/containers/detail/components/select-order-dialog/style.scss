@@ -1,0 +1,75 @@
+.edu__clue-detail-select-order-dialog {
+  .vis-filter_region {
+    background-color: #F7F8FA;
+  }
+
+  .vis-filter_item {
+    min-width: 280px;
+    margin-right: 0;
+
+    .zent-input-wrapper {
+      width: 185px;
+    }
+
+    .picker-input {
+      width: 185px;
+    }
+  }
+
+  .vis-filter_label {
+    width: 80px;
+  }
+
+  .vis-filter_region {
+    margin-top: 0;
+  }
+
+  .vis-filter_bottom {
+    margin-left: 80px;
+  }
+
+  .zent-radio-group {
+    display: block;
+  }
+
+  .zent-table {
+    overflow: hidden;
+  }
+
+  .order-no-td {
+    display: inline-flex;
+    align-items: center;
+
+    & > span {
+      word-break: break-all;
+
+      &:first-child {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .filter-check {
+    margin: -10px 0 10px;
+    text-align: right;
+  }
+
+  .zent-date-range-picker__filter {
+    vertical-align: 2px;
+
+    .zent-date-range-picker__btn {
+      padding: 4px;
+      margin-left: 10px;
+      line-height: 14px;
+      font-size: 12px;
+      color: #949494;
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+
+  .zent-dialog-r-footer {
+    padding-right: 0;
+  }
+}

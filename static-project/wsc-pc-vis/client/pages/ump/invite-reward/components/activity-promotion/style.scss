@@ -1,0 +1,30 @@
+.activity-promotion-dialog {
+  .zent-tabs-nav.zent-tabs-nav-type__vertical {
+    min-width: 114px;
+
+    .zent-tabs-tab:last-child {
+      margin-top: 21px;
+      outline: #d8d8d8 1px solid;
+      outline-offset: 10px;
+      pointer-events: none;
+
+      .zent-tabs-tab-inner {
+        height: 36px;
+
+        .make-poster {
+          position: relative;
+          width: 90px;
+          left: -8px;
+          top: -8px;
+          padding: 8px 8px 9px;
+          color: #155bd4;
+          pointer-events: auto;
+        }
+      }
+    }
+
+    .zent-tabs-tab-inner {
+      width: 106px;
+    }
+  }
+}

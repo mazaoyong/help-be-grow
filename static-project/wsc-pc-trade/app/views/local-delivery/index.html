@@ -1,0 +1,21 @@
+{% extends '../common/base.html' %}
+
+{% block page_title %} 同城配送 {% endblock %}
+
+{% block page_style %}
+{{ loadCss('version_css.local-delivery') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb">
+    <span>配送管理</span>
+  </div>
+{% endblock %}
+
+{% block app_content %}
+  <div id="js-react-container"><div class="zent-loading-container zent-loading-container-static zent-loading-container--empty" style="height: 500px;"><div class="zent-page-loading "><div class="zent-page-mask"></div></div></div></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.local-delivery') | safe }}
+{% endblock %}

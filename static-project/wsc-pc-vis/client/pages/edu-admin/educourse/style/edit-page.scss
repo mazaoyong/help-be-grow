@@ -1,0 +1,35 @@
+.educourse-tips-panel {
+  height: 115px;
+  background-color: #F7F8FA;
+  display: flex;
+  justify-content: space-between;
+  & .educourse-title {
+    margin-top: 16px;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: bold; 
+  }
+
+  & .educourse-knowmore {
+    margin-top: 16px;
+    margin-right: 16px;
+    background-color: rgba(248, 248, 248, 1);
+    width: 96px;
+    height: 36px;
+  }
+
+  & .educourse-content { 
+    margin-top: 10px;
+    margin-left: 16px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+}
+
+.educourse-editform-wrap {
+  margin: 0 auto;
+  & .zent-form__control-label {
+    width: 95px;
+  }
+}

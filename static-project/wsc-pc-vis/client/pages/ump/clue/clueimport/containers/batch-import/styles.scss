@@ -1,0 +1,119 @@
+@import "classes/new-title";
+
+.app-inner{
+  margin-bottom: 36px !important;
+}
+
+.batchimport {
+  position: relative;
+
+  .step {
+    background-color: #f8f8f8;
+    line-height: 34px;
+    color: #333;
+    font-size: 14px;
+    padding-left: 14px;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+
+  .step:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .field-with-no-margin {
+    margin-bottom: 0;
+  }
+
+  section {
+    font-size: 12px;
+    padding: 0 14px;
+
+    &.third-step{
+      color: #323233;
+      .choose-field > label{
+        line-height: 1.5;
+      }
+    }
+
+    .item-title {
+      display: inline-block;
+      width: 120px;
+      font-size: 12px;
+      line-height: 30px;
+      text-align: right;
+      vertical-align: top;
+    }
+
+    .description {
+      margin-top: 8px;
+      color: #969799;
+    }
+
+    .singleline {
+      display: block;
+      width: 100%;
+      line-height: 30px;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      &.radio {
+
+      }
+
+      &.radio-with-select{
+        margin-top: 24px;
+      }
+
+      &.protocol {
+        margin-top: 40px;
+      }
+
+      .selector {
+        width: 120px;
+        margin-left: 10px;
+        margin-bottom: 0!important;
+        display: inline-block;
+      }
+    }
+  }
+
+  section:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    right: 0 !important;
+    width: auto;
+    min-width: 780px;
+    padding: 10px 0;
+    text-align: center;
+    transition: right .5s;
+    background-color: #fff;
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.07);
+
+    .btn {
+      margin: 10px 7.5px;
+    }
+  }
+}
+
+.edu-clue-import-no-label {
+  .zent-form__control-label {
+    display: none;
+  }
+  .zent-form__controls {
+    margin-left: 0!important;
+  }
+}
+
+.edu-clue-import-source {
+  .zent-cascader__select {
+    width: 120px!important;
+  }
+}

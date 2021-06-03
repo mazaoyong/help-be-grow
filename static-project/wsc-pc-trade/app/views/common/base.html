@@ -1,0 +1,14 @@
+{% extends 'layout/with_top_nav_layout.html' %}
+
+{% block project_style %}
+  {{ loadCss('base') | safe }}
+  {{ loadCss('global') | safe }}
+{% endblock %}
+
+{% block project_js %}
+  {{ loadJs('vendor') | safe }}
+  {{ loadJs('base') | safe }}
+  {% if not menuInfo %}
+    {{ loadJs('global') | safe }}
+  {% endif %}
+{% endblock %}

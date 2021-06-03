@@ -1,0 +1,10 @@
+.time-range-picker {
+  &__wrapper {
+    display: flex;
+  }
+
+  &.zent-popover-wrapper.zent-select {
+    width: 100px;
+    margin-right: 20px !important;
+  }
+}

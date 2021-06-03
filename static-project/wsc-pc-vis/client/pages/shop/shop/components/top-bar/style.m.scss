@@ -1,0 +1,37 @@
+@import 'fns/image-cdn';
+
+:local(.style) {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  position: relative;
+
+  // sass-lint:disable no-qualifying-elements
+  a.link {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    cursor: pointer;
+    color: #155BD4;
+    display: flex;
+    align-items: center;
+
+    .icon-back-arrow {
+      margin-right: 10px;
+      display: inline-block;
+      width: 6px;
+      height: 10px;
+      background-position: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: image-cdn('retail/img/retailshop/icon-back-arrow@2x.png');
+    }
+  }
+
+  .content {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+}

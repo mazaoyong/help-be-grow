@@ -1,0 +1,18 @@
+.edu-dialog {
+  width: 810px;
+  background-color: #fff;
+}
+
+.edu-dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.edu-dialog-header-section {
+  display: flex;
+  &>div {
+    padding-left: 5px;
+  }
+}

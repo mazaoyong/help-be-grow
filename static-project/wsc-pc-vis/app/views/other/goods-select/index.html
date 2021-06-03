@@ -1,0 +1,21 @@
+{% extends '../../common/base.html' %}
+
+{% block page_title %} 教育商品选择 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.other/goods-select') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb" id="js-page-breadcrumb">
+		<span class="project" data-href="{{ URL.site('/vis/edu/page/goods-select', 'v4') }}">教育商品选择</span>
+	</div>
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.other/goods-select') | safe }}
+{% endblock %}

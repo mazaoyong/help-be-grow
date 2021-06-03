@@ -1,0 +1,16 @@
+.tuition-offset-edit {
+  .form-wrapper {
+    margin-left: 16px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow-x: auto;
+
+    .new-title {
+      margin: 8px 0 24px 16px;
+    }
+
+    .form-block {
+      margin-bottom: 40px;
+    }
+  }
+}

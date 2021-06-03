@@ -1,0 +1,119 @@
+.panel-service-select {
+  width: 760px;
+
+  &__search {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__search-input {
+    position: relative;
+  }
+
+  &__content {
+    height: 460px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow-y: auto;
+  }
+
+  &__action {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__empty {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.service-card-wrap {
+  position: relative;
+  width: 370px;
+  height: 90px;
+  padding: 5px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #bbbbbb;
+
+  &__active {
+    border: 2px solid #3388ff;
+  }
+}
+
+.service-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__image {
+    width: 40%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+    width: 60%;
+    height: 100%;
+    padding: 5px 0 5px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; // sass-lint:disable-line no-vendor-prefixes
+    -webkit-line-clamp: 2; // sass-lint:disable-line no-vendor-prefixes
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical; // sass-lint:disable-line no-vendor-prefixes
+    color: #333333;
+  }
+
+  &__price-and-type {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    color: #ff4444;
+  }
+
+  &__type {
+    color: #9b9b9b;
+  }
+
+  &__select-icon {
+    position: absolute;
+    right: -1px;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('https://img.yzcdn.cn/upload_files/2018/11/16/FnscKYzfHtTxREA2_F4TdvUvCpB3.png');
+  }
+}

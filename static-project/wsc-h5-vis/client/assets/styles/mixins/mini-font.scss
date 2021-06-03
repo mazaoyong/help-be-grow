@@ -1,0 +1,6 @@
+// font-size: 10px
+// 缩放后定位问题，需自己调整
+@mixin mini-font {
+  font-size: 12px;
+  transform: scale(.8333333);
+}

@@ -1,0 +1,78 @@
+@import 'vars/colors';
+@import "classes/cursor-link";
+
+.boost-setting {
+  .boost-setting-table {
+    max-width: 700px;
+
+    .zent-grid-td {
+      .zent-input {
+        min-width: 58px;
+      }
+  
+      .operation {
+        color: $blueColor;
+        cursor: pointer;
+  
+        &.disabled {
+          color: #B9B9B9;
+          cursor: not-allowed;
+          pointer-events: none;
+        }
+      }
+  
+      .zent-form-error {
+        margin-top: 6px;
+      }
+    }
+  }
+
+  .fake-grid-tbody {
+    display: flex;
+    justify-content: center;
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid $theme-stroke-8;
+    max-width: 700px;
+
+    .operation {
+      color: $blueColor;
+      cursor: pointer;
+    }
+
+    .disabled .operation {
+      color: #B9B9B9;
+      cursor: not-allowed;
+    }
+  }
+
+  .boost-setting-desc {
+    display: block;
+    margin-top: 9px;
+    color: $grayColor;
+    font-size: 12px;
+  }
+
+  .phase-one-setting {
+    .zent-radio-group {
+      vertical-align: top;
+
+      &:last-child {
+        margin-bottom: 17px;
+      }
+    }
+
+    .form-description {
+      padding-left: 24px;
+      color: $grayColor;
+      font-size: 12px;
+      line-height: 17px;
+      margin: 8px 0;
+      max-width: 450px;
+
+      .cursor-link {
+        vertical-align: initial;
+      }
+    }
+  }
+}

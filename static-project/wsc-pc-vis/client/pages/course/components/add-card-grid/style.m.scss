@@ -1,0 +1,42 @@
+@import 'sass/vars/_colors';
+
+.card {
+  box-sizing: border-box;
+  padding: 16px 0;
+  height: 148px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  background-color: $theme-primary-8;
+  margin-right: 16px;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  :global {
+    .card-title {
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-content {
+      padding-top: 8px;
+      color: #7d7e80;
+      font-size: 12px;
+    }
+
+    .zenticon-help-circle {
+      font-size: 14px;
+      color: $theme-stroke-3;
+    }
+  }
+}
+
+.card-grid {
+  display: flex;
+}

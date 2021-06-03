@@ -1,0 +1,139 @@
+@import 'shared/sass/mixins/ellipsis';
+
+.student-container {
+  border-bottom: 16px solid #f7f8fa;
+  padding: 20px 16px;
+
+  &__header {
+    display: flex;
+    margin-bottom: 24px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 28px;
+      display: inline-block;
+    }
+
+    &-right {
+      display: inline-block;
+      flex: 1;
+      text-align: right;
+    }
+
+    .export-link {
+      margin-left: 16px;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .zent-tabs {
+    margin-bottom: 24px;
+  }
+
+  .zent-block-header__title {
+
+    h3 {
+      font-weight: bold;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &__content {
+
+    &-chart {
+      display: inline-block;
+      width: 40%;
+      padding-right: 24px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    &-table {
+      display: inline-block;
+      width: 60%;
+      vertical-align: top;
+    }
+
+    .piechart-title {
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      display: inline-block;
+      transform: translateX(-50%);
+      font-size: 12px;
+      text-align: center;
+      width: 100px;
+      height: 40px;
+      line-height: 20px;
+      color: #7d7e80;
+
+      &__sum {
+        font-size: 14px;
+        color: #323233;
+      }
+    }
+  }
+
+  .zent-grid-table .zent-grid-th:not(:last-child) {
+    border-right: 1px solid #ebedf0;
+  }
+
+  .zent-grid-table .zent-grid-th:last-child {
+    .compare-value__item:last-child {
+      text-align: right;
+    }
+  }
+
+  .zent-grid-table .zent-grid-td:not(:last-child) {
+    border-right: 1px solid #ebedf0;
+  }
+
+  .zent-grid-table .zent-grid-td:last-child {
+    .compare-value__item:last-child {
+      text-align: right;
+    }
+  }
+
+  .compare-value {
+    display: flex;
+
+    &__item {
+      padding-left: 6px;
+      flex: 1;
+    }
+  }
+
+  .rank-title-container {
+    position: relative;
+    text-align: left;
+
+    .change-trend {
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      margin-right: 6px;
+    }
+  }
+
+  .title-container {
+    @include text-ellipsis(2);
+    padding-right: 20px;
+  }
+
+  .chart-title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+
+    &__desc {
+      font-size: 12px;
+      color: #999;
+      margin-left: 8px;
+    }
+  }
+}

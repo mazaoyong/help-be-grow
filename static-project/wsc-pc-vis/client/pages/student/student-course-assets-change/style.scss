@@ -1,0 +1,29 @@
+.student-course-assets-change {
+  background-color: #f7f8fa;
+
+  .data-block {
+    padding: 16px;
+    background-color: #fff;
+    margin-bottom: 16px;
+
+    &-title {
+      &__main {
+        font-size: 16px;
+        color: #323233;
+        font-weight: bold;
+        line-height: 28px;
+        margin-right: 16px;
+      }
+
+      &__sub {
+        font-size: 14px;
+        color: #88898B;
+        line-height: 20px;
+      }
+    }
+
+    &-info {
+      margin-top: 12px;
+    }
+  }
+}

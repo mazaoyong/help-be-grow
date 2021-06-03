@@ -1,0 +1,90 @@
+.step-wrapper {
+  margin-left: 6px;
+}
+
+.show-steps {
+  .step-wrapper {
+    margin-left: 0;
+
+    .zent-form-control.base-setting__category-field > .zent-form-label.zent-form-label-required {
+      flex-basis: 84px;
+    }
+  }
+
+  > .zent-form-control > .zent-form-label {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+
+    .step-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #155bd4;
+      color: #fff;
+      line-height: 24px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .title {
+      display: inline-flex;
+      margin-left: 16px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .body {
+    margin-left: 40px;
+    display: flex;
+    position: relative;
+  }
+
+  .step-wrapper:not(:last-child) {
+    .body {
+      margin-bottom: 20px;
+
+      .connector {
+        width: 2px;
+        background: #f2f3f5;
+        position: absolute;
+        left: -29px;
+        top: 8px;
+        height: 105%;
+      }
+    }
+  }
+}
+
+.zent-form-control .zent-form-control-content {
+  .operation .zenticon {
+    margin-right: 4px;
+  }
+
+  .file-uploader__file-flex .action {
+    padding-left: 16px;
+  }
+}
+
+.file-template {
+  .desc {
+    font-size: 12px;
+    color: #969799;
+    line-height: 20px;
+    margin: 10px 0;
+    display: block;
+  }
+
+  .operation {
+    cursor: pointer;
+    color: #155bd4;
+  }
+}
+
+.has-error .ebiz-select-trigger.wrapper {
+  border-color: var(--theme-error-2, #d40000);
+}

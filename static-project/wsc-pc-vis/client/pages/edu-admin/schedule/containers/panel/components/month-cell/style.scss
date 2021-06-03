@@ -1,0 +1,79 @@
+@import 'shared/sass/mixins/_ellipsis';
+
+.schedule__month__cell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  word-break: keep-all;
+  line-height: 16px;
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    padding: 0 3px 0 10px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px 0 #DCDEE0;
+    color: #000;
+    cursor: default;
+
+    p {
+      font-size: 14px;
+      @include ellipsis;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: #3dc16b;
+      content: '';
+    }
+
+    &.conflict {
+      color: #000;
+
+      &::before {
+        background-color: #ff4444;
+      }
+    }
+
+    &.deprecated {
+      color: #000;
+
+      &::before {
+        background-color: #C8C9CC;
+      }
+    }
+  }
+
+  .panel__schedule__detail {
+    height: auto;
+    text-align: left;
+  }
+
+  .showmore {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    line-height: 24px;
+    color: #999999;
+    cursor: pointer;
+  }
+}
+
+.full-calendar__cell__header {
+  padding-bottom: 0;
+  line-height: 20px;
+}
+
+.full-calendar__cell {
+  height: auto;
+}

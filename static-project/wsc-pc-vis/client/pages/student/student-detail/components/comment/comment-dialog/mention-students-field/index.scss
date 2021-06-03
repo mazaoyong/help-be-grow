@@ -1,0 +1,38 @@
+.mentioned-students-wrap {
+  .zent-form__controls {
+    max-width: 80%;
+  }
+  .zent-form__control-label {
+    margin-left: 12px;
+  }
+}
+
+.ebiz-select-trigger__input {
+  align-items: center;
+}
+
+.select-disabled-link {
+  cursor: default;
+  color: #b2b2b2;
+  &:hover {
+    color: #b2b2b2;
+  }
+}
+
+.student-dialog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__selected {
+    position: relative;
+    top: -52px;
+    font-size: 12px;
+    color: #969799;
+    margin-right: 10px;
+  }
+
+  &__tip-warning {
+    color: rgb(255, 0, 0);
+  }
+}

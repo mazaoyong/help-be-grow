@@ -1,0 +1,14 @@
+.panel__condition {
+  // min-width: 815px;
+
+  .panel__type__tabs {
+    position: relative;
+    .panel__toolbar__link {
+      position: absolute;
+      right: 0px;
+      top: 14px;
+      color: #155bd4;
+      cursor: pointer;
+    }
+  }
+}

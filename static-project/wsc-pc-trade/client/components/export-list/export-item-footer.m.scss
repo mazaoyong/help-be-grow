@@ -1,0 +1,21 @@
+@import 'vars/colors';
+
+.footerWrap {
+  padding: 20px 24px;
+  background-color: #fff;
+}
+
+.error {
+  color: $redColor;
+}
+
+.refreshButton {
+  margin-left: 8px;
+  color: $linkColor;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footerContent {
+  display: inline-block;
+}

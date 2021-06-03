@@ -1,0 +1,16 @@
+@import 'common/ui-link';
+@import './content-form';
+@import 'common/app-design';
+@import 'classes/new-title';
+
+.inline {
+  display: inline-block;
+}
+
+.columb-from-desc {
+  color: #999;
+
+  p:last-child {
+    margin-left: 25px;
+  }
+}

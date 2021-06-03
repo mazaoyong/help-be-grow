@@ -1,0 +1,43 @@
+.import {
+  &__container {
+    &__list {
+      margin-top: 16px;
+
+      .success {
+        color: #2DA641;
+      }
+
+      .fail {
+        color: #D40000;
+      }
+
+      .operation {
+        color: #155BD4;
+        cursor: pointer;
+      }
+
+      .import-record-progress {
+        margin-right: 7px;
+        width: 80px;
+
+        .zent-progress-info {
+          color: #323233;
+        }
+      }
+    }
+
+    .errmsg {
+      color: #D40000;
+      font-size: 14px;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+
+    .zent-grid-td {
+      height: 50px;
+      padding: 0 10px;
+    }
+  }
+}

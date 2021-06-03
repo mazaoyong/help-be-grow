@@ -1,0 +1,74 @@
+.live-manage {
+  &__container {
+    background-color: transparent;
+  }
+
+  // 抬头
+  &__header {
+    padding: 1em;
+    padding-bottom: 0;
+    background-color: #fff;
+
+    h1 {
+      line-height: 1.5em;
+    }
+  }
+
+  // content
+  &__tabsContainer {
+    padding: 0;
+
+    // tabs-navs
+    .zent-tabs-nav {
+      padding-top: 1em;
+      margin-bottom: 1em;
+      background-color: #fff;
+      box-sizing: content-box;
+
+      .zent-tabs-nav-content {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .zent-tabs-tab__actived {
+        border-bottom: 0 !important;
+      }
+    }
+
+    // tabs panel
+    .zent-tabs-panel-wrapper {
+      padding: 1em;
+      margin-top: 0;
+      font-size: 16px; // 覆盖字体准线
+      background-color: #fff;
+    }
+  }
+}
+
+.zent-form-control.has-error .zent-input {
+  // error不应该改变input的颜色
+  color: #323233 !important;
+}
+
+.zent-form-description {
+  margin-top: 8px !important;
+}
+
+h1 {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.app-inner {
+  padding: 0 !important;
+  font-size: 16px; // 字体准线
+  background-color: transparent;
+}
+
+.zent-btn-primary-outline.zent-btn-border-transparent.zent-btn:active {
+  background-color: transparent;
+}
+
+.zent-btn-primary-outline.zent-btn-border-transparent.zent-btn:focus {
+  color: #155bd4;
+}

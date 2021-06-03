@@ -1,0 +1,18 @@
+@import 'common/app-design';
+@import 'classes/new-title';
+@import 'vars/colors';
+
+.page-container {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.tuition-offset-edit {
+  display: flex;
+  min-height: 692px;
+  // height: calc(100vh - 176px);
+
+  .zent-form-error {
+    color: $redColor;
+  }
+}

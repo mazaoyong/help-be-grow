@@ -1,0 +1,47 @@
+.custom-delivery-mode {
+  .zenticon-help-circle {
+    position: relative;
+    top: 3px;
+    left: 5px;
+    color: #999;
+    vertical-align: top;
+  }
+
+  .template {
+    height: 32px;
+    display: flex;
+    align-items: center;
+
+    .area {
+      margin-right: 42px;
+    }
+  }
+
+  .calc {
+    display: flex;
+    margin: 22px 0 0 -80px;
+
+    .zent-radio-wrap {
+      display: flex;
+    }
+
+    .distance-radio {
+      margin-top: 16px;
+    }
+
+    .help-desc {
+      font-size: 12px;
+      margin-left: 24px;
+    }
+  }
+
+  .calc-label {
+    width: 80px;
+    line-height: 20px;
+  }
+
+  .zent-radio-wrap {
+    display: inline-flex;
+    align-items: center;
+  }
+}

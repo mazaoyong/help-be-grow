@@ -1,0 +1,60 @@
+{
+  "name": "@wsc-h5-assets/pay-base",
+  "version": "0.2.2-beta.1",
+  "displayName": "中文名",
+  "extensionId": "YgTDy7PtLnwwKd3Z",
+  "pathInBundle": "pay-base",
+  "widget": {
+    "default": "Main"
+  },
+  "data": {
+    "provide": {
+      "outBizNo": [
+        "r",
+        "w"
+      ],
+      "payAmount": [
+        "r",
+        "w"
+      ],
+      "returnUrl": [
+        "r",
+        "w"
+      ],
+      "height": [
+        "r",
+        "w"
+      ],
+      "width": [
+        "r",
+        "w"
+      ],
+      "kdtId": [
+        "r",
+        "w"
+      ],
+      "result": [
+        "r",
+        "w"
+      ],
+      "buttonText": [
+        "r",
+        "w"
+      ],
+      "buttonStyle": [
+        "r",
+        "w"
+      ]
+    }
+  },
+  "process": {
+    "define": [
+      "navigateTo",
+      "logger"
+    ]
+  },
+  "bundle": "https://b.yzcdn.cn/wsc-h5-assets/ranta-extension_9c9c5e1d.js",
+  "sandbox": {
+    "level": "Unsafe"
+  }
+}

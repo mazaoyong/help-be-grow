@@ -1,0 +1,189 @@
+@import 'fns/image-cdn';
+@import 'mixins/retina';
+@import 'vars/colors';
+@import 'common/ellipsis';
+@import 'common/filter';
+@import 'common/ui-link';
+@import 'classes/serial-input';
+
+a,div,span{
+  font-size: 14px;
+}
+a{
+  color: #155bd4;
+}
+
+.zent-table .tfoot__batchcomponents{
+  padding-left: 0;
+}
+
+.page-course-group-list{
+  &__header{
+    margin-bottom: 20px;
+    position: relative;
+  }
+  &__search{
+    float: right;
+    margin-bottom: 0;
+    .zent-input{
+      width: 100px;
+      transition: width .25s linear;
+      &:focus{
+        width: 210px;
+      }
+    }
+  }
+  &__desc{
+    font-size: 12px;
+    color: #969799;
+  }
+  .course-group-divider{
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    background: #e5e5e5;
+    margin:0 5px;
+    vertical-align: middle;
+  }
+
+  &__course{
+    &__header{
+      margin-bottom: 10px;
+      &__left{
+        float: left;
+      }
+      &__right{
+        float: right;
+        .zent-select{
+          width: 86px;
+        }
+        .search-input{
+          display: inline-block;
+          margin-bottom: 0;
+          width: 150px;
+        }
+      }
+    }
+    &__cont{
+      .zent-table .tbody{
+        max-height: 450px;
+        overflow: auto;
+      }
+      .zent-table .cell:last-child{
+        justify-content: flex-start;
+      }
+      .zent-table .cell:last-child .cell__child-container {
+        text-align: left;
+      }
+    }
+    &__footer{
+      &__text{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 12px;
+        color: #4A4A4A;
+      }
+      &__btn{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .zent-grid-tfoot-page {
+    margin-top: 10px;
+  }
+}
+
+.grad-with-img {
+  .img-box {
+    float: left;
+    position: relative;
+
+    &.type-icon::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 20px;
+      height: 20px;
+      background-size: 20px auto;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .content-box {
+    margin-left: 70px;
+
+    .price-wrap {
+      line-height: 18px;
+
+      .price {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      .error-icon {
+        vertical-align: middle;
+      }
+    }
+
+    .name {
+      word-break: break-all;
+      width: 100%;
+    }
+
+    p .name.ellipsis-2 {
+      min-height: 28px;
+      line-height: 14px;
+    }
+
+    .price {
+      color: #f60;
+    }
+
+    .free {
+      display: inline-block;
+      height: 20px;
+      box-sizing: border-box;
+      line-height: 18px;
+      vertical-align: middle;
+      border: 1px solid #4b0;
+      color: #4b0;
+      border-radius: 2px;
+      padding: 0 5px;
+    }
+  }
+}
+
+.grad-with-img.grad-img-16-9 {
+  .content-box {
+    margin-left: 118px;
+
+    .price-wrap {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+
+      .price {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.ui-link--split{
+  color: #3388ff;
+}
+.dialog-course-table{
+  width: 712px;
+}
+
+.new-promotion{
+  .zent-tabs-nav-ink-bar{
+    width: 60px !important;
+    left: 110px !important;
+  }
+}

@@ -1,0 +1,25 @@
+.course-summary__detail {
+  .overview {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .tab__container {
+    padding: 16px;
+    background-color: #fff;
+  }
+
+  // 上课记录
+  &-records {
+  }
+  // 手动扣减
+  &-manual-consume {
+  }
+
+  .card-item-container .zent-card-body {
+    padding: 16px;
+    padding-bottom: 0;
+  }
+}

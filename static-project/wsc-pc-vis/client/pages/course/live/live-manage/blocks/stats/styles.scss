@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+@import "vars/colors.scss";
+
+.live-manage__stats {
+  @include headerStyles;
+
+  .header {
+    display: inline-flex;
+
+    .desc {
+      margin-left: 16px;
+      font-size: 14px;
+      line-height: 30px;
+      color: $darkGrayColor;
+
+      .tooltip {
+        font-size: 16px;
+        color: $theme-stroke-5;
+      }
+    }
+  }
+
+  .body {
+    margin: 18px auto 0;
+    position: relative;
+
+    .text { 
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    .zent-datetime-picker.date-range-picker {
+      margin: 6px auto 24px;
+    }
+  }
+
+  .live-summary .body {
+    margin-bottom: 32px;
+  }
+
+  min-height: 638px;
+  padding: 1em 1em 0;
+}
+
+.live-manage__user-detail {
+  border-top: 16px solid $theme-stroke-11;
+  padding: 16px;
+
+  .body {
+    margin-top: 24px;
+
+    .easy-filter__panel .zent-form-label {
+      flex-basis: 90px;
+    }
+
+    .zent-form-control.easy-filter__zent-control {
+      margin-bottom: 16px;
+    }
+  }
+}

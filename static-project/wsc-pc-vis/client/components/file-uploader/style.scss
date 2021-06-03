@@ -1,0 +1,29 @@
+.file-uploader {
+  &__file {
+    padding-top: 10px;
+
+    span {
+      padding-left: 5px;
+    }
+
+    &-flex {
+      display: flex;
+
+      span.suffix {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+    margin: 10px 0;
+  }
+
+  .action {
+    color: #155BD4;
+    cursor: pointer;
+  }
+}

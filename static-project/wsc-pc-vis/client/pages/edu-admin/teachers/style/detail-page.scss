@@ -1,0 +1,15 @@
+.teacher-detail-wrap {
+  display: flex;
+  overflow-x: auto;
+
+  .teacher-info-panel {
+    width: 250px;
+    flex: none;
+  }
+
+  .teacher-detail-list {
+    flex: auto;
+    min-width: 680px;
+    overflow: auto;
+  }
+}

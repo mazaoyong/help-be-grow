@@ -1,0 +1,46 @@
+@import 'common/ui-link';
+
+.zent-tabs {
+  margin-bottom: 16px !important;
+}
+
+.panel__table {
+  min-height: 300px;
+  background-color: #ffffff;
+
+  .zenticon {
+    color: #999999;
+  }
+
+  .zent-grid-fixed-right {
+    tr {
+      text-align: right;
+    }
+  }
+
+  .zent-loading-icon-text {
+    font-weight: 500;
+  }
+
+  .schedule_list__educoursename {
+    display: flex;
+
+    .schedule_trial_tag {
+      margin-right: 2px;
+    }
+  }
+}
+
+.panel {
+  .zent-grid-batch {
+    &.zent-grid-batch__header {
+      display: none;
+    }
+
+    .span-select-all {
+      margin-left: 9px;
+      margin-right: 16px;
+    }
+  }
+
+}

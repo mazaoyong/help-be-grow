@@ -1,0 +1,28 @@
+.rc-design-select-templates {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  margin: 0 10px 15px 0;
+  padding-top: 5px;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+
+  &.active {
+    border-color: #155bd4;
+  }
+
+  .rc-design-select-templates__image-block {
+    width: 100px;
+    height: 64px;
+  }
+
+  .rc-design-select-templates__title {
+    margin-top: 10px;
+  }
+}

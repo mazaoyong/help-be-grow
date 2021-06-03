@@ -1,0 +1,21 @@
+.student-dialog-header-name {
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.student-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__button-group {
+    font-size: 12px;
+    color: #333333;
+    margin-right: 10px;
+  }
+
+  &__tip-warning {
+    color: rgb(255, 0, 0);
+  }
+}

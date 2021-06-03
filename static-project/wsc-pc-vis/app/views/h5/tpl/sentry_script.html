@@ -1,0 +1,39 @@
+{% if nodeEnv === 'prod' and sentryKey %}
+<script src="//b.yzcdn.cn/libs/ravenjs/raven-3.17.0.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  try {
+    var _global = window._global || {};
+    var ravenOptions = {
+      ignoreErrors: ['canvas.contentDocument'],
+      whitelistUrls: [
+        // 只监听内部错误
+        /\/\/b\.yzcdn\.cn/,
+        /\/\/su\.yzcdn\.cn/
+      ],
+      ignoreUrls: [
+        // Chrome extensions
+        /extensions\//i,
+        /^chrome:\/\//i,
+        // ignore js
+        /vendor\/ueditor\//i,
+        /libs\/ravenjs\//i,
+        /qbox\.me\/vds\.js/i,
+        /assets\.giocdn\.com\//i,
+        /client\-log\-sdk\/client/i
+      ]
+    };
+    Raven.config('{{ sentryKey }}', ravenOptions).install();
+    Raven.setUserContext({
+      kdtId: _global.kdtId,
+      shopName: _global.shopName,
+      userId: _global.userId,
+      mobile: _global.mobile
+    });
+    Raven.setTagsContext({
+      uuid: _global.yzLogUuid,
+    });
+  } catch (e) {
+    console.log(e);
+  }
+</script>
+{% endif %}

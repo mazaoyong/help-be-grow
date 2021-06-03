@@ -1,0 +1,40 @@
+module.exports = [
+  [
+    'GET',
+    '/v4/vis/pct/goods-selector/goodslist.json',
+    'common.GoodsSelectorController',
+    'getGoodsListJson',
+  ],
+  [
+    'GET',
+    '/v4/vis/pct/goods-selector/grouplist.json',
+    'common.GoodsSelectorController',
+    'getGroupListJson',
+  ],
+
+  // 新版通用性商品选择组件
+  [
+    'GET',
+    '/v4/vis/goods-selector/goodslist.json',
+    'common.GoodsSelectorController',
+    'getNewGoodsListJson',
+  ],
+  [
+    'GET',
+    '/v4/vis/goods-selector/grouplist.json',
+    'common.GoodsSelectorController',
+    'getNewGroupListJson',
+  ],
+  [
+    'GET',
+    '/v4/vis/goods-selector/goodInfo.json',
+    'common.GoodsSelectorController',
+    'getGoodInfoJson',
+  ],
+  [
+    'GET',
+    '/v4/vis/goods-selector/goodSku.json',
+    'common.GoodsSelectorController',
+    'getGoodSkuJson',
+  ],
+];

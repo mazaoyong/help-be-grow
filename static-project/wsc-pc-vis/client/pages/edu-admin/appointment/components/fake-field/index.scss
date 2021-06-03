@@ -1,0 +1,22 @@
+.fake-field-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.1;
+
+  .fake-field-label {
+    width: 112px;
+    color: #323233;
+    text-align: right;
+  }
+
+  .fake-field-component {
+    flex: 1;
+    margin-left: 10px;
+    color: #323233;
+  }
+}

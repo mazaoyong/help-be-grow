@@ -1,0 +1,48 @@
+{
+  "name": "@wsc-h5-vis/pay-ump-reward",
+  "version": "1.0.0",
+  "displayName": "中文名",
+  "description": "描述信息",
+  "extensionId": "@wsc-h5-vis/pay-ump-reward",
+  "pathInBundle": "pay-ump-reward",
+  "widget": {
+    "default": "Main",
+    "provide": [],
+    "consume": []
+  },
+  "component": {
+    "provide": [],
+    "consume": []
+  },
+  "lambda": {
+    "provide": [],
+    "consume": []
+  },
+  "data": {
+    "provide": {},
+    "consume": {
+      "rewardInfo": [
+        "r"
+      ],
+      "pointsName": [
+        "r"
+      ]
+    }
+  },
+  "event": {
+    "emit": [],
+    "listen": []
+  },
+  "process": {
+    "invoke": [
+      "navigateGo",
+      "logAction"
+    ],
+    "define": []
+  },
+  "sandbox": {
+    "id": "",
+    "level": "Unsafe"
+  },
+  "bundle": "https://b.yzcdn.cn/wsc-h5-vis/ranta-extension_a1d2ec4f.js"
+}

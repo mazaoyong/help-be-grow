@@ -1,0 +1,43 @@
+.workbook-list {
+  @import 'common/empty-list';
+  @import 'common/ellipsis';
+
+  padding: 16px;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    flex: 1;
+  }
+
+  .create-button {
+    margin: 16px auto;
+  }
+
+  .zent-date-range-picker > .zent-datetime-picker {
+    &.zent-daterange-picker {
+      width: 360px;
+
+      .zent-datetime-picker.zent-date-picker, .picker-input {
+        width: 163px !important;
+      }
+    }
+  }
+
+  .zent-form-control-content .zent-popover-wrapper.zent-select {
+    width: 163px !important;
+  }
+
+  .campus-filter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

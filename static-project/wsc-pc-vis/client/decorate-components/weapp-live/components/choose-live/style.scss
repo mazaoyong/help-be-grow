@@ -1,0 +1,25 @@
+.decorate-weapp-live-choose-live {
+  &__header {
+    margin-bottom: 12px;
+  }
+
+  &__info {
+    margin-left: 16px;
+  }
+
+  &__img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+
+  &__footer {
+    margin-top: 16px;
+    text-align: right;
+  }
+
+  a {
+    color: #155bd4;
+  }
+}

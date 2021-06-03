@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@": ["."],
+      "common": ["common"],
+      "pages-api": ["pages-api"],
+      "components": ["components"],
+      "store": ["store"],
+      "styles": ["styles"],
+      "utils": ["utils"],
+      "fns": ["fns"]
+    }
+  }
+}

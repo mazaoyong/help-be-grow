@@ -1,0 +1,29 @@
+@import 'mixins/ellipsis';
+@import 'common/cursor-link';
+
+.base-setting__category-field {
+  margin-right: 8px;
+
+  .category-field {
+    &__inner {
+      display: flex;
+      padding: 0;
+      margin-bottom: 0;
+
+      .category-name {
+        @include ellipsis;
+
+        max-width: 140px;
+        margin-right: 8px;
+      }
+
+      .cursor-link {
+        min-width: 30px;
+      }
+    }
+  }
+
+  .zent-form-error.zent-font-small {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,25 @@
+.clue-reacords__list {
+  margin-top: 8px;
+
+  &__item {
+    margin-top: 8px;
+    background-color: #f7f8fa;
+
+    &__wrap {
+      margin-top: 8px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 16px;
+  }
+
+  &__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    color: #999;
+  }
+}

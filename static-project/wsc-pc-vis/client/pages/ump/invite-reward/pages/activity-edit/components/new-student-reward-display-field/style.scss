@@ -1,0 +1,27 @@
+.new-student-reward-display-field {
+  .radio-item {
+    margin-bottom: 16px;
+
+    &.has-error {
+      margin-bottom: 26px;
+    }
+  }
+  .zent-radio-wrap {
+    line-height: 28px;
+  }
+  .price-and-title {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin: 8px 0 0px 24px;
+    height: 32px;
+  }
+  .only-title {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+  }
+  .input-container {
+    align-self: flex-start;
+  }
+}

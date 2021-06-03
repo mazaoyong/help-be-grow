@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/左侧菜单</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/左侧菜单" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="2" y="2" width="2" height="16"></rect>
+        <g id="Group" transform="translate(10.500000, 10.000000) rotate(-90.000000) translate(-10.500000, -10.000000) translate(5.500000, 3.500000)" fill="#7D7E80" fill-rule="nonzero">
+            <path d="M6,4.41229233 L6,13 L4,13 L4,4.41613182 L1.70681083,6.70740261 L0.293189172,5.29259739 L5.00394107,0.585786314 L9.70740286,5.29318942 L8.29259714,6.70681058 L6,4.41229233 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/编辑/一大两小</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/一大两小" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M19,2 L19,18 L1,18 L1,2 L19,2 Z M17,14 L3,14 L3,16 L17,16 L17,14 Z M17,11 L3,11 L3,13 L17,13 L17,11 Z M17,4 L3,4 L3,10 L17,10 L17,4 Z" id="Combined-Shape" fill="#7D7E80"></path>
+        <rect id="Rectangle" fill="#7D7E80" x="15" y="11.5" width="1" height="1" rx="0.5"></rect>
+        <rect id="Rectangle" fill="#7D7E80" x="15" y="8" width="1" height="1" rx="0.5"></rect>
+        <rect id="Rectangle" fill="#7D7E80" x="15" y="14.5" width="1" height="1" rx="0.5"></rect>
+    </g>
+</svg>

@@ -1,0 +1,92 @@
+@import 'vars/colors';
+@import 'common/app-design';
+
+.content-form {
+  padding: 0 0 40px;
+
+  & > textarea {
+    display: none;
+  }
+
+  .zent-form__control-label {
+    width: 90px;
+  }
+
+  .split-title {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 40px 0 24px;
+
+    .help-icon {
+      color: #bbb;
+      margin-left: 5px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 12px;
+      background: $linkColor;
+      position: absolute;
+      top: 4px;
+      left: -10px;
+    }
+  }
+
+  & > .desc {
+    margin-bottom: 20px;
+    margin-left: 65px;
+  }
+
+  .size-110 {
+    width: 110px;
+  }
+
+  .publish-type-group {
+    position: relative;
+
+    .zent-radio-wrap {
+      line-height: 30px;
+      display: block;
+    }
+
+    .zent-datetime-picker {
+      position: absolute;
+      left: 190px;
+      top: 50%;
+      margin-top: -15px;
+    }
+  }
+
+  .checkbox-desc {
+    margin-left: 18px;
+  }
+}
+
+.field-size-320 {
+  .zent-input {
+    width: 320px;
+  }
+}
+
+.columb-from-desc {
+  color: #999;
+
+  p:last-child {
+    margin-left: 25px;
+  }
+}
+
+.inline {
+  display: inline-block;
+}
+
+.summary-textarea {
+  textarea {
+    width: 320px;
+    height: 60px;
+  }
+}

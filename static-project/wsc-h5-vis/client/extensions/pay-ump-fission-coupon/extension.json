@@ -1,0 +1,47 @@
+{
+  "name": "@wsc-h5-vis/pay-ump-fission-coupon",
+  "version": "1.0.0",
+  "displayName": "中文名",
+  "description": "描述信息",
+  "extensionId": "@wsc-h5-vis/pay-ump-fission-coupon",
+  "pathInBundle": "pay-ump-fission-coupon",
+  "widget": {
+    "default": "Main",
+    "provide": [],
+    "consume": []
+  },
+  "component": {
+    "provide": [],
+    "consume": []
+  },
+  "lambda": {
+    "provide": [],
+    "consume": []
+  },
+  "data": {
+    "provide": {},
+    "consume": {
+      "orderCouponInfo": [
+        "r"
+      ],
+      "orderNo": [
+        "r"
+      ]
+    }
+  },
+  "event": {
+    "emit": [],
+    "listen": []
+  },
+  "process": {
+    "invoke": [
+      "navigateGo"
+    ],
+    "define": []
+  },
+  "sandbox": {
+    "id": "",
+    "level": "Unsafe"
+  },
+  "bundle": "https://b.yzcdn.cn/wsc-h5-vis/ranta-extension_a1d2ec4f.js"
+}

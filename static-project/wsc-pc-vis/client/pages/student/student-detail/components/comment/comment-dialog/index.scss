@@ -1,0 +1,56 @@
+.comment-form-wrap {
+  max-width: 560px;
+  .zent-form__control-label {
+    width: auto;
+  }
+
+  .zent-form__control-group {
+    margin-bottom: 10px !important;
+  }
+
+  .zent-radio-wrap {
+    line-height: 30px;
+  }
+
+  .comment-form-link {
+    color: #155bd4;
+    cursor: pointer;
+  }
+
+  .comment-form-warnning {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #EDF4FF;
+    border: 1px solid #94B4EB;
+    border-radius: 4px;
+    i {
+      color: #155bd4;
+      margin: 0 10px 0 15px;
+    }
+  }
+  .zent-form {
+    margin-bottom: 0;
+  }
+
+  .comment-textarea {
+    .zent-form__controls {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .zent-input-wrapper {
+      .zent-textarea {
+        height: 228px;
+        min-height: 50px;
+      }
+    }
+  }
+
+  .comment-form-footer {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+  }
+}

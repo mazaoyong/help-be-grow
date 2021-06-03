@@ -1,0 +1,98 @@
+@mixin fieldStyle($color) {
+    flex-basis: 20px;
+    flex-shrink: 0;
+    position: relative;
+    &-circle {
+      position: absolute;
+      left: calc(50% - 2.5px);
+      top: calc(50% - 2.5px);
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      background-color: $color;
+    }
+}
+
+.resource-field {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  line-height: 24px;
+  height: 24px;
+
+  &:hover {
+    background-color: #F2f3f5;
+  }
+
+  &-conflict {
+    @include fieldStyle(#ff4444)
+  }
+
+  &-enabled {
+    @include fieldStyle(#3dc16b)
+  }
+
+  &-deprecated {
+    @include fieldStyle(#C8C9CC)
+  }
+
+  &-course {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .deprecated {
+    color: #969799;
+  }
+
+  &-datetime {
+    flex-basis: 40px;
+    flex-shrink: 0;
+    color: #C8C9CC;
+  }
+
+}
+
+.resource-field-wrapper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 24px;
+
+  .panel__schedule__detail {
+    height: auto;
+  }
+}
+
+.schedule__view__pop {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  padding: 0 5px;
+  z-index: 9999;
+  height: 36px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  line-height: 36px;
+
+  &.before {
+    width: 200px;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: -4px;
+    left: 17px;
+    z-index: 10;
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    box-shadow: -2 2px 8px rgba(0, 0, 0, 0.2);
+    content: '';
+    transform: translateX(-50%) rotate(45deg);
+  }
+}

@@ -1,0 +1,78 @@
+@import 'classes/cursor-link';
+@import 'vars/h1';
+
+.question-bank__list {
+  position: relative;
+  min-height: 664px;
+  font-size: 16px; // 设置字体准线
+
+  h1 {
+    @include pageTitle();
+  }
+
+  .easy-list__inline-wrapper {
+    margin-top: 1em;
+  }
+
+  &-content {
+    padding-left: 256px;
+  }
+
+  // 分类列表有个最大高度，需要设置为absolute来定位
+  &-classify-container {
+    position: absolute;
+    top: 92px;
+    bottom: 24px;
+    left: 0;
+    width: 240px;
+    overflow-y: scroll;
+    border-right: 1px solid #ebedf0;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  &-batch-components {
+    display: flex;
+
+    .batch-components__description {
+      margin-right: 1em;
+      font-size: 16px;
+
+      .operations {
+        line-height: 2em;
+
+        &-item {
+          margin: 9px 0;
+          font-size: 14px;
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .classify-list {
+    .switcher {
+      left: -.85em;
+    }
+
+    .treeNode__right {
+      width: 1.5em !important;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .widthRefer {
+      width: 185px;
+    }
+  }
+}
+
+.pop-ellipsis-popover .zent-popover-content {
+  max-height: 225px;
+  overflow-y: scroll;
+}

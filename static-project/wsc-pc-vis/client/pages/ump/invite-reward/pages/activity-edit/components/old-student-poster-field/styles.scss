@@ -1,0 +1,161 @@
+@import 'vars/colors';
+
+.default-background {
+  .zent-popover-wrapper.zent-pop-wrapper {
+    vertical-align: middle;
+  }
+
+  &-example {
+    color: $blueColor;
+    cursor: pointer;
+
+    &.ml-8 {
+      margin-left: 8px;
+    }
+  }
+}
+
+.customised-background {
+  margin-top: 14px;
+
+  .upload-cover-wrapper .upload-text-trigger span::after {
+    color: $blueColor;
+    content: '修改';
+    line-height: 20px;
+    font-size: 14px;
+    margin-left: 0;
+    cursor: pointer;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+
+    .upload-cover-wrapper {
+      .img-container {
+        .cover-img {
+          pointer-events: all;
+          cursor: pointer;
+        }
+
+        .hover-close {
+          display: none;
+        }
+      }
+
+      .upload-text-trigger span::after {
+        color: $theme-stroke-5;
+      }
+    }
+
+    .default-background-example {
+      pointer-events: all;
+    }
+
+    .operation-container,
+    .operation {
+      pointer-events: all;
+      cursor: pointer;
+    }
+  }
+
+  .desc {
+    color: #a4a4a4;
+    font-size: 14px;
+    margin-top: 14px;
+
+    .pop {
+      cursor: pointer;
+      color: $blueColor;
+    }
+  }
+
+  .upload-cover-wrapper {
+    .rc-upload-trigger {
+      width: 82px;
+      height: 122px;
+      border-radius: 2px;
+      border: 1px dashed #dcdee0;
+      background: #fafafa;
+      line-height: 110px;
+      color: #d8d8d8;
+    }
+
+    .img-container {
+      width: 82px;
+      height: 122px;
+    }
+
+    .cover-img {
+      width: 82px;
+      height: 122px;
+      cursor: pointer;
+      overflow: hidden;
+
+      img {
+        max-width: 82px;
+        max-height: 122px;
+      }
+    }
+
+    .upload-text-trigger {
+      height: 22px;
+      margin-left: 6px;
+    }
+  }
+
+  .operation-container {
+    position: relative;
+    align-self: flex-end;
+    height: 22px;
+    line-height: 20px;
+    bottom: -5px;
+  }
+
+  .operation {
+    font-size: 14px;
+    color: $blueColor;
+    align-self: flex-end;
+    line-height: 20px;
+    margin-left: 24px;
+    cursor: pointer;
+    padding-right: 6px;
+    border-right: 1px solid #d8d8d8;
+  }
+}
+
+.zent-popover-content .zent-pop-inner .example-pop {
+  display: flex;
+
+  .groups {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &:not(:first-child) {
+      margin-left: 21px;
+    }
+
+    .desc {
+      margin-top: 9px;
+      font-size: 14px;
+      color: #3b3b3b;
+    }
+  }
+}
+
+.zent-dialog-r-body .preview-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 67px;
+
+  .hover {
+    position: absolute;
+    width: 276px;
+    height: 81px;
+    margin-top: 312px;
+    z-index: 1;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/全局/编辑</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/全局/编辑" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(9.424621, 9.424621) rotate(-315.000000) translate(-9.424621, -9.424621) translate(6.424621, 1.924621)" fill="#7D7E80" fill-rule="nonzero">
+            <path d="M4,11.1573907 L4,5 L2,5 L2,11.1568369 L3.00074846,12.1630976 L4,11.1573907 Z M-7.10542736e-14,3 L6,3 L6,11.9820482 L3.00141971,15 L9.9475983e-14,11.9820482 L-7.10542736e-14,3 Z" id="Rectangle"></path>
+            <rect id="Rectangle-Copy" x="0" y="0" width="6" height="2"></rect>
+        </g>
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="2" y="16" width="16" height="2"></rect>
+    </g>
+</svg>

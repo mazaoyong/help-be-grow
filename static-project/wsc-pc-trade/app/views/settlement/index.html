@@ -1,0 +1,21 @@
+{% extends '../common/base.html' %}
+
+{% block page_title %} 当日结算 {% endblock %}
+
+{% block page_style %}
+{{ loadCss('version_css.settlement') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+    <div class="zent-breadcrumb">
+        <span>当日结算</span>
+    </div>
+{% endblock %}
+
+{% block app_content %}
+    <div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+{{ loadJs('version_js.settlement') | safe }}
+{% endblock %}

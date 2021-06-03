@@ -1,0 +1,38 @@
+@mixin headerStyles {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+
+    .partial {
+      display: flex;
+
+      .description {
+        font-size: .875em;
+        color: #646566;
+      }
+    }
+  }
+
+  .partial + .partial .zent-btn {
+    padding-right: 0;
+  }
+}
+
+@mixin splitContentBox {
+  background-color: #f7f8fa !important;
+
+  section.content-box {
+    padding: 1em;
+    background-color: #fff;
+
+    section {
+      margin-top: 1em;
+      font-size: 14px;
+    }
+  }
+
+  section.content-box + section.content-box:not(.no-gap) {
+    margin-top: 1em;
+  }
+}

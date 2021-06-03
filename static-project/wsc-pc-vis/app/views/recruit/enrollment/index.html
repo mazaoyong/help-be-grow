@@ -1,0 +1,21 @@
+{% extends '../../common/base.html' %}
+
+{% block page_title %} 办理报名 {% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb js-page-breadcrumb" id='js-page-breadcrumb'>
+    <span class="project" data-href="{{ URL.site('/vis/edu/page/enrollment', 'v4') }}">办理报名</span>
+  </div>
+{% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.recruit/enrollment') | safe }}
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.recruit/enrollment') | safe }}
+{% endblock %}

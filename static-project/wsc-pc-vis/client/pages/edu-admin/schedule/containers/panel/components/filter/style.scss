@@ -1,0 +1,167 @@
+.panel__filter {
+  margin: 16px 0 0 0;
+
+  &__bar {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  &__group {
+    &__tabs {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+
+      .tab-button__type {
+        width: 32px;
+        padding: 0;
+
+        &:last-child {
+          margin-right: 8px;
+        }
+      }
+
+      .tab-button__interval {
+        width: 52px;
+        padding: 0;
+      }
+    }
+
+    .panel__filter__tabs__btngroup {
+      display: flex;
+    }
+  }
+
+  &__tabs {
+    display: inline-block;
+
+    .tab-button__type {
+      width: 32px;
+      padding: 0;
+
+      &:last-child {
+        margin-right: 8px;
+      }
+    }
+
+    .tab-button__interval {
+      width: 52px;
+      padding: 0;
+    }
+  }
+
+  &__expand-wrap {
+    max-height: 0;
+    overflow: hidden;
+    // transition: all 0.3s ease-out;
+
+    &_active {
+      margin-bottom: 20px;
+      // transition: all 0.3s ease-out;
+    }
+  }
+
+  &__type-group {
+    .zent-btn {
+      padding: 0 13px;
+      color: #d9d9d9;
+
+      &-primary {
+        color: #fff;
+      }
+    }
+  }
+
+  .ebiz-icon {
+    vertical-align: -0.2em;
+  }
+
+  &__expand {
+    width: 100%;
+    padding: 25px 30px;
+    margin-top: 16px;
+    background-color: #f7f8fa;
+    box-sizing: border-box;
+
+    &-time {
+      display: flex;
+      margin-left: 63px;
+      margin-bottom: 10px;
+      line-height: 30px;
+
+      & > label {
+        width: 72px;
+        text-align: right;
+      }
+
+      &-select {
+        margin-left: 8px;
+      }
+
+      .schedule-select__day,
+      .schedule-select__week,
+      .schedule-select__month,
+      .schedule-select__custom {
+        margin-left: 10px;
+      }
+    }
+
+    .zent-form {
+      margin-bottom: 0;
+
+      &__control-label {
+        width: 72px;
+        text-align: right;
+      }
+
+      &__controls {
+        margin-left: 8px !important;
+      }
+    }
+
+    .zent-select {
+      width: 160px;
+      margin-right: 0;
+    }
+  }
+  .exported-list-view {
+    margin-left: 10px;
+  }
+}
+
+.panel_category_enable {
+  .zent-checkbox-inner {
+    background-color: #3dc16b !important;
+    border-color: #3dc16b !important;
+  }
+}
+
+.panel_category_conflict {
+  .zent-checkbox-inner {
+    background-color: #f44 !important;
+    border-color: #f44 !important;
+  }
+}
+
+.panel_category_deprecated {
+  .zent-checkbox-inner {
+    background-color: #c8c9cc !important;
+    border-color: #c8c9cc !important;
+  }
+}
+
+.panel__condition .panel__toolbar .panel__filter__tabs {
+  .tab-button__type {
+    width: 32px;
+    padding: 0;
+  }
+
+  .tab-button__interval {
+    width: 52px;
+    padding: 0;
+  }
+}

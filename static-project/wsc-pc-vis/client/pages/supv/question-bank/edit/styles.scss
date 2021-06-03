@@ -1,0 +1,133 @@
+@import 'vars/h1';
+@import 'mixins/foot-submit';
+
+@include footSubmit;
+
+.question-bank__edit {
+  font-size: 16px;
+
+  h1 {
+    @include pageTitle;
+
+    padding-bottom: 1.5rem;
+  }
+
+  section {
+    padding: 1em;
+    background-color: #fff;
+  }
+
+  .question-setting {
+    padding-bottom: 0;
+    margin-bottom: 1em;
+    font-size: 16px;
+
+    &__score-input input {
+      min-width: 60px !important;
+    }
+
+    .zent-form-label {
+      display: inline-block;
+      min-width: 120px;
+      text-align: right;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    form > .zent-form-control {
+      margin-bottom: 0;
+    }
+  }
+
+  .modify-question {
+    &__form {
+      display: flex;
+      font-size: 14px;
+      // checkbox需要一行行显示
+      .checkbox-group {
+        display: inline-flex;
+        flex-direction: column;
+
+        .zent-checkbox-wrap:nth-child(1) {
+          margin-bottom: 8px;
+        }
+      }
+
+      &.nowrap {
+        flex-wrap: nowrap;
+      }
+
+      &.vertical {
+        flex-direction: column;
+      }
+    }
+
+    &__field {
+      display: inline-flex;
+      font-size: 14px;
+
+      &-set {
+        display: inline-flex;
+        flex: 1;
+      }
+    }
+
+    &__form,
+    &__field {
+      &.nowrap {
+        display: inline-flex;
+        flex-wrap: nowrap;
+      }
+
+      &.expand {
+        flex: 1;
+        width: 100%;
+      }
+
+      &.clearMB > .zent-form-control-content > .zent-form-control {
+        // clear margin-bottom
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .hack-scoringFormula {
+    .zent-form-label {
+      flex-basis: 32px;
+      min-width: 32px;
+    }
+  }
+
+  .with-suffix-letter {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: -24px;
+      content: '分';
+    }
+  }
+
+  /** Dialog */
+  &-dialog {
+    // 禁用标题
+    h1 {
+      display: none;
+    }
+
+    .dialog-r-body {
+      position: relative;
+      height: 640px;
+      overflow-y: scroll;
+    }
+  }
+}
+
+.remove-bg {
+  padding: 0 !important;
+  background-color: transparent;
+}

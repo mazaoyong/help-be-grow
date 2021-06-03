@@ -1,0 +1,21 @@
+.goods-field-wrapper {
+  vertical-align: bottom;
+  line-height: 30px;
+  height: 30px;
+
+  .goods-title {
+    display: inline-block;
+    margin-right: 10px;
+    max-width: 200px;
+  }
+
+  .btn {
+    margin-top: -23px;
+  }
+}
+
+.goods-field__desc {
+  color: #999;
+  font-size: 12px;
+  margin-left: 10px;
+}

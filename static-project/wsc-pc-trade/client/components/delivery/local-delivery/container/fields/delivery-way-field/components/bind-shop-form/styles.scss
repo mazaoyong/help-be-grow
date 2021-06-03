@@ -1,0 +1,16 @@
+.bind-shop-form {
+  margin-bottom: 0;
+
+  .bind-shop-input-field {
+    width: 668px;
+  }
+
+  .form-action {
+    display: flex;
+    flex-direction: row-reverse;
+
+    button:first-child {
+      margin-left: 16px;
+    }
+  }
+}

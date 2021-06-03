@@ -1,0 +1,90 @@
+.zent-datetime-picker {
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: normal;
+  position: relative;
+
+  .picker-input {
+    color: var(--theme-stroke-1, #323233);
+    background-color: var(--theme-stroke-9, #fff);
+    position: relative;
+    box-sizing: border-box;
+    width: 190px;
+    font-size: 14px;
+    border-radius: 2px;
+
+    &--icon {
+      font-size: 18px;
+    }
+
+    .zent-input {
+      color: inherit;
+    }
+
+    .zenticon {
+      color: var(--theme-stroke-4, #c8c9cc);
+      line-height: 32px;
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+
+    .zenticon-calendar-o {
+      display: block;
+    }
+
+    .zenticon-clock-o {
+      display: block;
+    }
+
+    .zenticon-close-circle {
+      display: none;
+    }
+
+    &--range {
+      width: 240px;
+    }
+
+    &--showTime {
+      width: 320px;
+    }
+
+    &--show-clear-icon {
+      color: var(--theme-stroke-1, #323233);
+
+      &:hover {
+        .zenticon-close-circle {
+          display: block;
+        }
+
+        .zenticon-calendar-o {
+          display: none;
+        }
+
+        .zenticon-clock-o {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.date-mark-picker {
+  display: inline-block;
+}
+
+.date-panel__cell.date-mark {
+  position: relative;
+  &::after {
+    content: '';
+    background: #155bd4;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    top: 22px;
+    left: 8px;
+  }
+  &.date-mark-gray::after{
+    background: #ADADAD;
+  }
+}

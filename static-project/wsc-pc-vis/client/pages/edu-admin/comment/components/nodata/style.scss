@@ -1,0 +1,12 @@
+.list-has-no-data {
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+
+  &__text {
+    color: #9b9b9b;
+    font-size: 14px;
+  }
+}

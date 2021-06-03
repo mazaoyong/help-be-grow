@@ -1,0 +1,13 @@
+@import 'vars/_colors';
+
+.reward-goods-selector-button {
+  color: $normalColor;
+  border: 1px solid $theme-stroke-5;
+  background: #fff;
+  padding: 0 15px;
+}
+
+// .has-error .reward-goods-selector-button {
+//   border: 1px solid #f44;
+//   color: #f44;
+// }

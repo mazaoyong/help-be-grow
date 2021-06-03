@@ -1,0 +1,40 @@
+.coupon-container-wrapper {
+
+  .coupon-wrapper {
+    height: 31px;
+    line-height: 30px;
+
+    .refersh {
+      cursor: pointer;
+    }
+  }
+
+  .score-wrapper {
+    height: 31px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .inline {
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    margin-left: -5px;
+
+    .zent-number-input-wrapper {
+      display: inline-block;
+
+      .zent-input {
+        min-width: 50px;
+      }
+    }
+
+    span {
+      margin-left: 5px;
+    }
+
+    p {
+      display: inline;
+    }
+  }
+}

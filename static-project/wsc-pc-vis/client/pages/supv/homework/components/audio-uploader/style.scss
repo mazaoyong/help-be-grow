@@ -1,0 +1,24 @@
+.audio-uploader-pop {
+  z-index: 1049 !important;
+  .zent-popover-content {
+    .zent-pop-inner {
+      padding: 0;
+    }
+  }
+}
+
+.choose-list {
+  &__item {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #323233;
+    cursor: pointer;
+
+    &:hover {
+      color: #155BD4;
+      background-color: #EDF4FF;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/正方形</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/正方形" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="2" y="2" width="2" height="16"></rect>
+        <rect id="Rectangle-Copy" fill="#7D7E80" fill-rule="nonzero" x="16" y="2" width="2" height="16"></rect>
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="4" y="2" width="12" height="2"></rect>
+        <rect id="Rectangle-Copy-2" fill="#7D7E80" fill-rule="nonzero" x="4" y="16" width="12" height="2"></rect>
+        <rect id="Rectangle-Copy-2" fill="#7D7E80" fill-rule="nonzero" x="8" y="8" width="4" height="4"></rect>
+    </g>
+</svg>

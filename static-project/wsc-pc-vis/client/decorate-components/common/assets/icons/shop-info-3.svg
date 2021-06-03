@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/店铺信息/样式三</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/店铺信息/样式三" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M3,6 L3,14 L17,14 L17,6 L3,6 Z M1,4 L19,4 L19,16 L1,16 L1,4 Z" id="Rectangle" fill="#7D7E80" fill-rule="nonzero"></path>
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="4" y="10" width="3" height="3"></rect>
+        <rect id="Rectangle-Copy" fill="#7D7E80" fill-rule="nonzero" x="8" y="11" width="2" height="1"></rect>
+        <rect id="Rectangle-Copy-2" fill="#7D7E80" fill-rule="nonzero" x="11" y="11" width="2" height="1"></rect>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+.input-service {
+  &__action {
+    display: inline-block;
+    line-height: 14px;
+    color: #1989fa;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .service-card-wrap {
+    width: 290px;
+    height: 70px;
+    margin-bottom: 0;
+  }
+}

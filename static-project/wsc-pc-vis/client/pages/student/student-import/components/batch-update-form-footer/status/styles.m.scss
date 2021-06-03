@@ -1,0 +1,44 @@
+.status {
+  // height: 100%;
+}
+
+.header {
+  display: block;
+  text-align: center;
+
+  .headerTip {
+    margin-bottom: 20px;
+  }
+
+  .headerIcon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    background-repeat: no-repeat;
+  }
+
+  .processIcon {
+    background-image: url('https://b.yzcdn.cn/fix-base64/52648b1422dab154b1dba6247ccf7298feca15f0a936fe3e88d534fd41e0ac04.png');
+  }
+  .successIcon {
+    background-image: url('https://b.yzcdn.cn/fix-base64/1b27fdcc20dc41bae868863064592a12e05722919a5cb97d13fd5c4801962530.png');
+  }
+
+  .failIcon {
+    background-image: url('https://b.yzcdn.cn/fix-base64/334d9e6de0798514ec5e21cff40ecc22c6012ec59d657c9f34da0a24207e2b03.png');
+  }
+
+  .headerTitle {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .headerDesc {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666;
+  }
+}

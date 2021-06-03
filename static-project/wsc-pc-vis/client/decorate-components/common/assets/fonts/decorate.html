@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>decorate - 97</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 85%;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .title {
+        margin-top: 40px;
+        font-size: 32px;
+        color: #24292e;
+        text-align: center;
+      }
+
+      .sub-title {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #aaa;
+        text-align: center;
+      }
+
+      .preview {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px -8px;
+      }
+
+      .preview-item {
+        flex: 0 1 50%;
+        padding: 8px;
+      }
+
+      .preview-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 72px;
+        padding: 0 24px;
+        background: #f8f9fa;
+        border-radius: 4px;
+        color: #24292e;
+        font-size: 14px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .preview-content:hover {
+        background: #24292e;
+        color: #fff;
+        box-shadow: 0 0 4px 0 rgba(10, 42, 97, 0.2);
+        transform: scale(1.1);
+      }
+
+      .preview-icon {
+        display: inline-block;
+        width: 32px;
+        text-align: center;
+        margin-right: 24px;
+        font-size: 22px;
+      }
+
+      .copied {
+        position: fixed;
+        top: 10px;
+        right: -80px;
+        font-size: 14px;
+        opacity: 0;
+        transition: all 0.2s ease-out;
+      }
+
+      .copied--show {
+        opacity: 1;
+        transform: translateX(-90px);
+      }
+
+      @media screen and (min-width: 512px) {
+        .preview-item {
+          flex: 0 1 50%;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .preview-item {
+          flex: 0 1 33.3333%;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .preview-item {
+          flex: 0 1 25%;
+        }
+      }
+
+      @font-face {
+        font-family: "decorate";
+        src: url("decorate_19aaea15b848a206b61d20f4af84abd1.svg#decorate") format("svg"),
+          url("decorate_19aaea15b848a206b61d20f4af84abd1.ttf") format("truetype"),
+          url("decorate_19aaea15b848a206b61d20f4af84abd1.eot?#iefix") format("embedded-opentype"),
+          url("decorate_19aaea15b848a206b61d20f4af84abd1.woff") format("woff"),
+          url("decorate_19aaea15b848a206b61d20f4af84abd1.woff2") format("woff2");
+      }
+
+      [class^="deco-icon-"],
+      [class*="deco-icon-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: "decorate" !important;
+        display: block;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .deco-icon-1-1:before {
+        content: "\f101";
+      }
+      .deco-icon-16-9:before {
+        content: "\f102";
+      }
+      .deco-icon-3-2:before {
+        content: "\f103";
+      }
+      .deco-icon-3-4:before {
+        content: "\f104";
+      }
+      .deco-icon-align-center:before {
+        content: "\f105";
+      }
+      .deco-icon-align-left:before {
+        content: "\f106";
+      }
+      .deco-icon-align-right:before {
+        content: "\f107";
+      }
+      .deco-icon-audio-player:before {
+        content: "\f108";
+      }
+      .deco-icon-audio-simple:before {
+        content: "\f109";
+      }
+      .deco-icon-audio-weixin:before {
+        content: "\f10a";
+      }
+      .deco-icon-avatar-shape1:before {
+        content: "\f10b";
+      }
+      .deco-icon-avatar-shape2:before {
+        content: "\f10c";
+      }
+      .deco-icon-big-slide:before {
+        content: "\f10d";
+      }
+      .deco-icon-big:before {
+        content: "\f10e";
+      }
+      .deco-icon-btn-number:before {
+        content: "\f10f";
+      }
+      .deco-icon-btn-percent:before {
+        content: "\f110";
+      }
+      .deco-icon-carousel:before {
+        content: "\f111";
+      }
+      .deco-icon-corner-round:before {
+        content: "\f112";
+      }
+      .deco-icon-corner-straight:before {
+        content: "\f113";
+      }
+      .deco-icon-coupon-1:before {
+        content: "\f114";
+      }
+      .deco-icon-coupon-2:before {
+        content: "\f115";
+      }
+      .deco-icon-coupon-3:before {
+        content: "\f116";
+      }
+      .deco-icon-coupon-4:before {
+        content: "\f117";
+      }
+      .deco-icon-cube-custom:before {
+        content: "\f118";
+      }
+      .deco-icon-cube-upto:before {
+        content: "\f119";
+      }
+      .deco-icon-cube:before {
+        content: "\f11a";
+      }
+      .deco-icon-cuberow:before {
+        content: "\f11b";
+      }
+      .deco-icon-cuberow1:before {
+        content: "\f11c";
+      }
+      .deco-icon-cuberow2:before {
+        content: "\f11d";
+      }
+      .deco-icon-cubeto:before {
+        content: "\f11e";
+      }
+      .deco-icon-cubeto1:before {
+        content: "\f11f";
+      }
+      .deco-icon-delete:before {
+        content: "\f120";
+      }
+      .deco-icon-drag-handler:before {
+        content: "\f121";
+      }
+      .deco-icon-edit:before {
+        content: "\f122";
+      }
+      .deco-icon-feature:before {
+        content: "\f123";
+      }
+      .deco-icon-fixed:before {
+        content: "\f124";
+      }
+      .deco-icon-float:before {
+        content: "\f125";
+      }
+      .deco-icon-font-bold:before {
+        content: "\f126";
+      }
+      .deco-icon-font-m:before {
+        content: "\f127";
+      }
+      .deco-icon-font-regular:before {
+        content: "\f128";
+      }
+      .deco-icon-font-s:before {
+        content: "\f129";
+      }
+      .deco-icon-font-x:before {
+        content: "\f12a";
+      }
+      .deco-icon-hotarea:before {
+        content: "\f12b";
+      }
+      .deco-icon-huadong:before {
+        content: "\f12c";
+      }
+      .deco-icon-huanhang:before {
+        content: "\f12d";
+      }
+      .deco-icon-hybrid:before {
+        content: "\f12e";
+      }
+      .deco-icon-image-ad-normal:before {
+        content: "\f12f";
+      }
+      .deco-icon-img-contain:before {
+        content: "\f130";
+      }
+      .deco-icon-img-cover:before {
+        content: "\f131";
+      }
+      .deco-icon-indicator-1:before {
+        content: "\f132";
+      }
+      .deco-icon-indicator-2:before {
+        content: "\f133";
+      }
+      .deco-icon-indicator-3:before {
+        content: "\f134";
+      }
+      .deco-icon-indicator-4:before {
+        content: "\f135";
+      }
+      .deco-icon-line-dashed:before {
+        content: "\f136";
+      }
+      .deco-icon-line-dotted:before {
+        content: "\f137";
+      }
+      .deco-icon-line-no-padding:before {
+        content: "\f138";
+      }
+      .deco-icon-line-padding:before {
+        content: "\f139";
+      }
+      .deco-icon-line-solid:before {
+        content: "\f13a";
+      }
+      .deco-icon-line:before {
+        content: "\f13b";
+      }
+      .deco-icon-list:before {
+        content: "\f13c";
+      }
+      .deco-icon-menu-fixed:before {
+        content: "\f13d";
+      }
+      .deco-icon-menu-left:before {
+        content: "\f13e";
+      }
+      .deco-icon-menu-normal:before {
+        content: "\f13f";
+      }
+      .deco-icon-menu-top:before {
+        content: "\f140";
+      }
+      .deco-icon-nav-slide:before {
+        content: "\f141";
+      }
+      .deco-icon-neirong:before {
+        content: "\f142";
+      }
+      .deco-icon-progress-1:before {
+        content: "\f143";
+      }
+      .deco-icon-progress-2:before {
+        content: "\f144";
+      }
+      .deco-icon-scroll:before {
+        content: "\f145";
+      }
+      .deco-icon-search-fixed:before {
+        content: "\f146";
+      }
+      .deco-icon-search-normal:before {
+        content: "\f147";
+      }
+      .deco-icon-search-round:before {
+        content: "\f148";
+      }
+      .deco-icon-search-scroll:before {
+        content: "\f149";
+      }
+      .deco-icon-search-square:before {
+        content: "\f14a";
+      }
+      .deco-icon-search-sticky:before {
+        content: "\f14b";
+      }
+      .deco-icon-shadow:before {
+        content: "\f14c";
+      }
+      .deco-icon-shop-info-1:before {
+        content: "\f14d";
+      }
+      .deco-icon-shop-info-2:before {
+        content: "\f14e";
+      }
+      .deco-icon-shop-info-3:before {
+        content: "\f14f";
+      }
+      .deco-icon-shop-info-4:before {
+        content: "\f150";
+      }
+      .deco-icon-shop-info-5:before {
+        content: "\f151";
+      }
+      .deco-icon-shopnote-hybrid:before {
+        content: "\f152";
+      }
+      .deco-icon-small-slide:before {
+        content: "\f153";
+      }
+      .deco-icon-small:before {
+        content: "\f154";
+      }
+      .deco-icon-social-fans:before {
+        content: "\f155";
+      }
+      .deco-icon-swipe:before {
+        content: "\f156";
+      }
+      .deco-icon-tabs-1:before {
+        content: "\f157";
+      }
+      .deco-icon-tabs-2:before {
+        content: "\f158";
+      }
+      .deco-icon-tabs-3:before {
+        content: "\f159";
+      }
+      .deco-icon-text-position-cover:before {
+        content: "\f15a";
+      }
+      .deco-icon-text-position-follow:before {
+        content: "\f15b";
+      }
+      .deco-icon-three:before {
+        content: "\f15c";
+      }
+      .deco-icon-up2end:before {
+        content: "\f15d";
+      }
+      .deco-icon-white:before {
+        content: "\f15e";
+      }
+      .deco-icon-xianxiake:before {
+        content: "\f15f";
+      }
+      .deco-icon-zhibo:before {
+        content: "\f160";
+      }
+      .deco-icon-zhuanlan:before {
+        content: "\f161";
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">decorate</h1>
+    <h2 class="sub-title">97 icons</h2>
+
+    <div class="preview">
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="1-1">
+          <span class="preview-icon">
+            <i class="deco-icon-1-1"></i>
+          </span>
+          <span>1-1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="16-9">
+          <span class="preview-icon">
+            <i class="deco-icon-16-9"></i>
+          </span>
+          <span>16-9</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="3-2">
+          <span class="preview-icon">
+            <i class="deco-icon-3-2"></i>
+          </span>
+          <span>3-2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="3-4">
+          <span class="preview-icon">
+            <i class="deco-icon-3-4"></i>
+          </span>
+          <span>3-4</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="align-center">
+          <span class="preview-icon">
+            <i class="deco-icon-align-center"></i>
+          </span>
+          <span>align-center</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="align-left">
+          <span class="preview-icon">
+            <i class="deco-icon-align-left"></i>
+          </span>
+          <span>align-left</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="align-right">
+          <span class="preview-icon">
+            <i class="deco-icon-align-right"></i>
+          </span>
+          <span>align-right</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="audio-player">
+          <span class="preview-icon">
+            <i class="deco-icon-audio-player"></i>
+          </span>
+          <span>audio-player</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="audio-simple">
+          <span class="preview-icon">
+            <i class="deco-icon-audio-simple"></i>
+          </span>
+          <span>audio-simple</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="audio-weixin">
+          <span class="preview-icon">
+            <i class="deco-icon-audio-weixin"></i>
+          </span>
+          <span>audio-weixin</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="avatar-shape1">
+          <span class="preview-icon">
+            <i class="deco-icon-avatar-shape1"></i>
+          </span>
+          <span>avatar-shape1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="avatar-shape2">
+          <span class="preview-icon">
+            <i class="deco-icon-avatar-shape2"></i>
+          </span>
+          <span>avatar-shape2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="big-slide">
+          <span class="preview-icon">
+            <i class="deco-icon-big-slide"></i>
+          </span>
+          <span>big-slide</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="big">
+          <span class="preview-icon">
+            <i class="deco-icon-big"></i>
+          </span>
+          <span>big</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="btn-number">
+          <span class="preview-icon">
+            <i class="deco-icon-btn-number"></i>
+          </span>
+          <span>btn-number</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="btn-percent">
+          <span class="preview-icon">
+            <i class="deco-icon-btn-percent"></i>
+          </span>
+          <span>btn-percent</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="carousel">
+          <span class="preview-icon">
+            <i class="deco-icon-carousel"></i>
+          </span>
+          <span>carousel</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="corner-round">
+          <span class="preview-icon">
+            <i class="deco-icon-corner-round"></i>
+          </span>
+          <span>corner-round</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="corner-straight">
+          <span class="preview-icon">
+            <i class="deco-icon-corner-straight"></i>
+          </span>
+          <span>corner-straight</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="coupon-1">
+          <span class="preview-icon">
+            <i class="deco-icon-coupon-1"></i>
+          </span>
+          <span>coupon-1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="coupon-2">
+          <span class="preview-icon">
+            <i class="deco-icon-coupon-2"></i>
+          </span>
+          <span>coupon-2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="coupon-3">
+          <span class="preview-icon">
+            <i class="deco-icon-coupon-3"></i>
+          </span>
+          <span>coupon-3</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="coupon-4">
+          <span class="preview-icon">
+            <i class="deco-icon-coupon-4"></i>
+          </span>
+          <span>coupon-4</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cube-custom">
+          <span class="preview-icon">
+            <i class="deco-icon-cube-custom"></i>
+          </span>
+          <span>cube-custom</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cube-upto">
+          <span class="preview-icon">
+            <i class="deco-icon-cube-upto"></i>
+          </span>
+          <span>cube-upto</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cube">
+          <span class="preview-icon">
+            <i class="deco-icon-cube"></i>
+          </span>
+          <span>cube</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cuberow">
+          <span class="preview-icon">
+            <i class="deco-icon-cuberow"></i>
+          </span>
+          <span>cuberow</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cuberow1">
+          <span class="preview-icon">
+            <i class="deco-icon-cuberow1"></i>
+          </span>
+          <span>cuberow1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cuberow2">
+          <span class="preview-icon">
+            <i class="deco-icon-cuberow2"></i>
+          </span>
+          <span>cuberow2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cubeto">
+          <span class="preview-icon">
+            <i class="deco-icon-cubeto"></i>
+          </span>
+          <span>cubeto</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="cubeto1">
+          <span class="preview-icon">
+            <i class="deco-icon-cubeto1"></i>
+          </span>
+          <span>cubeto1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="delete">
+          <span class="preview-icon">
+            <i class="deco-icon-delete"></i>
+          </span>
+          <span>delete</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="drag-handler">
+          <span class="preview-icon">
+            <i class="deco-icon-drag-handler"></i>
+          </span>
+          <span>drag-handler</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="edit">
+          <span class="preview-icon">
+            <i class="deco-icon-edit"></i>
+          </span>
+          <span>edit</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="feature">
+          <span class="preview-icon">
+            <i class="deco-icon-feature"></i>
+          </span>
+          <span>feature</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="fixed">
+          <span class="preview-icon">
+            <i class="deco-icon-fixed"></i>
+          </span>
+          <span>fixed</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="float">
+          <span class="preview-icon">
+            <i class="deco-icon-float"></i>
+          </span>
+          <span>float</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="font-bold">
+          <span class="preview-icon">
+            <i class="deco-icon-font-bold"></i>
+          </span>
+          <span>font-bold</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="font-m">
+          <span class="preview-icon">
+            <i class="deco-icon-font-m"></i>
+          </span>
+          <span>font-m</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="font-regular">
+          <span class="preview-icon">
+            <i class="deco-icon-font-regular"></i>
+          </span>
+          <span>font-regular</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="font-s">
+          <span class="preview-icon">
+            <i class="deco-icon-font-s"></i>
+          </span>
+          <span>font-s</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="font-x">
+          <span class="preview-icon">
+            <i class="deco-icon-font-x"></i>
+          </span>
+          <span>font-x</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="hotarea">
+          <span class="preview-icon">
+            <i class="deco-icon-hotarea"></i>
+          </span>
+          <span>hotarea</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="huadong">
+          <span class="preview-icon">
+            <i class="deco-icon-huadong"></i>
+          </span>
+          <span>huadong</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="huanhang">
+          <span class="preview-icon">
+            <i class="deco-icon-huanhang"></i>
+          </span>
+          <span>huanhang</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="hybrid">
+          <span class="preview-icon">
+            <i class="deco-icon-hybrid"></i>
+          </span>
+          <span>hybrid</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="image-ad-normal">
+          <span class="preview-icon">
+            <i class="deco-icon-image-ad-normal"></i>
+          </span>
+          <span>image-ad-normal</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="img-contain">
+          <span class="preview-icon">
+            <i class="deco-icon-img-contain"></i>
+          </span>
+          <span>img-contain</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="img-cover">
+          <span class="preview-icon">
+            <i class="deco-icon-img-cover"></i>
+          </span>
+          <span>img-cover</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="indicator-1">
+          <span class="preview-icon">
+            <i class="deco-icon-indicator-1"></i>
+          </span>
+          <span>indicator-1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="indicator-2">
+          <span class="preview-icon">
+            <i class="deco-icon-indicator-2"></i>
+          </span>
+          <span>indicator-2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="indicator-3">
+          <span class="preview-icon">
+            <i class="deco-icon-indicator-3"></i>
+          </span>
+          <span>indicator-3</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="indicator-4">
+          <span class="preview-icon">
+            <i class="deco-icon-indicator-4"></i>
+          </span>
+          <span>indicator-4</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="line-dashed">
+          <span class="preview-icon">
+            <i class="deco-icon-line-dashed"></i>
+          </span>
+          <span>line-dashed</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="line-dotted">
+          <span class="preview-icon">
+            <i class="deco-icon-line-dotted"></i>
+          </span>
+          <span>line-dotted</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="line-no-padding">
+          <span class="preview-icon">
+            <i class="deco-icon-line-no-padding"></i>
+          </span>
+          <span>line-no-padding</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="line-padding">
+          <span class="preview-icon">
+            <i class="deco-icon-line-padding"></i>
+          </span>
+          <span>line-padding</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="line-solid">
+          <span class="preview-icon">
+            <i class="deco-icon-line-solid"></i>
+          </span>
+          <span>line-solid</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="line">
+          <span class="preview-icon">
+            <i class="deco-icon-line"></i>
+          </span>
+          <span>line</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="list">
+          <span class="preview-icon">
+            <i class="deco-icon-list"></i>
+          </span>
+          <span>list</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="menu-fixed">
+          <span class="preview-icon">
+            <i class="deco-icon-menu-fixed"></i>
+          </span>
+          <span>menu-fixed</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="menu-left">
+          <span class="preview-icon">
+            <i class="deco-icon-menu-left"></i>
+          </span>
+          <span>menu-left</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="menu-normal">
+          <span class="preview-icon">
+            <i class="deco-icon-menu-normal"></i>
+          </span>
+          <span>menu-normal</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="menu-top">
+          <span class="preview-icon">
+            <i class="deco-icon-menu-top"></i>
+          </span>
+          <span>menu-top</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="nav-slide">
+          <span class="preview-icon">
+            <i class="deco-icon-nav-slide"></i>
+          </span>
+          <span>nav-slide</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="neirong">
+          <span class="preview-icon">
+            <i class="deco-icon-neirong"></i>
+          </span>
+          <span>neirong</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="progress-1">
+          <span class="preview-icon">
+            <i class="deco-icon-progress-1"></i>
+          </span>
+          <span>progress-1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="progress-2">
+          <span class="preview-icon">
+            <i class="deco-icon-progress-2"></i>
+          </span>
+          <span>progress-2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="scroll">
+          <span class="preview-icon">
+            <i class="deco-icon-scroll"></i>
+          </span>
+          <span>scroll</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="search-fixed">
+          <span class="preview-icon">
+            <i class="deco-icon-search-fixed"></i>
+          </span>
+          <span>search-fixed</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="search-normal">
+          <span class="preview-icon">
+            <i class="deco-icon-search-normal"></i>
+          </span>
+          <span>search-normal</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="search-round">
+          <span class="preview-icon">
+            <i class="deco-icon-search-round"></i>
+          </span>
+          <span>search-round</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="search-scroll">
+          <span class="preview-icon">
+            <i class="deco-icon-search-scroll"></i>
+          </span>
+          <span>search-scroll</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="search-square">
+          <span class="preview-icon">
+            <i class="deco-icon-search-square"></i>
+          </span>
+          <span>search-square</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="search-sticky">
+          <span class="preview-icon">
+            <i class="deco-icon-search-sticky"></i>
+          </span>
+          <span>search-sticky</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="shadow">
+          <span class="preview-icon">
+            <i class="deco-icon-shadow"></i>
+          </span>
+          <span>shadow</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="shop-info-1">
+          <span class="preview-icon">
+            <i class="deco-icon-shop-info-1"></i>
+          </span>
+          <span>shop-info-1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="shop-info-2">
+          <span class="preview-icon">
+            <i class="deco-icon-shop-info-2"></i>
+          </span>
+          <span>shop-info-2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="shop-info-3">
+          <span class="preview-icon">
+            <i class="deco-icon-shop-info-3"></i>
+          </span>
+          <span>shop-info-3</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="shop-info-4">
+          <span class="preview-icon">
+            <i class="deco-icon-shop-info-4"></i>
+          </span>
+          <span>shop-info-4</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="shop-info-5">
+          <span class="preview-icon">
+            <i class="deco-icon-shop-info-5"></i>
+          </span>
+          <span>shop-info-5</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="shopnote-hybrid">
+          <span class="preview-icon">
+            <i class="deco-icon-shopnote-hybrid"></i>
+          </span>
+          <span>shopnote-hybrid</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="small-slide">
+          <span class="preview-icon">
+            <i class="deco-icon-small-slide"></i>
+          </span>
+          <span>small-slide</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="small">
+          <span class="preview-icon">
+            <i class="deco-icon-small"></i>
+          </span>
+          <span>small</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="social-fans">
+          <span class="preview-icon">
+            <i class="deco-icon-social-fans"></i>
+          </span>
+          <span>social-fans</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="swipe">
+          <span class="preview-icon">
+            <i class="deco-icon-swipe"></i>
+          </span>
+          <span>swipe</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="tabs-1">
+          <span class="preview-icon">
+            <i class="deco-icon-tabs-1"></i>
+          </span>
+          <span>tabs-1</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="tabs-2">
+          <span class="preview-icon">
+            <i class="deco-icon-tabs-2"></i>
+          </span>
+          <span>tabs-2</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="tabs-3">
+          <span class="preview-icon">
+            <i class="deco-icon-tabs-3"></i>
+          </span>
+          <span>tabs-3</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="text-position-cover">
+          <span class="preview-icon">
+            <i class="deco-icon-text-position-cover"></i>
+          </span>
+          <span>text-position-cover</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="text-position-follow">
+          <span class="preview-icon">
+            <i class="deco-icon-text-position-follow"></i>
+          </span>
+          <span>text-position-follow</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="three">
+          <span class="preview-icon">
+            <i class="deco-icon-three"></i>
+          </span>
+          <span>three</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="up2end">
+          <span class="preview-icon">
+            <i class="deco-icon-up2end"></i>
+          </span>
+          <span>up2end</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="white">
+          <span class="preview-icon">
+            <i class="deco-icon-white"></i>
+          </span>
+          <span>white</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="xianxiake">
+          <span class="preview-icon">
+            <i class="deco-icon-xianxiake"></i>
+          </span>
+          <span>xianxiake</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="zhibo">
+          <span class="preview-icon">
+            <i class="deco-icon-zhibo"></i>
+          </span>
+          <span>zhibo</span>
+        </button>
+      </div>
+      <div class="preview-item">
+        <!-- Trigger -->
+        <button class="preview-content" data-clipboard-text="zhuanlan">
+          <span class="preview-icon">
+            <i class="deco-icon-zhuanlan"></i>
+          </span>
+          <span>zhuanlan</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="copied">Copied</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script>
+      const copied = document.querySelector(".copied");
+      const clipboard = new ClipboardJS(".preview-content");
+      let timer;
+
+      clipboard.on("success", function(e) {
+        copied.classList.add("copied--show");
+
+        if (timer) {
+          clearTimeout(timer);
+          timer = null;
+        }
+
+        timer = setTimeout(() => {
+          copied.classList.remove("copied--show");
+        }, 600);
+      });
+    </script>
+  </body>
+</html>

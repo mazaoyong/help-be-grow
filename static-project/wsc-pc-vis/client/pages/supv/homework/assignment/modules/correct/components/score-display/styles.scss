@@ -1,0 +1,38 @@
+.score-display {
+  display: flex;
+  justify-content: space-between;
+  max-height: 74px;
+
+  .score {
+    .label {
+      display: inline-block;
+      margin: 0 8px 0 16px;
+      line-height: 32px;
+    }
+  
+    .score {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    .assignment-score {
+      line-height: 32px;
+      font-size: 24px;
+      font-weight: 900;
+      font-family: Avenir;
+      color: #646566;
+      
+      &.passed {
+        color: #FF4444;
+      }
+    }
+  }
+
+  .good-assignment {
+    position: relative;
+    top: -29px;
+    right: 27px;
+    height: 96px;
+    width: 96px;
+  }
+}

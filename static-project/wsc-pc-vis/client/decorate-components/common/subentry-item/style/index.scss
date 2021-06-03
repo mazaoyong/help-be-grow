@@ -1,0 +1,126 @@
+.decorate-common-subentry-item {
+  position: relative;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+    line-height: 20px;
+    font-size: 12px;
+    color: #323233;
+  }
+
+  &__wrap {
+    display: flex;
+    padding: 6px 0;
+  }
+
+  &__image {
+    margin: 6px 0 0 12px;
+  }
+
+  &__image-desc {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #323233;
+  }
+
+  &__image-help {
+    margin-top: 8px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__help {
+    font-size: 12px;
+    color: #cacaca;
+  }
+
+  &__link-disabled {
+    display: inline-block;
+    height: 20px;
+    padding: 0 5px;
+    margin-right: 10px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #a7cfff;
+    background-color: #e2f4ff;
+    color: #646566;
+    font-size: 12px;
+  }
+
+  &__content-divider {
+    height: 1px;
+    background-color: #ebedf0;
+  }
+
+  &__link-divider {
+    height: 1px;
+    padding: 8px;
+    background-clip: content-box;
+    background-color: #ebedf0;
+  }
+
+  &__handler {
+    font-size: 20px;
+    margin-right: 4px;
+    color: #bbb;
+
+    &--inline {
+      margin: 12px 2px 12px 12px;
+    }
+  }
+
+  .deco-control-group {
+    padding: 6px 12px;
+  }
+
+  .rc-choose-link-menu {
+    max-width: 200px;
+  }
+
+  .rc-choose-link-menu-tag {
+    border-color: #155bd4 !important;
+    background-color: #edf4ff !important;
+    color: #155bd4 !important;
+  }
+
+  .choosed-link-content {
+    .page-title {
+      display: inline-block;
+      height: 20px;
+      padding: 0 5px;
+      margin-right: 10px;
+      line-height: 20px;
+      text-align: center;
+      border: 1px solid rgba(51, 136, 255, 0.3);
+      background: rgb(226, 243, 255);
+      color: rgb(102, 102, 102);
+    }
+  }
+
+  .pointer-button,
+  .setting-link {
+    color: #155bd4;
+    cursor: pointer;
+  }
+
+  &--block {
+    .decorate-common-subentry-item {
+      &__wrap {
+        display: block;
+      }
+
+      &__image {
+        margin: 0 16px 0 0;
+      }
+    }
+
+    .rc-choose-link-menu {
+      width: 270px;
+    }
+  }
+}

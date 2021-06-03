@@ -1,0 +1,55 @@
+@import 'vars/colors';
+
+.decorate-period-buy-editor {
+
+  .zent-select {
+    margin-right: 0;
+  }
+
+  .zent-input-wrapper {
+    display: inline-block;
+    width: 80px;
+
+    input {
+      width: 80px;
+    }
+  }
+
+  .zenticon-help-circle {
+    margin-left: 3px;
+    color: $theme-stroke-5;
+    font-size: 13px;
+  }
+
+  .zent-design-editor__control-group-help-desc {
+    margin-top: 0;
+  }
+
+  &__goods-num {
+
+    .zent-design-editor__control-group-label--top {
+      margin-top: 6px;
+    }
+  }
+
+  .editor-bottom-help-desc {
+    color: #969799;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .view-examples {
+    cursor: pointer;
+    font-size: 12px;
+    color: #155bd4;
+    margin-right: 10px;
+  }
+
+  &__btn-style, &__editor-card {
+    .deco-control-group__content {
+      display: block;
+    }
+  }
+
+}

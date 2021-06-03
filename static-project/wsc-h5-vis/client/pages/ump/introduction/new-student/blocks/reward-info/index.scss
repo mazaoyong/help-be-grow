@@ -1,0 +1,119 @@
+@import 'mixins/index.scss';
+
+.reward-info {
+  margin: 0px 16px;
+  padding: 0 27px;
+  background: linear-gradient(180deg, #fff 0%, #FFF7EC 100%);
+  border-radius: 16px 16px 8px 8px;
+  text-align: center;
+
+  &-title {
+    padding-top: 20px;
+    color: #ff5100;
+    font-weight: 500;
+
+    .main-title {
+      font-size: 18px;
+
+      .price {
+        font-size: 60px;
+        font-family: Avenir;
+      }
+    }
+
+    .sub-title {
+      color: #875a21;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .desc-title {
+      font-size: 24px;
+      line-height: 36px;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+  }
+
+  &-tip {
+    padding-top: 32px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ff5100;
+    font-weight: 500;
+  }
+
+  &-progress {
+    margin: 21px 13px 0;
+    position: relative;
+    height: 10px;
+    border-radius: 5px;
+    background: #ffedd8;
+
+    .progress-bar {
+      height: 100%;
+      border-radius: 5px;
+      background: linear-gradient(45deg, #ff7b17 0%, #ff2b00 100%);
+    }
+
+    img {
+      position: absolute;
+      right: -20px;
+      top: -15px;
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &-btn {
+    padding-top: 20px;
+
+    .action-btn-tip {
+      display: inline-block;
+      position: relative;
+      bottom: -2px;
+      height: 22px;
+      padding: 0 8px;
+      background: #ffecbe;
+      border-radius: 11px;
+      font-size: 12px;
+      color: #875a21;
+      line-height: 22px;
+      font-weight: 500;
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        bottom: -11px;
+        left: 50%;
+        margin-left: -3px;
+        border: 6px solid #ffecbe;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+
+    .sub-btn {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 16px;
+      margin-bottom: 4px;
+      font-size: 14px;
+      color: #ff5b00;
+      line-height: 20px;
+
+      &-icon {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &-time {
+    padding: 12px 0;
+    font-size: 12px;
+    line-height: 17px;
+    color: #875a21;
+  }
+}

@@ -1,0 +1,52 @@
+@import 'vars/colors';
+
+.label {
+  display: inline-block;
+  width: 70px;
+  margin-right: 8px;
+  text-align: right;
+}
+
+.channel-info {
+  padding-bottom: 16px;
+}
+
+.share-url {
+  padding-bottom: 16px;
+  :global {
+    .share-url__input {
+      margin-right: 8px;
+    }
+  }
+}
+
+.assistant-manage {
+  :global {
+    .manage__add-row {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid $theme-stroke-8;
+    }
+
+    .zenticon-plus-circle-o {
+      margin-right: 4px;
+    }
+  }
+}
+
+.video-share-dialog {
+  :global {
+    .video-share__title {
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    .video-share__item {
+      margin-bottom: 40px;
+    }
+  }
+}

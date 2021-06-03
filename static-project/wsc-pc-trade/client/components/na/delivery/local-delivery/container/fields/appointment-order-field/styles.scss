@@ -1,0 +1,38 @@
+.custom-apointment-time {
+  margin-top: 5px;
+
+  &__type.zent-radio-group {
+    .help {
+      line-height: 14px;
+      font-size: 12px;
+      margin: 5px 0 0 24px;
+      color: #999;
+    }
+
+    .zent-radio-wrap {
+      display: block;
+      width: 290px;
+      margin-top: 24px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .zent-popover-wrapper {
+      width: 70px;
+      margin-left: 10px;
+    }
+
+    .zent-input-wrapper {
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle;
+
+      .zent-input {
+        width: 70px;
+        min-width: 70px;
+      }
+    }
+  }
+}

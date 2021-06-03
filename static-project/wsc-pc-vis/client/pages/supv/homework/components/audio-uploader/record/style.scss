@@ -1,0 +1,88 @@
+@keyframes waveTrigger {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.audio-uploader-record {
+  width: 264px;
+  height: 124px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(200,201,204,0.50);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+
+  &__controller {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+
+    &__cancel {
+      font-size: 14px;
+      color: #155BD4;
+      cursor: pointer;
+      width: 28px;
+    }
+
+    &__finish {
+      font-size: 14px;
+      color: #155BD4;
+      cursor: pointer;
+      width: 28px;
+    }
+
+    &__controll {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 72px;
+      height: 72px;
+      position: relative;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 44px;
+    }
+
+    &__controll-circle {
+      background: #155BD4;
+      border-radius: 28px;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    &__controll-wave {
+      background: #a3beee;
+      border-radius: 28px;
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      z-index: 1;
+      animation-name: waveTrigger;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-play-state: running;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+}

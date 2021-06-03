@@ -1,0 +1,33 @@
+<script
+  type="text/javascript"
+  src="https://b.yzcdn.cn/zan-web-logger/zan-web-logger-0.0.2-min.js"
+  crossorigin="anonymous"
+></script>
+
+<script type="text/javascript">
+  // 前端错误日志（天网）
+  (function() {
+    const ZanLogger = window.ZanLogger;
+    var appName = '{{ logInfo.appName }}';
+    var logIndex = 'js_logs';
+
+    try {
+      ZanLogger &&
+      ZanLogger.config &&
+      ZanLogger.config({
+        appName: appName,
+        logIndex: logIndex,
+      });
+    } catch (e) {
+      console.log(e);
+    } finally {
+      if (!ZanLogger || typeof ZanLogger.log !== 'function') {
+        window.ZanLogger = {
+          config: function() {},
+          log: function() {},
+          monitor: function() {},
+        };
+      }
+    }
+  })();
+</script>

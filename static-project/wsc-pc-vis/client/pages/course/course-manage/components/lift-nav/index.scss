@@ -1,0 +1,39 @@
+.course-list-nav {
+  display: flex;
+  width: 100%;
+  height: 36px;
+  font-size: 14px;
+  background-color: #F7F8FA;
+
+  &__bottom {
+    width: 100%;
+    height: 12px;
+    background-color: #fff;
+    border-bottom: 1px solid #EBEDF0;
+  }
+
+  &__top {
+    width: 100%;
+    height: 12px;
+    background-color: #fff;
+    display: none;
+  }
+
+  &__show {
+    display: block;
+  }
+
+  &-subtitle {
+    flex: 1;
+    cursor: pointer;
+    height: 16px;
+    line-height: 16px;
+    margin-top: calc(10px);
+    border-right: 1px solid #EBEDF0;
+    text-align: center;
+  }
+
+  &-highlight {
+    color: #155bd4;
+  }
+}

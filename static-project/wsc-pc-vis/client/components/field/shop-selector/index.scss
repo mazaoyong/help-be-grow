@@ -1,0 +1,36 @@
+@import 'shared/sass/vars/colors';
+
+.campus-select-dialog {
+  cursor: pointer;
+  color: $blueColor;
+  margin: 10px 0;
+}
+
+.campus-select-dialog-disable {
+  cursor: not-allowed;
+  color: grey;
+  margin: 10px 0;
+}
+
+.campus-select-dialog-disable {
+  cursor: not-allowed;
+  color: grey;
+  margin: 10px 0;
+}
+
+.campus-select-radio {
+  line-height: 28px;
+}
+
+.campus-select-table {
+  min-width: 500px;
+  .campus-select-table-operation {
+    cursor: pointer;
+    color: $blueColor;
+  }
+
+  .campus-operation-disabled {
+    cursor: not-allowed;
+    color:grey;
+  }
+}

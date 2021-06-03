@@ -1,0 +1,23 @@
+body {
+  background-color: #f4f4f6;
+}
+
+.card {
+  margin: 12px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.module-book-edit {
+  height: 100vh;
+  padding-bottom: 100px;
+  overflow: auto;
+}

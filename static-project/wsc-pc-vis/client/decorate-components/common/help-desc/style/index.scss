@@ -1,0 +1,17 @@
+.deco-help-desc {
+  font-size: 12px;
+  line-height: 18px;
+  color: #323233;
+
+  &--tips {
+    color: #969799;
+  }
+
+  &--error {
+    color: #D40000;
+  }
+
+  &--inline {
+    display: inline-block;
+  }
+}

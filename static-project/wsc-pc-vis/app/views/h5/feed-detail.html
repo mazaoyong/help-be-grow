@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+
+{% block page_title %} 详情 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_h5_css.moments/detail') | safe }}
+{% endblock %}
+
+{% block app_content %}
+  <div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('version_h5_js.moments/detail') | safe }}
+{% endblock %}

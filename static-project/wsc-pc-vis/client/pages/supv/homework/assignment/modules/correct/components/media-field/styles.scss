@@ -1,0 +1,25 @@
+.media-action {
+  box-sizing: border-box;
+  width: 80px;
+  height: 32px;
+  border-radius: 2px;
+  border: 1px dashed #DCDEE0;
+  background-color: #F7F8FA;
+  cursor: pointer;
+
+  .zenticon {
+    font-size: 16px;
+    line-height: 30px;
+    margin: auto 8px auto 12px;
+  }
+
+  &.disabled {
+    background-color: #ebedf0;
+    cursor: not-allowed;
+    color: #C1C1C1;
+  }
+}
+
+.audio-uploader-pop.correct {
+  width: 122px;
+}

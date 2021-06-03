@@ -1,0 +1,52 @@
+.panel-day {
+  height: 100%;
+
+  &__row {
+    height: 50px;
+    border-top: 1px dashed #e5e5e5;
+  }
+
+  &__row-hover {
+    background-color: #f2f3f5;
+
+    &.panel-day__row-disabled {
+      opacity: 1;
+    }
+  }
+
+  &__active {
+    border-top: 1px solid #666666;
+  }
+}
+
+.create-tip {
+  position: fixed;
+  transform: translate(-16%, -140%);
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  font-size: 12px;
+  z-index: 2000;
+  pointer-events: none;
+
+  &__content {
+    border-radius: 2px;
+    color: #333;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+  }
+
+  &__icon-arrow {
+    position: absolute;
+    left: 16%;
+    bottom: 0;
+    transform: translate(-50%, 50%) rotate(45deg);
+    height: 6px;
+    width: 6px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+    overflow: hidden;
+  }
+}

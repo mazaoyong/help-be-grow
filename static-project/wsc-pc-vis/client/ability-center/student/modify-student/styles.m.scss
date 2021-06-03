@@ -1,0 +1,9 @@
+.modifyStudent {
+  :global(.dialog-r-body) {
+    padding: 0;
+  }
+
+  :global(.dialog-r-footer) {
+    padding-right: 0;
+  }
+}

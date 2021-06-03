@@ -1,0 +1,195 @@
+:local(.question) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 48px;
+    background: #f7f8fa;
+    &.foldable{
+      cursor: pointer;
+    }
+    .left {
+      font-size: 14px;
+      color: #323233;
+      line-height: 20px;
+      font-weight: 700;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      .toolbar {
+        color: #c8c9cc;
+        font-size: 18px;
+        :global(.zenticon) {
+          margin-left: 10px;
+          cursor: pointer;
+          &:hover:not(:global(.disabled)) {
+            color: #323233;
+          }
+          &.disabled:hover {
+            color: #c8c9cc;
+          }
+        }
+      }
+      .score {
+        display: flex;
+        align-items: center;
+        margin-left: 16px;
+        :global(.zent-number-input) {
+          margin: 0 8px;
+          width: 80px;
+          input {
+            min-width: 0;
+          }
+        }
+        :global(.zent-select) {
+          width: 110px;
+        }
+      }
+      .result {
+        color: #c8c9cc;
+        line-height: 20px;
+      }
+      .resultTrue {
+        color: #2da641;
+        font-size: 18px;
+      }
+      .resultFalse {
+        color: #d40000;
+        font-size: 18px;
+      }
+      .expandIcon {
+        margin-left: 8px;
+        transition: transform 0.3s ease-in-out;
+        will-change: transform;
+      }
+      .expandIconExpand {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .content {
+    transition: all 0.3s ease-in-out;
+    padding: 16px 8px;
+    .title {
+      font-size: 14px;
+      color: #323233;
+      line-height: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .container {
+      .options {
+        .item {
+          margin-bottom: 12px;
+          display: flex;
+          &.itemShowChosenRate {
+            padding: 6px 8px;
+            &:hover {
+              background-color: #f7f8fa;
+            }
+          }
+          .itemContent {
+            flex: 1;
+            display: flex;
+            .left {
+              flex: none;
+              margin-right: 8px;
+            }
+            .right {
+              flex: 1;
+            }
+          }
+          .itemChosenRate {
+            flex: 0;
+            font-size: 14px;
+            color: #646566;
+            line-height: 20px;
+            white-space: nowrap;
+          }
+        }
+      }
+      .answer {
+        border-top: 1px solid #ebedf0;
+        .item {
+          margin-top: 12px;
+          & > div {
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+        .labelComment{
+          padding-top: 5px;
+        }
+        .fixedItem {
+          margin-top: 12px;
+          display: flex;
+          .label {
+            flex: none;
+            width: 70px;
+            text-align: right;
+          }
+          .info {
+            flex: 1;
+          }
+        }
+        .subject-item {
+          margin-top: 12px;
+          .label {
+            width: 70px;
+            text-align: right;
+          }
+          .info {
+            margin: 12px 0;
+            background: #f7f8fa;
+            padding: 16px;
+          }
+        }
+        /** 显示用户输入的所有空格 */
+        .showWhiteSpace{
+          white-space: pre-wrap;
+        }
+      }
+    }
+  }
+  .contentHide {
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    height: 0;
+  }
+}
+:local(.popup) {
+  width: 110px !important;
+}
+:local(.richtext) {
+  display: inline;
+  p {
+    margin-top: 5px;
+    margin-bottom: 16px;
+  }
+  img {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    cursor: pointer;
+    margin-right: 12px;
+  }
+  iframe {
+    display: inline-block;
+    vertical-align: top;
+    width: 142px;
+    height: 80px;
+    border-radius: 3px;
+    margin-right: 12px;
+  }
+  :global(.video-link) {
+    img { 
+      width: 142px;
+    }
+  }
+}
+:local(.popcontent) {
+  padding-bottom: 8px;
+}

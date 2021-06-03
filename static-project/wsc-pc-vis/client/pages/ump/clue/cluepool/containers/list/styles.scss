@@ -1,0 +1,52 @@
+@import 'vars/colors';
+
+.edu-clue-pool {
+  min-width: 824px;
+
+  .zent-select-text {
+    color: $normalColor;
+
+    .zent-select-placeholder {
+      color: $normalColor;
+    }
+  }
+
+  .zent-select-text {
+    width: 200px;
+  }
+
+    // 上面的样式设置会覆盖 zent 分页器组件的样式
+  .zent-pagination-page-size-changer{
+    .zent-select-text{
+        width: auto;
+    }
+  }
+
+  .zent-cascader__select-text-content {
+    color: $normalColor;
+  }
+
+  .zent-multi-cascader__tags-placeholder {
+    color: $normalColor;
+  }
+
+  .zent-grid-tfoot-page {
+    margin-top: 16px;
+  }
+}
+
+.edu-clue-pool-tag-tail {
+  width: 80px;
+}
+
+.edu-clue-pool-tag {
+  margin-right: 2px;
+}
+
+.edu-clue-pool-tag-etc {
+  color: #155bd4;
+}
+
+.tfoot__batchcomponents.tfoot__batchcomponents--has-children{
+  padding: 0;
+}

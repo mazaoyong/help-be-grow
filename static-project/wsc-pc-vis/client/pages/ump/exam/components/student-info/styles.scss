@@ -1,0 +1,25 @@
+.student-info {
+
+  &-avatar {
+    display: block;
+    width: 48px;
+    height: 50px;
+    margin: 6px auto 17px;
+    overflow: hidden;
+    border-radius: 70px;
+  }
+
+  &-container {
+    text-align: center;
+    padding-right: 15px;
+  }
+
+  &-name {
+    display: block;
+  }
+
+  &-submit-time {
+    display: block;
+    margin-top: 7px;
+  }
+}

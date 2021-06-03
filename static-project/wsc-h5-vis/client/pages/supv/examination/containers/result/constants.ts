@@ -1,0 +1,5 @@
+export const ACTION_STATUS = {
+  CANNOT_REEXAM: 0,
+  CAN_REEXAM: 1,
+  WILL_REEXAM: 2,
+};

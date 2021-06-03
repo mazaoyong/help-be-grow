@@ -1,0 +1,50 @@
+.inventory-guide-dialog {
+  width: 960px;
+
+  .zent-dialog-r-body {
+    > p {
+      margin-bottom: 20px;
+    }
+
+    .guide-block {
+      padding-left: 50px;
+      padding-right: 40px;
+      margin-bottom: 20px;
+
+      &-title {
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 8px;
+
+        &-no {
+          position: absolute;
+          top: -2px;
+          left: -30px;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          font-size: 16px;
+          background-color: #155bd4;
+          border-radius: 12px;
+          color: #fff;
+        }
+      }
+
+      &-content {
+        font-size: 14px;
+
+        > p {
+          margin-bottom: 16px;
+        }
+
+        > img {
+          display: block;
+          width: 100%;
+          border: 1px dashed #c8c9cc;
+        }
+      }
+    }
+  }
+}

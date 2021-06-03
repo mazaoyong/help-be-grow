@@ -1,0 +1,50 @@
+// @import '~shared/sass/page-init';
+
+@import '~@zent/compat/css';
+
+body {
+  font-size: 14px;
+
+  &.theme-new-ui {
+    color: #323233;
+    font-size: 14px;
+
+    .app-design .form-actions.new-actions {
+      background-color: #fff;
+      box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, .07);
+      opacity: .95;
+    }
+  }
+
+  #app-container .app .app-inner {
+    padding: 16px;
+    margin: 16px;
+  }
+
+  // 新版zenttab没有默认bottom margin，导致很多页面tab下面元素直接贴到tab上，比如知识付费的多个影响活动，此处加一个全局覆盖
+  // TODO 临时方案，fix me
+  .zent-tabs {
+    margin-bottom: 10px;
+  }
+}
+
+// .zent-dialog-r {
+//   &-footer {
+//     padding: 0;
+//     margin-top: 16px;
+//   }
+// }
+
+
+// .zent-dialog-r-body-content{
+//   overflow-y: initial !important;
+// }
+
+.zent-dialog-r {
+  min-height: initial !important;
+  max-height: initial !important;
+  .zent-dialog-r-body-content {
+    min-height: initial !important;
+    max-height: initial !important;
+  }
+}

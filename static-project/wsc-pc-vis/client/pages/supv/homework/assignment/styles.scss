@@ -1,0 +1,15 @@
+.app-inner {
+  padding: 0 !important;
+  min-height: calc(100vh - 88px);
+
+  .assignment {
+    min-height: calc(100vh - 88px);
+  }
+}
+
+.operations-pop-item {
+  span.disabled, span.operation.disabled {
+    cursor: not-allowed;
+    color: #bbb;
+  }
+}

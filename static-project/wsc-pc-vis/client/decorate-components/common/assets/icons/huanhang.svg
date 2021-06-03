@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/换行</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/换行" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,4 L4,5 L12,5 L12,4 L4,4 Z M2,2 L14,2 L14,7 L2,7 L2,2 Z" id="Rectangle" fill="#7D7E80" fill-rule="nonzero"></path>
+        <path d="M4,15 L4,16 L16,16 L16,15 L4,15 Z M2,13 L18,13 L18,18 L2,18 L2,13 Z" id="Rectangle-Copy" fill="#7D7E80" fill-rule="nonzero"></path>
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="16" y="2" width="2" height="7"></rect>
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="7" y="9" width="11" height="2"></rect>
+        <polygon id="Triangle" fill="#7D7E80" fill-rule="nonzero" transform="translate(5.500000, 10.000000) rotate(-90.000000) translate(-5.500000, -10.000000) " points="5.5 8.5 7.5 11.5 3.5 11.5"></polygon>
+    </g>
+</svg>

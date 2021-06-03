@@ -1,0 +1,29 @@
+@import 'common/app-design';
+@import 'vars/colors';
+
+.homework-edit {
+  display: flex;
+
+  .form {
+    padding: 24px;
+    background: #fff;
+    overflow-x: scroll;
+    border-left: 16px solid $whiteColor;
+
+
+    .form-container {
+      min-width: 680px;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 500;
+      margin-bottom: 16px;
+
+      &.new-block {
+        margin-top: 56px;
+      }
+    }
+  }
+}

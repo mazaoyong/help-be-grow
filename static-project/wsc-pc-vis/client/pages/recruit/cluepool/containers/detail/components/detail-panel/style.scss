@@ -1,0 +1,29 @@
+.clue-detail__panel {
+
+  .student-card{
+    height: 100% !important;
+  }
+
+  &__edit {
+    text-align: right;
+  }
+
+  hr {
+    margin: 16px 0;
+    border-bottom: 0;
+  }
+
+  &__base {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0 0;
+  }
+
+  &__source {
+    dl > dd > a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+}

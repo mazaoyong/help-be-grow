@@ -1,0 +1,75 @@
+.recommend-cards {
+  margin-top: 10px;
+
+  &__card {
+    width: 420px;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+  }
+}
+
+.recommend-cards {
+  &__dialog {
+    width: 400px;
+  }
+}
+
+.card-popover {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999;
+}
+
+.wscpackage-year {
+  &__container {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 8px -2px;
+    width: 64px;
+  }
+
+  &__trigger {
+    color: #999;
+    font-size: 12px; 
+    cursor: pointer;
+  }
+
+  &__option {
+    cursor: pointer;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 12px;
+    color: #333;
+    background-color: #fff;
+    &:hover {
+      background-color: #E8EFFA;
+    }
+  }
+}
+
+.pop-trigger {
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+
+  .down-arrow {
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    transform: rotate(135deg);
+    transition: 0.4s ease;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .down-arrow.up {
+    transform: rotate(-45deg);
+  }
+}
+

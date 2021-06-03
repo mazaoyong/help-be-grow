@@ -1,0 +1,25 @@
+{% extends '../../common/base.html' %}
+
+{% block page_title %} 我的线索 {% endblock %}
+
+{% block page_style %}
+{{ loadCss('version_css.ump/clue/cluepool') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb js-page-breadcrumb" id="js-page-breadcrumb">
+      <a href="{{ URL.site('/ump/appcenter/channel', 'v4') }}">销售渠道</a>
+      <span data-href="{{ URL.site('/vis/ump/clue/mine', 'v4') }}" class="project">我的线索</span>
+    <!-- <span class="third"></span> -->
+  </div>
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+{% include "../../common/config.html" %}
+{% include "../../common/ueditor.html" %}
+{{ loadJs('version_js.ump/clue/cluepool') | safe }}
+{% endblock %}

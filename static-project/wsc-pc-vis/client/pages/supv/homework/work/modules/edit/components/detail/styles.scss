@@ -1,0 +1,55 @@
+@import 'vars/colors';
+
+.detail-container {
+  .add-block {
+    display: flex;
+    margin-right: 12px;
+    margin-top: 16px;
+  }
+
+  .video-uploader-wrapper {
+    padding: 16px;
+    border: 1px solid $theme-stroke-8;
+  }
+
+  .detail-operation {
+    &__wrapper {
+      min-height: 72px;
+      display: flex;
+
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+
+      .field {
+        display: inline-flex;
+        width: 468px;
+      }
+
+      .operation {
+        display: inline-flex;
+        height: 44px;
+        margin-left: 8px;
+        font-size: 18px;
+        line-height: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $theme-stroke-5;
+
+        :hover {
+          color: $normalColor;
+        }
+
+      }
+
+      .ebiz-documnet-upload-selected-item {
+        margin-top: 0;
+        width: 100%;
+
+        .item-right {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

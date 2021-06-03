@@ -1,0 +1,65 @@
+@import 'vars/colors';
+
+.list-action-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .list-action-item {
+    display: inline-block;
+    color: #155bd4;
+    cursor: pointer;
+    padding: 0 5px;
+    border-right: 1px solid #e5e5e5;
+    line-height: 10px;
+  }
+
+  .list-action-item:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .zenticon-more {
+    font-size: 24px;;
+  }
+}
+
+.list-action-item {
+  color: #155bd4;
+  cursor: pointer;
+}
+
+.list-action-item--disabled,
+.list-action-item--disabled span {
+  cursor: not-allowed !important;
+  color: #c8c9cc !important;
+}
+
+.dropdown-menus {
+  font-size: 0;
+  box-shadow: 0 0 1px rgba(153, 153, 153, 0.5);
+  background: #fff;
+
+  a {
+    color: $darkGrayColor;
+    display: inline-block;
+    width: 100%;
+  }
+
+  span {
+    font-size: 14px;
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    // text-align: center;
+    padding-left: 15px;
+    background: #fff;
+    cursor: pointer;
+    color: $darkGrayColor;
+
+    &:hover {
+      background: #edf4ff;
+    }
+  }
+}

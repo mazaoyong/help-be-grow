@@ -1,0 +1,76 @@
+@import 'common/ui-link';
+@import 'classes/new-title';
+@import './content-form';
+
+.benefit-form-field--hide {
+  display: none;
+}
+
+.benefit-form__step--step2 {
+  margin-top: 30px;
+}
+
+.field-no-label {
+  margin-left: 22px;
+
+  .zent-form__control-label {
+    width: 0;
+  }
+
+  .zent-form__controls {
+    margin-left: 0 !important;
+  }
+}
+
+.field-size-320 {
+  .zent-input {
+    width: 320px;
+  }
+}
+
+.summary-textarea {
+  textarea {
+    width: 320px;
+    height: 60px;
+  }
+}
+
+.zent-form__control-group {
+  margin-bottom: 24px;
+}
+
+.button-like-primary__span {
+  display: inline-block;
+  background-color: #155bd4;
+  color: #fff;
+  height: 32px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 16px;
+  border-radius: 2px;
+  font-family: inherit;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.button-like-outline__span {
+  border-color: var(--theme-stroke-5, #dcdee0);
+  display: inline-block;
+  height: 32px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 16px;
+  border-radius: 2px;
+  font-family: inherit;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 8px;
+}

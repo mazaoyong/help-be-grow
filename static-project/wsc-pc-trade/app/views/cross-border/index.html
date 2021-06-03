@@ -1,0 +1,19 @@
+{% extends '../common/base.html' %}
+
+{% block page_title %} 跨境服务 {% endblock %}
+
+{% block page_style %}
+{{ loadCss('version_css.cross-border') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+<div id="app-nav"></div>
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+{{ loadJs('version_js.cross-border') | safe }}
+{% endblock %}

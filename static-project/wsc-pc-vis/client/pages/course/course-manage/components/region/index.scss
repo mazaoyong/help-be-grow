@@ -1,0 +1,14 @@
+.goods-edit__region {
+  position: relative;
+
+  .zent-form__controls {
+    width: 100%;
+  }
+
+  &-corner {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin-top: 10px;
+  }
+}

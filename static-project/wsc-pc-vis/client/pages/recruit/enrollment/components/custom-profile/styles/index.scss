@@ -1,0 +1,9 @@
+.custom-profile {
+  .zent-form__control-label {
+    min-width: 120px;
+  }
+
+  .zent-textarea-wrapper.has-error {
+    border-color: #f44;
+  }
+}

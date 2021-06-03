@@ -1,0 +1,74 @@
+.statspage {
+    // 覆盖 App Inner 的默认样式
+    background-color: #f7f8fa;
+    margin: -16px;
+    min-height: 600px;
+
+    &__overview {
+        padding: 16px;
+        margin-bottom: 16px;
+        background-color: #fff;
+        &--title {
+            font-size: 16px;
+            color: #323233;
+            line-height: 24px;
+            margin-bottom: 16px;
+            font-weight: 500;
+            &-desc {
+                margin-left: 16px;
+                font-size: 14px;
+                color: #323233;
+                line-height: 20px;
+                font-weight: normal;
+            }
+        }
+        &--info {
+            padding: 24px 0;
+            background-color: #f7f8fa;
+            display: flex;
+            align-items: center;
+            &-datalist {
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                padding: 0 34px;
+                & + & {
+                    border-left: 1px solid #ebedf0;
+                }
+                &-item {
+                    text-align: center;
+                }
+                &-label {
+                    margin-bottom: 8px;
+                }
+                &-value {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__tabs {
+        padding: 16px;
+        background-color: #fff;
+    }
+
+    &__students {
+        &-export-list-link {
+            background: transparent !important;
+            margin-right: -24px;
+        }
+        .easy-filter__panel:first-child {
+            .easy-filter__panel:last-child {
+                flex-wrap: nowrap;
+            }
+        }
+        &--filter {
+            &-time-selector {
+                margin-left: -85px !important;
+                margin-right: -85px !important;
+            }
+        }
+    }
+}

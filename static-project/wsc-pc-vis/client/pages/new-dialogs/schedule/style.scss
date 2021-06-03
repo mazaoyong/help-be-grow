@@ -1,0 +1,281 @@
+.schedule-dialog {
+  position: relative;
+  .zent-dialog-r-body {
+    max-height: 500px;
+    overflow: auto;
+  }
+  .zent-loading--block {
+    position: static;
+  }
+  .form-body {
+    height: 100%;
+    padding-bottom: 24px;
+  }
+}
+.schedule {
+  &__create {
+    &-container {
+      z-index: 1;
+
+      .select-time-reserve__select {
+        margin-left: 0 !important;
+      }
+
+      .voluntarySelect__container-operator {
+        color: #155bd4;
+      }
+
+      .zent-form__control-group.has-selector {
+        margin-bottom: 8px;
+      }
+
+      .form-section-title {
+        font-size: 18px;
+        width: 112px;
+        text-align: right;
+        font-weight: bold;
+        margin-bottom: 24px;
+        margin-top: 67px;
+
+        &:first-of-type {
+          margin-top: 8px;
+        }
+      }
+
+      .try-alert {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-label {
+      line-height: 20px;
+      font-size: 14px;
+      color: #333;
+      font-weight: 500;
+      margin: 40px 0;
+    }
+
+    &-label.first-label {
+      margin-top: 0;
+    }
+
+    &-label::before {
+      content: '';
+      display: inline-block;
+      height: 20px;
+      vertical-align: sub;
+      border-left: 4px solid #3283fa;
+      margin-right: 10px;
+    }
+
+    &-form {
+      &.des {
+        padding-left: 130px;
+        margin-bottom: 15px;
+        margin-top: -15px;
+        color: #969799;
+      }
+      &.item {
+        margin-bottom: 24px;
+
+        // 自定义item下的form-controll为行内元素
+        .zent-form__control-group {
+          display: inline-block;
+          margin-right: 10px;
+          margin-bottom: 0;
+        }
+
+        .zent-form__error-desc {
+          margin-top: 10px;
+        }
+
+        label {
+          line-height: 30px;
+          height: 30px;
+          vertical-align: middle;
+        }
+      }
+      &.holiday-checkbox {
+        display: block;
+        margin-top: 15px;
+      }
+    }
+
+    &-footer {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: -24px;
+      box-sizing: border-box;
+      padding: 0;
+      background: #fff;
+      text-align: right;
+      padding: 0 16px 16px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.weekRepeat-line {
+  display: flex;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  border-bottom: 0;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &.header {
+    background-color: #f8f8f8;
+  }
+
+  .item {
+    height: inherit;
+    text-align: left;
+    padding-left: 20px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 40px;
+
+    .zent-btn {
+      position: relative;
+    }
+
+    &:first-child {
+      width: 160px;
+    }
+
+    &:last-child {
+      text-align: right;
+      padding-right: 30px;
+      margin-right: 0;
+      width: 80px;
+    }
+  }
+
+  .center {
+    margin: 0 auto;
+    line-height: 40px;
+    cursor: pointer;
+
+    // 添加按钮样式
+    .blue {
+      background-color: #155bd4;
+      border-radius: 50%;
+      padding: 4px;
+      color: #fff;
+      font-size: 12px;
+      transform: scale(0.6);
+    }
+  }
+
+  a {
+    user-select: none;
+  }
+}
+
+.repeatContainer {
+  position: relative;
+
+  .disabled {
+    color: #999;
+    cursor: not-allowed;
+
+    a {
+      color: inherit;
+    }
+
+    .blue {
+      background-color: #999;
+    }
+  }
+}
+
+.switchContainer {
+  .title {
+    border: 1px solid #feeebb;
+    padding: 10px;
+    background-color: #fffcf3;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .operateType {
+    margin-top: 10px;
+    display: flex;
+
+    .zent-radio-group label {
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+}
+
+.zent-page-loading .schedule__create-container {
+  z-index: 9;
+}
+
+.inline-ele {
+  position: relative;
+  display: inline-block;
+
+  &.operator {
+    line-height: 32px;
+    color: #155bd4;
+    cursor: pointer;
+    user-select: none;
+  }
+}
+
+a.zent-btn-disabled {
+  background: transparent;
+}
+
+.zent-popover {
+  z-index: 1050;
+}
+
+.zent-select__popover {
+  width: 250px;
+}
+
+.ebiz-select__container {
+  display: inline-block;
+
+  .ebiz-select__addon-operators {
+    .zent-btn:nth-child(2) {
+      margin-left: 2px;
+    }
+    .zent-btn:nth-child(2)::before {
+      margin-right: 4px;
+      color: #9b9b9b;
+      font-size: 12px;
+    }
+  }
+}
+
+.cover__schedule-assistant {
+  .option-item__extra {
+    width: 160px;
+
+    .option-conflict {
+      float: right;
+
+      * {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.assistant-selector {
+  .ebiz-select__container {
+    display: flex;
+
+    .ebiz-select-trigger__operations {
+      margin-left: 4px;
+    }
+  }
+}

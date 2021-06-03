@@ -1,0 +1,20 @@
+/*!
+ * weapp-design 组件，右上角new标记
+ */
+.weapp-design-components-new-label {
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 2px;
+    right: -12px;
+    width: 10px;
+    height: 12px;
+    background-image: url('//b.yzcdn.cn/public_files/2018/07/06/06ee5368f46ea8d5e583b14f19134e9c.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,95 @@
+.form-wrapper {
+  .referral {
+    &__phased-reward-field__item {
+      margin-bottom: 28px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .reward-field-block {
+        display: flex;
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+          align-items: flex-start;
+          .reward-field-label {
+            padding-top: 10px;
+          }
+        }
+
+        .reward-field-label {
+          display: flex;
+          flex-basis: 88px;
+          flex-shrink: 0;
+          justify-content: flex-end;
+          padding-top: 6px;
+
+          &.reward-field-label-required:before {
+            color: #b40000;
+            content: '*';
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 6px;
+          }
+        }
+
+        .reward-field-content {
+          flex: 1 1 100%;
+          margin-left: 10px;
+        }
+
+        .zent-checkbox-wrap {
+          display: inline-flex;
+          align-items: center;
+        }
+
+        .reward-field-content-inner,
+        .zent-checkbox-label {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .zent-block-header {
+        .zent-btn {
+          height: 20px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    &__phased-reward-detail {
+      margin-bottom: 0;
+      & > .zent-form-label {
+        display: none;
+      }
+      .zent-form-control-content {
+        margin-left: 24px;
+        .zent-form-control-content-inner {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  .zent-form-control {
+    &.has-error {
+      .zent-form-error {
+        display: block;
+      }
+    }
+    .zent-form-error {
+      margin-top: 4px;
+      display: none;
+    }
+  }
+
+  .has-submit {
+    .zent-form-error {
+      display: block;
+    }
+  }
+}

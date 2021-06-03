@@ -1,0 +1,24 @@
+.period-cards {
+  margin-top: 10px;
+
+  &__card {
+    height: 70px;
+    width: 200px;
+    display: inline-block;
+    margin-right: 21px;
+
+    .card {
+
+      &__desc {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #999;
+      }
+    }
+  }
+
+}
+

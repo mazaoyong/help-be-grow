@@ -1,0 +1,24 @@
+---
+- title: 推荐有奖
+- owner: 梅景
+- description: 裂变营销
+- tag:
+  - 营销活动
+- cover:
+---
+
+# {推荐有奖}
+
+使用ump代码积木
+
+## 注意事项
+
+## 页面
+
+- list: 列表页
+- edit: 新建/编辑页
+- stats: 数据页
+
+## 文档参考
+
+- [产品文档 PRD](https://doc.qima-inc.com/pages/viewpage.action?pageId=289700840)

@@ -1,0 +1,40 @@
+{% extends '../base/ump.html' %}
+
+{% block page_title %}
+  趣味测试
+{% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb" id="js-page-breadcrumb">
+
+    {% if isYZEdu %}
+
+      <a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+    
+      {% if isEduChainStore !== true %}
+        <a href="{{ URL.site('/ump/appcenter/edu', 'v4') }}">督学互动</a>
+      {% endif %}
+
+      <span data-href="{{ URL.site('/vis/pct/page/exam#/', 'v4')}}" class="project">趣味测试</span>
+
+    {% else %}
+
+      <a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+      <span class="project" data-href="{{ URL.site('/vis/pct/page/exam#/', 'v4')}}">趣味测试</span>
+
+    {% endif %}
+
+  </div>
+{% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.ump/exam') | safe }}
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.ump/exam') | safe }}
+{% endblock %}

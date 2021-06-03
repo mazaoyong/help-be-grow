@@ -1,0 +1,145 @@
+.clue-detail__etc {
+  padding: 0 0 0 16px;
+
+  &__phase {
+    margin-bottom: 16px;
+  }
+
+  hr {
+    margin: 16px 0;
+    border-bottom: 0;
+  }
+
+  &__tabs {
+    margin-top: 14px;
+  }
+
+  &__header {
+    h3 {
+      display: inline-block;
+      margin-right: 21px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.clue-phase {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 16px;
+  width: 100%;
+  height: 56px;
+
+  place-content: center space-between;
+
+  &.pointer{
+    cursor: pointer;
+  }
+
+  &.give-up-phase {
+    justify-content: center;
+
+    .clue-phase__item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      color: #999;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #dcdee0;
+        font-size: 20px;
+      }
+      .zenticon {
+        color: #fff;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+    &:first-child {
+      flex: none;
+    }
+
+    hr {
+      width: calc(100% - 56px);
+      height: 2px;
+      background: #ebedf0;
+      border: none;
+      margin: 16px 0;
+      border-bottom: 0;
+    }
+
+    &__dot {
+      width: 42px;
+      text-align: center;
+
+      .circle {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 6px solid #DCDEE0;
+        border-radius: 50%;
+        background: #FFFFFF;
+      }
+
+      dt {
+        margin-top: 10px;
+        color: #969799;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    &.active {
+      hr {
+        background: #155BD4;
+      }
+
+      .clue-phase__item__dot {
+        .circle {
+          border-color:  #155BD4;
+        }
+
+        dt {
+          color: #323233;
+        }
+      }
+    }
+  }
+
+  &.give-up-phase {
+    .clue-phase__item {
+      &.active {
+        hr {
+          background: #DCDEE0;
+        }
+
+        .clue-phase__item__dot {
+          .circle {
+            border-color:  #DCDEE0;
+          }
+  
+          dt {
+            color: #323233;
+          }
+        }
+      }
+    }
+  }
+}

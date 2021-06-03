@@ -1,0 +1,21 @@
+{% extends '../../common/base.html' %}
+
+{% block page_title %} 学员资料项 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.recruit/student-profile') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+	<div class="zent-breadcrumb" id="js-page-breadcrumb">
+		<span class="project" data-href="{{ URL.site('/vis/edu/page/student-profile', 'v4') }}">学员资料项</span>
+	</div>
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.recruit/student-profile') | safe }}
+{% endblock %}

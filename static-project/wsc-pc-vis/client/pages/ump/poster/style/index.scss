@@ -1,0 +1,98 @@
+@import 'common/filter';
+@import 'common/split-form';
+@import 'common/ui-link';
+@import './promotion';
+@import 'common/app-design';
+
+.poster-wrapper {
+  @import './preview';
+  @import './custom-bg';
+  @import './grad-with-img';
+  @import './goods-field';
+  @import './edit';
+  @import './reward-setting';
+
+  .split-form {
+    margin-left: 320px;
+    min-width: 540px;
+
+    .split-title {
+      margin: 40px 0;
+    }
+
+    .zent-form__control-group {
+      margin-bottom: 16px;
+    }
+  }
+
+  .poster-alert {
+    margin-bottom: 10px;
+    line-height: 18px;
+  }
+
+  .poster__list-orderinfo {
+    word-break: break-all;
+  }
+
+  .app-design .app-actions .form-actions {
+    padding-bottom: 10px !important; 
+  }
+}
+
+.effect_search {
+  margin: 15px 0;
+  padding: 20px 40px;
+  background-color: #f8f8f8;
+  .search-item {
+    display: inline-block;
+    width: 320px;
+    .label {
+      display: inline-block;
+      line-height: 30px;
+      margin-right: 10px;
+    }
+    .zent-input-wrapper {
+      display: inline-block !important;
+      width: 170px;
+      vertical-align: bottom;
+    }
+  }
+  .form-actions {
+    margin: 20px 0 0 70px;
+    .btn-reset {
+      margin-left: 0;
+      border: none;
+      background: none;
+    }
+  }
+}
+.zent-datetime-picker .picker-input {
+  width: 192px;
+}
+
+.poster-container {
+  .effect_search {
+    background-color: $theme-stroke-11;
+  }
+
+  .zent-table .stickrow.tr {
+    .cell:first-child {
+      padding-left: 16px;
+    }
+    .cell:last-child {
+      min-width: 154px;
+      padding-right: 16px;
+    }
+  }
+
+  .split-symbol {
+    margin-left: 5px;
+    border-right: 1px solid;
+    display: inline;
+    color: $theme-stroke-6;
+  }
+}
+
+.pct-goods-selector .goods-selector__dialog-footer {
+  margin-top: 0 !important;
+}

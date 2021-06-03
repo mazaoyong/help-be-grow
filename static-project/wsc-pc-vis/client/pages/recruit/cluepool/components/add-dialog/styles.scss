@@ -1,0 +1,70 @@
+.cluepool-add-button-group {
+  padding: 16px 0;
+  text-align: right;
+  background-color: #fff;
+}
+
+.edupool-add-dialog {
+  margin-bottom: 0 !important;
+}
+
+.cluepool-field {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cluepool-field_label {
+  width: 120px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: right;
+}
+
+.cluepool-field_text {
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #646566;
+}
+
+.edu-clue-inline-field {
+  display: inline-block;
+  margin: 0;
+  margin-left: -20px;
+
+  .zent-form__control-label {
+    display: none;
+  }
+}
+
+.edu-clue-radio-block {
+  padding-bottom: 10px;
+}
+
+.edu-clue-vertical-line {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 20px;
+  background-color: #e5e5e5;
+}
+
+.add-dialog {
+  &__loading {
+    position: relative;
+    height: 200px;
+    padding-top: 16px;
+  }
+}
+
+.cluepool-info-tip {
+  [class^='infoTip'] {
+    margin-top: -2px;
+    margin-bottom: 16px;
+  }
+}
+
+.clue-add-dialog-wrap {
+  max-height: calc(100% - 112px)!important;
+  overflow: auto;
+  padding-bottom: 0px;
+}

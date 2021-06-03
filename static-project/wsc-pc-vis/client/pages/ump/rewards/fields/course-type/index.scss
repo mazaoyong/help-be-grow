@@ -1,0 +1,60 @@
+.coursetype-wrap {
+
+  .coursetype-row {
+    & > label {
+      line-height: 30px;
+    }
+    margin-bottom: 5px;
+  }
+
+  .zent-row {
+    flex-direction: column;
+  }
+
+  .givenclasstime-input-wrap {
+    display: flex;
+    margin-left: 20px;
+    & > span {
+      line-height: 30px;
+    }
+
+    .givenClassTime {
+      margin-left: -5px;
+      margin-bottom: 15px;
+    }
+
+    .zent-form__control-label {
+      width: 0px;
+    }  
+    .zent-number-input-arrow {
+      margin-right: 35px;
+    }
+    .zent-input-addon-after {
+      text-align: center;
+    }
+  }
+
+  .trailcourse-selector {
+    margin-bottom: 0px;
+    margin-top: -5px;
+    & button,
+    .trail-course-table {
+      margin-left: 10px;
+    }
+    .zent-table-container {
+      margin-bottom: 0px;
+    }
+    .zent-form__control-label {
+      width: 0;
+    } 
+    .zent-form__error-desc {
+      margin-left: 10px;
+    }
+  }
+
+  .coursetype-helpdesc {
+    font-size: 12px;
+    margin-left: 20px;
+    color: rgb(153, 153, 153);
+  }
+}

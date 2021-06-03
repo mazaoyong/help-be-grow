@@ -1,0 +1,249 @@
+@import 'common/app-design';
+@import 'classes/new-title';
+@import 'vars/colors';
+
+.page-container {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.referral-edit {
+  display: flex;
+  min-height: calc(100vh - 172px);
+
+  .form-wrapper {
+    min-width: 570px;
+    margin-left: 16px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    overflow-x: auto;
+
+    .new-title {
+      margin: 8px 0 24px 16px;
+
+      &.with-text {
+        margin-bottom: 16px;
+      }
+    }
+
+    .form-block {
+      margin-bottom: 40px;
+    }
+
+    .commission-input {
+      .zent-form-label {
+        margin-top: 5px;
+      }
+    }
+
+    .zent-form-label {
+      flex-basis: 140px;
+    }
+
+    .referral__reward-settings {
+      &.form-error-control {
+        margin-bottom: 18px;
+      }
+
+      .zent-form-control {
+        margin-bottom: 16px;
+
+        .zent-form-label {
+          line-height: 20px;
+        }
+      }
+
+      .zent-form-control.referral__reward-settings__commission {
+        margin-bottom: 13px;
+      }
+
+      .zent-form-description {
+        margin-top: 4px;
+      }
+
+      .zent-radio-wrap {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  // zent 样式覆盖
+  .zent-radio-group,
+  .zent-checkbox-group {
+    padding-top: 3px;
+    .group-field-item {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .zent-form-error {
+    margin-top: 6px;
+  }
+}
+
+.referral {
+  // 活动商品
+  &__course-select {
+    .zent-form-error {
+      margin-top: 0;
+    }
+    .zent-grid {
+      width: 580px;
+      margin-bottom: 8px;
+    }
+  }
+
+  // 活动海报
+  &__poster {
+    .default-background {
+      margin-bottom: 16px;
+
+      &-example {
+        color: $blueColor;
+        cursor: pointer;
+      }
+    }
+
+    .zent-form-description .example {
+      color: $blueColor;
+    }
+
+    .zent-form-error {
+      margin-top: 4px;
+      margin-left: 24px;
+    }
+  }
+
+  // 奖励设置
+  &__reward-settings {
+    &__error {
+      margin-top: -20px;
+    }
+
+    &__commission {
+      .zent-form-control-content {
+        .group-field-item {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .zent-form-control.commission-type {
+      .zent-form-control-content {
+        margin-left: 0;
+      }
+    }
+
+    .commission-input {
+      &.commission, &.discount {
+        .zent-form-control-content-inner:after {
+          margin-left: 8px;
+          line-height: 32px;
+        }
+      }
+
+      &.commission {
+        .zent-form-control-content-inner:after {
+          content: '佣金比例';
+        }
+      }
+
+      &.discount {
+        .zent-form-control-content-inner:after {
+          content: '课程折扣';
+        }
+      }
+
+      &.fixed-price  .fixed-price__tip-alert {
+        margin-top: 4px;
+        color: $redColor;
+      }
+    }
+
+    &__commission,
+    &__error {
+      &.zent-form-control {
+        margin-bottom: 16px;
+      }
+      .zent-form-label {
+        display: none;
+      }
+      .zent-form-control-content {
+        margin-left: 0 !important;
+      }
+    }
+    .zent-checkbox-group {
+      width: 100%;
+    }
+  }
+
+  // 优惠叠加
+  &__distributor-add-on {
+    .referral__desc-info {
+      &__wrapper {
+        margin-bottom: 0;
+        .zent-form-label {
+          display: none;
+        }
+        .zent-form-control-content {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .group-field-item {
+      margin-bottom: 4px !important;
+    }
+  }
+
+  // 校区选择
+  &__choose-school {
+    .zent-form__control-group  {
+      width: 100%;
+      margin-bottom: 0;
+
+      .campus-select {
+        &-dialog {
+          width: 60px;
+          margin-top: 2px;
+
+          & + .zent-table-container {
+            width: 580px;
+          }
+        }
+        &-radio {
+          padding-top: 0;
+        }
+      }
+
+      .zent-form__controls {
+        & > div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .zent-form-error {
+      margin-top: -8px;
+    }
+
+    .zent-radio-wrap {
+      margin-right: 32px;
+    }
+  }
+
+  // 帮助文案样式
+  &__desc-info {
+    color: #969799;
+    font-size: 12px;
+
+    &__activity-award {
+      padding-left: 16px;
+      margin-bottom: 13px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.schedule-select__month {
+  height: 24px;
+  line-height: 24px;
+
+  user-select: none;
+
+  .zenticon {
+    width: 24px;
+    height: 24px;
+    color: #dcdcdc;
+    cursor: pointer;
+
+    &:hover {
+      color: #155bd4;
+    }
+  }
+
+  &__left {
+    margin-right: 8px;
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__right {
+    margin-left: 8px;
+  }
+
+
+  .today {
+    cursor: pointer;
+    color: #155bd4 !important;
+    &.has-margin {
+      margin-left: 10px;
+    }
+  }
+
+  .next {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #155bd4 !important;
+  }
+}

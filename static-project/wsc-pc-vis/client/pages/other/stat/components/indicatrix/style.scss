@@ -1,0 +1,58 @@
+@import 'vars/colors';
+@import 'mixins/font';
+
+.indicatrix {
+  &-item {
+    margin-bottom: 16px;
+  }
+
+  &-group {
+    margin-bottom: 8px;
+
+    &__label {
+      @include text-14;
+      font-weight: 500;
+      line-height: 22px; // 增大 line-height，与右侧指标选项文字对齐
+      margin-bottom: 8px;
+    }
+
+    &__icon {
+      color: $theme-stroke-4;
+      margin-left: 8px;
+    }
+  }
+
+  &-tip {
+    @include text-14;
+    margin-top: 16px;
+    color: $theme-stroke-3;
+
+    &__text {
+      display: inline-block;
+      transition: transform 0.1s ease-in-out;
+      transform: translateX(0);
+
+      &-choosed {
+        color: $theme-primary-4;
+      }
+
+      &-animate {
+        animation: bounce 0.2s 2;
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX(10px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+}

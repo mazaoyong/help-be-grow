@@ -1,0 +1,8 @@
+.rich-text__wrapper {
+  min-width: 640px;
+  min-height: 200px;
+}
+
+.has-error .rich-text__wrapper .edui-editor {
+  border-color: #D40000 !important;
+}

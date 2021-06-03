@@ -1,0 +1,50 @@
+.rc-ump-goods-brief {
+  &-wrapper {
+    display: flex;
+    font-size: 14px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 240px;
+
+    .brief-link {
+      color: #155bd4;
+      width: 100%;
+      line-height: 18px;
+    }
+
+    .brief-title {
+      color: #333;
+      width: 100%;
+      line-height: 18px;
+    }
+
+    .brief-sku {
+      transform: scale(0.75);
+      color: #333;
+    }
+
+    .brief-price {
+      color: #f60;
+      font-size: 12px;
+
+      .label {
+        line-height: 16px;
+        display: inline-block;
+        color: #f44;
+        padding: 0 4px;
+        border: 1px solid #f44;
+        border-radius: 2px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  &__img {
+    margin-right: 10px;
+    object-fit: contain;
+  }
+}

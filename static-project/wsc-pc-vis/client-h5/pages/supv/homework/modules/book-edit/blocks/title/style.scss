@@ -1,0 +1,18 @@
+.module-book-edit {
+  .block-title {
+    overflow: visible;
+    background: transparent;
+
+    .van-field {
+      border-radius: 4px;
+    }
+
+    &__error-msg {
+      height: 12px;
+      padding-left: 16px;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ee0a24;
+    }
+  }
+}

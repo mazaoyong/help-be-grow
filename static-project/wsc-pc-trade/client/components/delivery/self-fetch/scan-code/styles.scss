@@ -1,0 +1,137 @@
+.scan-code-dialog {
+  width: 560px;
+
+  .write-off {
+    &-wrap {
+      display: flex;
+      align-items: center;
+      margin-left: 35px;
+    }
+
+    &-switcher {
+      margin: 0 10px 0 5px;
+      height: 16px;
+    }
+  }
+
+  .selffetch-code {
+    &-wrap {
+      width: 527px;
+    }
+
+    &__tip {
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+    }
+
+    &__code {
+      margin: 15px auto 0;
+      padding: 17px 24px;
+      width: 237px;
+      height: 305px;
+      background: #f2f2f2;
+      box-sizing: border-box;
+
+      > .ui-page-loading {
+        height: 100%;
+      }
+
+      &__content {
+        height: 274px;
+        width: 189px;
+      }
+    }
+
+    &__container {
+      display: flex;
+    }
+
+    &__content-wrap {
+      flex: 1;
+    }
+
+    &__save {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    &__usage {
+      margin-top: 20px;
+
+      &__title {
+        color: #333;
+        font-size: 14px;
+      }
+
+      &__bg {
+        display: flex;
+        margin-top: 10px;
+        background: #f8f8f8;
+      }
+
+      &__step {
+        position: relative;
+        flex: 1;
+        height: 74px;
+
+        &__label {
+          position: absolute;
+          left: 50%;
+          top: 11px;
+          margin-left: -7px;
+          height: 14px;
+          width: 14px;
+          border-radius: 50%;
+          line-height: 14px;
+          text-align: center;
+          background: #155bd4;
+          color: #fff;
+
+          > span {
+            display: inline-block;
+            transform: scale(0.8);
+          }
+        }
+
+        &__msg {
+          position: absolute;
+          left: 50%;
+          top: 34px;
+          width: 100%;
+          font-size: 14px;
+          text-align: center;
+          transform: translateX(-50%);
+          color: #333;
+        }
+
+        &__link {
+          position: absolute;
+          top: 17.5px;
+          width: 50%;
+          border-bottom: 1px solid #155bd4;
+
+          &--before {
+            left: 0;
+          }
+
+          &--after {
+            right: 0;
+          }
+        }
+      }
+    }
+
+    &__help {
+      margin-top: 10px;
+      line-height: 17px;
+      font-size: 14px;
+
+      > a {
+        float: right;
+        color: #155bd4;
+        cursor: pointer;
+      }
+    }
+  }
+}

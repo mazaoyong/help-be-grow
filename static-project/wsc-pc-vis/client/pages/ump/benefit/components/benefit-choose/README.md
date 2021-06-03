@@ -1,0 +1,9 @@
+---
+- title: 选择专栏内容直播对话框
+- owner:
+  - 胡学望
+- description: 会员权益页面打开选择专栏内容直播对话框
+- cover: 'https://img.yzcdn.cn/upload_files/2020/07/09/FqMid6hZu6qjAhaKK3dgOXhO-OHv.png'
+- tag:
+  - 对话框
+---

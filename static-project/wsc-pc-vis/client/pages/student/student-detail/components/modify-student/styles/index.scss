@@ -1,0 +1,16 @@
+.custom-profile {
+  .zent-form__control-label {
+    min-width: 120px;
+  }
+
+  .zent-cascader__select {
+    height: 32px !important;
+  }
+
+  .zent-input-wrapper,
+  .zent-select-text,
+  .zent-select,
+  .picker-input {
+    width: 185px !important;
+  }
+}

@@ -1,0 +1,78 @@
+.ebiz-schedule {
+  &__columns {
+    position: relative;
+    display: flex;
+    overflow-y: hidden;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+
+    &__showmore {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 101;
+      display: table;
+      width: 14px;
+      height: 100%;
+      background-color: #f2f3f5;
+      color: #999999;
+      cursor: pointer;
+
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        word-wrap: break-word;
+
+        writing-mode: vertical-rl;
+      }
+
+      &__pop {
+        position: relative;
+        top: -10px;
+        left: -10px;
+        width: 110px;
+        height: 36px;
+        border-radius: 4px;
+        background: #ffffff;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+        text-align: center;
+        line-height: 36px;
+
+        &::before {
+          position: absolute;
+          bottom: -4px;
+          left: 15px;
+          z-index: 10;
+          width: 8px;
+          height: 8px;
+          background-color: #ffffff;
+          box-shadow: -2 2px 8px rgba(0, 0, 0, 0.2);
+          content: '';
+          transform: translateX(-50%) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__column {
+    position: relative;
+    min-width: 100px;
+    width: 100px;
+    height: 100%;
+
+    &__field {
+      position: absolute;
+      left: 0;
+      z-index: 100;
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+}

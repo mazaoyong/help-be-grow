@@ -1,0 +1,156 @@
+.alert-time-field {
+
+  .field-inline {
+    margin-top: 5px;
+  }
+
+  .zent-radio-group {
+    line-height: 28px;
+  }
+}
+
+.total-days-field {
+  .zent-input {
+    border: 1px solid #bbb;
+
+    &-wrapper {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    &-addon-before {
+      border: 0;
+      background-color: transparent;
+    }
+
+    &-addon-after {
+      padding-left: 0;
+      border: 0;
+      background-color: transparent;
+  
+      .suffix {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 25px;
+        height: 100%;
+        border-left: 0;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: #e5e5e5;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.reward-field {
+  line-height: 28px;
+
+  .field-inline {
+    .zent-input-addon-after {
+      border: 0;
+      background-color: transparent;
+    }
+  }
+
+  .zent-table-container {
+    margin-bottom: 0;
+  }
+
+  .score-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    .zent-input {
+      border: 1px solid #bbb;
+
+      &-wrapper {
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    .zent-checkbox-wrap {
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
+
+  }
+
+  .coupon-select-result {
+    margin-top: 10px;
+    width: 550px;
+  }
+
+  .zent-table {
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.participate-field {
+  line-height: 28px;
+
+  .price {
+    margin-top: 5px;
+    margin-left: 20px;
+
+    &__price {
+      .zent-input-addon-before {
+        width: 20px;
+      }
+    }
+
+    &__desc {
+      color: #979797;
+    }
+  }
+
+  .zent-radio-group {
+    line-height: 28px;
+  }
+
+  .column {
+    position: relative;
+    margin-top: 10px;
+
+    .choose-link {
+      position: absolute;
+      top: -37px;
+      left: 100px;
+      width: 100px;
+    }
+
+    .zent-table-container {
+      margin-bottom: 10px;
+    }
+  }
+
+  .column__list-table {
+    width: 400px;
+  }
+
+  .pwd {
+    margin-left: 20px;
+
+    .input-wrapper {
+      display: flex;
+      margin-top: 10px;
+
+      label {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .zent-table {
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.punch_choose-link-wrapper {
+  margin-left: 24px;
+}

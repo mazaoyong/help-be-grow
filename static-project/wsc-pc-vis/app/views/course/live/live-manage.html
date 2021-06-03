@@ -1,0 +1,37 @@
+{% extends '../base/goods.html' %}
+
+{% block page_title %} 直播 {% endblock %}
+
+
+{% block app_nav %}
+	<div class="zent-breadcrumb" id="js-page-breadcrumb">
+
+		{% if isYZEdu %}
+
+		<a href="{{ URL.site('/vis/course/live/list', 'v4') }}">直播</a>
+    <span class="project">直播间管理</span>
+
+		{% else %}
+
+    <a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+		<a href="{{ URL.site('/vis/pct/page/tabs#/live', 'v4') }}" >知识付费</a>
+    <span class="project">直播间管理</span>
+
+		{% endif %}
+
+	</div>
+{% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.course/live/live-manage') | safe }}
+{% endblock %}
+
+{% block app_content %}
+	<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+	{% include "../../common/config.html" %}
+	{% include "../../common/ueditor.html" %}
+  {{ loadJs('version_js.course/live/live-manage') | safe }}
+{% endblock %}

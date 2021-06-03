@@ -1,0 +1,11 @@
+@import 'mixins/statistics';
+@include statistics;
+
+.referral-stats__summary {
+  .statistics-container {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

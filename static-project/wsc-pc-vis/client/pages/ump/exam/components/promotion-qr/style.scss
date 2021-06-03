@@ -1,0 +1,61 @@
+.promotion-qr-wrapper {
+  margin-top: 15px;
+}
+
+.qr-content {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  a {
+    color: #38f;
+  }
+
+  .qr-path {
+    width: 315px;
+    margin: 18px auto 0;
+
+    .zent-input-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .zent-input-addon-after {
+      width: 60px;
+      background-color: #38f !important;
+      color: #fff !important;
+      cursor: pointer;
+    }
+  }
+
+  .qr-code {
+    margin-top: 15px;
+
+    .qr-code-img {
+      width: 310px;
+      height: 495px;
+      box-shadow: 0 0 15px rgba(229, 229, 229, .5);
+      overflow-y: auto;
+      margin: 5px auto;
+
+      > img {
+        width: 100%;
+      }
+
+      &.qr-code-img--loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .down-link {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

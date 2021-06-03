@@ -1,0 +1,23 @@
+{% extends '../common/base.html' %}
+
+{% block page_title %} 售后详情 {% endblock %}
+
+{% block page_style %}
+{{ loadCss('refund/detail') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+<div class="zent-breadcrumb">
+  <a href="/v4/trade/refunds">售后维权</a>
+  <span>售后详情</span>
+</div>
+{% endblock %}
+
+{% block app_content %}
+  <div id="app"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('vendor') | safe }}
+  {{ loadJs('refund/detail') | safe }}
+{% endblock %}

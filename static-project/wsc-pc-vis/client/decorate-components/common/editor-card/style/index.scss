@@ -1,0 +1,58 @@
+.deco-editor-card {
+  position: relative;
+}
+
+.deco-editor-card--inline {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .deco-editor-card {
+    &-item {
+      display: block;
+      position: relative;
+      float: left;
+      margin: 5px 10px 5px 0;
+
+      &::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #155bd4;
+        border-radius: 2px;
+        z-index: 1;
+        pointer-events: none;
+        visibility: hidden;
+      }
+
+      &:hover {
+        &::after {
+          visibility: visible;
+        }
+      }
+    }
+
+    &-add {
+      float: left;
+      flex-direction: column;
+      width: 50px;
+      height: 50px;
+      padding: 0;
+      margin: 5px 10px 5px 0;
+      border: none;
+      box-shadow: 0 0 4px 0 rgba(10,42,97,.2);
+      cursor: pointer;
+
+      &-icon {
+        position: static;
+        transform: none;
+      }
+    }
+  }
+}

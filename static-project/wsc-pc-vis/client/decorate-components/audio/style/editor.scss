@@ -1,0 +1,101 @@
+@import 'vars/colors';
+
+.decorate-audio-editor {
+
+  .zent-input-wrapper {
+    width: 100%;
+  }
+
+  .rc-upload {
+    display: inline-block;
+  }
+
+  &__avatar-desc {
+    display: inline-block;
+    width: 271px;
+    margin-left: 10px;
+    vertical-align: top;
+    font-size: 12px;
+
+    &-tip {
+      color: $theme-stroke-4;
+    }
+
+    &-shop {
+      cursor: pointer;
+      color: #155bd4;
+      margin-top: 28px;
+      display: block;
+    }
+  }
+
+  &__audio {
+    width: 186px;
+    height: 32px;
+    border: 1px solid #ebedf0;
+    border-radius: 2px;
+
+    &-action {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      width: 110px;
+      height: 32px;
+      font-size: 12px;
+      line-height: 32px;
+      cursor: pointer;
+      vertical-align: middle;
+
+      &-stop, &-play {
+        display: inline-block;
+        margin: 0 5px 3px 10px;
+        background-position: 0 0px;
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        background-image: url(https://img.yzcdn.cn/public_files/2019/03/21/8ffdf21029c4a83f7c9de5f7f27dd228.png);
+      }
+
+      &-stop {
+        background-position: 0 16px;
+      }
+    }
+
+    &-rechoose {
+      font-size: 12px;
+      color: #155bd4;
+      vertical-align: middle;
+      display: inline-block;
+      height: 16px;
+      padding-left: 15px;
+      border-left: 1px solid #ebebf0;
+      cursor: pointer;
+    }
+
+    &-choose {
+      border: 1px solid #155bd4;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #155bd4;
+      width: 88px;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      cursor: pointer;
+    }
+  }
+
+  &__reload-control {
+
+    padding: 0 16px;
+
+    .deco-control-group__label {
+      margin-right: 50px;
+    }
+
+    label:first-child {
+      margin-bottom: 5px;
+    }
+  }
+}

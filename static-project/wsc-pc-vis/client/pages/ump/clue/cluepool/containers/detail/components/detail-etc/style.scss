@@ -1,0 +1,52 @@
+.clue-detail__etc {
+  padding: 0 0 0 16px;
+
+  hr {
+    margin: 16px 0;
+    border-bottom: 0;
+  }
+
+  &__header {
+    h3 {
+      display: inline-block;
+      margin-right: 21px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      vertical-align: middle;
+    }
+  }
+
+  &__phase {
+    margin-bottom: 16px;
+  }
+
+  &__tags {
+    margin-top: 16px;
+
+    & > article {
+      margin-top: 16px;
+
+      .zent-tag {
+        margin-right: 5px;
+      }
+    }
+
+    &__container {
+      .zent-tag {
+        margin-bottom: 10px;
+      }
+    }
+
+    .no-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+    }
+  }
+
+  &__tabs {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+.apply-requirement {
+
+  .require-table {
+
+    .thead {
+      color: #333;
+      font-weight: 500;
+    }
+
+    .disabled {
+      color: #969799;
+      cursor: not-allowed;
+    }
+  }
+
+  .apply-progress-footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .sucess-icon {
+    color: #4b0;
+    font-size: 16px;
+  }
+
+  .fail-icon {
+    color: #f44;
+    font-size: 16px;
+  }
+}

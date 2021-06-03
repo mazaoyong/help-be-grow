@@ -1,0 +1,108 @@
+$title_color: red; // sass-lint:disable-line no-color-keywords
+$grey: #bbb;
+$link_blue: #38f;
+
+.goods_list {
+  min-width: 830px !important; // sass-lint:disable-line no-important
+
+  .modal-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .link {
+    display: inline-block;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    cursor: pointer;
+    color: $link_blue;
+  }
+
+  .zent-table {
+    margin-bottom: 10px;
+
+    .cell.empty-data {
+      height: 300px;
+    }
+  }
+
+  .zent-dialog-r-close.zent-dialog-r-has-title {
+    top: 18px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .zent-dialog-r-title {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    height: 30px;
+  }
+
+  .goods-list-table {
+    position: relative;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.modal__goods-info {
+  display: flex;
+  align-items: center;
+
+  img,
+  > a {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  > a {
+    margin-top: 5px;
+  }
+
+  .content {
+    width: 70%;
+    background-color: inherit;
+
+    a {
+      color: #323233;
+      color: var(--theme-primary-4, #323233);
+
+      &:hover {
+        color: #155BD4;
+      }
+    }
+
+    span {
+      color: #323233;
+    }
+  }
+
+  .modal__goods-price {
+    color: #f60;
+  }
+}
+
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1; // sass-lint:disable-line no-vendor-prefixes
+}

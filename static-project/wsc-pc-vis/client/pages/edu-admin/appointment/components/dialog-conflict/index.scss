@@ -1,0 +1,18 @@
+.conflict-dialog-content {
+  &__desc {
+    color: #333333;
+  }
+
+  &__actions {
+    margin-top: 30px;
+    text-align: right;
+  }
+
+  .zent-form {
+    margin-bottom: 0;
+  }
+
+  .zent-form__control-label {
+    width: 100px;
+  }
+}

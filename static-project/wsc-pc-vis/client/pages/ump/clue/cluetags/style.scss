@@ -1,0 +1,30 @@
+.clue-tags {
+  display: flex;
+  height: calc(100vh - 75px);
+  min-height: 500px;
+
+  .serialno-edit {
+    color: #999;
+    margin-left: 8px;
+    visibility: hidden;
+  }
+
+  .tbody {
+    .tr:hover,
+    tr:hover {
+      .hovervisible {
+        visibility: visible;
+      }
+    }
+  }
+
+  .zent-grid-tfoot {
+    height: 40px;
+  }
+}
+
+.edu-link-group {
+  a {
+    cursor: pointer;
+  }
+}

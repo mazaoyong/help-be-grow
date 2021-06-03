@@ -1,0 +1,99 @@
+@import 'vars/colors';
+
+.tuition-offset {
+  &__poster {
+    .zent-radio-group {
+      padding-top: 4px;
+
+      .default-background {
+        margin-bottom: 14px;
+      }
+    }
+
+    .zent-form-description .example {
+      color: $blueColor;
+    }
+  }
+
+  &__info-collect {
+    .zent-form__control-group {
+      margin-bottom: 0;
+
+      .info-collect__expand {
+        line-height: 20px;
+      }
+
+      .operations-container {
+        &.info-collect__ops {
+          margin-top: 0;
+
+          .operations {
+            margin: 16px auto 8px;
+            line-height: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .info-collect__line.info-collect__preview {
+        line-height: 17px;
+
+        .operations-container .operations-item {
+          margin-top: 1px;
+        }
+      }
+
+      .info-collect__preview span {
+        color: $grayColor;
+      }
+    }
+
+    .zent-form-description {
+      margin-top: 16px;
+      line-height: 17px;
+
+      .show-example {
+        color: $blueColor;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__poster {
+    .zent-form-error {
+      margin-top: 4px;
+      margin-left: 24px;
+    }
+  }
+}
+
+.default-background-example {
+  color: $blueColor;
+  cursor: pointer;
+
+  &.ml-8 {
+    margin-left: 8px;
+  }
+}
+
+.poster-template-file-download{
+  border-left: 1px solid #dcdee0;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+body.show-help{
+  .desc-break-line {
+    @media screen and (min-width: 1460px) {
+      display: none;
+    }
+  }
+}
+
+body.hide-help{
+  .desc-break-line {
+    @media screen and (min-width: 1260px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.store-note-editor {
+
+  .zenticon-help-circle-o {
+    margin-right: 4px;
+    margin-left: -10px;
+  }
+
+  .zent-checkbox-wrap-sp {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .zent-slider-main {
+    margin-left: 0 !important;
+  }           
+
+  &__add {
+    background-color: #f7f8fa;
+  }
+
+  &__source {
+    padding-left: 16px;
+  }
+
+  &__title {
+    .deco-control-group__label {
+      color: #323232;
+    }
+  }
+}
+
+.shopnote-modal__children {
+
+  .zent-input-wrapper {
+    width: 160px !important;
+  }
+}
+
+.shopnote-showcase-modal {
+
+  .modal__title {
+    margin-bottom: 16px;
+  }
+}
+
+.store-note-editor__input-wrapper {
+  width: 342px;
+}
+
+.list-modal {
+  .zent-tabs-type-slider .zent-tabs-actived {
+    background-color: #fff;
+  }
+
+  .zent-dialog-r-title {
+    height: auto;
+  }
+  .note-card-dialog {
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+    &__item {
+      &-title {
+        font-size: 12px;
+        line-height: 18px;
+        width: 160px;
+        height: 36px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      &-time {
+        font-size: 12px;
+        line-height: 18px;
+        color: #969799;
+      }
+    }
+  }
+}
+
+.controls-card {
+  &__promot {
+
+    .zenticon-help-circle:before {
+      color: #c8c9cd;
+      margin-left: 3px;
+    }
+  }     
+}

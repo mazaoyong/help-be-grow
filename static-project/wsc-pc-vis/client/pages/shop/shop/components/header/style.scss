@@ -1,0 +1,35 @@
+.create-header {
+  padding: 20px 0;
+  line-height: 30px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__img {
+    display: inline-block;
+    width: 70px;
+    height: 24px;
+    background-size: 100% 100%;
+    background-image: url(https://img.yzcdn.cn/wsc/shop/img/logo@2x.png);
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+  }
+
+  &__divider {
+    padding-left: 20px;
+    padding-right: 16px;
+    font-size: 18px;
+    color: #ebebeb;
+  }
+
+  &__action {
+    float: right;
+    font-size: 12px;
+
+    span {
+      line-height: 17px;
+    }
+  }
+}

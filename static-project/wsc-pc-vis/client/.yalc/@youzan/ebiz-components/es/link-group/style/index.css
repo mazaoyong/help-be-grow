@@ -1,0 +1,15 @@
+.edu-link-group a {
+  border-right: solid 1px #DCDEE0;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0 4px;
+  color: #155bd4;
+  white-space: nowrap;
+}
+.edu-link-group a:first-child {
+  padding-left: 0;
+}
+.edu-link-group a:last-child {
+  padding-right: 0;
+  border-right: 0;
+}

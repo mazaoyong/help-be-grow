@@ -1,0 +1,35 @@
+.bd {
+    margin-bottom: 20px;
+    dl {
+        display: flex;
+        width: 526px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #323233;
+
+        border-bottom: 1px solid #ebedf0;
+
+        dt,
+        dd {
+            padding: 20px 16px;
+            word-break: break-all;
+        }
+        dt {
+            background-color: #f7f8fa;
+            flex: 0 0 160px;
+            font-weight: 500;
+        }
+
+        dd {
+            flex: 1;
+        }
+    }
+
+    .empty-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 60px;
+        width: 100%;
+    }
+}

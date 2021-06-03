@@ -1,0 +1,11 @@
+@import 'common/app-design';
+
+.app-design.exam-footer {
+  .app-actions {
+    box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+
+    .form-actions {
+      background: #fff;
+    }
+  }
+}

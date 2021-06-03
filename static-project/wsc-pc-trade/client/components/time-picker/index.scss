@@ -1,0 +1,106 @@
+$blue: #155bd4;
+$gray: #ddd;
+
+.custom-time-picker {
+  font-size: 12px;
+
+  &__add {
+    display: inline-block;
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.custom-time-picker-item {
+  margin-bottom: 10px;
+
+  &__left,
+  &__right,
+  &__action {
+    display: inline-block;
+  }
+
+  &__right {
+    margin-left: 10px;
+  }
+
+  i {
+    margin: 0 10px;
+  }
+
+  &__action {
+    margin-left: 10px;
+
+    span {
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+
+  &__time {
+    display: inline-block;
+
+    .zent-popover-wrapper {
+      width: 60px;
+      margin: 0;
+    }
+
+    &-hour {
+      margin: 0 5px;
+    }
+
+    &-minute {
+      margin-left: 5px;
+    }
+  }
+
+  &__week {
+    display: inline-block;
+
+    &-day {
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 0;
+      outline: none;
+
+      &.edit {
+        position: relative;
+        margin-right: 2px;
+        text-align: center;
+        width: 30px;
+        line-height: 28px;
+        color: #999;
+        border: 1px solid $gray;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      &.active {
+        border-color: #06bf04;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 13px;
+          height: 13px;
+          background-image: url(/v2/image/www/trade/icon_done.png);
+          background-size: 13px 13px;
+        }
+      }
+
+      &[disabled] {
+        background-color: $gray;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.has-error {
+  .custom-time-range-select__week-day {
+    border-color: #f44 !important;
+    color: #f44 !important;
+  }
+}

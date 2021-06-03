@@ -1,0 +1,78 @@
+.coms-lib-wrap {
+  width: 200px;
+  position: absolute;
+  top: 56px;
+  left: 65px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  bottom: 0;
+  background: #fff;
+  user-select: none;
+
+  &::-webkit-scrollbar {
+    // background-color:transparent;
+    display: none;
+  }
+
+  .coms-lib {
+    padding: 0 16px;
+
+    .coms-lib-tab {
+      margin-top: 16px;
+      width: 100%;
+      display: flex;
+      min-height: 30px;
+      line-height: 30px;
+      position: relative;
+      color: #555;
+      cursor: pointer;
+
+      .coms-lib-tab-icon {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        position: absolute;
+        top: 5px;
+        transform: scale(0.4) rotate(-90deg);
+        transition: transform .3s;
+      }
+
+      .coms-lib-tab-name {
+        font-size: 14px;
+        color: #323233;
+        margin-left: 20px;
+        font-weight: 500;
+    }
+    }
+    .com-list {
+      margin: 0 auto;
+      padding: 1px;
+      width: 160px;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+  }
+
+  .coms-lib-active {
+    .coms-lib-tab {
+      .coms-lib-tab-icon {
+        transform: scale(0.4)
+      }
+    }
+
+    .com-list {
+      max-height: 1000px;
+      // height: auto;
+      opacity: 1;
+    }
+  }
+  .zenticon-caret-down:before {
+    color: #969799;
+  }
+}
+
+
+

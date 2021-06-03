@@ -1,0 +1,153 @@
+.clue-reacords__list__item {
+  padding: 8px;
+  font-size: 14px;
+
+  .item {
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: #333333;
+
+      .name {
+        font-weight: bold;
+        line-height: 18px;
+      }
+
+      .phone {
+        margin-left: 10px;
+        line-height: 18px;
+      }
+
+      .time {
+        margin-left: 20px;
+        font-size: 14px;
+        color: #969799;
+        line-height: 18px;
+      }
+
+      &__phase {
+        color: #969799;
+        text-align: right;
+        line-height: 18px;
+      }
+    }
+
+    &__body {
+      position: relative;
+      margin-top: 10px;
+      line-height: 18px;
+
+      a {
+        cursor: pointer;
+      }
+
+      pre {
+        white-space: pre-wrap;
+        word-break: break-all;
+      }
+
+      & > p,
+      & > div {
+        margin-top: 5px;
+      }
+
+      &__reason,
+      &__order {
+        padding-left: 12px;
+      }
+
+      &__footer {
+        position: relative;
+
+        .edit {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          cursor: pointer;
+
+          &:hover {
+            color: #155bd4;
+          }
+        }
+      }
+
+      &__img-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 10px;
+
+        .img-wrap {
+          overflow: hidden;
+          margin-right: 10px;
+          border-radius: 3px;
+        }
+      }
+
+      &__revist {
+        margin-top: 10px;
+        color: #969799;
+      }
+
+      &__system-source {
+        display: flex;
+        flex-direction: row;
+
+        .source {
+          &-detail {
+            margin-top: 5px;
+          }
+        }
+
+        .cursor-link {
+          margin-left: 15px;
+        }
+      }
+
+      &__tags {
+        &__wrap {
+          display: flex;
+          flex-direction: row;
+        }
+
+        &__label {
+          width: 70px;
+        }
+
+        &__container {
+          position: relative;
+          width: calc(100% - 60px - 100px);
+
+          .zent-tag {
+            margin: 2px 5px 5px 0;
+          }
+        }
+
+        &__content {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+
+          &.showmore {
+            justify-content: space-between;
+
+            &::after {
+              position: absolute;
+              top: 0px;
+              right: -10px;
+              color: #969799;
+              content: '...';
+            }
+          }
+        }
+      }
+
+      &__expand {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.poster-container {
+  .title {
+    margin: 75px 24px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  img.qrcode {
+    margin: 32px auto 16px;
+  }
+
+  .bottom {
+    text-align: center;
+  }
+
+  .tips-container {
+    margin: auto;
+    width: 164px;
+    border-radius: 10px;
+    background-color: #00B389;
+
+    .tips {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+
+  .source {
+    margin: 8px auto;
+    font-size: 12px;
+    color: #A0A1A3;
+  }
+}
+
+// 重写推广海报样式
+.rc-promotion-dialog.promotion-dialog {
+  .zent-tabs-panel-wrapper {
+    margin-left: 16px !important;
+  }
+
+  .rc-promotion-content-wrapper .rc-promotion-image-container {
+    width: 300px !important;
+  }
+}

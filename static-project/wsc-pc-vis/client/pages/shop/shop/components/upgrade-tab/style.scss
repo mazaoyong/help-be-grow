@@ -1,0 +1,65 @@
+.create-tab {
+  &__tip {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+
+    a {
+      float: right;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: 400;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    .upgrade-btn {
+      margin-left: 20px;
+
+      &:hover {
+        border-color: #bbb;
+        background-color: #fff;
+        color: #333;
+      }
+    }
+
+    a {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 40px;
+      text-align: center;
+      width: 200px;
+      height: 40px;
+      color: #333;
+      border: 1px solid #bbb;
+      border-radius: 20px;
+      box-sizing: border-box;
+
+      &:hover {
+        border-color: #155BD4;
+        background-color: #fff;
+        color: #155BD4;
+      }
+    }
+
+    & &-active {
+      background: #155BD4;
+      border-color: #155BD4;
+      color: #fff;
+
+      &:hover {
+        background: #155BD4;
+        color: #fff;
+      }
+    }
+  }
+}

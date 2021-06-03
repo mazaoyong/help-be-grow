@@ -1,0 +1,11 @@
+{% extends './base.html' %}
+
+{% block page_title %} 正在跳转... {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_h5_css.css/common/checkAuthMobile') | safe }}
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('version_h5_js.js/common/checkAuthMobile') | safe }}
+{% endblock %}

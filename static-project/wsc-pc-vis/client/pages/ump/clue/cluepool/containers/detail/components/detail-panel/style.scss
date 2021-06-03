@@ -1,0 +1,167 @@
+.clue-detail__panel {
+  width: 310px;
+  padding: 0 16px;
+  border-right: 1px solid #ebedf0;
+  box-sizing: border-box;
+
+  &__edit {
+    text-align: right;
+  }
+
+  hr {
+    margin: 16px 0;
+    border-bottom: 0;
+  }
+
+  &__base {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0 0;
+
+    .avatar {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      margin: 0 0 16px;
+
+      .img-wrap {
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      .sex {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    .phone {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .name {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #969799;
+      text-align: center;
+      vertical-align: -0.15em;
+
+      span {
+        display: inline-block;
+        vertical-align: 2px;
+      }
+    }
+  }
+
+  dl {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    dt {
+      min-width: 85px;
+      width: 85px;
+      color: #969799;
+    }
+
+    dd {
+      flex: 1;
+      box-sizing: border-box;
+      margin-left: 20px;
+      padding-right: 10px;
+      word-break: break-all;
+    }
+  }
+
+  &__source {
+    dl > dd > a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .zent-btn {
+      margin-bottom: 10px;
+      margin-left: 0 !important;
+      width: 135px;
+    }
+  }
+}
+
+.clue-active-detail {
+  dl {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    dt {
+      min-width: 85px;
+      width: 85px;
+      color: #969799;
+    }
+
+    dd {
+      flex: 1;
+      box-sizing: border-box;
+      margin-left: 16px;
+      padding-right: 10px;
+      word-break: break-all;
+    }
+  }
+}
+
+.bd {
+  dl {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    width: 412px;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    &:first-child{
+      margin-top: 0px;
+    }
+
+    dt {
+      -ms-flex: 0 0 115px;
+      flex: 0 0 115px;
+      margin-right: 5px;
+      text-align: right;
+    }
+
+    dd {
+      -ms-flex: 1;
+      flex: 1;
+      word-break: break-all;
+    }
+  }
+
+  .empty-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    width: 100%;
+  }
+}
+
+.clue-detail-active-dialog .zent-dialog-r-body .bd dl:last-child {
+  margin-bottom: 10px;
+}

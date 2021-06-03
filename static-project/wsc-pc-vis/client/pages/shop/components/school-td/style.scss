@@ -1,0 +1,8 @@
+@import 'shared/sass/vars/colors';
+
+.cursor-link {
+  display: inline-block;
+  color: $blueColor;
+  vertical-align: middle;
+  cursor: pointer;
+}

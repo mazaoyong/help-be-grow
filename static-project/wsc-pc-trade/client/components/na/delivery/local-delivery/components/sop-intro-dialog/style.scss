@@ -1,0 +1,39 @@
+.sop-intro-dialog {
+  width: 650px;
+
+  .zent-steps {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .intro-content {
+    margin: 10px 0 40px;
+
+    &__img {
+      width: 640px;
+      height: 410px;
+    }
+
+    &__title {
+      color: #333;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    &__description {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+    }
+  }
+
+  .sop-intro-footer {
+    text-align: center;
+    font-size: 12px;
+
+    & > a {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}

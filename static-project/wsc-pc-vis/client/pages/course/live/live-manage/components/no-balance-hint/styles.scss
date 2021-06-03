@@ -1,0 +1,27 @@
+.no-balance-hint {
+  &__content {
+    .zent-popover-content {
+      width: 443px;
+
+      .zent-pop-inner {
+        display: flex;
+        line-height: 20px;
+        flex-wrap: wrap;
+
+        .zent-pop-buttons {
+          display: flex;
+          flex: 1;
+          margin-top: 24px;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+    justify-content: flex-end;
+  }
+}

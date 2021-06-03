@@ -1,0 +1,68 @@
+@import "classes/new-title";
+
+.content-form {
+  .new-title {
+    margin-left: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .live-form {
+    .zent-form__control-label {
+      width: 120px;
+    }
+
+    .tip-desc {
+      margin-top: 12px;
+      color: #999;
+      line-height: 12px;
+      font-size: 12px;
+
+      &--offset {
+        margin-left: 24px;
+      }
+    }
+
+    .duration-field {
+      .zent-form__help-desc {
+        width: 400px;
+      }
+
+      .duration-number-input .zent-input {
+        min-width: 60px;
+      }
+    }
+
+    .zent-form__control-group--small {
+      margin-bottom: 16px;
+    }
+
+    .connection-number-tips {
+      margin: 8px 0 8px 24px;
+      color: #969799;
+      font-size: 12px;
+    }
+  }
+
+  .ui-link--split {
+    color: #155bd4;
+    cursor: pointer;
+    margin-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #e5e5e5;
+    line-height: 10px;
+
+    &:last-child {
+      border: 0;
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+// 引导购买提示
+.intro-order span {
+  margin-right: 8px;
+}

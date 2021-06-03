@@ -1,0 +1,21 @@
+.decorate-image-text-nav-editor {
+  .deco-editor-card {
+    flex: 1;
+  }
+
+  .deco-control-group__content {
+    a, a:focus, a:hover {
+      font-size: 14px;
+      color: #155bd4;
+      text-decoration: none;
+    }
+  }
+
+  .deco-control-group--bg-colored {
+    margin-bottom: 10px;
+  }
+
+  .zent-select {
+    margin-right: 0;
+  }
+}

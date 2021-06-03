@@ -1,0 +1,29 @@
+@import 'shared/sass/vars/colors';
+
+.coupon-item-delete,
+.coupon-add-btn {
+  margin-left: 10px;
+  color: $blueColor;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.coupon-table {
+  border-width: 1px 1px 0 1px;
+  border-color: #e5e5e5;
+  margin: 10px 0 0 10px;
+  thead {
+    border: 0 0 0 1px;
+  }
+}
+
+.coupon-wrap {
+  .zent-form__error-desc {
+    margin-left: 10px;
+  }
+}
+
+.disabled {
+  color: $theme-stroke-4;
+  cursor: not-allowed;
+}

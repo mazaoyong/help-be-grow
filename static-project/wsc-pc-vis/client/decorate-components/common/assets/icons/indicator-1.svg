@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/指示器1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/指示器1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,4 L2,12 L18,12 L18,4 L2,4 Z M0,2 L20,2 L20,14 L0,14 L0,2 Z" id="Rectangle" fill="#7D7E80" fill-rule="nonzero"></path>
+        <circle id="Oval" fill="#7D7E80" fill-rule="nonzero" cx="5.5" cy="7.5" r="1.5"></circle>
+        <polygon id="Triangle" fill="#7D7E80" fill-rule="nonzero" points="13.5 7 17 11 10 11"></polygon>
+        <g id="Group" transform="translate(3.500000, 16.000000)" fill="#7D7E80" fill-rule="nonzero">
+            <rect id="Rectangle" x="0" y="0" width="3" height="2"></rect>
+            <rect id="Rectangle-Copy" x="5" y="0" width="3" height="2"></rect>
+            <rect id="Rectangle-Copy-2" x="10" y="0" width="3" height="2"></rect>
+        </g>
+    </g>
+</svg>

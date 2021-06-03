@@ -1,0 +1,32 @@
+@import 'common/base.scss';
+@import 'common/ellipsis.scss';
+
+// 用于顶部的更新时间的样式
+@mixin latestUpdateTime {
+  font-size: 14px;
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+// 用于分离banner和内容的样式
+@mixin verticalSplitMainBody {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.course-summary {
+  &__duoLine-cell {
+  }
+
+  .header {
+    @include latestUpdateTime();
+  }
+
+  .content-container {
+    @include verticalSplitMainBody();
+  }
+
+  .zent-tabs {
+    margin-bottom: 0;
+  }
+}

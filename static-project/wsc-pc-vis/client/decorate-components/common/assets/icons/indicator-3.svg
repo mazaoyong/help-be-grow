@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/指示器3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/指示器3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2,6 L2,14 L18,14 L18,6 L2,6 Z M0,4 L20,4 L20,16 L0,16 L0,4 Z" id="Rectangle" fill="#7D7E80" fill-rule="nonzero"></path>
+        <path d="M13.5,10 L15.5,10 C16.3284271,10 17,10.6715729 17,11.5 C17,12.3284271 16.3284271,13 15.5,13 L13.5,13 C12.6715729,13 12,12.3284271 12,11.5 C12,10.6715729 12.6715729,10 13.5,10 Z M13,11 L13,12 L14,12 L14,11 L13,11 Z M15,11 L15,12 L16,12 L16,11 L15,11 Z" id="Combined-Shape" fill="#7D7E80" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+.dialog-reserve-form {
+  padding-right: 20px;
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  &__textarea {
+    textarea {
+      // width: 300px;
+      min-height: 120px;
+      // resize: none;
+    }
+  }
+
+  &__actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .zent-form__control-label {
+    width: 85px;
+  }
+
+  .zent-form {
+    margin-bottom: 0;
+
+    .zent-input-wrapper,
+    .input-student__select,
+    .picker-input,
+    .zent-select {
+      width: 180px;
+    }
+
+    .zent-textarea-wrapper {
+      width: 290px;
+    }
+
+    .zent-form__controls {
+      margin-left: 15px;
+    }
+  }
+}
+
+.address-select-pop {
+  max-width: 300px;
+  margin-left: -11px;
+}

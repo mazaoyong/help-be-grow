@@ -1,0 +1,13 @@
+{% extends '../base/ump.html' %}
+
+{% block page_style %}
+  {{ loadCss('version_css.ump/boost') | safe }}
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.ump/boost') | safe }}
+{% endblock %}

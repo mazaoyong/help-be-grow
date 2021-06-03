@@ -1,0 +1,310 @@
+<div class="recommend-gift-normal">
+  <div class="recommend-gift-normal__title">
+    <div class="max-profit-title">买课最高立减￥<span>93</span></div>
+  </div>
+  <div class="recommend-gift-normal__panel">
+    <div class="main__user">
+      <img class="user__avatar" src="{{drawInfo.userAvatar}}" alt="" />
+      <div class="user__info">
+        <p class="user__info-name">
+          {{drawInfo.userName}}
+        </p>
+        <p class="user__info-desc">
+          “这节课太好了，邀你一起加入学习”
+        </p>
+      </div>
+    </div>
+
+    <div class="main__img">
+      <img class="main__img-cover" src="{{drawInfo.img}}" alt="" />
+      <img class="main__img-real" src="{{drawInfo.img}}" alt="" />
+    </div>
+
+    <p class="main__title">
+      {{drawInfo.title}}
+    </p>
+
+    <div class="main__price-container">
+      <div class="main__price">
+        {% if drawInfo.currentPrice.length %}
+        <div class="main-price__current">
+          <span class="current-price__symbol">￥</span>
+          <span class="current-price__front">{{drawInfo.currentPrice[0]}}</span>
+          {% if drawInfo.currentPrice[1] %}
+          <span class="current-price__dot">.</span>
+          <span class="current-price__end">{{drawInfo.currentPrice[1]}}</span>
+          {% endif %} {% if drawInfo.multiSku %}
+          <span class="current-price__text">起</span>
+          {% endif %}
+        </div>
+        {% endif %} {% if drawInfo.originPrice %}
+        <div class="main-price__origin">
+          <span class="origin-price__symbol">￥</span>
+          <span class="origin-price__num">{{drawInfo.originPrice}}</span>
+          {% if drawInfo.multiSku %}
+          <span class="origin-price__text">起</span>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+
+      {% if drawInfo.soldNum %}
+      <div class="main__sold">
+        {{drawInfo.soldNum}}人已学
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="recommend-gift-normal__panel">
+    <div class="main__footer">
+      <div class="footer__left">
+        <p class="tips__gray">
+          快来和我一起去上课吧
+        </p>
+        <p class="tips__red">
+          长按二维码立即报名课程
+        </p>
+      </div>
+      <img class="footer__urls" src="{{drawInfo.qrUrl}}" alt="" />
+    </div>
+  </div>
+</div>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .max-profit-title {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 2px 0 #e97501;
+  }
+
+  .max-profit-title span {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .recommend-gift-normal {
+    width: 300px;
+    background-image: url(https://img01.yzcdn.cn/public_files/8cd5162a7fb6eebd3320783bc6f9cf9c.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 12px;
+  }
+
+  .recommend-gift-normal__price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 4px;
+    font-weight: bold;
+    color: #ffeb51;
+    font-family: Helvetica;
+    text-shadow: 0 1px 6px rgba(10, 134, 78, 0.64);
+  }
+
+  .price__symbol {
+    font-size: 15px;
+  }
+
+  .price__front {
+    font-size: 30px;
+    font-family: Helvetica;
+    margin-bottom: -3px;
+  }
+
+  .price__end {
+    font-size: 16px;
+    font-family: Helvetica;
+  }
+
+  .price__text {
+    font-size: 16px;
+    margin-left: 4px;
+  }
+
+  .recommend-gift-normal__panel {
+    margin-top: 6px;
+    width: 276px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 12px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .main__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .user__avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .user__info-name {
+    font-size: 14px;
+    line-height: 20px;
+    color: #646566;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .user__info-desc {
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0;
+    color: #969799;
+  }
+
+  .main__img {
+    width: 252px;
+    height: 142px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .main__img-cover {
+    position: absolute;
+    left: -7%;
+    top: -7%;
+    width: 114%;
+    height: 114%;
+    object-fit: cover;
+    -webkit-filter: blur(13px);
+    filter: blur(13px);
+  }
+
+  .main__img-real {
+    object-fit: contain;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #323233;
+    margin-top: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: bold;
+  }
+
+  .main__price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .main__price {
+    display: flex;
+    margin-top: 8px;
+    align-items: flex-end;
+  }
+
+  .main-price__current {
+    font-weight: bold;
+    color: #ff5100;
+  }
+
+  .current-price__symbol {
+    font-size: 13px;
+  }
+
+  .current-price__front {
+    font-size: 18px;
+    font-family: Helvetica;
+  }
+
+  .current-price__dot {
+    margin: 0 -5px;
+  }
+
+  .current-price__end {
+    font-size: 13px;
+    font-family: Helvetica;
+  }
+
+  .current-price__text {
+    font-size: 13px;
+    margin-left: 4px;
+    margin-left: -2px;
+  }
+
+  .main-price__origin {
+    color: #969799;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 8px;
+  }
+
+  .current-price__symbol {
+    margin-right: -5px;
+  }
+
+  .origin-price__num {
+    font-family: Helvetica;
+  }
+
+  .origin-price__symbol {
+    margin-right: -4px;
+  }
+
+  .current-price__end {
+  }
+
+  .main__sold {
+    color: #646566;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+  }
+
+  .main__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    width: 252px;
+    top: 304px;
+    left: 12px;
+  }
+
+  .footer__urls {
+    width: 54px;
+    height: 54px;
+  }
+
+  .tips__gray {
+    font-size: 12px;
+    color: #a0a1a3;
+  }
+  .tips__red {
+    margin-top: 6px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    height: 20px;
+    line-height: 20px;
+    background: #ff5100;
+    padding: 0 8px;
+  }
+</style>

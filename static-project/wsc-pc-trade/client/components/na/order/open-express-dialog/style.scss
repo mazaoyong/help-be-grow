@@ -1,0 +1,156 @@
+.order-express-dialog-wrap {
+  width: 700px;
+  min-width: 700px;
+
+  .tips-row {
+    margin-bottom: 15px;
+
+    .zenticon {
+      color: #df4545;
+    }
+  }
+
+  .items-table-title {
+    .item-label {
+      font-weight: bold;
+    }
+
+    .item {
+      margin-right: 8px;
+    }
+  }
+
+  .items-table {
+    margin-top: 15px;
+
+    .goods-item {
+      display: flex;
+
+      .goods-img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+      }
+    }
+
+    .express-row {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .error-desc {
+    color: #df4545;
+  }
+
+  .action-area {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 30px;
+
+    .action-footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 15px;
+      box-sizing: border-box;
+      width: 100%;
+
+      .call-area {
+        text-align: right;
+      }
+    }
+
+    .inline {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .weight-input {
+      width: 80px;
+      display: inline-flex;
+
+      .zent-input {
+        min-width: 40px;
+      }
+    }
+
+    .weight-tips {
+      margin-left: 90px;
+    }
+
+    .zent-form__control-label {
+      width: 80px;
+      text-align: left;
+    }
+
+    .delivery-type-group {
+      .zent-radio-group {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+      }
+    }
+
+    .delivery-content {
+      margin-left: 90px;
+
+      .pack-item + .pack-item {
+        padding-top: 20px;
+        border-top: 1px dashed #eee;
+      }
+
+      .control-item {
+        cursor: pointer;
+        margin-left: 30px;
+      }
+
+      .delete-pick-item {
+        margin-left: 20px;
+      }
+    }
+
+    .pick-time-field {
+      .zent-popover-wrapper.zent-select {
+        width: 160px;
+      }
+    }
+
+    .delivery-content__exception {
+      margin-left: 92px;
+
+      > span {
+        color: #df4545;
+      }
+
+      > a {
+        margin-left: 8px;
+      }
+    }
+
+    .self-fetch-input {
+      .zent-form__control-label {
+        width: 48px;
+      }
+    }
+
+    .zent-row {
+      margin: 10px 0;
+    }
+  }
+}
+
+.multi-period-limit-dialog {
+  &--content {
+    font-size: 14px;
+
+    > span {
+      color: #df4545;
+    }
+  }
+
+  &--footer {
+    float: right;
+    margin-top: 16px;
+  }
+}

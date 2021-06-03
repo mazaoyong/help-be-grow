@@ -1,0 +1,26 @@
+.card-select {
+  margin: 50px 0;
+
+  &__cards {
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__pagination {
+    margin-right: 50px;
+  }
+
+  &__empty {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    line-height: 100px;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+}
+ 

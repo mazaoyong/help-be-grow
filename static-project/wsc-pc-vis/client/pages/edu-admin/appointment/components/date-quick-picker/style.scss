@@ -1,0 +1,37 @@
+.date-quick-picker {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__icon {
+    width: 24px;
+    color: #dcdcdc;
+    cursor: pointer;
+
+    &:hover {
+      color: #155bd4;
+    }
+  }
+
+  &__icon-left {
+    margin-right: 8px;
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__icon-right {
+    margin-left: 8px;
+  }
+
+  &__quick-btn {
+    font-size: 14px;
+    color: #155bd4;
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: 4px;
+    }
+  }
+}

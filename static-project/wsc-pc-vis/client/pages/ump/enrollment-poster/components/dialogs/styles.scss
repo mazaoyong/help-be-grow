@@ -1,0 +1,16 @@
+.micro-page {
+  &-header {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    &__left {
+      a {
+        margin-left: 16px;
+      }
+    }
+  }
+  &-footer{
+    float: right;
+    height: 32px;
+  }
+}

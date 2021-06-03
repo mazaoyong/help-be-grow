@@ -1,0 +1,23 @@
+{% extends 'layout/with_top_nav_layout.html' %}
+
+{% block project_style %}
+  {{ loadCss('dll/component') | safe }}
+  {{ loadCss('dll/library') | safe }}
+  {{ loadCss('vendors') | safe }}
+  <!-- {{ loadCss('global') | safe }} -->
+{% endblock %}
+
+{% block project_js %}
+  {% include './tpl/skynet_script.html' %}
+  {% include './tpl/sentry_script.html' %}
+  {{ loadJs('dll/framework') | safe }}
+  {{ loadJs('dll/library') | safe }}
+  {{ loadJs('dll/component') | safe }}
+  {{ loadJs('vendors') | safe }}
+{% endblock %}
+
+{% block log_script %}
+  {% include "./tpl/log_script.html" %}
+{% endblock %}
+
+{% block page_js %}{% endblock %}

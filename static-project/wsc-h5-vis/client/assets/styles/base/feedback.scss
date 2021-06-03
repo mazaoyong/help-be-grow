@@ -1,0 +1,18 @@
+.feedback-icon {
+  z-index: 999;
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  overflow: hidden;
+  padding: 0 8px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #c8c9cc;
+  height: 20px;
+
+  a {
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+  }
+}

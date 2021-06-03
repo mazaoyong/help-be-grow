@@ -1,0 +1,100 @@
+.ebiz-schedule__week {
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // padding-left: 50px;
+    // height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 40px;
+
+    &__cell {
+      flex: 1;
+    }
+
+    &__cellstart {
+      flex: 0.4;
+    }
+  }
+
+  &__panel__wrap {
+    overflow: auto;
+    height: calc(100% - 40px);
+  }
+
+  &__panel {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-flow: row;
+    justify-content: space-between;
+
+    &__day {
+      position: relative;
+      overflow: visible;
+      flex: 1;
+      box-sizing: border-box;
+      margin-top: 10px;
+      height: 100%;
+      border-right: 1px solid #e5e5e5;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    &__viewday {
+      position: relative;
+      flex: 1;
+      box-sizing: border-box;
+      height: 100%;
+      border-right: 1px solid #e5e5e5;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    // .ebiz-calendar__backrow__cell_now {
+    //   border-top: 1px dashed #e5e5e5;
+    // }
+
+    .ebiz-schedule {
+      &__columns {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+      }
+
+      &__column {
+        flex: 1;
+        min-width: auto;
+        width: auto;
+      }
+    }
+  }
+}
+
+.schedule_empty_words {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}

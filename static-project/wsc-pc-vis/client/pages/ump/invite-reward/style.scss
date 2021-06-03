@@ -1,0 +1,14 @@
+.easy-grid-container {
+  .zent-grid-empty {
+    height: 215px;
+    border-bottom: none;
+  }
+  
+  .zent-grid-empty + .zent-grid-tfoot {
+    display: none;
+  }
+
+  .zent-grid-scroll > div::-webkit-scrollbar {
+    display: none;
+  }
+}

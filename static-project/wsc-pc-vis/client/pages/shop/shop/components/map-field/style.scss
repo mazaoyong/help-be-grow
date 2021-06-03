@@ -1,0 +1,36 @@
+.shop-map-field {
+  z-index: 0;
+  position: relative;
+
+  .map-wrapper {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    .amap-logo {
+      display: none !important;//sass-lint:disable-line no-important
+    }
+
+    .amap-copyright {
+      display: none !important;//sass-lint:disable-line no-important
+    }
+
+    .amap-scalecontrol {
+      display: none !important;//sass-lint:disable-line no-important
+    }
+  }
+
+  .search {
+    position: absolute;
+    height: 40px;
+    width: 83px;
+    top: -64px;
+    right: 0;
+    padding: 0;
+  }
+
+  .map {
+    width: 600px;
+    height: 500px;
+  }
+}

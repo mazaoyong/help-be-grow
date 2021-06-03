@@ -1,0 +1,197 @@
+.drag-select-wrap {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  // padding-top: 8px;
+  // padding-bottom: 8px;
+  border-radius: 2px;
+  position: relative;
+
+  .drag-select {
+    &__forward {
+      width: 20px;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-color: rgba(102, 102, 102, .9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &--left {
+        left: 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+
+      &--right {
+        right: 0;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+
+      &--empty {
+        background-color: #f2f2f2;
+      }
+    }
+
+    &__left-forward-icon {
+      color: #fff;
+      transform: rotate(180deg);
+    }
+
+    &__right-forward-icon {
+      color: #fff;
+    }
+
+    &__content {
+      margin: 0 20px;
+      overflow-x: auto;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    &__drag-wrap {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__empty-text {
+      color: #999;
+      font-size: 14px;
+      text-align: center;
+      margin: 25px auto;
+    }
+
+    &__card-wrap {
+      border: 1px solid transparent;
+      position: relative;
+      margin-left: 10px;
+
+      &.drag-select__card-wrap--drag-hover {
+        .card-wrap__drag-line {
+          display: block;
+        }
+      }
+
+      &.drag-select__card-wrap--drag-disappear {
+        display: none;
+      }
+
+      &:hover {
+        .card-wrap__close {
+          display: block;
+        }
+
+        .card-wrap__drag-icon {
+          background-color: #38f;
+        }
+      }
+
+      &--active {
+        border-color: #155bd4;
+      }
+
+      .card-wrap {
+        &__drag-line {
+          position: absolute;
+          width: 1px;
+          height: 70px;
+          background-color: #38f;
+          left: -6px;
+          top: 0;
+          display: none;
+        }
+
+        &__drag-icon-wrap {
+          width: 6px;
+          position: absolute;
+          right: 8px;
+          top: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          margin-bottom: 2px;
+          cursor: move;
+
+          &:hover {
+            .card-wrap__drag-icon {
+              background-color: #38f;
+            }
+          }
+        }
+
+        &__drag-icon {
+          width: 2px;
+          height: 2px;
+          background-color: #999;
+          border-radius: 2px;
+          margin-bottom: 2px;
+
+          &:nth-child(2n+1) {
+            margin-right: 2px;
+          }
+        }
+
+        &__close {
+          cursor: pointer;
+          width: 12px;
+          height: 12px;
+          background-image: url('https://b.yzcdn.cn/fix-base64/a401f6641dedae29f85bf21cf8f6e9291aa0651f88ee55272e9181b96560a408.png');
+          background-repeat: no-repeat;
+          background-size: 12px;
+          display: none;
+          position: absolute;
+          left: -6px;
+          top: -6px;
+        }
+      }
+    }
+  }
+
+  .drag-select__card {
+    box-sizing: border-box;
+    width: 169px;
+    height: 70px;
+    padding: 8px;
+    background-color: #fff;
+
+    .card {
+      &__title {
+        width: 140px;
+        height: 34px;
+        color: #999;
+        font-size: 12px;
+        line-height: 17px;
+        position: relative;
+
+        &--active {
+          color: #333;
+        }
+      }
+
+      &__title-icon {
+        position: absolute;
+        right: 4px;
+        bottom: 2px;
+        font-size: 12px;
+      }
+
+      &__footer {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        color: #bbb;
+        font-size: 12px;
+        line-height: 17px;
+
+        &--active {
+          color: #999;
+        }
+      }
+    }
+  }
+}

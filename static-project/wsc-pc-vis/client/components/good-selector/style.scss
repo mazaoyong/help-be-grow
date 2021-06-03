@@ -1,0 +1,12 @@
+@import 'shared/sass/vars/colors';
+
+.pct-goods-selector .goods-selector__type-filters {
+  display: none !important; // sass-lint:disable-line no-important
+}
+
+.pct-goods-selector-button {
+  color: var(--theme-stroke-1, #323233);
+  border: 1px solid var(--theme-stroke-5, #dcdee0);
+  background: var(--theme-stroke-9, #fff);
+  padding: 0 16px;
+}

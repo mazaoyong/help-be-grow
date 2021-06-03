@@ -1,0 +1,38 @@
+.record {
+  :global {
+    .record__head {
+      padding: 4px 0 20px;
+    }
+
+    .record__head {
+      display: flex;
+    }
+
+    .record__reload-btn {
+      margin-left: 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .record_reload-icon {
+      margin-left: 4px;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-image: url('https://img.yzcdn.cn/upload_files/2020/02/26/Fk4zbFth68gWUEQAsxom5_P57jGl.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .record__review-panel {
+      margin-bottom: 40px;
+    }
+
+    .record__title {
+      h3 {
+        font-weight: 500;
+      }
+    }
+  }
+}

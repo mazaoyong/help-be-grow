@@ -1,0 +1,193 @@
+// 如果在search中使用，不要有上下边距
+.easy-list__inline-wrapper {
+  display: flex;
+  width: 100%;
+
+  &__left {
+    flex: 1;
+  }
+  &__left,
+  &__right {
+    display: flex;
+    margin-bottom: 1rem;
+
+    .easy-filter__search {
+      margin-bottom: 0;
+    }
+  }
+
+  .easy-filter {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    &__zent-control {
+      min-width: 0;
+      margin-right: 0;
+    }
+
+    .zent-form-control {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.easy-filter {
+  padding: 16px 16px 0;
+  margin-bottom: 16px;
+
+  &__search {
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+
+    div ~ div {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .filter-field-warpper.invisible {
+    display: none;
+  }
+
+  &__panel,
+  &__panel-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &-wrapper {
+      overflow: hidden;
+    }
+
+    &_collapse {
+      height: 0;
+    }
+
+    &_expand {
+      height: auto;
+    }
+  }
+
+  &__zent-control {
+    margin-right: 32px;
+    margin-bottom: 16px;
+    line-height: 32px;
+    min-width: 330px;
+
+    .zent-form-label {
+      display: inline-block;
+      width: 120px;
+      text-align: right;
+    }
+
+    .zent-form-control-content {
+      .zent-checkbox-group,
+      .zent-radio-group {
+        vertical-align: bottom;
+      }
+
+      .zent-radio-group .zent-radio-wrap,
+      .zent-checkbox-group .zent-checkbox-wrap {
+        line-height: 32px;
+      }
+
+      .zent-date-range-picker__filter {
+        // 兼容时间范围选择
+        line-height: normal;
+      }
+    }
+
+    .zent-select {
+      margin-right: 0 !important;
+    }
+  }
+
+  &__nest-control {
+    display: flex;
+
+    .zent-form-control {
+      margin-right: 16px;
+      min-width: unset;
+    }
+  }
+
+  .link-btn {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+  }
+
+  .collapse-trigger {
+    background-color: transparent !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  &__actions {
+    display: flex;
+    height: 32px;
+
+    &.action-container {
+      margin-right: 8px;
+    }
+
+    &.btn-group {
+      margin-right: 16px;
+    }
+
+    &-outer {
+      display: flex;
+    }
+
+    &-body {
+      display: inline-flex;
+    }
+
+    .custom-btn + .preset-btn {
+      margin-left: 8px;
+    }
+
+    .link-btn {
+      padding: 0;
+    }
+
+    .preset-btn + .preset-btn {
+      margin-left: 8px;
+    }
+  }
+
+  &__field {
+    .radio-item__container {
+      vertical-align: middle;
+    }
+
+    // 处理偏移的问题
+    &.radio-group.multi-line {
+      padding-top: 4px;
+
+      .radio-item {
+        &__container ~ .radio-item__container {
+          margin-top: 16px;
+        }
+
+        &__description {
+          margin: 8px auto 0 25px;
+          color: #969799;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    &.radio-group:not(.multi-line) {
+      .radio-item__container {
+        display: inline-block;
+
+        & ~ .radio-item__container {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

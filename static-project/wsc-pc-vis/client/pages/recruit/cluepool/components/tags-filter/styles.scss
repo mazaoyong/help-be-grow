@@ -1,0 +1,34 @@
+@import 'vars/_colors';
+
+.zent-cascader-v2 {
+  &-visible {
+    .zenticon-caret-dow {
+      transform: rotate(180deg) translateY(50%) !important;
+    }
+  }
+
+  &.clue-pool-tags-filter {
+    width: 200px;
+    overflow-y: auto;
+    max-height: 68px;
+
+    .zenticon-caret-down {
+      font-size: 0;
+      background-image: url(https://img.yzcdn.cn/public_files/265d47301e76ad0c35bd13bc9b3def4e.png);
+      background-repeat: no-repeat;
+      background-size: 10px 8px;
+      background-position: center;
+      width: 16px;
+      height: 16px;
+      transition: transform 0.25s;
+    }
+  }
+}
+
+.clue-pool-tags-pop {
+  .zent-cascader-v2__menu {
+    &-item {
+      width: 200px;
+    }
+  }
+}

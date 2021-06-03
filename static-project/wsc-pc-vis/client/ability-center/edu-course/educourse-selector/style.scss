@@ -1,0 +1,20 @@
+.educourse-dialog {
+  &__footer {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__table {
+    &.zent-table {
+      width: 680px;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+$title_color: #ff0000;
+$grey: #bbb;
+$link_blue: #155bd4;
+
+.zent-title {
+  color: $title_color;
+}
+
+.list-modal {
+  min-width: 830px;
+
+  .zent-dialog-r-header {
+
+    .zent-dialog-r-title {
+      margin-bottom: 0;
+      height: auto;
+    }
+
+    .zent-tabs-panel-wrapper {
+      margin-top: 0;
+    }
+  }
+
+  .link {
+    display: inline-block;
+    padding: 0 10px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    cursor: pointer;
+    color: $link_blue;
+  }
+
+  .zent-table {
+    margin-bottom: 10px;
+
+    .cell.empty-data {
+      height: 300px;
+    }
+  }
+
+  .zent-dialog-r-close.zent-dialog-r-has-title {
+    top: 14px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .zent-dialog-r-title {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    height: 30px;
+  }
+
+  .modal__links > a {
+    margin-left: 5px;
+    padding: 0 4px;
+    height: 35px;
+    line-height: 34px;
+  }
+
+  .modal__nav {
+    overflow: hidden;
+    margin-bottom: 10px;
+    line-height: 30px;
+  }
+
+  .zent-tabs {
+    float: left;
+
+    > .zent-tabs-nav {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .modal__helpDesc {
+    color: $grey;
+    font-size: 12px;
+  }
+
+  .modal__img-wrapper {
+    > img,
+    > a {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    > img {
+      margin-right: 20px;
+      width: 50px;
+      height: 50px;
+    }
+
+    > a {
+      margin-top: 5px;
+    }
+  }
+
+  .modal__children {
+    position: relative;
+  }
+
+  .modal__footer-child {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    .modal__footer-btn {
+      min-width: 56px;
+    }
+  }
+
+  .modal__disabled {
+    color: #969799;
+
+    &.modal__goods-info a:hover {
+      text-decoration: underline;
+    }
+
+    div,
+    a {
+      color: #969799;
+    }
+  }
+}
+
+.modal__filter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  .zent-select {
+    width: 120px;
+  }
+
+  .modal__search {
+    display: inline-block;
+    height: 32px;
+
+    > .modal__search-input {
+      display: inline-block;
+      width: 120px;
+
+      .zent-input {
+        padding-right: 24px;
+        width: 120px;
+      }
+    }
+
+    > .zenticon {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+    }
+
+    > .zenticon-cancel {
+      right: 66px;
+    }
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.modal__goods-info {
+  display: flex;
+  align-items: center;
+
+  img,
+  > a {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  > a {
+    margin-top: 5px;
+  }
+
+  .modal__goods-price {
+    display: block;
+    color: #ff6600;
+  }
+}
+
+.rc-goods-list-dialog-table {
+  .tfoot .tfoot__batchcomponents {
+    padding: 5px;
+    border: 0;
+
+    .select-check {
+      display: none;
+    }
+  }
+}

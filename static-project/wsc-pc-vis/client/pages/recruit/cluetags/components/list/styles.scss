@@ -1,0 +1,47 @@
+.tag-list {
+  padding: 16px 16px 16px 0;
+  flex: 1;
+  height: calc(100% - 30px);
+
+  &-table {
+    margin-top: 16px;
+
+    .zent-grid-tr {
+      .zent-grid-th:first-child,
+      .zent-grid-td:first-child {
+        padding-right: 8px;
+
+        .zent-checkbox-wrap {
+          vertical-align: baseline;
+        }
+      }
+
+    }
+
+    // 不显示zent底部的批量操作
+    .zent-grid-batch__foot {
+      display: none !important;
+    }
+  }
+
+}
+
+.edu-clue-tags-select {
+  position: absolute;
+  transform: translateY(-40px);
+
+  .zent-checkbox-wrap {
+    display: inline-flex;
+    margin-right: 0;
+    padding-left: 16px;
+    padding-right: 8px;
+  }
+
+  .edu-clue-tags-select-all {
+    margin-right: 16px;
+  }
+
+  .zent-btn {
+    margin-right: 8px;
+  }
+}

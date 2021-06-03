@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/菜单正常模式</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/菜单正常模式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4,5 L4,7 L16,7 L16,5 L4,5 Z M2,3 L18,3 L18,9 L2,9 L2,3 Z" id="Rectangle" fill="#155bd4" fill-rule="nonzero"></path>
+        <path d="M4,13 L4,15 L16,15 L16,13 L4,13 Z M2,11 L18,11 L18,17 L2,17 L2,11 Z" id="Rectangle-Copy" fill="#155bd4" fill-rule="nonzero"></path>
+    </g>
+</svg>

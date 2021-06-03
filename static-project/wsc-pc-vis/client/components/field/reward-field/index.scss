@@ -1,0 +1,81 @@
+.reward-field-block {
+  display: flex;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .reward-field-label {
+    display: flex;
+    flex-basis: 104px;
+    flex-shrink: 0;
+    justify-content: flex-end;
+
+    &.reward-field-label-required:before {
+      color: #b40000;
+      content: '*';
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 6px;
+    }
+  }
+
+  .reward-field-content {
+    flex: 1 1 100%;
+    margin-left: 10px;
+  }
+
+  .checkbox-group-item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .coupon-selector,
+    .present-selector {
+      padding: 10px 0 0 24px;
+
+      .gsv2-select-result {
+        width: auto;
+      }
+    }
+
+    .zent-form-error {
+      margin-left: 24px;
+    }
+  }
+
+  .zent-checkbox-wrap {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .reward-field-content-inner,
+  .zent-checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+
+  .no-error {
+    &.zent-input-wrapper__not-editable {
+      .zent-input {
+        color: #c8c9cc;
+      }
+    }
+    .zent-input {
+      color: #323233;
+    }
+  }
+
+  .no-error.zent-input-wrapper,
+  .no-error.zent-input-wrapper.zent-input--has-focus {
+    border-color: rgb(220, 222, 224) !important;
+  }
+
+  .zent-form-error.without-control {
+    display: block !important;
+  }
+}

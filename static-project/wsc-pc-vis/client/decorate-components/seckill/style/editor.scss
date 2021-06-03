@@ -1,0 +1,18 @@
+.rc-design-component-seckill-editor {
+
+  &__hide {
+    .deco-control-group__content {
+      justify-content: flex-start;
+    }
+  }
+
+  .zent-input-wrapper {
+    display: inline-block;
+    width: 80px;
+    margin-right: 10px;
+
+    input {
+      width: 80px;
+    }
+  }
+}

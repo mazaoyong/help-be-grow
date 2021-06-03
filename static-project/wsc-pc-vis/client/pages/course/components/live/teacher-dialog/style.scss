@@ -1,0 +1,16 @@
+.teacher-dialog {
+  margin: 40px 0 30px;
+
+  &__qrcode {
+    display: block;
+    margin: 0 auto 5px;
+    width: 110px;
+    height: 110px;
+  }
+
+  &__tip {
+    text-align: center;
+    line-height: 21px;
+    font-size: 12px;
+  }
+}

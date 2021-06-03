@@ -1,0 +1,74 @@
+$maxDialogWidth: 960px;
+$maxScreenWidth: $maxDialogWidth * 4/3;
+$grayColor: #969799;
+$gridWidth: 380px;
+
+.dialog-course {
+  .zent-pop-wrapper {
+    /* 需要强制，防止样式被zent内联样式覆盖 */
+    display: inline !important;
+  }
+  &__grid {
+    width: $gridWidth;
+  }
+  & a {
+    line-height: 30px;
+    &.a-dis {
+      color: $grayColor;
+    }
+  }
+  &__cont {
+    &-header {
+      @media (min-width: $maxScreenWidth) {
+        min-width: $maxDialogWidth;
+      }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      &-rt {
+        .zent-date-picker {
+          margin-right: 10px;
+        }
+        div:last-child {
+          .zent-select{
+            margin-right: 0;
+          }
+        }
+
+        .zent-popover-wrapper {
+          margin-right: 10px;
+        }
+      }
+    }
+    &-body {
+      .zent-pop-wrapper {
+        // width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  &__table {
+    &-empty {
+      color: $grayColor;
+    }
+  }
+
+  &__lesson-search {
+    height: 34px !important;
+  }
+}
+
+.zent-grid-empty {
+  padding-top: 30px;
+  min-height: 200px;
+}
+
+.appointment-grid-text {
+  width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

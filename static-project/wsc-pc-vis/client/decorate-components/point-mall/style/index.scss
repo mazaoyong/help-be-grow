@@ -1,0 +1,79 @@
+.decorate-pointmall-editor {
+
+  .deco-component-title {
+    margin-bottom: 14px;
+  }
+
+  .controls-card {
+    margin-bottom: 14px;
+  }
+
+  .inline-help-desc {
+    font-size: 12px;
+    color: #969799;
+    margin-right: 16px;
+    &_padding {
+      display: block;
+      padding: 12px 16px;
+    }
+  }
+
+  &__goods-num {
+
+    .zent-design-editor__control-group-error {
+      margin-left: 0;
+    }
+
+    .deco-control-group {
+      padding: 0;
+    }
+  }
+
+  .point-mall-help-icon {
+    margin-left: 3px;
+    color: #bbb;
+    font-size: 13px;
+  }
+
+  .point-mall-input-wrapper {
+    display: inline-block;
+    width: 80px;
+
+    input {
+      width: 80px;
+    }
+  }
+
+  .point-mall__add-goods {
+
+    .zent-design-editor__control-group-help-desc {
+      margin-top: 0;
+    }
+  }
+
+  .zent-tabs-type-slider .zent-tabs-actived {
+    background-color: #fff;
+  }
+
+  .points-mall__link-forbid {
+    pointer-events: none;
+  }
+
+  .modal__goods-info--content {
+    flex: 1;
+  }
+
+  .zent-select {
+    margin-right: 0;
+  }
+}
+
+.modal__goods-type{
+  color: #62a95e;
+  line-height: 18px;
+  border: 1px solid #62a95e;
+  padding: 0 8px;
+  border-radius: 2px;
+  margin-right: 10px;
+  display: inline-block;
+}

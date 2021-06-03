@@ -1,0 +1,38 @@
+.move-classify {
+  &__container {
+    .dialog-r-body {
+      padding: 0;
+
+      h2 {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+      }
+    }
+
+    .dialog-r-footer {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+    font-weight: normal !important;
+  }
+
+  &__list {
+    height: 368px;
+    padding: 1rem;
+    overflow-y: scroll;
+    background-color: #f7f8fa;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .zent-tree li .treeNode__right {
+      width: 24px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.swiper {
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+
+  &--show-arrow {
+    padding: 0 30px;
+  }
+
+  &__container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    transition: transform 0.3s linear;
+  }
+
+  &--item {
+    flex-shrink: 0;
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background: #e1e1e1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    text-align: center;
+    z-index: 2;
+
+    .zenticon-right {
+      margin-left: 0;
+
+      &::before {
+        color: #fff;
+      }
+    }
+
+    &--prev {
+      left: 0;
+
+      .zenticon-right {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    &--disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}

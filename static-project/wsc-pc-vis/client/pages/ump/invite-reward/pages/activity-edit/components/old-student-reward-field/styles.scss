@@ -1,0 +1,33 @@
+.old-student-reward{
+  &__checkbox {
+    margin-bottom: 6px;
+
+    &:last-of-type {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__detail {
+    margin: 2px auto 7px 24px;
+
+    .input-box {
+      margin-left: 8px;
+
+      &.has-error {
+        border: 1px solid #D40000;
+      }
+
+      &.no-error {
+        border-color: var(--theme-stroke-5, #dcdee0);
+
+        .zent-input {
+          color: var(--theme-stroke-1, #323233);
+
+          &[disabled] {
+            color: var(--theme-stroke-4, #c8c9cc);
+          }
+        }
+      }
+    }
+  }
+}

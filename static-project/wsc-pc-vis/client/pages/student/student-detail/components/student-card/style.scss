@@ -1,0 +1,130 @@
+@import "vars/_colors";
+
+.student-card {
+  position: relative;
+  width: 260px;
+  min-width: 260px;
+  min-height: 320px;
+  padding: 16px;
+  overflow: hidden;
+  border-right: 1px solid #EBEDF0;
+  box-sizing: border-box;
+
+  &__divider {
+    &-container {
+      position: relative;
+      width: 100%;
+      height: 32px;
+      overflow: hidden;
+    }
+
+    &-line {
+      position: absolute;
+      top: 16px;
+      right: 0;
+      left: 0;
+      height: 1px;
+      border: 0;
+      border-top-color: #EBEDF0;
+      border-top-width: 1px;
+      box-sizing: border-box;
+    }
+
+    &-content {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &__header {
+    &-avatar {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 50%;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &-content {
+      width: 100%;
+      margin-top: 16px;
+      overflow: hidden;
+
+      .content-line {
+        line-height: 32px;
+        text-align: center;
+
+        &.primary {
+          font-size: 16px;
+        }
+      }
+
+      .gender {
+        margin-left: .5em;
+
+        .ebiz-icon {
+          vertical-align: -.25em;
+        }
+      }
+    }
+  }
+
+  &__content {
+    &-line {
+      display: flex;
+      margin-top: .25rem;
+      align-items: center;
+      justify-content: space-between;
+
+      label {
+        width: 80px;
+        max-width: 80px;
+        overflow: hidden;
+        color: #969799;
+        word-break: break-all;
+      }
+
+      .primary {
+        max-width: 152px;
+        min-width: 152px;
+        overflow: hidden;
+        word-break: break-all;
+      }
+    }
+
+    &-collapse {
+      display: flex;
+      width: 100%;
+      color: $blueColor;
+      cursor: pointer;
+      justify-content: center;
+
+      .icon-collapse,
+      .icon-expand {
+        transition: all .2s linear;
+      }
+
+      .icon-expand {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.student-card__header-content .content-line,
+.student-card__content-line {
+  width: 100%;
+  font-size: 14px;
+  color: #646566;
+
+  &.primary,
+  .primary {
+    color: #323233;
+  }
+}

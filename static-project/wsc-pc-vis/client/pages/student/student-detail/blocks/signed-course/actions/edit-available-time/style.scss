@@ -1,0 +1,71 @@
+@import 'vars/colors';
+
+.available-change {
+  width: 590px;
+
+  .zent-form-control {
+    .zent-form-label {
+      flex-basis: 90px;
+      justify-content: flex-end;
+    }
+  }
+
+  .zent-form-control-content {
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    &-label {
+      width: 90px;
+      text-align: right;
+      margin-right: 8px;
+    }
+
+    &--mark {
+      align-items: flex-start;
+    }
+
+    .dialog-mark {
+      height: 80px;
+    }
+
+    .dialog-mark-desc {
+      font-size: 12px;
+      line-height: 17px;
+      margin-top: 8px;
+      color: #969799;
+    }
+  }
+}
+
+.field-dialog-item {
+  margin-bottom: 16px;
+
+  &__error {
+    margin-top: 4px;
+  }
+}
+
+.set-available-time-tip-dialog {
+  .tip-dialog-content {
+    padding: 20px;
+    background: #fbfbfb;
+
+    .tip-item {
+      line-height: 25px;
+      font-size: 14px;
+      color: #4A4A4A;
+      white-space: pre-wrap;
+      word-break: break-all;
+
+      &.bottom {
+        margin-top: 40px;
+      }
+    }
+  }
+}

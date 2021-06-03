@@ -1,0 +1,9 @@
+---
+- title: 趣味测试预览
+- owner:
+  - 胡学望
+- description: 趣味测试B端的预览
+- cover: 'https://img.yzcdn.cn/upload_files/2020/07/09/Fr3-r9paZydUdV-b1Wh5GdYqp9p6.png'
+- tag:
+  - 趣味测试
+---

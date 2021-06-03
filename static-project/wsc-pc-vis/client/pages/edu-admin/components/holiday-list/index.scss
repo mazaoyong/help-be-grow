@@ -1,0 +1,31 @@
+.holiday {
+  &-list{
+    &-operation {
+      color: #155bd4;
+      &-disabled {
+        color: #b2b2b2;
+      }
+    }
+  
+    &-split {
+      color: #dcdee0;
+      margin: 0 4px;
+    }
+  }
+
+  &-top {
+    display: flex;
+    margin-bottom: 15px;
+    .holiday-action {
+      flex-grow: 1;
+      line-height: 32px;
+    }
+    .holiday-search {
+      display: inline-flex;
+      margin-bottom: 0;
+    }
+    .holiday-source-select {
+      width: 184px;
+    }
+  }
+}

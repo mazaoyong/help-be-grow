@@ -1,0 +1,21 @@
+@import 'vars/colors';
+
+.ui-link--split {
+  color: $linkColor;
+  cursor: pointer;
+  margin-left: 5px;
+  padding-right: 5px;
+  border-right: 1px solid #e5e5e5;
+
+  &:last-child {
+    border: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  &-l {
+    margin-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #e5e5e5;
+  }
+}

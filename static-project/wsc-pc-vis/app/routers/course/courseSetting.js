@@ -1,0 +1,20 @@
+module.exports = [
+  [
+    'GET',
+    '/v4/vis/edu/page/courseSettings',
+    'course.CourseSettingController',
+    'getIndexHtml',
+  ],
+  [
+    'POST',
+    '/v4/vis/edu/courseSetting/saveCourseSettings.json',
+    'course.CourseSettingController',
+    'saveCourseSettings',
+  ],
+  [
+    'GET',
+    '/v4/vis/edu/courseSetting/findCourseSettings.json',
+    'course.CourseSettingController',
+    'findCourseSettings',
+  ],
+];

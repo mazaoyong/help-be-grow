@@ -1,0 +1,42 @@
+.action-tree__container {
+  margin: 0 16px;
+
+  .column-basetree__node__switcher {
+    line-height: 42px !important;
+  }
+
+  .operations {
+    display: none;
+    margin-right: 16px;
+  }
+
+}
+
+.column-basetree__operation__item {
+  color: #155bd4;
+  cursor: pointer;
+}
+
+.action-tree__item {
+  height: 42px;
+  line-height: 42px;
+
+  &:hover {
+    .operations {
+      display: flex !important;
+    }
+
+    .column-basetree__node__edit {
+      display: inline-block !important;
+    }
+  }
+
+  & .column-basetree__node__operations .operations {
+    margin-top: 12px;
+  }
+ }
+
+.operation__disabled {
+  color: #999;
+  cursor: not-allowed;
+}

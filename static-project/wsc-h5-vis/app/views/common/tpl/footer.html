@@ -1,0 +1,29 @@
+<div>
+    <textarea id="js-footer-textarea" class="js-lazy" style="display:none;">
+      <div class="footer">
+        <div class="copyright">
+            {% if kdt_id and
+              shop_type != 2 and
+              not kdt_id in [371761, 391658, 13770441,15662592, 16624060] %}
+                  {% if not openAppConfig.hide_foot_nav %}
+                      <div class="ft-links">
+                          <a href="<?php echo WapUrl::getHomepageUrlByKdtId($_jsVar['kdt_id']); ?>" target="_blank">店铺主页</a>
+                          <a href="<?php echo WapUrl::getUserCenterUrlByKdtId($_jsVar['kdt_id']); ?>" target="_blank">会员中心</a>
+
+                          {% if mpData.mp_weixin and kdt_id in [18984288, 19431122, 40408019, 40103053, 19341933] %}
+                              <a href="javascript:;" class="js-open-follow">关注我们</a>
+                          {% endif %}
+
+                          <a href="<?php echo URL::tinyUrl(WapUrl::getByUri('/showcase/cert', $_jsVar['kdt_id'])); ?>" target="_blank">店铺信息</a>
+                      </div>
+                  {% endif %}
+            {% endif %}
+            {% if kdt_id and kdt_id in [13770441,15662592] %}
+              {% include "./copyright.html" %}
+            {% elif platformInfo.platform != 'youzanmars' %}
+              {% include "./copyright.html" %}
+            {% endif %}
+        </div>
+      </div>
+    </textarea>
+</div>

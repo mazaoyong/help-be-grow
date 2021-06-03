@@ -1,0 +1,126 @@
+@mixin disabled-color {
+  color: #cacaca;
+  background-color: #f8f8f8;
+  border-color: #e5e5e5;
+}
+
+@mixin disabled-cursor {
+  cursor: not-allowed;
+}
+
+.chain-edu-disabled-wrap,
+.chain-edu-disabled-form {
+  .chain-edu-disabled-form-fieldset {
+    cursor: not-allowed;
+
+    .zent-form__control-group {
+      pointer-events: none;
+
+      a,
+      span {
+        @include disabled-cursor;
+
+        color: #999;
+
+        &::after {
+          @include disabled-cursor;
+
+          color: #999;
+        }
+
+        &::before {
+          @include disabled-cursor;
+
+          color: #999;
+        }
+      }
+
+      .zent-input {
+        @include disabled-color;
+        @include disabled-cursor;
+      }
+
+      .zent-textarea {
+        @include disabled-color;
+        @include disabled-cursor;
+      }
+
+      .zent-input-addon-before,
+      .zent-input-addon-after {
+        @include disabled-color;
+
+        background-color: #f2f2f2;
+      }
+
+      .zent-radio-wrap {
+        @include disabled-cursor;
+      }
+
+      .zent-radio {
+        .zent-radio-inner {
+          @include disabled-color;
+        }
+      }
+
+      .zent-radio > input[type=radio] {
+        @include disabled-cursor;
+      }
+
+      .zent-radio-checked {
+        .zent-radio {
+          .zent-radio-inner {
+            @include disabled-color;
+
+            background-color: #e5e5e5;
+          }
+        }
+      }
+
+      .zent-checkbox-wrap {
+        @include disabled-cursor;
+      }
+
+      .zent-checkbox > .zent-checkbox-inner {
+        @include disabled-color;
+      }
+
+      .zent-checkbox > input[type=checkbox] {
+        @include disabled-cursor;
+      }
+
+      .zent-checkbox-checked > .zent-checkbox > .zent-checkbox-inner {
+        @include disabled-color;
+
+        background-color: #e5e5e5;
+      }
+
+      .zent-select {
+        @include disabled-cursor;
+      }
+
+      .zent-select-text {
+        @include disabled-color;
+      }
+
+      .zent-slider-main {
+        @include disabled-cursor;
+      }
+
+      .zent-slider-track {
+        background-color: #bbb;
+      }
+
+      .zent-btn[type=button] {
+        @include disabled-color;
+        @include disabled-cursor;
+      }
+
+      .zent-switch {
+        @include disabled-cursor;
+
+        background-color: #f2f2f2;
+        border-color: #f2f2f2;
+      }
+    }
+  }
+}

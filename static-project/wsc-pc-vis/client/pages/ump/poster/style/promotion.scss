@@ -1,0 +1,18 @@
+.promotion-wrapper {
+  .promotion {
+    &__img {
+      width: 150px;
+      height: 284px;
+      margin: 5px auto;
+      background: url('https://b.yzcdn.cn/wsc/paidcontent/poster/poster_keng3.png') center center no-repeat;
+    }
+  }
+
+  .down-link {
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

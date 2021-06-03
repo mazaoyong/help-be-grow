@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+
+{% block page_title %} 家校圈 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_h5_css.moments/feeds') | safe }}
+{% endblock %}
+
+{% block app_content %}
+  <div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('version_h5_js.moments/feeds') | safe }}
+{% endblock %}

@@ -1,0 +1,88 @@
+.column-basetree__node {
+  display: flex;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__operations {
+    flex-basis: 300px;
+    text-align: right;
+  }
+
+  &__edit {
+    display: none !important;
+    color: #999;
+    margin-left: 4px;
+    line-height: 42px !important;
+  }
+
+  &__qa {
+    color: #999;
+    margin-left: 4px;
+    line-height: 36px !important;
+  }
+
+  &__name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 127px;
+  }
+
+  &__select {
+    background-color: #F7F8FA;
+
+    .column-basetree__node__name {
+      color: #155bd4;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 127px;
+    }
+  }
+
+  &__hovered {
+    background-color: #F7F8FA !important;
+  }
+}
+
+.column-directory__tree__wrapper {
+  .zent-tree-child {
+    padding-left: 0 !important;
+  }
+
+  .content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .content:hover {
+    background-color: #F7F8FA !important;
+  }
+
+  .column-basetree__node__switcher {
+    margin-left: -5px;
+    margin-right: 3px;
+    font-size: 20px;
+
+    &__collapse {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .switcher {
+    display: none !important;
+  }
+
+  .tree-node-loading-wrapper {
+    display: none !important;
+  }
+}
+
+.dir-manage__emptytext {
+  text-align: center;
+  margin-top: 16px;
+}

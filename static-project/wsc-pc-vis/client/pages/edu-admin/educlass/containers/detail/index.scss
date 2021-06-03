@@ -1,0 +1,73 @@
+@import 'vars/_colors';
+
+.class-detail-page {
+  margin: -15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &__content {
+    flex: 1;
+    overflow-y: auto;
+    height: calc(100vh - 80px);
+
+    .panel .panel__filter__group {
+      .zent-btn-group .zent-btn {
+        padding: 0;
+      }
+    }
+  }
+
+  .detail-content {
+    padding: 15px;
+  }
+
+  .panel__schedule {
+    height: calc(100vh - 288px);
+  }
+
+  .class-table-placeholder {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+
+    &__add-btn {
+      color: #155bd4;
+      cursor: pointer;
+    }
+  }
+
+  .rc-sidebar-breadcrumb a:first-of-type {
+    margin-left: 14px;
+  }
+
+  .rc-sidebar-breadcrumb-nav-active::after {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+  }
+
+  .cursor-link {
+    display: inline-block;
+    color: #3388ff;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
+
+.nav-wrapper__navbar {
+  .rc-sidebar-breadcrumb {
+    a {
+      color: $darkGrayColor !important;
+    }
+
+    .rc-sidebar-breadcrumb-nav-active {
+      color: $normalColor !important;
+    }
+  }
+}
+.ebiz-select-dropdown .option-item {
+  margin: 0 !important;
+}

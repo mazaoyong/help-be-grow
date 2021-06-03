@@ -1,0 +1,26 @@
+.poster__reward-setting-radio {
+  margin-top: 7px;
+}
+
+.poster__reward-setting-item {
+  margin-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:first-child {
+    width: 160px;
+  }
+
+  &:last-child {
+    margin-bottom: 9px;
+  }
+};
+
+.poster__reward-setting-coupon-item {
+  margin-top: 12px;
+
+  .coupon-wrapper .inline {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,22 @@
+// blank template 需要的部分基础样式
+body,
+html {
+  position: relative;
+  height: 100%;
+}
+
+#app-footer {
+  // position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+
+#app-footer a {
+  width: 76px;
+  height: 27px;
+  display: block;
+  margin: 0 auto;
+  background: url('https://b.yzcdn.cn/v2/image/www/footer/logov2@2x.png') no-repeat;
+  background-size: contain;
+}

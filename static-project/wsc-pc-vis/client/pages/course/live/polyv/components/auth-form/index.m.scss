@@ -1,0 +1,7 @@
+:local(.auth-form) {
+  margin-top: 40px;
+
+  :global(.zent-form__control-label) {
+    width: 80px;
+  }
+}

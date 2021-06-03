@@ -1,0 +1,74 @@
+
+.reward-node-wrap {
+  .no-course-select-warn {
+    color: rgb(153, 153, 153);;
+    line-height: 30px;
+  }
+
+  .zent-row {
+    margin-bottom: 5px;
+    flex-direction: column;
+    & > label {
+      line-height: 30px;
+    }
+  }
+
+  .zent-radio-group {
+    display: flex !important;
+    margin-top: 6px;
+  }
+
+  .reward-node-input-wrap {
+    margin: 0 5px;
+
+    .zent-input-addons {
+      margin: 0;
+    }
+
+    .zent-form__control-label {
+      width: 0 !important;
+    }
+  }
+
+  .reward-node-row {
+    display: flex;
+    & > span {
+      line-height: 30px !important;
+    }
+
+    & > span:last-of-type {
+      display: flex;
+    }
+
+    & .zent-form__error-desc {
+      display: none;
+    }
+  }
+
+  & .reward-node-desc {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+  }
+
+  & .reward-node-error {
+    margin: 0 0 0 20px;
+    color: rgb(255, 68, 68);
+  }
+
+  // .zent-number-input-arrowup, .zent-number-input-arrowdown {
+  //   margin-right: 35px;
+  // }
+
+  .zent-input-addon-after {
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+.has-error .reward-node-input-wrap .zent-input-addons > .zent-input[disabled]:first-child {
+  border-right: 1px solid #f44;
+}
+
+.start-reward-group__pop {
+  margin-top: -2px !important;
+}

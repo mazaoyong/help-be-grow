@@ -1,0 +1,30 @@
+.fullguide-fav {
+  &__step {
+    display: inline-block;
+    width: 260px;
+    margin-bottom: 15px;
+    text-align: left;
+
+    &-1 {
+      height: 29px;
+      background: url(https://img01.yzcdn.cn/v2/image/wap/step_1.png) no-repeat;
+    }
+
+    &-2 {
+      height: 86px;
+      background: url(https://img01.yzcdn.cn/v2/image/wap/fav_step_2.png) no-repeat;
+    }
+
+    @media only screen and (min-width: 321px) {
+      &-1 {
+        background-image: url(https://img01.yzcdn.cn/v2/image/wap/step_1@2x.png);
+        background-size: 260px 29px;
+      }
+
+      &-2 {
+        background-image: url(https://img01.yzcdn.cn/v2/image/wap/fav_step_2@2x.png);
+        background-size: 260px 86px;
+      }
+    }
+  }
+}

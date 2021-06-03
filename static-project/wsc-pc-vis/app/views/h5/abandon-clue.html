@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+
+{% block page_title %} 放弃线索 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_h5_css.abandon-clue') | safe }}
+{% endblock %}
+
+{% block app_content %}
+  <div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('version_h5_js.abandon-clue') | safe }}
+{% endblock %}

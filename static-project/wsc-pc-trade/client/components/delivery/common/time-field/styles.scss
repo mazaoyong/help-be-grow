@@ -1,0 +1,24 @@
+
+@import 'vars/colors';
+
+.time-field {
+  line-height: 30px;
+  padding-top: 5px;
+
+  .help-desc {
+    color: var(--theme-stroke-3, #969799);
+    line-height: 14px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.rc-bh-day-item-remove-pop {
+  .zent-pop-buttons {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+    min-width: 160px;
+  }
+}

@@ -1,0 +1,75 @@
+.clue-source {
+  display: flex;
+  height: calc(100vh - 75px);
+  min-height: 500px;
+
+  .zent-grid-tr {
+    .zent-grid-th:first-child,
+    .zent-grid-td:first-child {
+      padding-right: 8px;
+
+      .zent-checkbox-wrap {
+        vertical-align: baseline;
+      }
+    }
+
+  }
+
+  .serialno-edit {
+    color: #999;
+    margin-left: 8px;
+    visibility: hidden;
+  }
+
+  .tbody {
+    .tr:hover,
+    tr:hover {
+      .hovervisible {
+        visibility: visible;
+      }
+    }
+  }
+
+  .zent-grid-tfoot {
+    height: 40px;
+  }
+}
+
+.edu-link-group {
+  a {
+    cursor: pointer;
+  }
+}
+
+.edu-clue-source-select {
+  position: absolute;
+  transform: translateY(-40px);
+
+  .zent-checkbox-wrap {
+    margin-right: 8px;
+    padding: 8px 0 8px 16px;
+  }
+
+  .edu-clue-source-select-all {
+    margin-right: 8px;
+  }
+
+  .zent-btn {
+    margin-right: 8px;
+  }
+}
+
+.edu-clue-source-dialog-small {
+  .zent-form__control-label {
+    width: 90px;
+  }
+}
+
+.zent-dialog-r {
+  min-width: 480px !important;
+
+  &-footer {
+    padding: 16px 0 0;
+    text-align: right;
+  }
+}

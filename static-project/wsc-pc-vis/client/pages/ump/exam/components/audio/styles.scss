@@ -1,0 +1,60 @@
+.audio-player {
+  display: flex;
+  background-color: #FFF;
+  border-radius: 2px;
+  border-color: #EBEDF0;
+  margin: 8px 0 0 0;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+
+  &.play {
+    background: #F7F8FA;
+  }
+
+  .controller {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 15%;
+
+    .operation-container {
+      align-self: center;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+    .text {
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 20px;
+      white-space: nowrap;
+      color: #323233;
+    }
+
+    .time {
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      color: #969799;
+      font-weight: normal;
+    }
+  }
+
+  &:hover {
+    background-color: #F7F8FA;
+  }
+}

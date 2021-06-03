@@ -1,0 +1,104 @@
+@import "vars/_colors";
+
+.class-list-page {
+  .class-filter-table-wrap {
+    .vis-filter_controls {
+      width: auto;
+      margin-right: 0;
+    }
+  }
+
+  .class-filter-opetation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__placeholder {
+      visibility: hidden;
+    }
+
+    &__reset {
+      margin-left: 16px;
+      color: #155bd4;
+      cursor: pointer;
+    }
+  }
+
+  .lesson-num {
+    margin-right: 5px;
+  }
+
+  .class-table-operate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #3388ff;
+
+    &__item {
+      padding: 0 6px;
+      border-right: 1px solid #DCDEE0;
+      white-space: nowrap;
+      line-height: 12px;
+      cursor: pointer;
+      color: $blueColor;
+
+      &:last-child {
+        border: 0;
+      }
+    }
+
+    .zent-table .cell:last-child .cell__child-container {
+      text-align: right;
+      width: 100%;
+    }
+  }
+
+  .class-table-placeholder {
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+
+    &__add-btn {
+      color: #3283fa;
+      cursor: pointer;
+    }
+  }
+
+  .zent-select-text {
+    color: $normalColor;
+
+    .zent-select-placeholder {
+      color: $normalColor;
+    }
+  }
+}
+
+.class-filter-opetation__reset {
+  color: $blueColor;
+}
+
+.class-table-operate {
+  
+  &__menu {
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(200, 201, 204, 0.5);
+    width: 73px;
+    & div {
+      cursor: pointer;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      &:hover {
+        background-color: #edf4ff;
+      }
+    }
+  }
+
+  &__more {
+    padding: 0 5px;
+    font-size: 16px;
+  }
+}

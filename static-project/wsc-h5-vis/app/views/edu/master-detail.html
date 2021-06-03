@@ -1,0 +1,15 @@
+{% extends './base.html' %}
+
+{% block page_style %}
+  {{ loadCss('version_h5_css.css/edu/master-detail') | safe }}
+{% endblock %}
+
+{% block page_content %}
+  <div id="app">
+    <!--vue-ssr-outlet-->
+  </div>
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('version_h5_js.js/edu/master-detail') | safe }}
+{% endblock %}

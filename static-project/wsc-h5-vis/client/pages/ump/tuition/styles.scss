@@ -1,0 +1,9 @@
+$main-button-color: #FF6713;
+
+.cas{
+    color: red;
+}
+
+:export {
+    mainButtonColor: $main-button-color;
+}

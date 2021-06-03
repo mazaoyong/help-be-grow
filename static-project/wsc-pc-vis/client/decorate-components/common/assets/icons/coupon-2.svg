@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/优惠券样式二</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/优惠券样式二" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18,3 L2,3 C2,4.104 1.104,5 0,5 L0,15 C1.104,15 2,15.896 2,17 L18,17 C18,15.896 18.896,15 20,15 L20,5 C18.896,5 18,4.104 18,3 M16.537,5 C16.888,5.606 17.394,6.112 18,6.463 L18,13.537 C17.394,13.888 16.888,14.394 16.537,15 L3.463,15 C3.112,14.394 2.606,13.888 2,13.537 L2,6.463 C2.606,6.112 3.112,5.606 3.463,5 L16.537,5" id="Fill-1" fill="#979797"></path>
+        <rect id="Rectangle" fill="#979797" fill-rule="nonzero" x="7" y="7" width="6" height="2"></rect>
+        <rect id="Rectangle-Copy" fill="#979797" fill-rule="nonzero" x="7" y="11" width="6" height="2"></rect>
+    </g>
+</svg>

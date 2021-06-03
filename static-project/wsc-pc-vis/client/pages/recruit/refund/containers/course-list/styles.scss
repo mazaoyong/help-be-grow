@@ -1,0 +1,119 @@
+.edu-refund-course {
+  word-break: break-all;
+  &-value {
+    margin: 0;
+    .zent-form__control-label {
+      display: none;
+    }
+    .zent-form__controls {
+      width: 100%;
+      margin: 0 !important;
+    }
+    .zent-input {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &-fee {
+    margin-left: auto;
+    margin-right: 0;
+    width: 150px;
+    text-align: left;
+    .zent-input {
+      min-width: 120px;
+      width: 120px;
+    }
+    .zent-input-wrapper {
+      min-width: 150px;
+      width: 150px;
+    }
+    &-title {
+      display: inline-block;
+      width: 150px;
+      text-align: left;
+    }
+  }
+  &-realpay {
+    margin-left: auto;
+    margin-right: 0;
+    width: 100px;
+    text-align: left;
+    .zent-input {
+      min-width: 70px;
+      width: 70px;
+    }
+    .zent-input-wrapper {
+      min-width: 100px;
+      width: 100px;
+    }
+  }
+  &-paytype {
+    margin: 0;
+    .zent-form__control-label {
+      display: none;
+    }
+    .zent-form__controls {
+      width: 100%;
+      margin: 0 !important;
+    }
+    .zent-select {
+      width: 120px;
+      min-width: 120px;
+    }
+    .zent-select-text {
+      width: 120px;
+      min-width: 120px;
+    }
+  }
+  &-period {
+    position: relative;
+    width: 140px;
+    .zent-input, .zent-input-wrapper {
+      min-width: 50px;
+      // width: 50px;
+    }
+    // &::after {
+    //   display: block;
+    //   content: '课时';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 54px;
+    //   line-height: 30px;
+    //   height: 30px;
+    // }
+  }
+  &-day {
+    position: relative;
+    width: 120px;
+    .zent-input, .zent-input-wrapper {
+      min-width: 50px;
+      // width: 50px;
+    }
+    // &::after {
+    //   display: block;
+    //   content: '天';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 54px;
+    //   line-height: 30px;
+    //   height: 30px;
+    // }
+  }
+  &-footer {
+    &-total {
+      color: #d40000;
+      font-size: 24px;
+
+      &::before {
+        display: inline;
+        content: '¥';
+        font-size: 14px;
+      }
+    }
+    &-number {
+      margin-right: 32px;
+      color: #323233;
+      font-size: 14px;
+    }
+  }
+}

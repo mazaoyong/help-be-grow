@@ -1,0 +1,23 @@
+:local(.empty) {
+  width: 100%;
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .image {
+    width: 118px;
+    img {
+      width: 100%;
+    }
+  }
+  .info {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #a0a1a3;
+    text-align: center;
+    .link {
+      cursor: pointer;
+    }
+  }
+}

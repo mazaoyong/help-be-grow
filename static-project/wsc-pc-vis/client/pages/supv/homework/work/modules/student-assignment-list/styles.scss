@@ -1,0 +1,9 @@
+@import 'vars/colors';
+
+.student-assignment__list {
+  padding: 16px;
+
+  span.disabled {
+    color: $grayColor;
+  }
+}

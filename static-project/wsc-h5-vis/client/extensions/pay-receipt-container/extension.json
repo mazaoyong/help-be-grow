@@ -1,0 +1,100 @@
+{
+  "name": "@wsc-h5-vis/pay-receipt-container",
+  "version": "1.0.0",
+  "displayName": "中文名",
+  "description": "描述信息",
+  "extensionId": "@wsc-h5-vis/pay-receipt-container",
+  "pathInBundle": "pay-receipt-container",
+  "widget": {
+    "default": "Main",
+    "provide": [],
+    "consume": []
+  },
+  "component": {
+    "provide": [],
+    "consume": []
+  },
+  "lambda": {
+    "provide": [],
+    "consume": []
+  },
+  "data": {
+    "provide": {
+      "orderNo": [
+        "r"
+      ],
+      "price": [
+        "r"
+      ],
+      "tip": [
+        "r"
+      ],
+      "payStateText": [
+        "r"
+      ],
+      "payRewardInfo": [
+        "r"
+      ],
+      "pointsName": [
+        "r"
+      ],
+      "btnList": [
+        "r"
+      ],
+      "btnUmpMap": [
+        "r"
+      ],
+      "rewardInfo": [
+        "r"
+      ],
+      "presentInfo": [
+        "r"
+      ],
+      "orderCouponInfo": [
+        "r"
+      ],
+      "joinGroupSetting": [
+        "r"
+      ],
+      "resultUrl": [
+        "r"
+      ]
+    },
+    "consume": {
+      "outBizNo": [
+        "r"
+      ],
+      "payAmount": [
+        "r"
+      ],
+      "returnUrl": [
+        "r"
+      ],
+      "height": [
+        "r"
+      ],
+      "kdtId": [
+        "r"
+      ]
+    }
+  },
+  "event": {
+    "emit": [],
+    "listen": []
+  },
+  "process": {
+    "invoke": [
+      "navigateTo",
+      "logger"
+    ],
+    "define": [
+      "navigateGo",
+      "logAction"
+    ]
+  },
+  "sandbox": {
+    "id": "",
+    "level": "Unsafe"
+  },
+  "bundle": "https://b.yzcdn.cn/wsc-h5-vis/ranta-extension_a1d2ec4f.js"
+}

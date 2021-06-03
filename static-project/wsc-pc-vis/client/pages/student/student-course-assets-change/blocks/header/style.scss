@@ -1,0 +1,80 @@
+.sum-grid {
+  display: flex;
+  border: 1px solid #dcdee0;
+  border-radius: 2px;
+  padding: 24px 0;
+
+  &-item {
+    flex: 1;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      border-right: 1px solid #dcdee0;
+    }
+
+    &-top {
+      font-size: 14px;
+      color: #6F7071;
+      line-height: 20px;
+
+      &__action {
+        font-size: 14px;
+        color: #155BD4;
+        line-height: 20px;
+        cursor: pointer;
+        margin-left: 8px;
+      }
+    }
+
+    &-validity {
+      margin-top: 4px;
+      white-space: nowrap;
+      margin-right: 90px;
+
+      &__tip {
+        font-size: 14px;
+        color: #646566;
+        line-height: 20px;
+        margin-left: 8px;
+        vertical-align: text-bottom;
+      }
+
+      &__title {
+        font-size: 20px;
+        color: #323233;
+        line-height: 28px;
+        font-weight: bold;
+      }
+    }
+
+    &-course {
+      margin-top: 4px;
+
+      &__remain {
+        font-size: 24px;
+        color: #323233;
+        line-height: 28px;
+        font-weight: bold;
+      }
+
+      &__dot {
+        margin: 0 5px;
+      }
+
+      &__total {
+        line-height: 28px;
+        font-size: 14px;
+        color: #646566;
+      }
+    }
+
+    &-class {
+      font-size: 20px;
+      color: #323233;
+      line-height: 28px;
+      font-weight: bold;
+    }
+  }
+}

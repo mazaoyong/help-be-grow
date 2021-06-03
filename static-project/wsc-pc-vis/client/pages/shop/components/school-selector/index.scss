@@ -1,0 +1,10 @@
+@import 'shared/sass/vars/colors';
+
+.school-choose-action {
+  .refresh-btn {
+    margin-left: 10px;
+    line-height: 30px;
+    color: $blueColor;
+    cursor: pointer;
+  }
+}

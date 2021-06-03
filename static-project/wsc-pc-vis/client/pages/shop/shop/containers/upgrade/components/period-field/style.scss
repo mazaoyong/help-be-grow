@@ -1,0 +1,19 @@
+.period-field {
+  display: flex;
+  .period-field__card {
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    cursor: pointer;
+    margin-right: 21px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .period-field__selectcard {
+    border: 1px solid #155bd4;
+  }
+  
+}

@@ -1,0 +1,100 @@
+@mixin ellipsis {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.shortcut-popup {
+  .van-popup {
+    background: #f7f8fa;
+  }
+
+  &__block {
+    padding: 16px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 4px;
+
+    &__title {
+      font-size: 14px;
+      line-height: 20px;
+      color: #969799;
+    }
+  }
+
+  &__latest {
+    &__content {
+      margin-top: 8px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #323233;
+
+      @include ellipsis;
+    }
+  }
+
+  &__shortcut {
+    &__item {
+      padding: 8px 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: #323233;
+      border-bottom: 1px solid #ebedf0;
+
+      &:last-child {
+        padding-bottom: 0;
+        border: none;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  &__main {
+    max-height: 70vh;
+    overflow: auto;
+
+    &::before {
+      display: block;
+      width: 100%;
+      height: 48px;
+      content: '';
+    }
+
+    // &::after {
+    //   display: block;
+    //   width: 100%;
+    //   height: 100px;
+    //   content: '';
+    // }
+  }
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #323233;
+    text-align: center;
+    background: #fff;
+
+    .van-icon {
+      position: absolute;
+      top: 13px;
+      right: 16px;
+    }
+  }
+}

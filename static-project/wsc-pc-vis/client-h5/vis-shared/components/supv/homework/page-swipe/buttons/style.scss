@@ -1,0 +1,31 @@
+.swipe-buttons {
+  position: fixed;
+  right: 16px;
+  bottom: 128px;
+
+  &__button {
+    padding: 10px 12px;
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #323233;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .04), 0 0 6px 0 rgba(0, 0, 0, .16);
+
+    .vis-icon {
+      vertical-align: middle;
+    }
+
+    span {
+      padding-left: 8px;
+    }
+
+    &--arrow-up {
+      .vis-icon {
+        vertical-align: -.2em;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.edu-qrcode-upload_wrapper {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  &:hover {
+    .edu-qrcode-upload_a {
+      visibility: inherit;
+      position: absolute;
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      background: rgba(0,0,0,.3);
+      top: -8px;
+      right: -8px;
+      width: 18px;
+      height: 18px;
+      font-size: 14px;
+      line-height: 16px;
+      border-radius: 9px;
+      &:hover {
+        color: #fff;
+        background: #333;
+      }
+    }
+
+  }
+}
+
+.edu-qrcode-upload_a {
+  visibility: hidden;
+}
+
+.rc-upload .rc-upload-tips {
+  color: #969799;
+}

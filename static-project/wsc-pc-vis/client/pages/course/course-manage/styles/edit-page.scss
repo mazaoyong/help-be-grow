@@ -1,0 +1,259 @@
+// @import '@youzan/video-upload/lib/index';
+@import 'vars/colors';
+
+.hide {
+  display: none !important; // sass-lint:disable-line no-important
+}
+
+.course-edit {
+  // collapse 不再允许展开/折叠
+  .zent-collapse {
+    .zent-collapse-panel__title {
+      padding-left: 0;
+      padding-right: 0;
+      cursor: auto;
+
+      svg {
+        display: none;
+      }
+    }
+
+    .zent-collapse-panel__content-box {
+      border-bottom: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__region {
+    &-title {
+      background-color: #f7f8fa;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    &-title--inner {
+      padding: 10px 0 10px 20px;
+    }
+
+    &-content {
+      font-size: 12px;
+    }
+
+    &-content--inner {
+      padding: 10px 0;
+    }
+  }
+
+  .zent-form__control-label {
+    width: 158px
+  }
+
+  .zent-radio {
+    line-height: 30px;
+  }
+
+  .region-hide {
+    .zent-form__control-group {
+      display: none;
+
+      &.goods-edit__region {
+        display: block;
+      }
+    }
+
+    .stock-wrap {
+      display: none;
+    }
+  }
+
+  .poster-download-trigger {
+    margin-left: 10px;
+    align-self: flex-end;
+  }
+
+  .no-control-label {
+    .zent-form__control-label {
+      display: none !important; // sass-lint:disable-line no-important
+    }
+
+    .zent-form__controls {
+      margin-left: 0 !important; // sass-lint:disable-line no-important
+    }
+  }
+
+  .fold-field {
+    font-size: 14px;
+    cursor: pointer;
+
+    &__icon {
+      transform: scale(.6, .6) rotate(-180deg);
+
+      &.is-close {
+        transform: scale(.6, .6);
+      }
+    }
+
+    &__txt {
+      margin-left: 3px;
+    }
+  }
+
+  .help-inline {
+    display: inline-block;
+    margin-bottom: 0;
+
+    span {
+      color: #969799;
+    }
+  }
+
+  // 底部按钮
+  .app-design {
+    min-width: 750px;
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+
+    .app-action {
+      position: fixed;
+      bottom: 0;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      min-width: 780px;
+      padding: 10px 0;
+      text-align: center;
+      transition: right .5s;
+      background-color: #fff;
+      box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, .07);
+    }
+  }
+
+  .sku-field,
+  .stock-field,
+  .weight-field,
+  .upload-field,
+  .messages-field,
+  .delivery-type-field,
+  .prepare-time-field,
+  .member-discount-field,
+  .directory-field {
+    display: flex;
+
+    .zent-form__controls {
+      flex: 1;
+    }
+  }
+
+  .input-large,
+  .form-input-large .zent-input,
+  .form-input-large .zent-textarea,
+  .select-large {
+    width: 388px;
+  }
+
+  .input-normal .zent-input,
+  .input-normal .zent-input-wrapper {
+    width: 160px;
+  }
+
+  .stock-wrap {
+    display: flex;
+    align-items: center;
+
+    &__input {
+      margin-bottom: 0;;
+    }
+
+    &__unit {
+      margin-left: 10px;
+    }
+  }
+
+  .hide-stock-wrap {
+    margin-top: 8px;
+  }
+
+  .help-tip {
+    line-height: 14px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #969799;
+  }
+
+  .sku-list__label {
+    width: 60px;
+  }
+
+  .zent-page-loading {
+    z-index: 1;
+  }
+
+  .zent-radio-wrap {
+    margin-right: 30px;
+  }
+
+  a {
+    color: $blueColor;
+  }
+
+  .zent-form__control-group.has-error .zent-form__error-desc {
+    color: $redColor;
+  }
+
+  .widget-form__error-desc  {
+    color: $redColor;
+  }
+
+  .help-block {
+    font-size: 12px;
+  }
+
+  .update-video-wrapper .c-gray span {
+    font-size: 12px;
+  }
+
+  .intent-address-tip {
+    color: $grayColor;
+  }
+
+}
+
+.cover-extraTips span {
+  display: block;
+}
+
+.course-example-pop {
+  .zent-pop-arrow {
+    top: 4px !important;
+  }
+}
+
+.disable-pointer-input {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: grey !important;
+  i {
+    color: grey !important;
+    background-color: transparent !important;
+  }
+}
+
+.course-detail-disable-tips {
+  margin-bottom: 20px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #FFF7CC;
+  border: 1px solid #FFEEBB;
+  font-size: 14px;
+
+  & span {
+    margin-left: 15px;
+  }
+}
+
+// .edit_form__wrap {
+//   height: 610px;
+//   overflow: auto;
+// }

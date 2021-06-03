@@ -1,0 +1,20 @@
+.appointment-independent-config {
+  .edu-settings-row {
+    margin: 16px auto 0;
+
+    .appointment-limit {
+      display: inline-flex;
+      margin: auto 8px;
+    };
+  };
+};
+
+.chain-edu-disabled-form .chain-edu-disabled-form-fieldset .zent-form__control-group a.link {
+  pointer-events: all;
+  cursor: pointer;
+  color: #155BD4;
+}
+
+.zent-form__control-group .zent-form__help-desc {
+  margin-top: 8px;
+}

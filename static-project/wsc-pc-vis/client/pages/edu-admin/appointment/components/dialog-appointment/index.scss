@@ -1,0 +1,139 @@
+.appointment-dialog-content {
+  max-width: 520px;
+
+  &__asset-tip {
+    margin-top: 10px;
+    color: #969799;
+  }
+  &__form {
+    position: relative;
+    padding-bottom: 30px;
+    max-height: 650px;
+    overflow-y: auto;
+  }
+
+  &__actions {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    bottom: -30px;
+    margin-bottom: -30px;
+    text-align: right;
+  }
+
+  .appointment-dialog-content__radio {
+    display: block;
+
+    &:nth-child(2) {
+      display: block;
+      margin-top: 12px;
+    }
+
+    &-extra {
+      font-size: 13px;
+      color: #969799;
+    }
+  }
+
+  .course-table {
+    margin-bottom: 20px;
+  }
+
+  .no-course-tip {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .course-table-radio-group {
+    width: 100%;
+  }
+
+  &__form-textarea textarea {
+    min-height: 120px;
+  }
+
+  .zent-form {
+    margin-bottom: 0;
+  }
+
+  .zent-form__control-label {
+    width: 112px;
+    color: #323233;
+  }
+
+  .voluntarySelect__container-operator {
+    font-size: 12px;
+
+    &.divide {
+      margin-left: 10px;
+    }
+  }
+
+  .zent-radio-wrap {
+    margin-right: 32px;
+    color: #323233;
+  }
+
+  .rc-divider-line {
+    display: inline-flex;
+  }
+}
+
+.appointment-dialog {
+  .zent-dialog-r-body {
+    color: #333;
+  }
+}
+
+.appointment__create__course__select__wrap {
+  max-width: 130px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.appointment__create__course__dialog {
+  position: relative;
+  vertical-align: top;
+  line-height: 14px;
+}
+
+.cover__purchased-assets .appointment__create__course__dialog {
+  vertical-align: middle;
+}
+
+.appointment__create__course__dialog__wrap {
+  z-index: 99999 !important;
+}
+
+.course-product {
+  width: 163px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.zent-select-popup {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.zent-select-option {
+  height: 21px;
+}
+
+.ebiz-select-dropdown .option-list .option-item .icon-help {
+  position: relative;
+  right: 0;
+}

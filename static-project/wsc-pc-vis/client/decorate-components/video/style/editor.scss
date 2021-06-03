@@ -1,0 +1,172 @@
+@import 'vars/colors';
+
+$image-width: 62px;
+$interval: 16px;
+
+@mixin addBtn() {
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(52,57,65,0.20);
+  border-radius: 2px;
+  font-size: 24px;
+  color: #155bd4;
+}
+
+.decorate-video-editor {
+  font-size: 12px;
+
+  &__video-info {
+    padding-top: $interval;
+    padding-bottom: $interval;
+  }
+
+  &__poster-info {
+    padding-top: 0;
+    padding-bottom: $interval;
+
+    .deco-control-group__content {
+      justify-content: flex-start;
+    }
+  }
+  .video-edit-wrap {
+    a {
+      cursor: pointer;
+    }
+    .add-video {
+      display: inline-block;
+      width: $image-width;
+      height: $image-width;
+      line-height: $image-width;
+      border: 1px solid #ddd;
+      background: #fff;
+      position: relative;
+      text-align: center;
+      margin-top: 16px;
+
+      @include addBtn();
+    }
+    .video-cover {
+      display: inline-block;
+      width: $image-width;
+      height: $image-width;
+      line-height: $image-width;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      margin: 16px 5px 0 0;
+      vertical-align: bottom;
+      &:hover {
+        .video-close {
+          display: block;
+        }
+      }
+      .image-cover {
+        width: $image-width;
+        height: $image-width;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .empty-cover {
+        width: 100%;
+        height: 100%;
+        background: #323233;
+      }
+      &.is-success::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        top: 50%;
+        margin-top: -10px;
+        margin-left: -10px;
+        background: url('https://b.yzcdn.cn/fix-base64/9f3c95e80ecd533b7e4a1b63848bbce6c16bbebb27638e4e8e8f35715294441d.png') no-repeat;
+        background-size: 20px auto;
+      }
+      .video-close {
+        display: none;
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        color: #fff;
+        text-align: center;
+        background: rgba(0, 0, 0, .3);
+        border-radius: 50%;
+        z-index: 2;
+        &:hover {
+          background: rgba(0, 0, 0, .6);
+        }
+      }
+    }
+    .note {
+      margin-top: 5px;
+      i {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url('https://b.yzcdn.cn/fix-base64/df902764624789467e1d1f16f7f89c6f5e010137588d9c3da79276c468448594.png') no-repeat;
+        background-size: 14px auto;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      span {
+        vertical-align: middle;
+      }
+    }
+    .video-edit-tips {
+      margin-bottom: 16px;
+      color: #969799;
+    }
+  } // 封面图片更换
+
+  .surface-plot-image-editor {
+    .image-editor {
+      .has-choosed-image {
+        width: $image-width;
+        height: $image-width;
+        .modify-image {
+          width: $image-width;
+          height: 16px;
+          line-height: 16px;
+        }
+        .thumb-image {
+          min-height: $image-width;
+        }
+      }
+      .has-not-choose-image {
+        width: $image-width;
+        height: $image-width;
+
+        @include addBtn();
+
+        .plus-icon {
+          margin: 0;
+        }
+
+        div {
+          display: none;
+        }
+      }
+    }
+    .image-editor-tips {
+      color: #969799;
+      margin-bottom: $interval;
+      vertical-align: text-bottom;
+    }
+  }
+
+  .suspension-window-editor-notice {
+    color: #9b9b9b;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+  }
+
+  .editor-bottom-help-desc {
+    color: #969799;
+  }
+}

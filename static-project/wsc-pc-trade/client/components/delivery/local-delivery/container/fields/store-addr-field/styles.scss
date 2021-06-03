@@ -1,0 +1,25 @@
+.custom-store-address {
+  font-size: 14px;
+  line-height: 30px;
+
+  a {
+    color: #155bd4;
+  }
+
+  &__dialog p {
+    color: #333;
+  }
+
+  &__tip {
+    font-size: 12px;
+    width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #f8f8f8;
+    color: #999;
+  }
+
+  &__link {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,22 @@
+.simple-version {
+  margin-top: 24px;
+}
+
+.local-delivery-form__id {
+  display: none;
+}
+
+.local-delivery-form__intro {
+  .zent-textarea {
+    width: 300px;
+    height: 100px;
+  }
+}
+
+.local-delivery-form__start,
+.local-delivery-form__name,
+.local-delivery-form__delivery {
+  .zent-input-wrapper {
+    width: 120px;
+  }
+}

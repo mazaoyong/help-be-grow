@@ -1,0 +1,38 @@
+.join-block {
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: calc(50vh - 50%);
+
+  .workbook-cover {
+    margin-right: auto;
+    margin-bottom: 4px;
+    margin-left: auto;
+  }
+
+  &__title-wrapper {
+    max-width: 272px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    word-break: break-all;
+  }
+
+  &__button {
+    display: block;
+    height: 44px;
+    padding: 0 66px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+}

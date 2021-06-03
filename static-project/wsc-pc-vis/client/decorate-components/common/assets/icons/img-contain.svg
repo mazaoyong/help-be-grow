@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/留白</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/留白" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M3,3 L3,17 L17,17 L17,3 L3,3 Z M1,1 L19,1 L19,19 L1,19 L1,1 Z" id="Rectangle" fill="#7D7E80" fill-rule="nonzero"></path>
+        <path d="M7,3 L7,17 L13,17 L13,3 L7,3 Z M5,1 L15,1 L15,19 L5,19 L5,1 Z" id="Rectangle" fill="#7D7E80" fill-rule="nonzero"></path>
+        <polygon id="Triangle" fill="#7D7E80" fill-rule="nonzero" points="10 12 12 15 8 15"></polygon>
+        <circle id="Oval" fill="#7D7E80" fill-rule="nonzero" cx="9" cy="6" r="1"></circle>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="音频播放器-前后15秒" transform="translate(-106.000000, -43.000000)">
+            <g id="Group-19">
+                <g id="Group-5" transform="translate(103.000000, 42.000000)">
+                    <g id="Group-2">
+                        <path d="M11.7953095,3.50241629 C7.1954541,3.61112279 3.5,7.37400162 3.5,12 C3.5,16.6944204 7.30557963,20.5 12,20.5 C16.6259984,20.5 20.3888772,16.8045459 20.4975837,12.2046905" id="Oval" stroke="#fff" transform="translate(12.000000, 12.000000) rotate(-105.000000) translate(-12.000000, -12.000000) "></path>
+                        <text id="15" font-family="PingFangSC-Regular, PingFang SC" font-size="9" font-weight="normal" fill="#fff">
+                            <tspan x="6.991" y="15">15</tspan>
+                        </text>
+                        <polygon id="Triangle" fill="#fff" transform="translate(11.000000, 3.500000) scale(-1, 1) translate(-11.000000, -3.500000) " points="13 3.5 9 6 9 1"></polygon>
+                        <polygon id="Triangle-Copy" fill="#fff" transform="translate(8.000000, 3.500000) scale(-1, 1) translate(-8.000000, -3.500000) " points="10 3.5 6 6 6 1"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1 @@
+export const baseUrl = '/v4/vis/h5';

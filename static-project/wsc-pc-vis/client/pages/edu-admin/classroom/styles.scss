@@ -1,0 +1,51 @@
+@import 'vars/colors';
+
+.classroom-list {
+  min-height: calc(100vh - 106px);
+
+  .zent-select-text {
+    color: $normalColor;
+
+    .zent-select-placeholder {
+      color: $normalColor;
+    }
+  }
+}
+
+.classroom-addroom {
+  position: absolute;
+  z-index: 1;
+}
+
+.classroom-edit {
+  .zent-form__control-label {
+    width: 90px;
+  }
+}
+
+.classroom-filter {
+  display: flex;
+}
+
+.classroom-filter_reset {
+  cursor: pointer;
+  line-height: 30px;
+  user-select: none;
+  margin-left: 10px;
+  color: #155bd4 !important;
+}
+
+.classroom_btn-group {
+  a {
+    padding: 0 4px;
+    border-right: solid 1px #9b9b9b;
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
+}
+
+.classroom-edit_footer {
+  float: right;
+  margin-top: 10px;
+}

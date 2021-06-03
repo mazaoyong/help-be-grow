@@ -1,0 +1,19 @@
+{% extends './base.html' %}
+
+{% block page_title %} 课程分组 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.course/group/edit') | safe }}
+{% endblock %}
+
+{% block body_html %}
+  <div id="course-group-decorate" class="course-group-decorate"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('vendor') | safe }}
+  {{ loadJs('base') | safe }}
+  {{ loadJs('version_js.course/group/edit') | safe }}
+  {% include "../../common/config.html" %}
+  {% include "../../common/ueditor.html" %}
+{% endblock %}

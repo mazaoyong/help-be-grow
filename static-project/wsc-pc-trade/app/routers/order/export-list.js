@@ -1,0 +1,23 @@
+module.exports = [
+  [
+    '报表列表页面',
+    'GET',
+    '/v4/trade/order/export-list',
+    'order.ExportListController',
+    'getIndexHtml',
+  ],
+  [
+    '报表列表页面',
+    'GET',
+    '/v4/trade/order/export-list/list.json',
+    'order.ExportListController',
+    'getListJson',
+  ],
+  [
+    '报表列表页面',
+    'GET',
+    '/v4/trade/order/export-list/fx-list.json',
+    'order.ExportListController',
+    'getFxListJson',
+  ],
+];

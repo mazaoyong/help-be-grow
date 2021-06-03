@@ -1,0 +1,14 @@
+.dialog-r {
+  &-body {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #323233;
+    padding: 16px;
+  }
+
+  &-footer {
+    text-align: right;
+    padding: 16px 16px 0;
+  }
+}

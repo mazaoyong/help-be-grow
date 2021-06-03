@@ -1,0 +1,13 @@
+{% extends './base.html' %}
+
+{% block page_content %}
+  <div id="app"></div>
+{% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_h5_css.css/edu/map') | safe }}
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('version_h5_js.js/edu/map') | safe }}
+{% endblock %}

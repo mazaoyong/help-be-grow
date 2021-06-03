@@ -1,0 +1,9 @@
+/** 礼品领取结果状态 */
+export const RECEIVE_GIFT_STATUS = {
+  OVER_CONTENT_COUNT: 1,
+  OVER_FRIEND_COUNT: 2,
+  PAIED: 3,
+  RECEIVED: 4,
+  UNRECEIVE: 5,
+  RECEIVED_FAIL: 6,
+};

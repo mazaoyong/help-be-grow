@@ -1,0 +1,53 @@
+module.exports = [
+  [
+    '订单列表页',
+    'GET',
+    ['/v4/trade/na/order', '/v4/trade/na/order/index', '/v4/trade/na/order/list'],
+    'na.order.OrderListController',
+    'getIndexHtml',
+  ],
+  [
+    '获取订单列表',
+    'GET',
+    '/v4/trade/order/getList.json',
+    'order.OrderListController',
+    'getListJson',
+  ],
+  [
+    '获取网点名称列表',
+    'GET',
+    '/v4/trade/order/offlinelist.json',
+    'order.OrderListController',
+    'getOfflineNameList',
+  ],
+  [
+    '获取单条订单数据',
+    'GET',
+    '/v4/trade/order/getOrderData.json',
+    'order.OrderListController',
+    'getOrderDataJson',
+  ],
+  ['加星', 'PUT', '/v4/trade/order/star.json', 'order.OrderListController', 'star'],
+  ['备注', 'PUT', '/v4/trade/order/remark.json', 'order.OrderListController', 'remark'],
+  [
+    '获取所有物流',
+    'GET',
+    '/v4/trade/order/getExpressList.json',
+    'order.ExpressController',
+    'getExpressList',
+  ],
+  [
+    '查询账户信息',
+    'GET',
+    '/v4/trade/order/getAccountBalance.json',
+    'order.AccountController',
+    'getAccountBalance',
+  ],
+  [
+    '获取订单来源信息',
+    'GET',
+    '/v4/trade/order/getOrderSourceList.json',
+    'order.OrderListController',
+    'getOrderSourceList',
+  ],
+];

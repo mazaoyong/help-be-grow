@@ -1,0 +1,43 @@
+@mixin iPhoneXAndIPhoneXSScreenFit() {
+  @media only screen and (width: 375px) and (height: 724px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    @content;
+  }
+
+  @media only screen and (width: 812px) and (height: 343px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin iPhoneXRScreenFit() {
+  @media only screen and (width: 414px) and (height: 808px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    @content;
+  }
+
+  @media only screen and (width: 896px) and (height: 382px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin iPhoneXSMaxScreenFit() {
+  @media only screen and (width: 414px) and (height: 808px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    @content;
+  }
+
+  @media only screen and (width: 896px) and (height: 382px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin iPhoneDevicesScreenFit() {
+  @include iPhoneXAndIPhoneXSScreenFit() {
+    @content;
+  }
+
+  @include iPhoneXRScreenFit() {
+    @content;
+  }
+
+  @include iPhoneXSMaxScreenFit() {
+    @content;
+  }
+}

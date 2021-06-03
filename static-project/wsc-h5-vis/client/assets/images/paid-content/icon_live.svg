@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="22px" viewBox="0 0 28 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.3%" y="-15.9%" width="104.6%" height="136.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="商家H5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="扫描PC二维码成为管理员" transform="translate(-20.000000, -96.000000)" fill="#44BB00">
+            <g id="Group" filter="url(#filter-1)" transform="translate(15.000000, 84.000000)">
+                <g id="Group-2" transform="translate(10.000000, 16.000000)">
+                    <path d="M1.5,0 L13.5,0 C14.3284271,-1.52179594e-16 15,0.671572875 15,1.5 L15,10.5 C15,11.3284271 14.3284271,12 13.5,12 L1.5,12 C0.671572875,12 1.01453063e-16,11.3284271 0,10.5 L0,1.5 C-1.01453063e-16,0.671572875 0.671572875,1.52179594e-16 1.5,0 Z M7.04817784,3.36609246 C6.93627995,3.28800688 6.80311627,3.24613748 6.66666667,3.24613748 C6.29847683,3.24613748 6,3.54461431 6,3.91280414 L6,8.08715115 C6,8.22360075 6.04186941,8.35676444 6.11995498,8.46866232 C6.33065778,8.77060285 6.74623731,8.84456564 7.04817784,8.63386284 L10.0391313,6.54668933 C10.1034929,6.50177591 10.1594184,6.44585049 10.2043318,6.38148882 C10.4150346,6.07954829 10.3410718,5.66396876 10.0391313,5.45326596 L7.04817784,3.36609246 Z" id="Combined-Shape"></path>
+                    <path d="M11.442914,4.12283441 L16.971457,1.9114172 C17.3560446,1.75758215 17.7925225,1.94464408 17.9463575,2.32923171 C17.9817936,2.41782192 18,2.51236015 18,2.60777472 L18,9.39222528 C18,9.80643884 17.6642136,10.1422253 17.25,10.1422253 C17.1545854,10.1422253 17.0600472,10.1240189 16.971457,10.0885828 L11.442914,7.87716559 C10.8734264,7.64937057 10.5,7.09780744 10.5,6.48445056 L10.5,5.51554944 C10.5,4.90219256 10.8734264,4.35062943 11.442914,4.12283441 Z" id="Combined-Shape-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

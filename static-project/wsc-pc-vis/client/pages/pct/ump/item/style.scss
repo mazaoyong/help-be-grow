@@ -1,0 +1,183 @@
+$itemBackground: #f7f8fa;
+$itemHoverBackground: #f2f2f2;
+
+$redLogo: #DF4545;
+$greenLogo: #00BF56;
+
+@mixin weapp-icon {
+  margin-left: -6px;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 10px 4px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+@mixin highlight-label($content) {
+  position: relative;
+  background: #fff5cb;
+
+  &::before {
+    content: $content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    background: #ff4343;
+    color: #fff;
+  }
+
+  &:hover {
+    background: #fff1b8;
+  }
+}
+
+@mixin corner-mark($content) {
+  position: relative;
+
+  &::before {
+    content: $content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 54px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    background: #ff4343;
+    color: #fff;
+  }
+}
+
+.support-weapp {
+  @include weapp-icon;
+  background-image: url('https://img.yzcdn.cn/wsc/ump/dashboard/weapp.png');
+}
+
+.support-edu {
+  @include weapp-icon;
+  background-position: 5px 5px;
+  background-image: url('https://img.yzcdn.cn/yzedu/ump/eduicon@2x.png');
+}
+
+.will-support-weapp {
+  @include weapp-icon;
+  background-image: url('https://img.yzcdn.cn/public_files/2018/06/22/fea60ec0f80e285efbbbf549dd9ddfc1.png');
+}
+
+.pop-disable-tip {
+  width: 100%;
+}
+
+.application-item {
+  background: $itemBackground;
+  margin: 16px 16px 0 0;
+  min-width: 254px;
+  float: left;
+
+  &:hover {
+    background: $itemHoverBackground;
+  }
+
+  &.recommend {
+    @include highlight-label('\63A8\8350');
+  }
+
+  &.free-of-charge {
+    // 限时免费
+    @include corner-mark('\9650\65f6\514d\8d39');
+  }
+
+  &.latest {
+    @include highlight-label('\6700\65B0');
+  }
+
+  .application-entry {
+    width: 100%;
+    box-sizing: border-box;
+    zoom: 1;
+    display: block;
+    padding: 20px;
+
+    .application-logo {
+      float: left;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      &.red-bg{
+        background: $redLogo;
+      }
+
+      &.green-bg{
+        background: $greenLogo;
+      }
+
+      & > img {
+        width: 40px;
+        height: 40px;
+        vertical-align: bottom;
+      }
+    }
+
+    .application-name {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #333;
+      margin-left: 50px;
+      height: 20px;
+      line-height: 20px;
+
+      .application-tips {
+        font-size: 12px;
+        margin-left: 5px;
+        color: #ff8419;
+        vertical-align: bottom;
+      }
+    }
+
+    .application-desc {
+      font-size: 12px;
+      height: 18px;
+      line-height: 18px;
+      vertical-align: top;
+      color: #999;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 50px;
+      margin-top: 3px;
+    }
+  }
+
+  &.item-disable {
+    opacity: 0.6;
+
+    &:hover,
+    &.recommend {
+      background: $itemBackground;
+    }
+
+    .pop-disable-tip {
+      width: 100%;
+
+      .application-entry {
+        cursor: pointer;
+      }
+
+      &:hover {
+        background: $itemHoverBackground;
+      }
+    }
+
+    .application-entry {
+      cursor: default;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+
+.educourse-filter-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.educourse-list-form {
+  margin-top: 16px;
+  & .tr:hover {
+    .hover-visibleBtn {
+      visibility: visible;
+    }
+  }
+
+  .dpSoto {
+    color: #155BD4 !important;
+  }
+
+  .valuntary-async-select-option {
+    margin-bottom: 0px;
+  }
+}
+
+.eduCourse-create {
+
+  &-more {
+    position: absolute;
+    z-index: 1;
+    margin-top: 8px;
+    top: 90px;
+  }
+
+  &-less {
+    position: absolute;
+    z-index: 1;
+    margin-top: 8px;
+    top: 140px;
+  }
+}

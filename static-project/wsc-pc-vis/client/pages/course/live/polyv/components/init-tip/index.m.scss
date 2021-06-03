@@ -1,0 +1,38 @@
+:local(.init-tip) {
+  .content {
+    margin-bottom: 16px;
+  }
+
+  .methods {
+    font-weight: bold;
+    font-size: 16px;
+
+    .methods-item {
+      margin-bottom: 8px;
+    }
+
+    .methods-label {
+      margin-right: 16px;
+    }
+  }
+
+  .warning-title {
+    font-weight: normal;
+    color: #ed6a0c;
+  }
+
+  .warning {
+    display: block;
+    margin-left: -22px;
+    width: 620px;
+
+    .warning-item {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .warning-label {
+      margin-right: 12px;
+    }
+  }
+}

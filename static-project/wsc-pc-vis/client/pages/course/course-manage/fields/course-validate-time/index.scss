@@ -1,0 +1,31 @@
+
+.course-validate-radio-list {
+  margin: 0 6px 0 10px;
+}
+
+.course-validate-input-wrap{
+  display: flex;
+  line-height: 30px;
+  margin-top: 10px;
+
+  &>span {
+    display: inline-block !important;
+    line-height: 32px !important;
+  }
+}
+
+.course-validate-input{
+  display: flex;
+  line-height: 30px;
+  & .zent-form__control-group {
+    margin-bottom: 0px;
+  }
+
+  & .zent-select {
+    margin-right: 0px;
+  }
+}
+
+.course-validate-time-field__line {
+  line-height: 30px !important;
+}

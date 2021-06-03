@@ -1,0 +1,52 @@
+@import './match_iphonex.scss';
+@import './reset.scss';
+@import './vant-icon.scss';
+@import './feedback.scss';
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.van-goods-action {
+  .van-goods-action-mini-btn__icon {
+    font-size: 20px;
+  }
+
+  .van-goods-action-big-btn {
+    border: none;
+  }
+
+  .van-button--disabled {
+    opacity: 1;
+  }
+}
+
+.van-tabs__wrap {
+  // position: absolute;
+}
+
+.van-toast {
+  box-sizing: content-box;
+}
+
+.cap-login-dialog__button button {
+  box-sizing: border-box;
+}
+
+img {
+  -webkit-touch-callout: none;
+}

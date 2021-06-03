@@ -1,0 +1,65 @@
+@import "vars/_colors";
+
+.detail-page-side {
+  padding: 15px;
+  padding-left: 20px;
+  min-width: 260px;
+  width: 260px;
+  box-sizing: border-box;
+  border-right: 1px solid #ebedf0;
+
+  .detail-page-side-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &__title {
+      flex: 1;
+      word-break: break-all;
+      line-height: 28px;
+      color: #323233;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &__title-edit {
+      font-size: 14px;
+      line-height: 28px;
+      margin-left: 15px;
+      color: #155bd4 !important;
+      cursor: pointer;
+
+      &-icon {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .detail-page-side-status {
+    padding: 33px 0 15px;
+    border-bottom: 1px solid #ebedf0;
+  }
+
+  .detail-page-side-detail {
+    padding-top: 10px;
+  }
+
+  .desc-line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 18px;
+
+    &__label {
+      color: $grayColor;
+      margin-right: 20px;
+    }
+
+    &__value {
+      flex: 1;
+      color: $normalColor;
+    }
+  }
+}

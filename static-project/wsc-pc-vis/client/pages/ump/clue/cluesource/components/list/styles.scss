@@ -1,0 +1,23 @@
+.clue-source-list {
+  padding: 15px 15px 15px 0;
+  flex: 1;
+  height: calc(100% - 30px);
+
+  .clue-source-list-table {
+    margin-top: 16px;
+  }
+
+  .zent-table .tfoot__batchcomponents--has-children {
+    border: 0;
+    padding-top: 0;
+
+    & > * {
+      margin-right: 10px;
+    }
+  }
+}
+
+.clue-source-list-header {
+  display: flex;
+  justify-content: space-between;
+}

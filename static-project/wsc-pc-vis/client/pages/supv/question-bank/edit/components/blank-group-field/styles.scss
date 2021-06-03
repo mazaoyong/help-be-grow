@@ -1,0 +1,40 @@
+.blank-group {
+  &__wrapper {
+    .add-option-button {
+      margin-left: 120px;
+    }
+  }
+
+  &__blank-item {
+    display: flex;
+    margin-bottom: 16px;
+
+    .has-error {
+      .zent-input-wrapper,
+      input {
+        border-color: #d40000 !important;
+      }
+    }
+
+    .remove-blank {
+      position: absolute;
+      top: 0;
+      right: -20px;
+
+      .zenticon {
+        font-size: 15.8px;
+        color: #c8c9cc;
+        cursor: pointer;
+
+        &:hover {
+          color: #323233;
+        }
+      }
+    }
+  }
+
+  &__blank-input {
+    position: relative;
+    width: 640px;
+  }
+}

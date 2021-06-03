@@ -1,0 +1,92 @@
+.stat-shop-select {
+  font-size: 14px;
+  line-height: 20px;
+
+  &__divide-select {
+    display: flex;
+    align-items: center;
+  }
+
+  &__divide-item {
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0 8px;
+    color: #969799;
+
+    &.active {
+      color: #155bd4;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1px;
+      top: 50%;
+      height: 14px;
+      margin-top: -7px;
+      background-color: #ebedf0;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.rc-tree-select {
+  .stat-shop-select__tree-select-adapter {
+    .trigger-wrapper {
+      .select-item-icon {
+        color: #323233;
+        right: 9px;
+      }
+      .tree-select-placeholder {
+        color: #969799;
+      }
+    }
+  }
+}
+
+// 普通选择器适配样式
+.stat-shop-select__select-adapter {
+  .zent-select {
+    margin-right: 0;
+
+    &-text {
+      border: 0;
+      padding-left: 0;
+
+      .zent-select-placeholder {
+        // @include theme-color(color, stroke, 3);
+      }
+
+      &::after {
+        right: 5px;
+      }
+
+      &.visible {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.with-shop-select-wrapper {
+  position: relative;
+
+  .stat-shop-select__divide-select {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,81 @@
+@import './edit-page';
+
+.course-manage {
+  &__list {
+    section:nth-child(1) {
+      margin-top: 0;
+    }
+
+    &__filter {
+      position: relative;
+      padding: 20px 30px;
+      background: #f8f8f8;
+    }
+
+    .dpSoto {
+      color: #155bd4 !important;
+    }
+
+    .course-table__container {
+      .vis-filter_item {
+        min-width: 330px;
+
+        .vis-filter_label {
+          width: 85px;
+        }
+      }
+    }
+    
+    .vis-filter_controls {
+      .zent-select-text {
+        width: 185px;
+      }
+    }
+
+    .vis-filter_bottom {
+      margin-left: 85px;
+    }
+  }
+
+}
+
+.course-manage-dialog {
+  .zent-dialog-r-title {
+    padding-bottom: 0;
+  }
+
+  .dialog-tab-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    width: 300px;
+  }
+
+  .dialog-tab {
+    height: 28px;
+    cursor: pointer;
+  }
+
+  .dialog-tab-selected {
+    border-bottom: 1px solid #155bd4; 
+  }
+}
+
+.zent-table .cell.empty-data {
+  padding: 0;
+  height: auto;
+}
+
+.course-link-layout {
+  color: #155bd4 !important;
+  margin: 0 2px;
+}
+
+.course-table__container {
+  .valuntary-async-select-option {
+    margin-bottom: 0;
+  }
+  .vis-filter_item .zent-select {
+    margin-right: 0;
+  }
+}

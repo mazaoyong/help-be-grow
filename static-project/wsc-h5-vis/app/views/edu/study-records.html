@@ -1,0 +1,13 @@
+{% extends './base.html' %}
+
+{% block page_style %}
+  {{ loadCss('version_h5_css.css/edu/study-records') | safe }}
+{% endblock %}
+
+{% block page_title %}
+  学习记录
+{% endblock %}
+
+{% block page_script %}
+  {{ loadJs('version_h5_js.js/edu/study-records') | safe }}
+{% endblock %}

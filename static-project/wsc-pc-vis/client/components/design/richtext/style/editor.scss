@@ -1,0 +1,42 @@
+.rc-design-component-richtext-editor {
+  .input-append {
+    font-size: 0;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+
+    .zent-color-picker {
+      margin-right: 0;
+      vertical-align: top;
+    }
+
+    .zent-color-picker__text {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .zent-btn {
+      border-radius: 0 4px 4px 0;
+      margin-left: -1px;
+      background: #f8f8f8;
+
+      &:hover {
+        color: #333;
+        border-color: #bbb;
+      }
+    }
+  }
+
+  .richtext-checkbox-wrap {
+  }
+
+  .control-label {
+    display: inline-block;
+    width: 85px;
+    text-align: right;
+    vertical-align: middle;
+  }
+}
+
+.richtext-editor__color-picker-popover {
+  z-index: 8888;
+}

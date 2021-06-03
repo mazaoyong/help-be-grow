@@ -1,0 +1,41 @@
+@import 'vars/colors';
+
+.clue-list {
+  &__header {
+    .zent-btn {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__table {
+    margin-top: 10px;
+    .zent-tag {
+      // margin-bottom: 8px;
+      margin-left: 8px;
+    }
+
+    .edu-clue-pool-tag-etc {
+      cursor: default;
+      color: $blueColor;
+      margin-left: 4px;
+    }
+
+    // .zent-grid-fixed-left {
+    //   .zent-grid-tbody .zent-grid-tr .zent-grid-td:last-child,
+    //   .zent-grid-thead .zent-grid-tr .zent-grid-th:last-child {
+    //     padding-left: 0;
+
+    //     .zent-tag {
+    //       margin-left: 0;
+    //     }
+    //   }
+    // }
+  }
+}
+
+.cover__clue-selector {
+  .ebiz-select-dropdown .option-item {
+    margin: 0;
+    font-size: 14px;
+  }
+}

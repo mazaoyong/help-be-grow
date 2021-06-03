@@ -1,0 +1,30 @@
+{% set $picUrl = mpData.copyright_pic_url %}
+
+{% if $picUrl %}
+  $picUrl = 'https://img01.yzcdn.cn' + $picUrl
+{% endif %}
+
+{% set $isShowLogo = true %}
+{% set $logoLink = 'https://www.youzan.com?from_source=support_logo' %}
+
+{% if platformInfo.platform and
+  platformInfo.platform == 'c2a7b9269fd095fa5b1467769433688' or
+  openAppConfig.hide_copyright
+  %}
+  $isShowLogo = false
+{% endif %}
+
+{% if $picUrl %}
+<div class="ft-copyright {{ $isShowLogo if '' else 'hide' }}" style="background-image: url({{ $picUrl }});">
+    {% if not $hidePoweredBy%}
+      <a {{ $picUrl if 'class="yz-logo"' else ''}} href="{{$logoLink}}">有赞提供技术支持{{$isShowLogo}}</a>
+    {% endif %}
+</div>
+{% else %}
+<div class="ft-copyright {{ $isShowLogo if '' else 'hide' }}">
+    {% if not $hidePoweredBy%}
+      <a {{ $picUrl if 'class="yz-logo"' else ''}} href="{{$logoLink}}">有赞提供技术支持{{$isShowLogo}}</a>
+    {% endif %}
+</div>
+{% endif %}
+

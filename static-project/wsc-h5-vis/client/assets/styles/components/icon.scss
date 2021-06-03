@@ -1,0 +1,62 @@
+@import './var';
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'zan-wscwap-icon';
+  src: url('https://b.yzcdn.cn/zanui/icon/zan-wscwap-icon-5a1ade.ttf') format('truetype');
+}
+
+.zan-wscwap-icon {
+  position: relative;
+  display: inline-block;
+  font: normal normal normal 14px/1 "zan-wscwap-icon";
+  font-size: inherit;
+  text-rendering: auto;
+
+  &__info {
+    color: #fff;
+    left: 50%;
+    top: -.5em;
+    font-size: .5em;
+    margin-left: .8em;
+    padding: 0 .3em;
+    text-align: center;
+    min-width: 1.2em;
+    line-height: 1.2;
+    position: absolute;
+    border-radius: .6em;
+    box-sizing: border-box;
+    background-color: $c-red;
+    font-family: PingFang SC, Helvetica Neue, Arial, sans-serif;
+  }
+
+  &:before {
+    display: inline-block;
+  }
+}
+
+.zan-wscwap-icon-arrow-left:before {
+  content: "\F000";
+}
+.zan-wscwap-icon-cart:before {
+  content: "\F001";
+}
+.zan-wscwap-icon-info:before {
+  content: "\F002";
+}
+.zan-wscwap-icon-more:before {
+  content: "\F003";
+}
+.zan-wscwap-icon-msg:before {
+  content: "\F004";
+}
+.zan-wscwap-icon-share:before {
+  content: "\F005";
+}
+.zan-wscwap-icon-system:before {
+  content: "\F006";
+}
+.zan-wscwap-icon-time:before {
+  content: "\F007";
+}

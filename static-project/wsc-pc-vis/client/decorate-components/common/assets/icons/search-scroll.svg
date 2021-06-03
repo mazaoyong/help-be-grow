@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/上滑消失下滑出现</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/上滑消失下滑出现" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,3 L5,3 L5,6 L3,6 L3,3 L3,1 L17,1 L17,3 L17,6 L15,6 L15,3 Z" id="Combined-Shape" fill="#7D7E80" fill-rule="nonzero"></path>
+        <rect id="Rectangle-Copy-5" fill="#7D7E80" fill-rule="nonzero" x="2" y="7" width="16" height="2"></rect>
+        <rect id="Rectangle-Copy-6" fill="#7D7E80" fill-rule="nonzero" x="4" y="10" width="12" height="2"></rect>
+        <path d="M5,17 L15,17 L15,14 L17,14 L17,19 L15,19 L5,19 L3,19 L3,14 L5,14 L5,17 Z" id="Combined-Shape" fill="#7D7E80" fill-rule="nonzero"></path>
+    </g>
+</svg>

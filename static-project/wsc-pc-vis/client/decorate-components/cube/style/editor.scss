@@ -1,0 +1,120 @@
+.decorate-cube-editor {
+
+  .zent-design-editor__control-group-label {
+    width: 52px;
+  }
+
+  .decorate-cube {
+    position: relative;
+    width: 325px;
+
+    .cube-row {
+      float: left;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      &:last-of-type {
+
+        .cube-item {
+          border-right: 1px solid #e5e5e5;
+        }
+      }
+    }
+
+    .cube-item {
+      background: #f8f8f8;
+      border-left: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+      cursor: pointer;
+      text-align: center;
+
+      &:nth-child(1) {
+        border-top: 1px solid #e5e5e5;
+      }
+
+      &.item-selected {
+        background: #e0edff;
+        border-color: #155bd4;
+      }
+
+      &.item-selecting {
+        background: #e0edff;
+        border-color: transparent;
+      }
+
+      .plus-icon {
+        font-size: 20px;
+        color: #bbb;
+      }
+    }
+
+    .cube-selected {
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #ebedf0;
+      text-align: center;
+      color: #7d7e80;
+      cursor: pointer;
+
+      &.cube-selected-click {
+        border: 1px solid #155bd4;
+        background: #e0edff;
+        border-color: #155bd4;
+        color: #155bd4;
+        z-index: 2;
+        cursor: auto;
+
+        &:hover {
+
+          .rc-design-editor-card-item-delete {
+            display: block !important;
+            color: #000;
+            opacity: .3;
+          }
+        }
+      }
+
+      &-text {
+        font-size: 12px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      img {
+        height: inherit;
+        vertical-align: baseline;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .help-desc {
+    margin-left: 0;
+  }
+
+  &__entry-wrap {
+    margin: 10px;
+    background-color: #f7f8fa;
+  }
+
+  .has-not-choose-image,
+  .has-choosed-image {
+    background-color: #fff;
+  }
+}
+
+.rc-design-editor-card-item-delete {
+  display: none!important;
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  right: -10px;
+  top: -10px;
+  color: #bbb;
+  background: #fff;
+  border-radius: 50%;
+}

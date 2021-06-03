@@ -1,0 +1,77 @@
+.rewards-alert {
+  margin-bottom: 20px;
+}
+
+.record-header {
+  &__wrap {
+    height: 96px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  &__time {
+    margin-top: 16px;
+  }
+
+  &__tag {
+    display: inline-block;
+    margin-top: -5px;
+    vertical-align: middle;
+    line-height: 15px !important;
+    border-radius: 2px !important;
+  }
+}
+
+.vis-filter_region {
+  .range-picker2 {
+    display: flex;
+    .picker-seperator {
+      line-height: 32px;
+    }
+  }
+  .vis-filter_label,
+  .date-range-picker-wrapper {
+    width: auto !important;
+  }
+
+  .vis-filter_bottom {
+    margin-left: 70px;
+  }
+}
+
+.reward-list {
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  &__tab {
+    margin-bottom: 0 !important;
+  }
+}
+
+.rewards-list {
+  .vis-filter_region {
+    margin-top: 0px;
+  }
+
+  .edu-link-group {
+    display: inline-block;
+    margin-top: 6px;
+  }
+}
+
+.reward-value-cell {
+  max-width: 168px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

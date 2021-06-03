@@ -1,0 +1,42 @@
+@import 'vars/colors';
+// @import 'mixins/icon';
+// @import 'fns/image-cdn';
+
+.split-form {
+  padding: 0 10px 40px 60px;
+
+  .alert-title {
+    background-color: #eee;
+  }
+
+  .zent-form__control-label {
+    width: 100px;
+  }
+
+  .zent-form__controls {
+    margin-left: 20px;
+  }
+
+  .zent-input {
+    width: 183px;
+  }
+
+  .split-title {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 30px 0;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 12px;
+      background: $linkColor;
+      position: absolute;
+      top: 4px;
+      left: -10px;
+    }
+  }
+}

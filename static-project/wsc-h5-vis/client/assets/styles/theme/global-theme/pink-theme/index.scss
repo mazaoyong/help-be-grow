@@ -1,0 +1,43 @@
+@import '../_theme_template';
+
+// 颜色依次为： 通用组件（价格、图标、规格选中色等）、主按钮背景、主按钮文字、辅按钮背景、辅按钮文字、tag主色调透明
+$general: #ff547b;
+$main-bg: #ff547b;
+$main-text: #fff;
+$vice-bg: #ffe6e8;
+$vice-text: #ff547b;
+$start-bg: #ff547b;
+$end-bg: #ffa9bd;
+$start-new-bg: #ff73ab;
+$end-new-bg: #ff5179;
+$tag-new-bg: #ffedf4;
+$vice-new-bg: #ffe6e8;
+$vice-new-text: #323233;
+$activity-main-lines: url('https://img01.yzcdn.cn/wsc-h5-vis/light-lines_2019-11-1.png');
+$activity-vice-lines: url('https://img01.yzcdn.cn/wsc-h5-vis/dark-lines_2019-11-1.png');
+
+.pink-theme {
+  /* jscpd:ignore-start */
+  @include colorGenerator($general, $main-bg, $main-text, $vice-bg, $vice-text);
+  @include vantSkuGenerator($general, $main-bg, $main-text, $vice-bg, $vice-text);
+  @include colorActivityBanner($start-new-bg, $end-new-bg);
+  @include featureColorGenerator($general, $start-bg, $end-bg, $main-text, $tag-new-bg);
+  @include classGenerator(
+    $general,
+    $main-bg,
+    $main-text,
+    $vice-bg,
+    $vice-text,
+    $start-bg,
+    $end-bg,
+    $start-new-bg,
+    $end-new-bg,
+    $tag-new-bg,
+    $vice-new-bg,
+    $vice-new-text,
+    $activity-main-lines,
+    $activity-vice-lines
+  );
+
+  /* jscpd:ignore-end */
+}

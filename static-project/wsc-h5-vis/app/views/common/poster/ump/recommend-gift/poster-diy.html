@@ -1,0 +1,112 @@
+<div class="recommend-gift-diy">
+  <div class="recommend-gift-diy__bg">
+    <img class="bg__img-cover" src="{{drawInfo.bgUrl}}" alt="">
+    <img class="bg__img-real" src="{{drawInfo.bgUrl}}" alt="">
+  </div>
+
+  <div class="main__footer">
+    <div class="footer__shop">
+      <img class="footer__shop-img" src="{{drawInfo.userAvatar}}" alt="">
+      <div class="footer__shop-info">
+        <p class="shop-info__shopname">
+          {{drawInfo.userName}}
+        </p>
+        <p class="shop-info__desc">
+          扫描或长按识别二维码，一起加入学习
+        </p>
+      </div>
+    </div>
+    <img class="footer__urls" src="{{drawInfo.qrUrl}}" alt="">
+  </div>
+</div>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .recommend-gift-diy {
+    width: 300px;
+    height: 418px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 4px;
+    background-color: red;
+    overflow: hidden;
+  }
+
+  .recommend-gift-diy__bg {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+  .bg__img-cover {
+    position: absolute;
+    left: -7%;
+    top: -7%;
+    width: 114%;
+    height: 114%;
+    object-fit: cover;
+    -webkit-filter: blur(13px);
+    filter: blur(13px);
+  }
+
+  .bg__img-real {
+    object-fit: contain;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 81px;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 276px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .footer__shop {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__shop-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: 8px;
+  }
+
+  .shop-info__shopname {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323233;
+    margin-bottom: 1px;
+    font-weight: bold;
+  }
+
+  .shop-info__desc {
+    font-size: 10px;
+    line-height: 14px;
+    color: #969799;
+    width: 141px;
+  }
+
+  .footer__urls {
+    width: 65px;
+    height: 65px;
+  }
+</style>

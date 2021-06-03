@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+.course-summary__student-list {
+  .header {
+    @include latestUpdateTime();
+  }
+  .main-body {
+    @include verticalSplitMainBody();
+  }
+}

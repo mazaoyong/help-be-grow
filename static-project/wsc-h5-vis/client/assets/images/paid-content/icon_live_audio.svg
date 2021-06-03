@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>语音</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="30" rx="15"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bar" transform="translate(-10.000000, -10.000000)">
+            <g id="Group-15">
+                <g id="语音" transform="translate(10.000000, 10.000000)">
+                    <g id="Rectangle">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#666666" stroke-width="0.5" x="0.25" y="0.25" width="29.5" height="29.5" rx="14.75"></rect>
+                    </g>
+                    <g id="Group-11" transform="translate(7.000000, 5.000000)" fill="#666666">
+                        <rect id="Rectangle-2" x="3" y="0" width="10" height="15" rx="5"></rect>
+                        <path d="M16,9 C16,13.9705627 13.1546577,18 8,18 C2.84534234,18 0,13.9705627 0,9 L1,9 C1,13.7602352 3.69669042,17 8,17 C12.3033096,17 15,13.7602352 15,9 L16,9 Z M15,9 L16,9 C16,13.9705627 13.1546577,18 8,18 C2.84534234,18 0,13.9705627 0,9 L1,9 C1,13.7602352 3.69669042,17 8,17 C12.3033096,17 15,13.7602352 15,9 Z" id="Oval-2" fill-rule="nonzero"></path>
+                        <rect id="Rectangle-10" x="4" y="19" width="8" height="1"></rect>
+                        <rect id="Rectangle-11" x="7" y="18" width="2" height="2"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

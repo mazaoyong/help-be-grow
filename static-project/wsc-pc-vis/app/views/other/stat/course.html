@@ -1,0 +1,21 @@
+{% extends '../../common/base.html' %}
+
+{% block page_title %} 商品洞察 {% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb" id="js-page-breadcrumb">
+		<span class="project" data-href="{{ URL.site('/vis/edu/page/courseStat', 'v4') }}">商品洞察</span>
+	</div>
+{% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.other/stat/course') | safe }}
+{% endblock %}
+
+{% block app_content %}
+  <div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.other/stat/course') | safe }}
+{% endblock %}

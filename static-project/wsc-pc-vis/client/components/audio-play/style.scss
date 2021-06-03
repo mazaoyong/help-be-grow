@@ -1,0 +1,68 @@
+.pct-audio-play {
+  display: flex;
+  width: 180px;
+  height: 36px;
+  border-radius: 2px;
+  background-color: #00b389;
+  color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 36px;
+
+  .controller {
+    position: relative;
+    width: 15%;
+    cursor: pointer;
+
+    span {
+      position: relative;
+
+      &.stop::after {
+        position: absolute;
+        top: 10px;
+        left: -5px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 10px solid #ffffff;
+        content: '';
+      }
+
+      &.play::after {
+        position: absolute;
+        left: -5px;
+        content: '||';
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+    }
+  }
+
+  .process {
+    margin: auto;
+    padding-top: 3px;
+    width: 60%;
+    height: 36px;
+    background-image: url('https://img.yzcdn.cn/wsc/paidcontent/processo.png');
+    background-position: 0 10px;
+    background-size: 100px 15px;
+    background-repeat: no-repeat;
+    text-align: left;
+
+    .play-cover {
+      display: inline-block;
+      height: 15px;
+      background-image: url('https://img.yzcdn.cn/wsc/paidcontent/processw.png');
+      background-position: 0 0;
+      background-size: 100px 15px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .time {
+    width: 35%;
+    font-size: 13px;
+  }
+}

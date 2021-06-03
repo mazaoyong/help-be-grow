@@ -1,0 +1,193 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video { padding: 0; margin: 0; font: inherit; font-size: 100%; vertical-align: baseline; border: 0; }
+html { line-height: 1; -webkit-tap-highlight-color: transparent; }
+
+ol,
+ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption,
+td,
+th { font-weight: 400; vertical-align: middle; }
+
+blockquote,
+q { quotes: none; }
+
+blockquote::after,
+blockquote::before,
+q::after,
+q::before { content: ""; content: none; }
+a img { border: none; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary { display: block; }
+* { box-sizing: content-box; }
+body { font-family: Arial, Helvetica, "STHeiti STXihei", "Microsoft YaHei", Tohoma, sans-serif; color: #323233; background-color: #f7f8fa; }
+a { text-decoration: none; background: 0 0; }
+
+button,
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=text],
+select,
+textarea { margin: 0; font-family: inherit; -webkit-appearance: none; }
+
+.homework-card {
+  margin: 12px;
+
+  .van-notice-bar {
+    height: 32px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #cc8118;
+    background-color: #fef0d8;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  &__main {
+    display: flex;
+    padding: 16px;
+    background-color: #fff;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__left {
+      width: 75%;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #323233;
+      box-sizing: border-box;
+    }
+
+    &__right {
+      display: flex;
+      width: 25%;
+      box-sizing: border-box;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+
+      .homework-card__overtime {
+        font-size: 14px;
+        color: #c8c9cc;
+      }
+    }
+  }
+
+  &__main[independent] {
+    border-radius: 8px;
+  }
+
+  &__button {
+    position: relative;
+    width: 70px;
+    height: 28px;
+    font-size: 14px;
+    color: #fff;
+
+    .van-button__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: fit-content;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.appointment-cancel-dialog-content {
+
+  &__em {
+    padding: 10px;
+    background-color: #fffcf3;
+    border: 1px solid #feeebb;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    color: #333333;
+    font-size: 14px;
+  }
+
+  &__actions {
+    margin-top: 30px;
+    text-align: right;
+  }
+
+  .zent-form {
+    margin-bottom: 0;
+  }
+
+  .zent-form__control-label {
+    width: 100px;
+  }
+}

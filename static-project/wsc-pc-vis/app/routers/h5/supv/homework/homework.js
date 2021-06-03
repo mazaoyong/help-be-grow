@@ -1,0 +1,32 @@
+module.exports = [
+  [
+    'GET',
+    '/v4/vis/h5/supv/homework/getHomeworkDetail.json',
+    'h5.supv.homework.HomeworkController',
+    'getHomeworkDetail',
+  ],
+  [
+    'GET',
+    '/v4/vis/h5/supv/homework/getEditHomeworkDetail.json',
+    'h5.supv.homework.HomeworkController',
+    'getEditHomeworkDetail',
+  ],
+  [
+    'POST',
+    '/v4/vis/h5/supv/homework/updateHomework.json',
+    'h5.supv.homework.HomeworkController',
+    'updateHomework',
+  ],
+  [
+    'POST',
+    '/v4/vis/h5/supv/homework/createHomework.json',
+    'h5.supv.homework.HomeworkController',
+    'createHomework',
+  ],
+  [
+    'GET',
+    '/v4/vis/h5/supv/homework/findPageByCondition.json',
+    'h5.supv.homework.HomeworkController',
+    'findPageByCondition',
+  ],
+];

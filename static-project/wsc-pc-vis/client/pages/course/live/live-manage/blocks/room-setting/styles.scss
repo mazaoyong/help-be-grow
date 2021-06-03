@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.live-manage__roomSetting {
+  @include splitContentBox;
+
+  position: relative;
+  width: 100%;
+
+  .content-box {
+    min-height: 686px;
+  }
+
+  .preview-marquee {
+    padding-left: 10px;
+    margin-top: -6px;
+    margin-left: 120px;
+  }
+
+  .submit-footer[role='submit-footer'] {
+    position: fixed;
+    right: 16px;
+    bottom: 0;
+    left: 240px;
+    z-index: 10;
+
+    div {
+      display: flex;
+      width: 100%;
+      height: 56px;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 -4px 8px -2px;
+    }
+  }
+
+  .zent-btn-disabled {
+    background-color: transparent !important;
+    border: 0 !important;
+  }
+}
+
+.show-help .submit-footer[role='submit-footer'] {
+  right: 240px;
+  left: 240px;
+}

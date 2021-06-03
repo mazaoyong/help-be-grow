@@ -1,0 +1,190 @@
+.enrollment-certi {
+  max-width: 900px;
+  margin: 0 auto;
+
+  .print-part {
+    position: relative;
+    text-align: center;
+
+    .title {
+      font-size: 28px;
+      padding: 60px 0 49px;
+      text-align: center;
+      position: relative;
+      font-weight: bold;
+      display: inline-block;
+
+      &::after {
+        content: '';
+        top: 85px;
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-bottom: 4px double #969799;
+      }
+    }
+
+    .right {
+      position: absolute;
+      text-align: left;
+      font-size: 14px;
+      top: 30px;
+      right: 0;
+
+      .qrcode {
+        height: 80px;
+
+        img {
+          margin-right: 12px;
+        }
+
+        .desc {
+          display: inline-block;
+          font-size: 14px;
+          color: #969799;
+          width: 60px;
+          line-height: 20px;
+          word-break: break-all;
+          vertical-align: top;
+        }
+      }
+    }
+
+    .invoice-title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      span {
+        color: #969799;
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-block;
+      }
+
+      .hightlight {
+        font-weight: bold;
+      }
+    }
+
+    table {
+      border: 1px solid #323233;
+      width: 910px;
+      page-break-inside: auto;
+      position: relative;
+
+      thead {
+        background-color: #f8f8f8;
+      }
+
+      tr {
+        line-height: 40px;
+        font-size: 16px;
+      }
+
+      th,
+      td {
+        border: 1px solid #323233;
+        padding: 0 15px;
+        text-align: left;
+        font-size: inherit;
+        color: #323233;
+        word-break: break-all;
+      }
+
+      .nobottom td {
+        text-align: right;
+        border: 0;
+        padding-right: 10px;
+      }
+    }
+
+    .tail {
+      margin-top: 20px;
+      margin-bottom: 36px;
+      display: flex;
+      justify-content: space-between;
+      color: #969799;
+    }
+  }
+
+  .app-design {
+    min-width: 750px;
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .app-action {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 10px 0;
+    text-align: center;
+    transition: right 0.5s;
+    background-color: #fff;
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.07);
+  }
+}
+
+.break-page {
+  page-break-after: always;
+  page-break-before: auto;
+  page-break-inside: avoid;
+}
+
+@media screen {
+  .no-border-top,
+  .no-border-top td {
+    border-top: 0 !important;
+  }
+}
+
+// 打印时的样式
+@page {
+  size: landscape;
+  margin: 0;
+
+  /* stylelint-disable selector-pseudo-class-no-unknown */
+  :footer,
+  :header {
+    display: none;
+  }
+  /* stylelint-enable selector-pseudo-class-no-unknown */
+}
+
+@media print {
+  aside,
+  .noprint,
+  .js-app-third-sidebar,
+  .js-app-help-button,
+  #app-help-container-react,
+  #app-footer,
+  .wsc-search-layer-wrap {
+    display: none;
+  }
+
+  body #app-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .enrollment-certi {
+    margin-top: -10px;
+  }
+
+  .margin-preset {
+    margin-top: 25mm;
+  }
+
+  .no-border-top:not(.margin-preset),
+  .no-border-top:not(.margin-preset) td {
+    border-top: 0 !important;
+  }
+}

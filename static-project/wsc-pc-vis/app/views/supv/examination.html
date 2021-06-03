@@ -1,0 +1,24 @@
+{% extends '../common/base.html' %}
+
+{% block page_title %} 考试 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.supv/examination') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+	<div class="zent-breadcrumb" id="js-page-breadcrumb">
+    <a href="{{ URL.site('/ump/appcenter', 'v4') }}">应用中心</a>
+    <a href="{{ URL.site('/ump/appcenter/edu', 'v4') }}">督学互动</a>
+		<span class="project" data-href="{{ URL.site('/vis/supv/examination', 'v4') }}">考试</span>
+	</div>
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container-alert"></div>
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.supv/examination') | safe }}
+{% endblock %}

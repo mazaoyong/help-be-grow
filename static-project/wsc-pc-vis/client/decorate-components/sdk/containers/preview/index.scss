@@ -1,0 +1,212 @@
+@mixin retina {
+  // sass-lint:disable-all
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+         only screen and (   min--moz-device-pixel-ratio: 1.5),
+         only screen and (     -o-min-device-pixel-ratio: 3/2),
+         only screen and (        min-device-pixel-ratio: 1.5) {
+      @content;
+  }
+  // sass-lint:enable-all
+}
+
+.preview-wrap {
+  position: absolute;
+  top: 56px;
+  left: 265px;
+  right: 376px;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f8f8f8;
+  user-select: none;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance:none;
+    width: 3px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.3);
+  }
+
+  .preview-page {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #323233;
+    z-index: 1;
+
+    &-options, &-coms {
+      background-color: #fff;
+      box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+      border-radius: 2px;
+      width: 94px;
+      height: 32px;
+      line-height: 32px;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      &-icon {
+        display: inline-block;
+        background-position: 0 -1px;
+        background-size: cover;
+        width: 12px;
+        height: 12px;
+        vertical-align: middle;
+        margin-right: 7px;
+      }
+
+      &-active {
+        background-color: #155bd4;
+        color: #fff;
+
+        .preview-page-options-icon, .preview-page-coms-icon {
+          background-position: 0 11px;
+        }
+      }
+    }
+
+    .preview-page-options-icon{
+      background-image: url(https://img.yzcdn.cn/public_files/2019/02/11/bf7de1e0d6c0f295e79038d02eac4b6b.png);
+    }
+
+    .preview-page-coms-icon {
+      background-image: url(https://img.yzcdn.cn/public_files/2019/02/12/dc16681102856fdc82f552cd521b3690.png);
+    }
+  }
+
+  .preview {
+
+    .preview-height-tag {
+      position: absolute;
+      left: -130px;
+      top: 585px;
+      width: 130px;
+      color: #a2a2a2;
+      border-bottom: 1px solid rgb(222, 222, 222);
+
+      .preview-height-tag-text {
+        padding-top: 4px;
+        font-size: 12px;
+      }
+    }
+
+    .preview-drag-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    .preview-head {
+      height: 64px;
+      width: 375px;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
+
+      &--weapp {
+        background-image: url(https://img.yzcdn.cn/public_files/2019/02/11/14417a76b49dac2851efaf744f87cdb4.png);
+      }
+
+      &--h5 {
+        background-image: url(https://img.yzcdn.cn/upload_files/2019/05/14/Fs_orwpeCfdLslCDskPL1LW8FuPH.png);
+      }
+
+      .preview-header-title {
+        width: 180px;
+        margin: 0 auto;
+        height: 34px;
+        text-align: center;
+        padding-top: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .preview-iframe-wrap {
+      position: relative;
+      min-height: 601px;
+
+      .preview-com-mask {
+        position: absolute;
+        width: 375px;
+        left: 0;
+      }
+
+      .preview-widget {
+        position: absolute;
+        right: -74px;
+        text-align: center;
+        width: 74px;
+        top: 0;
+
+        .widget-delete {
+          cursor: pointer;
+          background: #FFFFFF;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+          width: 40px;
+          height: 28px;
+          line-height: 28px;
+
+          .delete-icon {
+            display: inline-block;
+            background-image: url('https://img.yzcdn.cn/public_files/2019/01/09/2c795eec2253aad06ab14e8f931cd754.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
+          }
+        }
+
+        .widget-name {
+          background-color: #fff;
+          // margin: 10px 0 0 10px;
+          width: 70px;
+          height: 24px;
+          text-align: center;
+          line-height: 24px;
+          font-size: 12px;
+
+          .widget-name__arrow-out {
+            width: 0px;
+            height: 0px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+            position: absolute;
+            bottom: 7px;
+            left: 0px;
+          }
+        }
+      }
+    }
+
+    .preview-iframe-wrap-width {
+      width: 375px;
+      margin: 0 auto;
+      box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.show-help {
+  .preview-wrap {
+    right: 600px;
+  }
+}
+
+@include retina {
+  .preview-head {
+    background-image: url(https://img.yzcdn.cn/public_files/2019/02/11/14417a76b49dac2851efaf744f87cdb4.png);
+  }
+}

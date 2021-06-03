@@ -1,0 +1,175 @@
+$linkColor: #38f;
+
+.regis-record {
+  /* 报名记录页面 */
+  &__filter {
+    .zent-form {
+      margin-bottom: 0;
+    }
+    .zent-form__control-group {
+      margin-bottom: 20px;
+    }
+    .filter__main {
+      > div {
+        display: flex;
+      }
+    }
+    .filter__filterItem {
+      .zent-popover-wrapper {
+        margin-right: 0;
+      }
+      .zent-form__control-group {
+        display: flex;
+        align-items: center;
+      }
+      .zent-form__controls {
+        font-size: 0;
+      }
+      .zent-form__control-label {
+        width: 60px;
+        text-align: right;
+      }
+
+      .zent-select,
+      .zent-input {
+        width: 160px;
+      }
+    }
+    .filter__dateRangePicker {
+      .zent-form__controls {
+        width: 400px;
+      }
+    }
+
+    .filter__btns {
+      display: flex;
+      align-items: center;
+      padding-left: 70px;
+      .btns__reset {
+        font-size: 12px;
+        cursor: pointer;
+        color: $linkColor;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__main {
+    margin-top: 10px;
+
+    .regis-record__empty {
+      font-size: 12px;
+      text-align: center;
+      display: none;
+    }
+    .zent-pagination {
+      margin-top: 20px;
+    }
+
+    &--empty {
+      .regis-record__empty {
+        display: block;
+      }
+      .zent-pagination {
+        display: none;
+      }
+      .zent-grid-empty {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__stuName {
+    color: $linkColor;
+    cursor: pointer;
+  }
+
+  &__action {
+    span {
+      color: $linkColor;
+      cursor: pointer;
+      padding: 0 5px;
+      &:nth-child(2) {
+        border-left: 1px solid #9B9B9B;
+      }
+    }
+  }
+
+  &__dialogExport {
+    .bd {
+      &__content {
+        width: 412px;
+        dl {
+          display: flex;
+          font-size: 14px;
+          line-height: 20px;
+          color: #666;
+          &:not(:first-child) {
+            margin-top: 10px;
+          }
+          dt {
+            flex: 0 0 70px;
+            margin-right: 5px;
+            text-align: right;
+          }
+          dd {
+            flex: 1;
+            word-break: break-all;
+          }
+        }
+      }
+      &__tip {
+        background-color: #FFFCF3;
+        border: 1px solid #FEEEBB;
+        color: #666666;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px;
+        margin: 20px 0;
+      }
+    }
+    .ft {
+      text-align: right;
+    }
+  }
+
+  &__dialogDetail {
+    dl {
+      display: flex;
+      font-size: 14px;
+      line-height: 20px;
+      width: 412px;
+      color: #666;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+      dt {
+        flex: 0 0 115px;
+        margin-right: 5px;
+        text-align: right;
+      }
+      dd {
+        flex: 1;
+        word-break: break-all;
+      }
+    }
+
+    .dialogDetail__imgArr {
+      dd {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -10px;
+        img {
+          display: block;
+          width: 75px;
+          height: 75px;
+          margin: 10px 10px 0 0;
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

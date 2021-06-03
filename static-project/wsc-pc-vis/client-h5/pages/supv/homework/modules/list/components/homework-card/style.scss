@@ -1,0 +1,55 @@
+.homework-card {
+  padding: 16px;
+  margin: 12px 0;
+  background-color: #fff;
+  border-radius: 8px;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  &__tip {
+    font-size: 12px;
+    line-height: 18px;
+    color: #c8c9cc;
+    white-space: nowrap;
+  }
+
+  &__process {
+    width: 100%;
+    margin-top: 8px;
+
+    p {
+      font-size: 12px;
+      line-height: 18px;
+      color: #323233;
+
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+      }
+    }
+
+    .van-progress {
+      margin-top: 4px;
+    }
+  }
+
+  &__button {
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+  }
+}

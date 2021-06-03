@@ -1,0 +1,136 @@
+@import 'common/app-design';
+
+.recommend-edit {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  margin-left: 20px;
+  min-height: 800px;
+  width: 100%;
+
+  &__area {
+    margin: 0 40px;
+    padding: 20px;
+    width: 100%;
+    background: #f8f8f8;
+  }
+
+  .choose-tab {
+    position: relative;
+
+    &__exchange {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      z-index: 1;
+      color: #155bd4;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    img {
+      padding-top: 4px;
+      padding-right: 4px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .zent-tabs-nav {
+    margin-bottom: 0 !important;
+    background-color: #fff !important;
+  }
+
+  .recommend-table {
+    background: #fff;
+
+    &__input {
+      width: 30px;
+    }
+
+    &__icon {
+      margin-left: 12px;
+      color: #fff;
+    }
+
+    .tr:hover {
+      .recommend-table__icon {
+        color: #999;
+      }
+    }
+  }
+
+  &__btnarea {
+    margin-bottom: 20px;
+
+    button {
+      display: inline-block;
+      box-sizing: border-box;
+      padding: 0 10px;
+      height: 30px;
+      border: 1px solid #bbb;
+      border-color: #155bd4;
+      border-radius: 2px;
+      background: #155bd4;
+      color: #fff;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 12px;
+      font-family: inherit;
+      line-height: 30px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      color: #fff;
+    }
+  }
+
+  .empty {
+    &__ctner {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2px;
+      height: 460px;
+      background: #fff;
+      color: #999;
+      font-size: 12px;
+
+      img {
+        margin-bottom: 20px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .ui-help-note {
+    display: inline-block;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #bbb;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+
+    &::after {
+      content: '?';
+    }
+  }
+
+  .app-design {
+    .app-actions {
+      .form-actions {
+        background-color: #fff !important;
+        box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.07);
+        opacity: 0.95;
+      }
+    }
+  }
+}

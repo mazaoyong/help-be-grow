@@ -1,0 +1,90 @@
+/* 已导出报名记录列表页面 */
+.regis-export {
+  width: 866px;
+  margin: 45px auto;
+  .export {
+    font-size: 12px;
+  }
+  .export__text {
+    text-align: center;
+    min-height: 150px;
+  }
+  .export__list {
+    min-height: 150px;
+    & + p {
+      margin-top: 20px;
+    }
+  }
+  .export__item {
+    line-height: 16px;
+    dl {
+      display: flex;
+      dd {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 10px;
+      }
+    }
+    .hd {
+      position: relative;
+      padding: 16px 20px;
+      background-color: #F7F7F7;
+      border: 1px solid #DBDBDB;
+      color: #333;
+      display: flex;
+      dl + dl {
+        margin-left: 80px;
+      }
+    }
+    .bd {
+      border: 1px solid #DBDBDB;
+      border-top: 0;
+      padding: 26px 38px;
+      font-size: 12px;
+      color: #4A4A4A;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -15px;
+      dl {
+        flex: 0 0 25%;
+        margin-top: 15px;
+        dt {
+          flex: 0 0 60px;
+          text-align: right;
+        }
+        dd {
+          flex: 1;
+          width: 1px;
+        }
+      }
+
+      &__createAt {
+        flex: 0 0 100% !important;
+      }
+    }
+  }
+  .export__btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    &--0 {
+      color: #909090;
+    }
+    &--1 {
+      color: #BFBFBF;
+    }
+    &--2 {
+      color: #0087FF;
+    }
+  }
+
+  .export__exportAgain {
+    color: #EE7E11;
+    cursor: pointer;
+  }
+
+  .export__item + .export__item {
+    margin-top: 15px;
+  }
+}

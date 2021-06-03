@@ -1,0 +1,20 @@
+@import '~@youzan/react-components/es/components/goods-selector/style/index';
+@import 'vars/_colors';
+
+.pct-goods-selector {
+  .goods-selector__dialog-footer {
+    margin-top: 2px;
+  }
+
+  .goods-selector__type-filters {
+    display: none !important; // sass-lint:disable-line no-important
+  }
+
+  .goods-name-col__title {
+    color: $normalColor;
+
+    &:hover {
+      color: $blueColor !important;
+    }
+  }
+}

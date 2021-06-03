@@ -1,0 +1,1131 @@
+@import '../../mixins/mixins-var.scss';
+@import './_var_color';
+$border-poses: top, right, bottom, left;
+
+@mixin border-retina ($poses: $border-poses, $border-retina-color: $gray-light) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  content: '';
+  transform: scale(.5);
+  box-sizing: border-box;
+  transform-origin: 0 0;
+
+  @each $pos in $poses {
+    border-#{$pos}: 1px solid $border-retina-color;
+  }
+}
+
+@mixin border-line($poses:top right bottom left, $border-retina-color: #e5e5e5) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  content: '';
+  transform: scale(.5);
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  transform-origin: left top;
+  -webkit-perspective: 1000;
+
+  @each $pos in $poses {
+    border-#{$pos}: 1px solid $border-retina-color;
+  }
+}
+
+// 颜色依次为： 通用组件（价格、图标、规格选中色等）、主按钮背景、主按钮文字、辅按钮背景、辅按钮文字
+@mixin colorGenerator($general, $main-btn, $main-text, $vice-btn, $vice-text) {
+  // 文字使用主色调、副色调
+  .text-primary {
+    color: $main-btn;
+
+    &.shop-btn {
+      color: inherit;
+
+      .van-icon {
+        color: $main-btn;
+      }
+    }
+  }
+
+  // 分销员，好友助力同时参加之后有个弹窗，上面有个border样式
+  .invite-pop__item {
+    border-top: 3px solid $general;
+  }
+
+  .theme_plain {
+    color: $main-btn;
+    background: #fff;
+    border: 1px solid $main-btn;
+  }
+
+  .theme-color_svg {
+    fill: $main-btn;
+  }
+
+  // 储值卡项目
+  .theme-color {
+    color: $main-btn !important;
+  }
+
+  // 线下课详情nav
+  .vis-nav .item-active {
+    color: $main-btn;
+  }
+
+  // 会员权益, 专栏tabs
+  .column-show__main {
+    .van-tab--active {
+      color: $main-btn;
+    }
+  }
+
+  // 专栏下一篇，继续学习样式
+  .column-direcory__progress-btn {
+    color: $main-btn;
+    background: rgba($main-btn, .1);
+    border: 1px solid $main-btn;
+  }
+
+  .prepaid-recommend-pop .van-tab--active,
+  .prepaid-recommend-pop .van-tabs__line,
+  .prepaid-recommend-pop .van-submit-bar__price {
+    color: $main-btn;
+  }
+
+  .prepaid-recommend-pop .van-button--danger {
+    color: $main-text;
+    background-color: $main-btn;
+    border-color: $main-btn;
+  }
+
+  // 邀请卡图标
+  .invite-btn .invite-btn__icon-img {
+    background-image: url(https://img01.yzcdn.cn/pct/images/invite-white@2x.png), linear-gradient($main-btn, $main-btn);
+  }
+
+  // 音视频控件
+  .audio-controls .van-slider__button,
+  .video-controls .van-slider__button {
+    background: $main-btn;
+  }
+
+  .audio-controls .van-slider__bar,
+  .video-controls .van-slider__bar {
+    background: $main-btn;
+  }
+
+  .audio-content .tip-bar__button {
+    color: $main-text;
+    background: $main-btn;
+  }
+
+  .video-cover .video-cover__btn-flow__data {
+    color: $main-btn;
+  }
+
+  .text-sub {
+    color: $vice-btn;
+  }
+  // 背景使用主色调、副色调
+  .bg-primary {
+    background-color: $main-btn;
+  }
+
+  .bg-sub {
+    background-color: $vice-btn;
+  }
+  // 主副按钮
+  .main-btn {
+    color: $main-text;
+    background-color: $main-btn;
+    border-color: $main-btn;
+    opacity: 1;
+
+    &:active {
+      background: darken($main-btn, 8%);
+    }
+
+    .goods-action__promotion-price {
+      .vis-price-label__item__active,
+      .pl-container {
+        color: $main-text !important;
+      }
+    }
+  }
+
+  .vice-btn {
+    color: $vice-text;
+    background-color: $vice-btn;
+
+    &::after {
+      // @include border-line(top, rgba(0, 0, 0, .1));
+    }
+
+    &:active {
+      background: darken($vice-btn, 8%);
+    }
+
+    .goods-action__promotion-price {
+      .vis-price-label__item__active,
+      .pl-container {
+        color: $vice-text !important;
+      }
+    }
+  } // 价格
+  .goods-header {
+    .activity-tag {
+      background: $general;
+    }
+  }
+
+  .current-price,
+  .price-sub {
+    color: $general !important; // c-color 权重过高
+  } // 定金预售相关主题色
+  .handsel-presale {
+    .handsel-price {
+      color: $general !important;
+
+      em {
+        color: $general !important;
+      }
+    }
+  }
+
+  .van-sku__presale-label,
+  .van-sku__presale-price-number {
+    color: $general !important;
+  } // 几人拼团标签主题色
+  .activity-label {
+    color: $main-text;
+    background-color: $main-btn !important;
+  } // 切换tabber 的样式 由于tabber 复用太多，不能直接用tabber作为最终的样式控制类
+  // 商品详情、累计评价tab
+  .goods-detail .tabber {
+    .item {
+      button.active {
+        color: #fff;
+      }
+    }
+
+    button.active {
+      color: $general;
+      border-bottom: 1px solid $general;
+    }
+
+    @if $general==#333 {
+      button {
+        color: #999;
+      }
+    }
+
+    color: $general;
+    border-bottom: 1px solid $general;
+  } // 好评、中评、差评背景
+  .trade-review-list .review-rate-tabber button.active {
+    background-color: $general;
+  } // sku 上的按钮
+  .sku-layout {
+    .sku-list-container .active {
+      background-color: $general;
+      border-color: $general;
+    }
+
+    .current-price .price-name,
+    .current-price i {
+      color: $general !important; // 权重太高啦，写的好恶心
+    }
+
+    .other-info .quota {
+      color: $general;
+    }
+  } // 订单提交按钮
+  .commit-bill-btn,
+  .pay-bill-btn {
+    background-color: $general;
+    border-color: $general;
+  } // 订单价格主题颜色
+  .theme-price-color {
+    color: $general !important;
+  } // icon颜色,推荐商品列表金额(这层级我笑了)
+  .new-btn .van-icon-chat,
+  .sc-goods-list .info p.goods-price > em {
+    color: $general;
+  } // 更多拼团商品列表
+  .groupon-goods-list .goods-info {
+    span {
+      color: $main-btn;
+
+      &.groupon-tag {
+        color: $main-text;
+        background-color: $main-btn;
+      }
+    }
+  }
+
+  .groupon-detail {
+    background-color: $main-btn;
+
+    .group-detail__devide {
+      &::before,
+      &::after {
+        background-color: $main-btn;
+      }
+    }
+  }
+
+  // 镂空的标签或按钮的公共样式随主题色变化
+  .tag-hollow {
+    color: $main-btn !important;
+    background-color: $c-white !important;
+    border-color: $main-btn !important;
+  }
+
+  .tag-text {
+    color: $main-btn !important;
+  } // 小项太多，随主题色而变，写的很不舒服
+  // 降价拍中「中拍／超卖」价格颜色
+  .buyer-info .price {
+    color: $main-btn !important;
+  } // 知识付费--专栏详情页tab样式
+  .common-tab-style {
+    .van-tabs__line {
+      background-color: $main-btn !important;
+    }
+
+    .paid-content__content-price--free {
+      color: $main-btn !important;
+    }
+
+    .content-item__free-tag {
+      color: $main-btn !important;
+    }
+  } // 商品搜索页--顶部过滤条 filter-bar 样式
+  .cap-filter-bar__item--active {
+    color: $main-btn !important;
+
+    .cap-filter-bar__sort-icon--ascend .cap-filter-bar__sort-icon__ascend,
+    .cap-filter-bar__sort-icon--descend .cap-filter-bar__sort-icon__descend {
+      border-color: $main-btn !important;
+    }
+  }
+
+  .groupon-going-list__item-go-btn {
+    background-color: $main-btn;
+
+    &::after {
+      border-color: $main-btn;
+    }
+  }
+
+  // 课程管理相关主题色
+  // 体验课，正式课通用标签
+  .vis-tag-theme {
+    background-color: $general;
+  }
+  // 商品详情页-商品价格
+  .vis-price,
+  .price-current {
+    color: $general !important;
+  }
+  // 商品详情页-会员价标
+  .price-box .van-tag {
+    color: $general !important; // vant升级之后会默认设置style颜色，层级太高，只能通过!important去覆盖
+  }
+
+  // 商详页活动标签的颜色
+  .activity-tag {
+    color: $general !important;
+    border-color: $general !important;
+  }
+
+  // 商品详情页-电梯导航激活状态的底部颜色
+  .vis-nav .item-active::after {
+    background-color: $general;
+  }
+  // 商品详情页-无课程的情况按钮颜色
+  .vis-no-course .btn-goShop {
+    color: $general;
+    border: 1px solid $general;
+  }
+  // 商品详情页-sku弹窗的价格颜色
+  .vis-sku-header .sku-price {
+    color: $general;
+
+    .van-tag {
+      color: $general !important;
+    }
+  }
+  // 下单页-label的颜色
+  .vis-label {
+    .van-tag,
+    .right-label-theme {
+      color: $general !important;
+    }
+  }
+  // 下单页-底部提交订单的价格颜色
+  .confirm-btn-pay .btn-left-container .price {
+    color: $general;
+  }
+  // 下单页-地址选择弹窗选中样式
+  .order-detail-container .address-item-box-active .address-radio {
+    background-color: $general;
+  }
+  // 下单页-学员选择弹窗选中的样式
+  .sl-bottomsheet-content-add {
+    .add-icon {
+      color: $general;
+      border: 3px solid $general;
+    }
+  }
+
+  .order-detail-container .student-radio-active {
+    background-color: $general;
+  }
+  // 学员列表-选中学员样式
+  .si-panel .van-icon-checked {
+    color: $general;
+  }
+  // 学员列表
+  .si-part-extra,
+  .sl-nodata-add,
+  .sl-panel-add {
+    color: $general;
+  }
+  // 添加学员按钮样式
+  .se__submit-btn {
+    color: $main-text;
+    background-color: $general;
+    border: none;
+  }
+  // 支付结果-列表的价格颜色
+  .recommand-card-extra-price {
+    color: $general;
+  }
+  // 老师列表-列表的价格颜色
+  .course-item-price {
+    color: $general;
+  }
+
+  .groupon-pannel-container__list-item {
+    &-detail-des-num {
+      color: $general !important;
+    }
+
+    &-go-btn {
+      color: $general !important;
+
+      &::after {
+        border-color: $general !important;
+      }
+    }
+  }
+  // 留言区块支持全局色
+  .comment-list__title-control-select--active {
+    background-color: $general;
+  }
+
+  // 信息卡片适配
+  .info-card__action--primary {
+    color: $main-text;
+    background: $main-btn;
+  }
+
+  .info-card__action--text {
+    color: $main-btn;
+    background: #fff;
+    border-color: $main-btn;
+  }
+
+  .info-card__title-tag {
+    color: $main-text;
+    background: $main-btn;
+  }
+
+  .no-records__button {
+    color: $main-btn;
+    border-color: $main-btn;
+  }
+
+  // 日历组件
+  .visui-calendar__date--point > span::after {
+    background-color: $main-btn;
+  }
+
+  .visui-calendar__date--active > span {
+    color: $main-text;
+    background: $main-btn;
+
+    &::after {
+      background-color: $main-text;
+    }
+  }
+
+  .visui-calendar__date-box-controll-icon {
+    color: $main-btn !important;
+  }
+
+  // 签到列表页
+  .sign-in-list__empty-button {
+    color: $general;
+    border-color: $general;
+  }
+
+  // 签到成功页 icon
+  .sing-in-result-status-container__icon {
+    color: $general;
+  }
+
+  // 详情页服务信息组件的 icon 颜色
+  .prod-detail-vis-service-info__vis-icon {
+    color: $general;
+  }
+
+  .order-confirm-service-info__icon {
+    color: $general;
+  }
+
+  .order-confirm-service-info__info {
+    color: $general;
+  }
+
+  // 报名完成页面 行动按钮
+  .paid-info-actions-box__btn {
+    border-color: $general;
+  }
+
+  .paid-info-actions-box__btn--active {
+    background-color: $general;
+    border-color: $general;
+  }
+
+  .paid-info-actions-box__btn--normal {
+    color: $general;
+  }
+
+  // 推广吸粉&证书分享的按钮颜色
+
+  .vis-promote-card__btn {
+    background-color: $general;
+    border-color: $general;
+  }
+
+  // 签到列表页卡片的按钮
+  .sign-in-list__card {
+    .info-card__action {
+      background-color: $general;
+    }
+  }
+
+  // 下单预约
+  .appointment-list__info-tag {
+    color: $main-btn !important;
+  }
+
+  .visui-info-card-checkbox__icon--checked {
+    color: $main-btn !important;
+  }
+
+  .appointment-footer__ok {
+    background-color: $main-btn !important;
+  }
+
+  .offline-cover__state--ongoing {
+    background-color: $main-btn !important;
+  }
+
+  .intro-type .type__icon {
+    color: $general !important;
+  }
+
+  .other-entry .entry__icon {
+    color: $general !important;
+  }
+
+  .stu-card .card-edit {
+    color: $general !important;
+  }
+
+  .stu-list--wrap .stu-add {
+    background-color: $general !important;
+  }
+
+  .stu-edit .stu-edit__submit-btn {
+    background-color: $general !important;
+  }
+
+  .stu-edit .gender__cell .van-radio .van-icon-checked {
+    color: $general !important;
+  }
+
+  .wait-course-container .van-swipe .van-swipe__indicator--active {
+    background-color: $general !important;
+  }
+
+  .info.info--card .van-radio .van-icon-checked {
+    color: $general !important;
+  }
+
+  /* 奖励 */
+  // 颜色依次为： 通用组件（价格、图标、规格选中色等）、主按钮背景、主按钮文字、辅按钮背景、辅按钮文字
+  // @mixin colorGenerator($general, $main-btn, $main-text, $vice-btn, $vice-text) {
+  .reward-list {
+    .award {
+      &__number,
+      &__unit {
+        color: $general;
+      }
+
+      .van-button--primary {
+        background-color: $general;
+        border-color: $general;
+      }
+
+      .van-button--plain {
+        color: $general;
+        background-color: #fff;
+        border-color: $general;
+      }
+    }
+
+    .award-course {
+      &__tag {
+        background-color: $general;
+      }
+    }
+
+    &__expire-link {
+      color: $general;
+    }
+  }
+
+  .get-award {
+    &__btn {
+      background-color: $general;
+    }
+
+    .icon-right .student-radio-active {
+      background-color: $general;
+    }
+  }
+
+  .popup-reward {
+    .van-button--primary {
+      background-color: $general;
+      border-color: $general;
+    }
+  }
+
+  // tree-select
+  .van-tree-select-theme {
+    .van-tree-select__nitem--active::after {
+      background: $main-btn;
+    }
+
+    .van-tree-select__item--active {
+      color: $main-btn;
+    }
+  }
+
+  // contact-list
+  .contact-list {
+    .van-button {
+      background-color: $main-btn;
+      border-color: $main-btn;
+    }
+
+    .van-icon-checked {
+      color: $main-btn;
+    }
+  }
+}
+
+@mixin vantSkuGenerator($general, $main-btn, $main-text, $vice-btn, $vice-text) {
+  // sku 上的按钮
+  .van-sku__price-symbol,
+  .van-sku__price-num {
+    color: $general;
+  }
+
+  .van-sku__activity-tag {
+    background: $general;
+  }
+
+  .van-sku-row__item.van-sku-row__item--active {
+    color: $general;
+    background-color: rgba($general, .1);
+    border-color: rgba($general, .1);
+  }
+
+  .van-sku__quota {
+    color: $general;
+  }
+
+  .van-sku-row__predict-time {
+    color: $general;
+  }
+
+  .van-sku-container {
+    .price-tag {
+      color: $main-btn;
+      border: 1px solid $main-btn;
+    }
+  } // fix: sku 内的pricetag border丢失
+  .price-tag {
+    color: $main-btn;
+    border: 1px solid $main-btn;
+  }
+
+  .van-sku-actions {
+    .van-button--primary {
+      color: $main-text;
+      background: $main-btn;
+    }
+
+    .van-button--default {
+      color: $vice-text;
+      background: $vice-btn;
+    }
+  }
+}
+
+// 营销小红条
+@mixin colorActivityBanner ($start-bg, $end-bg) {
+  .goods-activity {
+    .goods-activity-banner {
+      background: linear-gradient(to right, $start-bg, $end-bg) !important;
+    }
+  }
+
+  .groupon-title {
+    background-image: linear-gradient(to right, $start-bg 0%, $end-bg 100%) !important;
+    box-shadow: 0 0 5px $start-bg !important;
+  }
+
+  // 教育签到页
+
+  .sing-in-lesson-status {
+    background-image: linear-gradient(to right, $start-bg 0%, $end-bg 100%) !important;
+  }
+}
+
+// 微页面主题色
+@mixin featureColorGenerator($general, $start-bg, $end-bg, $main-text, $tag-new-bg) {
+  // 专栏&内容优化
+
+  .item-content {
+    .last-learning {
+      color: $general;
+    }
+  }
+
+  .column-show {
+    .van-tabs {
+      .van-tabs__line {
+        border-color: $general !important;
+      }
+    }
+  }
+
+  .prod-detail-container .cert-bar .cert-bar__tag,
+  .groupon-intro__oldtonew-logo,
+  .promotion-banner__tag,
+  .theme-tag {
+    color: $start-bg !important;
+    background-color: $tag-new-bg !important;
+    border: none;
+  }
+
+  .tags__item--active {
+    color: $main-text !important;
+    background-color: $start-bg !important;
+  }
+
+  .column-richcontent__showmore-btn,
+  .recommend-item__price--tag,
+  .recommend-item__price--text {
+    color: $general !important;
+  }
+
+  .column-bars__desc-title--theme {
+    color: $general;
+  }
+
+  .item-live,
+  .item-content {
+    .item__footer-corner__text.text-red {
+      color: $general;
+      background-color: $tag-new-bg !important;
+    }
+  }
+
+  // 历史原因用了这个class，之后迁移后可删除
+  // @TODO 商品迁移
+  .pct-list-item {
+    .item__footer-corner__text.text-red {
+      color: $general;
+      background-color: #fff !important;
+      border: 1px solid $general;
+    }
+  }
+
+  .notice-bar__btn {
+    color: $main-text;
+    background-color: $start-bg !important;
+    border-color: $start-bg !important;
+  }
+
+  .column-directory__try {
+    color: $main-text;
+    background-color: $start-bg !important;
+  }
+
+  .invite-friend-and-gift {
+    .invite-friend-button {
+      color: $general !important;
+      border-color: $general !important;
+
+      .van-icon-point-gift,
+      .van-icon-point-gift-o {
+        color: $general;
+      }
+    }
+  }
+
+  .groupon-going-list__item-detail-des-remain-num {
+    color: $general !important;
+  }
+
+  .my-pay .van-tabs .van-tabs__line,
+  .write__submit {
+    background-color: $general !important;
+  }
+
+  // 商品
+  .goods-list-wrapper {
+    .cap-goods-list {
+      // 价格
+      .sale-price {
+        color: $general;
+      }
+
+      .cap-goods-list__corner-mark {
+        color: $general;
+      } // 4种购买
+      .cap-goods-list__buy-btn-wrapper {
+        .cap-goods-list__buy-btn-1 {
+          color: $general;
+          border-color: $general;
+        }
+
+        .cap-goods-list__buy-btn-2 {
+          color: $general;
+        }
+
+        .cap-goods-list__buy-btn-3 {
+          color: $main-text;
+          background-color: $general;
+          border: 1px solid $general;
+        }
+
+        .cap-goods-list__buy-btn-4 {
+          color: $general;
+          border-color: $general;
+        }
+
+        .cap-goods-list__buy-btn-5 {
+          color: $main-text;
+          background-color: $general;
+        }
+      }
+    }
+  } // tab
+  .tags-tab-style-0 {
+    .van-tabs__line {
+      background-color: $general;
+    }
+
+    .van-tab--active {
+      color: $general;
+    }
+  }
+
+  .tags-tab-style-1 {
+    .van-tab--active {
+      span {
+        background: $general;
+      }
+    }
+  }
+
+  .tags-tab-style-2 {
+    .van-tab--active {
+      background-color: $general;
+    }
+
+    .van-tab--active::before {
+      border-color: transparent transparent $general $general;
+    }
+
+    .van-tab--active::after {
+      border-color: $general;
+    }
+  } // 左侧tab
+  .cap-taglist {
+    .van-badge--select {
+      border-color: $general;
+    }
+
+    .cap-taglist__button,
+    .cap-taglist__price {
+      color: $general;
+    }
+  } // 拼团
+  .cap-ump-groupon--big .cap-ump-groupon-goods__activity-tag {
+    color: $main-text;
+    background-color: $general;
+  }
+
+  .cap-ump-groupon--list .cap-ump-groupon-goods__activity-tag {
+    color: $main-text;
+    background-color: $general;
+  }
+
+  .cap-ump-groupon--small .cap-ump-groupon-goods__activity-tag {
+    color: $general;
+  }
+
+  .cap-ump-groupon-goods__groupon-price {
+    color: $general;
+  }
+
+  .cap-ump-groupon-goods__body--btn-0 .cap-ump-groupon-goods__action {
+    color: $general;
+    border-color: $general;
+  }
+
+  .cap-ump-groupon-goods__body--btn-1 .cap-ump-groupon-goods__action {
+    color: $main-text;
+    background: $general;
+    border-color: $general;
+  } // 周期购
+  .cap-goods-item {
+    .cap-goods-info__price {
+      color: $general;
+    } // 3种购买
+    .cap-goods-info__btn--0 {
+      color: $general;
+      border-color: $general;
+    }
+
+    .cap-goods-info__btn--1 {
+      color: $main-text;
+      background-color: $general;
+      border-color: $general;
+    }
+
+    .cap-goods-info__btn--2 {
+      color: $general;
+      border-color: $general;
+    }
+  } // 秒杀
+  // 渐变条
+  .cap-ump-seckill-goods__tag-info {
+    background: linear-gradient(to right, $start-bg, $end-bg);
+  }
+
+  .cap-ump-seckill-goods__tag-countdown {
+    background: rgba($general, .8);
+  }
+
+  .cap-ump-seckill--big .cap-ump-seckill-goods__tag-countdown {
+    background: none;
+  } // tag
+  .cap-ump-seckill-goods__info {
+    border: 1px solid rgba($general, .1);
+  }
+
+  .cap-ump-seckill-goods__info > span {
+    color: $general;
+  }
+
+  .cap-ump-seckill-goods__info > span:first-child {
+    background-color: rgba($general, .1);
+  }
+
+  .cap-ump-seckill-goods__title > span {
+    color: $general;
+    background-color: rgba($general, .1);
+  }
+
+  .cap-ump-seckill-goods__price {
+    color: $general;
+  }
+
+  .cap-ump-seckill--btn-1,
+  .cap-ump-seckill--btn-3 {
+    .cap-ump-seckill-goods__action {
+      color: $main-text;
+      background: $general;
+    }
+  }
+
+  .cap-ump-seckill--btn-0,
+  .cap-ump-seckill--btn-2 {
+    .cap-ump-seckill-goods__action {
+      color: $general;
+      border-color: $general;
+    }
+  } // 未开始的默认绿色
+  .cap-ump-seckill--btn-1,
+  .cap-ump-seckill--btn-3 {
+    .cap-ump-seckill-goods--not-start {
+      .cap-ump-seckill-goods__action {
+        color: $main-text;
+        background: #4b0;
+      }
+    }
+  }
+
+  .cap-ump-seckill--btn-0,
+  .cap-ump-seckill--btn-2 {
+    .cap-ump-seckill-goods--not-start {
+      .cap-ump-seckill-goods__action {
+        color: #4b0;
+        border-color: #4b0;
+      }
+    }
+  }
+
+  .cap-countdown--white {
+    color: $general;
+  } // 限时折扣
+  .cap-ump-limitdiscount-goods__discount,
+  .cap-ump-limitdiscount-goods__rest-num,
+  .cap-ump-limitdiscount-goods__price {
+    color: $general;
+  }
+
+  .cap-ump-limitdiscount-goods__discount::after {
+    background-color: $general;
+  }
+
+  .cap-ump-limitdiscount-goods__tag-countdown {
+    background: rgba($general, .8);
+  }
+
+  .cap-ump-limitdiscount--big .cap-ump-limitdiscount-goods__tag-countdown {
+    background: none;
+  }
+
+  .cap-ump-limitdiscount-goods__tag-info {
+    background: linear-gradient(to right, $start-bg, $end-bg);
+  }
+
+  .cap-ump-limitdiscount-goods__bar-inner {
+    background: linear-gradient(to right, $end-bg, $start-bg);
+  }
+
+  .cap-ump-limitdiscount--btn-1,
+  .cap-ump-limitdiscount--btn-3 {
+    .cap-ump-limitdiscount-goods__action {
+      color: $main-text;
+      background: $general;
+    }
+  }
+
+  .cap-ump-limitdiscount--btn-0,
+  .cap-ump-limitdiscount--btn-2 {
+    .cap-ump-limitdiscount-goods__action {
+      color: $general;
+      border-color: $general;
+    }
+  } // 未开始的默认绿色
+  .cap-ump-limitdiscount--btn-1,
+  .cap-ump-limitdiscount--btn-3 {
+    .cap-ump-limitdiscount-goods--not-start {
+      .cap-ump-limitdiscount-goods__action {
+        color: $main-text;
+        background: #4b0;
+      }
+    }
+  }
+
+  .cap-ump-limitdiscount--btn-0,
+  .cap-ump-limitdiscount--btn-2 {
+    .cap-ump-limitdiscount-goods--not-start {
+      .cap-ump-limitdiscount-goods__action {
+        color: #4b0;
+        border-color: #4b0;
+      }
+    }
+  }
+}
+
+// 生成元素类名
+// 这种方式做主题色，开发不太友好，组件内用到的类名，可能不知道在哪定义
+// 在思考更好的方式，目前能想到的是  loader + 运行时  处理，实现起来有点复杂，待实现。。。
+// 目前没有每种色值都写出对应类，有需要的同学自己加吧。。。
+@mixin classGenerator(
+  $general,
+    $main-bg,
+    $main-text,
+    $vice-bg,
+    $vice-text,
+    $start-bg,
+    $end-bg,
+    $start-new-bg,
+    $end-new-bg,
+    $tag-new-bg,
+    $vice-new-bg,
+    $vice-new-text,
+    $activity-main-lines,
+    $activity-vice-lines
+  ) {
+  // $main-text
+  .main-text {
+    color: $main-text;
+  }
+
+  // $vice-new-bg
+  .vice-new-bg {
+    background-color: $vice-new-bg;
+  }
+
+  .vice-new-bg-text {
+    color: $vice-new-bg;
+  }
+
+  // $vice-new-text
+  .vice-new-text {
+    color: $vice-new-text;
+  }
+
+  .vice-new-text-bg {
+    background-color: $vice-new-text;
+  }
+
+  // $start-new-bg, $end-new-bg
+  .gradient-new-bg {
+    background-image: linear-gradient(to bottom right, $start-new-bg, $end-new-bg);
+  }
+
+  .end-new-bg-text {
+    color: $end-new-bg;
+  }
+
+  // $activity-main-lines, $activity-vice-lines
+  .activity-main-lines-bg {
+    background: $activity-main-lines no-repeat center center / 172px 221px;
+  }
+
+  .activity-vice-lines-bg {
+    background: $activity-vice-lines no-repeat center center / 100% 221px;
+  }
+}

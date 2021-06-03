@@ -1,0 +1,177 @@
+@import 'common/split-form';
+@import 'common/split-title';
+@import 'vars/colors';
+
+.punch-wrapper {
+  @import './list';
+  @import './step2';
+  @import './design';
+  @import './board';
+  @import './detail';
+  @import './promote';
+  @import './diary';
+  @import './statistics';
+  @import './task';
+  color: #323233;
+
+  .punch-detail {
+    .new-filter {
+      &_region {
+        padding: 16px;
+        margin: 0 0 16px 0;
+        background-color: $whiteColor !important;
+
+        .new-filter_controls {
+          width: unset;
+        }
+
+        .new-filter_action {
+          margin-left: 70px;
+        }
+      }
+
+      &_item {
+        margin-right: 32px;
+        margin-bottom: 16px;
+      }
+
+      &_label {
+        color: #323233;
+      }
+    }
+
+    .pct-display-board {
+      background-color: $whiteColor;
+      margin-top: 20px;
+    }
+
+    .split-title {
+      background-color: $whiteColor;
+
+      .split {
+        top: 2px;
+        left: 8px;
+        width: 3px;
+        height: 14px;
+      }
+    }
+  }
+
+  .split-title {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+
+    .cursor-link {
+      margin-right: 16px;
+    }
+
+    h3 {
+      margin-left: 15px;
+    }
+
+    &::before {
+      top: 46px;
+    }
+  }
+}
+
+.punch-pop {
+  .zent-pop-buttons {
+    display: block;
+    margin-top: 16px;
+  }
+}
+
+.teacher-comment-dialog {
+  width: 600px;
+
+  .zent-dialog-r-footer {
+    margin-top: 15px;
+  }
+}
+
+.column-select {
+  width: 800px;
+
+  .list-filter {
+    margin-top: 0;
+  }
+}
+
+.column__list-table {
+  width: 100%;
+
+  .goods-name-col {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 60px;
+
+    &__detail {
+      flex: 1;
+      padding-left: 10px;
+
+      a {    
+        display: inline-block;
+        overflow: hidden;
+        max-width: 250px;
+        height: 20px;
+      }
+    }
+
+    &__title {
+      max-width: 80%;
+    }
+
+    &__goods-no {
+      height: 16px;
+      color: #aaa;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__rest {
+      color: #f60;
+      font-size: 12px;
+    }
+
+    &__label {
+      display: inline-block;
+      margin-right: 4px;
+      padding: 0 4px;
+      border: 1px solid #f44;
+      border-radius: 2px;
+      color: #f44;
+      line-height: 16px;
+    }
+  }
+
+  .zent-dialog-r-footer {
+    text-align: center;
+  }
+}
+
+.button-copy-preview {
+  position: relative;
+  width: 248px;
+  height: 286px;
+
+  .text {
+    position: absolute;
+    bottom: 24px;
+    padding: 8px 0;
+    width: 248px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+.zent-loading {
+  width: 100%;
+  
+  &-mask {
+    z-index: 100;
+  }
+}

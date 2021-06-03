@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/编辑/常驻模式</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon/编辑/常驻模式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#7D7E80" fill-rule="nonzero" x="5" y="1" width="2" height="16" rx="1"></rect>
+        <path d="M7,8.49241483 C8.1763358,8.87662492 9.34107059,9.06652168 10.5,9.06652168 C11.6589294,9.06652168 12.8236642,8.87662492 14,8.49241526 L14,4.78226808 C12.8482835,5.05931428 11.6908101,5.19873749 10.5299439,5.19873749 C9.35489414,5.19873749 8.17753205,5.05590343 7,4.77225499 L7,8.49241483 Z M5,2 C6.86262489,2.79915833 8.70593952,3.19873749 10.5299439,3.19873749 C12.3539483,3.19873749 14.1773003,2.79915833 16,2 L16,9.86778419 C14.1666667,10.6669425 12.3333333,11.0665217 10.5,11.0665217 C8.66666667,11.0665217 6.83333333,10.6669425 5,9.86778419 L5,2 Z" id="Rectangle" fill="#7D7E80" fill-rule="nonzero"></path>
+        <rect id="Rectangle" stroke="#7D7E80" stroke-width="2" fill-rule="nonzero" x="3" y="17" width="14" height="1"></rect>
+    </g>
+</svg>

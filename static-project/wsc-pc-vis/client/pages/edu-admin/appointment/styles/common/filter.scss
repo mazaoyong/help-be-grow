@@ -1,0 +1,42 @@
+// 筛选框
+.list-filter {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+  min-height: 30px;
+
+  .search-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0;
+    vertical-align: middle;
+
+    .zent-input {
+      width: 100px;
+      transition: width linear .25s;
+
+      &:focus {
+        width: 190px;
+      }
+    }
+  }
+
+  .filter-right {
+    float: right;
+    margin-right: 0;
+  }
+
+  .filter-daterange-picker {
+    margin-right: 10px;
+
+    .picker-input {
+      width: 100px;
+    }
+  }
+
+  .size-select {
+    width: 80px;
+  }
+}

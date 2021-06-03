@@ -1,0 +1,113 @@
+.ebiz-calendar {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.ebiz-calendar__header {
+  position: relative;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+  line-height: 22px;
+}
+.ebiz-calendar__header__operate {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 160px;
+  color: #333333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.ebiz-calendar__header .prev,
+.ebiz-calendar__header .next {
+  width: 30px;
+  color: #e5e5e5;
+}
+.ebiz-calendar__header .prev :hover,
+.ebiz-calendar__header .next :hover {
+  color: #333333;
+}
+.ebiz-calendar__header .prev {
+  transform: rotate(180deg);
+}
+
+.ebiz-calendar__panel {
+  display: table;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: transparent;
+  table-layout: fixed;
+  text-align: center;
+  font-size: 12px;
+}
+.ebiz-calendar__panel__row {
+  display: table-row;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+}
+.ebiz-calendar__panel__col {
+  display: table-cell;
+  overflow: hidden;
+  flex-basis: 0;
+  flex-grow: 1;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.ebiz-calendar__panel__days {
+  box-sizing: border-box;
+  line-height: 40px;
+}
+.ebiz-calendar__panel__body {
+  display: table-row-group;
+}
+.ebiz-calendar__panel__body-cell .day {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.ebiz-calendar__panel__body-cell .preMonth,
+.ebiz-calendar__panel__body-cell .nextMonth {
+  background-color: #f2f3f5;
+  color: #999;
+}
+.ebiz-calendar__panel__body-cell .active {
+  background-color: #f2f3f5;
+}
+
+.full-calendar .today .full-calendar-cell__header {
+  font-weight: bolder;
+}
+.full-calendar__cell {
+  box-sizing: border-box;
+  padding: 2px;
+  height: 116px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+}
+.full-calendar__cell:hover {
+  background-color: #eee;
+}
+.full-calendar__cell__header {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: left;
+}
+.full-calendar .monday .full-calendar-cell {
+  border-left: 0;
+}
+.full-calendar__content {
+  overflow: auto;
+  width: 100%;
+  height: 78px;
+  text-align: left;
+}

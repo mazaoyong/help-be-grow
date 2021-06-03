@@ -1,0 +1,257 @@
+@import 'mixins/foot-submit';
+@include footSubmit;
+
+.app-inner {
+  position: relative;
+}
+body.show-help {
+  .question-import-fixed {
+    right: 472px !important;
+  }
+}
+.create-page {
+  .setting {
+    &-header {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin: 16px 0;
+      padding-left: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #323233;
+      line-height: 20px;
+      box-shadow: inset 0 -1px 0 0 #ebedf0;
+    }
+    .image-sortable__item {
+      width: 80px;
+      background-color: #fff;
+      position: relative;
+      &:hover {
+        .close-modal {
+          display: block;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .close-modal {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        top: -9px;
+        right: -9px;
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        background: hsla(0, 0%, 60%, 0.6);
+        border-radius: 10px;
+      }
+    }
+    .gsv2-selector-dialog {
+      display: inline;
+    }
+    .rich-text-field,
+    .info-collect-field {
+      .zent-form__control-group {
+        margin-bottom: 0;
+      }
+    }
+    .related-course {
+      .zent-checkbox-wrap {
+        vertical-align: top;
+      }
+    }
+    .radio-item {
+      height: 30px;
+      line-height: 30px;
+      margin-bottom: 8px;
+      .zent-datetime-picker {
+        vertical-align: middle;
+      }
+    }
+    .duration-field {
+      display: flex;
+      align-items: center;
+      .zent-input-wrapper {
+        width: 176px;
+      }
+      .duration-text {
+        margin-left: 10px;
+      }
+    }
+    .times-config {
+      &-group {
+        display: flex;
+        align-items: center;
+        height: 32px;
+      }
+      &-input {
+        display: flex;
+        align-items: center;
+        margin-right: 32px;
+        .zent-input-wrapper {
+          width: 88px;
+          .zent-input {
+            min-width: 40px;
+          }
+        }
+      }
+      &-text {
+        margin-left: 10px;
+      }
+    }
+    .reexam-interval-field {
+      display: flex;
+      .zent-number-input {
+        margin-right: 10px;
+      }
+      .zenticon {
+        margin-left: 10px;
+        color: #c8c9cc;
+        font-size: 16px;
+      }
+    }
+    .has-error {
+      .edui-editor {
+        border-color: #df4545;
+      }
+    }
+  }
+  .add-question {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #f7f8fa;
+    margin-top: 16px;
+    padding-top: 16px;
+    z-index: 1;
+    min-height: 500px;
+    &-inner {
+      display: flex;
+      align-items: flex-start;
+    }
+    .question-container {
+      flex: 1;
+      background: #fff;
+      margin-bottom: 52px;
+      padding: 16px;
+      min-height: calc(100vh - 250px);
+      .question-title {
+        height: 40px;
+        box-shadow: inset 0 -1px 0 0 #ebedf0;
+        text-align: center;
+        font-size: 16px;
+        color: #323233;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+      .zent-alert {
+        margin-bottom: 16px;
+      }
+      .question-import {
+        .zent-btn {
+          width: 100%;
+          height: 40px;
+          font-size: 16px;
+        }
+        &-fixed {
+          position: fixed;
+          top: 33vh;
+          padding:12px 0;
+          width: 32px;
+          height: 124px;
+          color: #fff;
+          background-color: #155BD4;
+          opacity: .6;
+          border-radius: 2px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          right: 248px;
+          transition: right .5s ease;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+          .zenticon {
+            font-size: 16px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+    .right-affix {
+      flex: none;
+      width: 200px !important;
+      margin-left: 16px;
+    }
+    .question-board {
+      background: #fff;
+      padding: 16px;
+      box-sizing: border-box;
+      max-height: calc(100vh - 52px);
+      overflow: auto;
+      &-footer {
+        font-size: 16px;
+        color: #323233;
+        line-height: 24px;
+        font-weight: 500;
+        & > div:last-child {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  .success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-icon {
+      margin-top: 96px;
+      img {
+        width: 72px;
+        height: 72px;
+      }
+    }
+    &-tip {
+      margin-top: 16px;
+      font-size: 16px;
+      color: #323233;
+      line-height: 24px;
+      font-weight: 700;
+    }
+    &-btn {
+      width: 114px;
+      margin-top: 48px;
+      .zent-btn {
+        width: 100%;
+      }
+    }
+    &-link {
+      margin-top: 32px;
+      display: flex;
+      &-item {
+        padding: 0 16px;
+        line-height: 20px;
+        &:not(:first-child) {
+          border-left: 1px solid #dcdee0;
+        }
+      }
+    }
+  }
+  .vertical-middle {
+    vertical-align: middle;
+  }
+}
+
+// 引导购买提示
+.intro-order span {
+  margin-right: 8px;
+}

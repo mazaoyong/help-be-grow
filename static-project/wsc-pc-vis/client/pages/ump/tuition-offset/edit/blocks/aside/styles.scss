@@ -1,0 +1,38 @@
+.tuition-offset-edit {
+  .preview-swiper-wrapper {
+    width: 320px !important;
+    flex-shrink: 0;
+    
+    height: 652px;
+    
+    .zent-affix {
+      height: 652px;
+      z-index: 1;
+    }
+
+    .preview-swiper {
+      height: 100%;
+
+      .zent-swiper__container {
+        height: 615px;
+      }
+
+      .preview-image-container img {
+        width: 318px;
+        height: 613px;
+        border: 1px solid #EBEDF0;
+      }
+
+      .zent-swiper__dots-item {
+        border-radius: initial !important;
+        transition: width 0.1s ease-in-out !important;
+        width: 16px !important;
+        height: 8px !important;
+      }
+    
+      .zent-swiper__dots-item-active {
+        width: 24px !important;
+      }
+    }
+  }
+}

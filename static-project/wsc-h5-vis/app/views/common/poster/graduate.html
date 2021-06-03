@@ -1,0 +1,158 @@
+<div class="certPoster">
+  <div class="gradPoster-title">{{ currentInfo.title }}</div>
+  <img class="gradPoster-avatar" src="{{ currentInfo.avatar }}" />
+  <div class="gradPoster-name">{{ currentInfo.identityName }}</div>
+  <div class="gradPoster-content">
+    <div class="gradPoster-content__left">
+      <div class="left-times">
+        <span>{{ currentInfo.checkinDays }}</span>
+        <span>次</span>
+      </div>
+      <div class="left-desc">
+        上课次数
+      </div>
+    </div>
+    <div class="gradPoster-content__left">
+      <div class="left-times">
+        <span>{{ currentInfo.consumeCount }}</span>
+        <span>天</span>
+      </div>
+      <div class="left-desc">
+        学习时长
+      </div>
+    </div>
+  </div>
+  <div class="startPoster-content__praise">
+    {{ currentInfo.praiseText }}
+  </div>
+  <div class="startPoster-store">{{ currentInfo.signatureText }}</div>
+  <div class="startPoster-time">{{ currentInfo.startDate }}</div>
+  <img class="startPoster-qrcode" src="{{ currentInfo.qrUrl }}" />
+  <div class="startPoster-shareText">{{ currentInfo.shareText }}</div>
+</div>
+<style>
+  .certPoster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 315px;
+    height: 500px;
+    background: url('https://img01.yzcdn.cn/public_files/2019/04/23/bb69a36c222d6c07c0f8760e5d616857.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .gradPoster-title {
+    position: absolute;
+    top: 79px;
+    left: 34px;
+    width: 247px;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: center;
+    color: #ab5900;
+    font-weight: 500;
+  }
+  .gradPoster-avatar {
+    position: absolute;
+    top: 128px;
+    left: 138px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .gradPoster-name {
+    position: absolute;
+    top: 174px;
+    left: 34px;
+    width: 247px;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #323233;
+    font-weight: 500;
+  }
+  .gradPoster-content {
+    position: absolute;
+    top: 215px;
+    left: 34px;
+    height: 43px;
+    width: 247px;
+    text-align: center;
+  }
+  .gradPoster-content__left {
+    width: 123px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+  }
+  .gradPoster-content__left .left-times {
+    width: 123px;
+    text-align: center;
+    color: #323233;
+  }
+  .gradPoster-content__left .left-times span:first-child {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 500;
+    margin-right: 2px;
+  }
+  .gradPoster-content__left .left-times span:last-child {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 7px;
+  }
+  .gradPoster-content__left .left-desc {
+    width: 123px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #969799;
+  }
+  .startPoster-content__praise {
+    position: absolute;
+    top: 281px;
+    left: 34px;
+    font-size: 12px;
+    color: #969799;
+    line-height: 18px;
+    width: 247px;
+    height: 118px;
+  }
+  .startPoster-store {
+    position: absolute;
+    right: 34px;
+    bottom: 109px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: right;
+    color: #969799;
+  }
+  .startPoster-time {
+    position: absolute;
+    right: 34px;
+    bottom: 95px;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: right;
+    color: #969799;
+  }
+  .startPoster-qrcode {
+    position: absolute;
+    bottom: 26px;
+    left: 34px;
+    width: 44px;
+    height: 44px;
+  }
+  .startPoster-shareText {
+    position: absolute;
+    bottom: 52px;
+    left: 86px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 2px;
+    margin-left: 8px;
+    color: #323233;
+    font-weight: bold;
+  }
+</style>

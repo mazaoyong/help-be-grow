@@ -1,0 +1,73 @@
+{% macro punchInfoBlock(punchInfo) %}
+
+<div class="punch-info">
+  <main>
+    <div class="punch-info__title">
+      {{ punchInfo.title }}
+    </div>
+    <div class="punch-info__user-count">
+      <span>{{ punchInfo.userCount }}</span> 人正在打卡
+    </div>
+    <div class="text--b">
+      长按识别二维码参与打卡
+    </div>
+  </main>
+  <aside>
+    <img class="punch-info__qrcode" src="{{ punchInfo.qrcode }}">
+  </aside>
+</div>
+
+<style>
+/* punch-info */
+.punch-info {
+  display: flex;
+  height: 90px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.punch-info main {
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.punch-info aside {
+  flex: 0 0 auto;
+}
+
+.punch-info__title {
+  margin-top: 17px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.punch-info__user-count {
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #282828;
+}
+
+.punch-info__user-count span {
+  font-weight: 500;
+}
+
+.punch-info .text--b {
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 14px;
+  color: #999;
+}
+
+.punch-info__qrcode {
+  width: 63px;
+  height: 63px;
+  margin-top: 13px;
+}
+</style>
+{% endmacro %}

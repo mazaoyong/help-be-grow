@@ -1,0 +1,31 @@
+@import "common/ellipsis.scss";
+.examination-list {
+  .app-name {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #323233;
+    vertical-align: middle;
+  }
+  .list-header {
+    margin-bottom: 16px;
+  }
+}
+.pop-delete {
+  .zent-pop-inner {
+    & > div:first-child {
+      margin-bottom: 16px;
+    }
+    .zent-pop-buttons {
+      width: 100%;
+      margin-left: 0 !important;
+    }
+  }
+}
+.ellipsis-2 {
+  display: -webkit-box !important;
+}
+.ellipsis {
+  max-width: 100%;
+}

@@ -1,0 +1,218 @@
+.decorate-image-ad-editor {
+  .deco-component-title {
+    margin-bottom: 14px;
+  }
+
+  .deco-control-group--bg-colored {
+    margin-bottom: 13px;
+  }
+
+  .deco-editor-card {
+    width: 100%;
+  }
+
+  .app-sidebar-title {
+    margin-bottom: 10px;
+
+    &__name {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+  }
+
+  .control-indent .zent-design-editor__control-group-label {
+    margin-left: 12px;
+  }
+
+  .zent-design-editor__control-group-label,
+  .decorate-editor_subentry-item .subentry-item-editor-form-content .zent-design-editor__control-group-label {
+    width: auto;
+  }
+
+  .decorate-image-ad-hotarea-subentry-control-group {
+
+    .rc-design-editor-card-item {
+      background-color: inherit;
+      padding: 0;
+      margin: 0;
+      border: none;
+    }
+  }
+
+  &__add-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .decorate-hot-area-image-editor {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      cursor: pointer;
+    }
+
+    .decorate-hot-area-image-editor__modify-image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 28px;
+      line-height: 28px;
+      background: rgba(0, 0, 0, .5);
+      color: #fff;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .decorate-hot-area-image-editor__added-hotarea {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border: 1px solid #fff;
+      border-radius: 15px;
+      padding: 0 8px;
+      background: rgba(51, 136, 255, .5);
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+
+  &__add-ads-desc {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #969799;
+  }
+}
+
+.decorate-hot-area-image-editor__dialog {
+  text-align: center;
+  font-size: 12px;
+
+  .header-content {
+    color: #969799;
+
+    .step-content {
+      margin-right: 10px;
+    }
+
+    .step-num {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      border: 1px solid #e5e5e5;
+      border-radius: 13px;
+      text-align: center;
+    }
+
+    .step-text {
+      margin: 0 10px;
+    }
+  }
+
+  .image-content {
+    position: relative;
+    margin-top: 20px;
+    max-height: 420px;
+    width: 526px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .decorate-hot-area-image-editor__dialog-image {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .zent-popover-wrapper {
+      height: 100%;
+    }
+  }
+}
+
+.hotarea-rnd {
+  border: 1px solid #155bd4;
+  background: rgba(51, 136, 255, .5);
+  font-size: 12px;
+  color: #fff;
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  &:hover {
+
+    .hotarea-close {
+      display: block;
+    }
+  }
+
+  .hotarea-inner {
+    position: relative;
+    height: 100%;
+  }
+
+  .hotarea-close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    line-height: 15px;
+    border-radius: 9px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 2;
+  }
+
+  .hotarea-edit {
+    position: absolute;
+    bottom: 0;
+    width: 32px;
+    height: 20px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .hotarea {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .hotarea-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+
+      .help-icon,
+      .help-icon:hover {
+        color: #fff;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.decorate-hot-area-image-editor__popover {
+  z-index: 1050;
+}
+
+.rc-choose-link-menu-popover {
+  display: block;
+  z-index: 1051;
+}

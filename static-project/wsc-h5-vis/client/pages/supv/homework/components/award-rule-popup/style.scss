@@ -1,0 +1,40 @@
+.award-rule__wrapper {
+  .van-popup__close-icon--top-right {
+    top: 12px;
+  }
+
+  .vis-standard-popup__content {
+    min-height: 180px!important;
+  }
+
+  .award-rule__text {
+    font-size: 14px;
+    color: #155bd4;
+    text-align: center;
+    line-height: 16px;
+    padding-top: 12px;
+  }
+
+  .award-rule__content {
+    padding: 0px 24px 48px 24px;
+
+    .award-rule__line {
+      border-bottom: 0.5px solid #dcdee0;
+      font-size: 16px;
+      display: flex;
+      padding: 9px 0;
+      line-height: 20px;
+
+      label {
+        color: #323233;
+        min-width: 110px;
+      }
+
+      span {
+        display: inline-block;
+        margin-left: 12px;
+        color: #969799;
+      }
+    }
+  }
+}

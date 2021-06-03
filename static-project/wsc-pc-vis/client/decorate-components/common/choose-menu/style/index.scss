@@ -1,0 +1,14 @@
+.deco-choose-menu--has-popover {
+  display: inline-block;
+  vertical-align: middle;;
+
+  .rc-choose-link-menu--has-value {
+    width: 200px;
+  }
+
+  .rc-choose-link-menu-tag {
+    border-color: #155bd4 !important;
+    background-color: #edf4ff !important;
+    color: #155bd4 !important;
+  }
+}

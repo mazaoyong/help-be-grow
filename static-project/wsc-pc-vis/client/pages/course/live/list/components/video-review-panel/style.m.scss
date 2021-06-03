@@ -1,0 +1,41 @@
+@import 'vars/colors';
+
+.review-panel {
+  box-sizing: border-box;
+  display: flex;
+  height: 104px;
+  border: 1px solid $theme-stroke-8;
+  border-radius: 4px;
+  padding: 24px 0;
+
+  :global {
+    .reivew-panel__item {
+      flex: 1;
+      display: flex;
+      border-right: 1px solid $theme-stroke-8;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    .reivew-panel__item-content {
+      margin: 0 auto;
+    }
+
+    .reivew-panel__item-title {
+      color: $theme-stroke-2;
+      display: flex;
+    }
+
+    .reivew-panel__item-value {
+      padding-top: 8px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .zenticon-help-circle {
+      color: $theme-stroke-3;
+    }
+  }
+}

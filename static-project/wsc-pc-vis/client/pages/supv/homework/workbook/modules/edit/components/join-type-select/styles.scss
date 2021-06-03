@@ -1,0 +1,14 @@
+@import 'vars/colors';
+
+.join-type {
+  .desc {
+    margin: 8px auto 16px 25px;
+    color: $grayColor;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .zent-radio-wrap {
+    height: 20px;
+  }
+}

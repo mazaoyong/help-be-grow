@@ -1,0 +1,23 @@
+.custom-max-reservation-time {
+  margin-top: 5px;
+
+  &__type {
+    .zent-radio-wrap {
+      display: block;
+      margin-top: 24px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .zent-radio {
+      font-size: 0;
+    }
+
+    .zent-popover-wrapper {
+      width: 70px;
+      margin-left: 10px;
+    }
+  }
+}

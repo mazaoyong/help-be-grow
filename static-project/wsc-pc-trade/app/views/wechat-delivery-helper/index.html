@@ -1,0 +1,22 @@
+{% extends '../common/base.html' %}
+
+{% block page_title %} 微信物流助手 {% endblock %}
+
+{% block app_nav %}
+<div class="zent-breadcrumb">
+  <a href="/v4/ump/dashboard">应用中心</a>
+  <span>微信物流助手</span>
+</div>
+`{% endblock %}
+
+{% block page_style %}
+{{ loadCss('version_css.wechat-delivery-helper') | safe }}
+{% endblock %}
+
+{% block app_content %}
+<div id="app"></div>
+{% endblock %}
+
+{% block page_js %}
+{{ loadJs('version_js.wechat-delivery-helper') | safe }}
+{% endblock %}

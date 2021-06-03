@@ -1,0 +1,34 @@
+.hover-visibleBtn {
+  visibility: hidden;
+}
+
+.educourse-search {
+  margin-top: -20px;
+}
+
+.educourse-demiliter {
+  color: #DCDEE0;
+}
+
+.educourse-list-form {
+  .vis-filter_region {
+    margin-top: 50px;
+  }
+}
+
+.educourse-more-option {
+  background-color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(200, 201, 204, 0.5);
+  width: 73px;
+  & div {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    &:hover {
+      background-color: #edf4ff;
+    }
+  }
+ 
+}

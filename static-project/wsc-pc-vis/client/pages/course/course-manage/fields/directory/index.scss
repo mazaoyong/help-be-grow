@@ -1,0 +1,87 @@
+.directory-field {
+  .add-directory-wrap {
+
+    &.border {
+      border: 1px solid #e5e5e5;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .first-item {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      background-color: #f7f8fa;
+
+      &__section {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .second-item {
+        padding: 0 10px 10px;
+
+        .content {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          background-color: transparent;
+        }
+      }
+
+      .directory-input {
+        margin-right: 10px;
+
+        .zent-input {
+          width: 290px;
+        }
+
+        &.content-input {
+          width: 290px;
+          text-align: right;
+
+          .zent-input {
+            width: 234px;
+          }
+        }
+      }
+
+      &__add-content-btn {
+        margin-left: 56px;
+        padding: 0 10px;
+        padding-bottom: 0;
+        color: #155BD4;
+      }
+
+      &__no-click {
+        color: grey !important;
+      }
+    }
+
+    .zent-form__control-label {
+      width: 0 !important;
+    }
+
+    .zent-form__controls {
+      margin-left: 0 !important;
+    }
+
+    .zent-form__control-group {
+      margin-bottom: 0 !important;
+    }
+
+    .add-btn {
+      padding: 5px 0;
+      color: #155BD4;
+    }
+
+    .add-btn-disable {
+      padding: 5px 0;
+      color: grey;
+    }
+
+    &__btn.add-btn {
+      padding: 0;
+    }
+  }
+}

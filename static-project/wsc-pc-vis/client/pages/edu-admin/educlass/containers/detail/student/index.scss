@@ -1,0 +1,55 @@
+.detail-student-content {
+  &__actions {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .student-table-operate {
+    font-size: 12px;
+
+    &__action-btn {
+      color: #3388ff;
+      cursor: pointer;
+    }
+
+    &__action-text {
+      color: #999999;
+    }
+  }
+
+  .search-input {
+    margin-bottom: 0;
+  }
+
+  .zent-table .cell:last-child .cell__child-container {
+    width: 100%;
+    text-align: right;
+  }
+
+  .detail-student-operate__link {
+    color: #155bd4 !important;
+  }
+
+  &__checkall {
+    margin-right: 10px;
+  }
+}
+
+.educlass__remove_stu {
+  .zent-sweetalert-confirm-btn {
+    &-cancel {
+      border-color: #38f;
+      background: #38f;
+      color: #fff;
+
+      &:hover {
+        border-color: #59f;
+        background: #59f;
+        color: #fff;
+      }
+    }
+  }
+}

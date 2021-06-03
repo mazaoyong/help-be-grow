@@ -1,0 +1,6 @@
+{
+  "go.useLanguageServer": true,
+  "go.useCodeSnippetsOnFunctionSuggest": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "git.ignoreLimitWarning": true
+}

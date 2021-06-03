@@ -1,0 +1,24 @@
+.clue-detail__etc {
+  &__tags {
+    & > article {
+      margin-top: 16px;
+
+      .zent-tag {
+        margin-right: 5px;
+      }
+    }
+
+    &__container {
+      .zent-tag {
+        margin-bottom: 10px;
+      }
+    }
+
+    .no-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+    }
+  }
+}

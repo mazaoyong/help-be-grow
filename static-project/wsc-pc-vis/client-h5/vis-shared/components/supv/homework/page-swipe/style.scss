@@ -1,0 +1,10 @@
+.page-swipe {
+  .van-swipe-item {
+    overflow: scroll;
+    box-sizing: border-box;
+  }
+
+  .van-swipe__track {
+    transition-duration: 500ms !important;
+  }
+}

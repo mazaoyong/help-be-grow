@@ -1,0 +1,29 @@
+{% extends 'layout/without_side_menu_layout.html' %}
+
+{% block page_title %}有赞餐饮{% endblock %}
+
+{% block project_style %}
+  {{ loadCss('base') | safe }}
+  {{ loadCss('global') | safe }}
+{% endblock %}
+
+{% block page_style %}
+  {{ loadCss('cy/consult') | safe }}
+{% endblock %}
+
+{% block project_js %}
+  {{ loadJs('vendor') | safe }}
+  {{ loadJs('base') | safe }}
+  {{ loadJs('global') | safe }}
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('cy/consult') | safe }}
+{% endblock %}
+
+{% block body_html %}
+<div id="app" class="app-container"></div>
+{% endblock %}
+
+{% block app_footer %}
+{% endblock %}

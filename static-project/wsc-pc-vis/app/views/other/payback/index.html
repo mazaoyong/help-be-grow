@@ -1,0 +1,21 @@
+{% extends '../../common/base.html' %}
+
+{% block page_title %} 课程回款 {% endblock %}
+
+{% block page_style %}
+  {{ loadCss('version_css.other/payback') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+  <div class="zent-breadcrumb" id="js-page-breadcrumb">
+		<span class="project" data-href="{{ URL.site('/vis/edu/page/payback', 'v4') }}">课程回款</span>
+	</div>
+{% endblock %}
+
+{% block app_content %}
+<div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('version_js.other/payback') | safe }}
+{% endblock %}

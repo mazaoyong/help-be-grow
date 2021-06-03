@@ -1,0 +1,35 @@
+@mixin border-retina($pos: surround, $border-retina-color: #e5e5e5) {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid $border-retina-color;
+
+  @if $pos == surround {
+    border-width: 1px;
+  }
+  @if $pos == top-bottom {
+    border-width: 1px 0;
+  }
+  @if $pos == left-right {
+    border-width: 0 1px;
+  }
+  @if $pos == top {
+    border-top-width: 1px;
+  }
+  @if $pos == right {
+    border-right-width: 1px;
+  }
+  @if $pos == bottom {
+    border-bottom-width: 1px;
+  }
+  @if $pos == left {
+    border-left-width: 1px;
+  }
+}

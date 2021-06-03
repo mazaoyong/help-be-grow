@@ -1,0 +1,22 @@
+:local(.live-scene-field) {
+  width: 510px;
+
+  :global(.zent-radio-group) {
+    padding-top: 3px;
+  }
+
+  :global(.zent-radio-wrap) {
+    display: block;
+    margin-top: 16px;
+    line-height: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .field-tip{
+    margin: 8px 0 0 24px;
+    color: #969799;
+  }
+}

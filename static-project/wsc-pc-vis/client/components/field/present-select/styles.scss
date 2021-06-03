@@ -1,0 +1,20 @@
+.present-selector {
+  display: flex;
+  flex-direction: column;
+
+  &__trigger {
+    .disabled {
+      display: none;
+    }
+  }
+
+  .zent-grid {
+    width: inherit;
+    margin-top: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+    color:  #969799;
+  }
+}

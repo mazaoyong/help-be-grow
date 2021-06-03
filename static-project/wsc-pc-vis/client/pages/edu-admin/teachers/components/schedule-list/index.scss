@@ -1,0 +1,28 @@
+.schedule-list-grid {
+  margin-left: 15px;
+  margin-right: 10px;
+
+  .vis-filter_region {
+    padding: 20px 0;
+
+    .vis-filter_bottom {
+      margin-left: 80px;
+    }
+
+    .vis-filter_label {
+      width: 80px;
+    }
+
+    .date-range-quick-picker-wrapper {
+      width: 82%;
+
+      .picker-input {
+        width: 165px;
+      }
+    }
+  }
+
+  .teacher-help-icon {
+    color: grey;
+  }
+}

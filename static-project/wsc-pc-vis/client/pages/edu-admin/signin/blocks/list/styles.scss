@@ -1,0 +1,14 @@
+.signin-list {
+  &__body {
+    .signin-state {
+      &__container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .description {
+      color: #8b8c8e;
+    }
+  }
+}

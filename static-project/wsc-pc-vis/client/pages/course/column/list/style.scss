@@ -1,0 +1,53 @@
+@import 'common/ellipsis';
+@import 'vars/colors';
+@import 'common/filter';
+@import 'common/ui-link';
+@import 'classes/new-title';
+
+.column-list {
+  .easy-filter {
+    margin-top: 16px;
+
+    .zent-btn-primary-outline {
+      background-color: transparent;
+    }
+  }
+
+  .btn-area {
+    margin-top: 0;
+  }
+
+  .course-list__item {
+
+    &__price:not(.gray),
+    .price  {
+      display: inline-block;
+      margin-left: 5px;
+      vertical-align: middle;
+      color: #f60;
+      line-height: 18px;
+    }
+  }
+
+  .zent-page-loading {
+    z-index: 10001;
+  }
+}
+
+.zenticon-help-circle {
+  margin-left: 5px;
+  color: #bbb;
+  transform: scale(1.25);
+}
+
+.error-icon {
+  margin-left: 5px;
+  vertical-align: baseline;
+  color: #f44;
+  font-size: 14px;
+}
+
+.dialog-450 {
+  width: 450px;
+}
+

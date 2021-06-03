@@ -1,0 +1,22 @@
+{% extends '../common/base.html' %}
+
+{% block page_title %} 验证工具 {% endblock %}
+
+{% block page_style %}
+{{ loadCss('verifycard/verify-tool') | safe }}
+{% endblock %}
+
+{% block app_nav %}
+<div class="zent-breadcrumb">
+  <a href="/v4/ump/dashboard">应用中心</a>
+  <span>验证工具</span>
+</div>
+{% endblock %}
+
+{% block app_content %}
+  <div id="js-react-container"></div>
+{% endblock %}
+
+{% block page_js %}
+  {{ loadJs('verifycard/verify-tool') | safe }}
+{% endblock %}
