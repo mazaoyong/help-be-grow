@@ -88,5 +88,5 @@ func main() {
 	http.Handle("/public/", http.StripPrefix("/public/", fs))
 	http.HandleFunc("/", templates)
 	http.HandleFunc("/getSearchResult", getSearchResult)
-	http.ListenAndServe(":7777", nil)
+	http.ListenAndServe(":8301", nil)
 }
