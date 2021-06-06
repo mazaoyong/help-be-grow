@@ -288,6 +288,11 @@ var LikeButton = function LikeButton() {
               Box,
               { fontSize: 16 },
               "\u5DF2\u6536\u5F55\u4E86\u6559\u80B2B\u7AEF\uFF08\u5305\u62EC\u5546\u5BB6\u5C0F\u7A0B\u5E8F\uFF09\u548C\u6559\u80B2C\u7AEF\u7684\u63A5\u53E3\u6620\u5C04"
+            ),
+            React.createElement(
+              Box,
+              { fontSize: 12, pt: 1, textAlign: "center" },
+              "\u6709\u95EE\u9898@\u7C73\u4E5D(\u9A6C\u7076\u52C7)"
             )
           ),
           React.createElement(
