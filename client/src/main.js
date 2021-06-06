@@ -18,6 +18,8 @@ const {
   Icon,
   Paper,
   InputBase,
+  Typography,
+  Tooltip,
 } = MaterialUI;
 const theme = createMuiTheme({
   palette: {
@@ -36,7 +38,28 @@ const APP_NAME = {
   "wsc-pc-vis": "教育B端",
   "wsc-h5-vis": "教育C端",
 };
+const getNavigatorList = (apiFile) => {
+  const apiFilePart = apiFile.replace(".js", "").split("/");
+  const nameList = [];
+  apiFilePart.forEach((item) => {
+    if (!["", "pages"].includes(item)) {
+      const findNav = WSC_PC_VIS_NAV.filter((nav) => nav.key === item);
+      if (findNav.length === 1) {
+        nameList.push(findNav[0]);
+      } else if (findNav.length > 1) {
+        findNav.forEach((nav) => {
+          if (nameList.find((name) => name.key === nav.parent)) {
+            nameList.push(nav);
+          }
+        });
+      }
+    }
+  });
+  return apiFile + " " + nameList.map((item) => `【${item.value}】`).join("—");
+};
 const SearchCard = (props) => {
+  const [isCopy, setIsCopy] = React.useState(false);
+  const { userInput = "" } = props;
   const listItemRange = {
     JsonApi: "json接口",
     JavaApi: "java接口",
@@ -45,62 +68,79 @@ const SearchCard = (props) => {
     Controller: "controllers文件",
     Service: "services文件",
   };
-  // 浏览器复制
-  function copyToClip(content, message) {
-    var aux = document.createElement("input");
-    aux.setAttribute("value", content);
-    document.body.appendChild(aux);
-    aux.select();
-    document.execCommand("copy");
-    document.body.removeChild(aux);
-    if (message) {
-      alert(message);
-    } else {
-      alert("复制成功");
-    }
-  }
-  // 点击复制
-  const handleCopy = (key, value) => {
-    // console.log(key, value);
-    // let clipboard = value;
-    // const freshStrRegexp = /(\S+)(#|\.js)/;
-    // const FRESH_KEY = ["Navigator", "JavaApi", "Controller", "Service"];
-    // if (FRESH_KEY.includes(key)) {
-    //   clipboard = value.match(freshStrRegexp)[1];
-    // }
-    // copyToClip(clipboard);
-    // console.log(clipboard);
-  };
-  const ListItemRender = ({ keyVal, value }) => {
+  const ListItemRender = ({ keyVal, title }) => {
     let secondary = props.item[keyVal];
     if (keyVal === "AppName") {
-      secondary = APP_NAME[secondary];
-    }
-    if (keyVal === "Navigator") {
-      return (
-        <ListItemText
-          primary="页面导航"
-          secondary={secondary}
-          onClick={() => handleCopy(keyVal, secondary)}
-        ></ListItemText>
-      );
+      secondary = [APP_NAME[secondary]];
+    } else if (keyVal === "Navigator") {
+      if (props.item["AppName"] === "wsc-pc-vis") {
+        secondary = secondary.map(getNavigatorList);
+      }
     } else {
-      return (
-        <ListItemText
-          primary={value}
-          secondary={secondary}
-          onClick={() => handleCopy(keyVal, secondary)}
-        />
-      );
+      secondary = [secondary];
     }
+    const reg = new RegExp(userInput, "g");
+    // 点击复制
+    const handleSearchCardClick = ({ content, keyVal }) => {
+      // const notCopyList = ["Navigator", "AppName"];
+      // if (notCopyList.includes(keyVal)) {
+      //   return;
+      // }
+      var aux = document.createElement("input");
+      aux.setAttribute("value", content.toString());
+      document.body.appendChild(aux);
+      aux.select();
+      document.execCommand("copy");
+      document.body.removeChild(aux);
+      setIsCopy(true);
+    };
+    return (
+      <Box>
+        <Typography variant="h6" color="textPrimary">
+          {title}
+        </Typography>
+        <Box display="flex" alignItems="center">
+          <Typography variant="body1" color="textSecondary">
+            {secondary.map((item, index) => (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: item.replace(
+                    reg,
+                    `<span class="user-input">${userInput}</span>`
+                  ),
+                }}
+                key={index}
+              ></div>
+            ))}
+          </Typography>
+          <Box ml="auto">
+            <Tooltip
+              title={isCopy ? "已复制！" : "复制到剪切板"}
+              placement="top"
+            >
+              <Button
+                variant="outlined"
+                color="primary"
+                onClick={() =>
+                  handleSearchCardClick({ content: secondary, keyVal })
+                }
+                onMouseOut={() => setIsCopy(false)}
+              >
+                复制
+              </Button>
+            </Tooltip>
+          </Box>
+        </Box>
+      </Box>
+    );
   };
   return (
     <Card className="mb-6">
       {Object.entries(listItemRange).map(([key, value]) => {
         return (
-          <ListItem button key={key}>
-            <ListItemRender keyVal={key} value={value} />
-          </ListItem>
+          <Box px={2} py={1} key={key}>
+            <ListItemRender keyVal={key} title={value} />
+          </Box>
         );
       })}
     </Card>
@@ -108,11 +148,11 @@ const SearchCard = (props) => {
 };
 // 防抖
 let doing = null;
-
 const LikeButton = () => {
   const [searchAltitude, setSearchAltitude] = React.useState(1);
   const [isRandomBgImg, setIsRandomBgImg] = React.useState(false);
   const [searchList, setSearchList] = React.useState([]);
+  const [userInput, setUserInput] = React.useState("");
 
   // 设置是否展示随机背景图片
   const handleSetIsRandomBgImg = (isSet) => {
@@ -123,7 +163,7 @@ const LikeButton = () => {
   // 获取搜索内容
   const searchAction = (userInput) => {
     return new Promise((resolve) => {
-      fetch("/getSearchResult?searchContent=" + userInput)
+      fetch("/getSearchResult?searchContent=" + encodeURIComponent(userInput))
         .then((response) => {
           return response.json();
         })
@@ -140,17 +180,25 @@ const LikeButton = () => {
 
   // 用户输入
   const handleUserInput = (val) => {
+    if (val.indexOf(".json") === -1 && val.indexOf("com.youzan") !== -1) {
+      const lastDot = val.lastIndexOf(".");
+      val = val.substring(0, lastDot) + "#" + val.substring(lastDot + 1);
+    }
     if (doing) {
       clearTimeout(doing);
     }
-    doing = setTimeout(() => {
-      searchAction(val);
-    }, 500);
+    if (val) {
+      setUserInput(val);
+      doing = setTimeout(() => {
+        searchAction(val);
+      }, 500);
+    }
   };
 
   React.useEffect(() => {
     const isRandomBgImg = localStorage.getItem("isRandomBgImg");
     setIsRandomBgImg(!(isRandomBgImg === "0"));
+    // searchAction("edu/course-product/list-page.jso");
   }, []);
 
   return (
@@ -205,7 +253,7 @@ const LikeButton = () => {
         </div>
         <div className="list">
           {searchList.map((item, index) => (
-            <SearchCard item={item} key={index} />
+            <SearchCard item={item} key={index} userInput={userInput} />
           ))}
         </div>
       </div>
