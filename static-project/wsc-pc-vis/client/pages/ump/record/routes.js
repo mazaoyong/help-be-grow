@@ -1,8 +1,8 @@
 // @ts-check
-import { createRouter, visPush } from 'fns/router';
+import { createRouter, visPush } from "fns/router";
 
-import Order from './order';
-import Export from './export';
+import Order from "./order";
+import Export from "./export";
 
 const isYZEdu = window._global.isYZEdu;
 
@@ -11,10 +11,10 @@ const isYZEdu = window._global.isYZEdu;
  */
 const routes = [
   {
-    path: 'order',
+    path: "order",
     component: Order,
     breadcrumb: {
-      project: isYZEdu ? '信息采集记录' : '订购记录',
+      project: isYZEdu ? "信息采集记录" : "订购记录",
     },
     onEnter() {
       if (!isYZEdu) {
@@ -23,15 +23,15 @@ const routes = [
     },
   },
   {
-    path: 'export/:type',
+    path: "export/:type",
     component: Export,
     breadcrumb: {
-      project: '导出记录',
+      project: "导出记录",
     },
   },
   {
-    path: '*',
-    redirect: 'order',
+    path: "*",
+    redirect: "order",
   },
 ];
 

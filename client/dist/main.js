@@ -20,7 +20,9 @@ var _MaterialUI = MaterialUI,
     IconButton = _MaterialUI.IconButton,
     Icon = _MaterialUI.Icon,
     Paper = _MaterialUI.Paper,
-    InputBase = _MaterialUI.InputBase;
+    InputBase = _MaterialUI.InputBase,
+    Typography = _MaterialUI.Typography,
+    Tooltip = _MaterialUI.Tooltip;
 
 var theme = createMuiTheme({
   palette: {
@@ -39,7 +41,40 @@ var APP_NAME = {
   "wsc-pc-vis": "教育B端",
   "wsc-h5-vis": "教育C端"
 };
+var getNavigatorList = function getNavigatorList(apiFile) {
+  var apiFilePart = apiFile.replace(".js", "").split("/");
+  var nameList = [];
+  apiFilePart.forEach(function (item) {
+    if (!["", "pages"].includes(item)) {
+      var findNav = WSC_PC_VIS_NAV.filter(function (nav) {
+        return nav.key === item;
+      });
+      if (findNav.length === 1) {
+        nameList.push(findNav[0]);
+      } else if (findNav.length > 1) {
+        findNav.forEach(function (nav) {
+          if (nameList.find(function (name) {
+            return name.key === nav.parent;
+          })) {
+            nameList.push(nav);
+          }
+        });
+      }
+    }
+  });
+  return apiFile + " " + nameList.map(function (item) {
+    return "\u3010" + item.value + "\u3011";
+  }).join("—");
+};
 var SearchCard = function SearchCard(props) {
+  var _React$useState = React.useState(false),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      isCopy = _React$useState2[0],
+      setIsCopy = _React$useState2[1];
+
+  var _props$userInput = props.userInput,
+      userInput = _props$userInput === undefined ? "" : _props$userInput;
+
   var listItemRange = {
     JsonApi: "json接口",
     JavaApi: "java接口",
@@ -48,92 +83,127 @@ var SearchCard = function SearchCard(props) {
     Controller: "controllers文件",
     Service: "services文件"
   };
-  // 浏览器复制
-  function copyToClip(content, message) {
-    var aux = document.createElement("input");
-    aux.setAttribute("value", content);
-    document.body.appendChild(aux);
-    aux.select();
-    document.execCommand("copy");
-    document.body.removeChild(aux);
-    if (message) {
-      alert(message);
-    } else {
-      alert("复制成功");
-    }
-  }
-  // 点击复制
-  var handleCopy = function handleCopy(key, value) {
-    // console.log(key, value);
-    // let clipboard = value;
-    // const freshStrRegexp = /(\S+)(#|\.js)/;
-    // const FRESH_KEY = ["Navigator", "JavaApi", "Controller", "Service"];
-    // if (FRESH_KEY.includes(key)) {
-    //   clipboard = value.match(freshStrRegexp)[1];
-    // }
-    // copyToClip(clipboard);
-    // console.log(clipboard);
-  };
   var ListItemRender = function ListItemRender(_ref) {
     var keyVal = _ref.keyVal,
-        value = _ref.value;
+        title = _ref.title;
 
     var secondary = props.item[keyVal];
     if (keyVal === "AppName") {
-      secondary = APP_NAME[secondary];
-    }
-    if (keyVal === "Navigator") {
-      return React.createElement(ListItemText, {
-        primary: "\u9875\u9762\u5BFC\u822A",
-        secondary: secondary,
-        onClick: function onClick() {
-          return handleCopy(keyVal, secondary);
-        }
-      });
+      secondary = [APP_NAME[secondary]];
+    } else if (keyVal === "Navigator") {
+      if (props.item["AppName"] === "wsc-pc-vis") {
+        secondary = secondary.map(getNavigatorList);
+      }
     } else {
-      return React.createElement(ListItemText, {
-        primary: value,
-        secondary: secondary,
-        onClick: function onClick() {
-          return handleCopy(keyVal, secondary);
-        }
-      });
+      secondary = [secondary];
     }
+    var reg = new RegExp(userInput, "g");
+    // 点击复制
+    var handleSearchCardClick = function handleSearchCardClick(_ref2) {
+      var content = _ref2.content,
+          keyVal = _ref2.keyVal;
+
+      // const notCopyList = ["Navigator", "AppName"];
+      // if (notCopyList.includes(keyVal)) {
+      //   return;
+      // }
+      var aux = document.createElement("input");
+      aux.setAttribute("value", content.toString());
+      document.body.appendChild(aux);
+      aux.select();
+      document.execCommand("copy");
+      document.body.removeChild(aux);
+      setIsCopy(true);
+    };
+    return React.createElement(
+      Box,
+      null,
+      React.createElement(
+        Typography,
+        { variant: "h6", color: "textPrimary" },
+        title
+      ),
+      React.createElement(
+        Box,
+        { display: "flex", alignItems: "center" },
+        React.createElement(
+          Typography,
+          { variant: "body1", color: "textSecondary" },
+          secondary.map(function (item, index) {
+            return React.createElement("div", {
+              dangerouslySetInnerHTML: {
+                __html: item.replace(reg, "<span class=\"user-input\">" + userInput + "</span>")
+              },
+              key: index
+            });
+          })
+        ),
+        React.createElement(
+          Box,
+          { ml: "auto" },
+          React.createElement(
+            Tooltip,
+            {
+              title: isCopy ? "已复制！" : "复制到剪切板",
+              placement: "top"
+            },
+            React.createElement(
+              Button,
+              {
+                variant: "outlined",
+                color: "primary",
+                onClick: function onClick() {
+                  return handleSearchCardClick({ content: secondary, keyVal: keyVal });
+                },
+                onMouseOut: function onMouseOut() {
+                  return setIsCopy(false);
+                }
+              },
+              "\u590D\u5236"
+            )
+          )
+        )
+      )
+    );
   };
   return React.createElement(
     Card,
     { className: "mb-6" },
-    Object.entries(listItemRange).map(function (_ref2) {
-      var _ref3 = _slicedToArray(_ref2, 2),
-          key = _ref3[0],
-          value = _ref3[1];
+    Object.entries(listItemRange).map(function (_ref3) {
+      var _ref4 = _slicedToArray(_ref3, 2),
+          key = _ref4[0],
+          value = _ref4[1];
 
       return React.createElement(
-        ListItem,
-        { button: true, key: key },
-        React.createElement(ListItemRender, { keyVal: key, value: value })
+        Box,
+        { px: 2, py: 1, key: key },
+        React.createElement(ListItemRender, { keyVal: key, title: value })
       );
     })
   );
 };
 // 防抖
 var doing = null;
-
 var LikeButton = function LikeButton() {
-  var _React$useState = React.useState(1),
-      _React$useState2 = _slicedToArray(_React$useState, 2),
-      searchAltitude = _React$useState2[0],
-      setSearchAltitude = _React$useState2[1];
-
-  var _React$useState3 = React.useState(false),
+  var _React$useState3 = React.useState(1),
       _React$useState4 = _slicedToArray(_React$useState3, 2),
-      isRandomBgImg = _React$useState4[0],
-      setIsRandomBgImg = _React$useState4[1];
+      searchAltitude = _React$useState4[0],
+      setSearchAltitude = _React$useState4[1];
 
-  var _React$useState5 = React.useState([]),
+  var _React$useState5 = React.useState(false),
       _React$useState6 = _slicedToArray(_React$useState5, 2),
-      searchList = _React$useState6[0],
-      setSearchList = _React$useState6[1];
+      isRandomBgImg = _React$useState6[0],
+      setIsRandomBgImg = _React$useState6[1];
+
+  var _React$useState7 = React.useState([]),
+      _React$useState8 = _slicedToArray(_React$useState7, 2),
+      searchList = _React$useState8[0],
+      setSearchList = _React$useState8[1];
+
+  var _React$useState9 = React.useState(""),
+      _React$useState10 = _slicedToArray(_React$useState9, 2),
+      userInput = _React$useState10[0],
+      setUserInput = _React$useState10[1];
 
   // 设置是否展示随机背景图片
 
@@ -146,7 +216,7 @@ var LikeButton = function LikeButton() {
   // 获取搜索内容
   var searchAction = function searchAction(userInput) {
     return new Promise(function (resolve) {
-      fetch("/getSearchResult?searchContent=" + userInput).then(function (response) {
+      fetch("/getSearchResult?searchContent=" + encodeURIComponent(userInput)).then(function (response) {
         return response.json();
       }).then(function (res) {
         var searchList = res.data;
@@ -160,17 +230,25 @@ var LikeButton = function LikeButton() {
 
   // 用户输入
   var handleUserInput = function handleUserInput(val) {
+    if (val.indexOf(".json") === -1 && val.indexOf("com.youzan") !== -1) {
+      var lastDot = val.lastIndexOf(".");
+      val = val.substring(0, lastDot) + "#" + val.substring(lastDot + 1);
+    }
     if (doing) {
       clearTimeout(doing);
     }
-    doing = setTimeout(function () {
-      searchAction(val);
-    }, 500);
+    if (val) {
+      setUserInput(val);
+      doing = setTimeout(function () {
+        searchAction(val);
+      }, 500);
+    }
   };
 
   React.useEffect(function () {
     var isRandomBgImg = localStorage.getItem("isRandomBgImg");
     setIsRandomBgImg(!(isRandomBgImg === "0"));
+    // searchAction("edu/course-product/list-page.jso");
   }, []);
 
   return React.createElement(
@@ -242,7 +320,7 @@ var LikeButton = function LikeButton() {
         "div",
         { className: "list" },
         searchList.map(function (item, index) {
-          return React.createElement(SearchCard, { item: item, key: index });
+          return React.createElement(SearchCard, { item: item, key: index, userInput: userInput });
         })
       )
     )
