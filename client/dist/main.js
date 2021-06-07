@@ -317,6 +317,11 @@ var LikeButton = function LikeButton() {
                 },
                 className: "ms-input"
               })
+            ),
+            React.createElement(
+              Box,
+              { fontSize: 12, pt: 1 },
+              "\u793A\u4F8B\uFF1Av4/vis/edu/course-product/list-page.json"
             )
           )
         )

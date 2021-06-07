@@ -251,6 +251,9 @@ const LikeButton = () => {
                   className="ms-input"
                 />
               </Paper>
+              <Box fontSize={12} pt={1}>
+                示例：v4/vis/edu/course-product/list-page.json
+              </Box>
             </div>
           </div>
         </div>
