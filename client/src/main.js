@@ -256,7 +256,10 @@ const LikeButton = () => {
                 />
               </Paper>
               <Box fontSize={12} pt={1}>
-                示例：v4/vis/edu/course-product/list-page.json
+                json接口示例：v4/vis/edu/course-product/list-page.json
+              </Box>
+              <Box fontSize={12} pt={1}>
+                java接口示例：com.youzan.owl.pc.api.courseitem.offlinecourse.PcCourseFacade#findPageByCondition
               </Box>
             </div>
           </div>

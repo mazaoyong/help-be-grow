@@ -321,7 +321,12 @@ var LikeButton = function LikeButton() {
             React.createElement(
               Box,
               { fontSize: 12, pt: 1 },
-              "\u793A\u4F8B\uFF1Av4/vis/edu/course-product/list-page.json"
+              "json\u63A5\u53E3\u793A\u4F8B\uFF1Av4/vis/edu/course-product/list-page.json"
+            ),
+            React.createElement(
+              Box,
+              { fontSize: 12, pt: 1 },
+              "java\u63A5\u53E3\u793A\u4F8B\uFF1Acom.youzan.owl.pc.api.courseitem.offlinecourse.PcCourseFacade#findPageByCondition"
             )
           )
         )
