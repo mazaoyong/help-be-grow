@@ -180,7 +180,11 @@ const LikeButton = () => {
 
   // 用户输入
   const handleUserInput = (val) => {
-    if (val.indexOf(".json") === -1 && val.indexOf("com.youzan") !== -1) {
+    if (
+      val.indexOf(".json") === -1 &&
+      val.indexOf("com.youzan") !== -1 &&
+      val.indexOf("#") == -1
+    ) {
       const lastDot = val.lastIndexOf(".");
       val = val.substring(0, lastDot) + "#" + val.substring(lastDot + 1);
     }
