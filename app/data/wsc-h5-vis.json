@@ -1,0 +1,4651 @@
+[
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getFooter.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/FooterController.js#getFooterJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getWechatUserInfoByUserId.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UserInfoController.js#getWechatUserInfoByUserIdJson",
+    "Service": "/app/services/uic/user/UserInfoService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getShopServicePhoneJson.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UserInfoController.js#getShopServicePhoneJson",
+    "Service": "/app/services/shop/WeappBusinessService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getSessionUserInfo.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UserInfoController.js#getSessionUserInfo",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.MpService#checkMpFollow",
+    "JsonApi": "/wscvis/getMpFollowStatus.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/MpController.js#getMpFollowStatus",
+    "Service": "/app/services/owl/api/MpService.js#checkMpFollow"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getWeappInfo.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/WeappController.js#getWeappInfo",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getCustomPointName.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/ShopBasicInfo.js#getCustomPointName",
+    "Service": "/app/services/scrm/credit/policy/CreditPolicyReadService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getShopMetaInfo.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/ShopBasicInfo.js#getShopMetaInfo",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.common.UploadTokenFacade#getPubImgUploadToken",
+    "JsonApi": "/wscvis/getPubImgUploadToken.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UploadController.js#getPubImgUploadToken",
+    "Service": "/app/services/owl/common/UploadTokenFacade.js#getPubImgUploadToken"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.common.UploadTokenFacade#getAudiaUploadToken",
+    "JsonApi": "/wscvis/getAudiaUploadToken.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UploadController.js#getAudiaUploadToken",
+    "Service": "/app/services/owl/common/UploadTokenFacade.js#getAudiaUploadToken"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/log/perf.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/LogController.js#logPerf",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientCourseCommonFacade#findSimpleCourseList",
+    "JsonApi": "/wscvis/findSimpleCourseList.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/ProductCommonController.js#findSimpleCourseListJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientCourseCommonFacade.js#findSimpleCourseList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.product.ClientContentProductFacade#getByAlias",
+    "JsonApi": "/wscvis/product-common/getByAlias.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/ump/groupon/api.js"
+    ],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/ProductCommonController.js#getByAlias",
+    "Service": "/app/services/owl/client/product/ClientContentProductFacade.js#getByAlias"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.marketing.goodsscan.service.GoodsScanPromotionService#findActivities",
+    "JsonApi": "/wscvis/getMpQrcode.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/QRController.js#getMpQrcodeJson",
+    "Service": "/app/services/ump/marketing/goodsscan/GoodsScanPromotionService.js#findActivities"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.marketing.goodsscan.service.GoodsScanPromotionService#findActivities",
+    "JsonApi": "/wscvis/getMpQrcode.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/qr.js",
+    "Controller": "/app/controllers/common/QRController.js#getMpQrcodeJson",
+    "Service": "/app/services/ump/marketing/goodsscan/GoodsScanPromotionService.js#findActivities"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/common/get-components.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/H5Component.js#getComponentsJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/log/skynet.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/LogController.js#skynetJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.common.UploadTokenFacade#getQiniuAggregateUploadToken",
+    "JsonApi": "/wscvis/getQiniuAggregateUploadToken.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UploadController.js#getQiniuAggregateUploadToken",
+    "Service": "/app/services/owl/common/UploadTokenFacade.js#getQiniuAggregateUploadToken"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.material.materialcenter.api.service.general.video.TencentVideoWriteService#getVideoUploadToken",
+    "JsonApi": "/wscvis/videoUploadToken.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UploadController.js#postVideoUploadTokenJson",
+    "Service": "/app/services/api/material/materialcenter/TencentVideoWriteService.js#getVideoUploadToken"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.material.materialcenter.api.service.general.video.TencentVideoWriteService#createVideo",
+    "JsonApi": "/wscvis/confirmVideoUpload.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UploadController.js#postConfirmVideoUploadJson",
+    "Service": "/app/services/api/material/materialcenter/TencentVideoWriteService.js#createVideo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.material.materialcenter.api.service.general.video.TencentVideoWriteService#publishVideo",
+    "JsonApi": "/wscvis/publishVideo.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/UploadController.js#postPublishVideoJson",
+    "Service": "/app/services/api/material/materialcenter/TencentVideoWriteService.js#publishVideo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.material.materialcenter.api.service.storage.image.StorageQiniuImageWriteService#fetchPublicImage",
+    "JsonApi": "/wscvis/fetchPublicImage.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/paid-content/utils/index.js",
+      "/client/pages/supv/exam/utils.js"
+    ],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/MaterialCenterController.js#fetchPublicImage",
+    "Service": "/app/services/api/material/materialcenter/StorageQiniuImageWriteService.js#fetchPublicImage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.material.materialcenter.api.service.aggregation.QiniuAggregationWriteService#getUploadToken",
+    "JsonApi": "/wscvis/getUploadToken.json",
+    "Navigator": [
+      "/client/pages/supv/punch/utils/upload.js"
+    ],
+    "Router": "/app/routers/common/common.js",
+    "Controller": "/app/controllers/common/MaterialCenterController.js#getUploadToken",
+    "Service": "/app/services/api/material/materialcenter/QiniuAggregationWriteService.js#getUploadToken"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/common/poster/getVuePoster.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/poster.js",
+    "Controller": "/app/controllers/common/PosterController.js#getVuePoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#createQrCode",
+    "JsonApi": "/wscvis/common/qr/getQrcode.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/qr.js",
+    "Controller": "/app/controllers/common/QRController.js#getQrcodeJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#createQrCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.marketing.goodsscan.service.GoodsScanPromotionService#findActivities",
+    "JsonApi": "/wscvis/common/qr/getMpQrcode.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/qr.js",
+    "Controller": "/app/controllers/common/QRController.js#getMpQrcodeJson",
+    "Service": "/app/services/ump/marketing/goodsscan/GoodsScanPromotionService.js#findActivities"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#createQrCode",
+    "JsonApi": "/wscvis/common/qr/h5QrCode.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/qr.js",
+    "Controller": "/app/controllers/common/QRController.js#createH5QrCode",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#createQrCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#wxaGetCodeUltra",
+    "JsonApi": "/wscvis/common/qr/weappQrCode.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/qr.js",
+    "Controller": "/app/controllers/common/QRController.js#createWeappQrCode",
+    "Service": "/app/services/api/uic/channel/WxWeappQRCodeService.js#wxaGetCodeUltra"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/common/qr/swanAppQrCode.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/qr.js",
+    "Controller": "/app/controllers/common/QRController.js#createSwanAppQrCode",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#sendSmsCaptcha",
+    "JsonApi": "/wscvis/common/smscaptcha/sendSmsCaptcha.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/smscaptcha.js",
+    "Controller": "/app/controllers/common/SmsCaptchaController.js#sendSmsCaptcha",
+    "Service": "/app/services/api/owl/api/SmsCaptchaFacade.js#sendSmsCaptcha"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#verifySmsCaptcha",
+    "JsonApi": "/wscvis/common/smscaptcha/verifySmsCaptcha.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/smscaptcha.js",
+    "Controller": "/app/controllers/common/SmsCaptchaController.js#verifySmsCaptcha",
+    "Service": "/app/services/api/owl/api/SmsCaptchaFacade.js#verifySmsCaptcha"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.common.ShortenUrlFacade#getShortenUrl",
+    "JsonApi": "/wscvis/common/url/getShortenUrl.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/bottom/live-guide-block/apis.ts"
+    ],
+    "Router": "/app/routers/common/url.js",
+    "Controller": "/app/controllers/common/UrlController.js#getShortenUrl",
+    "Service": "/app/services/owl/common/ShortenUrlFacade.js#getShortenUrl"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.msg.WeChatSubService#isMpTemplateMsgAvailable",
+    "JsonApi": "/wscvis/edu/push/isMpTemplateMsgAvailable.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/wechatmsg.js",
+    "Controller": "/app/controllers/common/WechatMsgController.js#isMpTemplateMsgAvailable",
+    "Service": "/app/services/owl/msg/WeChatSubService.js#isMpTemplateMsgAvailable"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.msg.WeChatSubService#getTemplate",
+    "JsonApi": "/wscvis/edu/push/getTemplate.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/wechatmsg.js",
+    "Controller": "/app/controllers/common/WechatMsgController.js#getTemplate",
+    "Service": "/app/services/owl/msg/WeChatSubService.js#getTemplate"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.msg.WeChatSubService#subscriptionCallback",
+    "JsonApi": "/wscvis/edu/push/subscriptionCallback.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/wechatmsg.js",
+    "Controller": "/app/controllers/common/WechatMsgController.js#subscriptionCallback",
+    "Service": "/app/services/owl/msg/WeChatSubService.js#subscriptionCallback"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.platform.push.api.auxiliary.WechatTemplateService#getTemplateV2",
+    "JsonApi": "/wscvis/edu/push/getTemplateV2.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/wechatmsg.js",
+    "Controller": "/app/controllers/common/WechatMsgController.js#getTemplateV2",
+    "Service": "/app/services/platform/push/WechatMsgService.js#getTemplateV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.msg.config.MsgConfigService#shouldPullUpMsgDialog",
+    "JsonApi": "/wscvis/edu/push/shouldPullUpMsgDialog.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/wechatmsg.js",
+    "Controller": "/app/controllers/common/WechatMsgController.js#shouldPullUpMsgDialog",
+    "Service": "/app/services/owl/msg/MsgConfigService.js#shouldPullUpMsgDialog"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.msg.config.MsgConfigService#saveMsgConfig",
+    "JsonApi": "/wscvis/edu/push/saveMsgConfig.json",
+    "Navigator": [],
+    "Router": "/app/routers/common/wechatmsg.js",
+    "Controller": "/app/controllers/common/WechatMsgController.js#saveMsgConfig",
+    "Service": "/app/services/owl/msg/MsgConfigService.js#saveMsgConfig"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.product.ClientEduProductFacade#getNextEduProductInfo",
+    "JsonApi": "/wscvis/course/column/getNextEduProductInfo.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/column-catalogue-block/api.js",
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "Router": "/app/routers/course/column.ts",
+    "Controller": "/app/controllers/course/column/ColumnController.js#getNextEduProductInfo",
+    "Service": "/app/services/api/owl/api/ClientEduProductFacade.js#getNextEduProductInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/detail/goods.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "Router": "/app/routers/course/detail.ts",
+    "Controller": "/app/controllers/course/detail/DetailController.js#goods",
+    "Service": "/app/services/.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/detail/activity.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "Router": "/app/routers/course/detail.ts",
+    "Controller": "/app/controllers/course/detail/DetailController.js#activity",
+    "Service": "/app/services/.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/detail/getAssetState.json",
+    "Navigator": [
+      "/client/pages/course/pc-detail/apis/index.ts"
+    ],
+    "Router": "/app/routers/course/detail.ts",
+    "Controller": "/app/controllers/course/detail/DetailController.js#getAssetState",
+    "Service": "/app/services/.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/detail/getSkuFormatModel.json",
+    "Navigator": [
+      "/client/pages/ump/blocks/ump-sku/api.ts"
+    ],
+    "Router": "/app/routers/course/detail.ts",
+    "Controller": "/app/controllers/course/detail/DetailController.js#getSkuFormatModel",
+    "Service": "/app/services/.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/live/live-selling/findCouponList.json",
+    "Navigator": [
+      "/client/pages/course/live/video-room/api/live-selling.ts"
+    ],
+    "Router": "/app/routers/course/live/live-selling.ts",
+    "Controller": "/app/controllers/\"course/live/LiveSellingController\".js#getFindCouponListJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/live/live-selling/receiveCoupon.json",
+    "Navigator": [
+      "/client/pages/course/live/video-room/api/live-selling.ts"
+    ],
+    "Router": "/app/routers/course/live/live-selling.ts",
+    "Controller": "/app/controllers/\"course/live/LiveSellingController\".js#postReceiveCouponJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/live/live-selling/findGoodsList.json",
+    "Navigator": [
+      "/client/pages/course/live/video-room/api/live-selling.ts"
+    ],
+    "Router": "/app/routers/course/live/live-selling.ts",
+    "Controller": "/app/controllers/\"course/live/LiveSellingController\".js#getFindPageJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/course/live/live-selling/getLiveMarketingSetting.json",
+    "Navigator": [],
+    "Router": "/app/routers/course/live/live-selling.ts",
+    "Controller": "/app/controllers/\"course/live/LiveSellingController\".js#getGetLiveMarketingSettingJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.EduLiveVideoFacade#getEduLiveLink",
+    "JsonApi": "/wscvis/course/live/video/getEduLiveLink.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/parser/activity-parser/default/buttons/live.js",
+      "/client/pages/course/pc-detail/modules/navigation/live.ts",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/course/live.js",
+    "Controller": "/app/controllers/course/live/LiveVideoController.js#getEduLiveLinkJson",
+    "Service": "/app/services/api/owl/api/EduLiveVideoFacade.js#getEduLiveLink"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#findPageForWym",
+    "JsonApi": "/wscvis/course/live/api/findPageForWym.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/all-lives.js"
+    ],
+    "Router": "/app/routers/course/live.js",
+    "Controller": "/app/controllers/course/live/LiveApiController.js#findPageForWym",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#findPageForWym"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.EduLiveVideoFacade#getLiveRewardSetting",
+    "JsonApi": "/wscvis/course/live/video/getLiveSetting.json",
+    "Navigator": [
+      "/client/pages/course/live/video-room/api/index.js"
+    ],
+    "Router": "/app/routers/course/live.js",
+    "Controller": "/app/controllers/course/live/LiveVideoController.js#getLiveSettingJson",
+    "Service": "/app/services/api/owl/api/EduLiveVideoFacade.js#getLiveRewardSetting"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.LiveRewardOrderFacade#create",
+    "JsonApi": "/wscvis/course/live/video/creat.json",
+    "Navigator": [
+      "/client/pages/course/live/video-room/api/index.js"
+    ],
+    "Router": "/app/routers/course/live.js",
+    "Controller": "/app/controllers/course/live/LiveVideoController.js#createJson",
+    "Service": "/app/services/owl/trade/LiveRewardOrderFacade.js#create"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.enrollform.EnrollFacade#getRegistrationInfoById",
+    "JsonApi": "/wscvis/edu/apply-result/getRegistrationInfoById.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/apply-result.js",
+    "Controller": "/app/controllers/edu/ApplyResultController.js#getRegistrationInfoByIdJson",
+    "Service": "/app/services/owl/enrollform/EnrollFacade.js#getRegistrationInfoById"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/list.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getList",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#getSimpleByIdV2",
+    "JsonApi": "/wscvis/edu/appointment/studentInfo.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getStudentInfo",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#getSimpleByIdV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/calendar.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getCalendar",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/listByDate.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getListByDate",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/calendarForOrder.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getCalendarForOrderPage",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/listByDateForOrder.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getListByDateForOrderPage",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/create.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getMakeAppointment",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/cancel.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getCancelAppointment",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/info.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getInfo",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/detail.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getDetail",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu/appointment/recordList.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getRecordList",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/appointment/canTradeWithLessonAppointmentInfo.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#canTradeWithLessonAppointmentInfo",
+    "Service": "/app/services/owl/edu/course/TradeFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/appointment/findPageByCondition.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#findPageByCondition",
+    "Service": "/app/services/owl/client/edu/educourse/EduCourseFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.OwlStudentLessonDetectFacade#detectDateRange",
+    "JsonApi": "/wscvis/edu/appointment/conflict.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#detectDateRange",
+    "Service": "/app/services/owl/client/edu/student/OwlStudentLessonDetectFacade.js#detectDateRange"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.address.AddressFacade#findAddressList",
+    "JsonApi": "/wscvis/edu/appointment/getAddressList.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js",
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getAddressList",
+    "Service": "/app/services/owl/client/edu/address/AddressService.js#findAddressList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.teacher.TeacherFacade#findPage",
+    "JsonApi": "/wscvis/edu/appointment/getTeacherList.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getTeacherList",
+    "Service": "/app/services/owl/client/edu/teacher/TeacherService.js#findPage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentLessonFacade#findStudentValidRecordList",
+    "JsonApi": "/wscvis/edu/course-schedule/calendarData.json",
+    "Navigator": [
+      "/client/pages/edu/course-schedule/api.js"
+    ],
+    "Router": "/app/routers/edu/course-schedule.js",
+    "Controller": "/app/controllers/edu/CourseScheduleController.js#getCalendarData",
+    "Service": "/app/services/owl/client/edu/student/StudentLessonFacade.js#findStudentValidRecordList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentLessonFacade#findStudentLessonByDate",
+    "JsonApi": "/wscvis/edu/course-schedule/lessonsByDate.json",
+    "Navigator": [
+      "/client/pages/edu/course-schedule/api.js"
+    ],
+    "Router": "/app/routers/edu/course-schedule.js",
+    "Controller": "/app/controllers/edu/CourseScheduleController.js#getLessonsByDate",
+    "Service": "/app/services/owl/client/edu/student/StudentLessonFacade.js#findStudentLessonByDate"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#findByCustomerId",
+    "JsonApi": "/wscvis/edu/student/findByCustomerId.json",
+    "Navigator": [
+      "/client/pages/edu/course-schedule/api.js"
+    ],
+    "Router": "/app/routers/edu/course-schedule.js",
+    "Controller": "/app/controllers/edu/StudentController.js#findByCustomerIdJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#findByCustomerId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.chain.chainproduct.ChainProductRelationFacade#getCampusProductByCampus",
+    "JsonApi": "/wscvis/edu/getCampusProductByCampus.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/ChainController.js#getCampusProductByCampusJson",
+    "Service": "/app/services/owl/client/chain/chainproduct/ChainProductRelationFacade.js#getCampusProductByCampus"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/cert/getSnopshotByKey.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/PosterController.js#getSnopshotByKey",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.certificate.CertificateCustomFacade#findV2",
+    "JsonApi": "/wscvis/cert/getCertificatePoster.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/PosterController.js#getCertificatePoster",
+    "Service": "/app/services/owl/client/ump/certificate/CertificateCustomFacade.js#findV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getCommonWeappCode.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/PosterController.js#getCommonWeappCode",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getCommonSwanCode.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/PosterController.js#getCommonSwanCode",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.certificate.CertificateCustomFacade#findV2",
+    "JsonApi": "/wscvis/edu/findCertificate.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CertificateCustomFacadeController.js#findCertificateJson",
+    "Service": "/app/services/owl/client/ump/certificate/CertificateCustomFacade.js#findV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.certificate.CertificateCustomFacade#batchUpdatePopStatus",
+    "JsonApi": "/wscvis/edu/batchUpdatePopStatus.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CertificateCustomFacadeController.js#batchUpdatePopStatusJson",
+    "Service": "/app/services/owl/client/ump/certificate/CertificateCustomFacade.js#batchUpdatePopStatus"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.certificate.CertificateCustomFacade#batchUpdateStatus",
+    "JsonApi": "/wscvis/edu/batchUpdateStatus.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CertificateCustomFacadeController.js#batchUpdateStatusJson",
+    "Service": "/app/services/owl/client/ump/certificate/CertificateCustomFacade.js#batchUpdateStatus"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.certificate.CertificateTemplateCustomFacade#increaseQrScanNum",
+    "JsonApi": "/wscvis/edu/increaseQrScanNum.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CertificateCustomFacadeController.js#increaseQrScanNumJson",
+    "Service": "/app/services/owl/client/ump/certificate/CertificateTemplateCustomFacade.js#increaseQrScanNum"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#createQrCode",
+    "JsonApi": "/wscvis/knowledge/qrcode.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/top/preview-qrcode-block/api.js",
+      "/client/pages/edu/api/index.js",
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/common/QRController.js#getQrcodeJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#createQrCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#createQrCode",
+    "JsonApi": "/wscvis/knowledge/qrcode.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/top/preview-qrcode-block/api.js",
+      "/client/pages/edu/api/index.js",
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/common/QRController.js#getQrcodeJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#createQrCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#findByCustomerId",
+    "JsonApi": "/wscvis/edu/findByCustomerId.json",
+    "Navigator": [
+      "/client/pages/edu/certificate/api.js",
+      "/client/pages/edu/student/api.js"
+    ],
+    "Router": "/app/routers/edu/course-schedule.js",
+    "Controller": "/app/controllers/edu/StudentController.js#findByCustomerIdJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#findByCustomerId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#findByCustomerId",
+    "JsonApi": "/wscvis/edu/findByCustomerId.json",
+    "Navigator": [
+      "/client/pages/edu/certificate/api.js",
+      "/client/pages/edu/student/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#findByCustomerIdJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#findByCustomerId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#getSimpleByIdV2",
+    "JsonApi": "/wscvis/edu/getSimpleById.json",
+    "Navigator": [
+      "/client/pages/edu/student/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#getSimpleByIdJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#getSimpleByIdV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#findByApplicableScene",
+    "JsonApi": "/wscvis/edu/getStudentInfoByScene.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#getStudentInfoBySceneJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#findByApplicableScene"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#create",
+    "JsonApi": "/wscvis/edu/createOwlStudent.json",
+    "Navigator": [
+      "/client/pages/edu/student/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#createOwlStudentJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#create"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#update",
+    "JsonApi": "/wscvis/edu/updateOwlStudent.json",
+    "Navigator": [
+      "/client/pages/edu/student/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#updateOwlStudentJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#update"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#deleteById",
+    "JsonApi": "/wscvis/edu/deleteOwlStudent.json",
+    "Navigator": [
+      "/client/pages/edu/student/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#deleteOwlStudentJson",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#deleteById"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.schedule.ScheduleFacade#findPageStuSchedule",
+    "JsonApi": "/wscvis/edu/findPageStuSchedule.json",
+    "Navigator": [
+      "/client/pages/edu/course/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/ScheduleFacadeController.js#findPageStuScheduleJson",
+    "Service": "/app/services/owl/client/edu/schedule/ScheduleFacade.js#findPageStuSchedule"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.schedule.ScheduleFacade#findStuScheduleByCondition",
+    "JsonApi": "/wscvis/edu/findStuScheduleByCondition.json",
+    "Navigator": [
+      "/client/pages/edu/course/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/ScheduleFacadeController.js#findStuScheduleByConditionJson",
+    "Service": "/app/services/owl/client/edu/schedule/ScheduleFacade.js#findStuScheduleByCondition"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.schedule.ScheduleFacade#findWaitingLessonPage",
+    "JsonApi": "/wscvis/edu/findWaitingLessonPage.json",
+    "Navigator": [
+      "/client/pages/edu/course/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/ScheduleFacadeController.js#findWaitingLessonPageJson",
+    "Service": "/app/services/owl/client/edu/schedule/ScheduleFacade.js#findWaitingLessonPage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/queryAssetOperationPage.json",
+    "Navigator": [
+      "/client/pages/edu/course-change/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/AssetOperationController.js#queryAssetOperationPageJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentLessonFacade#findPageLessonRecord",
+    "JsonApi": "/wscvis/edu/findPageLessonRecord.json",
+    "Navigator": [
+      "/client/pages/edu/course/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentLessonController.js#findPageLessonRecordJson",
+    "Service": "/app/services/owl/client/edu/student/StudentLessonFacade.js#findPageLessonRecord"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentLessonFacade#findPageLessonRecordV2",
+    "JsonApi": "/wscvis/edu/findPageLessonRecordV2.json",
+    "Navigator": [
+      "/client/pages/edu/course/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentLessonController.js#findPageLessonRecordV2",
+    "Service": "/app/services/owl/client/edu/student/StudentLessonFacade.js#findPageLessonRecordV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.coursegroup.CourseGroupFacade#findItemGroupPageForWym",
+    "JsonApi": "/wscvis/edu/findItemGroupPageForWym.json",
+    "Navigator": [
+      "/client/pages/edu/course-group/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseGroupController.js#findItemGroupPageForWym",
+    "Service": "/app/services/edu/CourseGroupService.js#findItemGroupPageForWym"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.facade.product.OwlProductAggregateFacade#findPage",
+    "JsonApi": "/wscvis/edu/goods-list.json",
+    "Navigator": [
+      "/client/pages/edu/goods-list/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/OwlProductAggregateController.js#fetchGoodsList",
+    "Service": "/app/services/edu/OwlProductAggregateService.js#findPage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/findCourseSetting.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#findCourseSettings",
+    "Service": "/app/services/owl/pc/shop/ShopCourseSettingService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getCourseDetail.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseDetailAndActivity",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getCourseDetail.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseDetailV2AndActivity",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getCourseDetail.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseDetailV3AndActivity",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/course/v2/getCourseDetail.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseDetailV2AndActivity",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/course-v3/getCourseDetail.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseDetailV3AndActivity",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getEvaluateData.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getEvaluateData",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.address.AddressFacade#findAddressList",
+    "JsonApi": "/wscvis/edu/getAddressList.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js",
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/appointment.js",
+    "Controller": "/app/controllers/edu/AppointmentController.js#getAddressList",
+    "Service": "/app/services/owl/client/edu/address/AddressService.js#findAddressList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getAddressList.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js",
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getAddressList",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getPreOrderInfo.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getPreOrderInfo",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/postOrderConfirm.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#postOrderConfirm",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#getByQuery",
+    "JsonApi": "/wscvis/edu/getStudentDetail.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#getStudentDetail",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#getByQuery"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getTeacherInfo.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/TeacherFacadeController.js#getTeacherInfoJson",
+    "Service": "/app/services/edu/TeacherFacadeService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/loadMoreCourse.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/TeacherFacadeController.js#loadMoreCourseJson",
+    "Service": "/app/services/edu/TeacherFacadeService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getAllCourseList.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getAllCourseListJson",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/course-v2/findPageForWym.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#findPageForWym",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/listTeacherForWym.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/TeacherFacadeController.js#listTeacherForWym",
+    "Service": "/app/services/edu/TeacherFacadeService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getStudentList.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js",
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentFacadeController.js#getStudentListJson",
+    "Service": "/app/services/edu/StudentFacadeService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getRecentStudent.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentFacadeController.js#getRecentStudentJson",
+    "Service": "/app/services/edu/StudentFacadeService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#getByQuery",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#queryStudent",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#getByQuery"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#createStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#updateStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#deleteStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#getByQuery",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#queryStudent",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#getByQuery"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#createStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#updateStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#deleteStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#getByQuery",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#queryStudent",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#getByQuery"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#createStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#updateStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#deleteStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#getByQuery",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#queryStudent",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#getByQuery"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#createStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#updateStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/student.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#deleteStudent",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getRecommandCourse.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseListJson",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getRecommandCourseV2.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#findPageByCondition",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/studentCourse.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/StudentController.js#queryStudentCourse",
+    "Service": "/app/services/edu/StudentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.ic.api.core.ProductFacade#getSimpleByAliases",
+    "JsonApi": "/wscvis/edu/getProductStockFromMall.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getProductStockFromMallJson",
+    "Service": "/app/services/owl/ic/core/ProductService.js#getSimpleByAliases"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/getPaidStatusPromote.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getWechatPromoteJson",
+    "Service": "/app/services/owl/client/edu/wechatgroupsetting/WeChatJoinGroupFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/hasTradeWithLessonAppointment.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js",
+      "/client/pages/trade/paid-status/api.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/edu/CourseController.js#hasTradeWithLessonAppointment",
+    "Service": "/app/services/owl/edu/course/TradeFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/getEvaluationPermission.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#getEvaluationPermissionJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/createEvaluation.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#postCreateEvaluationJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/createEvaluationAddition.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#postCreateEvaluationAddition",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/detail.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#getByConditionJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/evaluationCount.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#getEvaluationCountByCourseAliasJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/lastEvaluation.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/course-evaluate-block/api.js"
+    ],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#getLastEvaluationByConditionJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/list.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#getFindByUserInfoJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/like.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#postLikeJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/evaluation/cancelLike.json",
+    "Navigator": [],
+    "Router": "/app/routers/edu/evaluation.js",
+    "Controller": "/app/controllers/edu/EvaluationController.js#postCancelLikeJson",
+    "Service": "/app/services/owl/edu/courseevaluation/CourseEvaluationService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#cancel",
+    "JsonApi": "/wscvis/edu/family-account/confirm.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#confirm",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#cancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/family-account/getInvitePoster.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/PosterController.js#getInvitePoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/family-account/findSimpleByUserId.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#findSimpleByUserId",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#cancel",
+    "JsonApi": "/wscvis/edu/family-account/getInvitationInfo.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#getInvitationInfo",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#cancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#cancel",
+    "JsonApi": "/wscvis/edu/family-account/getMpAccount.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#getMpAccountV2",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#cancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#cancel",
+    "JsonApi": "/wscvis/edu/family-account/getInvitationByCode.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#getInvitationByCode",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#cancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#cancel",
+    "JsonApi": "/wscvis/edu/family-account/getAccount.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#getAccount",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#cancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#cancel",
+    "JsonApi": "/wscvis/edu/family-account/cancel.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js",
+      "/client/pages/edu/family-account/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#cancel",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#cancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#remove",
+    "JsonApi": "/wscvis/edu/family-account/remove.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#remove",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#remove"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#cancel",
+    "JsonApi": "/wscvis/edu/family-account/invite.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#invite",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#cancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/family-account/getShopName.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#getShopName",
+    "Service": "/app/services/owl/pc/shop/ShopFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#getInviteState",
+    "JsonApi": "/wscvis/edu/family-account/getInviteState.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js"
+    ],
+    "Router": "/app/routers/edu/family-account.js",
+    "Controller": "/app/controllers/edu/FamilyAccountController.js#getInviteState",
+    "Service": "/app/services/owl/client/edu/family/FamilyAccountFacade.js#getInviteState"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#findMessageBox",
+    "JsonApi": "/wscvis/edu/moments/timeline/findMessageBox.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/store/modules/notifications.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#findMessageBox",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#findMessageBox"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#findPostsForUser",
+    "JsonApi": "/wscvis/edu/moments/findPostsForUser.json",
+    "Navigator": [
+      "/client/pages/edu/moments/timeline/api.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#findPostsForUser",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#findPostsForUser"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#deleteReview",
+    "JsonApi": "/wscvis/edu/moments/feeds/deleteReview.json",
+    "Navigator": [
+      "/client/pages/edu/moments/detail/apis.js",
+      "/client/pages/edu/moments/feeds/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#deleteReview",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#deleteReview"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#createLike",
+    "JsonApi": "/wscvis/edu/moments/feeds/createLike.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#createLike",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#createLike"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#deleteLike",
+    "JsonApi": "/wscvis/edu/moments/feeds/deleteLike.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#deleteLike",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#deleteLike"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#createComment",
+    "JsonApi": "/wscvis/edu/moments/feeds/createComment.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#createComment",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#createComment"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#deleteComment",
+    "JsonApi": "/wscvis/edu/moments/feeds/deleteComment.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#deleteComment",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#deleteComment"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#findComments",
+    "JsonApi": "/wscvis/edu/moments/feeds/findComments.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#findComments",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#findComments"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#findUserMessages",
+    "JsonApi": "/wscvis/edu/moments/message-box/findUserMessages.json",
+    "Navigator": [
+      "/client/pages/edu/moments/message-box/store/modules/messages.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#findUserMessages",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#findUserMessages"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#findPostDetail",
+    "JsonApi": "/wscvis/edu/moments/findPostDetail.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/store/modules/feeds.js",
+      "/client/pages/edu/moments/poster/api.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#findPostDetail",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#findPostDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#findPostsForUser",
+    "JsonApi": "/wscvis/edu/moments/getWechatCode.json",
+    "Navigator": [
+      "/client/pages/edu/moments/poster/api.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#getCommonWeappCode",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#findPostsForUser"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#updateCover",
+    "JsonApi": "/wscvis/edu/moments/updateCover.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#updateCover",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#updateCover"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#getPostById",
+    "JsonApi": "/wscvis/edu/moments/poster-edit/getPostById.json",
+    "Navigator": [
+      "/client/pages/edu/moments/post-edit/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#getPostById",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#getPostById"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#createReview",
+    "JsonApi": "/wscvis/edu/moments/poster-edit/createReview.json",
+    "Navigator": [
+      "/client/pages/edu/moments/post-edit/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#createReview",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#createReview"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.ceres.CeresPostMDFacade#updateReview",
+    "JsonApi": "/wscvis/edu/moments/poster-edit/updateReview.json",
+    "Navigator": [
+      "/client/pages/edu/moments/post-edit/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#updateReview",
+    "Service": "/app/services/owl/ceres/CeresPostMDFacade.js#updateReview"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.pc.api.ceres.CeresAdminPCFacade#getCeresConfig",
+    "JsonApi": "/wscvis/edu/moments/poster-edit/getCeresConfig.json",
+    "Navigator": [
+      "/client/pages/edu/moments/feeds/apis.js",
+      "/client/pages/edu/moments/post-edit/apis.js"
+    ],
+    "Router": "/app/routers/edu/moments.js",
+    "Controller": "/app/controllers/edu/MomentsController.js#getCeresConfig",
+    "Service": "/app/services/api/owl/pc/CeresAdminPCFacade.js#getCeresConfig"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/signIn/getLessons.json",
+    "Navigator": [
+      "/client/pages/edu/sign-in/api.js"
+    ],
+    "Router": "/app/routers/edu/sign-in.js",
+    "Controller": "/app/controllers/edu/SignInController.js#findStudentLessons",
+    "Service": "/app/services/owl/edu/signin/SignInFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/signIn/signIn.json",
+    "Navigator": [
+      "/client/pages/edu/sign-in/api.js"
+    ],
+    "Router": "/app/routers/edu/sign-in.js",
+    "Controller": "/app/controllers/edu/SignInController.js#signIn",
+    "Service": "/app/services/owl/edu/signin/SignInFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/signIn/signInWithAssets.json",
+    "Navigator": [
+      "/client/pages/edu/sign-in/api.js"
+    ],
+    "Router": "/app/routers/edu/sign-in.js",
+    "Controller": "/app/controllers/edu/SignInController.js#signInWithAssets",
+    "Service": "/app/services/owl/edu/signin/SignInFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/signIn/signInResult.json",
+    "Navigator": [
+      "/client/pages/edu/sign-in/api.js"
+    ],
+    "Router": "/app/routers/edu/sign-in.js",
+    "Controller": "/app/controllers/edu/SignInController.js#getStudentLessonAfterSignIn",
+    "Service": "/app/services/owl/edu/signin/SignInFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.signin.SignInCodeSettingFacade#get",
+    "JsonApi": "/wscvis/edu/signIn/signInResultQrcode.json",
+    "Navigator": [
+      "/client/pages/edu/sign-in/api.js"
+    ],
+    "Router": "/app/routers/edu/sign-in.js",
+    "Controller": "/app/controllers/edu/SignInController.js#getPromote",
+    "Service": "/app/services/owl/client/edu/signin/SignInCodeSettingFacade.js#get"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/edu/signIn/findUserAssetsForSignIn.json",
+    "Navigator": [
+      "/client/pages/edu/sign-in/api.js"
+    ],
+    "Router": "/app/routers/edu/sign-in.js",
+    "Controller": "/app/controllers/edu/SignInController.js#findUserAssetsForSignIn",
+    "Service": "/app/services/owl/client/edu/signin/SignInFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentLessonFacade#findStudentRecordById",
+    "JsonApi": "/wscvis/edu/student/studentList.json",
+    "Navigator": [
+      "/client/pages/edu/study-records/api.js"
+    ],
+    "Router": "/app/routers/edu/study-records.js",
+    "Controller": "/app/controllers/edu/StudyRecordsController.js#getStudentList",
+    "Service": "/app/services/owl/client/edu/student/StudentLessonFacade.js#findStudentRecordById"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentLessonFacade#findPageLessonRecord",
+    "JsonApi": "/wscvis/edu/student/studyRecords.json",
+    "Navigator": [
+      "/client/pages/edu/study-records/api.js"
+    ],
+    "Router": "/app/routers/edu/study-records.js",
+    "Controller": "/app/controllers/edu/StudyRecordsController.js#getStudyRecords",
+    "Service": "/app/services/owl/client/edu/student/StudentLessonFacade.js#findPageLessonRecord"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentLessonFacade#findLockedPage",
+    "JsonApi": "/wscvis/edu-admin/appointment/findLockedPage.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu-admin/appointment.js",
+    "Controller": "/app/controllers/edu-admin/AppointmentController.js#findLockedPage",
+    "Service": "/app/services/owl/client/edu/student/StudentLessonFacade.js#findLockedPage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLessonV2",
+    "JsonApi": "/wscvis/edu-admin/appointment/createStudentLessonV2.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu-admin/appointment.js",
+    "Controller": "/app/controllers/edu-admin/AppointmentController.js#createStudentLessonV2",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#createStudentLessonV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#batchCancel",
+    "JsonApi": "/wscvis/edu-admin/appointment/batchCancel.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/edu-admin/appointment.js",
+    "Controller": "/app/controllers/edu-admin/AppointmentController.js#batchCancel",
+    "Service": "/app/services/owl/client/edu/appointment/ConsumerAppointmentFacade.js#batchCancel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.benefit.BenefitFacade#getBenefitPackageDetail",
+    "JsonApi": "/wscvis/benefit/getBenefitPackageDetail.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/benefit.js",
+    "Controller": "/app/controllers/knowledge/blocks/BenefitController.js#getBenefitPackageDetailJson",
+    "Service": "/app/services/owl/benefit/BenefitFacade.js#getBenefitPackageDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.benefit.BenefitFacade#findBenefitItemDetailPage",
+    "JsonApi": "/wscvis/benefit/getFindBenefitItemDetailPage.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/benefit.js",
+    "Controller": "/app/controllers/knowledge/blocks/BenefitController.js#getFindBenefitItemDetailPageJson",
+    "Service": "/app/services/owl/benefit/BenefitFacade.js#findBenefitItemDetailPage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.benefit.BenefitFacade#getVipBenefitPackages",
+    "JsonApi": "/wscvis/benefit/getVipBenefitPackages.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/benefit.js",
+    "Controller": "/app/controllers/knowledge/blocks/BenefitController.js#getVipBenefitPackagesJson",
+    "Service": "/app/services/owl/benefit/BenefitFacade.js#getVipBenefitPackages"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.benefit.BenefitFacade#getBenefitPackageAllBuyDetail",
+    "JsonApi": "/wscvis/benefit/getBenefitPackageAllBuyDetail.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/benefit.js",
+    "Controller": "/app/controllers/knowledge/blocks/BenefitController.js#getBenefitPackageAllBuyDetailJson",
+    "Service": "/app/services/owl/benefit/BenefitFacade.js#getBenefitPackageAllBuyDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/getWeappConfig.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/default.js",
+    "Controller": "/app/controllers/base/BaseController.js#getWeappConfigJson",
+    "Service": "/app/services/base/BaseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getIsPaid.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/column-entry-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getIsPaidJson",
+    "Service": "/app/services/owl/api/ColumnService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getFreeContentAndLive.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/column-free-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getFreeContentAndLiveJson",
+    "Service": "/app/services/owl/api/ColumnService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#queryDirectoryList",
+    "JsonApi": "/wscvis/knowledge/getColumnChapters.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/column-catalogue-block/api.js",
+      "/client/pages/course/detail/blocks/main/column-entry-block/column-catalogue/api.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getColumnChaptersJson",
+    "Service": "/app/services/api/owl/api/DirectoryFacade.js#queryDirectoryList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientContentFacade#findPageContentWithLive",
+    "JsonApi": "/wscvis/knowledge/contentAndLive.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/column-catalogue-block/api.js",
+      "/client/pages/course/detail/blocks/main/column-entry-block/column-catalogue/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getContentAndLiveJson",
+    "Service": "/app/services/api/owl/api/ClientContentFacade.js#findPageContentWithLive"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#getNextOwlInfo",
+    "JsonApi": "/wscvis/knowledge/nextOwl.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getNextOwlInfoJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#getNextOwlInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/column.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getColumnJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientColumnFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/columns.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getColumnsJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientColumnFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#getNextOwlInfo",
+    "JsonApi": "/wscvis/knowledge/columns.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getPaidColumnsJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#getNextOwlInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#getNextOwlInfo",
+    "JsonApi": "/wscvis/knowledge/paidcolumns.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ColumnController.js#getPaidColumnsJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#getNextOwlInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/contents.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getContentsJson",
+    "Service": "/app/services/knowledge/ContentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientContentFacade#findPageByCondition",
+    "JsonApi": "/wscvis/knowledge/contents.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getPaidContentsJson",
+    "Service": "/app/services/api/owl/api/ClientContentFacade.js#findPageByCondition"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/content.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getContentJson",
+    "Service": "/app/services/knowledge/ContentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/contentsAndLives.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getContentsAndLivesJson",
+    "Service": "/app/services/knowledge/ContentService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientContentFacade#findPageByCondition",
+    "JsonApi": "/wscvis/knowledge/paidcontents.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getPaidContentsJson",
+    "Service": "/app/services/api/owl/api/ClientContentFacade.js#findPageByCondition"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientContentFacade#findPageByCondition",
+    "JsonApi": "/wscvis/knowledge/contentList.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getContentListJson",
+    "Service": "/app/services/api/owl/api/ClientContentFacade.js#findPageByCondition"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/contentList.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/MyPayController.js#ourse",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/contentList.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/MyPayController.js#getContentList",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientContentFacade#getContentAggregateDetail",
+    "JsonApi": "/wscvis/knowledge/contentDetail.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getContentDetail",
+    "Service": "/app/services/api/owl/api/ClientContentFacade.js#getContentAggregateDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.pc.api.onlinecourse.ContentFacade#getDetailByAlias",
+    "JsonApi": "/wscvis/knowledge/getDetailByAlias.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getDetailByAlias",
+    "Service": "/app/services/owl/pc/onlinecourse/ContentFacade.js#getDetailByAlias"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.attributeitem.OnlineCourseAttributeFacade#submitAttributes",
+    "JsonApi": "/wscvis/knowledge/submitCollectInfo.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#submitCollectInfo",
+    "Service": "/app/services/owl/api/OnlineCourseAttributeService.js#submitAttributes"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#updateEnable",
+    "JsonApi": "/wscvis/knowledge/getLiveNewsByPage.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getLiveNewsByPage",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#updateEnable"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#updateEnable",
+    "JsonApi": "/wscvis/knowledge/relectorUpdateEnable.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getReLectorJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#updateEnable"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#getLectorUser",
+    "JsonApi": "/wscvis/knowledge/getLectorUser.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getLectorUserJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#getLectorUser"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#getLectorUserByWxUidV2",
+    "JsonApi": "/wscvis/knowledge/getLectorUserByWxUidV2.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getLectorUserByWxUidV2",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#getLectorUserByWxUidV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#getInviteLecturerQr",
+    "JsonApi": "/wscvis/knowledge/inviteLecturer.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getInviteLecturerCentreJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#getInviteLecturerQr"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#getInviteLecturerQr",
+    "JsonApi": "/wscvis/knowledge/getInviteLecturerQr.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getInviteLecturerCodeJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#getInviteLecturerQr"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#updateUserInfo",
+    "JsonApi": "/wscvis/knowledge/updateUserInfo.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#updateUserInfo",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#updateUserInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#getLiveDetail",
+    "JsonApi": "/wscvis/knowledge/live.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getLiveJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#getLiveDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#findPageForWym",
+    "JsonApi": "/wscvis/knowledge/wxMediaDownLoadAsyn.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getMediaUploadJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#findPageForWym"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#findPageForWym",
+    "JsonApi": "/wscvis/knowledge/highWxMediaDownLoadAsyn.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getHighMediaUploadJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#findPageForWym"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#findPageForWym",
+    "JsonApi": "/wscvis/knowledge/lives.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getLivesJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.js#findPageForWym"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.LiveVideoFacade#getLiveLink",
+    "JsonApi": "/wscvis/knowledge/getLiveLink.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/parser/activity-parser/default/buttons/live.js",
+      "/client/pages/course/live/waiting/api.js",
+      "/client/pages/course/pc-detail/modules/navigation/live.ts",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/LiveController.js#getLiveLink",
+    "Service": "/app/services/api/owl/api/LiveVideoFacade.js#getLiveLink"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/buildZanSet.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/parser/activity-parser/collect-zan/buttons/api.js",
+      "/client/pages/edu/api/index.js",
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/ump/CollectZanController.js#getBuildZanSetJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/zanSetDetail.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/ump/CollectZanController.js#getZanSetDetailJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/givingZan.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/ump/CollectZanController.js#getGivingZanJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/vipBenefit.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/VipBenefitController.js#getVipBenefitJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/benefitPkgColumns.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/VipBenefitController.js#getBenefitPkgColumnsJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/benefitPkgContents.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/VipBenefitController.js#getBenefitPkgContentsJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/subscriptionBenefitPkg.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/VipBenefitController.js#getSubscriptionBenefitPkgJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/benefitPkgWithCount.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/VipBenefitController.js#getBenefitPkgWithCountJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getGiftDetail.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GiftController.js#getGiftDetail",
+    "Service": "/app/services/owl/ump/giftshare/GiftShareFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getGiftShareContent.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GiftController.js#getGiftShareContent",
+    "Service": "/app/services/owl/ump/giftshare/GiftShareFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/receive.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/top/gift-receive-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GiftController.js#receive",
+    "Service": "/app/services/owl/ump/giftshare/GiftShareFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getGiftShareRankInfo.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/top/gift-receive-block/components/rank-list/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GiftController.js#getGiftShareRankInfo",
+    "Service": "/app/services/owl/ump/giftshare/GiftShareFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getShareAlias.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/base-info-block/components/info/knowledge-info/gift/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GiftController.js#getShareAlias",
+    "Service": "/app/services/owl/ump/giftshare/GiftShareFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/groupByAlias.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GrouponController.js#getGroupByAliasJson",
+    "Service": "/app/services/knowledge/blocks/GrouponService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/goodsPromotion.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GrouponController.js#getGoodsPromotionJson",
+    "Service": "/app/services/knowledge/blocks/GrouponService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/activityInfos.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/ActivityController.js#getActivityInfosJson",
+    "Service": "/app/services/knowledge/blocks/ActivityService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getActivityInfos.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/ActivityController.js#getActivityJson",
+    "Service": "/app/services/owl/ump/core/ActivityService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/newActivityInfos.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/ActivityController.js#getNewActivityInfosJson",
+    "Service": "/app/services/owl/ump/core/ActivityService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/distributor.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/SalesmanController.js#postRegisterJson",
+    "Service": "/app/services/owl/ump/salesman/SalesmanService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/distributor.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/FxController.js#postDistributor",
+    "Service": "/app/services/owl/ump/salesman/SalesmanService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/distributor.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/SalesmanController.js#postRegisterJson",
+    "Service": "/app/services/owl/ump/salesman/SalesmanService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/distributor.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/FxController.js#postDistributor",
+    "Service": "/app/services/owl/ump/salesman/SalesmanService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/register.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/share-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/SalesmanController.js#postRegisterJson",
+    "Service": "/app/services/owl/ump/salesman/SalesmanService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.CommentService#addComment",
+    "JsonApi": "/wscvis/knowledge/comment/add.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/CommentController.js#postAddJson",
+    "Service": "/app/services/knowledge/blocks/CommentService.js#addComment"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.CommentService#deleteCommentByKdtIdAndAliasAndCommentId",
+    "JsonApi": "/wscvis/knowledge/comment/delete.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/comment-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/CommentController.js#postDeleteJson",
+    "Service": "/app/services/knowledge/blocks/CommentService.js#deleteCommentByKdtIdAndAliasAndCommentId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.CommentService#getCommentListByKdtIdAndAlias",
+    "JsonApi": "/wscvis/knowledge/comment/list.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/comment-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/CommentController.js#getListJson",
+    "Service": "/app/services/knowledge/blocks/CommentService.js#getCommentListByKdtIdAndAlias"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.CommentService#getCommentListByKdtIdAndAliasAndUserId",
+    "JsonApi": "/wscvis/knowledge/comment/list.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/comment-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/CommentController.js#getUserlistJson",
+    "Service": "/app/services/knowledge/blocks/CommentService.js#getCommentListByKdtIdAndAliasAndUserId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.CommentService#getCommentListByKdtIdAndAliasAndUserId",
+    "JsonApi": "/wscvis/knowledge/comment/userlist.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/CommentController.js#getUserlistJson",
+    "Service": "/app/services/knowledge/blocks/CommentService.js#getCommentListByKdtIdAndAliasAndUserId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.CommentService#praiseCommentOrCancelByKdtIdAndAliasAndCommentId",
+    "JsonApi": "/wscvis/knowledge/comment/praise.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/comment-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/CommentController.js#postPraiseJson",
+    "Service": "/app/services/knowledge/blocks/CommentService.js#praiseCommentOrCancelByKdtIdAndAliasAndCommentId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/goodsrecommend/recommend.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/recommends-goods-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GoodsRecommendController.js#findRecommend",
+    "Service": "/app/services/knowledge/blocks/GoodsRecommendService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#createQrCode",
+    "JsonApi": "/wscvis/knowledge/qrcode.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/top/preview-qrcode-block/api.js",
+      "/client/pages/edu/api/index.js",
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/edu/edu.js",
+    "Controller": "/app/controllers/common/QRController.js#getQrcodeJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#createQrCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#createQrCode",
+    "JsonApi": "/wscvis/knowledge/qrcode.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/top/preview-qrcode-block/api.js",
+      "/client/pages/edu/api/index.js",
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/common/QRController.js#getQrcodeJson",
+    "Service": "/app/services/api/owl/biz/OwlCommonService.js#createQrCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/refferal.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/RefferalController.js#getRefferalInfoJson",
+    "Service": "/app/services/knowledge/blocks/RefferalService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/accountBussinessNumber.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/RefferalController.js#getAccountBusinessNumberJson",
+    "Service": "/app/services/owl/ump/assets/AssetsAdapterFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getFindRelatedImg.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/FxPosterController.js#getFindRelatedImgJson",
+    "Service": "/app/services/knowledge/FxPosterService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getPosterImgList.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/FxPosterController.js#getPosterImgListJson",
+    "Service": "/app/services/owl/ump/relatedimage/RelatedImageCustomFacade.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.MpService#checkMpFollow",
+    "JsonApi": "/wscvis/knowledge/utils/skynetlog.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/trade/paid-content-order/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/UtilsController.js#postSkynetJson",
+    "Service": "/app/services/owl/api/MpService.js#checkMpFollow"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.MpService#checkMpFollow",
+    "JsonApi": "/wscvis/knowledge/utils/skynetErrorlog.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/UtilsController.js#postSkynetErrorJson",
+    "Service": "/app/services/owl/api/MpService.js#checkMpFollow"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.MpService#checkMpFollow",
+    "JsonApi": "/wscvis/knowledge/utils/wxFollowStatus.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/top/column-update-notice-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/UtilsController.js#getWxFollowStatusJson",
+    "Service": "/app/services/owl/api/MpService.js#checkMpFollow"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.common.ExistenceCheckFacade#checkExist",
+    "JsonApi": "/wscvis/knowledge/mypay/checkExist.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/MyPayController.js#checkExist",
+    "Service": "/app/services/owl/api/common/ExistenceCheckFacade.js#checkExist"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getGrouponDetail.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GrouponController.js#getGrouponDetailJson",
+    "Service": "/app/services/owl/ump/groupon/GrouponService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getGroupOnJoinRecordByPage.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/GrouponController.js#getGroupOnJoinRecordByPageJson",
+    "Service": "/app/services/ump/goods/details/GroupOnService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/findSubsColumnList.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/MyPayController.js#findSubsColumnList",
+    "Service": "/app/services/knowledge/blocks/SubscriptionService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/findSubsContentAndLiveList.json",
+    "Navigator": [],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/MyPayController.js#findSubsContentAndLiveList",
+    "Service": "/app/services/knowledge/blocks/SubscriptionService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/getVipUserAllBenefitPkg.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/MyPayController.js#getVipUserAllBenefitPkg",
+    "Service": "/app/services/knowledge/blocks/VipBenefitService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/user/contentList.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/MyPayController.js#ourse",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/user/contentList.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/blocks/MyPayController.js#getContentList",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.product.ClientEduProductFacade#getDetail",
+    "JsonApi": "/wscvis/course/getDetail.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/supv/examination/apis/index.ts",
+      "/client/pages/trade/paid-content-order/api/index.js",
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/IndexController.js#getDetail",
+    "Service": "/app/services/owl/client/product/ClientEduProductFacade.js#getDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.product.ClientEduProductFacade#getSimple",
+    "JsonApi": "/wscvis/course/getSimple.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/column-catalogue-block/api.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/paid-content/knowledge.js",
+    "Controller": "/app/controllers/knowledge/IndexController.js#getSimple",
+    "Service": "/app/services/owl/client/product/ClientEduProductFacade.js#getSimple"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/pay/getSalemanUpgradeResult.json",
+    "Navigator": [],
+    "Router": "/app/routers/pay/saleman.js",
+    "Controller": "/app/controllers/pay/SalemanController.js#queryUpgradeResult",
+    "Service": "/app/services/pay/user/SalemanService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/exam/submitAnswer.json",
+    "Navigator": [
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/supv/exam/exam.js",
+    "Controller": "/app/controllers/supv/exam/ExamController.js#submitAnswerJson",
+    "Service": "/app/services/exam/ExamService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/exam/joinExam.json",
+    "Navigator": [
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/supv/exam/exam.js",
+    "Controller": "/app/controllers/supv/exam/ExamController.js#joinExamJson",
+    "Service": "/app/services/exam/ExamService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/exam/getExamDetail.json",
+    "Navigator": [
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/supv/exam/exam.js",
+    "Controller": "/app/controllers/supv/exam/ExamController.js#getExamDetailJson",
+    "Service": "/app/services/exam/ExamService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/exam/getQuestionList.json",
+    "Navigator": [
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/supv/exam/exam.js",
+    "Controller": "/app/controllers/supv/exam/ExamController.js#getQuestionListJson",
+    "Service": "/app/services/exam/ExamService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/exam/getExamRecord.json",
+    "Navigator": [
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/supv/exam/exam.js",
+    "Controller": "/app/controllers/supv/exam/ExamController.js#getExamRecordJson",
+    "Service": "/app/services/exam/ExamService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/exam/getShare.json",
+    "Navigator": [
+      "/client/pages/supv/exam/api/index.js"
+    ],
+    "Router": "/app/routers/supv/exam/exam.js",
+    "Controller": "/app/controllers/supv/exam/ExamController.js#getShareJson",
+    "Service": "/app/services/exam/ExamService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#start",
+    "JsonApi": "/wscvis/supv/examination/startExam.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#startExam",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#start"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#getLatestQuestion",
+    "JsonApi": "/wscvis/supv/examination/getLatestQuestion.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getLatestQuestion",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#getLatestQuestion"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#getPrevQuestion",
+    "JsonApi": "/wscvis/supv/examination/getPrevQuestion.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getPrevQuestion",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#getPrevQuestion"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#getNextQuestion",
+    "JsonApi": "/wscvis/supv/examination/getNextQuestion.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getNextQuestion",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#getNextQuestion"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#getQuestion",
+    "JsonApi": "/wscvis/supv/examination/getQuestion.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getQuestion",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#getQuestion"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#getAnswerCard",
+    "JsonApi": "/wscvis/supv/examination/getAnswerCard.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getAnswerCard",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#getAnswerCard"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#getResult",
+    "JsonApi": "/wscvis/supv/examination/getResult.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getResult",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#getResult"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#answerQuestion",
+    "JsonApi": "/wscvis/supv/examination/answerQuestion.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#answerQuestion",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#answerQuestion"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#submit",
+    "JsonApi": "/wscvis/supv/examination/submit.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#submit",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#submit"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#getDetail",
+    "JsonApi": "/wscvis/supv/examination/getDetail.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getDetail",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#getDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.CourseExamFacade#findProductByExam",
+    "JsonApi": "/wscvis/supv/examination/getRecommendList.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getRecommendList",
+    "Service": "/app/services/owl/client/edu/exam/CourseExamFacade.js#findProductByExam"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#findByUser",
+    "JsonApi": "/wscvis/supv/examination/getUserExamList.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getUserExamList",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#findByUser"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#findByUser",
+    "JsonApi": "/wscvis/supv/examination/getUserExam.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getUserExam",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#findByUser"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.CourseExamFacade#findPageByQuery",
+    "JsonApi": "/wscvis/supv/examination/getCourseExamList.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getCourseExamList",
+    "Service": "/app/services/owl/client/edu/exam/CourseExamFacade.js#findPageByQuery"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.CourseExamFacade#getLatestExamByProduceAlias",
+    "JsonApi": "/wscvis/supv/examination/getCourseExam.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getCourseExam",
+    "Service": "/app/services/owl/client/edu/exam/CourseExamFacade.js#getLatestExamByProduceAlias"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#findJoinExamStudentsByUserId",
+    "JsonApi": "/wscvis/supv/examination/getStudentList.json",
+    "Navigator": [
+      "/client/pages/supv/examination/apis/index.ts"
+    ],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#getStudentList",
+    "Service": "/app/services/owl/client/edu/student/StudentFacade.js#findJoinExamStudentsByUserId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exam.UserExamFacade#start",
+    "JsonApi": "/wscvis/supv/examination/getInGray.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/examination/index.ts",
+    "Controller": "/app/controllers/supv/examination/ApiController.js#isInGray",
+    "Service": "/app/services/owl/client/edu/exam/UserExamFacade.js#start"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findAssignmentExchangePage",
+    "JsonApi": "/wscvis/supv/homework/findAssignmentExchangePage.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#findAssignmentExchangePage",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#findAssignmentExchangePage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#submitAssignmentV2",
+    "JsonApi": "/wscvis/supv/homework/submitAssignment.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#submitAssignment",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#submitAssignmentV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#shareHomework",
+    "JsonApi": "/wscvis/supv/homework/shareHomework.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#shareHomework",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#shareHomework"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getHomeworkDetail",
+    "JsonApi": "/wscvis/supv/homework/getHomeworkDetail.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#getHomeworkDetail",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#getHomeworkDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#joinExerciseBook",
+    "JsonApi": "/wscvis/supv/homework/joinExerciseBook.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#joinExerciseBook",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#joinExerciseBook"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getUserExercise",
+    "JsonApi": "/wscvis/supv/homework/getUserExercise.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#getUserExercise",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#getUserExercise"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getStudentAssignment",
+    "JsonApi": "/wscvis/supv/homework/getStudentAssignment.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#getStudentAssignment",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#getStudentAssignment"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findUserExercisePage",
+    "JsonApi": "/wscvis/supv/homework/findUserExercisePage.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#findUserExercisePage",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#findUserExercisePage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findUserAssignmentPage",
+    "JsonApi": "/wscvis/supv/homework/findUserAssignmentPage.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#findUserAssignmentPage",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#findUserAssignmentPage"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findOtherStudentInfo",
+    "JsonApi": "/wscvis/supv/homework/findOtherStudentInfo.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/homework/index.ts",
+    "Controller": "/app/controllers/supv/homework/ApiController.js#findOtherStudentInfo",
+    "Service": "/app/services/api/owl/api/UserExerciseFacade.js#findOtherStudentInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getSharePoster.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/IndexController.js#getSharePoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getTaskDetail.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/TaskController.js#getTaskDetail",
+    "Service": "/app/services/punch/TaskService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getShareCardInfo.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/TaskController.js#getShareCardInfo",
+    "Service": "/app/services/punch/TaskService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/generateUser.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#generateUser",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getTaskContent.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/TaskController.js#getTaskContent",
+    "Service": "/app/services/punch/TaskService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getTaskContentByDate.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/TaskController.js#getTaskContentByDate",
+    "Service": "/app/services/punch/TaskService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getDiaryList.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#getDiaryList",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getDiary.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#getDiary",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getMyGciLog.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#getMyGciLog",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/postUpdatePunchData.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#postUpdatePunchData",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getLikeList.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#getLikeList",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/postLike.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#postLike",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/postCancelLike.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#postCancelLike",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/postComment.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#postComment",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/postCommentOnDiary.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#postCommentOnDiary",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/deleteComment.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#deleteComment",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getStudentsComments.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#getStudentsComments",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getTeacherComments.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/DiaryController.js#getTeacherComments",
+    "Service": "/app/services/punch/DiaryService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getBoughtList.json",
+    "Navigator": [
+      "/client/pages/paid-content/containers/my-pay/apis.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getBoughtList",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getFeatureList.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getFeatureList",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/uploadMaterialToken.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#uploadMaterialToken",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getSupportPunches.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/group-sign-block/api.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getSupportPunches",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getSupportPunch.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/group-sign-block/api.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getSupportPunch",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getPunchDetailByAlias.json",
+    "Navigator": [],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getPunchDetailByAlias",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getIntroDesc.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getIntroDesc",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getColumn.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getColumn",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/postValidatePassword.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#postValidatePassword",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/postAddPunchData.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#postAddPunchData",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/getCalenderDetail.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/index.js"
+    ],
+    "Router": "/app/routers/supv/punch/index.js",
+    "Controller": "/app/controllers/supv/punch/PunchController.js#getCalenderDetail",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/list/getAllPunchList.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/list.js"
+    ],
+    "Router": "/app/routers/supv/punch/list.js",
+    "Controller": "/app/controllers/`supv/punch/ListController`.js#getAllPunchList",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/rank/getPersonRank.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/rank.js"
+    ],
+    "Router": "/app/routers/supv/punch/rank.js",
+    "Controller": "/app/controllers/supv/punch/RankController.js#getPersonRank",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/supv/punch/rank/getRankList.json",
+    "Navigator": [
+      "/client/pages/supv/punch/apis/rank.js"
+    ],
+    "Router": "/app/routers/supv/punch/rank.js",
+    "Controller": "/app/controllers/supv/punch/RankController.js#getRankList",
+    "Service": "/app/services/punch/PunchService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#cache",
+    "JsonApi": "/wscvis/trade/bookKey.json",
+    "Navigator": [],
+    "Router": "/app/routers/trade/biz.ts",
+    "Controller": "/app/controllers/trade/TradeBizController.js#postCacheJson",
+    "Service": "/app/services/api/owl/api/TradeOrderFacade.js#cache"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#create",
+    "JsonApi": "/wscvis/trade/create.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/trade/biz.ts",
+    "Controller": "/app/controllers/trade/TradeBuyController.js#postCreateJson",
+    "Service": "/app/services/api/owl/api/TradeOrderFacade.js#create"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#confirm",
+    "JsonApi": "/pay/wscvis_buy/confirm.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js",
+      "/client/pages/trade/buy/api/index.js"
+    ],
+    "Router": "/app/routers/trade/buy.ts",
+    "Controller": "/app/controllers/trade/TradeBuyController.js#postConfirmJson",
+    "Service": "/app/services/api/owl/api/TradeOrderFacade.js#confirm"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#create",
+    "JsonApi": "/pay/wscvis_buy/create.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js",
+      "/client/pages/trade/buy/api/index.js"
+    ],
+    "Router": "/app/routers/trade/buy.ts",
+    "Controller": "/app/controllers/trade/TradeBuyController.js#postCreateJson",
+    "Service": "/app/services/api/owl/api/TradeOrderFacade.js#create"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#confirm",
+    "JsonApi": "/pay/wscvis_buy/info.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "Router": "/app/routers/trade/buy.ts",
+    "Controller": "/app/controllers/trade/TradeBuyController.js#getTradeOrderJson",
+    "Service": "/app/services/api/owl/api/TradeOrderFacade.js#confirm"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#findByTradeStudentQuery",
+    "JsonApi": "/pay/wscvis_trade/edu/student/list.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js",
+      "/client/pages/trade/buy/api/index.js"
+    ],
+    "Router": "/app/routers/trade/common.ts",
+    "Controller": "/app/controllers/edu/StudentFacadeController.js#getFindByTradeStudentQueryJson",
+    "Service": "/app/services/api/owl/api/StudentFacade.js#findByTradeStudentQuery"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/pay/wscvis_trade/edu/address/list.json",
+    "Navigator": [
+      "/client/pages/trade/buy/api/index.js"
+    ],
+    "Router": "/app/routers/trade/common.ts",
+    "Controller": "/app/controllers/edu/CourseController.js#getAddressList",
+    "Service": "/app/services/edu/CourseService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.onlinecourse.ClientCourseCommonFacade#findSimpleCourseList",
+    "JsonApi": "/pay/wscvis_trade/course/list.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js",
+      "/client/pages/trade/buy/api/index.js"
+    ],
+    "Router": "/app/routers/trade/common.ts",
+    "Controller": "/app/controllers/common/ProductCommonController.js#findSimpleCourseListJson",
+    "Service": "/app/services/owl/client/onlinecourse/ClientCourseCommonFacade.js#findSimpleCourseList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/pay/wscvis_trade/course/live.json",
+    "Navigator": [
+      "/client/pages/trade/buy/api/index.js"
+    ],
+    "Router": "/app/routers/trade/common.ts",
+    "Controller": "/app/controllers/course/detail/DetailController.js#getLiveJson",
+    "Service": "/app/services/.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#confirm",
+    "JsonApi": "/pay/wscvis_ptc_pay/confirm.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js",
+      "/client/pages/trade/paid-content-order/api/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/OrderController.js#confirm",
+    "Service": "/app/services/owl/trade/TradeOrderService.js#confirm"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#create",
+    "JsonApi": "/pay/wscvis_ptc_pay/create.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js",
+      "/client/pages/trade/paid-content-order/api/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/OrderController.js#create",
+    "Service": "/app/services/owl/trade/TradeOrderService.js#create"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#getBuyerInfoFromUserCenter",
+    "JsonApi": "/pay/wscvis_ptc_pay/buyerInfo.json",
+    "Navigator": [
+      "/client/pages/trade/paid-content-order/api/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/OrderController.js#buyerInfo",
+    "Service": "/app/services/owl/api/SubscriptionService.js#getBuyerInfoFromUserCenter"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.edu.api.course.TradeFacade#rewardCourse",
+    "JsonApi": "/wscvis/knowledge/anonymous/course/postRewardCourse.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/CourseController.js#postRewardCourseJson",
+    "Service": "/app/services/owl/edu/course/TradeFacade.js#rewardCourse"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#confirm",
+    "JsonApi": "/wscvis/order/confirm.json",
+    "Navigator": [
+      "/client/pages/edu/family-account/invite/api.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/OrderController.js#confirm",
+    "Service": "/app/services/owl/trade/TradeOrderService.js#confirm"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#create",
+    "JsonApi": "/wscvis/order/create.json",
+    "Navigator": [
+      "/client/pages/edu/appointment/api/index.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/OrderController.js#create",
+    "Service": "/app/services/owl/trade/TradeOrderService.js#create"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.TradeOrderFacade#hasPay",
+    "JsonApi": "/wscvis/order/hasPay.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/OrderController.js#hasPay",
+    "Service": "/app/services/owl/trade/TradeOrderService.js#hasPay"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayGoodsRecommendInfo",
+    "JsonApi": "/wscvis/order/getPaySuccessInfo.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/OrderController.js#getPaySuccessInfo",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryPayGoodsRecommendInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayGoodsRecommendInfo",
+    "JsonApi": "/wscvis/order/getPayStateInfo.json",
+    "Navigator": [
+      "/client/pages/trade/paid-status/api.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/PaidStatusController.js#queryPayStateInfo",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryPayGoodsRecommendInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayGoodsRecommendInfo",
+    "JsonApi": "/wscvis/order/getPayRewardInfo.json",
+    "Navigator": [
+      "/client/pages/trade/paid-status/api.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/PaidStatusController.js#queryPayRewardInfo",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryPayGoodsRecommendInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayGoodsRecommendInfo",
+    "JsonApi": "/wscvis/order/getUmpInfoV2.json",
+    "Navigator": [
+      "/client/pages/trade/paid-status/api.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/PaidStatusController.js#getPaySuccessInfoV2",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryPayGoodsRecommendInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayGoodsRecommendInfo",
+    "JsonApi": "/wscvis/order/getRecommendGoods.json",
+    "Navigator": [
+      "/client/pages/supv/examination/modules/recommend/apis.ts",
+      "/client/pages/trade/paid-status/api.js",
+      "/client/pages/ump/introduction/apis/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/PaidStatusController.js#getRecommendGoods",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryPayGoodsRecommendInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryGoodsRecommendInfo",
+    "JsonApi": "/wscvis/order/getGoodsRecommendInfo.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/index.js"
+    ],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/PaidStatusController.js#getGoodsRecommendInfo",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryGoodsRecommendInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayJoinGroupSettingInfo",
+    "JsonApi": "/wscvis/order/getInWhiteList.json",
+    "Navigator": [],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/PaidStatusController.js#getInWhiteList",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryPayJoinGroupSettingInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayJoinGroupSettingInfo",
+    "JsonApi": "/wscvis/order/getJoinGroupSetting.json",
+    "Navigator": [],
+    "Router": "/app/routers/trade/order.js",
+    "Controller": "/app/controllers/trade/order/PaidStatusController.js#getJoinGroupSetting",
+    "Service": "/app/services/owl/trade/PaySuccessAggrFacade.js#queryPayJoinGroupSettingInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.activity.ActivityFacade#findActivityPosterByAlias",
+    "JsonApi": "/wscvis/ump/activity/poster.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/activity.js",
+    "Controller": "/app/controllers/ump/ActivityController.js#findActivityPosterByAlias",
+    "Service": "/app/services/owl/client/ump/activity/ActivityService.js#findActivityPosterByAlias"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/collect-zan/buildZanSet.json",
+    "Navigator": [
+      "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
+    ],
+    "Router": "/app/routers/ump/collect-zan.js",
+    "Controller": "/app/controllers/ump/CollectZanController.js#getBuildZanSetJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/collect-zan/zanSetDetail.json",
+    "Navigator": [
+      "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
+    ],
+    "Router": "/app/routers/ump/collect-zan.js",
+    "Controller": "/app/controllers/ump/CollectZanController.js#getZanSetDetailJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/collect-zan/givingZan.json",
+    "Navigator": [
+      "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
+    ],
+    "Router": "/app/routers/ump/collect-zan.js",
+    "Controller": "/app/controllers/ump/CollectZanController.js#getGivingZanJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/common/listOngoingActivity.json",
+    "Navigator": [
+      "/client/pages/ump/activity-entry/api.ts"
+    ],
+    "Router": "/app/routers/ump/common.ts",
+    "Controller": "/app/controllers/\"ump/CommonController\".js#getListOngoingActivityJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/common/getRewardByPage.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/old-student.js"
+    ],
+    "Router": "/app/routers/ump/common.ts",
+    "Controller": "/app/controllers/\"ump/CommonController\".js#getRewardByPage",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.enrollmentposter.EnrollmentPosterFacade#getById",
+    "JsonApi": "/wscvis/ump/enrollment-poster/get-by-id.json",
+    "Navigator": [
+      "/client/pages/ump/enrollment-poster/api.js"
+    ],
+    "Router": "/app/routers/ump/enrollment-poster.js",
+    "Controller": "/app/controllers/ump/EnrollmentPosterController.js#getById",
+    "Service": "/app/services/ump/enrollment-poster/EnrollmentPosterService.js#getById"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.details.api.FansBenfitService#getAutoReplyGoodsQrCode",
+    "JsonApi": "/wscvis/ump/getAutoReplyGoodsQrCode.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/base-info-block/components/fans-benefit/api.js"
+    ],
+    "Router": "/app/routers/ump/fans-benefit.js",
+    "Controller": "/app/controllers/ump/FansBenefitController.js#getAutoReplyGoodsQrCodeJson",
+    "Service": "/app/services/ump/details/FansBenfitService.js#getAutoReplyGoodsQrCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#send",
+    "JsonApi": "/wscvis/ump/goods/receiveCoupon.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "Router": "/app/routers/ump/goods.ts",
+    "Controller": "/app/controllers/ump/GoodsController.js#receiveCouponJson",
+    "Service": "/app/services/ump/goods/VoucherSendService.js#send"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#listAvlActivities",
+    "JsonApi": "/wscvis/ump/goods/getCouponList.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "Router": "/app/routers/ump/goods.ts",
+    "Controller": "/app/controllers/ump/GoodsController.js#getCouponList",
+    "Service": "/app/services/ump/goods/GoodsActivityReadService.js#listAvlActivities"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.goods.details.api.service.GroupOnRouteService#getGroupOnDetail",
+    "JsonApi": "/wscvis/ump/groupon/getGroupOnDetail.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/bottom/submit-block/components/group/api.js",
+      "/client/pages/edu/api/index.js",
+      "/client/pages/paid-content/api/index.js",
+      "/client/pages/ump/groupon/api.js"
+    ],
+    "Router": "/app/routers/ump/groupon.js",
+    "Controller": "/app/controllers/ump/GrouponController.js#getGroupOnDetail",
+    "Service": "/app/services/ump/goods/details/GroupOnRouteService.js#getGroupOnDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.goods.details.api.service.GroupOnRouteService#getJoinedGroupsByUser",
+    "JsonApi": "/wscvis/ump/groupon/getJoinedGroupsByUser.json",
+    "Navigator": [
+      "/client/pages/ump/groupon/api.js"
+    ],
+    "Router": "/app/routers/ump/groupon.js",
+    "Controller": "/app/controllers/ump/GrouponController.js#getJoinedGroupsByUser",
+    "Service": "/app/services/ump/goods/details/GroupOnRouteService.js#getJoinedGroupsByUser"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.goods.details.api.service.GroupOnRouteService#getJoinFansInfoList",
+    "JsonApi": "/wscvis/ump/groupon/getJoinFansInfoList.json",
+    "Navigator": [
+      "/client/pages/ump/groupon/api.js"
+    ],
+    "Router": "/app/routers/ump/groupon.js",
+    "Controller": "/app/controllers/ump/GrouponController.js#getJoinFansInfoList",
+    "Service": "/app/services/ump/goods/details/GroupOnRouteService.js#getJoinFansInfoList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/groupon/getGrouponPoster.json",
+    "Navigator": [
+      "/client/pages/ump/groupon/api.js"
+    ],
+    "Router": "/app/routers/ump/groupon.js",
+    "Controller": "/app/controllers/ump/PosterController.js#getGrouponPoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/poster/getIntroductionPoster.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/previous-invite-poster/invite-poster.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/PosterController.js#getIntroductionPoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getIntroductionActivity",
+    "JsonApi": "/wscvis/ump/introduction/getIntroductionActivity.json",
+    "Navigator": [
+      "/client/pages/trade/paid-status/api.js",
+      "/client/pages/ump/introduction/apis/old-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#getIntroductionActivity",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getIntroductionActivity"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getRefereeActivityDetail",
+    "JsonApi": "/wscvis/ump/introduction/getRefereeActivityDetail.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#getRefereeActivityDetail",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getRefereeActivityDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#checkActivityThreshold",
+    "JsonApi": "/wscvis/ump/introduction/checkActivityThreshold.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/old-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#checkActivityThreshold",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#checkActivityThreshold"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#findIntroduceRecord",
+    "JsonApi": "/wscvis/ump/introduction/findIntroduceRecord.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/old-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#findIntroduceRecord",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#findIntroduceRecord"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#imageAppraise",
+    "JsonApi": "/wscvis/ump/introduction/imageAppraise.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/index.js",
+      "/client/pages/ump/introduction/previous-invite-poster/invite-poster.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#imageAppraise",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#imageAppraise"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getActivityParticipatePeople",
+    "JsonApi": "/wscvis/ump/introduction/getActivityParticipatePeople.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/index.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#getActivityParticipatePeople",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getActivityParticipatePeople"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#collectZan",
+    "JsonApi": "/wscvis/ump/introduction/collectZan.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#collectZan",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#collectZan"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#refereeShareActivity",
+    "JsonApi": "/wscvis/ump/introduction/refereeShareActivity.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#refereeShareActivity",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#refereeShareActivity"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#receiveAward",
+    "JsonApi": "/wscvis/ump/introduction/receiveAward.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#receiveAward",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#receiveAward"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getIntroductionAttribute",
+    "JsonApi": "/wscvis/ump/introduction/getIntroductionAttribute.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#getIntroductionAttribute",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getIntroductionAttribute"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#sendVerifyCode",
+    "JsonApi": "/wscvis/ump/introduction/sendVerifyCode.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#sendVerifyCode",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#sendVerifyCode"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#confirmIntroductionAttributeItem",
+    "JsonApi": "/wscvis/ump/introduction/confirmIntroductionAttributeItem.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#confirmIntroductionAttributeItem",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#confirmIntroductionAttributeItem"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/poster/getBoostPoster.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/PosterController.js#getBoostPoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getOldStudentSummary",
+    "JsonApi": "/wscvis/ump/introduction/getOldStudentSummary.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/old-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#getOldStudentSummary",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getOldStudentSummary"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getCollectZanUserStatus",
+    "JsonApi": "/wscvis/ump/introduction/getCollectZanUserStatus.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/index.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#getCollectZanUserStatus",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getCollectZanUserStatus"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getUserParticipateInfo",
+    "JsonApi": "/wscvis/ump/introduction/studentIdentityCheck.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#studentIdentityCheck",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getUserParticipateInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#refererShareActivity",
+    "JsonApi": "/wscvis/ump/introduction/refererShareActivity.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/old-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#refererShareActivity",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#refererShareActivity"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.introduction.EduIntroductionFacade#getHelperList",
+    "JsonApi": "/wscvis/ump/introduction/getHelperList.json",
+    "Navigator": [
+      "/client/pages/ump/introduction/apis/new-student.js"
+    ],
+    "Router": "/app/routers/ump/introduction.js",
+    "Controller": "/app/controllers/ump/IntroductionController.js#getHelperList",
+    "Service": "/app/services/owl/client/ump/introduction/EduIntroductionFacade.js#getHelperList"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/getShareIcon.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/invite-card.js",
+    "Controller": "/app/controllers/knowledge/SalesmanController.js#getShareIconJson",
+    "Service": "/app/services/owl/ump/salesman/SalesmanService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/invite/getInvitePoster.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/invite-card.js",
+    "Controller": "/app/controllers/ump/PosterController.js#getInvitePoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.product.ClientEduProductFacade#getDistributorDetail",
+    "JsonApi": "/wscvis/ump/invite-card/getDistributorDetail.json",
+    "Navigator": [
+      "/client/pages/ump/invite-card/api.js"
+    ],
+    "Router": "/app/routers/ump/invite-card.js",
+    "Controller": "/app/controllers/ump/InviteController.js#getDistributorDetail",
+    "Service": "/app/services/owl/client/product/ClientEduProductFacade.js#getDistributorDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.buygive.BuyGiveFacade#findPresentByCondition",
+    "JsonApi": "/wscvis/ump/findPresentByCondition.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/present-block/api.js",
+      "/client/pages/ump/recieve-present/api.js"
+    ],
+    "Router": "/app/routers/ump/meet-reduce.js",
+    "Controller": "/app/controllers/ump/ActivityController.js#findPresentByCondition",
+    "Service": "/app/services/owl/client/ump/buygive/BuyGiveFacade.js#findPresentByCondition"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.buygive.BuyGiveFacade#receive",
+    "JsonApi": "/wscvis/ump/receivePresent.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/meet-reduce.js",
+    "Controller": "/app/controllers/ump/ActivityController.js#receive",
+    "Service": "/app/services/owl/client/ump/buygive/BuyGiveFacade.js#receive"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.present.PresentFacade#listPresentsByCondition",
+    "JsonApi": "/wscvis/ump/present/list-presents-by-condition.json",
+    "Navigator": [
+      "/client/pages/ump/recieve-present/api.js"
+    ],
+    "Router": "/app/routers/ump/meet-reduce.js",
+    "Controller": "/app/controllers/ump/ActivityController.js#listPresentsByCondition",
+    "Service": "/app/services/ump/present/PresentService.js#listPresentsByCondition"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.present.PresentFacade#receivePresent",
+    "JsonApi": "/wscvis/ump/present/receive-present.json",
+    "Navigator": [
+      "/client/pages/ump/recieve-present/api.js"
+    ],
+    "Router": "/app/routers/ump/meet-reduce.js",
+    "Controller": "/app/controllers/ump/ActivityController.js#receivePresent",
+    "Service": "/app/services/ump/present/PresentService.js#receivePresent"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.packagebuy.PackageBuyCustomerFacade#listActivityDetail",
+    "JsonApi": "/wscvis/ump/listActivityDetail.json",
+    "Navigator": [
+      "/client/pages/ump/package-buy/api.js"
+    ],
+    "Router": "/app/routers/ump/package-buy.js",
+    "Controller": "/app/controllers/ump/ActivityController.js#listActivityDetailJson",
+    "Service": "/app/services/owl/client/ump/packagebuy/PackageBuyCustomerFacade.js#listActivityDetail"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.packagebuy.PackageBuyCustomerFacade#getGoodsAllSku",
+    "JsonApi": "/wscvis/ump/getGoodsAllSku.json",
+    "Navigator": [
+      "/client/pages/ump/package-buy/api.js"
+    ],
+    "Router": "/app/routers/ump/package-buy.js",
+    "Controller": "/app/controllers/ump/ActivityController.js#getGoodsAllSkuJson",
+    "Service": "/app/services/owl/client/ump/packagebuy/PackageBuyCustomerFacade.js#getGoodsAllSku"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/profitInfo.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/ump/profit.js",
+    "Controller": "/app/controllers/knowledge/ProfitController.js#getProfitInfoJson",
+    "Service": "/app/services/knowledge/ProfitService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/knowledge/profitDetail.json",
+    "Navigator": [
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/ump/profit.js",
+    "Controller": "/app/controllers/knowledge/ProfitController.js#getProfitDetailJson",
+    "Service": "/app/services/knowledge/ProfitService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getRewardCarousel",
+    "JsonApi": "/wscvis/ump/referral-invite/getGetRewardCarousel.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/ReferralInviteController.js#getGetRewardCarouselJson",
+    "Service": "/app/services/api/owl/api/ReferralCustomerFacade.js#getRewardCarousel"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getDetailByGoodsAliasV2",
+    "JsonApi": "/wscvis/ump/referral-invite/getGetDetailByGoodsAlias.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/ReferralInviteController.js#getGetDetailByGoodsAliasJson",
+    "Service": "/app/services/api/owl/api/ReferralCustomerFacade.js#getDetailByGoodsAliasV2"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getRecommendGoods",
+    "JsonApi": "/wscvis/ump/referral-invite/getRecommendGoods.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/ReferralInviteController.js#getGetRecommendGoodsJson",
+    "Service": "/app/services/api/owl/api/ReferralCustomerFacade.js#getRecommendGoods"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/referral-invite/getPoster.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/PosterController.js#getRecommendGiftPoster",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/referral-invite/getPosterShareImg.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/PosterController.js#getRecommendGiftShareImg",
+    "Service": "/app/services/snap-shot/SnapShotService.js"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.product.ClientEduProductFacade#getSimpleProduct",
+    "JsonApi": "/wscvis/ump/referral-invite/getSimpleProduct.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/ReferralInviteController.js#getGetSimpleProductJson",
+    "Service": "/app/services/api/owl/api/ClientEduProductFacade.js#getSimpleProduct"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getEarningsTotal",
+    "JsonApi": "/wscvis/ump/referral-invite/getEarningsTotal.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/ReferralInviteController.js#getEarningsTotalJson",
+    "Service": "/app/services/api/owl/api/ReferralCustomerFacade.js#getEarningsTotal"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getEarningsHistory",
+    "JsonApi": "/wscvis/ump/referral-invite/getEarningsHistory.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/ReferralInviteController.js#getEarningsHistoryJson",
+    "Service": "/app/services/api/owl/api/ReferralCustomerFacade.js#getEarningsHistory"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getInvitedRecordByActivityId",
+    "JsonApi": "/wscvis/ump/referral-invite/getInviteRecord.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/referral-invite.ts",
+    "Controller": "/app/controllers/ump/ReferralInviteController.js#getInviteRecordJson",
+    "Service": "/app/services/api/owl/api/ReferralCustomerFacade.js#getInvitedRecordByActivityId"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.reward.RewardRecordFacadeV2#listCustomRewardRecord",
+    "JsonApi": "/wscvis/edu/reward/listCustomRewardRecord.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/edu/RewardController.js#listCustomRewardRecord",
+    "Service": "/app/services/owl/edu/reward/ConsumerRewardFacade.js#listCustomRewardRecord"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.reward.RewardRecordFacadeV2#redeemReward",
+    "JsonApi": "/wscvis/edu/reward/redeemReward.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/edu/RewardController.js#redeemReward",
+    "Service": "/app/services/owl/edu/reward/ConsumerRewardFacade.js#redeemReward"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.reward.RewardRecordFacadeV2#getRewardTip",
+    "JsonApi": "/wscvis/edu/reward/getRewardTip.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/edu/RewardController.js#getRewardTip",
+    "Service": "/app/services/owl/edu/reward/ConsumerRewardFacade.js#getRewardTip"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.reward.RewardRecordFacadeV2#getRewardWindow",
+    "JsonApi": "/wscvis/edu/reward/getRewardWindow.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/edu/RewardController.js#getRewardWindow",
+    "Service": "/app/services/owl/edu/reward/ConsumerRewardFacade.js#getRewardWindow"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.reward.RewardRecordFacadeV2#findCourseProductRewardActivity",
+    "JsonApi": "/wscvis/edu/reward/findCourseProductRewardActivity.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/edu/RewardController.js#findCourseProductRewardActivity",
+    "Service": "/app/services/owl/edu/reward/ConsumerRewardFacade.js#findCourseProductRewardActivity"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.course.CourseFacade#getCourseTimeAddrByAlias",
+    "JsonApi": "/wscvis/edu/reward/getCourseTimeAddrByAlias.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseTimeAddrByAlias",
+    "Service": "/app/services/owl/edu/course/CourseFacade.js#getCourseTimeAddrByAlias"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.edu.course.CourseFacade#getCourseTimeAddr",
+    "JsonApi": "/wscvis/edu/reward/getCourseTimeAddr.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/edu/CourseController.js#getCourseTimeAddr",
+    "Service": "/app/services/owl/edu/course/CourseFacade.js#getCourseTimeAddr"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.client.attributeitem.OnlineCourseAttributeFacade#findProductCollectInfo",
+    "JsonApi": "/wscvis/edu/reward/getKnowledgeByAlias.json",
+    "Navigator": [],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getKnowledgeByAlias",
+    "Service": "/app/services/owl/api/OnlineCourseAttributeService.js#findProductCollectInfo"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.api.reward.ActivityRewardFacade#reward",
+    "JsonApi": "/wscvis/edu/reward/getKnowledgeReward.json",
+    "Navigator": [
+      "/client/pages/edu/get-course/mixin/knowledge-mixin.js"
+    ],
+    "Router": "/app/routers/ump/reward.js",
+    "Controller": "/app/controllers/knowledge/ContentController.js#getKnowledgeReward",
+    "Service": "/app/services/owl/api/ActivityRewardService.js#reward"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.owl.ump.api.seckill.SeckillFacade#getActivity",
+    "JsonApi": "/wscvis/seckill/info.json",
+    "Navigator": [
+      "/client/pages/edu/api/index.js",
+      "/client/pages/edu/appointment/api/index.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/ump/seckill.js",
+    "Controller": "/app/controllers/ump/SeckillController.js#getInfo",
+    "Service": "/app/services/owl/ump/seckill/SeckillFacade.js#getActivity"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "com.youzan.ump.marketing.seckill.service.SeckillPromotionService#remind",
+    "JsonApi": "/wscvis/seckill/appointment.json",
+    "Navigator": [
+      "/client/pages/course/detail/store/parser/activity-parser/seckill/buttons/api.js",
+      "/client/pages/edu/api/index.js",
+      "/client/pages/paid-content/api/index.js"
+    ],
+    "Router": "/app/routers/ump/seckill.js",
+    "Controller": "/app/controllers/ump/SeckillController.js#appointment",
+    "Service": "/app/services/ump/marketing/seckill/SeckillPromotionService.js#remind"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/collectZan.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#postCollectZanJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/getDetail.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#getGetDetailJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/listLatestRollingText.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#getListLatestRollingTextJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/participate.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#postParticipateJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/listHelperPaged.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#getListHelperPagedJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/listGoodsPaged.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#getListGoodsPagedJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/listAttributeByIdList.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#getListAttributeByIdListJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/getUserHelpStatus.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#getGetUserHelpStatusJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/findGoodsByPage.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#getFindGoodsByPageJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "",
+    "JsonApi": "/wscvis/ump/tuition/sendVerifyCode.json",
+    "Navigator": [
+      "/client/pages/ump/tuition/api.ts"
+    ],
+    "Router": "/app/routers/ump/tuition.ts",
+    "Controller": "/app/controllers/\"ump/TuitionController\".js#postSendVerifyCodeJson",
+    "Service": ""
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#recordUserGoods",
+    "JsonApi": "/wscvis/ump/wecom-fans-benefit/recordUserGoods.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
+    ],
+    "Router": "/app/routers/ump/wecom-fans-benefit.ts",
+    "Controller": "/app/controllers/ump/WecomFansBenefitController.js#postRecordUserGoodsJson",
+    "Service": "/app/services/api/wecom/ump/FansBenefitCommandService.js#recordUserGoods"
+  },
+  {
+    "AppName": "wsc-h5-vis",
+    "JavaApi": "#getPlatformOauthUrl",
+    "JsonApi": "/wscvis/ump/wecom-fans-benefit/checkUnionId.json",
+    "Navigator": [
+      "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
+    ],
+    "Router": "/app/routers/ump/wecom-fans-benefit.ts",
+    "Controller": "/app/controllers/ump/WecomFansBenefitController.js#checkUnionId",
+    "Service": "/app/services/api/uic/acl/OmniChannelService.js#getPlatformOauthUrl"
+  }
+]
