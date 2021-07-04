@@ -3,24 +3,17 @@ import {
   ThemeProvider,
   Button,
   Card,
-  List,
-  ListItem,
-  ListItemText,
-  Grid,
   TextField,
   Box,
   Switch,
   FormControlLabel,
-  InputAdornment,
-  IconButton,
-  Icon,
   Paper,
-  InputBase,
   Typography,
   Tooltip
 } from '@material-ui/core'
 import { WSC_PC_VIS_NAV } from "./constants"
 import { useState, useEffect } from 'react'
+import "./index.scss"
 
 const theme = createMuiTheme({
   palette: {
@@ -184,7 +177,7 @@ const SearchList = () => {
     if (
       val.indexOf(".json") === -1 &&
       val.indexOf("com.youzan") !== -1 &&
-      val.indexOf("#") == -1
+      val.indexOf("#") === -1
     ) {
       const lastDot = val.lastIndexOf(".");
       val = val.substring(0, lastDot) + "#" + val.substring(lastDot + 1);
