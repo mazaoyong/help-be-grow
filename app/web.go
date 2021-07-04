@@ -84,12 +84,8 @@ func getSearchResult(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fs := http.FileServer(http.Dir("app/dist"))
-	http.Handle("/public/", http.StripPrefix("/public/", fs))
-	http.HandleFunc("/", templates)
+	fs := http.FileServer(http.Dir("client/build"))
+	http.Handle("/", fs)
 	http.HandleFunc("/getSearchResult", getSearchResult)
 	http.ListenAndServe(":8301", nil)
-	// fs := http.FileServer(http.Dir("./build"))
-	// http.Handle("/", fs)
-	// http.ListenAndServe(":7777", nil)
 }
