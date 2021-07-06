@@ -1,5 +1,8 @@
 .idea
 client/node_modules/
 core/node_modules/
+node_modules/
+app/static-project/
+static-project/
 .vscode/
 .web
