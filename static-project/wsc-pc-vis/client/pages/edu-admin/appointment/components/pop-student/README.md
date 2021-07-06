@@ -1,8 +1,0 @@
----
-- title: 学员选择pop（已废弃）
-- owner:
-  - 无
-- description: 学员选择pop（已废弃）
-- cover:
-- tag:
----

@@ -1,9 +1,0 @@
----
-- title: 旧的预约弹窗（已废弃）
-- owner:
-  - 无
-- description:
-- cover:
-- tag:
-  - deprecated
----

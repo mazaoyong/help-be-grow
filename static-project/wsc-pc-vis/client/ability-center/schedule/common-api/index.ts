@@ -1,1 +1,0 @@
-export { getCourseSchedule } from './schedule';

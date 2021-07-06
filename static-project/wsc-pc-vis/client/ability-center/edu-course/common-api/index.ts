@@ -1,1 +1,0 @@
-export { getCourseRecord } from './course';

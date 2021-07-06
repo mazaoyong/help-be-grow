@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/微页面</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icon/微页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M15,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L14,3 C14.5522847,3 15,3.44771525 15,4 L15,6 Z M15,7 L15,14 C15,14.5522847 14.5522847,15 14,15 L4,15 C3.44771525,15 3,14.5522847 3,14 L3,7 L15,7 Z M4.5,5 C4.77614237,5 5,4.77614237 5,4.5 C5,4.22385763 4.77614237,4 4.5,4 C4.22385763,4 4,4.22385763 4,4.5 C4,4.77614237 4.22385763,5 4.5,5 Z M6.5,5 C6.77614237,5 7,4.77614237 7,4.5 C7,4.22385763 6.77614237,4 6.5,4 C6.22385763,4 6,4.22385763 6,4.5 C6,4.77614237 6.22385763,5 6.5,5 Z M5,9 L5,10 L10,10 L10,9 L5,9 Z M5,12 L5,13 L7,13 L7,12 L5,12 Z" id="Combined-Shape" fill="#155BD4" fill-rule="nonzero"></path>
-    </g>
-</svg>

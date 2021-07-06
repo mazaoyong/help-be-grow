@@ -1,9 +1,0 @@
----
-- title: 拖拽组件
-- owner:
-  - 胡学望
-- description: 拖拽组件
-- cover: 'https://img.yzcdn.cn/upload_files/2020/07/09/FlY74c3uSlc05QOsSr2gmpLaegev.png'
-- tag:
-  - 拖拽
----
