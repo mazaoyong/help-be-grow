@@ -30,11 +30,13 @@ function dealApiToObj(appName, api) {
     const controllerMethod = Array.isArray(api[3]) ? api[3] : [api[3]]
 
     jsonApi.forEach(jsonApiItem => {
-      controllerMethod.forEach(cm => {
-        astObj.getServicePath(cm).forEach(service => {
+      controllerMethod.forEach(controllerFunc => {
+        astObj.getServicePath(controllerFunc).forEach(service => {
+          const { path: servicePath, func: serviceFunc } = service
+          const serviceAstObj = new AstGetter(path.join(__dirname, './static-project/', appName, '/app', servicePath))
           result.push({
             "AppName": appName,
-            "JavaApi": astObj.getJavaApi(cm),
+            "JavaApi": serviceAstObj.getJavaApi(serviceFunc),
             "JsonApi": jsonApiItem,
             "Navigator": [],
             "Controller": controllerSuffixPath,
@@ -48,13 +50,15 @@ function dealApiToObj(appName, api) {
 }
 
 const projectSupported = ['wsc-pc-vis', 'wsc-h5-vis']
+let count = 0
 // 获取全部router文件
 projectSupported.forEach(appName => {
   const routerFileList = getTotalFiles(path.join(__dirname, `./static-project/${appName}/app/routers`))
   routerFileList.forEach(routerPath => {
     const apiArr = require(routerPath.replace('.ts', '.js'))
     apiArr.forEach(apiItem => {
-      console.log(111, apiItem)
+      count++
+      console.log(count, appName, apiItem)
       console.log(dealApiToObj(appName, apiItem))
     })
   })

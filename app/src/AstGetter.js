@@ -1,8 +1,8 @@
 const get = require('lodash/get')
 const fs = require('fs')
 const { parse } = require('acorn')
-const { createProgram } = require('typescript')
 const { tsquery } = require('@phenomnomnominal/tsquery')
+const path = require('path')
 
 class AstGetter {
   constructor(filePath) {
@@ -11,7 +11,7 @@ class AstGetter {
     try {
       controllerFile = fs.readFileSync(filePath).toString()
     } catch {
-      controllerFile = fs.readFileSync(filePath.replace('.js', '.ts')).toString()
+      controllerFile = fs.readFileSync(filePath.replace(path.extname(filePath), path.extname(filePath) === '.js' ? '.ts' : '.js')).toString()
     }
     // 如果解析报错了，说明是ts语法
     let astObj = ''
@@ -45,7 +45,7 @@ class AstGetter {
       importNodes.forEach(item => {
         const keyName = item.importClause.name.escapedText
         const pathValue = item.moduleSpecifier.text
-        requirePathObj[keyName] = pathValue.replace(/\.\.\//g, '')
+        requirePathObj[keyName] = pathValue.replace(/\.\.\/|\.js|\.ts/g, '')
       })
 
       const requireNodes = tsquery(ast, 'VariableStatement > VariableDeclarationList.declarations[0]')
@@ -54,7 +54,7 @@ class AstGetter {
         const keyName = get(varDec, 'name.escapedText', null)
         if (isRequire && keyName) {
           const pathValue = get(varDec, 'initializer.arguments[0].text', '')
-          requirePathObj[keyName] = pathValue.replace(/\.\.\//g, '')
+          requirePathObj[keyName] = pathValue.replace(/\.\.\/|\.js|\.ts/g, '')
         }
       })
     } else {
@@ -64,7 +64,7 @@ class AstGetter {
         const requirePath = get(body, 'declarations[0].init.arguments[0].value', null)
         const name = get(body, 'declarations[0].id.name', null)
         if (isRequireType === 'require' && requirePath && name) {
-          requirePathObj[name] = requirePath.replace(/\.\.\//g, '')
+          requirePathObj[name] = requirePath.replace(/\.\.\/|\.js|\.ts/g, '')
         }
       })
     }
@@ -92,31 +92,44 @@ class AstGetter {
   // 根据service的函数获取接口地址
   getJavaApi(func) {
     const methodList = this.getAllAsyncMethod()
-    const serviceFunc = methodList.find(body => body.key.name === func)
-    const callList = this.getArrByCondition(serviceFunc, { type: 'CallExpression' })
-    let invoke = ''
-    for (let i = 0; i < callList.length; i++) {
-      const body = callList[i];
-      if (get(body, 'callee.property.name', '') === 'invoke') {
-        invoke = get(body, 'arguments[0].value', '')
+    let javaApi = ''
+    if (this.isTs) {
+      const serviceFunc = methodList.find(item => item.name.escapedText === func)
+      const invokeBody = tsquery(serviceFunc.body, 'CallExpression[expression.name.escapedText="invoke"]')[0]
+      const suffix = invokeBody.arguments[0].text
+      // 获取java接口前缀的N种方法
+      const publicAst = tsquery(this.astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
+      const readonlyAst = tsquery(this.astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
+      const getAccessor = tsquery(this.astObj, 'GetAccessor[name.escapedText=/^[A-Z0-9_]+$/]')
+      const prefix = get(publicAst[0], 'initializer.text', null) || get(readonlyAst[0], 'initializer.text', null) || (getAccessor.body && get(tsquery(getAccessor.body, 'ReturnStatement')[0], expression.text, null))
+      javaApi = prefix + '#' + suffix
+    } else {
+      const serviceFunc = methodList.find(body => body.key.name === func)
+      const callList = this.getArrByCondition(serviceFunc, { type: 'CallExpression' })
+      let invoke = ''
+      for (let i = 0; i < callList.length; i++) {
+        const body = callList[i];
+        if (get(body, 'callee.property.name', '') === 'invoke') {
+          invoke = get(body, 'arguments[0].value', '')
+        }
+        if (invoke) {
+          break
+        }
       }
-      if (invoke) {
-        break
+      // 获取get函数
+      const getFunc = this.getArrByCondition(this.astBody, { type: 'MethodDefinition', kind: 'get' })
+      if (getFunc[0]) {
+        const body = getFunc[0]
+        const getFuncName = get(body, 'key.name', '')
+        const isCap = new RegExp(`([A-Z]|[0-9]|_){${getFuncName.length}}`)
+        if (isCap.test(getFuncName)) {
+          const returnState = this.getArrByCondition(body, { type: 'ReturnStatement' })
+          const apiPrefix = get(returnState[0], 'argument.value', '')
+          javaApi = apiPrefix + '#' + invoke
+        }
       }
     }
-    // 获取get函数
-    const getFunc = this.getArrByCondition(this.astBody, { type: 'MethodDefinition', kind: 'get' })
-    if (getFunc[0]) {
-      const body = getFunc[0]
-      const getFuncName = get(body, 'key.name', '')
-      const isCap = new RegExp(`([A-Z]|[0-9]|_){${getFuncName.length}}`)
-      if (isCap.test(getFuncName)) {
-        const returnState = this.getArrByCondition(body, { type: 'ReturnStatement' })
-        const apiPrefix = get(returnState[0], 'argument.value', '')
-        return apiPrefix + '#' + invoke
-      }
-    }
-    return ''
+    return javaApi
   }
 
   // 输入对应的controller函数名称，获取到用到的service文件路径
@@ -127,24 +140,35 @@ class AstGetter {
     const requireObj = this.getRequirePath()
     if (this.isTs) {
       // 筛选async函数
-      const asyncMethod = tsquery(this.astObj, 'ClassDeclaration > MethodDeclaration:has(AsyncKeyword)')
+      const asyncMethod = tsquery(this.astObj, 'MethodDeclaration:has(AsyncKeyword)')
       const controllerMethod = asyncMethod.find(item => item.name.escapedText === controllerFunc)
-      const awaitAstArr = tsquery(controllerMethod.body, 'AwaitExpression > CallExpression > PropertyAccessExpression:has(NewExpression)')
-      awaitAstArr.forEach(item => {
-        console.log(123, item.name.escapedText, item.expression.expression.escapedText)
-      })
+      if (controllerMethod) {
+        const awaitAstArr = tsquery(controllerMethod.body, 'AwaitExpression > CallExpression > PropertyAccessExpression:has(NewExpression)')
+        awaitAstArr.forEach(item => {
+          const serviceKeyName = get(item, 'expression.expression.escapedText', '')
+          const serviceMethod = get(item, 'name.escapedText', '')
+          if (serviceKeyName && serviceMethod && requireObj[serviceKeyName]) {
+            result.push({
+              path: requireObj[serviceKeyName] + '.ts',
+              func: serviceMethod
+            })
+          }
+        })
+      }
     } else {
       // 匹配对应的函数名称
       const controllerMethod = methodList.find(body => body.key.name === controllerFunc)
       const contentBody = get(controllerMethod, 'value.body.body', [])
       // 找到函数里面的所有service文件
       const asyncArr = this.getArrByCondition(contentBody, { type: 'AwaitExpression' })
-      result = asyncArr.map(item => {
+      asyncArr.forEach(item => {
         const requireCallee = get(item, 'argument.callee.object.callee.name', '')
         const func = get(item, 'argument.callee.property.name', '')
-        return {
-          path: requireObj[requireCallee],
-          func
+        if (requireObj[requireCallee]) {
+          result.push({
+            path: requireObj[requireCallee] + '.js',
+            func
+          })
         }
       })
     }
@@ -178,5 +202,5 @@ class AstGetter {
 
 module.exports = AstGetter
 
-const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/controllers/ump/WecomFansBenefitController.ts')
-console.log(test.getServicePath('postRecordUserGoodsJson'))
+// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/services/api/uic/acl/OmniChannelService.ts')
+// console.log(test.getJavaApi('getPlatformOauthUrl'))
