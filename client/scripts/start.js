@@ -139,7 +139,7 @@ checkBrowsers(paths.appPath, isInteractive)
         );
       }
 
-      console.log(chalk.cyan('Starting the development server...\n'));
+      console.log(chalk.cyan(`Starting the development server...\nhttp://127.0.0.1:${port}`));
       // openBrowser(urls.localUrlForBrowser);
     });
 

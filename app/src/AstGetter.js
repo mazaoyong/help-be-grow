@@ -149,7 +149,7 @@ class AstGetter {
           const serviceMethod = get(item, 'name.escapedText', '')
           if (serviceKeyName && serviceMethod && requireObj[serviceKeyName]) {
             result.push({
-              path: requireObj[serviceKeyName] + '.ts',
+              path: `${requireObj[serviceKeyName]}.ts`,
               func: serviceMethod
             })
           }
@@ -166,7 +166,7 @@ class AstGetter {
         const func = get(item, 'argument.callee.property.name', '')
         if (requireObj[requireCallee]) {
           result.push({
-            path: requireObj[requireCallee] + '.js',
+            path: `${requireObj[requireCallee]}.js`,
             func
           })
         }

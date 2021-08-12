@@ -63,6 +63,6 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "./app/static-project/*/app/routers"
+    "app/static-project/*/app/routers"
   ]
 }

@@ -9,11 +9,15 @@ import {
   FormControlLabel,
   Paper,
   Typography,
-  Tooltip
+  Tooltip,
+  IconButton
 } from '@material-ui/core'
 import { WSC_PC_VIS_NAV } from "./constants"
 import { useState, useEffect } from 'react'
 import "./index.scss"
+import { format } from 'date-fns'
+import ErrorIcon from '@material-ui/icons/ErrorTwoTone';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const theme = createMuiTheme({
   palette: {
@@ -147,6 +151,8 @@ const SearchList = () => {
   const [isRandomBgImg, setIsRandomBgImg] = useState(false);
   const [searchList, setSearchList] = useState([]);
   const [userInput, setUserInput] = useState("");
+  // 更新日志数据
+  const [updateLog, setUpdateLog] = useState({});
 
   // 设置是否展示随机背景图片
   const handleSetIsRandomBgImg = (isSet) => {
@@ -172,6 +178,29 @@ const SearchList = () => {
     });
   };
 
+  // 获取更新日志接口
+  const getUpdateLogAction = () => {
+    return new Promise((resolve) => {
+      fetch("/getUpdateLog")
+        .then((response) => {
+          return response.json();
+        })
+        .then((res) => {
+          const { Info, Spend, Status, UpdateEndTime } = res.data
+          const spendSec = parseInt(Spend / 1000)
+          setUpdateLog({
+            info: Info,
+            spend: `本次更新共用了${parseInt(spendSec / 60)}分${spendSec % 60}秒`, // 花费时间
+            updateEndTime: format(UpdateEndTime, "YYY-MM-dd HH:mm:ss"),
+            status: Status
+          })
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    });
+  }
+
   // 用户输入
   const handleUserInput = (val) => {
     if (
@@ -179,6 +208,7 @@ const SearchList = () => {
       val.indexOf("com.youzan") !== -1 &&
       val.indexOf("#") === -1
     ) {
+      // 这两行代码导致java接口需要输入全路径
       const lastDot = val.lastIndexOf(".");
       val = val.substring(0, lastDot) + "#" + val.substring(lastDot + 1);
     }
@@ -196,23 +226,46 @@ const SearchList = () => {
   useEffect(() => {
     const isRandomBgImg = localStorage.getItem("isRandomBgImg");
     setIsRandomBgImg(!(isRandomBgImg === "0"));
-    // searchAction("edu/course-product/list-page.jso");
+    // 获取更新日志
+    getUpdateLogAction()
   }, []);
-
+  // 更新状态颜色
+  const UPDATE_STATE_THEME = {
+    1: '#55AB68',
+    2: '#F7CC45',
+    [-1]: 'red'
+  }
   return (
     <ThemeProvider theme={theme}>
       <div className="main">
         <div className={`bg-primary ${isRandomBgImg && "random-bg-img"}`}>
-          <Box display="flex" justifyContent="flex-end">
-            <FormControlLabel
-              control={
-                <Switch
-                  onChange={(e) => handleSetIsRandomBgImg(e.target.checked)}
-                  checked={isRandomBgImg}
-                />
-              }
-              label="背景图片"
-            />
+          <Box display="flex" alignItems="center">
+            <Box pl={1}>
+              <span>更新时间：{updateLog.updateEndTime}，</span>
+              <span>{updateLog.spend}</span>
+            </Box>
+            <Box ml={0.5} display="flex">
+              {updateLog.status !== 1 && (
+                <Tooltip title={(updateLog.status === -1 ? '【报错】' : '【警告】') + updateLog.info}>
+                  <ErrorIcon style={{ color: UPDATE_STATE_THEME[updateLog.status], fontSize: '16px', cursor: 'pointer' }}></ErrorIcon>
+                </Tooltip>
+              )}
+            </Box>
+            <Box ml="auto">
+              <IconButton aria-label="upload picture" component="span" onClick={() => window.open('https://gitlab.qima-inc.com/fe-edu/help-be-grow', '__blank')}>
+                <GitHubIcon style={{ color: '#25292E' }} fontSize="small"></GitHubIcon>
+              </IconButton>
+              <FormControlLabel
+                control={
+                  <Switch
+                    onChange={(e) => handleSetIsRandomBgImg(e.target.checked)}
+                    checked={isRandomBgImg}
+                  />
+                }
+                label="背景图片"
+              />
+            </Box>
+
           </Box>
           <div className="flex-col align-center">
             <h1 className="m-title">SearchYM</h1>
@@ -221,22 +274,10 @@ const SearchList = () => {
                 已收录了教育B端（包括商家小程序）和教育C端的接口映射
               </Box>
               <Box fontSize={12} pt={1} textAlign="center">
-                有问题@米九(马灶勇)
+                <span>有问题@米九(马灶勇)</span>
               </Box>
             </p>
-            {/* <span className="m-desc">有问题企微@米九（马灶勇）</span> */}
             <div className="m-search">
-              {/* <Paper elevation={searchAltitude} className="ms-paper">
-                <Box display="flex" alignItems="center">
-                  <InputBase
-                    color="secondary"
-                    onFocus={() => setSearchAltitude(3)}
-                    onBlur={() => setSearchAltitude(1)}
-                    className="ms-input"
-                    placeholder="请输入json接口或者java接口"
-                  ></InputBase>
-                </Box>
-              </Paper> */}
               <Paper elevation={searchAltitude}>
                 <TextField
                   placeholder="请输入json接口或者java接口"
@@ -247,6 +288,7 @@ const SearchList = () => {
                   onBlur={() => setSearchAltitude(1)}
                   onChange={(e) => handleUserInput(e.target.value)}
                   className="ms-input"
+                  type="search"
                 />
               </Paper>
               <Box fontSize={12} pt={1}>

@@ -25,6 +25,14 @@ type SearchResultItem struct {
 	Service    string   // model层文件
 }
 
+// 更新日志
+type TUpdateLog struct {
+	Spend         int    `json:spend`         // 花费的时间
+	UpdateEndTime int    `json:updateEndTime` // 更新结束时间
+	Status        int    `json:status`        // 更新状态，1表示成功，-1标记失败，2是更新异常
+	Info          string `json:info`          // 更新成功或者失败返回的信息
+}
+
 func templates(w http.ResponseWriter, r *http.Request) {
 	//解析模板
 	t, _ := template.ParseFiles("./app/dist/index.html")
@@ -73,7 +81,7 @@ func getSearchResult(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println(userInput)
 	// 搜索符合条件的
 	for _, searchItem := range searchData {
-		if userInput != "" && (strings.Contains(searchItem.JsonApi, userInput) || strings.Contains(searchItem.JavaApi, userInput)) && len(searchResult) < 10 {
+		if userInput != "" && (strings.Contains(searchItem.JsonApi, userInput) || strings.Contains(searchItem.JavaApi, userInput) || strings.Contains(searchItem.JavaApi, strings.ReplaceAll(userInput, "#", "."))) && len(searchResult) < 10 {
 			searchResult = append(searchResult, searchItem)
 		}
 	}
@@ -83,9 +91,37 @@ func getSearchResult(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, string(bytes))
 }
 
+func getUpdateLog(w http.ResponseWriter, r *http.Request) {
+	rootPath, _ := os.Getwd()
+	updateLogPath := rootPath + "/app/update_log.json"
+	filePtr, err := os.Open(updateLogPath)
+	if err != nil {
+		fmt.Println("Open file failed [Err:%s]", err.Error())
+	}
+	var updateLogList []TUpdateLog
+	defer filePtr.Close()
+	// 创建json解码器
+	decoder := json.NewDecoder(filePtr)
+	err = decoder.Decode(&updateLogList)
+	if err != nil {
+		fmt.Println("Decoder failed", err.Error())
+	} else {
+		result := BaseJsonBean{}
+		result.Code = 200
+		result.Message = "request:ok"
+		result.Data = updateLogList[len(updateLogList)-1]
+		//向客户端返回JSON数据
+		bytes, _ := json.Marshal(result)
+		fmt.Fprint(w, string(bytes))
+	}
+}
+
 func main() {
 	fs := http.FileServer(http.Dir("client/build"))
 	http.Handle("/", fs)
+	// 搜索接口
 	http.HandleFunc("/getSearchResult", getSearchResult)
+	// 更新日志
+	http.HandleFunc("/getUpdateLog", getUpdateLog)
 	http.ListenAndServe(":8301", nil)
 }
