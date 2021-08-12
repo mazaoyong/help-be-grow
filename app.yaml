@@ -1,3 +1,0 @@
- runtime: golang-1.13
- entrypoint_main_path: ./app/web.go
- entrypoint: ./web
