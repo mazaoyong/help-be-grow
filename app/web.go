@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"net/http"
 	"os"
+	"os/exec"
 	"strings"
 )
 
@@ -117,11 +118,18 @@ func getUpdateLog(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	cmd, err := exec.Command("/bin/bash", "-c", "./init.sh").Output()
+	if err != nil {
+		fmt.Println("Execute Command failed:" + err.Error())
+		return
+	}
+	fmt.Println(string(cmd))
 	fs := http.FileServer(http.Dir("client/build"))
 	http.Handle("/", fs)
 	// 搜索接口
 	http.HandleFunc("/getSearchResult", getSearchResult)
 	// 更新日志
 	http.HandleFunc("/getUpdateLog", getUpdateLog)
+	fmt.Println("启动服务：http://127.0.0.1:8301")
 	http.ListenAndServe(":8301", nil)
 }
