@@ -1,5 +1,5 @@
 .idea
-node_modules/
+client/node_modules/
 app/static-project/
 static-project/
 .vscode/
