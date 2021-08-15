@@ -59,19 +59,19 @@ const SearchCard = (props) => {
   const [isCopy, setIsCopy] = useState(false);
   const { userInput = "" } = props;
   const listItemRange = {
-    JsonApi: "json接口",
-    JavaApi: "java接口",
-    AppName: "应用名称",
-    Navigator: "页面导航",
-    Controller: "controllers文件",
-    Service: "services文件",
+    jsonApi: "json接口",
+    javaApi: "java接口",
+    appName: "应用名称",
+    navigator: "页面导航",
+    controller: "controllers文件",
+    service: "services文件",
   };
   const ListItemRender = ({ keyVal, title }) => {
     let secondary = props.item[keyVal];
-    if (keyVal === "AppName") {
+    if (keyVal === "appName") {
       secondary = [APP_NAME[secondary]];
-    } else if (keyVal === "Navigator") {
-      if (props.item["AppName"] === "wsc-pc-vis") {
+    } else if (keyVal === "navigator") {
+      if (props.item["appName"] === "wsc-pc-vis") {
         secondary = secondary.map(getNavigatorList);
       }
     } else {
@@ -80,7 +80,7 @@ const SearchCard = (props) => {
     const reg = new RegExp(userInput, "g");
     // 点击复制
     const handleSearchCardClick = ({ content, keyVal }) => {
-      // const notCopyList = ["Navigator", "AppName"];
+      // const notCopyList = ["navigator", "appName"];
       // if (notCopyList.includes(keyVal)) {
       //   return;
       // }
@@ -186,13 +186,13 @@ const SearchList = () => {
           return response.json();
         })
         .then((res) => {
-          const { Info, Spend, Status, UpdateEndTime } = res.data
-          const spendSec = parseInt(Spend / 1000)
+          const { info, spend, status, updateEndTime } = res.data
+          const spendSec = parseInt(spend / 1000)
           setUpdateLog({
-            info: Info,
+            info,
             spend: `本次更新共用了${parseInt(spendSec / 60)}分${spendSec % 60}秒`, // 花费时间
-            updateEndTime: format(UpdateEndTime, "YYY-MM-dd HH:mm:ss"),
-            status: Status
+            updateEndTime: format(updateEndTime, "YYY-MM-dd HH:mm:ss"),
+            status
           })
         })
         .catch((err) => {
@@ -246,7 +246,7 @@ const SearchList = () => {
             </Box>
             <Box ml={0.5} display="flex">
               {updateLog.status !== 1 && (
-                <Tooltip title={(updateLog.status === -1 ? '【报错】' : '【警告】') + updateLog.info}>
+                <Tooltip title={(updateLog.status === -1 ? '【报错】' : '【警告】') + updateLog.info} interactive>
                   <ErrorIcon style={{ color: UPDATE_STATE_THEME[updateLog.status], fontSize: '16px', cursor: 'pointer' }}></ErrorIcon>
                 </Tooltip>
               )}

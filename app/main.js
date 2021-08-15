@@ -35,13 +35,13 @@ function apiAssemble(appName, api) {
           const { path: servicePath, func: serviceFunc } = service
           const serviceAstObj = new AstGetter(path.join(__dirname, './static-project/', appName, '/app', servicePath))
           result.push({
-            "AppName": appName,
-            "JavaApi": serviceAstObj.getJavaApi(serviceFunc),
-            "JsonApi": jsonApiItem,
-            "Navigator": getNavigator(appName, jsonApiItem.replace('/v4/vis', '')).map(item => item.match(/\/client\/pages\/.+/)[0]),
+            "appName": appName,
+            "javaApi": serviceAstObj.getJavaApi(serviceFunc),
+            "jsonApi": jsonApiItem,
+            "navigator": getNavigator(appName, jsonApiItem.replace('/v4/vis', '')).map(item => item.match(/\/client\/pages\/.+/)[0]),
             // "Navigator2": getNavigator(appName, jsonApiItem.replace('/v4/vis', '')),
-            "Controller": controllerSuffixPath,
-            "Service": '/app/' + service.path
+            "controller": controllerSuffixPath,
+            "service": '/app/' + service.path
           })
         })
       })
@@ -82,13 +82,16 @@ module.exports = (projectInfo) => {
             info: '备份数据失败，错误信息：' + err
           }
         }
-        fs.writeFile(dataFilePath, JSON.stringify(data, null, 2), err => {
-          if (err) {
-            updateState = {
-              status: 2,
-              info: '写入数据失败，错误信息：' + err
+        // 先创建文件夹
+        fs.mkdir(path.resolve(__dirname, './data/'), () => {
+          fs.writeFile(dataFilePath, JSON.stringify(data, null, 2), err => {
+            if (err) {
+              updateState = {
+                status: 2,
+                info: '写入数据失败，错误信息：' + err
+              }
             }
-          }
+          })
         })
       })
     })

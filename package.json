@@ -8,8 +8,7 @@
     "watch": "chokidar \"**/*.js\" -c \"npm run test\"",
     "tsc": "tsc",
     "ast-dev": "chokidar \"app/src/AstGetter.js\" -c \"node app/src/AstGetter.js\"",
-    "server": "go run app/web.go",
-    "server-dev": "chokidar \"app/web.go\" -c \"go run app/web.go\""
+    "server":"node app/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,7 @@
     "chokidar-cli": "^2.1.0",
     "compressing": "^1.5.1",
     "date-fns": "^2.23.0",
+    "express": "^4.17.1",
     "loadash": "^1.0.0",
     "lodash": "^4.17.21",
     "node-schedule": "^2.0.0",
