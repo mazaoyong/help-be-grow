@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+$primary: #27ae60;
+.primary {
+  color: $primary;
+}
+.bg-primary {
+  background-color: $primary;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.mb-6 {
+  margin-bottom: 24px;
+}
+.main {
+  color: #fff;
+  background: #fafafa;
+  min-height: 100vh;
+  .user-input {
+    color: red;
+  }
+  .random-bg-img {
+    background-image: url(https://picsum.photos/1440/345);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .m-title {
+    font-size: 56px;
+    // text-shadow: -5px 5px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 0;
+  }
+  .m-desc {
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 200;
+    color: #f4f4f4;
+  }
+  .m-search {
+    width: 47vw;
+    padding: 24px 0 80px;
+    .MuiFormControl-root {
+      background: #fff;
+      border-radius: 4px;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border: none;
+    }
+    .ms-input {
+      input {
+        color: #555;
+      }
+    }
+    .ms-paper {
+      height: 50px;
+      padding: 0 12px 10px;
+    }
+  }
+  .list {
+    width: 1140px;
+    margin: auto;
+    padding: 80px 0;
+    .lt-row {
+      padding: 25px;
+      display: flex;
+    }
+    .lr-left {
+      font-size: 18px;
+      color: #555;
+      font-weight: 700;
+    }
+    .lr-right {
+      color: #777;
+    }
+    .MuiListItemText-secondary {
+      word-break: break-word;
+      letter-spacing: 0;
+    }
+  }
+}
