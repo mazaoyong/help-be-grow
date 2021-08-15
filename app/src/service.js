@@ -68,6 +68,33 @@ module.exports = () => {
     }
   })
 
+  // 安全检查
+  app.get('/HB', (req, res) => {
+    const { service } = req.query
+    if (service === 'online') {
+      res.send({
+        "result": true,
+        "code": 200,
+        "message": null,
+        "data": "ok"
+      })
+    } else if (service === 'offline') {
+      res.send({
+        "result": true,
+        "code": 404,
+        "message": null,
+        "data": "ok"
+      })
+    } else {
+      res.send({
+        "result": true,
+        "code": 200,
+        "message": null,
+        "data": "ok"
+      })
+    }
+  })
+
   app.listen(8201, () => {
     console.log('Listening on port 8201')
   });
