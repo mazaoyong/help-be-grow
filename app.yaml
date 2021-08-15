@@ -1,3 +1,0 @@
-runtime: nodejs-10.16
-entrypoint: node bin/start.js
-package: npm
