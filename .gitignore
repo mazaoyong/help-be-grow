@@ -1,0 +1,10 @@
+.idea
+node_modules/
+static-project/
+.vscode/
+app/update_log.json
+nohup.out
+*.DS_Store
+app/data/
+build/
+package-lock.json

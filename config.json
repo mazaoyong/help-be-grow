@@ -1,0 +1,6 @@
+{
+  "WSC_PC_VIS": "/static-project/wsc-pc-vis",
+  "WSC_PC_VIS_CLIENT": "/static-project/wsc-pc-vis/client",
+  "WSC_PC_VIS_CLIENT_H5": "/static-project/wsc-pc-vis/client-h5",
+  "WSC_H5_VIS": "/static-project/wsc-h5-vis"
+}

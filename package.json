@@ -1,0 +1,38 @@
+{
+  "name": "search-your-mother",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app/main.js",
+    "watch": "chokidar \"**/*.js\" -c \"npm run test\"",
+    "tsc": "tsc",
+    "ast-dev": "chokidar \"app/src/AstGetter.js\" -c \"node app/src/AstGetter.js\"",
+    "server":"node app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.qima-inc.com:fe-edu/help-be-grow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "^8.4.1",
+    "adm-zip": "^0.5.5",
+    "child_process": "^1.0.2",
+    "chokidar": "^3.5.2",
+    "chokidar-cli": "^2.1.0",
+    "compressing": "^1.5.1",
+    "date-fns": "^2.23.0",
+    "express": "^4.17.1",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21",
+    "node-schedule": "^2.0.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@phenomnomnominal/tsquery": "^4.1.1",
+    "@types/node": "^16.3.3"
+  }
+}
