@@ -17,7 +17,7 @@ function taskList() {
   // 下载项目文件
   downloadTask()
     .then(res => {
-      child_process.exec('npm run tsc', err => {
+      child_process.exec('npm install -g typescript && npm run tsc', err => {
         if (err) {
           console.log('ts文件格式转化报错：', err)
           return
