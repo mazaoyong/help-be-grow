@@ -17,7 +17,7 @@ function taskList() {
   // 下载项目文件
   downloadTask()
     .then(res => {
-      child_process.exec('npm install -g typescript && npm run tsc', err => {
+      child_process.exec('npm run tsc', err => {
         if (err) {
           console.log('ts文件格式转化报错：', err)
           return
@@ -34,10 +34,11 @@ schedule.scheduleJob('0 0 2 * * *', () => {
 })
 
 // 先打包再服务器启动
-child_process.exec('cd client && npm i && npm run build', err => {
-  if (err) {
-    console.log('静态页面打包错误：', err)
-    return
-  }
-  service()
-})
+// child_process.exec('cd client && npm i && npm run build', err => {
+//   if (err) {
+//     console.log('静态页面打包错误：', err)
+//     return
+//   }
+//   service()
+// })
+service()

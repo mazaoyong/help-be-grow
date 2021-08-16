@@ -6,4 +6,3 @@ app/update_log.json
 nohup.out
 *.DS_Store
 app/data/
-build/
