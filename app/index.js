@@ -9,6 +9,7 @@ const child_process = require('child_process');
 
 // 任务顺序
 function taskList() {
+  return
   // 先删除static-project文件夹
   const staticProjectPath = path.join(__dirname, './static-project')
   fs.existsSync(staticProjectPath) && delDir(staticProjectPath)
