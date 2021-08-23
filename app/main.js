@@ -1,5 +1,5 @@
 const AstGetter = require('./src/AstGetter')
-const { getTotalFiles } = require('./utils')
+const { getTotalFiles, getJsFileRealPath } = require('./utils')
 const path = require('path')
 const fs = require('fs')
 const schedule = require('node-schedule')
@@ -22,8 +22,15 @@ function apiAssemble(appName, api) {
   // 将router里面的api组装成为对象
   let result = []
   if (!Array.isArray(api[0]) && !Array.isArray(api[2])) { // 不考虑请求方法或者对应的controller是多个的情况
-    const controllerSuffixPath = `/app/controllers/${api[2].replace(/\./g, '/')}.js`
-    const controllerPath = path.join(__dirname, './static-project/', appName, controllerSuffixPath)
+    let controllerSuffixPath = `/app/controllers/${api[2].replace(/\./g, '/')}.js`
+    let controllerPath = path.join(__dirname, './static-project/', appName, controllerSuffixPath)
+    // 判断文件是否存在，不存在则是ts文件
+    try {
+      fs.accessSync(controllerPath, fs.constants.F_OK)
+    } catch {
+      controllerPath = controllerPath.replace(/\.js/g, '.ts')
+      controllerSuffixPath = controllerSuffixPath.replace(/\.js/g, '.ts')
+    }
     const astObj = new AstGetter(controllerPath)
 
     const jsonApi = Array.isArray(api[1]) ? api[1] : [api[1]]
@@ -33,7 +40,7 @@ function apiAssemble(appName, api) {
       controllerMethod.forEach(controllerFunc => {
         astObj.getServicePath(controllerFunc).forEach(service => {
           const { path: servicePath, func: serviceFunc } = service
-          const serviceAstObj = new AstGetter(path.join(__dirname, './static-project/', appName, '/app', servicePath))
+          const serviceAstObj = new AstGetter(getJsFileRealPath(path.join(__dirname, './static-project/', appName, '/app', servicePath)).path)
           result.push({
             "appName": appName,
             "javaApi": serviceAstObj.getJavaApi(serviceFunc),

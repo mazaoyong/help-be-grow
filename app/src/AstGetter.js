@@ -13,7 +13,7 @@ class AstGetter {
     } catch {
       controllerFile = fs.readFileSync(filePath.replace(path.extname(filePath), path.extname(filePath) === '.js' ? '.ts' : '.js')).toString()
     }
-    // 如果解析报错了，说明是ts语法
+    // 如果解析报错了，说明是ts语法，和文件后缀无关，因为一个ts文件里面可能压根没用到ts语法
     let astObj = ''
     try {
       astObj = parse(controllerFile, {
@@ -101,7 +101,7 @@ class AstGetter {
       const publicAst = tsquery(this.astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
       const readonlyAst = tsquery(this.astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
       const getAccessor = tsquery(this.astObj, 'GetAccessor[name.escapedText=/^[A-Z0-9_]+$/]')
-      const prefix = get(publicAst[0], 'initializer.text', null) || get(readonlyAst[0], 'initializer.text', null) || (getAccessor.body && get(tsquery(getAccessor.body, 'ReturnStatement')[0], expression.text, null))
+      const prefix = get(publicAst[0], 'initializer.text', null) || get(readonlyAst[0], 'initializer.text', null) || (getAccessor[0] && getAccessor[0].body && get(tsquery(getAccessor[0].body, 'ReturnStatement')[0], 'expression.text', null))
       javaApi = prefix + '#' + suffix
     } else {
       const serviceFunc = methodList.find(body => body.key.name === func)
@@ -202,5 +202,5 @@ class AstGetter {
 
 module.exports = AstGetter
 
-// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/services/api/uic/acl/OmniChannelService.ts')
-// console.log(test.getJavaApi('getPlatformOauthUrl'))
+// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/services/api/owl/api/LiveDashboardFacade.ts')
+// console.log(test.getJavaApi('getLiveMarketingSetting'))

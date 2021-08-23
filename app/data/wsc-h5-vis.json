@@ -83,7 +83,7 @@
     "javaApi": "com.youzan.ump.marketing.goodsscan.service.GoodsScanPromotionService#findActivities",
     "jsonApi": "/wscvis/getMpQrcode.json",
     "navigator": [],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/ump/marketing/goodsscan/GoodsScanPromotionService.ts"
   },
   {
@@ -142,10 +142,10 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getAppShopBasicInfo",
+    "javaApi": "com.youzan.bifrost.service.api.service.AppShopRemoteService#getAppShopBasicInfo",
     "jsonApi": "/wscvis/checkAuthMobile",
     "navigator": [],
-    "controller": "/app/controllers/common/CheckAuthMobileController.js",
+    "controller": "/app/controllers/common/CheckAuthMobileController.ts",
     "service": "/app/services/api/yop/AppConfigRemoteService.ts"
   },
   {
@@ -164,7 +164,7 @@
     "javaApi": "com.youzan.owl.biz.service.OwlCommonService#createQrCode",
     "jsonApi": "/wscvis/common/qr/getQrcode.json",
     "navigator": [],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/api/owl/biz/OwlCommonService.ts"
   },
   {
@@ -172,7 +172,7 @@
     "javaApi": "com.youzan.ump.marketing.goodsscan.service.GoodsScanPromotionService#findActivities",
     "jsonApi": "/wscvis/common/qr/getMpQrcode.json",
     "navigator": [],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/ump/marketing/goodsscan/GoodsScanPromotionService.ts"
   },
   {
@@ -180,7 +180,7 @@
     "javaApi": "com.youzan.owl.biz.service.OwlCommonService#createQrCode",
     "jsonApi": "/wscvis/common/qr/h5QrCode.json",
     "navigator": [],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/api/owl/biz/OwlCommonService.ts"
   },
   {
@@ -188,7 +188,7 @@
     "javaApi": "com.youzan.uic.channel.business.api.service.WxWeappQRCodeService#wxaGetCodeUltra",
     "jsonApi": "/wscvis/common/qr/weappQrCode.json",
     "navigator": [],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/api/uic/channel/WxWeappQRCodeService.ts"
   },
   {
@@ -196,7 +196,7 @@
     "javaApi": "com.youzan.channels.apps.service.BaiduAppInfoService#getBaiduQrCodeWithCompression",
     "jsonApi": "/wscvis/common/qr/swanAppQrCode.json",
     "navigator": [],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/api/channels/apps/BaiduAppInfoService.ts"
   },
   {
@@ -255,7 +255,7 @@
       "/client/pages/course/detail/blocks/main/column-catalogue-block/api.js",
       "/client/pages/course/detail/store/api.js"
     ],
-    "controller": "/app/controllers/course/column/ColumnController.js",
+    "controller": "/app/controllers/course/column/ColumnController.ts",
     "service": "/app/services/api/owl/api/ClientEduProductFacade.ts"
   },
   {
@@ -266,7 +266,7 @@
       "/client/pages/course/detail/blocks/main/column-catalogue-block/api.js",
       "/client/pages/course/detail/store/api.js"
     ],
-    "controller": "/app/controllers/course/column/ColumnController.js",
+    "controller": "/app/controllers/course/column/ColumnController.ts",
     "service": "/app/services/api/owl/api/ClientEduProductFacade.ts"
   },
   {
@@ -276,7 +276,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/classroom-schedule-block/api.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/edulive/EduLiveFacade.ts"
   },
   {
@@ -296,7 +296,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/classroom-schedule-block/api.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/edulive/LiveStudentFacade.ts"
   },
   {
@@ -306,7 +306,7 @@
     "navigator": [
       "/client/pages/course/pc-detail/apis/index.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/client/product/ClientEduProductFacade.ts"
   },
   {
@@ -316,7 +316,7 @@
     "navigator": [
       "/client/pages/ump/blocks/ump-sku/api.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/courseitem/offlinecourse/ClientCourseFacade.ts"
   },
   {
@@ -326,7 +326,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/classroom-schedule-block/api.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/edulive/EduLiveFacade.ts"
   },
   {
@@ -346,7 +346,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/classroom-schedule-block/api.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/edulive/LiveStudentFacade.ts"
   },
   {
@@ -356,7 +356,7 @@
     "navigator": [
       "/client/pages/course/pc-detail/apis/index.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/client/product/ClientEduProductFacade.ts"
   },
   {
@@ -366,83 +366,83 @@
     "navigator": [
       "/client/pages/ump/blocks/ump-sku/api.ts"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/courseitem/offlinecourse/ClientCourseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findCouponList",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveCouponFacade#findCouponList",
     "jsonApi": "/wscvis/course/live/live-selling/findCouponList.json",
     "navigator": [
       "/client/pages/course/live/video-room/api/live-selling.ts"
     ],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveCouponFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#receiveCoupon",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveCouponFacade#receiveCoupon",
     "jsonApi": "/wscvis/course/live/live-selling/receiveCoupon.json",
     "navigator": [
       "/client/pages/course/live/video-room/api/live-selling.ts"
     ],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveCouponFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findPage",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveItemFacade#findPage",
     "jsonApi": "/wscvis/course/live/live-selling/findGoodsList.json",
     "navigator": [
       "/client/pages/course/live/video-room/api/live-selling.ts"
     ],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveItemFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getLiveMarketingSetting",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveDashboardFacade#getLiveMarketingSetting",
     "jsonApi": "/wscvis/course/live/live-selling/getLiveMarketingSetting.json",
     "navigator": [],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveDashboardFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findCouponList",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveCouponFacade#findCouponList",
     "jsonApi": "/wscvis/course/live/live-selling/findCouponList.json",
     "navigator": [
       "/client/pages/course/live/video-room/api/live-selling.ts"
     ],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveCouponFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#receiveCoupon",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveCouponFacade#receiveCoupon",
     "jsonApi": "/wscvis/course/live/live-selling/receiveCoupon.json",
     "navigator": [
       "/client/pages/course/live/video-room/api/live-selling.ts"
     ],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveCouponFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findPage",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveItemFacade#findPage",
     "jsonApi": "/wscvis/course/live/live-selling/findGoodsList.json",
     "navigator": [
       "/client/pages/course/live/video-room/api/live-selling.ts"
     ],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveItemFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getLiveMarketingSetting",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveDashboardFacade#getLiveMarketingSetting",
     "jsonApi": "/wscvis/course/live/live-selling/getLiveMarketingSetting.json",
     "navigator": [],
-    "controller": "/app/controllers/course/live/LiveSellingController.js",
+    "controller": "/app/controllers/course/live/LiveSellingController.ts",
     "service": "/app/services/api/owl/api/LiveDashboardFacade.ts"
   },
   {
@@ -452,7 +452,7 @@
     "navigator": [
       "/client/pages/paid-content/containers/my-pay/components/small-class/api.ts"
     ],
-    "controller": "/app/controllers/course/live/SmallClassController.js",
+    "controller": "/app/controllers/course/live/SmallClassController.ts",
     "service": "/app/services/api/owl/api/ClientSubsAggregateFacade.ts"
   },
   {
@@ -462,7 +462,7 @@
     "navigator": [
       "/client/pages/paid-content/containers/my-pay/components/small-class/api.ts"
     ],
-    "controller": "/app/controllers/course/live/SmallClassController.js",
+    "controller": "/app/controllers/course/live/SmallClassController.ts",
     "service": "/app/services/api/owl/api/ClientSubsAggregateFacade.ts"
   },
   {
@@ -473,7 +473,7 @@
       "/client/pages/course/detail/store/parser/activity-parser/default/buttons/live.js",
       "/client/pages/course/pc-detail/modules/navigation/live.ts"
     ],
-    "controller": "/app/controllers/course/live/LiveVideoController.js",
+    "controller": "/app/controllers/course/live/LiveVideoController.ts",
     "service": "/app/services/api/owl/api/EduLiveVideoFacade.ts"
   },
   {
@@ -485,7 +485,7 @@
       "/client/pages/course/pc-detail/modules/navigation/live.ts",
       "/client/pages/paid-content/api/index.js"
     ],
-    "controller": "/app/controllers/course/live/LiveVideoController.js",
+    "controller": "/app/controllers/course/live/LiveVideoController.ts",
     "service": "/app/services/api/owl/api/EduLiveVideoFacade.ts"
   },
   {
@@ -495,7 +495,7 @@
     "navigator": [
       "/client/pages/paid-content/api/all-lives.js"
     ],
-    "controller": "/app/controllers/course/live/LiveApiController.js",
+    "controller": "/app/controllers/course/live/LiveApiController.ts",
     "service": "/app/services/owl/client/onlinecourse/ClientLiveFacade.ts"
   },
   {
@@ -505,17 +505,17 @@
     "navigator": [
       "/client/pages/course/live/video-room/api/index.js"
     ],
-    "controller": "/app/controllers/course/live/LiveVideoController.js",
+    "controller": "/app/controllers/course/live/LiveVideoController.ts",
     "service": "/app/services/api/owl/api/EduLiveVideoFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getLiveMarketingSetting",
+    "javaApi": "com.youzan.owl.api.client.ump.livemarketing.LiveDashboardFacade#getLiveMarketingSetting",
     "jsonApi": "/wscvis/course/live/video/getLiveSetting.json",
     "navigator": [
       "/client/pages/course/live/video-room/api/index.js"
     ],
-    "controller": "/app/controllers/course/live/LiveVideoController.js",
+    "controller": "/app/controllers/course/live/LiveVideoController.ts",
     "service": "/app/services/api/owl/api/LiveDashboardFacade.ts"
   },
   {
@@ -525,7 +525,7 @@
     "navigator": [
       "/client/pages/course/live/video-room/api/index.js"
     ],
-    "controller": "/app/controllers/course/live/LiveVideoController.js",
+    "controller": "/app/controllers/course/live/LiveVideoController.ts",
     "service": "/app/services/owl/trade/LiveRewardOrderFacade.ts"
   },
   {
@@ -820,7 +820,7 @@
       "/client/pages/paid-content/api/index.js",
       "/client/pages/supv/exam/api/index.js"
     ],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/api/owl/biz/OwlCommonService.ts"
   },
   {
@@ -1557,7 +1557,7 @@
     "navigator": [
       "/client/pages/edu/api/index.js"
     ],
-    "controller": "/app/controllers/edu/reward/RewardPreviewController.js",
+    "controller": "/app/controllers/edu/reward/RewardPreviewController.ts",
     "service": "/app/services/api/owl/api/RewardRecordFacade.ts"
   },
   {
@@ -1567,7 +1567,7 @@
     "navigator": [
       "/client/pages/edu/api/index.js"
     ],
-    "controller": "/app/controllers/edu/reward/RewardPreviewController.js",
+    "controller": "/app/controllers/edu/reward/RewardPreviewController.ts",
     "service": "/app/services/api/owl/api/RewardRecordFacade.ts"
   },
   {
@@ -1745,7 +1745,7 @@
       "/client/pages/course/detail/blocks/main/join-group-block/api.js",
       "/client/pages/paid-content/api/index.js"
     ],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/owl/api/ColumnService.ts"
   },
   {
@@ -1756,7 +1756,7 @@
       "/client/pages/course/detail/blocks/main/column-free-block/api.js",
       "/client/pages/paid-content/api/index.js"
     ],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/owl/api/ColumnService.ts"
   },
   {
@@ -1767,7 +1767,7 @@
       "/client/pages/course/detail/blocks/main/column-catalogue-block/api.js",
       "/client/pages/course/detail/blocks/main/column-entry-block/column-catalogue/api.js"
     ],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/api/owl/api/DirectoryFacade.ts"
   },
   {
@@ -1779,7 +1779,7 @@
       "/client/pages/course/detail/blocks/main/column-entry-block/column-catalogue/api.js",
       "/client/pages/paid-content/api/index.js"
     ],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/api/owl/api/ClientContentFacade.ts"
   },
   {
@@ -1789,7 +1789,7 @@
     "navigator": [
       "/client/pages/paid-content/api/index.js"
     ],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/api/owl/biz/OwlCommonService.ts"
   },
   {
@@ -1797,7 +1797,7 @@
     "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientColumnFacade#",
     "jsonApi": "/wscvis/knowledge/column.json",
     "navigator": [],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/owl/client/onlinecourse/ClientColumnFacade.ts"
   },
   {
@@ -1807,7 +1807,7 @@
     "navigator": [
       "/client/pages/paid-content/api/index.js"
     ],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/owl/client/onlinecourse/ClientColumnFacade.ts"
   },
   {
@@ -1817,7 +1817,7 @@
     "navigator": [
       "/client/pages/paid-content/api/index.js"
     ],
-    "controller": "/app/controllers/knowledge/ColumnController.js",
+    "controller": "/app/controllers/knowledge/ColumnController.ts",
     "service": "/app/services/owl/client/onlinecourse/ClientColumnFacade.ts"
   },
   {
@@ -2274,7 +2274,7 @@
       "/client/pages/paid-content/api/index.js",
       "/client/pages/supv/exam/api/index.js"
     ],
-    "controller": "/app/controllers/common/QRController.js",
+    "controller": "/app/controllers/common/QRController.ts",
     "service": "/app/services/api/owl/biz/OwlCommonService.ts"
   },
   {
@@ -2409,7 +2409,7 @@
     "javaApi": "",
     "jsonApi": "/wscvis/pay/getSalemanUpgradeResult.json",
     "navigator": [],
-    "controller": "/app/controllers/pay/SalemanController.js",
+    "controller": "/app/controllers/pay/SalemanController.ts",
     "service": "/app/services/pay/user/SalemanService.ts"
   },
   {
@@ -2479,7 +2479,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2489,7 +2489,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2499,7 +2499,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2509,7 +2509,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2519,7 +2519,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2529,7 +2529,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2539,7 +2539,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2549,7 +2549,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2559,7 +2559,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2569,7 +2569,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2579,7 +2579,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/CourseExamFacade.ts"
   },
   {
@@ -2589,7 +2589,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2599,7 +2599,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2609,7 +2609,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/CourseExamFacade.ts"
   },
   {
@@ -2619,7 +2619,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/CourseExamFacade.ts"
   },
   {
@@ -2629,7 +2629,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/student/StudentFacade.ts"
   },
   {
@@ -2639,7 +2639,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2649,7 +2649,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2659,7 +2659,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2669,7 +2669,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2679,7 +2679,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2689,7 +2689,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2699,7 +2699,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2709,7 +2709,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2719,7 +2719,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2729,7 +2729,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2739,7 +2739,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/CourseExamFacade.ts"
   },
   {
@@ -2749,7 +2749,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2759,7 +2759,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/UserExamFacade.ts"
   },
   {
@@ -2769,7 +2769,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/CourseExamFacade.ts"
   },
   {
@@ -2779,7 +2779,7 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/exam/CourseExamFacade.ts"
   },
   {
@@ -2789,347 +2789,347 @@
     "navigator": [
       "/client/pages/supv/examination/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/examination/ApiController.js",
+    "controller": "/app/controllers/supv/examination/ApiController.ts",
     "service": "/app/services/owl/client/edu/student/StudentFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findAssignmentExchangePage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findAssignmentExchangePage",
     "jsonApi": "/wscvis/supv/homework/findAssignmentExchangePage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#submitAssignmentV2",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#submitAssignmentV2",
     "jsonApi": "/wscvis/supv/homework/submitAssignment.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#shareHomework",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#shareHomework",
     "jsonApi": "/wscvis/supv/homework/shareHomework.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getHomeworkDetail",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getHomeworkDetail",
     "jsonApi": "/wscvis/supv/homework/getHomeworkDetail.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getDocumentDetail",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getDocumentDetail",
     "jsonApi": "/wscvis/supv/homework/getDocumentDetail.json",
     "navigator": [
       "/client/pages/course/preview/api.js"
     ],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#joinExerciseBook",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#joinExerciseBook",
     "jsonApi": "/wscvis/supv/homework/joinExerciseBook.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getUserExercise",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getUserExercise",
     "jsonApi": "/wscvis/supv/homework/getUserExercise.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getStudentAssignment",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getStudentAssignment",
     "jsonApi": "/wscvis/supv/homework/getStudentAssignment.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findUserExercisePage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findUserExercisePage",
     "jsonApi": "/wscvis/supv/homework/findUserExercisePage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findUserAssignmentPage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findUserAssignmentPage",
     "jsonApi": "/wscvis/supv/homework/findUserAssignmentPage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findOtherStudentInfo",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findOtherStudentInfo",
     "jsonApi": "/wscvis/supv/homework/findOtherStudentInfo.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getQuestion",
     "jsonApi": "/wscvis/supv/homework/getQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getNextQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getNextQuestion",
     "jsonApi": "/wscvis/supv/homework/getNextQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getPrevQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getPrevQuestion",
     "jsonApi": "/wscvis/supv/homework/getPrevQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getAnswerCard",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getAnswerCard",
     "jsonApi": "/wscvis/supv/homework/getAnswerCard.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#answerQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#answerQuestion",
     "jsonApi": "/wscvis/supv/homework/answerQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getLatestQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getLatestQuestion",
     "jsonApi": "/wscvis/supv/homework/getLatestQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getStudentBankAssignment",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getStudentBankAssignment",
     "jsonApi": "/wscvis/supv/homework/getStudentBankAssignment.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getBankHomeworkDetail",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getBankHomeworkDetail",
     "jsonApi": "/wscvis/supv/homework/getBankHomeworkDetail.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getBankAssignmentBrief",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getBankAssignmentBrief",
     "jsonApi": "/wscvis/supv/homework/getBankAssignmentBrief.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findBankAssignmentExchangePage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findBankAssignmentExchangePage",
     "jsonApi": "/wscvis/supv/homework/findBankAssignmentExchangePage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findAssignmentExchangePage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findAssignmentExchangePage",
     "jsonApi": "/wscvis/supv/homework/findAssignmentExchangePage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#submitAssignmentV2",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#submitAssignmentV2",
     "jsonApi": "/wscvis/supv/homework/submitAssignment.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#shareHomework",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#shareHomework",
     "jsonApi": "/wscvis/supv/homework/shareHomework.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getHomeworkDetail",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getHomeworkDetail",
     "jsonApi": "/wscvis/supv/homework/getHomeworkDetail.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getDocumentDetail",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getDocumentDetail",
     "jsonApi": "/wscvis/supv/homework/getDocumentDetail.json",
     "navigator": [
       "/client/pages/course/preview/api.js"
     ],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#joinExerciseBook",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#joinExerciseBook",
     "jsonApi": "/wscvis/supv/homework/joinExerciseBook.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getUserExercise",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getUserExercise",
     "jsonApi": "/wscvis/supv/homework/getUserExercise.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getStudentAssignment",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getStudentAssignment",
     "jsonApi": "/wscvis/supv/homework/getStudentAssignment.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findUserExercisePage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findUserExercisePage",
     "jsonApi": "/wscvis/supv/homework/findUserExercisePage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findUserAssignmentPage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findUserAssignmentPage",
     "jsonApi": "/wscvis/supv/homework/findUserAssignmentPage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findOtherStudentInfo",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findOtherStudentInfo",
     "jsonApi": "/wscvis/supv/homework/findOtherStudentInfo.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getQuestion",
     "jsonApi": "/wscvis/supv/homework/getQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getNextQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getNextQuestion",
     "jsonApi": "/wscvis/supv/homework/getNextQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getPrevQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getPrevQuestion",
     "jsonApi": "/wscvis/supv/homework/getPrevQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getAnswerCard",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getAnswerCard",
     "jsonApi": "/wscvis/supv/homework/getAnswerCard.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#answerQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#answerQuestion",
     "jsonApi": "/wscvis/supv/homework/answerQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getLatestQuestion",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getLatestQuestion",
     "jsonApi": "/wscvis/supv/homework/getLatestQuestion.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getStudentBankAssignment",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getStudentBankAssignment",
     "jsonApi": "/wscvis/supv/homework/getStudentBankAssignment.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getBankHomeworkDetail",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getBankHomeworkDetail",
     "jsonApi": "/wscvis/supv/homework/getBankHomeworkDetail.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getBankAssignmentBrief",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#getBankAssignmentBrief",
     "jsonApi": "/wscvis/supv/homework/getBankAssignmentBrief.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#findBankAssignmentExchangePage",
+    "javaApi": "com.youzan.owl.api.client.edu.exercise.UserExerciseFacade#findBankAssignmentExchangePage",
     "jsonApi": "/wscvis/supv/homework/findBankAssignmentExchangePage.json",
     "navigator": [],
-    "controller": "/app/controllers/supv/homework/ApiController.js",
+    "controller": "/app/controllers/supv/homework/ApiController.ts",
     "service": "/app/services/api/owl/api/UserExerciseFacade.ts"
   },
   {
@@ -3545,7 +3545,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/PraiseFacade.ts"
   },
   {
@@ -3555,7 +3555,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/PraiseFacade.ts"
   },
   {
@@ -3565,7 +3565,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3575,7 +3575,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3585,7 +3585,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3595,7 +3595,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3605,7 +3605,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3615,7 +3615,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3625,7 +3625,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3635,7 +3635,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3645,7 +3645,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3655,7 +3655,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciRewardFacade.ts"
   },
   {
@@ -3665,7 +3665,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3675,7 +3675,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3685,7 +3685,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3695,7 +3695,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3705,7 +3705,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3715,7 +3715,7 @@
     "navigator": [
       "/client/pages/paid-content/containers/my-pay/apis.js"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/GciOrderFacade.ts"
   },
   {
@@ -3725,7 +3725,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/GciLogFacade.ts"
   },
   {
@@ -3735,7 +3735,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/PraiseFacade.ts"
   },
   {
@@ -3745,7 +3745,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/PraiseFacade.ts"
   },
   {
@@ -3755,7 +3755,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3765,7 +3765,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3775,7 +3775,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3785,7 +3785,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3795,7 +3795,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3805,7 +3805,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3815,7 +3815,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3825,7 +3825,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3835,7 +3835,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3845,7 +3845,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciRewardFacade.ts"
   },
   {
@@ -3855,7 +3855,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3865,7 +3865,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3875,7 +3875,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3885,7 +3885,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3895,7 +3895,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/api/GciFacade.ts"
   },
   {
@@ -3905,7 +3905,7 @@
     "navigator": [
       "/client/pages/paid-content/containers/my-pay/apis.js"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/GciOrderFacade.ts"
   },
   {
@@ -3915,7 +3915,7 @@
     "navigator": [
       "/client/pages/supv/punch/apis/index.ts"
     ],
-    "controller": "/app/controllers/supv/punch/PunchV2Controller.js",
+    "controller": "/app/controllers/supv/punch/PunchV2Controller.ts",
     "service": "/app/services/api/owl/gci/GciLogFacade.ts"
   },
   {
@@ -4197,7 +4197,7 @@
     "javaApi": "com.youzan.owl.api.trade.TradeOrderFacade#cache",
     "jsonApi": "/wscvis/trade/bookKey.json",
     "navigator": [],
-    "controller": "/app/controllers/trade/TradeBizController.js",
+    "controller": "/app/controllers/trade/TradeBizController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4205,7 +4205,7 @@
     "javaApi": "com.youzan.owl.api.trade.TradeOrderFacade#create",
     "jsonApi": "/wscvis/trade/create.json",
     "navigator": [],
-    "controller": "/app/controllers/trade/TradeBuyController.js",
+    "controller": "/app/controllers/trade/TradeBuyController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4213,7 +4213,7 @@
     "javaApi": "com.youzan.owl.api.trade.TradeOrderFacade#cache",
     "jsonApi": "/wscvis/trade/bookKey.json",
     "navigator": [],
-    "controller": "/app/controllers/trade/TradeBizController.js",
+    "controller": "/app/controllers/trade/TradeBizController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4221,7 +4221,7 @@
     "javaApi": "com.youzan.owl.api.trade.TradeOrderFacade#create",
     "jsonApi": "/wscvis/trade/create.json",
     "navigator": [],
-    "controller": "/app/controllers/trade/TradeBuyController.js",
+    "controller": "/app/controllers/trade/TradeBuyController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4231,7 +4231,7 @@
     "navigator": [
       "/client/pages/trade/buy/api/index.js"
     ],
-    "controller": "/app/controllers/trade/TradeBuyController.js",
+    "controller": "/app/controllers/trade/TradeBuyController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4241,7 +4241,7 @@
     "navigator": [
       "/client/pages/trade/buy/api/index.js"
     ],
-    "controller": "/app/controllers/trade/TradeBuyController.js",
+    "controller": "/app/controllers/trade/TradeBuyController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4251,7 +4251,7 @@
     "navigator": [
       "/client/pages/trade/buy/api/index.js"
     ],
-    "controller": "/app/controllers/trade/TradeBuyController.js",
+    "controller": "/app/controllers/trade/TradeBuyController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4261,7 +4261,7 @@
     "navigator": [
       "/client/pages/trade/buy/api/index.js"
     ],
-    "controller": "/app/controllers/trade/TradeBuyController.js",
+    "controller": "/app/controllers/trade/TradeBuyController.ts",
     "service": "/app/services/api/owl/api/TradeOrderFacade.ts"
   },
   {
@@ -4301,7 +4301,7 @@
     "navigator": [
       "/client/pages/trade/buy/api/index.js"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/client/product/ClientEduProductFacade.ts"
   },
   {
@@ -4341,7 +4341,7 @@
     "navigator": [
       "/client/pages/trade/buy/api/index.js"
     ],
-    "controller": "/app/controllers/course/detail/DetailController.js",
+    "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/client/product/ClientEduProductFacade.ts"
   },
   {
@@ -4366,7 +4366,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getBuyerInfoFromUserCenter",
+    "javaApi": "com.youzan.owl.api.SubscriptionService#getBuyerInfoFromUserCenter",
     "jsonApi": "/pay/wscvis_ptc_pay/buyerInfo.json",
     "navigator": [
       "/client/pages/trade/paid-content-order/api/index.js"
@@ -4660,7 +4660,7 @@
     "navigator": [
       "/client/pages/ump/activity-entry/api.ts"
     ],
-    "controller": "/app/controllers/ump/CommonController.js",
+    "controller": "/app/controllers/ump/CommonController.ts",
     "service": "/app/services/api/owl/api/ActivityCommonFacade.ts"
   },
   {
@@ -4670,7 +4670,7 @@
     "navigator": [
       "/client/pages/ump/introduction/apis/old-student.js"
     ],
-    "controller": "/app/controllers/ump/CommonController.js",
+    "controller": "/app/controllers/ump/CommonController.ts",
     "service": "/app/services/api/owl/api/ActivityCommonFacade.ts"
   },
   {
@@ -4680,7 +4680,7 @@
     "navigator": [
       "/client/pages/ump/activity-entry/api.ts"
     ],
-    "controller": "/app/controllers/ump/CommonController.js",
+    "controller": "/app/controllers/ump/CommonController.ts",
     "service": "/app/services/api/owl/api/ActivityCommonFacade.ts"
   },
   {
@@ -4690,7 +4690,7 @@
     "navigator": [
       "/client/pages/ump/introduction/apis/old-student.js"
     ],
-    "controller": "/app/controllers/ump/CommonController.js",
+    "controller": "/app/controllers/ump/CommonController.ts",
     "service": "/app/services/api/owl/api/ActivityCommonFacade.ts"
   },
   {
@@ -4731,7 +4731,7 @@
       "/client/pages/course/detail/store/api.js",
       "/client/pages/ump/groupon/api.js"
     ],
-    "controller": "/app/controllers/ump/GoodsController.js",
+    "controller": "/app/controllers/ump/GoodsController.ts",
     "service": "/app/services/ump/goods/VoucherSendService.ts"
   },
   {
@@ -4741,7 +4741,7 @@
     "navigator": [
       "/client/pages/course/detail/store/api.js"
     ],
-    "controller": "/app/controllers/ump/GoodsController.js",
+    "controller": "/app/controllers/ump/GoodsController.ts",
     "service": "/app/services/ump/goods/GoodsActivityReadService.ts"
   },
   {
@@ -4752,7 +4752,7 @@
       "/client/pages/course/detail/store/api.js",
       "/client/pages/ump/groupon/api.js"
     ],
-    "controller": "/app/controllers/ump/GoodsController.js",
+    "controller": "/app/controllers/ump/GoodsController.ts",
     "service": "/app/services/ump/goods/VoucherSendService.ts"
   },
   {
@@ -4762,7 +4762,7 @@
     "navigator": [
       "/client/pages/course/detail/store/api.js"
     ],
-    "controller": "/app/controllers/ump/GoodsController.js",
+    "controller": "/app/controllers/ump/GoodsController.ts",
     "service": "/app/services/ump/goods/GoodsActivityReadService.ts"
   },
   {
@@ -5272,26 +5272,26 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getRewardCarousel",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getRewardCarousel",
     "jsonApi": "/wscvis/ump/referral-invite/getGetRewardCarousel.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getDetailByGoodsAliasV2",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getDetailByGoodsAliasV2",
     "jsonApi": "/wscvis/ump/referral-invite/getGetDetailByGoodsAlias.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getRecommendGoods",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getRecommendGoods",
     "jsonApi": "/wscvis/ump/referral-invite/getRecommendGoods.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
@@ -5315,55 +5315,55 @@
     "javaApi": "com.youzan.owl.api.client.product.ClientEduProductFacade#getSimpleProduct",
     "jsonApi": "/wscvis/ump/referral-invite/getSimpleProduct.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ClientEduProductFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getEarningsTotal",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getEarningsTotal",
     "jsonApi": "/wscvis/ump/referral-invite/getEarningsTotal.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getEarningsHistory",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getEarningsHistory",
     "jsonApi": "/wscvis/ump/referral-invite/getEarningsHistory.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getInvitedRecordByActivityId",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getInvitedRecordByActivityId",
     "jsonApi": "/wscvis/ump/referral-invite/getInviteRecord.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getRewardCarousel",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getRewardCarousel",
     "jsonApi": "/wscvis/ump/referral-invite/getGetRewardCarousel.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getDetailByGoodsAliasV2",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getDetailByGoodsAliasV2",
     "jsonApi": "/wscvis/ump/referral-invite/getGetDetailByGoodsAlias.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getRecommendGoods",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getRecommendGoods",
     "jsonApi": "/wscvis/ump/referral-invite/getRecommendGoods.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
@@ -5387,31 +5387,31 @@
     "javaApi": "com.youzan.owl.api.client.product.ClientEduProductFacade#getSimpleProduct",
     "jsonApi": "/wscvis/ump/referral-invite/getSimpleProduct.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ClientEduProductFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getEarningsTotal",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getEarningsTotal",
     "jsonApi": "/wscvis/ump/referral-invite/getEarningsTotal.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getEarningsHistory",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getEarningsHistory",
     "jsonApi": "/wscvis/ump/referral-invite/getEarningsHistory.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "undefined#getInvitedRecordByActivityId",
+    "javaApi": "com.youzan.owl.api.client.ump.referral.ReferralCustomerFacade#getInvitedRecordByActivityId",
     "jsonApi": "/wscvis/ump/referral-invite/getInviteRecord.json",
     "navigator": [],
-    "controller": "/app/controllers/ump/ReferralInviteController.js",
+    "controller": "/app/controllers/ump/ReferralInviteController.ts",
     "service": "/app/services/api/owl/api/ReferralCustomerFacade.ts"
   },
   {
@@ -5532,7 +5532,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5542,7 +5542,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5552,7 +5552,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5562,7 +5562,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5572,7 +5572,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5582,7 +5582,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5592,7 +5592,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/StudentAttributeFacade.ts"
   },
   {
@@ -5602,7 +5602,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5612,7 +5612,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/ActivityCommonFacade.ts"
   },
   {
@@ -5622,7 +5622,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5632,7 +5632,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5642,7 +5642,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5652,7 +5652,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5662,7 +5662,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5672,7 +5672,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5682,7 +5682,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5692,7 +5692,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/StudentAttributeFacade.ts"
   },
   {
@@ -5702,7 +5702,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5712,7 +5712,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/ActivityCommonFacade.ts"
   },
   {
@@ -5722,7 +5722,7 @@
     "navigator": [
       "/client/pages/ump/tuition/api.ts"
     ],
-    "controller": "/app/controllers/ump/TuitionController.js",
+    "controller": "/app/controllers/ump/TuitionController.ts",
     "service": "/app/services/api/owl/api/TuitionCustomerFacade.ts"
   },
   {
@@ -5732,7 +5732,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
     ],
-    "controller": "/app/controllers/ump/WecomFansBenefitController.js",
+    "controller": "/app/controllers/ump/WecomFansBenefitController.ts",
     "service": "/app/services/api/wecom/ump/FansBenefitCommandService.ts"
   },
   {
@@ -5742,7 +5742,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
     ],
-    "controller": "/app/controllers/ump/WecomFansBenefitController.js",
+    "controller": "/app/controllers/ump/WecomFansBenefitController.ts",
     "service": "/app/services/api/uic/api/UserInfoService.ts"
   },
   {
@@ -5752,7 +5752,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
     ],
-    "controller": "/app/controllers/ump/WecomFansBenefitController.js",
+    "controller": "/app/controllers/ump/WecomFansBenefitController.ts",
     "service": "/app/services/api/uic/acl/OmniChannelService.ts"
   },
   {
@@ -5762,7 +5762,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
     ],
-    "controller": "/app/controllers/ump/WecomFansBenefitController.js",
+    "controller": "/app/controllers/ump/WecomFansBenefitController.ts",
     "service": "/app/services/api/wecom/ump/FansBenefitCommandService.ts"
   },
   {
@@ -5772,7 +5772,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
     ],
-    "controller": "/app/controllers/ump/WecomFansBenefitController.js",
+    "controller": "/app/controllers/ump/WecomFansBenefitController.ts",
     "service": "/app/services/api/uic/api/UserInfoService.ts"
   },
   {
@@ -5782,7 +5782,7 @@
     "navigator": [
       "/client/pages/course/detail/blocks/main/base-info-block/components/wecom-fans-benefit/service.ts"
     ],
-    "controller": "/app/controllers/ump/WecomFansBenefitController.js",
+    "controller": "/app/controllers/ump/WecomFansBenefitController.ts",
     "service": "/app/services/api/uic/acl/OmniChannelService.ts"
   }
 ]

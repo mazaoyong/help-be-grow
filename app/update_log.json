@@ -166,5 +166,41 @@
     "updateEndTime": 1629082524124,
     "status": 1,
     "info": "正常"
+  },
+  {
+    "spend": 87779,
+    "updateEndTime": 1629710450498,
+    "status": -1,
+    "info": "更新数据失败,错误信息：TypeError: Cannot read property 'arguments' of undefined"
+  },
+  {
+    "spend": 111739,
+    "updateEndTime": 1629710782395,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "spend": 110899,
+    "updateEndTime": 1629711067462,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "spend": 111560,
+    "updateEndTime": 1629711841824,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "spend": 112268,
+    "updateEndTime": 1629712186713,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "spend": 113352,
+    "updateEndTime": 1629716581594,
+    "status": 1,
+    "info": "正常"
   }
 ]
