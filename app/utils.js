@@ -16,7 +16,7 @@ const getTotalFiles = (filePath, type = ['.js', '.ts']) => {
       if (stats.isFile() && type.includes(path.extname(filedir))) { // 文件
         fileList.push(filedir)
       } else if (stats.isDirectory()) { // 文件夹
-        fileList = [...fileList, ...getTotalFiles(filedir)]
+        fileList = [...fileList, ...getTotalFiles(filedir, type)]
       }
     })
   } catch (err) {

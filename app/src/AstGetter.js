@@ -77,6 +77,9 @@ class AstGetter {
     if (this.isTs) {
       const ast = this.astObj
       result = tsquery(ast, 'ClassDeclaration > MethodDeclaration')
+      if (result.length === 0) {
+        result = tsquery(ast, 'ClassExpression > MethodDeclaration')
+      }
     } else {
       const classDec = get(this, 'ClassDeclaration[0]', null)
       if (classDec) {
@@ -92,17 +95,26 @@ class AstGetter {
   // 根据service的函数获取接口地址
   getJavaApi(func) {
     const methodList = this.getAllAsyncMethod()
+    const astObj = this.astObj
     let javaApi = ''
     if (this.isTs) {
       const serviceFunc = methodList.find(item => item.name.escapedText === func)
-      const invokeBody = tsquery(serviceFunc.body, 'CallExpression[expression.name.escapedText="invoke"]')[0]
-      const suffix = invokeBody.arguments[0].text
-      // 获取java接口前缀的N种方法
-      const publicAst = tsquery(this.astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
-      const readonlyAst = tsquery(this.astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
-      const getAccessor = tsquery(this.astObj, 'GetAccessor[name.escapedText=/^[A-Z0-9_]+$/]')
-      const prefix = get(publicAst[0], 'initializer.text', null) || get(readonlyAst[0], 'initializer.text', null) || (getAccessor[0] && getAccessor[0].body && get(tsquery(getAccessor[0].body, 'ReturnStatement')[0], 'expression.text', null))
-      javaApi = prefix + '#' + suffix
+      const invokeBody = keyName => tsquery(serviceFunc.body, `CallExpression[expression.name.escapedText="${keyName}"]`)[0]
+      if (invokeBody('invoke')) {
+        const suffix = invokeBody('invoke').arguments[0].text
+        // 获取java接口前缀的N种方法
+        const publicAst = tsquery(astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
+        const readonlyAst = tsquery(astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
+        const getAccessor = tsquery(astObj, 'GetAccessor[name.escapedText=/^[A-Z0-9_]+$/]')
+        const xjbmm = tsquery(astObj, 'PropertyDeclaration:has(Identifier)[name.escapedText=/^[A-Z0-9_]+$/]')
+        const prefix = get(publicAst[0], 'initializer.text', null) || get(readonlyAst[0], 'initializer.text', null) || (getAccessor[0] && getAccessor[0].body && get(tsquery(getAccessor[0].body, 'ReturnStatement')[0], 'expression.text', null)) || get(xjbmm[0], 'initializer.text', null)
+        javaApi = prefix + '#' + suffix
+      } else if (invokeBody('payInvoke')) {
+        const getKeyNameAst = keyName => tsquery(astObj, `ObjectLiteralExpression > PropertyAssignment[name.escapedText=${keyName}]`)
+        const service = get(getKeyNameAst('service')[0], 'initializer.text')
+        const method = get(getKeyNameAst('method')[0], 'initializer.text')
+        javaApi = service + '#' + method
+      }
     } else {
       const serviceFunc = methodList.find(body => body.key.name === func)
       const callList = this.getArrByCondition(serviceFunc, { type: 'CallExpression' })
@@ -202,5 +214,7 @@ class AstGetter {
 
 module.exports = AstGetter
 
-// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/services/api/owl/api/LiveDashboardFacade.ts')
-// console.log(test.getJavaApi('getLiveMarketingSetting'))
+// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-pc-shop/app/services/rig/RoleService.ts')
+// console.log(test.getServicePath('getQuestionnaire'))
+// console.log(test.getJavaApi('add'))
+// console.log(test.getAllAsyncMethod())

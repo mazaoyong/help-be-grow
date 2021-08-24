@@ -40,12 +40,17 @@ function apiAssemble(appName, api) {
       controllerMethod.forEach(controllerFunc => {
         astObj.getServicePath(controllerFunc).forEach(service => {
           const { path: servicePath, func: serviceFunc } = service
-          const serviceAstObj = new AstGetter(getJsFileRealPath(path.join(__dirname, './static-project/', appName, '/app', servicePath)).path)
+          let serviceAstObj = null
+          try {
+            serviceAstObj = new AstGetter(getJsFileRealPath(path.join(__dirname, './static-project/', appName, '/app', servicePath)).path)
+          } catch {
+            serviceAstObj = ''
+          }
           result.push({
             "appName": appName,
-            "javaApi": serviceAstObj.getJavaApi(serviceFunc),
+            "javaApi": serviceAstObj && serviceAstObj.getJavaApi(serviceFunc),
             "jsonApi": jsonApiItem,
-            "navigator": getNavigator(appName, jsonApiItem.replace('/v4/vis', '')).map(item => item.match(/\/client\/pages\/.+/)[0]),
+            "navigator": ['wsc-pc-vis', 'wsc-h5-vis'].includes(appName) ? getNavigator(appName, jsonApiItem.replace('/v4/vis', '')).map(item => item.match(/\/client\/pages\/.+/)[0]) : '',
             // "Navigator2": getNavigator(appName, jsonApiItem.replace('/v4/vis', '')),
             "controller": controllerSuffixPath,
             "service": '/app/' + service.path
@@ -56,7 +61,7 @@ function apiAssemble(appName, api) {
   }
   return result
 }
-
+let errRouterPath = ''
 module.exports = (projectInfo) => {
   // 纪录每次花费的时间
   const start = new Date().getTime()
@@ -71,13 +76,19 @@ module.exports = (projectInfo) => {
     projectInfo.forEach(item => {
       const appName = item.name
       const routersPath = path.join(__dirname, `./static-project/${appName}/app/routers`)
-      const routerFileList = getTotalFiles(routersPath)
+      const routerFileList = getTotalFiles(routersPath, ['.js'])
       let data = []
       routerFileList.forEach(routerPath => {
-        const apiArr = require(routerPath.replace('.ts', '.js'))
+        errRouterPath = routerPath
+        let apiArr = []
+        try {
+          apiArr = require(routerPath.replace('.ts', '.js'))
+        } catch (err) {
+          console.log('路由文件非纯数组：' + routerPath)
+        }
         apiArr.forEach(apiItem => {
           // 先把数据全部存起来，没有报错之后才更新数据
-          data = [...data, ...apiAssemble(appName, apiItem)]
+          data = [...data, ...apiAssemble(appName, apiItem.length > 4 ? apiItem.slice(1) : apiItem)]
         })
       })
       const dataFilePath = path.join(__dirname, `./data/${appName}.json`);
@@ -105,6 +116,7 @@ module.exports = (projectInfo) => {
   } catch (err) {
     updateState.status = -1;
     updateState.info = '更新数据失败,错误信息：' + err || '未知'
+    console.log(errRouterPath)
   }
 
 
