@@ -6,10 +6,9 @@ const mainTask = require('./main')
 const service = require('./src/service')
 const { delDir } = require('./utils')
 const child_process = require('child_process');
-
 // 任务顺序
 function taskList() {
-  return
+  // return
   // 先删除static-project文件夹
   const staticProjectPath = path.join(__dirname, './static-project')
   fs.existsSync(staticProjectPath) && delDir(staticProjectPath)
@@ -21,8 +20,9 @@ function taskList() {
       child_process.exec('npm run tsc', err => {
         if (err) {
           console.log('ts文件格式转化报错：', err)
-          return
+          // return
         }
+        console.log('下载完成')
         mainTask(res)
       })
     })
@@ -30,9 +30,9 @@ function taskList() {
 taskList()
 
 // 每天的凌晨2点更新代码
-schedule.scheduleJob('0 0 2 * * *', () => {
-  taskList()
-})
+// schedule.scheduleJob('0 0 2 * * *', () => {
+//   taskList()
+// })
 
 // 先打包再服务器启动
 // child_process.exec('cd client && npm i && npm run build', err => {

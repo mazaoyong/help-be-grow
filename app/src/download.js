@@ -60,6 +60,34 @@ const DOWNLOAD_FILE = [
   {
     id: 5075,
     name: 'wsc-pc-vis'
+  },
+  {
+    id: 4947,
+    name: 'wsc-pc-shop'
+  },
+  {
+    id: 4949,
+    name: 'wsc-pc-goods'
+  },
+  {
+    id: 9989,
+    name: 'wsc-pc-decorate'
+  },
+  {
+    id: 4555,
+    name: 'wsc-h5-shop'
+  },
+  {
+    id: 4951,
+    name: 'wsc-pc-ump'
+  },
+  {
+    id: 9988,
+    name: 'wsc-h5-decorate'
+  },
+  {
+    id: 7388,
+    name: 'wsc-h5-goods'
   }
 ]
 

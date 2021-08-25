@@ -1,205 +1,64 @@
 [
   {
-    "spend": 100206,
-    "updateEndTime": 1628446513537,
-    "status": 2,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.b.json'"
-  },
-  {
-    "spend": 99690,
-    "updateEndTime": 1628446624096,
+    "appName": "wsc-h5-vis",
+    "spend": 117165,
+    "updateEndTime": 1629861612995,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 100873,
-    "updateEndTime": 1628449300947,
+    "appName": "wsc-h5-shop",
+    "spend": 4789,
+    "updateEndTime": 1629861613000,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 46,
-    "updateEndTime": 1628453105336,
-    "status": 2,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis-master-61f76c246f62e59624e215f88175b3f5c6796af8.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis-master-61f76c246f62e59624e215f88175b3f5c6796af8.json'"
-  },
-  {
-    "spend": 1638,
-    "updateEndTime": 1628453172225,
-    "status": -1,
-    "info": "更新数据失败,错误信息：Error: Cannot find module '/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis-master-61f76c246f62e59624e215f88175b3f5c6796af8/app/routers/common/docsPreview.js'"
-  },
-  {
-    "spend": 25,
-    "updateEndTime": 1628453300109,
-    "status": -1,
-    "info": "更新数据失败,错误信息：Error: ENOENT: no such file or directory, open '/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/controllers/common/BizController.ts'"
-  },
-  {
-    "spend": 22,
-    "updateEndTime": 1628453358754,
-    "status": -1,
-    "info": "更新数据失败,错误信息：Error: ENOENT: no such file or directory, open '/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/controllers/common/BizController.ts'"
-  },
-  {
-    "spend": 1353,
-    "updateEndTime": 1628453669213,
-    "status": -1,
-    "info": "更新数据失败,错误信息：Error: Cannot find module '/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/routers/common/docsPreview.js'"
-  },
-  {
-    "spend": 1306,
-    "updateEndTime": 1628453747127,
-    "status": -1,
-    "info": "更新数据失败,错误信息：Error: Cannot find module '/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/routers/common/docsPreview.js'"
-  },
-  {
-    "spend": 1219,
-    "updateEndTime": 1628453869443,
-    "status": -1,
-    "info": "更新数据失败,错误信息：Error: Cannot find module '/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/routers/common/docsPreview.js'"
-  },
-  {
-    "spend": 1253,
-    "updateEndTime": 1628651820864,
-    "status": -1,
-    "info": "更新数据失败,错误信息：Error: Cannot find module '/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/routers/common/docsPreview.js'"
-  },
-  {
-    "spend": 103738,
-    "updateEndTime": 1628652243826,
-    "status": 2,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.json'"
-  },
-  {
-    "spend": 104068,
-    "updateEndTime": 1628652505167,
+    "appName": "wsc-pc-vis",
+    "spend": 90628,
+    "updateEndTime": 1629861613000,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 104731,
-    "updateEndTime": 1628652799646,
+    "appName": "wsc-h5-decorate",
+    "spend": 1626,
+    "updateEndTime": 1629861613000,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 103792,
-    "updateEndTime": 1628653143650,
+    "appName": "wsc-pc-ump",
+    "spend": 2836,
+    "updateEndTime": 1629861613000,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 103738,
-    "updateEndTime": 1628652243826,
-    "status": -1,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.json'"
-  },
-  {
-    "spend": 108579,
-    "updateEndTime": 1628734358993,
+    "appName": "wsc-pc-shop",
+    "spend": 10284,
+    "updateEndTime": 1629861613001,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 107876,
-    "updateEndTime": 1628734694314,
+    "appName": "wsc-pc-decorate",
+    "spend": 6173,
+    "updateEndTime": 1629861613001,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 106195,
-    "updateEndTime": 1628751529368,
+    "appName": "wsc-pc-goods",
+    "spend": 6561,
+    "updateEndTime": 1629861613001,
     "status": 1,
     "info": "正常"
   },
   {
-    "spend": 114975,
-    "updateEndTime": 1629030562042,
-    "status": 2,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.b.json'"
-  },
-  {
-    "spend": 109879,
-    "updateEndTime": 1629038117221,
-    "status": 2,
-    "info": "写入数据失败，错误信息：Error: ENOENT: no such file or directory, open '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.json'"
-  },
-  {
-    "spend": 115265,
-    "updateEndTime": 1629038301688,
-    "status": 2,
-    "info": "写入数据失败，错误信息：Error: ENOENT: no such file or directory, open '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.json'"
-  },
-  {
-    "spend": 114216,
-    "updateEndTime": 1629038769596,
-    "status": 2,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-pc-vis.b.json'"
-  },
-  {
-    "spend": 112977,
-    "updateEndTime": 1629040349253,
-    "status": 1,
-    "info": "正常"
-  },
-  {
-    "spend": 116304,
-    "updateEndTime": 1629042027469,
-    "status": 2,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.b.json'"
-  },
-  {
-    "spend": 109799,
-    "updateEndTime": 1629042568641,
-    "status": 2,
-    "info": "备份数据失败，错误信息：Error: ENOENT: no such file or directory, rename '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.json' -> '/Users/mazaoyong/Desktop/project/search-your-mother/app/data/wsc-h5-vis.b.json'"
-  },
-  {
-    "spend": 112729,
-    "updateEndTime": 1629082148282,
-    "status": 1,
-    "info": "正常"
-  },
-  {
-    "spend": 117664,
-    "updateEndTime": 1629082524124,
-    "status": 1,
-    "info": "正常"
-  },
-  {
-    "spend": 87779,
-    "updateEndTime": 1629710450498,
-    "status": -1,
-    "info": "更新数据失败,错误信息：TypeError: Cannot read property 'arguments' of undefined"
-  },
-  {
-    "spend": 111739,
-    "updateEndTime": 1629710782395,
-    "status": 1,
-    "info": "正常"
-  },
-  {
-    "spend": 110899,
-    "updateEndTime": 1629711067462,
-    "status": 1,
-    "info": "正常"
-  },
-  {
-    "spend": 111560,
-    "updateEndTime": 1629711841824,
-    "status": 1,
-    "info": "正常"
-  },
-  {
-    "spend": 112268,
-    "updateEndTime": 1629712186713,
-    "status": 1,
-    "info": "正常"
-  },
-  {
-    "spend": 113352,
-    "updateEndTime": 1629716581594,
+    "appName": "wsc-h5-goods",
+    "spend": 1103,
+    "updateEndTime": 1629861613001,
     "status": 1,
     "info": "正常"
   }

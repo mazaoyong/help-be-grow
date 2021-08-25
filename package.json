@@ -22,6 +22,7 @@
     "@types/node": "^16.3.3",
     "acorn": "^8.4.1",
     "adm-zip": "^0.5.5",
+    "chalk": "^4.1.2",
     "child_process": "^1.0.2",
     "chokidar": "^3.5.2",
     "chokidar-cli": "^2.1.0",
@@ -31,6 +32,8 @@
     "loadash": "^1.0.0",
     "lodash": "^4.17.21",
     "node-schedule": "^2.0.0",
+    "progress": "^2.0.3",
+    "single-line-log": "^1.1.2",
     "typescript": "^4.3.5"
   },
   "devDependencies": {}

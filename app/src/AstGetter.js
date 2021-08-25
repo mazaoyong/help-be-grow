@@ -101,7 +101,7 @@ class AstGetter {
       const serviceFunc = methodList.find(item => item.name.escapedText === func)
       const invokeBody = keyName => tsquery(serviceFunc.body, `CallExpression[expression.name.escapedText="${keyName}"]`)[0]
       if (invokeBody('invoke')) {
-        const suffix = invokeBody('invoke').arguments[0].text
+        const suffix = invokeBody('invoke').arguments[0].text || invokeBody('invoke').arguments[1].text
         // 获取java接口前缀的N种方法
         const publicAst = tsquery(astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
         const readonlyAst = tsquery(astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
@@ -214,7 +214,7 @@ class AstGetter {
 
 module.exports = AstGetter
 
-// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-pc-shop/app/services/rig/RoleService.ts')
-// console.log(test.getServicePath('getQuestionnaire'))
-// console.log(test.getJavaApi('add'))
+// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-decorate/app/services/bigdata/GoodsRecommendService.ts')
+// console.log(test.getServicePath('getGoodsRecommendJson'))
+// console.log(test.getJavaApi('listRecommendGoods'))
 // console.log(test.getAllAsyncMethod())

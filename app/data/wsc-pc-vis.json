@@ -423,6 +423,26 @@
   },
   {
     "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.uic.captcha.api.service.BehaviorCaptchaService#secondCheckBehaviorToken",
+    "jsonApi": "/v4/vis/common/shop/sendBehaviorCaptcha.json",
+    "navigator": [
+      "/client/pages/shop/xgj-bind/api/campus.ts"
+    ],
+    "controller": "/app/controllers/common/ShopController.js",
+    "service": "/app/services/uic/captcha/BehaviorCaptchaService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.uic.captcha.api.service.SmsCaptchaService#sendSmsCaptcha",
+    "jsonApi": "/v4/vis/common/shop/sendBehaviorCaptcha.json",
+    "navigator": [
+      "/client/pages/shop/xgj-bind/api/campus.ts"
+    ],
+    "controller": "/app/controllers/common/ShopController.js",
+    "service": "/app/services/uic/captcha/SmsCaptchaService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.staff.core.api.service.StaffReadService#queryPage",
     "jsonApi": "/v4/vis/common/staff/getChainStaffList.json",
     "navigator": [],
@@ -715,6 +735,16 @@
     ],
     "controller": "/app/controllers/course/ClassLiveController.js",
     "service": "/app/services/api/owl/pc/EduLiveFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.EduLiveComponentFacade#findAnswerClickerDataByPage",
+    "jsonApi": "/v4/vis/course/class-live/findAnswerClickerDataByPage.json",
+    "navigator": [
+      "/client/pages/course/class-live/manage/pages/list/api.ts"
+    ],
+    "controller": "/app/controllers/course/ClassLiveController.js",
+    "service": "/app/services/api/owl/pc/EduLiveComponentFacade.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -3548,76 +3578,6 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.holiday.CustomHolidayFacade#getById",
-    "jsonApi": "/v4/vis/edu-admin/holiday/get-by-id.json",
-    "navigator": [
-      "/client/pages/edu-admin/api/holiday.ts"
-    ],
-    "controller": "/app/controllers/edu-admin/HolidayController.js",
-    "service": "/app/services/api/owl/pc/CustomHolidayFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.holiday.CustomHolidayFacade#create",
-    "jsonApi": "/v4/vis/edu-admin/holiday/create.json",
-    "navigator": [
-      "/client/pages/edu-admin/api/holiday.ts"
-    ],
-    "controller": "/app/controllers/edu-admin/HolidayController.js",
-    "service": "/app/services/api/owl/pc/CustomHolidayFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.holiday.CustomHolidayFacade#update",
-    "jsonApi": "/v4/vis/edu-admin/holiday/update.json",
-    "navigator": [
-      "/client/pages/edu-admin/api/holiday.ts"
-    ],
-    "controller": "/app/controllers/edu-admin/HolidayController.js",
-    "service": "/app/services/api/owl/pc/CustomHolidayFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.holiday.CustomHolidayFacade#delete",
-    "jsonApi": "/v4/vis/edu-admin/holiday/delete.json",
-    "navigator": [
-      "/client/pages/edu-admin/api/holiday.ts"
-    ],
-    "controller": "/app/controllers/edu-admin/HolidayController.js",
-    "service": "/app/services/api/owl/pc/CustomHolidayFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.holiday.CustomHolidayFacade#findPage",
-    "jsonApi": "/v4/vis/edu-admin/holiday/find-page.json",
-    "navigator": [
-      "/client/pages/edu-admin/api/holiday.ts"
-    ],
-    "controller": "/app/controllers/edu-admin/HolidayController.js",
-    "service": "/app/services/api/owl/pc/CustomHolidayFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.holiday.CustomHolidayFacade#find",
-    "jsonApi": "/v4/vis/edu-admin/holiday/find.json",
-    "navigator": [
-      "/client/pages/edu-admin/api/holiday.ts"
-    ],
-    "controller": "/app/controllers/edu-admin/HolidayController.js",
-    "service": "/app/services/api/owl/pc/CustomHolidayFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.showcase.front.api.service.appcenter.NationalHolidayReadService#listAllByYear",
-    "jsonApi": "/v4/vis/edu-admin/holiday/list-all-by-year.json",
-    "navigator": [
-      "/client/pages/edu-admin/api/holiday.ts"
-    ],
-    "controller": "/app/controllers/edu-admin/HolidayController.js",
-    "service": "/app/services/api/showcase/front/NationalHolidayReadService.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.lesson.LessonFacade#findKanBanList",
     "jsonApi": "/v4/vis/edu/schedule/view.json",
     "navigator": [
@@ -3893,6 +3853,16 @@
     ],
     "controller": "/app/controllers/edu-admin/schedule/DetailController.js",
     "service": "/app/services/api/owl/pc/StudentLessonFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.signin.SignInFacade#findStudentInLesson",
+    "jsonApi": "/v4/vis/edu-admin/schedule/findStudentInLesson.json",
+    "navigator": [
+      "/client/pages/student/api/student-list.ts"
+    ],
+    "controller": "/app/controllers/edu-admin/schedule/DetailController.js",
+    "service": "/app/services/owl/pc/signin/SignInFacade.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -5122,6 +5092,14 @@
     "navigator": [],
     "controller": "/app/controllers/h5/edu-admin/ScheduleController.js",
     "service": "/app/services/owl/pc/lesson/LessonService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.signin.SignInFacade#findStudentInLesson",
+    "jsonApi": "/v4/vis/h5/edu-admin/schedule/findStudentInLesson.json",
+    "navigator": [],
+    "controller": "/app/controllers/h5/edu-admin/ScheduleController.js",
+    "service": "/app/services/owl/pc/signin/SignInFacade.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -7162,6 +7140,36 @@
     "navigator": [],
     "controller": "/app/controllers/shop/shop/ChainController.js",
     "service": "/app/services/shopcenter/shopfront/ShopChainActivateService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.xgj.CampusFacade#findCampusListForXgj",
+    "jsonApi": "/v4/vis/edu/xgj/getXGJCampusList.json",
+    "navigator": [
+      "/client/pages/shop/xgj-bind/api/campus.ts"
+    ],
+    "controller": "/app/controllers/shop/shop/XGJBindController.js",
+    "service": "/app/services/api/owl/pc/XGJCampusFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.uic.captcha.api.service.SmsCaptchaService#validSmsCaptcha",
+    "jsonApi": "/v4/vis/edu/xgj/bindRelation.json",
+    "navigator": [
+      "/client/pages/shop/xgj-bind/api/campus.ts"
+    ],
+    "controller": "/app/controllers/shop/shop/XGJBindController.js",
+    "service": "/app/services/uic/captcha/SmsCaptchaService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.xgj.CampusFacade#mapCampusId",
+    "jsonApi": "/v4/vis/edu/xgj/bindRelation.json",
+    "navigator": [
+      "/client/pages/shop/xgj-bind/api/campus.ts"
+    ],
+    "controller": "/app/controllers/shop/shop/XGJBindController.js",
+    "service": "/app/services/api/owl/pc/XGJCampusFacade.js"
   },
   {
     "appName": "wsc-pc-vis",

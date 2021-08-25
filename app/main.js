@@ -2,7 +2,6 @@ const AstGetter = require('./src/AstGetter')
 const { getTotalFiles, getJsFileRealPath } = require('./utils')
 const path = require('path')
 const fs = require('fs')
-const schedule = require('node-schedule')
 
 // 通过jsonApi搜索业务
 function getNavigator(appName, jsonApi) {
@@ -63,8 +62,7 @@ function apiAssemble(appName, api) {
 }
 let errRouterPath = ''
 module.exports = (projectInfo) => {
-  // 纪录每次花费的时间
-  const start = new Date().getTime()
+  const updateLog = []
   // 更新的状态，1是成功，2是异常，-1是失败
   let updateState = {
     status: 1,
@@ -74,6 +72,8 @@ module.exports = (projectInfo) => {
   // 核心流程
   try {
     projectInfo.forEach(item => {
+      // 纪录每次花费的时间
+      const start = new Date().getTime()
       const appName = item.name
       const routersPath = path.join(__dirname, `./static-project/${appName}/app/routers`)
       const routerFileList = getTotalFiles(routersPath, ['.js'])
@@ -109,6 +109,19 @@ module.exports = (projectInfo) => {
                 info: '写入数据失败，错误信息：' + err
               }
             }
+            const spend = new Date().getTime() - start
+            const updateLogPath = path.join(__dirname, 'update_log.json')
+            updateLog.push({
+              // 应用名称
+              appName,
+              // 更新所花费的时间
+              spend,
+              // 更新结束时间
+              updateEndTime: new Date().getTime(),
+              ...updateState
+            })
+            fs.writeFileSync(updateLogPath, JSON.stringify(updateLog, null, 2))
+            console.log(`${appName}更新完成`)
           })
         })
       })
@@ -119,24 +132,4 @@ module.exports = (projectInfo) => {
     console.log(errRouterPath)
   }
 
-
-  const spend = new Date().getTime() - start
-  const updateLogPath = path.join(__dirname, 'update_log.json')
-  fs.readFile(updateLogPath, (err, data) => {
-    let updateLog = []
-    if (err) {
-      // 找不到文件
-    } else {
-      updateLog = JSON.parse(data)
-    }
-    updateLog.push({
-      // 更新所花费的时间
-      spend,
-      // 更新结束时间
-      updateEndTime: new Date().getTime(),
-      ...updateState
-    })
-    fs.writeFileSync(updateLogPath, JSON.stringify(updateLog, null, 2))
-    console.log('更新完成')
-  })
 }
