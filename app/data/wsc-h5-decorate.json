@@ -1,0 +1,234 @@
+[
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.channels.channel.core.api.service.WeappAccountService#getWeixinVideoInfo",
+    "jsonApi": "/wscdeco/weapp/WeappAccount/getWeixinVideoInfo.json",
+    "navigator": [],
+    "controller": "/app/controllers/core/WeappAccount.ts",
+    "service": "/app/services/core/WeappAccount.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "null#serviceName",
+    "jsonApi": "/wscdeco/biz-component/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/biz-component/BizComponentController.ts",
+    "service": "/app/services/biz-component/BizComponentService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "",
+    "jsonApi": "/wscdeco/biz-component/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/biz-component/BizComponentController.ts",
+    "service": "/app/services/decorate/components-service/ComponentService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.bigdata.datacenter.consumer.api.service.GoodsService#listRecommendGoods",
+    "jsonApi": "/wscdeco/goods-api/recommend/goods.json",
+    "navigator": [],
+    "controller": "/app/controllers/goods-api/GoodsRecommendController.ts",
+    "service": "/app/services/bigdata/GoodsRecommendService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.bigdata.datacenter.consumer.api.service.GoodsService#getRecommendResultData",
+    "jsonApi": "/wscdeco/goods-api/recommend/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/goods-api/GoodsRecommendController.ts",
+    "service": "/app/services/bigdata/GoodsRecommendService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.guang.live.api.service.LiveStreamingCollectionService#getLiveStreamingCollectionByKey",
+    "jsonApi": "/wscdeco/guang/live/room-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/guang/LiveController.ts",
+    "service": "/app/services/guang/LiveStreamingCollectionService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.guang.ieb.interaction.api.InteractionService#getLiveStreamLookedAmount",
+    "jsonApi": "/wscdeco/guang/live/room-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/guang/LiveController.ts",
+    "service": "/app/services/guang/LiveStreamingInteractiveService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.systempage.SystemPageReadService#query",
+    "jsonApi": "/wscdeco/decorate/marketing-page",
+    "navigator": [],
+    "controller": "/app/controllers/decorate/MarketingPageController.ts",
+    "service": "/app/services/decorate/MarketingService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "",
+    "jsonApi": "/wscdeco/decorate/marketing-page",
+    "navigator": [],
+    "controller": "/app/controllers/decorate/MarketingPageController.ts",
+    "service": "/app/services/decorate/FeatureService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.shopcenter.shopconfig.api.service.ShopConfigReadService#queryShopConfig",
+    "jsonApi": "/wscdeco/decorate/marketing_page_config.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/MarketingApiController.ts",
+    "service": "/app/services/shopcenter/ShopConfigReadService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.shopcenter.shopconfig.api.service.grayrelease.GrayReleaseService#isInGrayReleaseByKdtId",
+    "jsonApi": "/wscdeco/decorate/marketing_page_in_white_list.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/MarketingApiController.ts",
+    "service": "/app/services/shopcenter/GrayReleaseService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteReadService#listShopNotes",
+    "jsonApi": "/wscdeco/notecard-api/listByIds.json",
+    "navigator": [],
+    "controller": "/app/controllers/notecard-api/TeeNoteCardController.ts",
+    "service": "/app/services/decorate/center/shopnote/ShopNoteReadService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.extension.ExtensionSwitchService#queryExtSwitchByPageType",
+    "jsonApi": "/wscdeco/showcase-api/floating_nav.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/FloatingNavController.ts",
+    "service": "/app/services/decorate/center/ExtensionSwitchService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.extension.FloatingNavService#queryFloatingNavs",
+    "jsonApi": "/wscdeco/showcase-api/floating_nav.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/FloatingNavController.ts",
+    "service": "/app/services/decorate/center/FloatingNavService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#getByFeatureAlias",
+    "jsonApi": "/wscdeco/decorate-api/feature_detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/FeatureController.ts",
+    "service": "/app/services/decorate/FeatureService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "",
+    "jsonApi": "/wscdeco/decorate-api/feature_detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/FeatureController.ts",
+    "service": "/app/services/decorate/FeatureService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.weapp.WeappHomepageServiceV2#getByPlatform",
+    "jsonApi": "/wscdeco/tee/homepage-detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/TeeFeatureController.ts",
+    "service": "/app/services/decorate/WeappHomepageServiceV2.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#getByFeatureAlias",
+    "jsonApi": "/wscdeco/tee/feature-detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/TeeFeatureController.ts",
+    "service": "/app/services/decorate/FeatureService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.weapp.WeappHomepageServiceV2#getByPlatform",
+    "jsonApi": "/wscdeco/homepage-detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/TeeFeatureController.ts",
+    "service": "/app/services/decorate/WeappHomepageServiceV2.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#getByFeatureAlias",
+    "jsonApi": "/wscdeco/feature-detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/TeeFeatureController.ts",
+    "service": "/app/services/decorate/FeatureService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.systempage.SystemPageReadService#query",
+    "jsonApi": "/wscdeco/decorate/marketing-detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/decorate-api/TeeMarketingController.ts",
+    "service": "/app/services/decorate/MarketingService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.details.api.specific.ShareEncourageService#getOngoingMicroPageActivity",
+    "jsonApi": "/wscdeco/ump/activity/get-share-activity.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/UmpActivityController.ts",
+    "service": "/app/services/ump/ShareEncourageService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.join.api.InteractiveJoinService#join",
+    "jsonApi": "/wscdeco/ump/activity/join-share-activity.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/UmpActivityController.ts",
+    "service": "/app/services/ump/InteractiveJoinService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.join.api.InteractiveVoucherService#getVoucherWithCreate",
+    "jsonApi": "/wscdeco/ump/activity/get-share-tag.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/UmpActivityController.ts",
+    "service": "/app/services/ump/InteractiveVoucherService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.details.api.specific.CollectPointsService#getSimpleCollectPointsInfo",
+    "jsonApi": "/wscdeco/ump/reward-point/get-simple-collect-points-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/RewardPointsController.ts",
+    "service": "/app/services/ump/CollectPointsService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.goods.details.api.service.ActivityService#getActivityRecommendList",
+    "jsonApi": "/wscdeco/ump/meet-reduce/getActivityRecommendList.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/UmpActivityController.ts",
+    "service": "/app/services/ump/ActivityService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.goods.details.api.service.MeetReduceService#getMeetReduceRecList",
+    "jsonApi": "/wscdeco/ump/meet-reduce/getMeetReduceRecList.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/UmpActivityController.ts",
+    "service": "/app/services/ump/MeetReduceService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#getByFeatureAlias",
+    "jsonApi": "/wscdeco/weapp/tee-feature-path.json",
+    "navigator": [],
+    "controller": "/app/controllers/weapp/FeaturePageController.ts",
+    "service": "/app/services/decorate/FeatureService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.weapp.WeappHomepageServiceV2#getByPlatform",
+    "jsonApi": "/wscdeco/weapp/tee-feature-path.json",
+    "navigator": [],
+    "controller": "/app/controllers/weapp/FeaturePageController.ts",
+    "service": "/app/services/decorate/WeappHomepageServiceV2.ts"
+  }
+]

@@ -39,7 +39,7 @@ export const WSC_PC_VIS_NAV = [
   },
   {
     key: "course-setting",
-    key: "课程设置",
+    value: "课程设置",
   },
   {
     key: "group",

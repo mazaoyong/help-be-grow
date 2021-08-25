@@ -34,7 +34,7 @@ const theme = createMuiTheme({
 });
 const APP_NAME = {
   "wsc-pc-vis": "教育B端",
-  "wsc-h5-vis": "教育C端",
+  "wsc-h5-vis": "教育C端"
 };
 const getNavigatorList = (apiFile) => {
   const apiFilePart = apiFile.replace(".js", "").split("/");
@@ -69,7 +69,7 @@ const SearchCard = (props) => {
   const ListItemRender = ({ keyVal, title }) => {
     let secondary = props.item[keyVal];
     if (keyVal === "appName") {
-      secondary = [APP_NAME[secondary]];
+      secondary = [APP_NAME[secondary] || secondary];
     } else if (keyVal === "navigator") {
       if (props.item["appName"] === "wsc-pc-vis") {
         secondary = secondary.map(getNavigatorList);
@@ -163,7 +163,7 @@ const SearchList = () => {
   // 获取搜索内容
   const searchAction = (userInput) => {
     return new Promise((resolve) => {
-      fetch("/getSearchResult?searchContent=" + encodeURIComponent(userInput))
+      fetch("/getSearchResult?searchContent=" + encodeURIComponent(userInput.trim()))
         .then((response) => {
           return response.json();
         })

@@ -26,7 +26,7 @@ function taskList() {
       })
     })
 }
-taskList()
+// taskList()
 
 // 每天的凌晨2点更新代码
 // schedule.scheduleJob('0 0 2 * * *', () => {

@@ -51,7 +51,7 @@ function apiAssemble(appName, api) {
             "appName": appName,
             "javaApi": serviceAstObj && serviceAstObj.getJavaApi(serviceFunc),
             "jsonApi": jsonApiItem,
-            "navigator": ['wsc-pc-vis', 'wsc-h5-vis'].includes(appName) ? getNavigator(appName, jsonApiItem.replace('/v4/vis', '')).map(item => item.match(/\/client\/pages\/.+/)[0]) : '',
+            "navigator": ['wsc-pc-vis', 'wsc-h5-vis'].includes(appName) ? getNavigator(appName, jsonApiItem.replace('/v4/vis', '')).map(item => item.match(/\/client\/pages\/.+/)[0]) : [],
             // "Navigator2": getNavigator(appName, jsonApiItem.replace('/v4/vis', '')),
             "controller": controllerSuffixPath,
             "service": '/app/' + service.path

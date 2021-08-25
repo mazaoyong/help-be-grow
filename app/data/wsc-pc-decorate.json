@@ -1,0 +1,1026 @@
+[
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.yop.api.MarketRemoteService#findApplicationStatus",
+    "jsonApi": "/v4/deco/api/app-order-status/valid.json",
+    "navigator": [],
+    "controller": "/app/controllers/common/AppOrderStatusController.ts",
+    "service": "/app/services/yop/MarketRemoteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.channels.apps.service.MpVersionService#getMpVersion",
+    "jsonApi": "/v4/deco/api/bdweapp/showWeappCode",
+    "navigator": [],
+    "controller": "/app/controllers/common/BaiduWeappController.ts",
+    "service": "/app/services/channels/MpVersionService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.channels.apps.service.BaiduAppInfoService#getBaiduAppQrCode",
+    "jsonApi": "/v4/deco/api/bdweapp/getWeappCode",
+    "navigator": [],
+    "controller": "/app/controllers/common/BaiduWeappController.ts",
+    "service": "/app/services/channels/BaiduAppInfoService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.channels.service.ChannelAccountBindService#getChannelAccountBindMap",
+    "jsonApi": "/v4/deco/api/bdweapp/hasBindWeapp",
+    "navigator": [],
+    "controller": "/app/controllers/common/BaiduWeappController.ts",
+    "service": "/app/services/channels/ChannelAccountBindService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.shopcenter.shopprod.api.service.ability.AbilityReadService#queryShopAbilityInfos",
+    "jsonApi": "/v4/deco/api/query-shop-ability/valid.json",
+    "navigator": [],
+    "controller": "/app/controllers/common/ShopAbilityController.ts",
+    "service": "/app/services/shopcenter/shopprod/AbilityReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.shopcenter.shopconfig.api.service.ShopConfigReadService#queryShopConfigs",
+    "jsonApi": "/v4/deco/query-shop-config.json",
+    "navigator": [],
+    "controller": "/app/controllers/common/ShopConfigController.ts",
+    "service": "/app/services/shopcenter/shopconfig/ShopConfigReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "",
+    "jsonApi": "/v4/deco/buyers/show/qrcode.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/buyers-show/BuyersShowController.js",
+    "service": "/app/@youzan/wsc-pc-base/app/services/common/QrcodeService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ic.service.ItemQueryService#listItemsBuyerShow",
+    "jsonApi": "/v4/deco/buyers/show/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/buyers-show/BuyersShowController.js",
+    "service": "/app/services/ic/ItemQueryService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.shopcenter.shopconfig.api.service.ShopConfigWriteService#setShopConfig",
+    "jsonApi": "/v4/deco/buyers/show/status.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/buyers-show/BuyersShowController.js",
+    "service": "/app/services/shopcenter/shopconfig/ShopConfigWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.review.service.ItemEvaluationReadService#getLastSevenDaysHasPictureEvaluations",
+    "jsonApi": "/v4/deco/buyers/show/evaluations.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/buyers-show/BuyersShowController.js",
+    "service": "/app/services/review/ItemEvaluationReadService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "",
+    "jsonApi": "/v4/deco/buyers/show/chain-store/getAll",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/buyers-show/BuyersShowController.js",
+    "service": "/app/services/retail/shop/HQStoreSearchService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#publishShopNote",
+    "jsonApi": "/v4/deco/api/create_article.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/mp-article/MPArticleEditController.ts",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#deleteShopNote",
+    "jsonApi": "/v4/deco/delete_mparticle.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/mp-article/MPArticleListController.ts",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.yop.api.MarketRemoteService#isWeappAuthTeam",
+    "jsonApi": "/v4/deco/content-center/shopnote",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/yop/MarketRemoteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.channels.service.WeappAccountService#getWeappAccountByKdtId",
+    "jsonApi": "/v4/deco/content-center/shopnote",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/channels/WeappAccountService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteReadService#listShopNotesByPage",
+    "jsonApi": "/v4/deco/shopnote-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteReadService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteReadService#listShopNotesByPage",
+    "jsonApi": "/v4/deco/shopnote-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteReadService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteReadService#queryShopNoteSettings",
+    "jsonApi": "/v4/deco/shopnote-settings.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteReadService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteReadService#queryShopNotePage",
+    "jsonApi": "/v4/deco/shopnote.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteReadService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteReadService#getNoteStatistics",
+    "jsonApi": "/v4/deco/shopnote/effects.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteReadService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#deleteShopNote",
+    "jsonApi": "/v4/deco/shopnote.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#setShopNoteSettings",
+    "jsonApi": "/v4/deco/shopnote-settings.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#setShopNoteStickStatus",
+    "jsonApi": "/v4/deco/shopnote-stick.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#publishShopNote",
+    "jsonApi": "/v4/deco/shopnote.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#timingPublishShopNote",
+    "jsonApi": "/v4/deco/time-shopnote.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ExtendOperateService#checkMpArticleUrl",
+    "jsonApi": "/v4/deco/shopnote-check-link.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteExtendOperateController.js",
+    "service": "/app/services/showcase/center/ExtendOperateService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ExtendOperateService#importMpArticleByUrl",
+    "jsonApi": "/v4/deco/shopnote-import-article.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteExtendOperateController.js",
+    "service": "/app/services/showcase/center/ExtendOperateService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ExtendOperateService#batchGenerateItemCard",
+    "jsonApi": "/v4/deco/shopnote-goods-image.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteExtendOperateController.js",
+    "service": "/app/services/showcase/center/ExtendOperateService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#saveShopNotePreviewData",
+    "jsonApi": "/v4/deco/preview-shopnote.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#saveShopNoteDraft",
+    "jsonApi": "/v4/deco/draft-shopnote.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "",
+    "jsonApi": "/v4/deco/shopnote/qrcode.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/@youzan/wsc-pc-base/app/services/common/QrcodeService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteMsgService#pushShopNote",
+    "jsonApi": "/v4/deco/pushShopNote.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteMsgController.js",
+    "service": "/app/services/showcase/center/ShopNoteMsgService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteMsgService#getSubscriptionCount",
+    "jsonApi": "/v4/deco/getSubscriptionCount.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteMsgController.js",
+    "service": "/app/services/showcase/center/ShopNoteMsgService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.mall.item.api.ItemQueryService#listItemsPaged",
+    "jsonApi": "/v4/deco/showcase/goods_new/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/shop-note/ShopNoteController.js",
+    "service": "/app/services/mall/ItemQueryService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#publishShopNote",
+    "jsonApi": "/v4/deco/api/createVideo",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/short-video/ShortVideoEditController.ts",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#deleteShopNote",
+    "jsonApi": "/v4/deco/deleteShortVideo.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/short-video/ShortVideoListController.ts",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteWriteService#setShopNoteStickStatus",
+    "jsonApi": "/v4/deco/stickShortVideo.json",
+    "navigator": [],
+    "controller": "/app/controllers/content-center/short-video/ShortVideoListController.ts",
+    "service": "/app/services/showcase/center/ShopNoteWriteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.mall.portal.api.mplive.base.MpLivePluginFacade#getPluginStatus",
+    "jsonApi": "/v4/deco/decorate",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/mplive/MpLivePluginFacade.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#saveFeature",
+    "jsonApi": "/v4/deco/save-feature.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#updateFeature",
+    "jsonApi": "/v4/deco/update-feature.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.extention.TimingPublishService#timingPublishContent",
+    "jsonApi": "/v4/deco/timed-feature.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/api/TimingPublishService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#getByFeatureId",
+    "jsonApi": "/v4/deco/feature.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#queryCategoryListByFeatureId",
+    "jsonApi": "/v4/deco/decorate/queryCategoryListByFeatureId.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.channels.apps.service.WeappConfigService#getLiveInfoList",
+    "jsonApi": "/v4/deco/decorate/weapp-live/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/WeappLiveController.js",
+    "service": "/app/services/channels/WeappConfigService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.cloud.appstore.api.service.consign.AppCosignRecordService#queryAppExpireTime",
+    "jsonApi": "/v4/deco/third-tpl-status.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/cloud/appstore/AppCosignRecordService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.render.api.GoodsComponentService#searchMicroPageGoods",
+    "jsonApi": "/v4/deco/chain-goods-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/GoodsController.ts",
+    "service": "/app/services/showcase/render/GoodsComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.mall.item.api.ItemGroupService#listGroupPaged",
+    "jsonApi": "/v4/deco/chain-goods-group-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/GoodsController.ts",
+    "service": "/app/services/mall/ItemGroupService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.apps.application.api.helpcut.service.HelpCutService#findNotEndByKeywordV2",
+    "jsonApi": "/v4/deco/decorate/bargain-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/BargainController.ts",
+    "service": "/app/services/ump/HelpCutService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ump.marketing.groupon.service.GroupOnRouteService#getActivityPageForManager",
+    "jsonApi": "/v4/deco/decorate/groupon/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/GrouponController.ts",
+    "service": "/app/services/ump/marketing/GroupOnRouteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ump.marketing.luckydrawgroup.service.LuckyDrawGroupActivityGetService#getActivityList",
+    "jsonApi": "/v4/deco/decorate/groupon/lucky_list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/GrouponController.ts",
+    "service": "/app/services/ump/marketing/LuckyDrawGroupActivityGetService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ump.voucher.front.api.service.activity.VoucherActivityReadService#listActivityOnOutActCreate",
+    "jsonApi": "/v4/deco/decorate/coupon/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/CouponController.ts",
+    "service": "/app/services/ump/VoucherActivityReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ump.marketing.timelimiteddiscount.service.TimeLimitedDiscountDubboService#findPagedActivityList",
+    "jsonApi": "/v4/deco/chain-ump-limitdiscount-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/TimeLimitedDiscountController.ts",
+    "service": "/app/services/ump/marketing/TimeLimitedDiscountDubboService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.mall.portal.api.platform.promoter.PromoterResourceFacade#queryPlatformCouponPage",
+    "jsonApi": "/v4/deco/decorate/platform-coupon/choose-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/CouponController.ts",
+    "service": "/app/services/mall/PromoterResourceFacade.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.extention.TimingPublishService#cancelTimedPublishContent",
+    "jsonApi": "/v4/deco/cancel-timed.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/api/TimingPublishService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.retail.trade.misc.api.service.shelf.ShelfConfigService#getActivityDetailForB",
+    "jsonApi": "/v4/deco/decorate/activity/detail.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/retail/shelf/ShelfConfigService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.mall.item.api.ItemGroupService#getMultiLevelGroupPagedList",
+    "jsonApi": "/v4/deco/decorate/tag/getMultiLevelGroupPagedList.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/GoodsController.ts",
+    "service": "/app/services/mall/ItemGroupService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ump.marketing.meetreduce.service.MeetReduceDubboService#findPageActivityForVenue",
+    "jsonApi": "/v4/deco/chain-ump-reward-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/RewardController.ts",
+    "service": "/app/services/ump/marketing/RewardDubboService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#listShopsByPage",
+    "jsonApi": "/v4/deco/decorate/shop/getOfflineStoreList.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/center/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#queryAssign",
+    "jsonApi": "/v4/deco/decorate/config/fetchApplyShopData.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/center/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#saveAssign",
+    "jsonApi": "/v4/deco/decorate/config/saveApplyShopData.json",
+    "navigator": [],
+    "controller": "/app/controllers/feature-decorate/DecorateController.ts",
+    "service": "/app/services/showcase/center/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.extension.CommonAdService#setSwitch",
+    "jsonApi": "/v4/deco/common-ad/switch.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/common-ad/CommonAdController.js",
+    "service": "/app/services/showcase/center/CommonAdService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.extension.CommonAdService#getAd",
+    "jsonApi": "/v4/deco/common-ad/ad.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/common-ad/CommonAdController.js",
+    "service": "/app/services/showcase/center/CommonAdService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.extension.CommonAdService#saveAd",
+    "jsonApi": "/v4/deco/common-ad/ad.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/common-ad/CommonAdController.js",
+    "service": "/app/services/showcase/center/CommonAdService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.customcomponent.CustomComponentService#queryByKdtIdAndCustomComponentId",
+    "jsonApi": "/v4/deco/custom_component/textarea",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/showcase/center/CustomComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.customcomponent.CustomComponentService#createCustomComponent",
+    "jsonApi": "/v4/deco/custom_component/textarea",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/showcase/center/CustomComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.customcomponent.CustomComponentService#updateCustomComponent",
+    "jsonApi": "/v4/deco/custom_component/textarea",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/showcase/center/CustomComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.customcomponent.CustomComponentService#deleteCustomComponent",
+    "jsonApi": "/v4/deco/custom_component/textarea",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/showcase/center/CustomComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.shopcenter.shop.service.ShopMetaReadService#queryShopMetaInfo",
+    "jsonApi": "/v4/deco/custom_component_list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/shopcenter/shop/ShopMetaReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.customcomponent.CustomComponentService#listCustomComponentWithApplyInfoByPage",
+    "jsonApi": "/v4/deco/custom_component_list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/showcase/center/CustomComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.customcomponent.CustomComponentService#updateCustomComponentTitle",
+    "jsonApi": "/v4/deco/custom_component_title.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/showcase/center/CustomComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.customcomponent.CustomComponentService#duplicateCustomComponent",
+    "jsonApi": "/v4/deco/custom_component/copy-item.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/custom-component/CustomComponentController.ts",
+    "service": "/app/services/showcase/center/CustomComponentService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.weapp.WeappHomepageServiceV2#setPlatformHomepage",
+    "jsonApi": "/v4/deco/showcase/feature/baiduWeappHomepage.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/WeappHomepageServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.shopcenter.shop.service.ShopMetaReadService#queryShopMetaInfo",
+    "jsonApi": "/v4/deco/feature/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/shopcenter/shop/ShopMetaReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.feature.FeatureManageService#pageQueryFeatureList",
+    "jsonApi": "/v4/deco/feature/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/FeatureManageService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#findFeatureListByPage",
+    "jsonApi": "/v4/deco/feature/short-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.AdMicropageWriteService#popularizeAdMicropage",
+    "jsonApi": "/v4/deco/feature/set-ad-page.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/center/AdMicropageWriteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainFeatureService#duplicateFeature",
+    "jsonApi": "/v4/deco/showcase/copy.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainFeatureService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainFeatureService#deleteFeature",
+    "jsonApi": "/v4/deco/showcase/item.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainFeatureService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#multiChangeCategoryRelation",
+    "jsonApi": "/v4/deco/showcase/category.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#updateFeatureSortNum",
+    "jsonApi": "/v4/deco/showcase/num.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#updateFeatureRemark",
+    "jsonApi": "/v4/deco/showcase/remark.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#updateFeatureSortNum",
+    "jsonApi": "/v4/deco/showcase/num.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.weapp.WeappHomepageServiceV2#setPlatformHomepage",
+    "jsonApi": "/v4/deco/mpHomepage.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/WeappHomepageServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.extension.PageShareService#queryShareSetting",
+    "jsonApi": "/v4/deco/showcase/share-setting.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/center/PageShareService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.extension.PageShareService#saveShareSetting",
+    "jsonApi": "/v4/deco/showcase/save-share-setting.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/center/PageShareService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#listShopsByPage",
+    "jsonApi": "/v4/deco/showcase/get-shop-list-by-decoration-authority.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/center/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#listAssignByPage",
+    "jsonApi": "/v4/deco/showcase/get-assign-shop-list-by-page.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#checkCanAssign",
+    "jsonApi": "/v4/deco/showcase/check-can-assign.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#batchQuery",
+    "jsonApi": "/v4/deco/showcase/get-batch-assign-shop-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#saveAssign",
+    "jsonApi": "/v4/deco/showcase/save-assign-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#saveAssign",
+    "jsonApi": "/v4/deco/showcase/save-assign-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.front.api.service.chain.ChainAssignService#hasSavedAssignInfo",
+    "jsonApi": "/v4/deco/showcase/has-save-assign-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/feature-list/FeatureListController.ts",
+    "service": "/app/services/showcase/api/ChainAssignService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelLiveRoomService#checkWechatAbility",
+    "jsonApi": "/v4/deco/floating-nav/wechat-video-auth.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/floating-nav/FloatingNavController.js",
+    "service": "/app/services/showcase/center/WechatChannelLiveRoomService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.channels.service.WeappAccountService#getWeappAccountByKdtId",
+    "jsonApi": "/v4/deco/global-template",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/global-template/GlobalTemplateController.js",
+    "service": "/app/services/channels/WeappAccountService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.channels.service.WeappAccountService#getWeappCodeLcByKdtId",
+    "jsonApi": "/v4/deco/global-template",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/global-template/GlobalTemplateController.js",
+    "service": "/app/services/channels/WeappAccountService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.yop.api.MarketRemoteService#isWeappAuthTeam",
+    "jsonApi": "/v4/deco/global-template",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/global-template/GlobalTemplateController.js",
+    "service": "/app/services/yop/MarketRemoteService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.template.GlobalStyleService#getGlobalStyleWithDefault",
+    "jsonApi": "/v4/deco/global-template.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/global-template/GlobalTemplateController.js",
+    "service": "/app/services/showcase/center/GlobalTemplateService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.template.GlobalStyleService#saveGlobalStyle",
+    "jsonApi": "/v4/deco/global-template.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/global-template/GlobalTemplateController.js",
+    "service": "/app/services/showcase/center/GlobalTemplateService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.homepage.HomepageServiceV2#setHomePage",
+    "jsonApi": "/v4/deco/homepage.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/homepage/HomepageController.js",
+    "service": "/app/services/showcase/api/HomepageServiceV2.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.weapp.WeappHomepageServiceV2#setPlatformHomepage",
+    "jsonApi": "/v4/deco/homepage.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/homepage/HomepageController.js",
+    "service": "/app/services/showcase/api/WeappHomepageServiceV2.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.systempage.SystemPageWriteService#save",
+    "jsonApi": "/v4/deco/marketing-page/save",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/marketing-page/MarketingPageController.ts",
+    "service": "/app/services/showcase/center/SystemPageWriteService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.systempage.SystemPageReadService#query",
+    "jsonApi": "/v4/deco/marketing-page/fetch",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/marketing-page/MarketingPageController.ts",
+    "service": "/app/services/showcase/center/SystemPageReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.retail.shop.api.hq.service.HQStoreSearchService#search",
+    "jsonApi": "/v4/deco/shop-list/getPrevNearStoreList.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-list/ShopListController.ts",
+    "service": "/app/services/retail/shop/HQStoreSearchService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "",
+    "jsonApi": "/v4/deco/shop-list/get-qr-code.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-list/ShopListController.ts",
+    "service": "/app/@youzan/wsc-pc-base/app/services/common/QrcodeService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.nav.ShopNavServiceV2#getShopNav",
+    "jsonApi": "/v4/deco/shopnav.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-nav/ShopNavController.js",
+    "service": "/app/services/showcase/api/ShopNavService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.nav.ShopNavServiceV2#updateShopNav",
+    "jsonApi": "/v4/deco/shopnav.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-nav/ShopNavController.js",
+    "service": "/app/services/showcase/api/ShopNavService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.nav.ShopNavServiceV2#switchValid",
+    "jsonApi": "/v4/deco/shopnav-switch.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-nav/ShopNavController.js",
+    "service": "/app/services/showcase/api/ShopNavService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.nav.ShopNavServiceV2#getShopNav",
+    "jsonApi": "/v4/deco/showcase/weapp-shopnav.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-nav/ShopNavController.js",
+    "service": "/app/services/showcase/api/ShopNavService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.nav.ShopNavServiceV2#updateShopNav",
+    "jsonApi": "/v4/deco/showcase/weapp-shopnav.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-nav/ShopNavController.js",
+    "service": "/app/services/showcase/api/ShopNavService.js"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#searchByPage",
+    "jsonApi": "/v4/deco/template-list-v2.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#queryLabelList",
+    "jsonApi": "/v4/deco/template-label.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#queryLabelListByTplId",
+    "jsonApi": "/v4/deco/template-item-label.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#listMicropageTplInPage",
+    "jsonApi": "/v4/deco/template-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#listShopMicropageTpl",
+    "jsonApi": "/v4/deco/my-template-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#queryTplBaseInfo",
+    "jsonApi": "/v4/deco/tpl-base-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#queryTplWithPurchaseInfo",
+    "jsonApi": "/v4/deco/tpl-with-purchase-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#listMicropageTplForBriefWsc",
+    "jsonApi": "/v4/deco/brief-wsc-tpl.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/showcase/center/MicropageTplReadService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.cloud.appstore.api.service.auth.AppstoreAuthService#getUserToken",
+    "jsonApi": "/v4/deco/get-user-token.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/auth/AppstoreAuthService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.cloud.appstore.api.service.demand.ServiceDemandService#addDemand",
+    "jsonApi": "/v4/deco/add-demand.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/shop-template/ShopTemplateController.ts",
+    "service": "/app/services/demand/ServiceDemandService.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#createCategory",
+    "jsonApi": "/v4/deco/showcase-category/create.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#updateCategory",
+    "jsonApi": "/v4/deco/showcase-category/update.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#deleteCategory",
+    "jsonApi": "/v4/deco/showcase-category/remove.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#queryCategory",
+    "jsonApi": "/v4/deco/showcase-category/query.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#findFeatureWithMultiSort",
+    "jsonApi": "/v4/deco/showcase-category/query.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#findFeatureWithMultiSort",
+    "jsonApi": "/v4/deco/showcase-category/queryFeature.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/FeatureServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#duplicateCategory",
+    "jsonApi": "/v4/deco/showcase-category/copy.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#queryCategoryList",
+    "jsonApi": "/v4/deco/showcase-category/list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.category.CategoryServiceV2#findAllCategoryDigestList",
+    "jsonApi": "/v4/deco/showcase-category/brief-list.json",
+    "navigator": [],
+    "controller": "/app/controllers/shop-decorate/showcase-category/ShowcaseCategoryController.ts",
+    "service": "/app/services/showcase/api/CategoryServiceV2.ts"
+  }
+]

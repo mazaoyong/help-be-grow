@@ -1,0 +1,65 @@
+[
+  {
+    "appName": "wsc-h5-goods",
+    "spend": 995,
+    "updateEndTime": 1629907736116,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-pc-shop",
+    "spend": 10933,
+    "updateEndTime": 1629907736118,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-pc-decorate",
+    "spend": 6509,
+    "updateEndTime": 1629907736119,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-h5-shop",
+    "spend": 4832,
+    "updateEndTime": 1629907736119,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "spend": 2525,
+    "updateEndTime": 1629907736119,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "spend": 113614,
+    "updateEndTime": 1629907736119,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-pc-goods",
+    "spend": 6880,
+    "updateEndTime": 1629907736119,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "spend": 86816,
+    "updateEndTime": 1629907736119,
+    "status": 1,
+    "info": "正常"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "spend": 1301,
+    "updateEndTime": 1629907736119,
+    "status": 1,
+    "info": "正常"
+  }
+]
