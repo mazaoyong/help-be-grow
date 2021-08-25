@@ -22,7 +22,6 @@ function taskList() {
           console.log('ts文件格式转化报错：', err)
           // return
         }
-        console.log('下载完成')
         mainTask(res)
       })
     })

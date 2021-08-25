@@ -2,6 +2,8 @@ const AstGetter = require('./src/AstGetter')
 const { getTotalFiles, getJsFileRealPath } = require('./utils')
 const path = require('path')
 const fs = require('fs')
+var ProgressBar = require('progress');
+const chalk = require('chalk');
 
 // 通过jsonApi搜索业务
 function getNavigator(appName, jsonApi) {
@@ -78,18 +80,21 @@ module.exports = (projectInfo) => {
       const routersPath = path.join(__dirname, `./static-project/${appName}/app/routers`)
       const routerFileList = getTotalFiles(routersPath, ['.js'])
       let data = []
+      let apiArr = []
       routerFileList.forEach(routerPath => {
         errRouterPath = routerPath
-        let apiArr = []
         try {
-          apiArr = require(routerPath.replace('.ts', '.js'))
+          apiArr = [...apiArr, ...require(routerPath.replace('.ts', '.js'))]
         } catch (err) {
           console.log('路由文件非纯数组：' + routerPath)
         }
-        apiArr.forEach(apiItem => {
-          // 先把数据全部存起来，没有报错之后才更新数据
-          data = [...data, ...apiAssemble(appName, apiItem.length > 4 ? apiItem.slice(1) : apiItem)]
-        })
+      })
+      // 终端进度条展示
+      const pb = new ProgressBar(`${chalk.blue(appName.padEnd(15, ' '))} 解析进度: :percent [:bar] :current/:total`, { total: apiArr.length, width: 50, complete: chalk.green('█'), incomplete: '░' })
+      apiArr.forEach(apiItem => {
+        // 先把数据全部存起来，没有报错之后才更新数据
+        data = [...data, ...apiAssemble(appName, apiItem.length > 4 ? apiItem.slice(1) : apiItem)]
+        pb.tick()
       })
       const dataFilePath = path.join(__dirname, `./data/${appName}.json`);
       // 先把昨天的数据备份，在生成新的数据，每周日备份数据（不包括周日的数据）
@@ -121,7 +126,6 @@ module.exports = (projectInfo) => {
               ...updateState
             })
             fs.writeFileSync(updateLogPath, JSON.stringify(updateLog, null, 2))
-            console.log(`${appName}更新完成`)
           })
         })
       })

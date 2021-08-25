@@ -8,7 +8,8 @@
     "watch": "chokidar \"**/*.js\" -c \"npm run test\"",
     "tsc": "tsc",
     "ast-dev": "chokidar \"app/src/AstGetter.js\" -c \"node app/src/AstGetter.js\"",
-    "server": "node app/index.js"
+    "server": "node app/index.js",
+    "watch:build": "chokidar \"**/*.js\" -c \"node __test__/main.test.js\""
   },
   "repository": {
     "type": "git",

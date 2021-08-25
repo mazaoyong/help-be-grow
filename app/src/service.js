@@ -1,22 +1,7 @@
 const express = require('express');
 const path = require('path')
 const fs = require('fs')
-
-// 获取接口数据
-const getApiData = () => {
-  const DATA_PREFIX = ['wsc-h5-vis.json', 'wsc-pc-vis.json']
-  return new Promise((resolve, reject) => {
-    try {
-      const data = DATA_PREFIX.reduce((initVal, dataName) => {
-        const itemApiData = JSON.parse(fs.readFileSync(path.resolve(__dirname, `../data/${dataName}`)))
-        return [...initVal, ...itemApiData]
-      }, [])
-      resolve(data)
-    } catch (err) {
-      reject(err)
-    }
-  })
-}
+const { getApiData } = require('./dataGetter')
 
 module.exports = () => {
   const app = express();
@@ -49,23 +34,13 @@ module.exports = () => {
       message: 'request:ok'
     }
     if (searchContent) {
-      getApiData()
-        .then(totalApiData => {
-          result.data = totalApiData.filter(item => {
-            const { javaApi, jsonApi } = item
-            return javaApi.indexOf(searchContent) + javaApi.indexOf(searchContent.replace(/\#/g, '.')) + jsonApi.indexOf(searchContent) > -3
-          })
-        })
-        .catch(err => {
-          result.code = 500
-          result.message = '读取接口数据失败'
-        })
-        .finally(() => {
-          res.send(result)
-        })
-    } else {
-      res.send(result)
+      const totalApiData = getApiData()
+      result.data = totalApiData.filter(item => {
+        const { javaApi, jsonApi } = item
+        return javaApi.indexOf(searchContent) + javaApi.indexOf(searchContent.replace(/\#/g, '.')) + jsonApi.indexOf(searchContent) > -3
+      })
     }
+    res.send(result)
   })
 
   // 安全检查
