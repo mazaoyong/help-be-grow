@@ -47,6 +47,7 @@ const SearchCard: React.FC<ISearchCardProps> = (props) => {
                   <Tooltip
                     title={isCopy ? "已复制！" : "复制到剪切板"}
                     placement="top"
+                    disableFocusListener
                   >
                     <Button
                       variant="outlined"
