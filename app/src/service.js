@@ -73,5 +73,5 @@ module.exports = () => {
   app.listen(8201, () => {
     console.log('Listening on port 8201')
   });
-  app.use('', express.static(path.resolve(__dirname, '../../client/build')))
+  app.use('', express.static(path.resolve(__dirname, '../../client/dist')))
 }

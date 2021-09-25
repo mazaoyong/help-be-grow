@@ -17,3 +17,7 @@ dev:
 ## 网站打包
 build:
 	cd client && yarn build
+
+## 测试一个接口的解析过程
+gen:
+	node bin/dev.js --api=${api}

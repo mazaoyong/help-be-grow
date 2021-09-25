@@ -1,8 +1,9 @@
 .idea
 node_modules/
+dist/
 static-project/
 .vscode/
 nohup.out
 *.DS_Store
-# app/data
-# app/update_log.json
+app/data
+app/update_log.json
