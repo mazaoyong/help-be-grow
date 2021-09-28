@@ -21,3 +21,6 @@ build:
 ## 测试一个接口的解析过程
 search:
 	node bin/dev.js --mode=${mode}
+
+pre:
+	cd client && yarn build

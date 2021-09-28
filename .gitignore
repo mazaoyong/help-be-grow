@@ -8,3 +8,5 @@ nohup.out
 app/data/
 app/update_log.json
 search.test.json
+
+config/version_*.json
