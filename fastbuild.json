@@ -1,0 +1,17 @@
+{
+  "commands": {
+    "pre": {
+      "node": "v12.17.0",
+      "dependencies": [],
+      "saveVersionToDatabase": true,
+      "devToolset": "7",
+      "output": [
+        "config/version_css.json",
+        "config/version_js.json",
+        "config/version_h5_css.json",
+        "config/version_h5_js.json"
+      ]
+    }
+  },
+  "scAutoBuild": true
+}
