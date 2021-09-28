@@ -100,8 +100,9 @@ class AstGetter {
     if (this.isTs) {
       const serviceFunc = methodList.find(item => item.name.escapedText === func)
       const invokeBody = keyName => tsquery(serviceFunc.body, `CallExpression[expression.name.escapedText="${keyName}"]`)[0]
-      if (invokeBody('invoke')) {
-        const suffix = invokeBody('invoke').arguments[0].text || invokeBody('invoke').arguments[1].text
+      const serviceInvoke = invokeBody('invoke') || invokeBody('owlInvoke')
+      if (serviceInvoke) {
+        const suffix = serviceInvoke.arguments[0].text || serviceInvoke.arguments[1].text
         // 获取java接口前缀的N种方法
         const publicAst = tsquery(astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
         const readonlyAst = tsquery(astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
@@ -121,7 +122,7 @@ class AstGetter {
       let invoke = ''
       for (let i = 0; i < callList.length; i++) {
         const body = callList[i];
-        if (get(body, 'callee.property.name', '') === 'invoke') {
+        if (['invoke','owlInvoke'].includes(get(body, 'callee.property.name', ''))) {
           invoke = get(body, 'arguments[0].value', '')
         }
         if (invoke) {

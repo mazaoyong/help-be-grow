@@ -4017,6 +4017,22 @@
   },
   {
     "appName": "wsc-pc-shop",
+    "javaApi": "com.youzan.retail.shop.api.hq.service.HQStoreManageService#create",
+    "jsonApi": "/v4/shop/api/online-store/createSubStore.json",
+    "navigator": [],
+    "controller": "/app/controllers/store/IndexController.js",
+    "service": "/app/services/shopcenter/shop/HQStoreManageService.js"
+  },
+  {
+    "appName": "wsc-pc-shop",
+    "javaApi": "com.youzan.retail.shop.api.hq.service.HQStoreManageService#modify",
+    "jsonApi": "/v4/shop/api/online-store/modifySubStore.json",
+    "navigator": [],
+    "controller": "/app/controllers/store/IndexController.js",
+    "service": "/app/services/shopcenter/shop/HQStoreManageService.js"
+  },
+  {
+    "appName": "wsc-pc-shop",
     "javaApi": "com.youzan.uic.api.user.service.UserInfoService#getMobileInfo",
     "jsonApi": "/v4/shop/api/online-store/checkMobileValid",
     "navigator": [],
@@ -4185,23 +4201,7 @@
   },
   {
     "appName": "wsc-pc-shop",
-    "javaApi": "com.youzan.shopcenter.shopfront.api.service.chain.ShopVisitService#getPersonalizedShopVisitConfigByScene",
-    "jsonApi": "/v4/shop/store-policy/special-shop-config.json",
-    "navigator": [],
-    "controller": "/app/controllers/store-policy/IndexController.js",
-    "service": "/app/services/shopcenter/shopfront/ShopVisitService.js"
-  },
-  {
-    "appName": "wsc-pc-shop",
     "javaApi": "com.youzan.shopcenter.shopfront.api.service.chain.ShopVisitService#savePersonalizedShopVisitConfigs",
-    "jsonApi": "/v4/shop/store-policy/special-shop-config.json",
-    "navigator": [],
-    "controller": "/app/controllers/store-policy/IndexController.js",
-    "service": "/app/services/shopcenter/shopfront/ShopVisitService.js"
-  },
-  {
-    "appName": "wsc-pc-shop",
-    "javaApi": "com.youzan.shopcenter.shopfront.api.service.chain.ShopVisitService#savePersonalizedShopVisitConfig",
     "jsonApi": "/v4/shop/store-policy/special-shop-config.json",
     "navigator": [],
     "controller": "/app/controllers/store-policy/IndexController.js",

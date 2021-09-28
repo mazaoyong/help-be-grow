@@ -230,5 +230,29 @@
     "navigator": [],
     "controller": "/app/controllers/weapp/FeaturePageController.ts",
     "service": "/app/services/decorate/WeappHomepageServiceV2.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.feature.FeatureServiceV2#getByFeatureAlias",
+    "jsonApi": "/wscdeco/weapp/feature-page-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/weapp/FeaturePageController.ts",
+    "service": "/app/services/decorate/FeatureService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ebiz.showcase.api.weapp.WeappHomepageServiceV2#getByPlatform",
+    "jsonApi": "/wscdeco/weapp/feature-page-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/weapp/FeaturePageController.ts",
+    "service": "/app/services/decorate/WeappHomepageServiceV2.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.showcase.center.api.service.micropage.MicropageTplReadService#queryTplDigestInfoWithCache",
+    "jsonApi": "/wscdeco/weapp/feature-page-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/weapp/FeaturePageController.ts",
+    "service": "/app/services/showcase/MicropageTplReadService.ts"
   }
 ]

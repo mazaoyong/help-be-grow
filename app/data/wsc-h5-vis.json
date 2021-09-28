@@ -1,7 +1,7 @@
 [
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.uic.api.user.service.UserInfoService#",
+    "javaApi": "com.youzan.uic.api.user.service.UserInfoService#getWechatUserInfoByUserId",
     "jsonApi": "/wscvis/getWechatUserInfoByUserId.json",
     "navigator": [],
     "controller": "/app/controllers/common/UserInfoController.js",
@@ -25,7 +25,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.scrm.api.credit.policy.CreditPolicyReadService#",
+    "javaApi": "com.youzan.scrm.api.credit.policy.CreditPolicyReadService#getName",
     "jsonApi": "/wscvis/getCustomPointName.json",
     "navigator": [],
     "controller": "/app/controllers/common/ShopBasicInfo.js",
@@ -260,6 +260,26 @@
   },
   {
     "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.trade.shopping.cart.api.main.TradeCartService#countGoods",
+    "jsonApi": "/wscvis/course/detail/cart/countGoods.json",
+    "navigator": [
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "controller": "/app/controllers/course/detail/CartController.ts",
+    "service": "/app/services/api/trade/shopping/TradeCartService.ts"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.trade.shopping.cart.api.view.service.TradeCartViewService#addGoods",
+    "jsonApi": "/wscvis/course/detail/cart/addGoods.json",
+    "navigator": [
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "controller": "/app/controllers/course/detail/CartController.ts",
+    "service": "/app/services/api/trade/shopping/TradeCartViewService.ts"
+  },
+  {
+    "appName": "wsc-h5-vis",
     "javaApi": "com.youzan.owl.api.edulive.EduLiveFacade#findLiveClass",
     "jsonApi": "/wscvis/course/detail/getLiveClass.json",
     "navigator": [
@@ -287,6 +307,16 @@
     ],
     "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/edulive/LiveStudentFacade.ts"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientBurglarInfoFacade#getBurglarProofInfo",
+    "jsonApi": "/wscvis/course/detail/getBurglarProofInfo.json",
+    "navigator": [
+      "/client/pages/course/detail/store/api.js"
+    ],
+    "controller": "/app/controllers/course/detail/DetailController.ts",
+    "service": "/app/services/api/owl/api/ClientBurglarInfoFacade.ts"
   },
   {
     "appName": "wsc-h5-vis",
@@ -441,7 +471,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#findAppointmentLessons",
     "jsonApi": "/wscvis/edu/appointment/list.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -461,7 +491,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#findLessonDate",
     "jsonApi": "/wscvis/edu/appointment/calendar.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -471,7 +501,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#findDailyLessons",
     "jsonApi": "/wscvis/edu/appointment/listByDate.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -481,7 +511,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#findLessonDateForOrderPage",
     "jsonApi": "/wscvis/edu/appointment/calendarForOrder.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -491,7 +521,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#findLessonForOrderPage",
     "jsonApi": "/wscvis/edu/appointment/listByDateForOrder.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -501,7 +531,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#createStudentLesson",
     "jsonApi": "/wscvis/edu/appointment/create.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -511,7 +541,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#cancelStudentLesson",
     "jsonApi": "/wscvis/edu/appointment/cancel.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -521,7 +551,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#getAppointmentResultV2",
     "jsonApi": "/wscvis/edu/appointment/info.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -531,7 +561,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#getStudentLessonDetailV2",
     "jsonApi": "/wscvis/edu/appointment/detail.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -541,7 +571,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.appointment.ConsumerAppointmentFacade#findStudentLessons",
     "jsonApi": "/wscvis/edu/appointment/recordList.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -551,7 +581,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.course.TradeFacade#",
+    "javaApi": "com.youzan.owl.edu.api.course.TradeFacade#canTradeWithLessonAppointmentInfo",
     "jsonApi": "/wscvis/edu/appointment/canTradeWithLessonAppointmentInfo.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -561,7 +591,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.educourse.EduCourseFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.educourse.EduCourseFacade#findPageByCondition",
     "jsonApi": "/wscvis/edu/appointment/findPageByCondition.json",
     "navigator": [
       "/client/pages/edu/appointment/api/index.js"
@@ -1063,7 +1093,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.wechatgroupsetting.WeChatJoinGroupFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.wechatgroupsetting.WeChatJoinGroupFacade#get",
     "jsonApi": "/wscvis/edu/getPaidStatusPromote.json",
     "navigator": [
       "/client/pages/edu/api/index.js"
@@ -1073,7 +1103,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.course.TradeFacade#",
+    "javaApi": "com.youzan.owl.edu.api.course.TradeFacade#hasTradeWithLessonAppointment",
     "jsonApi": "/wscvis/edu/hasTradeWithLessonAppointment.json",
     "navigator": [
       "/client/pages/edu/api/index.js",
@@ -1084,7 +1114,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#",
+    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#getEvaluationPermission",
     "jsonApi": "/wscvis/edu/evaluation/getEvaluationPermission.json",
     "navigator": [],
     "controller": "/app/controllers/edu/EvaluationController.js",
@@ -1092,7 +1122,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#",
+    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#createEvaluation",
     "jsonApi": "/wscvis/edu/evaluation/createEvaluation.json",
     "navigator": [],
     "controller": "/app/controllers/edu/EvaluationController.js",
@@ -1100,7 +1130,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#",
+    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#createEvaluationAddition",
     "jsonApi": "/wscvis/edu/evaluation/createEvaluationAddition.json",
     "navigator": [],
     "controller": "/app/controllers/edu/EvaluationController.js",
@@ -1108,7 +1138,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#",
+    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#getEvaluationCountByCourseAlias",
     "jsonApi": "/wscvis/edu/evaluation/evaluationCount.json",
     "navigator": [],
     "controller": "/app/controllers/edu/EvaluationController.js",
@@ -1116,7 +1146,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#",
+    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#findByUserInfo",
     "jsonApi": "/wscvis/edu/evaluation/list.json",
     "navigator": [],
     "controller": "/app/controllers/edu/EvaluationController.js",
@@ -1124,7 +1154,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#",
+    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#like",
     "jsonApi": "/wscvis/edu/evaluation/like.json",
     "navigator": [],
     "controller": "/app/controllers/edu/EvaluationController.js",
@@ -1132,7 +1162,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#",
+    "javaApi": "com.youzan.owl.edu.api.courseevaluation.CourseEvaluationFacade#cancelLike",
     "jsonApi": "/wscvis/edu/evaluation/cancelLike.json",
     "navigator": [],
     "controller": "/app/controllers/edu/EvaluationController.js",
@@ -1140,7 +1170,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#confirm",
     "jsonApi": "/wscvis/edu/family-account/confirm.json",
     "navigator": [
       "/client/pages/edu/family-account/invite/api.js"
@@ -1160,7 +1190,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.student.StudentFacade#findSimpleByUserId",
     "jsonApi": "/wscvis/edu/family-account/findSimpleByUserId.json",
     "navigator": [
       "/client/pages/edu/family-account/api.js"
@@ -1170,7 +1200,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#getInvitationInfo",
     "jsonApi": "/wscvis/edu/family-account/getInvitationInfo.json",
     "navigator": [
       "/client/pages/edu/family-account/invite/api.js"
@@ -1180,7 +1210,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#getMpAccount",
     "jsonApi": "/wscvis/edu/family-account/getMpAccount.json",
     "navigator": [
       "/client/pages/edu/family-account/invite/api.js"
@@ -1190,7 +1220,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#getInvitationByCode",
     "jsonApi": "/wscvis/edu/family-account/getInvitationByCode.json",
     "navigator": [
       "/client/pages/edu/family-account/invite/api.js"
@@ -1200,7 +1230,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#getAccount",
     "jsonApi": "/wscvis/edu/family-account/getAccount.json",
     "navigator": [
       "/client/pages/edu/family-account/api.js"
@@ -1230,7 +1260,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.family.FamilyAccountFacade#invite",
     "jsonApi": "/wscvis/edu/family-account/invite.json",
     "navigator": [
       "/client/pages/edu/family-account/api.js"
@@ -1453,7 +1483,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#",
+    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#findStudentLessons",
     "jsonApi": "/wscvis/edu/signIn/getLessons.json",
     "navigator": [
       "/client/pages/edu/sign-in/api.js"
@@ -1463,7 +1493,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#",
+    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#signIn",
     "jsonApi": "/wscvis/edu/signIn/signIn.json",
     "navigator": [
       "/client/pages/edu/sign-in/api.js"
@@ -1473,7 +1503,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#",
+    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#signInWithAssets",
     "jsonApi": "/wscvis/edu/signIn/signInWithAssets.json",
     "navigator": [
       "/client/pages/edu/sign-in/api.js"
@@ -1483,7 +1513,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#",
+    "javaApi": "com.youzan.owl.edu.api.signin.SignInFacade#getStudentLessonAfterSignIn",
     "jsonApi": "/wscvis/edu/signIn/signInResult.json",
     "navigator": [
       "/client/pages/edu/sign-in/api.js"
@@ -1503,7 +1533,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.edu.signin.SignInFacade#",
+    "javaApi": "com.youzan.owl.api.client.edu.signin.SignInFacade#findUserAssetsForSignIn",
     "jsonApi": "/wscvis/edu/signIn/findUserAssetsForSignIn.json",
     "navigator": [
       "/client/pages/edu/sign-in/api.js"
@@ -1619,7 +1649,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.ColumnService#",
+    "javaApi": "com.youzan.owl.api.ColumnService#isPaid",
     "jsonApi": "/wscvis/knowledge/getIsPaid.json",
     "navigator": [
       "/client/pages/course/detail/blocks/main/column-entry-block/api.js",
@@ -1631,7 +1661,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.ColumnService#",
+    "javaApi": "com.youzan.owl.api.ColumnService#findFreeContentAndLiveV2",
     "jsonApi": "/wscvis/knowledge/getFreeContentAndLive.json",
     "navigator": [
       "/client/pages/course/detail/blocks/main/column-free-block/api.js",
@@ -1675,7 +1705,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientColumnFacade#",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientColumnFacade#getColumnDetail",
     "jsonApi": "/wscvis/knowledge/column.json",
     "navigator": [],
     "controller": "/app/controllers/knowledge/ColumnController.ts",
@@ -1683,7 +1713,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientColumnFacade#",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientColumnFacade#findPageByKdtIdAndUserId",
     "jsonApi": "/wscvis/knowledge/columns.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1693,7 +1723,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientColumnFacade#",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientColumnFacade#findPageColumnsByKdtIdAndUserIdSub",
     "jsonApi": "/wscvis/knowledge/paidcolumns.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1771,7 +1801,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#getLiveNewsByPage",
     "jsonApi": "/wscvis/knowledge/getLiveNewsByPage.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1811,7 +1841,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#inviteLecturer",
     "jsonApi": "/wscvis/knowledge/inviteLecturer.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1849,7 +1879,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#wxMediaDownLoadAsyn",
     "jsonApi": "/wscvis/knowledge/wxMediaDownLoadAsyn.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1869,7 +1899,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#findLivesByPage",
     "jsonApi": "/wscvis/knowledge/lives.json",
     "navigator": [],
     "controller": "/app/controllers/knowledge/LiveController.js",
@@ -1890,7 +1920,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#",
+    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#buildZanSet",
     "jsonApi": "/wscvis/knowledge/buildZanSet.json",
     "navigator": [
       "/client/pages/course/detail/store/parser/activity-parser/collect-zan/buttons/api.js",
@@ -1902,7 +1932,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#",
+    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#getZanSetDetail",
     "jsonApi": "/wscvis/knowledge/zanSetDetail.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1912,7 +1942,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#",
+    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#givingZan",
     "jsonApi": "/wscvis/knowledge/givingZan.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1970,7 +2000,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#",
+    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#getGiftDetail",
     "jsonApi": "/wscvis/knowledge/getGiftDetail.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1980,7 +2010,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#",
+    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#getGiftShareContent",
     "jsonApi": "/wscvis/knowledge/getGiftShareContent.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -1990,7 +2020,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#",
+    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#receive",
     "jsonApi": "/wscvis/knowledge/receive.json",
     "navigator": [
       "/client/pages/course/detail/blocks/top/gift-receive-block/api.js",
@@ -2001,7 +2031,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#",
+    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#getGiftShareRankInfo",
     "jsonApi": "/wscvis/knowledge/getGiftShareRankInfo.json",
     "navigator": [
       "/client/pages/course/detail/blocks/top/gift-receive-block/components/rank-list/api.js",
@@ -2012,7 +2042,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#",
+    "javaApi": "com.youzan.owl.ump.api.giftshare.GiftShareFacade#getShareAlias",
     "jsonApi": "/wscvis/knowledge/getShareAlias.json",
     "navigator": [
       "/client/pages/course/detail/blocks/main/base-info-block/components/info/knowledge-info/gift/api.js",
@@ -2170,7 +2200,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.assets.AssetsAdapterFacade#",
+    "javaApi": "com.youzan.owl.ump.api.assets.AssetsAdapterFacade#getAccountBusinessNumber",
     "jsonApi": "/wscvis/knowledge/accountBussinessNumber.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -2190,7 +2220,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.relatedimage.RelatedImageCustomFacade#",
+    "javaApi": "com.youzan.owl.ump.api.relatedimage.RelatedImageCustomFacade#findRelatedImg",
     "jsonApi": "/wscvis/knowledge/getPosterImgList.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -2221,7 +2251,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.groupon.GrouponFacade#",
+    "javaApi": "com.youzan.owl.ump.api.groupon.GrouponFacade#get",
     "jsonApi": "/wscvis/knowledge/getGrouponDetail.json",
     "navigator": [
       "/client/pages/paid-content/api/index.js"
@@ -2231,7 +2261,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.ump.goods.details.api.service.GroupOnService#",
+    "javaApi": "com.youzan.ump.goods.details.api.service.GroupOnService#getGroupOnJoinRecordByPage",
     "jsonApi": "/wscvis/knowledge/getGroupOnJoinRecordByPage.json",
     "navigator": [],
     "controller": "/app/controllers/knowledge/blocks/GrouponController.js",
@@ -3631,6 +3661,16 @@
   },
   {
     "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.owl.api.client.onlinecourse.ClientLiveFacade#findLiveByAliasList",
+    "jsonApi": "/pay/wscvis_trade/course/findLiveByAliasList.json",
+    "navigator": [
+      "/client/pages/trade/buy/api/index.js"
+    ],
+    "controller": "/app/controllers/course/detail/DetailController.ts",
+    "service": "/app/services/api/owl/api/ClientLiveFacade.ts"
+  },
+  {
+    "appName": "wsc-h5-vis",
     "javaApi": "com.youzan.owl.api.trade.TradeOrderFacade#confirm",
     "jsonApi": "/pay/wscvis_ptc_pay/confirm.json",
     "navigator": [
@@ -3719,7 +3759,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#getPaySuccessInfo",
     "jsonApi": "/wscvis/order/getPaySuccessInfo.json",
     "navigator": [
       "/client/pages/edu/api/index.js"
@@ -3729,7 +3769,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayStatusInfo",
     "jsonApi": "/wscvis/edu/paid-status",
     "navigator": [],
     "controller": "/app/controllers/trade/order/PaidStatusController.js",
@@ -3753,7 +3793,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayStatusInfo",
     "jsonApi": "/wscvis/edu/paid-status/*",
     "navigator": [],
     "controller": "/app/controllers/trade/order/PaidStatusController.js",
@@ -3777,7 +3817,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayStatusInfo",
     "jsonApi": "/wscvis/order/paid-status",
     "navigator": [
       "/client/pages/trade/buy/common/redirect.js",
@@ -3810,7 +3850,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayStatusInfo",
     "jsonApi": "/wscvis/order/paid-status/*",
     "navigator": [
       "/client/pages/trade/buy/common/redirect.js"
@@ -3840,7 +3880,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayStatusInfo",
     "jsonApi": "/wscvis/order/getPayStateInfo.json",
     "navigator": [
       "/client/pages/trade/paid-status/api.js"
@@ -3850,7 +3890,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#queryPayRewardInfo",
     "jsonApi": "/wscvis/order/getPayRewardInfo.json",
     "navigator": [
       "/client/pages/trade/paid-status/api.js"
@@ -3860,7 +3900,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#",
+    "javaApi": "com.youzan.owl.api.trade.PaySuccessAggrFacade#getPaySuccessInfoV2",
     "jsonApi": "/wscvis/order/getUmpInfoV2.json",
     "navigator": [
       "/client/pages/trade/paid-status/api.js"
@@ -3910,7 +3950,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#",
+    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#buildZanSet",
     "jsonApi": "/wscvis/ump/collect-zan/buildZanSet.json",
     "navigator": [
       "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
@@ -3920,7 +3960,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#",
+    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#getZanSetDetail",
     "jsonApi": "/wscvis/ump/collect-zan/zanSetDetail.json",
     "navigator": [
       "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
@@ -3930,7 +3970,7 @@
   },
   {
     "appName": "wsc-h5-vis",
-    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#",
+    "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#givingZan",
     "jsonApi": "/wscvis/ump/collect-zan/givingZan.json",
     "navigator": [
       "/client/pages/ump/collect-zan/modules/collect-zan/apis.ts"
@@ -4444,6 +4484,30 @@
     ],
     "controller": "/app/controllers/ump/InviteController.js",
     "service": "/app/services/owl/client/product/ClientEduProductFacade.js"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.owl.api.client.ump.multicourse.MultiCourseApplyCustomerFacade#queryActivityGoods",
+    "jsonApi": "/wscvis/ump/liangfan/activities/courses.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/LiangfanController.ts",
+    "service": "/app/services/api/owl/api/MultiCourseApplyCustomerFacade.ts"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.owl.api.client.ump.multicourse.MultiCourseApplyCustomerFacade#linkageQueryGoodsName",
+    "jsonApi": "/wscvis/ump/liangfan/search/suggestions.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/LiangfanController.ts",
+    "service": "/app/services/api/owl/api/MultiCourseApplyCustomerFacade.ts"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.trade.shopping.cart.api.view.service.TradeCartViewService#addGoods",
+    "jsonApi": "/wscvis/ump/liangfan/activities/cart.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/LiangfanController.ts",
+    "service": "/app/services/api/trade/shopping/TradeCartViewService.ts"
   },
   {
     "appName": "wsc-h5-vis",

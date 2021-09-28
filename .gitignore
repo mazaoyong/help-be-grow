@@ -5,5 +5,6 @@ static-project/
 .vscode/
 nohup.out
 *.DS_Store
-app/data
+app/data/
 app/update_log.json
+search.test.json

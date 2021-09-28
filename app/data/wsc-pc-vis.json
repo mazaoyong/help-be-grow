@@ -192,7 +192,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.ic.api.aggregate.OwlProductAggregateFacade#findPageWithIc",
+    "javaApi": "com.youzan.owl.ic.api.aggregate.OwlProductAggregateFacade#findPageWithIcV2",
     "jsonApi": "/v4/vis/goods-selector/goodslist.json",
     "navigator": [
       "/client/pages/course/recommend/api.js",
@@ -243,9 +243,18 @@
     "javaApi": "com.youzan.owl.ic.api.core.ProductFacade#getByAlias",
     "jsonApi": "/v4/vis/goods-selector/goodInfo.json",
     "navigator": [
-      "/client/pages/ump/boost/api.js",
       "/client/pages/ump/enrollment-poster/api.ts",
       "/client/pages/ump/freebie/api.js"
+    ],
+    "controller": "/app/controllers/common/GoodsSelectorController.js",
+    "service": "/app/services/owl/ic/core/ProductFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.ic.api.core.ProductFacade#getByAliasV2",
+    "jsonApi": "/v4/vis/goods-selector/goodInfoV2.json",
+    "navigator": [
+      "/client/pages/ump/boost/api.js"
     ],
     "controller": "/app/controllers/common/GoodsSelectorController.js",
     "service": "/app/services/owl/ic/core/ProductFacade.js"
@@ -365,7 +374,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.buygive.BuyGivePresentFacade#findPresentGoods",
+    "javaApi": "com.youzan.owl.pc.api.buygive.BuyGivePresentFacade#findPresentGoodsV2",
     "jsonApi": "/v4/vis/present-selector/presentList.json",
     "navigator": [
       "/client/pages/ump/freebie/api.js"
@@ -1031,7 +1040,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ColumnFacade#getByAlias",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ColumnFacade#getByAliasV2",
     "jsonApi": "/v4/vis/course/column/getByAlias.json",
     "navigator": [
       "/client/pages/course/column/common/api.ts",
@@ -1043,7 +1052,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ColumnFacade#getByAlias",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ColumnFacade#getByAliasV2",
     "jsonApi": "/v4/vis/pct/column/getByAlias.json",
     "navigator": [
       "/client/pages/pct/tabs/api.js"
@@ -1264,6 +1273,26 @@
   },
   {
     "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ColumnFacade#getColumnApplicable",
+    "jsonApi": "/v4/vis/course/column/getColumnApplicable.json",
+    "navigator": [
+      "/client/pages/course/components/set-schools/api.ts"
+    ],
+    "controller": "/app/controllers/course/ColumnController.js",
+    "service": "/app/services/owl/pc/onlinecourse/ColumnFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ColumnFacade#updateColumnApplicableCampus",
+    "jsonApi": "/v4/vis/course/column/updateColumnApplicableCampus.json",
+    "navigator": [
+      "/client/pages/course/components/set-schools/api.ts"
+    ],
+    "controller": "/app/controllers/course/ColumnController.js",
+    "service": "/app/services/owl/pc/onlinecourse/ColumnFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.onlinecourse.ContentFacade#findPageByCondition",
     "jsonApi": "/v4/vis/pct/content/list.json",
     "navigator": [
@@ -1283,7 +1312,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ContentFacade#getByAlias",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ContentFacade#getByAliasV2",
     "jsonApi": "/v4/vis/pct/content/detail.json",
     "navigator": [
       "/client/pages/course/column/manage/components/action-menu/api.ts",
@@ -1360,6 +1389,44 @@
     ],
     "controller": "/app/controllers/course/ContentController.js",
     "service": "/app/services/owl/pc/course/ContentFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ContentFacade#getContentApplicable",
+    "jsonApi": "/v4/vis/pct/content/getContentApplicable.json",
+    "navigator": [
+      "/client/pages/course/components/set-schools/api.ts"
+    ],
+    "controller": "/app/controllers/course/ContentController.js",
+    "service": "/app/services/owl/pc/onlinecourse/ContentFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ContentFacade#updateContentApplicableCampus",
+    "jsonApi": "/v4/vis/pct/content/updateContentApplicableCampus.json",
+    "navigator": [
+      "/client/pages/course/components/set-schools/api.ts"
+    ],
+    "controller": "/app/controllers/course/ContentController.js",
+    "service": "/app/services/owl/pc/onlinecourse/ContentFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.ContentFacade#findPageByCondition",
+    "jsonApi": "/v4/vis/course/content/getList.json",
+    "navigator": [],
+    "controller": "/app/controllers/course/ContentController.js",
+    "service": "/app/services/owl/pc/onlinecourse/ContentFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.onlinecourse.BurglarQueryFacade#getBurglarProofInfo",
+    "jsonApi": "/v4/vis/pct/content/getBurglarProofInfo.json",
+    "navigator": [
+      "/client/pages/course/content/api.js"
+    ],
+    "controller": "/app/controllers/course/ContentController.js",
+    "service": "/app/services/owl/pc/onlinecourse/BurglarQueryFacade.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -1798,6 +1865,28 @@
     "jsonApi": "/v4/vis/edu/courseSetting/findCourseSettings.json",
     "navigator": [
       "/client/pages/course/course-setting/api.js"
+    ],
+    "controller": "/app/controllers/course/CourseSettingController.js",
+    "service": "/app/services/owl/pc/shop/ShopCourseSettingFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.shop.ShopCourseSettingFacade#findByKdtIdAndScene",
+    "jsonApi": "/v4/vis/edu/courseSetting/findByKdtIdAndScene.json",
+    "navigator": [
+      "/client/pages/course/course-setting/api.js",
+      "/client/pages/pct/settings/api.js"
+    ],
+    "controller": "/app/controllers/course/CourseSettingController.js",
+    "service": "/app/services/owl/pc/shop/ShopCourseSettingFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.shop.ShopCourseSettingFacade#saveCourseSettingsByScene",
+    "jsonApi": "/v4/vis/edu/courseSetting/saveCourseSettingsByScene.json",
+    "navigator": [
+      "/client/pages/course/course-setting/api.js",
+      "/client/pages/pct/settings/api.js"
     ],
     "controller": "/app/controllers/course/CourseSettingController.js",
     "service": "/app/services/owl/pc/shop/ShopCourseSettingFacade.js"
@@ -5127,6 +5216,46 @@
   },
   {
     "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.student.StudentFacadeV2#findByUserId",
+    "jsonApi": "/v4/vis/h5/scrm/findByUserId.json",
+    "navigator": [],
+    "controller": "/app/controllers/h5/scrm/StudentFacadeController.js",
+    "service": "/app/services/owl/pc/student/StudentServiceV2.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.student.StudentAggregateFacade#findPageByQueryWithWrapCourse",
+    "jsonApi": "/v4/vis/h5/scrm/findPageByQueryWithWrapCourse.json",
+    "navigator": [],
+    "controller": "/app/controllers/h5/scrm/StudentFacadeController.js",
+    "service": "/app/services/owl/student/StudentAggregateFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.appointment.BusinessAppointmentFacade#findStudentLessonsByIdentity",
+    "jsonApi": "/v4/vis/h5/scrm/findStudentLessonsByIdentity.json",
+    "navigator": [],
+    "controller": "/app/controllers/h5/scrm/StudentFacadeController.js",
+    "service": "/app/services/owl/pc/appointment/BusinessAppointmentService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.student.StudentAggregateFacade#findPageByQueryWithCourseSchedule",
+    "jsonApi": "/v4/vis/h5/scrm/findPageByQueryWithCourseSchedule.json",
+    "navigator": [],
+    "controller": "/app/controllers/h5/scrm/StudentFacadeController.js",
+    "service": "/app/services/owl/student/StudentAggregateFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.lesson.StudentLessonFacade#findStudentValidRecordList",
+    "jsonApi": "/v4/vis/h5/scrm/findStudentValidRecordList.json",
+    "navigator": [],
+    "controller": "/app/controllers/h5/scrm/StudentFacadeController.js",
+    "service": "/app/services/api/owl/pc/StudentLessonFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.exercisebook.ReviewerFacade#getAssignment",
     "jsonApi": "/v4/vis/h5/supv/homework/getAssignment.json",
     "navigator": [],
@@ -6762,7 +6891,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.buygive.BuyGivePresentFacade#findPageByCondition",
+    "javaApi": "com.youzan.owl.pc.api.buygive.BuyGivePresentFacade#findPageByConditionV2",
     "jsonApi": "/v4/vis/edu/refund/findBuyGivePresentPageByCondition.json",
     "navigator": [
       "/client/pages/recruit/refund/api.js"
@@ -6858,6 +6987,8 @@
     "jsonApi": "/v4/vis/commom/shop/chain/findListByKdtIds.json",
     "navigator": [
       "/client/pages/shop/components/school-td/api.js",
+      "/client/pages/ump/freebie/api.js",
+      "/client/pages/ump/multi-course/api/index.ts",
       "/client/pages/ump/referral/api/edit.ts"
     ],
     "controller": "/app/controllers/shop/ChainShopQueryController.js",
@@ -6932,6 +7063,14 @@
       "/client/pages/shop/components/shop-choose/api.js",
       "/client/pages/student/student-import/api/shop.js"
     ],
+    "controller": "/app/controllers/shop/ShopQueryController.js",
+    "service": "/app/services/owl/pc/shop/ShopQueryService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.shop.ShopQueryFacade#findKdtIdListByCampus",
+    "jsonApi": "/v4/vis/commom/shop/findKdtIdListByCampus.json",
+    "navigator": [],
     "controller": "/app/controllers/shop/ShopQueryController.js",
     "service": "/app/services/owl/pc/shop/ShopQueryService.js"
   },
@@ -7061,6 +7200,26 @@
     "appName": "wsc-pc-vis",
     "javaApi": "",
     "jsonApi": "/v4/vis/edu/shop/createEduHQ.json",
+    "navigator": [
+      "/client/pages/shop/shop/api/index.js"
+    ],
+    "controller": "/app/controllers/shop/shop/IndexController.js",
+    "service": "/app/services/api/iron/IronApiService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.retail.shop.api.hq.service.HQManageService#create",
+    "jsonApi": "/v4/vis/edu/shop/createEduHQV2.json",
+    "navigator": [
+      "/client/pages/shop/shop/api/index.js"
+    ],
+    "controller": "/app/controllers/shop/shop/IndexController.js",
+    "service": "/app/services/shopcenter/chain/HQManageService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "",
+    "jsonApi": "/v4/vis/edu/shop/createEduHQV2.json",
     "navigator": [
       "/client/pages/shop/shop/api/index.js"
     ],
@@ -8993,6 +9152,36 @@
   },
   {
     "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.edu.inspection.api.questions.QuestionFacade#batchCreateQuestion",
+    "jsonApi": "/v4/vis/supv/question-bank/batchCreateQuestion.json",
+    "navigator": [
+      "/client/pages/supv/api/question-bank/index.ts"
+    ],
+    "controller": "/app/controllers/supv/questionBank/QuestionBankBatchImportController.js",
+    "service": "/app/services/api/owl/edu/QuestionFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.edu.inspection.api.questions.DraftFacade#queryDraftResp",
+    "jsonApi": "/v4/vis/supv/question-bank/queryDraftResp.json",
+    "navigator": [
+      "/client/pages/supv/api/question-bank/index.ts"
+    ],
+    "controller": "/app/controllers/supv/questionBank/QuestionBankBatchImportController.js",
+    "service": "/app/services/api/owl/edu/DraftFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.edu.inspection.api.questions.DraftFacade#saveDraft",
+    "jsonApi": "/v4/vis/supv/question-bank/saveDraft.json",
+    "navigator": [
+      "/client/pages/supv/api/question-bank/index.ts"
+    ],
+    "controller": "/app/controllers/supv/questionBank/QuestionBankBatchImportController.js",
+    "service": "/app/services/api/owl/edu/DraftFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.benefit.BenefitFacade#findBenefitPackagePage",
     "jsonApi": "/v4/vis/pct/benefit/getFindBenefitPackagePage.json",
     "navigator": [
@@ -9142,11 +9331,20 @@
   },
   {
     "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.goods.api.GoodsSelectorService#queryGoodsSelectorConfig",
+    "jsonApi": "/v4/vis/pct/page/boost",
+    "navigator": [
+      "/client/pages/pct/ump/config/pct.js"
+    ],
+    "controller": "/app/controllers/ump/BoostController.js",
+    "service": "/app/services/ump/manage/GoodsSelectorConfigService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#create",
     "jsonApi": "/v4/vis/pct/boost/active.json",
     "navigator": [
-      "/client/pages/ump/boost/api.js",
-      "/client/pages/ump/boost/pages/edit/index.js"
+      "/client/pages/ump/boost/api.js"
     ],
     "controller": "/app/controllers/ump/BoostController.js",
     "service": "/app/services/owl/ump/collectzan/CollectZanFacade.js"
@@ -9156,8 +9354,7 @@
     "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#deleteById",
     "jsonApi": "/v4/vis/pct/boost/active.json",
     "navigator": [
-      "/client/pages/ump/boost/api.js",
-      "/client/pages/ump/boost/pages/edit/index.js"
+      "/client/pages/ump/boost/api.js"
     ],
     "controller": "/app/controllers/ump/BoostController.js",
     "service": "/app/services/owl/ump/collectzan/CollectZanFacade.js"
@@ -9167,8 +9364,7 @@
     "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#update",
     "jsonApi": "/v4/vis/pct/boost/active.json",
     "navigator": [
-      "/client/pages/ump/boost/api.js",
-      "/client/pages/ump/boost/pages/edit/index.js"
+      "/client/pages/ump/boost/api.js"
     ],
     "controller": "/app/controllers/ump/BoostController.js",
     "service": "/app/services/owl/ump/collectzan/CollectZanFacade.js"
@@ -9196,11 +9392,20 @@
     "javaApi": "com.youzan.owl.ump.api.collectzan.CollectZanFacade#getById",
     "jsonApi": "/v4/vis/pct/boost/active.json",
     "navigator": [
-      "/client/pages/ump/boost/api.js",
-      "/client/pages/ump/boost/pages/edit/index.js"
+      "/client/pages/ump/boost/api.js"
     ],
     "controller": "/app/controllers/ump/BoostController.js",
     "service": "/app/services/owl/ump/collectzan/CollectZanFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.ump.collectzan.CollectZanPCFacade#getByIdV2",
+    "jsonApi": "/v4/vis/pct/boost/activeV2.json",
+    "navigator": [
+      "/client/pages/ump/boost/pages/edit/index.js"
+    ],
+    "controller": "/app/controllers/ump/BoostController.js",
+    "service": "/app/services/owl/pc/ump/collectzan/CollectZanPCFacade.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -9338,8 +9543,50 @@
   },
   {
     "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.marketing.polling.PollingService#saveSure",
+    "jsonApi": "/v4/vis/ump/common/saveSure.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/CommonController.js",
+    "service": "/app/services/api/ump/marketing/PollingService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.ActivityMutexService#queryActivityConflictList",
+    "jsonApi": "/v4/vis/ump/conflict/checkConflict.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/ConflictController.js",
+    "service": "/app/services/ump/manage/ActivityMutexService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.marketing.polling.PollingService#saveSure",
+    "jsonApi": "/v4/vis/ump/conflict/checkSaveStatus.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/ConflictController.js",
+    "service": "/app/services/ump/marketing/PollingService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.ActivityMutexService#asyncQueryActivityConflictList",
+    "jsonApi": "/v4/vis/ump/conflict/asyncQueryActivityConflictList.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/ConflictController.js",
+    "service": "/app/services/ump/manage/ActivityMutexService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.coupon.CouponFacade#findAllValidCouponListByKdtId",
     "jsonApi": "/v4/vis/pct/common/findAllValidCouponListByKdtId.json",
+    "navigator": [
+      "/client/pages/ump/exam/api.js"
+    ],
+    "controller": "/app/controllers/ump/CouponController.js",
+    "service": "/app/services/owl/pc/coupon/CouponService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.coupon.CouponFacade#findBaseCouponByIds",
+    "jsonApi": "/v4/vis/pct/common/findBaseCouponByIds.json",
     "navigator": [
       "/client/pages/ump/exam/api.js"
     ],
@@ -9398,13 +9645,13 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.ump.api.exam.ExamFacade#listExamByQuery",
+    "javaApi": "com.youzan.owl.pc.api.ump.exam.ExamPCV2Facade#listExamByQuery",
     "jsonApi": "/v4/vis/pct/exam/getList.json",
     "navigator": [
       "/client/pages/ump/exam/api.js"
     ],
     "controller": "/app/controllers/ump/ExamController.js",
-    "service": "/app/services/paidcontent/ExamService.js"
+    "service": "/app/services/owl/pc/ump/exam/ExamPCV2Facade.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -9647,7 +9894,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.buygive.BuyGiveFacade#getDetailById",
+    "javaApi": "com.youzan.owl.pc.api.buygive.BuyGiveFacade#getDetailByIdV2",
     "jsonApi": "/v4/vis/pct/freebie/getDetailById.json",
     "navigator": [],
     "controller": "/app/controllers/ump/FreebieController.js",
@@ -9673,6 +9920,14 @@
     "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.buygive.BuyGiveFacade#invalid",
     "jsonApi": "/v4/vis/pct/freebie/invalid.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/FreebieController.js",
+    "service": "/app/services/owl/pc/buygive/BuyGiveFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.buygive.BuyGiveFacade#findPageByConditionV2",
+    "jsonApi": "/v4/vis/pct/freebie/findPageByCondition.json",
     "navigator": [],
     "controller": "/app/controllers/ump/FreebieController.js",
     "service": "/app/services/owl/pc/buygive/BuyGiveFacade.js"
@@ -10021,6 +10276,7 @@
     "javaApi": "com.youzan.material.materialcenter.api.service.general.video.TencentVideoReadService#generateVideoPlayInfo",
     "jsonApi": "/v4/vis/edu/moments/generateVideoPlayInfo.json",
     "navigator": [
+      "/client/pages/course/content/api.js",
       "/client/pages/student/student-detail/components/comment/api.js",
       "/client/pages/supv/components/media-container/components/video-uploader/api.ts",
       "/client/pages/supv/homework/components/video-uploader/api.ts",
@@ -10079,6 +10335,156 @@
     ],
     "controller": "/app/controllers/ump/MomentsController.js",
     "service": "/app/services/api/owl/pc/CeresAdminPCFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.goods.api.GoodsSelectorService#queryGoodsSelectorConfig",
+    "jsonApi": "/v4/vis/ump/multi-course",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/ump/manage/GoodsSelectorConfigService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.MultiCourseApplyActivityService#createActivity",
+    "jsonApi": "/v4/vis/ump/multi-course/createActivity.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/ump/manage/MultiCourseApplyActivityService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.MultiCourseApplyActivityService#editActivity",
+    "jsonApi": "/v4/vis/ump/multi-course/editActivity.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/ump/manage/MultiCourseApplyActivityService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.MultiCourseApplyActivityService#getActivityDetails",
+    "jsonApi": "/v4/vis/ump/multi-course/getActivityDetails.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/ump/manage/MultiCourseApplyActivityService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.MultiCourseApplyActivityService#invalidActivity",
+    "jsonApi": "/v4/vis/ump/multi-course/invalidActivity.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/ump/manage/MultiCourseApplyActivityService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.MultiCourseApplyActivityService#deleteActivity",
+    "jsonApi": "/v4/vis/ump/multi-course/deleteActivity.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/ump/manage/MultiCourseApplyActivityService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.MultiCourseApplyActivityService#findMultiCourseOrdersForManager",
+    "jsonApi": "/v4/vis/ump/multi-course/findMultiCourseOrdersForManager.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/ump/manage/MultiCourseApplyActivityService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.ump.multicourse.MultiCourseDataFacade#getOverview",
+    "jsonApi": "/v4/vis/ump/multi-course/getOverview.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/owl/pc/MultiCourseDataFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.ump.multicourse.MultiCourseDataFacade#findDetailPage",
+    "jsonApi": "/v4/vis/ump/multi-course/findDetailPage.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/owl/pc/MultiCourseDataFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.ump.multicourse.MultiCourseDataFacade#submitTask",
+    "jsonApi": "/v4/vis/ump/multi-course/submitTask.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/owl/pc/MultiCourseDataFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.MultiCourseApplyActivityService#queryActivityList",
+    "jsonApi": "/v4/vis/ump/multi-course/queryActivityList.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/ump/manage/MultiCourseApplyActivityService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.course.ProductPCFacade#findProductsWithSku",
+    "jsonApi": "/v4/vis/ump/multi-course/findProductsWithSku.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/owl/pc/ProductPCFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.order.OwlOrderInfoFacade#getOrderRegistrationInfo",
+    "jsonApi": "/v4/vis/ump/multi-course/getOrderRegistrationInfo.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/owl/pc/OwlOrderInfoFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.customer.CustomerQueryFacade#findPage",
+    "jsonApi": "/v4/vis/ump/multi-course/findPage.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/owl/pc/CustomerQueryFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.bigdata.datacenter.base.api.service.ump.UmpGeneralService#getUmpGeneralData",
+    "jsonApi": "/v4/vis/ump/multi-course/getUmpGeneralData.json",
+    "navigator": [
+      "/client/pages/ump/multi-course/api/index.ts"
+    ],
+    "controller": "/app/controllers/ump/MultiCourseController.js",
+    "service": "/app/services/api/bigdata/datacenter/UmpGeneralService.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -10346,7 +10752,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.api.SubscriptionService#getSubRecordList",
+    "javaApi": "com.youzan.owl.api.SubscriptionService#findOnlineSubRecordPage",
     "jsonApi": "/v4/vis/pct/record/list.json",
     "navigator": [
       "/client/pages/ump/record/api.js"
@@ -10356,7 +10762,7 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.api.SubscriptionService#exportOrderExcelFile",
+    "javaApi": "com.youzan.owl.api.SubscriptionService#exportOnlineOrderExcel",
     "jsonApi": "/v4/vis/pct/record/export.json",
     "navigator": [
       "/client/pages/ump/record/api.js"
@@ -10393,6 +10799,16 @@
     ],
     "controller": "/app/controllers/ump/RecordController.js",
     "service": "/app/services/owl/pc/schedule/ScheduleExportFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.ump.manage.goods.api.GoodsSelectorService#queryGoodsSelectorConfig",
+    "jsonApi": "/v4/vis/pct/page/referral",
+    "navigator": [
+      "/client/pages/pct/ump/config/pct.js"
+    ],
+    "controller": "/app/controllers/ump/ReferralController.js",
+    "service": "/app/services/ump/manage/GoodsSelectorConfigService.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -10520,23 +10936,13 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.ump.referral.ReferralPCFacade#getDetailByActivityId",
+    "javaApi": "com.youzan.owl.pc.api.ump.referral.ReferralPCFacade#getDetailByActivityIdV2",
     "jsonApi": "/v4/vis/pct/referral/getDetailByActivityId.json",
     "navigator": [
       "/client/pages/ump/referral/api/list.ts"
     ],
     "controller": "/app/controllers/ump/ReferralController.js",
     "service": "/app/services/ump/referral/ReferralPCFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.mall.item.api.ItemQueryService#",
-    "jsonApi": "/v4/vis/pct/referral/getDetailByActivityId.json",
-    "navigator": [
-      "/client/pages/ump/referral/api/list.ts"
-    ],
-    "controller": "/app/controllers/ump/ReferralController.js",
-    "service": "/app/services/common/ItemQueryService.js"
   },
   {
     "appName": "wsc-pc-vis",
@@ -10623,6 +11029,7 @@
     "javaApi": "com.youzan.ump.asset.facade.CouponGroupFacadeService#searchList4CouponComponent",
     "jsonApi": "/v4/vis/edu/rewards/getCoupons.json",
     "navigator": [
+      "/client/pages/ump/exam/api.js",
       "/client/pages/ump/rewards/common/api.js"
     ],
     "controller": "/app/controllers/ump/RewardsController.js",

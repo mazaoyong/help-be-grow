@@ -617,6 +617,14 @@
   },
   {
     "appName": "wsc-pc-goods",
+    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelsService#batchDeleteItemV2",
+    "jsonApi": "/v4/goods/audit/api/batchRemoveItemOptimization",
+    "navigator": [],
+    "controller": "/app/controllers/goods-audit/IndexController.js",
+    "service": "/app/services/api/ic/external/ICWechatChannelsService.js"
+  },
+  {
+    "appName": "wsc-pc-goods",
     "javaApi": "com.youzan.mall.item.api.WechatChannelService#batchAddItem",
     "jsonApi": "/v4/goods/audit/api/batchAddItem",
     "navigator": [],
@@ -846,46 +854,6 @@
     "navigator": [],
     "controller": "/app/controllers/goods/GoodsListController.js",
     "service": "/app/services/api/ic/manage/ItemQueryService.js"
-  },
-  {
-    "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.xp.service.XPImportsService#searchItemImportTask",
-    "jsonApi": "/v4/goods/manage/api/getImportHistoryList",
-    "navigator": [],
-    "controller": "/app/controllers/goods-manage/BatchImportController.js",
-    "service": "/app/services/api/xp/ItemImportService.js"
-  },
-  {
-    "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.xp.service.XPImportsService#getItemImportFileTemplate",
-    "jsonApi": "/v4/goods/manage/api/getImportTemplate",
-    "navigator": [],
-    "controller": "/app/controllers/goods-manage/BatchImportController.js",
-    "service": "/app/services/api/xp/ItemImportService.js"
-  },
-  {
-    "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.xp.service.XPImportsService#submitItemImportTask",
-    "jsonApi": "/v4/goods/manage/api/createImportTask",
-    "navigator": [],
-    "controller": "/app/controllers/goods-manage/BatchImportController.js",
-    "service": "/app/services/api/xp/ItemImportService.js"
-  },
-  {
-    "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.xp.service.XPImportsService#submitImportPictures",
-    "jsonApi": "/v4/goods/manage/api/batchSubmitPictures",
-    "navigator": [],
-    "controller": "/app/controllers/goods-manage/BatchImportController.js",
-    "service": "/app/services/api/xp/ItemImportService.js"
-  },
-  {
-    "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.xp.service.XPImportsService#getItemImportTask",
-    "jsonApi": "/v4/goods/manage/api/getImportTaskStatus",
-    "navigator": [],
-    "controller": "/app/controllers/goods-manage/BatchImportController.js",
-    "service": "/app/services/api/xp/ItemImportService.js"
   },
   {
     "appName": "wsc-pc-goods",
@@ -1761,14 +1729,6 @@
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.ump.marketing.customerdiscount.service.CustomerDiscountPromotionService#getCustomerGoodsWithGoodsDetailDTOList",
-    "jsonApi": "/v4/goods/customerDiscount/getByGoodsIds.json",
-    "navigator": [],
-    "controller": "/app/controllers/ump/CustomerDiscountController.js",
-    "service": "/app/services/api/ump/CustomerDiscountPromotionService.js"
-  },
-  {
-    "appName": "wsc-pc-goods",
     "javaApi": "com.youzan.ump.marketing.customerdiscount.service.CustomerDiscountPromotionService#isInNewSystem",
     "jsonApi": "/v4/goods/customerDiscount/getByGoodsIds.json",
     "navigator": [],
@@ -1778,6 +1738,14 @@
   {
     "appName": "wsc-pc-goods",
     "javaApi": "com.youzan.ump.marketing.customerdiscount.service.CustomerDiscountPromotionService#batchGetCustomPriceGoodsInfo",
+    "jsonApi": "/v4/goods/customerDiscount/getByGoodsIds.json",
+    "navigator": [],
+    "controller": "/app/controllers/ump/CustomerDiscountController.js",
+    "service": "/app/services/api/ump/CustomerDiscountPromotionService.js"
+  },
+  {
+    "appName": "wsc-pc-goods",
+    "javaApi": "com.youzan.ump.marketing.customerdiscount.service.CustomerDiscountPromotionService#getCustomerGoodsWithGoodsDetailDTOList",
     "jsonApi": "/v4/goods/customerDiscount/getByGoodsIds.json",
     "navigator": [],
     "controller": "/app/controllers/ump/CustomerDiscountController.js",

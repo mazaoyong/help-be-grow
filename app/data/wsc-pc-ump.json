@@ -1369,6 +1369,14 @@
   },
   {
     "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ump.voucher.front.api.gray.service.VoucherPieceGrayService#checkGray",
+    "jsonApi": "/v4/ump/coupon/api/page-content/whitelists",
+    "navigator": [],
+    "controller": "/app/controllers/coupon/PageContentController.js",
+    "service": "/app/services/api/ump/voucher/CouponGrayService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
     "javaApi": "com.youzan.ump.asset.facade.CouponGroupFacadeService#search",
     "jsonApi": "/v4/ump/coupon/api/list.json",
     "navigator": [],
@@ -3233,6 +3241,46 @@
   },
   {
     "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.channels.apps.service.WeappTradeModuleService#getTradeModuleStatus",
+    "jsonApi": "/v4/ump/live-assistant/api/trade-module-status",
+    "navigator": [],
+    "controller": "/app/controllers/live-assistant/IndexController.js",
+    "service": "/app/services/api/channels/WeappTradeModuleService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.promotion.api.service.LiveChannelCouponService#isGrayScale",
+    "jsonApi": "/v4/ump/live-assistant/api/coupon-module-is-gray-scale",
+    "navigator": [],
+    "controller": "/app/controllers/live-assistant/IndexController.js",
+    "service": "/app/services/api/ebiz/video/channels/promotion/LiveChannelCouponService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.promotion.api.service.LiveChannelCouponService#queryCouponModule",
+    "jsonApi": "/v4/ump/live-assistant/api/coupon-module-status",
+    "navigator": [],
+    "controller": "/app/controllers/live-assistant/IndexController.js",
+    "service": "/app/services/api/ebiz/video/channels/promotion/LiveChannelCouponService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.promotion.api.service.LiveChannelCouponService#queryCouponActivity",
+    "jsonApi": "/v4/ump/live-assistant/api/coupon-sync-status",
+    "navigator": [],
+    "controller": "/app/controllers/live-assistant/IndexController.js",
+    "service": "/app/services/api/ebiz/video/channels/promotion/LiveChannelCouponService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.promotion.api.service.LiveChannelCouponService#batchSyncCouponActivity",
+    "jsonApi": "/v4/ump/live-assistant/api/batch-sync-coupon-activity",
+    "navigator": [],
+    "controller": "/app/controllers/live-assistant/IndexController.js",
+    "service": "/app/services/api/ebiz/video/channels/promotion/LiveChannelCouponService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
     "javaApi": "com.youzan.ump.voucher.front.api.customization.weixin.channels.service.ChannelLiveActivityManageService#search",
     "jsonApi": "/v4/ump/live-coupon/api/list",
     "navigator": [],
@@ -3281,11 +3329,11 @@
   },
   {
     "appName": "wsc-pc-ump",
-    "javaApi": "com.youzan.ump.voucher.front.api.customization.weixin.channels.service.ChannelLiveActivityManageService#edit",
+    "javaApi": "com.youzan.ebiz.video.channels.promotion.api.service.LiveChannelCouponService#editCouponActivity",
     "jsonApi": "/v4/ump/live-coupon/api/update",
     "navigator": [],
     "controller": "/app/controllers/live-coupon/IndexController.js",
-    "service": "/app/services/api/ump/voucher/ChannelLiveActivityManageService.js"
+    "service": "/app/services/api/ebiz/video/channels/promotion/LiveChannelCouponService.js"
   },
   {
     "appName": "wsc-pc-ump",
@@ -3310,6 +3358,14 @@
     "navigator": [],
     "controller": "/app/controllers/live-coupon/IndexController.js",
     "service": "/app/services/api/ump/voucher/ChannelLiveActivityManageService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.promotion.api.service.LiveChannelCouponService#queryCouponActivity",
+    "jsonApi": "/v4/ump/live-coupon/api/coupon-sync-status",
+    "navigator": [],
+    "controller": "/app/controllers/live-coupon/IndexController.js",
+    "service": "/app/services/api/ebiz/video/channels/promotion/LiveChannelCouponService.js"
   },
   {
     "appName": "wsc-pc-ump",

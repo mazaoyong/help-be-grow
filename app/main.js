@@ -2,8 +2,8 @@ const AstGetter = require('./src/AstGetter')
 const { getTotalFiles, getJsFileRealPath } = require('./utils')
 const path = require('path')
 const fs = require('fs')
-var ProgressBar = require('progress');
 const chalk = require('chalk');
+const ProgressBar = require('progress');
 
 // 通过jsonApi搜索业务
 function getNavigator(appName, jsonApi) {
@@ -63,7 +63,7 @@ function apiAssemble(appName, api) {
   return result
 }
 let errRouterPath = ''
-module.exports = (projectInfo) => {
+const main = (projectInfo) => {
   const updateLog = []
   // 更新的状态，1是成功，2是异常，-1是失败
   let updateState = {
@@ -126,6 +126,7 @@ module.exports = (projectInfo) => {
               ...updateState
             })
             fs.writeFileSync(updateLogPath, JSON.stringify(updateLog, null, 2))
+            console.log(chalk.green(appName.padEnd(15, ' ')),'数据更新完成')
           })
         })
       })
@@ -133,7 +134,11 @@ module.exports = (projectInfo) => {
   } catch (err) {
     updateState.status = -1;
     updateState.info = '更新数据失败,错误信息：' + err || '未知'
-    console.log(errRouterPath)
+    console.log(chalk.red(errRouterPath))
   }
+}
 
+module.exports = {
+  main,
+  apiAssemble
 }
