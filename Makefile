@@ -23,4 +23,4 @@ search:
 	node bin/dev.js --mode=${mode}
 
 pre:install
-	yarn build
+	cd client && yarn build
