@@ -2,9 +2,7 @@
   "commands": {
     "pre": {
       "node": "v12.17.0",
-      "dependencies": [],
       "devToolset": "7"
     }
-  },
-  "scAutoBuild": true
+  }
 }

@@ -22,5 +22,5 @@ build:
 search:
 	node bin/dev.js --mode=${mode}
 
-pre:
-	cd client && yarn && yarn build
+pre:install
+	yarn build
