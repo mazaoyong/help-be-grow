@@ -4,5 +4,6 @@
       "node": "v12.17.0",
       "devToolset": "7"
     }
-  }
+  },
+  "scAutoBuild": true
 }
