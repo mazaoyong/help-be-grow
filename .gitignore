@@ -10,3 +10,5 @@ app/update_log.json
 search.test.json
 
 config/version_*.json
+
+package-lock.json
