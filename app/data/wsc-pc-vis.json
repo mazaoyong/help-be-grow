@@ -2832,6 +2832,16 @@
   },
   {
     "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.appointment.BusinessAppointmentFacade#getRecentlyCanAppointmentLesson",
+    "jsonApi": "/v4/vis/edu-admin/appointment/getRecentlyCanAppointmentLesson.json",
+    "navigator": [
+      "/client/pages/edu-admin/appointment/api/index.js"
+    ],
+    "controller": "/app/controllers/edu-admin/appointment/AppointmentController.js",
+    "service": "/app/services/owl/pc/appointment/BusinessAppointmentService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.lesson.LessonFacade#findAppointmentList",
     "jsonApi": "/v4/vis/edu/appointment/lessons.json",
     "navigator": [
@@ -7322,16 +7332,6 @@
   },
   {
     "appName": "wsc-pc-vis",
-    "javaApi": "com.youzan.owl.pc.api.xgj.CampusFacade#mapCampusId",
-    "jsonApi": "/v4/vis/edu/xgj/bindRelation.json",
-    "navigator": [
-      "/client/pages/shop/xgj-bind/api/campus.ts"
-    ],
-    "controller": "/app/controllers/shop/shop/XGJBindController.js",
-    "service": "/app/services/api/owl/pc/XGJCampusFacade.js"
-  },
-  {
-    "appName": "wsc-pc-vis",
     "javaApi": "com.youzan.owl.pc.api.student.StudentFacade#submitSignUpReadExportTask",
     "jsonApi": "/v4/vis/student/apply-list/submitSignUpReadExportTask.json",
     "navigator": [
@@ -11199,5 +11199,45 @@
     ],
     "controller": "/app/controllers/ump/TuitionOffsetController.js",
     "service": "/app/services/api/owl/pc/TuitionPCFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.educourse.EduCourseInfoQueryFacade#findPageEduCourseInfoSimple",
+    "jsonApi": "/v4/vis/edu/page/xgj/findPageEduCourseInfoSimple.json",
+    "navigator": [
+      "/client/pages/course/api/educourse.js"
+    ],
+    "controller": "/app/controllers/xgj/XGJEducourseController.js",
+    "service": "/app/services/owl/pc/educourse/EduCourseInfoQueryFacadeService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.educourse.EduCourseInfoQueryFacade#findPageEduCourseInfo",
+    "jsonApi": "/v4/vis/edu/page/xgj/findPageEduCourseInfo.json",
+    "navigator": [
+      "/client/pages/course/api/educourse.js"
+    ],
+    "controller": "/app/controllers/xgj/XGJEducourseController.js",
+    "service": "/app/services/owl/pc/educourse/EduCourseInfoQueryFacadeService.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.xgj.XgjStudentFacade#findXgjClueOrdersByCondition",
+    "jsonApi": "/v4/vis/edu/page/xgj/clueOrders.json",
+    "navigator": [
+      "/client/pages/student/api/student-detail.ts"
+    ],
+    "controller": "/app/controllers/xgj/XGJClueController.js",
+    "service": "/app/services/api/owl/pc/XGJStudentFacade.js"
+  },
+  {
+    "appName": "wsc-pc-vis",
+    "javaApi": "com.youzan.owl.pc.api.xgj.XgjStudentFacade#findXgjStudentOrdersByCondition",
+    "jsonApi": "/v4/vis/edu/page/xgj/studentOrders.json",
+    "navigator": [
+      "/client/pages/student/api/student-detail.ts"
+    ],
+    "controller": "/app/controllers/xgj/XGJStudentController.js",
+    "service": "/app/services/api/owl/pc/XGJStudentFacade.js"
   }
 ]

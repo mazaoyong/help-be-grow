@@ -545,11 +545,11 @@
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.mall.item.api.WechatChannelService#listWechatChannelPaged",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#listWechatChannelPaged",
     "jsonApi": "/v4/goods/audit/api/listWechatChannelPaged",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/mall/WechatChannelService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
@@ -601,19 +601,19 @@
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.mall.item.api.WechatChannelService#submitAudit",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#submitAudit",
     "jsonApi": "/v4/goods/audit/api/submitAudit",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/mall/WechatChannelService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.mall.item.api.WechatChannelService#batchRemoveItem",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#batchRemoveItem",
     "jsonApi": "/v4/goods/audit/api/batchRemoveItem",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/mall/WechatChannelService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
@@ -625,19 +625,19 @@
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.mall.item.api.WechatChannelService#batchAddItem",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#batchAddItem",
     "jsonApi": "/v4/goods/audit/api/batchAddItem",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/mall/WechatChannelService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.mall.item.api.WechatChannelService#updateItemWeChatCateId",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#updateItemWeChatCateId",
     "jsonApi": "/v4/goods/audit/api/updateItemWeChatCateId",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/mall/WechatChannelService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
@@ -665,35 +665,35 @@
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelsService#getWeChatCanBuyItem",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#getWeChatCanBuyItem",
     "jsonApi": "/v4/goods/audit/api/getWechatGoodsDetail",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/ic/external/ICWechatChannelsService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelsService#cancelAudit",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#cancelAudit",
     "jsonApi": "/v4/goods/audit/api/cancelAudit",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/ic/external/ICWechatChannelsService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelsService#checkWechatCategory",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#checkWechatCategory",
     "jsonApi": "/v4/goods/audit/api/checkWechatCategory",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/ic/external/ICWechatChannelsService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",
-    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelsService#listLatestGoodsVerifyDetail",
+    "javaApi": "com.youzan.ebiz.video.channels.item.api.service.wechat.WechatChannelConsoleService#listLatestGoodsVerifyDetail",
     "jsonApi": "/v4/goods/audit/api/listLatestGoodsVerifyDetail",
     "navigator": [],
     "controller": "/app/controllers/goods-audit/IndexController.js",
-    "service": "/app/services/api/ic/external/ICWechatChannelsService.js"
+    "service": "/app/services/api/ebiz/WechatChannelConsoleService.js"
   },
   {
     "appName": "wsc-pc-goods",

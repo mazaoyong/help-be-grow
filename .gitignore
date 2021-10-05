@@ -1,12 +1,12 @@
 .idea
 node_modules/
-dist/
+# dist/
 static-project/
 .vscode/
 nohup.out
 *.DS_Store
-app/data/
-app/update_log.json
+# app/data/
+# app/update_log.json
 search.test.json
 
 config/version_*.json

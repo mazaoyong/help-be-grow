@@ -713,6 +713,14 @@
   },
   {
     "appName": "wsc-h5-shop",
+    "javaApi": "com.youzan.ic.service.ItemGroupService#",
+    "jsonApi": "/wscshop/api/showcase-retail/getShelfGoodsByTagAlias.json",
+    "navigator": [],
+    "controller": "/app/controllers/showcase-retail/TagsController.js",
+    "service": "/app/services/showcase-retail/TagsICService.js"
+  },
+  {
+    "appName": "wsc-h5-shop",
     "javaApi": "com.youzan.item.detail.api.ItemService#getById",
     "jsonApi": "/wscshop/api/showcase-retail/getGoodsItemById.json",
     "navigator": [],
