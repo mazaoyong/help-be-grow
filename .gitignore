@@ -8,7 +8,7 @@ nohup.out
 app/data/
 app/update_log.json
 search.test.json
-
+yarn-*.log
 config/version_*.json
 
 package-lock.json
