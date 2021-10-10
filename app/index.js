@@ -26,7 +26,6 @@ function taskList() {
       })
     })
 }
-taskList()
 
 // 每天的凌晨2点更新代码
 schedule.scheduleJob('0 55 2 * * *', () => {
@@ -39,5 +38,6 @@ child_process.exec('npm run build', err => {
     console.log('静态页面打包错误：', err)
   }
   service()
+  taskList()
 })
 // service()
