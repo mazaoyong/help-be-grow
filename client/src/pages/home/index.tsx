@@ -114,16 +114,15 @@ const SearchList = () => {
   // 更新时间、总用时
   const updateData = useMemo(() => {
     if (updateLog.length) {
-      const totalSpend: number = updateLog.reduce((initValue: number, item: IUpdateLogItem) => {
-        return initValue + item.spend
-      }, 0)
+      const spendMax: number = updateLog.sort((pre, next) => next.spend - pre.spend)[0].spend
       return {
         time: format(updateLog[0]?.updateEndTime, 'yyyy年MM月dd日 HH点mm分'),
-        spend: formatMsToStr(totalSpend)
+        spend: formatMsToStr(spendMax)
       }
     }
     return {}
   }, [updateLog])
+
   // 更新状态颜色
   const UPDATE_STATE_THEME = {
     1: '#55AB68',
@@ -174,28 +173,7 @@ const SearchList = () => {
         <div className={`bg-primary ${isRandomBgImg && "random-bg-img"}`}>
           <Box display="flex" alignItems="center">
             <Box pl={1} display="flex" alignItems="center">
-              <span>更新时间：{updateData.time}，</span>
-              <Box display="flex" alignItems="center">
-                <span>总用时</span>
-                <Tooltip
-                  arrow
-                  interactive
-                  title={
-                    <Box pb={1}>
-                      {
-                        updateLog.sort((pre, next) => next.spend - pre.spend).map((item: IUpdateLogItem) => (
-                          <Box key={item.appName} display="flex" pt={1}>
-                            {`${prjConfig[item.appName]}（${item.appName}）`}
-                            <Box flex="1" textAlign="right">{formatMsToStr(item.spend)}</Box>
-                          </Box>
-                        ))
-                      }
-                    </Box>
-                  }>
-                  <HelpOutline fontSize="small" style={{ cursor: "pointer" }} />
-                </Tooltip>
-                <span>：{updateData.spend}</span>
-              </Box>
+              更新时间：{updateData.time}，总用时：{updateData.spend}
             </Box>
             {/* <Box ml={0.5} display="flex">
               {updateLog.status !== 1 && (
@@ -224,7 +202,25 @@ const SearchList = () => {
             <h1 className="m-title">SearchYM</h1>
             <p className="m-desc">
               <Box fontSize={16}>
-                已收录了教育B端（包括商家小程序）和教育C端的接口映射
+                <Tooltip
+                  arrow
+                  interactive
+                  placement="right"
+                  title={
+                    <Box pb={1}>
+                      {
+                        updateLog.sort((pre, next) => next.spend - pre.spend).map((item: IUpdateLogItem) => (
+                          <Box key={item.appName} display="flex" pt={1}>
+                            {`${prjConfig[item.appName]}（${item.appName}）`}
+                          </Box>
+                        ))
+                      }
+                    </Box>
+                  }>
+                  <span className="include-text">
+                    已收录了教育业务和其他绝大部分场景的接口映射
+                  </span>
+                </Tooltip>
               </Box>
               <Box fontSize={12} pt={1} textAlign="center">
                 <span>有问题@米九(马灶勇)</span>

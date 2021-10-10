@@ -89,6 +89,38 @@
   },
   {
     "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.voucher.front.api.cobuild.service.scrm.BehaviorService#getCustomerSummary",
+    "jsonApi": "/wscdeco/ump/new-zone/getIsNewCustomer.json",
+    "navigator": [],
+    "controller": "/app/controllers/new-zone/NewZoneController.ts",
+    "service": "/app/services/scrm/BehaviorQueryService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.marketing.cobuild.goods.VoucherAvlGoodsService#queryAvlGoodsListByVoucher",
+    "jsonApi": "/wscdeco/ump/new-zone/queryAvlGoodsListByVoucher.json",
+    "navigator": [],
+    "controller": "/app/controllers/new-zone/NewZoneController.ts",
+    "service": "/app/services/ump/VoucherAvlGoodsService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.voucher.front.api.service.voucher.VoucherSendService#send",
+    "jsonApi": "/wscdeco/ump/new-zone/takeCoupon.json",
+    "navigator": [],
+    "controller": "/app/controllers/new-zone/NewZoneController.ts",
+    "service": "/app/services/ump/VoucherSendService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
+    "javaApi": "com.youzan.ump.marketing.cobuild.goods.VoucherAvlGoodsService#queryAvlGoodsListByVoucher",
+    "jsonApi": "/wscdeco/tee/ump/new-zone/queryAvlGoodsListByVoucher.json",
+    "navigator": [],
+    "controller": "/app/controllers/new-zone/TeeNewZoneController.ts",
+    "service": "/app/services/ump/VoucherAvlGoodsService.ts"
+  },
+  {
+    "appName": "wsc-h5-decorate",
     "javaApi": "com.youzan.showcase.center.api.service.shopnote.ShopNoteReadService#listShopNotes",
     "jsonApi": "/wscdeco/notecard-api/listByIds.json",
     "navigator": [],

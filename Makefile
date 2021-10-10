@@ -8,7 +8,7 @@ clean-lock:
 
 ## 启动服务
 qa-server:
-	npm run server
+	node bin/dev
 
 ## 本地调试 3000端口
 dev:
@@ -20,7 +20,7 @@ build:
 
 ## 测试一个接口的解析过程
 search:
-	node bin/dev.js --mode=${mode}
+	node bin/search.js --mode=${mode}
 
 pre:install
 	cd client && yarn build

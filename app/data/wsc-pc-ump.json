@@ -1145,11 +1145,43 @@
   },
   {
     "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ump.manage.api.CommonExportService#submitExport",
+    "jsonApi": "/v4/ump/common/api/submitExport",
+    "navigator": [],
+    "controller": "/app/controllers/common/CommonController.js",
+    "service": "/app/services/api/ump/manage/CommonExportService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ump.manage.api.CommonExportService#getExportList",
+    "jsonApi": "/v4/ump/common/api/getExportList",
+    "navigator": [],
+    "controller": "/app/controllers/common/CommonController.js",
+    "service": "/app/services/api/ump/manage/CommonExportService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ump.manage.api.CommonExportService#getExport",
+    "jsonApi": "/v4/ump/common/api/getExport",
+    "navigator": [],
+    "controller": "/app/controllers/common/CommonController.js",
+    "service": "/app/services/api/ump/manage/CommonExportService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
     "javaApi": "com.youzan.channels.apps.service.MpVersionService#getMpVersion",
     "jsonApi": "/v4/ump/common/page-context/api/app/wx-info",
     "navigator": [],
     "controller": "/app/controllers/common/PageContextController.js",
     "service": "/app/services/api/channels/MpVersionService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.scrm.api.pointstore.service.PointGoodsService#queryActivityConflictList",
+    "jsonApi": "/v4/ump/conflict/api/getList",
+    "navigator": [],
+    "controller": "/app/controllers/conflict/IndexController.js",
+    "service": "/app/services/api/scrm/PointGoodsService.js"
   },
   {
     "appName": "wsc-pc-ump",
@@ -1358,6 +1390,14 @@
     "navigator": [],
     "controller": "/app/controllers/coupon/PageContentController.js",
     "service": "/app/services/api/cps/CpsKdtSettleService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ump.voucher.front.api.gray.service.VoucherPieceGrayService#checkGray",
+    "jsonApi": "/v4/ump/coupon/api/page-content/whitelists",
+    "navigator": [],
+    "controller": "/app/controllers/coupon/PageContentController.js",
+    "service": "/app/services/api/ump/voucher/CouponGrayService.js"
   },
   {
     "appName": "wsc-pc-ump",
@@ -2078,6 +2118,102 @@
     "navigator": [],
     "controller": "/app/controllers/feature-video/FeatureVideoController.js",
     "service": "/app/services/api/ebiz/CommentService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.channels.channel.core.api.service.WeappAccountService#getWeixinVideoInfo",
+    "jsonApi": "/v4/ump/wechat-video/wechat-video-basic-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/BasicInfoController.js",
+    "service": "/app/services/api/flow/BasicInfoService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.channels.channel.core.api.service.WeappAccountService#saveWeixinVideoInfo",
+    "jsonApi": "/v4/ump/wechat-video/save-wechat-video-info.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/BasicInfoController.js",
+    "service": "/app/services/api/flow/BasicInfoService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePlanManageService#listActivity",
+    "jsonApi": "/v4/ump/LivePlanManage/listActivity.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePlanManage.js",
+    "service": "/app/services/api/flow/LivePlanManage.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#autoCreateLivePreview",
+    "jsonApi": "/v4/ump/LivePreviewApi/autoCreateLivePreview.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#getLivePreviewDetail",
+    "jsonApi": "/v4/ump/LivePreviewApi/getLivePreviewDetail.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#canCreateLivePreview",
+    "jsonApi": "/v4/ump/LivePreviewApi/canCreateLivePreview.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#updateLivePreview",
+    "jsonApi": "/v4/ump/LivePreviewApi/updateLivePreview.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#queryWxappShareLink",
+    "jsonApi": "/v4/ump/LivePreviewApi/queryWxappShareLink.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#startSpike",
+    "jsonApi": "/v4/ump/LivePreviewApi/startSpike.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#sendCoupons",
+    "jsonApi": "/v4/ump/LivePreviewApi/sendCoupons.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewApiService#checkMiniProgramVersion",
+    "jsonApi": "/v4/ump/LivePreviewApi/checkMiniProgramVersion.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewApi.js",
+    "service": "/app/services/api/flow/LivePreviewApi.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePreviewDataService#querySalemanData",
+    "jsonApi": "/v4/ump/LivePreviewData/querySalemanData.json",
+    "navigator": [],
+    "controller": "/app/controllers/flow/LivePreviewData.js",
+    "service": "/app/services/api/flow/LivePreviewData.js"
   },
   {
     "appName": "wsc-pc-ump",
@@ -3041,6 +3177,86 @@
   },
   {
     "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.query.PlanQueryService#findPlanList",
+    "jsonApi": "/v4/ump/launchpad/api/getPlanList",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadQueryService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.operate.PlanOperateService#invalidPlan",
+    "jsonApi": "/v4/ump/launchpad/api/invalidPlan",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadOperateService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.operate.PlanOperateService#deletePlan",
+    "jsonApi": "/v4/ump/launchpad/api/deletePlan",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadOperateService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.query.PlanQueryService#getPlanDetails",
+    "jsonApi": "/v4/ump/launchpad/api/getPlanDetail",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadQueryService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.ebiz.showcase.api.homepage.HomepageServiceV2#getDetailByKdtId",
+    "jsonApi": "/v4/ump/launchpad/api/getHomePageDetail",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/HomepageServiceV2.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.operate.PlanOperateService#createPlan",
+    "jsonApi": "/v4/ump/launchpad/api/createPlan",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadOperateService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.operate.PlanOperateService#updatePlan",
+    "jsonApi": "/v4/ump/launchpad/api/updatePlan",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadOperateService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.query.PlanActivityMutexQueryService#asyncQueryActivityMutexList",
+    "jsonApi": "/v4/ump/launchpad/api/checkConflict",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadActivityMutexQueryService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.query.PlanPollingService#saveSure",
+    "jsonApi": "/v4/ump/launchpad/api/pollingSaveSure",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadPollingService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
+    "javaApi": "com.youzan.launchpad.manage.api.query.PlanPollingService#mutexSaveSure",
+    "jsonApi": "/v4/ump/launchpad/api/pollingMutexSaveSure",
+    "navigator": [],
+    "controller": "/app/controllers/launchpad/IndexController.js",
+    "service": "/app/services/api/ump/LaunchpadPollingService.js"
+  },
+  {
+    "appName": "wsc-pc-ump",
     "javaApi": "com.youzan.bigdata.ai.business.api.ump.service.LimitTimeDiscountService#getLimitTimeDiscountProposeData",
     "jsonApi": "/v4/ump/limitdiscount/api/proposeData.json",
     "navigator": [],
@@ -3177,19 +3393,19 @@
   },
   {
     "appName": "wsc-pc-ump",
-    "javaApi": "com.youzan.ump.interactive.manage.livehelp.api.LiveHelpManageService#listActivity",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePlanManageService#listActivity",
     "jsonApi": "/v4/ump/live-assistant/api/list",
     "navigator": [],
     "controller": "/app/controllers/live-assistant/IndexController.js",
-    "service": "/app/services/api/ump/interactive/LiveHelpManageService.js"
+    "service": "/app/services/api/flow/LivePlanManage.js"
   },
   {
     "appName": "wsc-pc-ump",
-    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelLiveHelpService#getLiveActivityDetail",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePlanManageService#getActivityDetail",
     "jsonApi": "/v4/ump/live-assistant/api/activity",
     "navigator": [],
     "controller": "/app/controllers/live-assistant/IndexController.js",
-    "service": "/app/services/api/ic/external/WechatChannelLiveHelpService.js"
+    "service": "/app/services/api/flow/LivePlanManage.js"
   },
   {
     "appName": "wsc-pc-ump",
@@ -3201,11 +3417,11 @@
   },
   {
     "appName": "wsc-pc-ump",
-    "javaApi": "com.youzan.ic.external.service.wechat.channels.WechatChannelLiveHelpService#deleteLiveActivity",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePlanManageService#deleteLiveActivity",
     "jsonApi": "/v4/ump/live-assistant/api/delete",
     "navigator": [],
     "controller": "/app/controllers/live-assistant/IndexController.js",
-    "service": "/app/services/api/ic/external/WechatChannelLiveHelpService.js"
+    "service": "/app/services/api/flow/LivePlanManage.js"
   },
   {
     "appName": "wsc-pc-ump",
@@ -3217,11 +3433,11 @@
   },
   {
     "appName": "wsc-pc-ump",
-    "javaApi": "com.youzan.ump.interactive.manage.livehelp.api.LiveHelpManageService#update",
+    "javaApi": "com.youzan.ebiz.video.channels.flow.api.service.LivePlanManageService#updateLivePlanAndLivePreview",
     "jsonApi": "/v4/ump/live-assistant/api/update",
     "navigator": [],
     "controller": "/app/controllers/live-assistant/IndexController.js",
-    "service": "/app/services/api/ump/interactive/LiveHelpManageService.js"
+    "service": "/app/services/api/flow/LivePlanManage.js"
   },
   {
     "appName": "wsc-pc-ump",

@@ -142,6 +142,26 @@
   },
   {
     "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.material.materialcenter.api.service.general.category.CategoryReadService#queryCategoryByCategoryTypeAndMediaType",
+    "jsonApi": "/wscvis/queryCategoryByCategoryTypeAndMediaType.json",
+    "navigator": [
+      "/client/pages/supv/punch/apis/index.ts"
+    ],
+    "controller": "/app/controllers/common/MaterialCenterController.js",
+    "service": "/app/services/api/material/materialcenter/CategoryReadService.js"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.material.materialcenter.api.service.general.audio.QiniuAudioWriteService#createPublicAudio",
+    "jsonApi": "/wscvis/createPublicAudio.json",
+    "navigator": [
+      "/client/pages/supv/punch/apis/index.ts"
+    ],
+    "controller": "/app/controllers/common/MaterialCenterController.js",
+    "service": "/app/services/api/material/materialcenter/QiniuAudioWriteService.js"
+  },
+  {
+    "appName": "wsc-h5-vis",
     "javaApi": "com.youzan.bifrost.service.api.service.AppShopRemoteService#getAppShopBasicInfo",
     "jsonApi": "/wscvis/checkAuthMobile",
     "navigator": [],
@@ -337,6 +357,16 @@
     ],
     "controller": "/app/controllers/course/detail/DetailController.ts",
     "service": "/app/services/owl/api/courseitem/offlinecourse/ClientCourseFacade.ts"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.ump.manage.api.specific.QuestionService#getById",
+    "jsonApi": "/wscvis/course/detail/getQuestion.json",
+    "navigator": [
+      "/client/pages/course/detail/store/parser/activity-parser/seckill/buttons/api.js"
+    ],
+    "controller": "/app/controllers/course/detail/DetailController.ts",
+    "service": "/app/services/api/ump/manage/QuestionService.ts"
   },
   {
     "appName": "wsc-h5-vis",
@@ -628,6 +658,16 @@
     ],
     "controller": "/app/controllers/edu/AppointmentController.js",
     "service": "/app/services/owl/client/edu/teacher/TeacherService.js"
+  },
+  {
+    "appName": "wsc-h5-vis",
+    "javaApi": "com.youzan.owl.pc.api.appointment.BusinessAppointmentFacade#getRecentlyCanAppointmentLesson",
+    "jsonApi": "/wscvis/edu/appointment/getRecentlyCanAppointmentLesson.json",
+    "navigator": [
+      "/client/pages/edu/appointment/api/index.js"
+    ],
+    "controller": "/app/controllers/edu/AppointmentController.js",
+    "service": "/app/services/owl/client/edu/appointment/BusinessAppointmentFacade.js"
   },
   {
     "appName": "wsc-h5-vis",
