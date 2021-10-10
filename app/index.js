@@ -28,7 +28,7 @@ function taskList() {
 }
 
 // 每天的凌晨2点更新代码
-schedule.scheduleJob('0 55 2 * * *', () => {
+schedule.scheduleJob('0 40 3 * * *', () => {
   taskList()
 })
 
@@ -40,4 +40,3 @@ child_process.exec('npm run build', err => {
   service()
   taskList()
 })
-// service()
