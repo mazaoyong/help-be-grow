@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path')
 const fs = require('fs')
-const { getApiData } = require('./dataGetter')
+const { getApiData, getConfig } = require('./dataGetter')
 
 module.exports = () => {
   const app = express();
@@ -19,11 +19,28 @@ module.exports = () => {
       const log = JSON.parse(updateLog)
       res.send({
         code: 200,
-        data: log[0] || {},
+        data: log || [],
         message: 'request:ok'
       })
     })
   });
+
+  // 获取可查询的项目
+  app.get('/getProjectConfig', (req, res) => {
+    try {
+      const configData = getConfig()
+      res.send({
+        code: 200,
+        data: configData,
+        message: 'request:ok'
+      })
+    } catch (err) {
+      res.send({
+        code: 500,
+        message: '读取配置数据失败'
+      })
+    }
+  })
 
   // 查询接口
   app.get('/getSearchResult', (req, res) => {
@@ -38,7 +55,7 @@ module.exports = () => {
       result.data = totalApiData.filter(item => {
         const { javaApi, jsonApi } = item
         return javaApi.indexOf(searchContent) + javaApi.indexOf(searchContent.replace(/\#/g, '.')) + jsonApi.indexOf(searchContent) > -3
-      })
+      }).slice(0, 10)
     }
     res.send(result)
   })

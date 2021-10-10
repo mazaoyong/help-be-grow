@@ -11,16 +11,18 @@ import {
   Tooltip,
   IconButton
 } from '@material-ui/core'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { createTheme } from '@material-ui/core/styles'
 import "./style.scss"
-import ErrorIcon from '@material-ui/icons/ErrorTwoTone';
+import { HelpOutline } from '@material-ui/icons'
 import React from 'react'
-import { apiGetUpdateLogAction, apiGetSearchResult } from '@api'
-import { ISearchListItem, ISearchCardItem } from '@type'
+import { apiGetUpdateLogAction, apiGetSearchResult, apiGetProjectConfig } from '@api'
+import { ISearchListItem, ISearchCardItem, IUpdateLogItem, IPrjConfigItem } from '@type'
 import { SEARCH_CARD_TITLE, APP_NAME, WSC_PC_VIS_NAV } from '@constants'
 import SearchCard from '@components/SearchCard'
 import gitlab from './gitlab.svg'
+import { format } from 'date-fns'
+import { formatMsToStr } from '@utils'
 
 const theme = createTheme({
   palette: {
@@ -39,12 +41,14 @@ const theme = createTheme({
 // 防抖
 let doing: number | null = null;
 const SearchList = () => {
-  const [searchAltitude, setSearchAltitude] = useState(1);
-  const [isRandomBgImg, setIsRandomBgImg] = useState(false);
-  const [searchList, setSearchList] = useState([]);
-  const [userInput, setUserInput] = useState("");
+  const [searchAltitude, setSearchAltitude] = useState<number>(1);
+  const [isRandomBgImg, setIsRandomBgImg] = useState<boolean>(false);
+  const [searchList, setSearchList] = useState<ISearchListItem[]>([]);
+  const [userInput, setUserInput] = useState<string>("");
   // 更新日志数据
-  const [updateLog, setUpdateLog] = useState({});
+  const [updateLog, setUpdateLog] = useState<IUpdateLogItem[]>([]);
+  // 配置数据
+  const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
 
   // 设置是否展示随机背景图片
   const handleSetIsRandomBgImg = (isSet: boolean) => {
@@ -92,9 +96,34 @@ const SearchList = () => {
   useEffect(() => {
     const isRandomBgImg = localStorage.getItem("isRandomBgImg");
     setIsRandomBgImg(!(isRandomBgImg === "0"));
-    // 获取更新日志
-    apiGetUpdateLogAction()
+    // 获取配置数据和更新日志
+    Promise.all([apiGetProjectConfig(), apiGetUpdateLogAction()])
+      .then(([configRes, updateLogRes]) => {
+        const configData = configRes?.data?.data || []
+        const updateLogData = updateLogRes?.data?.data || []
+        setPrjConfig(configData.reduce((initValue: Record<string, string>, item: IPrjConfigItem) => {
+          return {
+            ...initValue,
+            [item.name]: item.label
+          }
+        }, {}))
+        setUpdateLog(updateLogData)
+      })
   }, []);
+
+  // 更新时间、总用时
+  const updateData = useMemo(() => {
+    if (updateLog.length) {
+      const totalSpend: number = updateLog.reduce((initValue: number, item: IUpdateLogItem) => {
+        return initValue + item.spend
+      }, 0)
+      return {
+        time: format(updateLog[0]?.updateEndTime, 'yyyy年MM月dd日 HH点mm分'),
+        spend: formatMsToStr(totalSpend)
+      }
+    }
+    return {}
+  }, [updateLog])
   // 更新状态颜色
   const UPDATE_STATE_THEME = {
     1: '#55AB68',
@@ -126,9 +155,9 @@ const SearchList = () => {
     Object.entries(item).forEach(([key, value]) => {
       let content = []
       if (key === "appName") {
-        content = [APP_NAME[value] || value];
-      } else if (key === "navigator" && item.appName === "wsc-pc-vis") {
-        content = value.map(getNavigatorList);
+        content = [prjConfig[value] + `（${value}）`];
+      } else if (key === "navigator") {
+        content = item.appName === "wsc-pc-vis" ? value.map(getNavigatorList) : value;
       } else {
         content = [value]
       }
@@ -144,11 +173,31 @@ const SearchList = () => {
       <div className="main">
         <div className={`bg-primary ${isRandomBgImg && "random-bg-img"}`}>
           <Box display="flex" alignItems="center">
-            {/* <Box pl={1}>
-              <span>更新时间：{updateLog.updateEndTime}，</span>
-              <span>{updateLog.spend}</span>
+            <Box pl={1} display="flex" alignItems="center">
+              <span>更新时间：{updateData.time}，</span>
+              <Box display="flex" alignItems="center">
+                <span>总用时</span>
+                <Tooltip
+                  arrow
+                  interactive
+                  title={
+                    <Box pb={1}>
+                      {
+                        updateLog.sort((pre, next) => next.spend - pre.spend).map((item: IUpdateLogItem) => (
+                          <Box key={item.appName} display="flex" pt={1}>
+                            {`${prjConfig[item.appName]}（${item.appName}）`}
+                            <Box flex="1" textAlign="right">{formatMsToStr(item.spend)}</Box>
+                          </Box>
+                        ))
+                      }
+                    </Box>
+                  }>
+                  <HelpOutline fontSize="small" style={{ cursor: "pointer" }} />
+                </Tooltip>
+                <span>：{updateData.spend}</span>
+              </Box>
             </Box>
-            <Box ml={0.5} display="flex">
+            {/* <Box ml={0.5} display="flex">
               {updateLog.status !== 1 && (
                 <Tooltip title={(updateLog.status === -1 ? '【报错】' : '【警告】') + updateLog.info} interactive>
                   <ErrorIcon style={{ color: UPDATE_STATE_THEME[updateLog.status], fontSize: '16px', cursor: 'pointer' }}></ErrorIcon>

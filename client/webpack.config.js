@@ -14,7 +14,7 @@ module.exports = {
   output: {
     filename: `js/[name]${isDev ? '' : '.[hash:8]'}.js`,
     path: path.resolve(__dirname, 'dist'),
-    clean:true
+    clean: true
   },
   module: {
     rules: [
@@ -99,7 +99,7 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(__dirname,'./public/logo.jpeg'), to: path.resolve(__dirname,'./dist') },
+        { from: path.resolve(__dirname, './public/logo.jpeg'), to: path.resolve(__dirname, './dist') },
       ],
     })
   ],
@@ -111,7 +111,8 @@ module.exports = {
       '@components': path.resolve(__dirname, './src/components'),
       '@api': path.resolve(__dirname, "./src/api"),
       '@type': path.resolve(__dirname, "./src/typings"),
-      '@constants': path.resolve(__dirname, "./src/constants")
+      '@constants': path.resolve(__dirname, "./src/constants"),
+      '@utils': path.resolve(__dirname, "./src/utils")
     }
   },
   devServer: {

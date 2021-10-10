@@ -13,3 +13,8 @@ export const apiGetUpdateLogAction = () => {
 export const apiGetSearchResult = (userInput: string) => {
   return axios.get("/getSearchResult?searchContent=" + encodeURIComponent(userInput.trim()))
 }
+
+// 获取项目配置
+export const apiGetProjectConfig = () => {
+  return axios.get("/getProjectConfig")
+}

@@ -2,7 +2,7 @@ const schedule = require('node-schedule')
 const fs = require('fs')
 const path = require('path')
 const downloadTask = require('./src/download')
-const { main:mainTask } = require('./main')
+const { main: mainTask } = require('./main')
 const service = require('./src/service')
 const { delDir } = require('./utils')
 const child_process = require('child_process');
@@ -26,19 +26,18 @@ function taskList() {
       })
     })
 }
-// taskList()
+taskList()
 
 // 每天的凌晨2点更新代码
-// schedule.scheduleJob('0 0 2 * * *', () => {
-//   taskList()
-// })
+schedule.scheduleJob('0 0 2 * * *', () => {
+  taskList()
+})
 
-// 先打包再服务器启动
-// child_process.exec('cd client && npm i && npm run build', err => {
-//   if (err) {
-//     console.log('静态页面打包错误：', err)
-//     return
-//   }
-//   service()
-// })
-service()
+先打包再服务器启动
+child_process.exec('npm run build', err => {
+  if (err) {
+    console.log('静态页面打包错误：', err)
+  }
+  service()
+})
+// service()

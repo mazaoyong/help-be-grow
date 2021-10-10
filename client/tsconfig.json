@@ -19,7 +19,8 @@
       "@components/*": ["src/components/*"],
       "@api":["src/api/index.ts"],
       "@type":["src/typings/index.ts"],
-      "@constants":["src/constants.ts"]
+      "@constants":["src/constants.ts"],
+      "@utils":["src/utils.ts"]
     },
 
     // 实验性选项

@@ -1,38 +1,47 @@
 [
   {
     "id": 4910,
-    "name": "wsc-h5-vis"
+    "name": "wsc-h5-vis",
+    "label": "教育C端"
   },
   {
     "id": 5075,
-    "name": "wsc-pc-vis"
+    "name": "wsc-pc-vis",
+    "label": "教育B端"
   },
   {
     "id": 4947,
-    "name": "wsc-pc-shop"
+    "name": "wsc-pc-shop",
+    "label": "概况和店铺B端"
   },
   {
     "id": 4949,
-    "name": "wsc-pc-goods"
+    "name": "wsc-pc-goods",
+    "label": "实物商品B端"
   },
   {
     "id": 9989,
-    "name": "wsc-pc-decorate"
+    "name": "wsc-pc-decorate",
+    "label": "微页面装修B端"
   },
   {
     "id": 4555,
-    "name": "wsc-h5-shop"
+    "name": "wsc-h5-shop",
+    "label": "店铺相关C端"
   },
   {
     "id": 4951,
-    "name": "wsc-pc-ump"
+    "name": "wsc-pc-ump",
+    "label": "营销B端"
   },
   {
     "id": 9988,
-    "name": "wsc-h5-decorate"
+    "name": "wsc-h5-decorate",
+    "label": "装修相关C端"
   },
   {
     "id": 7388,
-    "name": "wsc-h5-goods"
+    "name": "wsc-h5-goods",
+    "label": "实物商品C端"
   }
 ]
