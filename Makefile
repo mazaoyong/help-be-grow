@@ -1,6 +1,10 @@
 ## 安装依赖
 install:
-	npm i && cd client && npm i
+	yarn && make gen-data
+
+## 生成数据
+gen-data:
+	node bin/genData.js
 
 ## 清除依赖
 clean-lock:

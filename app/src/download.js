@@ -7,6 +7,7 @@ const { getConfig } = require('./dataGetter')
 const chalk = require('chalk')
 
 function downloadFile(uri, projectName) {
+  console.log(chalk.blue(`开始下载 ${projectName}`));
   const dest = path.join(__dirname, `../static-project/${projectName}.zip`)
   return new Promise((resolve, reject) => {
     // 确保dest路径存在
@@ -36,7 +37,7 @@ function downloadFile(uri, projectName) {
               version
             })
             file.close(resolve);
-            console.log(chalk.green(`${projectName} 解压完成`))
+            console.log(chalk.green(`下载完成 ${projectName}`))
           })
       }).on('error', (err) => {
         fs.unlink(dest);
