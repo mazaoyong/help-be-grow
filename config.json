@@ -43,5 +43,10 @@
     "id": 7388,
     "name": "wsc-h5-goods",
     "label": "实物商品C端"
+  },
+  {
+    "id": 4950,
+    "name": "wsc-pc-trade",
+    "label": "交易B端"
   }
 ]
