@@ -1,0 +1,93 @@
+{
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/babel.config.js": [],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/shop-creation/attachment-v2/components/category-manage-drawer/move-category-dialog/index.tsx": [
+    "IFormCreatorConfig",
+    "EasyForm"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/shop-creation/attachment-v2/components/category-sidebar/category-add-dialog/index.tsx": [
+    "EasyForm",
+    "IFormCreatorConfig"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/shop-creation/attachment-v2/components/category-sidebar/category-edit-dialog/index.tsx": [
+    "EasyForm",
+    "IFormCreatorConfig"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/shop-creation/attachment-v2/components/edit-category-dialog/index.tsx": [
+    "IFormCreatorConfig",
+    "EasyForm"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/shop-creation/attachment-v2/components/edit-media-dialog/index.tsx": [
+    "EasyForm",
+    "IFormCreatorConfig"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/shop-creation/attachment-v2/container/audio-tab/audio-list/index.tsx": [
+    "IEasyGridColumn"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live/components/live-data/index.tsx": [
+    "EasyList",
+    "IEasyGridColumn",
+    "ICustomConfType",
+    "IListContext"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-console/data-tab/components/order-data/index.tsx": [
+    "EasyList",
+    "IEasyGridColumn",
+    "ICustomConfType",
+    "IListContext"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-console/push-tab/components/add-goods-dialog/index.tsx": [
+    "IFormatData",
+    "IListContext",
+    "IEasyGridColumn",
+    "EasyList"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-console/push-tab/config.tsx": [
+    "IEasyGridColumn"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-console/push-tab/index.tsx": [
+    "IFormatData",
+    "IListContext",
+    "EasyList"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-console/setting-tab/index.tsx": [
+    "IFormCreatorConfig",
+    "EasyForm"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-detail/forms/edit-form/config.tsx": [
+    "IFormCreatorConfig"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-detail/forms/edit-form/index.tsx": [
+    "EasyForm"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-detail/forms/upload-form/config.tsx": [
+    "IFormCreatorConfig"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-detail/forms/upload-form/index.tsx": [
+    "EasyForm"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-home/goods-tab/columns.tsx": [
+    "IEasyGridColumn"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-home/goods-tab/components/manual-import/index.tsx": [
+    "EasyForm",
+    "IFormCreatorConfig"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-home/goods-tab/components/price-edit/index.tsx": [
+    "IFormCreatorConfig",
+    "EasyForm"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-home/goods-tab/index.tsx": [
+    "EasyList",
+    "IFormatData",
+    "IListContext"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-home/room-tab/LiveListOperations.tsx": [
+    "IListContext"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-shop/client/pages/weapp-workbench/facility/live-v2/views/live-home/room-tab/index.tsx": [
+    "EasyList",
+    "IListContext",
+    "IEasyGridColumn",
+    "IFormatData"
+  ]
+}

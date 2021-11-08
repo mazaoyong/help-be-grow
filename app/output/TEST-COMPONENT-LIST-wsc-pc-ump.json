@@ -1,0 +1,29 @@
+{
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/babel.config.js": [],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/editor/edu-config/fields/poster-upload/index.tsx": [
+    "Img"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/components/customFilterSelector/index.tsx": [
+    "Select",
+    "IEbizSelectAsyncProps"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/components/export-actions/index.tsx": [
+    "IRenderPropsType"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/components/order-info-dialog/index.tsx": [
+    "Img",
+    "Dialog",
+    "IDialogChildrenProps"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/order-detail/order-search/index.tsx": [
+    "EasyList"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/order-detail/order-search/types.ts": [
+    "ICombinedFilterConf",
+    "IOption"
+  ],
+  "/Users/meowz/Documents/youzan/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/order-detail/types.ts": [
+    "IEasyGridColumn",
+    "IListProps"
+  ]
+}

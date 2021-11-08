@@ -5,6 +5,10 @@ const fs = require('fs')
 const chalk = require('chalk');
 const ProgressBar = require('progress');
 
+const rd = require('rd');
+const parser = require('@babel/parser');
+const traverse = require('@babel/traverse').default;
+
 // 通过jsonApi搜索业务
 function getNavigator(appName, jsonApi) {
   const clientPageDir = path.join(__dirname, './static-project/', appName, '/client/pages')
@@ -63,7 +67,7 @@ function apiAssemble(appName, api) {
   return result
 }
 let errRouterPath = ''
-const main = (projectInfo) => {
+const main333 = (projectInfo) => {
   const updateLog = []
   // 更新的状态，1是成功，2是异常，-1是失败
   let updateState = {
@@ -126,7 +130,7 @@ const main = (projectInfo) => {
               ...updateState
             })
             fs.writeFileSync(updateLogPath, JSON.stringify(updateLog, null, 2))
-            console.log(chalk.green(appName.padEnd(15, ' ')),'数据更新完成')
+            console.log(chalk.green(appName.padEnd(15, ' ')), '数据更新完成')
           })
         })
       })
@@ -136,6 +140,71 @@ const main = (projectInfo) => {
     updateState.info = '更新数据失败,错误信息：' + err || '未知'
     console.log(chalk.red(errRouterPath))
   }
+}
+
+const file2babelAst = (file, filename) => {
+  try {
+    if (/\.ts$/.test(filename)) {
+      return parser.parse(file, {
+        sourceType: 'module',
+        plugins: ['dynamicImport', 'classProperites', 'typescript', 'decorators-legacy'],
+      });
+    } else {
+      return parser.parse(file, {
+        sourceType: 'module',
+        plugins: ['jsx', 'dynamicImport', 'classProperites', 'typescript', 'decorators-legacy'],
+      });
+    }
+  } catch (err) {
+    console.log('err!!!!!!!!', filename, err);
+    return null;
+  }
+}
+
+const astAnalysis = (astFile) => {
+  const componentList = new Set();
+
+  traverse(astFile, {
+    enter(path) {
+      if (path.isImportDeclaration()) {
+        if (path.node.source.value.includes('@youzan/ebiz-components')) {
+          path.node.specifiers.forEach(specifier => {
+            if (specifier.type === 'ImportSpecifier' && specifier.imported.type === 'Identifier') {
+              componentList.add(specifier.imported.name);
+            }
+          });
+        }
+      }
+    },
+  });
+
+  return Array.from(componentList);
+}
+
+const main = (projectInfoList) => {
+  projectInfoList.forEach(projectInfo => {
+    const pahtname = path.resolve(`app/static-project/${projectInfo.name}/client`);
+
+    const fileComponentsJSON = {};
+
+    rd.eachFileFilterSync(pahtname, /\.[jt]sx?$/, (filename) => {
+      const file = fs.readFileSync(filename, { encoding: 'utf-8' });
+
+      if (file.includes('@youzan/ebiz-components')) {
+        // console.log('filename ->>>>>', filename);
+        const astFile = file2babelAst(file, filename);
+        const componentList = astAnalysis(astFile);
+
+        fileComponentsJSON[filename] = componentList;
+      }
+    });
+
+    fs.mkdir(path.resolve(__dirname, './output/'), () => {
+      fs.writeFileSync(path.resolve(__dirname, `./output/TEST-COMPONENT-LIST-${projectInfo.name}.json`), JSON.stringify(fileComponentsJSON, null, 2), {
+        encoding: 'utf-8',
+      });
+    });
+  })
 }
 
 module.exports = {

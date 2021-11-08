@@ -1554,6 +1554,11 @@
   resolved "http://registry.npm.qima-inc.com/@types/node/download/@types/node-13.13.5.tgz#96ec3b0afafd64a4ccea9107b75bf8489f0e5765"
   integrity sha1-luw7Cvr9ZKTM6pEHt1v4SJ8OV2U=
 
+"@types/node@^10.3.6":
+  version "10.17.60"
+  resolved "http://registry.npm.qima-inc.com/@types/node/download/@types/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
+  integrity sha1-NfPWIT2u2V2n8Pc+dbzGmA6QWXs=
+
 "@types/node@^16.3.3":
   version "16.10.2"
   resolved "http://registry.npm.qima-inc.com/@types/node/download/@types/node-16.10.2.tgz#5764ca9aa94470adb4e1185fe2e9f19458992b2e"
@@ -9846,6 +9851,13 @@ raw-body@^2.2.0:
     http-errors "1.7.3"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+rd@^2.0.1:
+  version "2.0.1"
+  resolved "http://registry.npm.qima-inc.com/rd/download/rd-2.0.1.tgz#e18a8af5b2f7440c0db1523ca04c6e0f9660003f"
+  integrity sha1-4YqK9bL3RAwNsVI8oExuD5ZgAD8=
+  dependencies:
+    "@types/node" "^10.3.6"
 
 react-dom@^17.0.2:
   version "17.0.2"
