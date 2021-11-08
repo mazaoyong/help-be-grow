@@ -67,7 +67,7 @@ function apiAssemble(appName, api) {
   return result
 }
 let errRouterPath = ''
-const main333 = (projectInfo) => {
+const main = (projectInfo) => {
   const updateLog = []
   // 更新的状态，1是成功，2是异常，-1是失败
   let updateState = {
@@ -181,7 +181,7 @@ const astAnalysis = (astFile) => {
   return Array.from(componentList);
 }
 
-const main = (projectInfoList) => {
+const componentMain = (projectInfoList) => {
   projectInfoList.forEach(projectInfo => {
     const pahtname = path.resolve(`app/static-project/${projectInfo.name}/client`);
 
@@ -209,5 +209,6 @@ const main = (projectInfoList) => {
 
 module.exports = {
   main,
+  componentMain,
   apiAssemble
 }

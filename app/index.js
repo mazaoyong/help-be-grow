@@ -2,7 +2,7 @@ const schedule = require('node-schedule')
 const fs = require('fs')
 const path = require('path')
 const downloadTask = require('./src/download')
-const { main: mainTask } = require('./main')
+const { main: mainTask, componentMain: componentMainTask } = require('./main')
 const service = require('./src/service')
 const { delDir } = require('./utils')
 const child_process = require('child_process');
@@ -23,6 +23,7 @@ function taskList() {
           // return
         }
         mainTask(res)
+        componentMainTask(res)
       })
     })
 }
