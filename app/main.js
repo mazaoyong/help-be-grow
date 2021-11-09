@@ -66,6 +66,7 @@ function apiAssemble(appName, api) {
   }
   return result
 }
+
 let errRouterPath = ''
 const main = (projectInfo) => {
   const updateLog = []
@@ -184,6 +185,7 @@ const astAnalysis = (astFile) => {
 const componentMain = (projectInfoList) => {
   projectInfoList.forEach(projectInfo => {
     const pahtname = path.resolve(`app/static-project/${projectInfo.name}/client`);
+    console.log(chalk.blue('组件解析 - start：', pahtname));
 
     const fileComponentsJSON = {};
 
@@ -203,6 +205,7 @@ const componentMain = (projectInfoList) => {
       fs.writeFileSync(path.resolve(__dirname, `./output/TEST-COMPONENT-LIST-${projectInfo.name}.json`), JSON.stringify(fileComponentsJSON, null, 2), {
         encoding: 'utf-8',
       });
+      console.log(chalk.green('组件解析 - end', pahtname));
     });
   })
 }
