@@ -21,8 +21,8 @@ function taskList() {
           // console.log('ts文件格式转化报错：', err)
           // return
         }
-        mainTask(res)
         componentMainTask(res)
+        // mainTask(res)
       })
     })
 }
