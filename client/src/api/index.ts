@@ -18,3 +18,11 @@ export const apiGetSearchResult = (userInput: string) => {
 export const apiGetProjectConfig = () => {
   return axios.get("/getProjectConfig")
 }
+
+export const apiGetComponentFiles = (componentName: string) => {
+  return axios.get('/findComponent', {
+    params: {
+      name: componentName,
+    },
+  });
+}

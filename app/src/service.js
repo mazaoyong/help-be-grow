@@ -1,10 +1,18 @@
 const express = require('express');
 const path = require('path')
 const fs = require('fs')
+const rd = require('rd');
+
 const { getApiData, getConfig } = require('./dataGetter')
 
 module.exports = () => {
   const app = express();
+
+  // parse application/x-www-form-urlencoded
+  app.use(express.urlencoded({ extended: false }))
+
+  // parse application/json
+  app.use(express.json())
 
   // 获取更新纪录
   app.get('/getUpdateLog', function (req, res) {
@@ -86,6 +94,32 @@ module.exports = () => {
       })
     }
   })
+
+  app.get('/findComponent', (req, res) => {
+    const query = req.query;
+    const targetName = query.name;
+
+    const existFilename = new Set();
+
+    rd.eachFileFilterSync(path.resolve('app/output'), /\.json$/, (filename) => {
+      const file = fs.readFileSync(filename, {
+        encoding: 'utf-8',
+      });
+      const json = JSON.parse(file.toString());
+      Object.entries(json).forEach(([name, components]) => {
+        if (components.includes(targetName)) {
+          existFilename.add(name);
+        }
+      });
+    })
+
+    res.send({
+      code: 200,
+      data: Array.from(existFilename),
+      message: 'request:ok'
+    });
+    return false;
+  });
 
   app.listen(8201, () => {
     console.log('Listening on port 8201')

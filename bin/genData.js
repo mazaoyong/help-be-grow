@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const downloadTask = require('../app/src/download')
-const { main: mainTask } = require('../app/main')
+const { main: mainTask, componentMain: componentMainTask } = require('../app/main')
 const { delDir } = require('../app/utils')
 const child_process = require('child_process');
 
@@ -21,7 +21,8 @@ function taskList() {
           // console.log('ts文件格式转化报错：', err)
           // return
         }
-        mainTask(res)
+        componentMainTask(res)
+        // mainTask(res)
       })
     })
 }

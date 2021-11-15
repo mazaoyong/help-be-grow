@@ -124,6 +124,7 @@ module.exports = {
         target: 'http://localhost:8201',
         pathRewrite: { '^/api': '' },
       }
-    }
+    },
+    historyApiFallback: true
   },
 }
