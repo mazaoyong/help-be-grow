@@ -11,11 +11,10 @@ import {
   Tooltip,
   IconButton
 } from '@material-ui/core'
-import { useState, useEffect, useMemo, FocusEventHandler } from 'react'
+import React, { useState, useEffect, useMemo, FocusEventHandler } from 'react'
 import { createTheme } from '@material-ui/core/styles'
 import "./style.scss"
 import { HelpOutline } from '@material-ui/icons'
-import React from 'react'
 import { apiGetUpdateLogAction, apiGetSearchResult, apiGetProjectConfig, apiGetComponentFiles } from '@api'
 import { ISearchListItem, ISearchCardItem, IUpdateLogItem, IPrjConfigItem } from '@type'
 import { SEARCH_CARD_TITLE, APP_NAME, WSC_PC_VIS_NAV } from '@constants'
@@ -23,6 +22,7 @@ import SearchCard from '@components/SearchCard'
 import gitlab from './gitlab.svg'
 import { format } from 'date-fns'
 import { formatMsToStr } from '@utils'
+import ReactClipboard from 'react-clipboardjs-copy'
 
 const theme = createTheme({
   palette: {
@@ -262,7 +262,24 @@ const SearchList = () => {
             </div>
           </div>
         </div>
-        <div className="list">
+
+        {!!filenameList && !!filenameList.length && (
+          <ReactClipboard
+            style={{ color: 'rgb(0,162,222)', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
+            onSuccess={e => console.log('复制成功', e)}
+            onError={e => console.log('复制失败', e)}
+            // text={JSON.stringify(filenameList)}
+            options= {{
+              target: () => document.getElementById('copy-list')
+            }}
+          >
+            <div>
+              一键复制
+            </div>
+          </ReactClipboard>
+        )}
+
+        <div id="copy-list" className="list">
           <ul style={{ color: 'initial' }}>
             {filenameList.map((item) => (
               <li key={item}>{item.split('/app/static-project/')[1]}</li>
