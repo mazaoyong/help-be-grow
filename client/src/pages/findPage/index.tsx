@@ -80,7 +80,7 @@ const SearchList = () => {
   const handleSubmit = async (val: string) => {
     console.log(val);
     try {
-      const { data: { data } } = await apiGetComponentFiles(val);
+      const { data: { data } } = await apiGetComponentFiles(val.trim());
       console.log(data);
       setFilenameList(data);
     } catch (err) {
