@@ -87,7 +87,9 @@
     "webpack-merge": "^5.8.0",
     "webpackbar": "^5.0.0-3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/react-clipboardjs-copy": "^1.3.0"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
