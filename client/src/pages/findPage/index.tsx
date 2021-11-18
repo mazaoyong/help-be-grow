@@ -9,7 +9,9 @@ import {
   Paper,
   Typography,
   Tooltip,
-  IconButton
+  IconButton,
+  Select,
+  MenuItem
 } from '@material-ui/core'
 import React, { useState, useEffect, useMemo, FocusEventHandler } from 'react'
 import { createTheme } from '@material-ui/core/styles'
@@ -50,6 +52,7 @@ const SearchList = () => {
   // 配置数据
   const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
   const [filenameList, setFilenameList] = useState<string[]>([]);
+  const [componentName, setComponentName] = useState<string>('@youzan/ebiz-components');
 
   // 设置是否展示随机背景图片
   const handleSetIsRandomBgImg = (isSet: boolean) => {
@@ -80,7 +83,7 @@ const SearchList = () => {
   const handleSubmit = async (val: string) => {
     console.log(val);
     try {
-      const { data: { data } } = await apiGetComponentFiles(val.trim());
+      const { data: { data } } = await apiGetComponentFiles({ targetName: val.trim(), component: componentName });
       console.log(data);
       setFilenameList(data);
     } catch (err) {
@@ -163,7 +166,8 @@ const SearchList = () => {
       })
     })
     return result
-  }
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <div className="find-page-main">
@@ -229,6 +233,12 @@ const SearchList = () => {
             </p>
             <div className="m-search">
               <Paper elevation={searchAltitude}>
+                <Select value={componentName} style={{ width: '100%' }} label="components" onChange={e => {
+                  setComponentName(e.target.value as string);
+                }}>
+                  <MenuItem value="@youzan/ebiz-components">@youzan/ebiz-components</MenuItem>
+                  <MenuItem value="@youzan/vis-ui">@youzan/vis-ui</MenuItem>
+                </Select>
                 <TextField
                   placeholder="请输入组件名"
                   fullWidth
@@ -269,7 +279,7 @@ const SearchList = () => {
             onSuccess={e => console.log('复制成功', e)}
             onError={e => console.log('复制失败', e)}
             // text={JSON.stringify(filenameList)}
-            options= {{
+            options={{
               target: () => document.getElementById('copy-list')
             }}
           >

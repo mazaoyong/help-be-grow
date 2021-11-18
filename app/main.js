@@ -9,6 +9,9 @@ const rd = require('rd');
 const parser = require('@babel/parser');
 const traverse = require('@babel/traverse').default;
 
+const EBIZ_COMPONENTS = '@youzan/ebiz-components';
+const VIS_COMPONENTS = '@youzan/vis-ui';
+
 // 通过jsonApi搜索业务
 function getNavigator(appName, jsonApi) {
   const clientPageDir = path.join(__dirname, './static-project/', appName, '/client/pages')
@@ -143,6 +146,21 @@ const main = (projectInfo) => {
   }
 }
 
+const handleVueFile = (file) => {
+  const start = file.indexOf('<script');
+  if (start === -1) {
+    return '';
+  }
+  const sliceFile = file.slice(start);
+  const vueCheckReg = sliceFile.match(
+    /<script(?:\s+[^\u007F-\u009F "'>/=]+(?:=\s*(?:[^\s"'=<>`]+|'[^']+'|"[^"]+"))?)*\s*>/,
+  )?.[0];
+  const end = file.lastIndexOf('</script>');
+  const _file = file.slice(start + (vueCheckReg?.length || 0), end);
+
+  return _file;
+}
+
 const file2babelAst = (file, filename) => {
   try {
     if (/\.ts$/.test(filename)) {
@@ -168,7 +186,7 @@ const astAnalysis = (astFile) => {
   traverse(astFile, {
     enter(path) {
       if (path.isImportDeclaration()) {
-        if (path.node.source.value.includes('@youzan/ebiz-components')) {
+        if (path.node.source.value.includes(EBIZ_COMPONENTS) || path.node.source.value.includes(VIS_COMPONENTS)) {
           path.node.specifiers.forEach(specifier => {
             if (specifier.type === 'ImportSpecifier' && specifier.imported.type === 'Identifier') {
               componentList.add(specifier.imported.name);
@@ -184,28 +202,35 @@ const astAnalysis = (astFile) => {
 
 const componentMain = (projectInfoList) => {
   projectInfoList.forEach(projectInfo => {
-    const pahtname = path.resolve(`app/static-project/${projectInfo.name}/client`);
-    console.log(chalk.blue('组件解析 - start：', pahtname));
+    const pathname = path.resolve(`app/static-project/${projectInfo.name}/client`);
+    console.log(chalk.blue('组件解析 - start：', pathname));
 
     const fileComponentsJSON = {};
 
-    rd.eachFileFilterSync(pahtname, /\.[jt]sx?$/, (filename) => {
-      const file = fs.readFileSync(filename, { encoding: 'utf-8' });
+    [EBIZ_COMPONENTS, VIS_COMPONENTS].forEach((componentName) => {
+      fileComponentsJSON[componentName] = {}
 
-      if (file.includes('@youzan/ebiz-components')) {
-        // console.log('filename ->>>>>', filename);
-        const astFile = file2babelAst(file, filename);
-        const componentList = astAnalysis(astFile);
+      rd.eachFileFilterSync(pathname, /(?<!\/node_modules\/.*)\.([jt]sx?|vue)$/, (filename) => {
+        let file = fs.readFileSync(filename, { encoding: 'utf-8' });
+        if (/\.vue$/.test(filename)) {
+          file = handleVueFile(file);
+        }
 
-        fileComponentsJSON[filename] = componentList;
-      }
+        if (file.includes(componentName)) {
+          // console.log('filename ->>>>>', filename);
+          const astFile = file2babelAst(file, filename);
+          const componentList = astAnalysis(astFile);
+
+          fileComponentsJSON[componentName][filename] = componentList;
+        }
+      });
     });
 
     fs.mkdir(path.resolve(__dirname, './output/'), () => {
       fs.writeFileSync(path.resolve(__dirname, `./output/TEST-COMPONENT-LIST-${projectInfo.name}.json`), JSON.stringify(fileComponentsJSON, null, 2), {
         encoding: 'utf-8',
       });
-      console.log(chalk.green('组件解析 - end', pahtname));
+      console.log(chalk.green('组件解析 - end', pathname));
     });
   })
 }
