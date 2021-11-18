@@ -26,6 +26,11 @@ import { format } from 'date-fns'
 import { formatMsToStr } from '@utils'
 import ReactClipboard from 'react-clipboardjs-copy'
 
+declare type TSubmitParams = {
+  targetName?: string;
+  component?: string;
+}
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -52,6 +57,8 @@ const SearchList = () => {
   // 配置数据
   const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
   const [filenameList, setFilenameList] = useState<string[]>([]);
+
+  const [targetName, setTargetName] = useState<string>('');
   const [componentName, setComponentName] = useState<string>('@youzan/ebiz-components');
 
   // 设置是否展示随机背景图片
@@ -80,10 +87,9 @@ const SearchList = () => {
     console.log(val);
   };
 
-  const handleSubmit = async (val: string) => {
-    console.log(val);
+  const handleSubmit = async (params: TSubmitParams = {}) => {
     try {
-      const { data: { data } } = await apiGetComponentFiles({ targetName: val.trim(), component: componentName });
+      const { data: { data } } = await apiGetComponentFiles({ targetName: targetName.trim(), component: componentName, ...params });
       console.log(data);
       setFilenameList(data);
     } catch (err) {
@@ -235,6 +241,7 @@ const SearchList = () => {
               <Paper elevation={searchAltitude}>
                 <Select value={componentName} style={{ width: '100%' }} label="components" onChange={e => {
                   setComponentName(e.target.value as string);
+                  handleSubmit({ component: e.target.value as string });
                 }}>
                   <MenuItem value="@youzan/ebiz-components">@youzan/ebiz-components</MenuItem>
                   <MenuItem value="@youzan/vis-ui">@youzan/vis-ui</MenuItem>
@@ -245,13 +252,16 @@ const SearchList = () => {
                   variant="outlined"
                   color="secondary"
                   onBlur={(e) => {
-                    handleSubmit(e.target.value);
+                    setTargetName(e.target.value);
+                    handleSubmit({ targetName: e.target.value });
                   }}
                   onFocus={(e) => {
-                    handleSubmit(e.target.value);
+                    setTargetName(e.target.value);
+                    handleSubmit({ targetName: e.target.value });
                   }}
                   onChange={(e) => {
-                    handleSubmit(e.target.value);
+                    setTargetName(e.target.value);
+                    handleSubmit({ targetName: e.target.value });
                   }}
                   // onFocus={() => setSearchAltitude(3)}
                   // onBlur={() => setSearchAltitude(1)}
