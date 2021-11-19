@@ -39,5 +39,5 @@ child_process.exec('npm run build', err => {
     console.log('静态页面打包错误：', err)
   }
   service()
-  taskList()
+  // taskList()
 })
