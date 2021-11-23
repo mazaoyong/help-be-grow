@@ -190,6 +190,12 @@ const SearchList = () => {
     return result
   };
 
+  const getCodeUrl = (item:any) => {
+    const codeUrl = `https://gitlab.qima-inc.com/wsc-node/${item.split('/')[0]}/-/blob/master/${item.split('/').slice(1).join('/')}`;
+    console.log('跳转到代码>', codeUrl);
+    return codeUrl;
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <div className="find-page-main">
@@ -323,7 +329,15 @@ const SearchList = () => {
         <div id="copy-list" className="list">
           <ul style={{ color: 'initial' }}>
             {filenameList.map((item) => (
-              <li key={item}>{item.split('/app/static-project/')[1]}</li>
+              <li key={item}>
+                <span>{item.split('/app/static-project/')[1]}</span>
+                <a
+                  style={{ marginLeft: '24px', cursor: 'pointer' }}
+                  href={getCodeUrl(item.split('/app/static-project/')[1])}
+                  target="_blank"
+                  rel="noopener"
+                >跳转到代码</a>
+              </li>
             ))}
           </ul>
         </div>
