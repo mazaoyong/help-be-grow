@@ -207,8 +207,8 @@ const componentMain = (projectInfoList) => {
 
     const fileComponentsJSON = {};
 
-    [EBIZ_COMPONENTS, VIS_COMPONENTS].forEach((componentName) => {
-      fileComponentsJSON[componentName] = {}
+    [EBIZ_COMPONENTS, VIS_COMPONENTS].forEach((componentLibName) => {
+      fileComponentsJSON[componentLibName] = {}
 
       rd.eachFileFilterSync(pathname, /(?<!\/node_modules\/.*)\.([jt]sx?|vue)$/, (filename) => {
         let file = fs.readFileSync(filename, { encoding: 'utf-8' });
@@ -216,12 +216,12 @@ const componentMain = (projectInfoList) => {
           file = handleVueFile(file);
         }
 
-        if (file.includes(componentName)) {
+        if (file.includes(componentLibName)) {
           // console.log('filename ->>>>>', filename);
           const astFile = file2babelAst(file, filename);
           const componentList = astAnalysis(astFile);
 
-          fileComponentsJSON[componentName][filename] = componentList;
+          fileComponentsJSON[componentLibName][filename] = componentList;
         }
       });
     });
