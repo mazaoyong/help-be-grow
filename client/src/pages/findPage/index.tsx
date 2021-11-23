@@ -25,6 +25,7 @@ import gitlab from './gitlab.svg'
 import { format } from 'date-fns'
 import { formatMsToStr } from '@utils'
 import ReactClipboard from 'react-clipboardjs-copy'
+import qs from 'qs'
 
 declare type TSubmitParams = {
   targetName?: string;
@@ -90,21 +91,35 @@ const SearchList = () => {
   const handleSubmit = async (params: TSubmitParams = {}) => {
     try {
       const { data: { data } } = await apiGetComponentFiles({ targetName: targetName.trim(), component: componentName, ...params });
-      console.log(data);
+      console.log('targetName>>>', targetName);
+      console.log('res>>>', data);
       setFilenameList(data);
     } catch (err) {
       console.error(err);
     }
   };
 
+  const initSelect = async () => {
+    let res: Record<string, any> = {};
+    const { componentLibName = '', name = '' } = qs.parse(window.location.href.split('?')[1]);
+
+    if (componentLibName) setComponentName(componentLibName as string);
+    if (name) {
+      setTargetName(name as string);
+      res = await apiGetComponentFiles({ targetName: (name as string).trim(), component: (componentLibName || componentName) as string });
+    }
+    return res;
+  };
+
   useEffect(() => {
     const isRandomBgImg = localStorage.getItem("isRandomBgImg");
     setIsRandomBgImg(!(isRandomBgImg === "0"));
     // 获取配置数据和更新日志
-    Promise.all([apiGetProjectConfig(), apiGetUpdateLogAction()])
-      .then(([configRes, updateLogRes]) => {
+    Promise.all([apiGetProjectConfig(), apiGetUpdateLogAction(), initSelect()])
+      .then(([configRes, updateLogRes, resultListRes]) => {
         const configData = configRes?.data?.data || []
         const updateLogData = updateLogRes?.data?.data || []
+        const resultListData = resultListRes?.data?.data || []
         setPrjConfig(configData.reduce((initValue: Record<string, string>, item: IPrjConfigItem) => {
           return {
             ...initValue,
@@ -112,6 +127,7 @@ const SearchList = () => {
           }
         }, {}))
         setUpdateLog(updateLogData)
+        setFilenameList(resultListData)
       })
   }, []);
 
@@ -251,6 +267,8 @@ const SearchList = () => {
                   fullWidth
                   variant="outlined"
                   color="secondary"
+                  value={targetName}
+                  autoFocus
                   onBlur={(e) => {
                     setTargetName(e.target.value);
                     handleSubmit({ targetName: e.target.value });
@@ -294,13 +312,10 @@ const SearchList = () => {
             style={{ color: 'rgb(0,162,222)', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
             onSuccess={e => console.log('复制成功', e)}
             onError={e => console.log('复制失败', e)}
-            // text={JSON.stringify(filenameList)}
-            options={{
-              target: () => document.getElementById('copy-list')
-            }}
+            text={`${window.location.origin}${window.location.pathname}?componentLibName=${componentName}&name=${targetName}`}
           >
             <div>
-              一键复制
+              一键复制 URL，发送给 Ta（推荐）
             </div>
           </ReactClipboard>
         )}
@@ -312,6 +327,22 @@ const SearchList = () => {
             ))}
           </ul>
         </div>
+
+        {!!filenameList && !!filenameList.length && (
+          <ReactClipboard
+            style={{ color: '#c9c0d3', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
+            onSuccess={e => console.log('复制成功', e)}
+            onError={e => console.log('复制失败', e)}
+            // text={JSON.stringify(filenameList)}
+            options={{
+              target: () => document.getElementById('copy-list')
+            }}
+          >
+            <div>
+              一键复制（复制影响面，内容太多则不太推荐）
+            </div>
+          </ReactClipboard>
+        )}
       </div>
     </ThemeProvider>
   );
