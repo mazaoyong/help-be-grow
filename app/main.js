@@ -152,11 +152,12 @@ const handleVueFile = (file) => {
     return '';
   }
   const sliceFile = file.slice(start);
-  const vueCheckReg = sliceFile.match(
+  const _vueCheckReg = sliceFile.match(
     /<script(?:\s+[^\u007F-\u009F "'>/=]+(?:=\s*(?:[^\s"'=<>`]+|'[^']+'|"[^"]+"))?)*\s*>/,
-  )?.[0];
+  )
+  const vueCheckReg = _vueCheckReg && _vueCheckReg[0];
   const end = file.lastIndexOf('</script>');
-  const _file = file.slice(start + (vueCheckReg?.length || 0), end);
+  const _file = file.slice(start + ((vueCheckReg && vueCheckReg.length) || 0), end);
 
   return _file;
 }
