@@ -32,6 +32,12 @@ declare type TSubmitParams = {
   component?: string;
 }
 
+declare type TWscPcVisNav = {
+  key: string;
+  value: string;
+  parent?: string;
+}
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -57,7 +63,7 @@ const SearchList = () => {
   const [updateLog, setUpdateLog] = useState<IUpdateLogItem[]>([]);
   // 配置数据
   const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
-  const [filenameList, setFilenameList] = useState<string[]>([]);
+  const [filenameList, setFilenameList] = useState<Record<string, string>[]>([]);
 
   const [targetName, setTargetName] = useState<string>('');
   const [componentName, setComponentName] = useState<string>('@youzan/ebiz-components');
@@ -193,7 +199,27 @@ const SearchList = () => {
   const getCodeUrl = (item:any) => {
     const codeUrl = `https://gitlab.qima-inc.com/wsc-node/${item.split('/')[0]}/-/blob/master/${item.split('/').slice(1).join('/')}`;
     return codeUrl;
-  }
+  };
+
+  // 复用勇哥的逻辑，使用了枚举值
+  const getBusiness = (appName: string, business: string) => {
+    let BUSINESS_DICT: TWscPcVisNav[] = [];
+    if (appName === 'wsc-pc-vis') {
+      BUSINESS_DICT = WSC_PC_VIS_NAV;
+    }
+    const nameList: Record<"key" | "value", string>[] = [];
+    const findNav = BUSINESS_DICT.filter(nav => business.startsWith(nav.key));
+    if (findNav.length === 1) {
+      nameList.push(findNav[0]);
+    } else if (findNav.length > 1) {
+      findNav.forEach((nav) => {
+        if (nameList.find((name) => name.key === nav.parent)) {
+          nameList.push(nav);
+        }
+      });
+    }
+    return nameList.map((item) => `【${item.value}】`).join("—");
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -327,15 +353,18 @@ const SearchList = () => {
 
         <div id="copy-list" className="list">
           <ul style={{ color: 'initial' }}>
-            {filenameList.map((item) => (
-              <li key={item}>
-                <span>{item.split('/app/static-project/')[1]}</span>
+            {filenameList.map(({ fileUrl, appName, business }) => (
+              <li key={fileUrl}>
+                <div>{fileUrl.split('/app/static-project/')[1]}</div>
                 <a
                   style={{ marginLeft: '24px', cursor: 'pointer' }}
-                  href={getCodeUrl(item.split('/app/static-project/')[1])}
+                  href={getCodeUrl(fileUrl.split('/app/static-project/')[1])}
                   target="_blank"
                   rel="noopener"
                 >跳转到代码</a>
+                <span
+                  style={{ marginLeft: '24px' }}
+                >{getBusiness(appName, business)}</span>
               </li>
             ))}
           </ul>
