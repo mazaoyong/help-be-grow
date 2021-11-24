@@ -192,7 +192,6 @@ const SearchList = () => {
 
   const getCodeUrl = (item:any) => {
     const codeUrl = `https://gitlab.qima-inc.com/wsc-node/${item.split('/')[0]}/-/blob/master/${item.split('/').slice(1).join('/')}`;
-    console.log('跳转到代码>', codeUrl);
     return codeUrl;
   }
 
