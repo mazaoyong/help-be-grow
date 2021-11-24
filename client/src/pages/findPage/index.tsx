@@ -9,14 +9,13 @@ import {
   Paper,
   Typography,
   Tooltip,
-  IconButton,
-  Select,
-  MenuItem
+  IconButton
 } from '@material-ui/core'
-import React, { useState, useEffect, useMemo, FocusEventHandler } from 'react'
+import { useState, useEffect, useMemo, FocusEventHandler } from 'react'
 import { createTheme } from '@material-ui/core/styles'
 import "./style.scss"
 import { HelpOutline } from '@material-ui/icons'
+import React from 'react'
 import { apiGetUpdateLogAction, apiGetSearchResult, apiGetProjectConfig, apiGetComponentFiles } from '@api'
 import { ISearchListItem, ISearchCardItem, IUpdateLogItem, IPrjConfigItem } from '@type'
 import { SEARCH_CARD_TITLE, APP_NAME, WSC_PC_VIS_NAV } from '@constants'
@@ -24,13 +23,6 @@ import SearchCard from '@components/SearchCard'
 import gitlab from './gitlab.svg'
 import { format } from 'date-fns'
 import { formatMsToStr } from '@utils'
-import ReactClipboard from 'react-clipboardjs-copy'
-import qs from 'qs'
-
-declare type TSubmitParams = {
-  targetName?: string;
-  component?: string;
-}
 
 const theme = createTheme({
   palette: {
@@ -59,9 +51,6 @@ const SearchList = () => {
   const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
   const [filenameList, setFilenameList] = useState<string[]>([]);
 
-  const [targetName, setTargetName] = useState<string>('');
-  const [componentName, setComponentName] = useState<string>('@youzan/ebiz-components');
-
   // 设置是否展示随机背景图片
   const handleSetIsRandomBgImg = (isSet: boolean) => {
     localStorage.setItem("isRandomBgImg", isSet ? '1' : '0');
@@ -88,38 +77,25 @@ const SearchList = () => {
     console.log(val);
   };
 
-  const handleSubmit = async (params: TSubmitParams = {}) => {
+  const handleSubmit = async (val: string) => {
+    console.log(val);
     try {
-      const { data: { data } } = await apiGetComponentFiles({ targetName: targetName.trim(), component: componentName, ...params });
-      console.log('targetName>>>', targetName);
-      console.log('res>>>', data);
+      const { data: { data } } = await apiGetComponentFiles(val);
+      console.log(data);
       setFilenameList(data);
     } catch (err) {
       console.error(err);
     }
   };
 
-  const initSelect = async () => {
-    let res: Record<string, any> = {};
-    const { componentLibName = '', name = '' } = qs.parse(window.location.href.split('?')[1]);
-
-    if (componentLibName) setComponentName(componentLibName as string);
-    if (name) {
-      setTargetName(name as string);
-      res = await apiGetComponentFiles({ targetName: (name as string).trim(), component: (componentLibName || componentName) as string });
-    }
-    return res;
-  };
-
   useEffect(() => {
     const isRandomBgImg = localStorage.getItem("isRandomBgImg");
     setIsRandomBgImg(!(isRandomBgImg === "0"));
     // 获取配置数据和更新日志
-    Promise.all([apiGetProjectConfig(), apiGetUpdateLogAction(), initSelect()])
-      .then(([configRes, updateLogRes, resultListRes]) => {
+    Promise.all([apiGetProjectConfig(), apiGetUpdateLogAction()])
+      .then(([configRes, updateLogRes]) => {
         const configData = configRes?.data?.data || []
         const updateLogData = updateLogRes?.data?.data || []
-        const resultListData = resultListRes?.data?.data || []
         setPrjConfig(configData.reduce((initValue: Record<string, string>, item: IPrjConfigItem) => {
           return {
             ...initValue,
@@ -127,7 +103,6 @@ const SearchList = () => {
           }
         }, {}))
         setUpdateLog(updateLogData)
-        setFilenameList(resultListData)
       })
   }, []);
 
@@ -188,14 +163,7 @@ const SearchList = () => {
       })
     })
     return result
-  };
-
-  const getCodeUrl = (item:any) => {
-    const codeUrl = `https://gitlab.qima-inc.com/wsc-node/${item.split('/')[0]}/-/blob/master/${item.split('/').slice(1).join('/')}`;
-    console.log('跳转到代码>', codeUrl);
-    return codeUrl;
   }
-
   return (
     <ThemeProvider theme={theme}>
       <div className="find-page-main">
@@ -261,31 +229,19 @@ const SearchList = () => {
             </p>
             <div className="m-search">
               <Paper elevation={searchAltitude}>
-                <Select value={componentName} style={{ width: '100%' }} label="components" onChange={e => {
-                  setComponentName(e.target.value as string);
-                  handleSubmit({ component: e.target.value as string });
-                }}>
-                  <MenuItem value="@youzan/ebiz-components">@youzan/ebiz-components</MenuItem>
-                  <MenuItem value="@youzan/vis-ui">@youzan/vis-ui</MenuItem>
-                </Select>
                 <TextField
                   placeholder="请输入组件名"
                   fullWidth
                   variant="outlined"
                   color="secondary"
-                  value={targetName}
-                  autoFocus
                   onBlur={(e) => {
-                    setTargetName(e.target.value);
-                    handleSubmit({ targetName: e.target.value });
+                    handleSubmit(e.target.value);
                   }}
                   onFocus={(e) => {
-                    setTargetName(e.target.value);
-                    handleSubmit({ targetName: e.target.value });
+                    handleSubmit(e.target.value);
                   }}
                   onChange={(e) => {
-                    setTargetName(e.target.value);
-                    handleSubmit({ targetName: e.target.value });
+                    handleSubmit(e.target.value);
                   }}
                   // onFocus={() => setSearchAltitude(3)}
                   // onBlur={() => setSearchAltitude(1)}
@@ -297,12 +253,6 @@ const SearchList = () => {
               <Box fontSize={12} pt={1}>
                 组件名示例：EasyForm
               </Box>
-              <Box fontSize={12} pt={1}>
-                使用说明文档：
-                <a href="https://shimo.im/docs/m5kv9XDyG1FXDdqX/" target="_blank" rel="noopener">
-                  https://shimo.im/docs/m5kv9XDyG1FXDdqX/
-                </a>
-              </Box>
               {/* <Box fontSize={12} pt={1}>
                 json接口示例：v4/vis/edu/course-product/list-page.json
               </Box>
@@ -312,51 +262,13 @@ const SearchList = () => {
             </div>
           </div>
         </div>
-
-        {!!filenameList && !!filenameList.length && (
-          <ReactClipboard
-            style={{ color: 'rgb(0,162,222)', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => console.log('复制成功', e)}
-            onError={e => console.log('复制失败', e)}
-            text={`${window.location.origin}${window.location.pathname}?componentLibName=${componentName}&name=${targetName}`}
-          >
-            <div>
-              一键复制 URL，发送给 Ta（推荐）
-            </div>
-          </ReactClipboard>
-        )}
-
-        <div id="copy-list" className="list">
+        <div className="list">
           <ul style={{ color: 'initial' }}>
             {filenameList.map((item) => (
-              <li key={item}>
-                <span>{item.split('/app/static-project/')[1]}</span>
-                <a
-                  style={{ marginLeft: '24px', cursor: 'pointer' }}
-                  href={getCodeUrl(item.split('/app/static-project/')[1])}
-                  target="_blank"
-                  rel="noopener"
-                >跳转到代码</a>
-              </li>
+              <li key={item}>{item.split('/app/static-project/')[1]}</li>
             ))}
           </ul>
         </div>
-
-        {!!filenameList && !!filenameList.length && (
-          <ReactClipboard
-            style={{ color: '#c9c0d3', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => console.log('复制成功', e)}
-            onError={e => console.log('复制失败', e)}
-            // text={JSON.stringify(filenameList)}
-            options={{
-              target: () => document.getElementById('copy-list')
-            }}
-          >
-            <div>
-              一键复制（复制影响面，内容太多则不太推荐）
-            </div>
-          </ReactClipboard>
-        )}
       </div>
     </ThemeProvider>
   );

@@ -98,7 +98,6 @@ module.exports = () => {
 
   app.get('/findComponent', (req, res) => {
     const query = req.query;
-    const componentName = query.component;
     const targetName = query.name;
 
     const existFilename = new Set();
@@ -108,16 +107,11 @@ module.exports = () => {
         encoding: 'utf-8',
       });
       const json = JSON.parse(file.toString());
-
-      Object.entries(json).forEach(([cmpName, fileComponentRelationShip]) => {
-        if (cmpName === componentName) {
-          Object.entries(fileComponentRelationShip).forEach(([name, components]) => {
-            if (components.includes(targetName)) {
-              existFilename.add(name);
-            }
-          });
+      Object.entries(json).forEach(([name, components]) => {
+        if (components.includes(targetName)) {
+          existFilename.add(name);
         }
-      })
+      });
     })
 
     res.send({
