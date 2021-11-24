@@ -19,11 +19,10 @@ export const apiGetProjectConfig = () => {
   return axios.get("/getProjectConfig")
 }
 
-export const apiGetComponentFiles = ({ targetName, component }: { targetName: string, component: string }) => {
+export const apiGetComponentFiles = (componentName: string) => {
   return axios.get('/findComponent', {
     params: {
-      name: targetName,
-      component,
+      name: componentName,
     },
   });
 }
