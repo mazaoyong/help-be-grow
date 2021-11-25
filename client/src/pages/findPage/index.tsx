@@ -351,7 +351,7 @@ const SearchList = () => {
         {!!filenameList && !!filenameList.length && (
           <ReactClipboard
             style={{ color: 'rgb(0,162,222)', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => console.log('复制成功', e)}
+            onSuccess={e => alert('复制成功')}
             onError={e => console.log('复制失败', e)}
             text={`${window.location.origin}${window.location.pathname}?componentLibName=${componentName}&name=${targetName}`}
           >
@@ -401,7 +401,7 @@ const SearchList = () => {
         {!!filenameList && !!filenameList.length && (
           <ReactClipboard
             style={{ color: '#c9c0d3', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => console.log('复制成功', e)}
+            onSuccess={e => alert('复制成功')}
             onError={e => console.log('复制失败', e)}
             // text={JSON.stringify(filenameList)}
             options={{
