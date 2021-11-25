@@ -52,6 +52,11 @@ const theme = createTheme({
   },
 });
 
+const LIB_DOC_URL: any = {
+  '@youzan/vis-ui': 'https://fedoc.qima-inc.com/vis-ui#/',
+  '@youzan/ebiz-components': 'https://fedoc.qima-inc.com/ebiz-react-components/guidebook'
+};
+
 // 防抖
 let doing: number | null = null;
 const SearchList = () => {
@@ -350,6 +355,24 @@ const SearchList = () => {
             </div>
           </ReactClipboard>
         )}
+
+        {LIB_DOC_URL[componentName] && <div
+          style={{
+            textAlign: 'center',
+          }}
+        >
+          <a
+            style={{
+              fontSize: '20px',
+              color: 'tan',
+            }}
+            href={LIB_DOC_URL[componentName]}
+            target="_blank"
+            rel="noopener"
+          >
+            组件库文档：{LIB_DOC_URL[componentName]}
+          </a>
+        </div>}
 
         <div id="copy-list" className="list">
           <ul style={{ color: 'initial' }}>
