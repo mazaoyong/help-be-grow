@@ -325,13 +325,18 @@ const SearchList = () => {
                 />
               </Paper>
               <Box fontSize={12} pt={1}>
-                组件名示例：EasyForm
-              </Box>
-              <Box fontSize={12} pt={1}>
                 使用说明文档：
-                <a href="https://shimo.im/docs/m5kv9XDyG1FXDdqX/" target="_blank" rel="noopener">
+                <a
+                  style={{ color: 'tan' }}
+                  href="https://shimo.im/docs/m5kv9XDyG1FXDdqX/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   https://shimo.im/docs/m5kv9XDyG1FXDdqX/
                 </a>
+              </Box>
+              <Box fontSize={12} pt={1}>
+                组件名示例：EasyForm
               </Box>
               {/* <Box fontSize={12} pt={1}>
                 json接口示例：v4/vis/edu/course-product/list-page.json
