@@ -32,6 +32,12 @@ declare type TSubmitParams = {
   component?: string;
 }
 
+declare type TWscPcVisNav = {
+  key: string;
+  value: string;
+  parent?: string;
+}
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -46,6 +52,11 @@ const theme = createTheme({
   },
 });
 
+const LIB_DOC_URL: any = {
+  '@youzan/vis-ui': 'https://fedoc.qima-inc.com/vis-ui#/',
+  '@youzan/ebiz-components': 'https://fedoc.qima-inc.com/ebiz-react-components/guidebook'
+};
+
 // 防抖
 let doing: number | null = null;
 const SearchList = () => {
@@ -57,7 +68,7 @@ const SearchList = () => {
   const [updateLog, setUpdateLog] = useState<IUpdateLogItem[]>([]);
   // 配置数据
   const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
-  const [filenameList, setFilenameList] = useState<string[]>([]);
+  const [filenameList, setFilenameList] = useState<Record<string, string>[]>([]);
 
   const [targetName, setTargetName] = useState<string>('');
   const [componentName, setComponentName] = useState<string>('@youzan/ebiz-components');
@@ -192,9 +203,28 @@ const SearchList = () => {
 
   const getCodeUrl = (item:any) => {
     const codeUrl = `https://gitlab.qima-inc.com/wsc-node/${item.split('/')[0]}/-/blob/master/${item.split('/').slice(1).join('/')}`;
-    console.log('跳转到代码>', codeUrl);
     return codeUrl;
-  }
+  };
+
+  // 复用勇哥的逻辑，使用了枚举值
+  const getBusiness = (appName: string, business: string) => {
+    let BUSINESS_DICT: TWscPcVisNav[] = [];
+    if (appName === 'wsc-pc-vis') {
+      BUSINESS_DICT = WSC_PC_VIS_NAV;
+    }
+    const nameList: Record<"key" | "value", string>[] = [];
+    const findNav = BUSINESS_DICT.filter(nav => business.startsWith(nav.key));
+    if (findNav.length === 1) {
+      nameList.push(findNav[0]);
+    } else if (findNav.length > 1) {
+      findNav.forEach((nav) => {
+        if (nameList.find((name) => name.key === nav.parent)) {
+          nameList.push(nav);
+        }
+      });
+    }
+    return nameList.map((item) => `【${item.value}】`).join("—");
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -295,13 +325,18 @@ const SearchList = () => {
                 />
               </Paper>
               <Box fontSize={12} pt={1}>
-                组件名示例：EasyForm
-              </Box>
-              <Box fontSize={12} pt={1}>
                 使用说明文档：
-                <a href="https://shimo.im/docs/m5kv9XDyG1FXDdqX/" target="_blank" rel="noopener">
+                <a
+                  style={{ color: 'tan' }}
+                  href="https://shimo.im/docs/m5kv9XDyG1FXDdqX/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   https://shimo.im/docs/m5kv9XDyG1FXDdqX/
                 </a>
+              </Box>
+              <Box fontSize={12} pt={1}>
+                组件名示例：EasyForm
               </Box>
               {/* <Box fontSize={12} pt={1}>
                 json接口示例：v4/vis/edu/course-product/list-page.json
@@ -316,7 +351,7 @@ const SearchList = () => {
         {!!filenameList && !!filenameList.length && (
           <ReactClipboard
             style={{ color: 'rgb(0,162,222)', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => console.log('复制成功', e)}
+            onSuccess={e => alert('复制成功')}
             onError={e => console.log('复制失败', e)}
             text={`${window.location.origin}${window.location.pathname}?componentLibName=${componentName}&name=${targetName}`}
           >
@@ -326,17 +361,38 @@ const SearchList = () => {
           </ReactClipboard>
         )}
 
+        {LIB_DOC_URL[componentName] && <div
+          style={{
+            textAlign: 'center',
+          }}
+        >
+          <a
+            style={{
+              fontSize: '20px',
+              color: 'tan',
+            }}
+            href={LIB_DOC_URL[componentName]}
+            target="_blank"
+            rel="noopener"
+          >
+            组件库文档：{LIB_DOC_URL[componentName]}
+          </a>
+        </div>}
+
         <div id="copy-list" className="list">
           <ul style={{ color: 'initial' }}>
-            {filenameList.map((item) => (
-              <li key={item}>
-                <span>{item.split('/app/static-project/')[1]}</span>
+            {filenameList.map(({ fileUrl, appName, business }) => (
+              <li key={fileUrl}>
+                <div>{fileUrl.split('/app/static-project/')[1]}</div>
                 <a
                   style={{ marginLeft: '24px', cursor: 'pointer' }}
-                  href={getCodeUrl(item.split('/app/static-project/')[1])}
+                  href={getCodeUrl(fileUrl.split('/app/static-project/')[1])}
                   target="_blank"
                   rel="noopener"
                 >跳转到代码</a>
+                <span
+                  style={{ marginLeft: '24px' }}
+                >{getBusiness(appName, business)}</span>
               </li>
             ))}
           </ul>
@@ -345,7 +401,7 @@ const SearchList = () => {
         {!!filenameList && !!filenameList.length && (
           <ReactClipboard
             style={{ color: '#c9c0d3', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => console.log('复制成功', e)}
+            onSuccess={e => alert('复制成功')}
             onError={e => console.log('复制失败', e)}
             // text={JSON.stringify(filenameList)}
             options={{

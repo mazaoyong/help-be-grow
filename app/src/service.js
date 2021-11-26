@@ -113,7 +113,14 @@ module.exports = () => {
         if (cmpName === componentName) {
           Object.entries(fileComponentRelationShip).forEach(([name, components]) => {
             if (components.includes(targetName)) {
-              existFilename.add(name);
+              const getAppName = url => url.split('/')[0]
+              const getBusiness = url => url.split('client/pages/')[1] || ''
+
+              existFilename.add({
+                fileUrl: name,
+                appName: getAppName(name.split('/app/static-project/')[1] || ''),
+                business: getBusiness(name.split('/app/static-project/')[1] || '')
+              });
             }
           });
         }
