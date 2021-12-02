@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path')
 const fs = require('fs')
 const rd = require('rd');
-const history = require('connect-history-api-fallback');
+// const history = require('connect-history-api-fallback');
 
 const { getApiData, getConfig } = require('./dataGetter')
 
@@ -138,5 +138,6 @@ module.exports = () => {
   app.listen(8201, () => {
     console.log('Listening on port 8201')
   });
-  app.use(history(), express.static(path.resolve(__dirname, '../../client/dist')))
+  // app.use(history(), express.static(path.resolve(__dirname, '../../client/dist')))
+  app.use('', express.static(path.resolve(__dirname, '../../client/dist')))
 }
