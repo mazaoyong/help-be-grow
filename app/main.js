@@ -11,6 +11,7 @@ const traverse = require('@babel/traverse').default;
 
 const EBIZ_COMPONENTS = '@youzan/ebiz-components';
 const VIS_COMPONENTS = '@youzan/vis-ui';
+const RC_COMPONENTS = '@youzan/react-components';
 
 // 通过jsonApi搜索业务
 function getNavigator(appName, jsonApi) {
@@ -187,7 +188,10 @@ const astAnalysis = (astFile) => {
   traverse(astFile, {
     enter(path) {
       if (path.isImportDeclaration()) {
-        if (path.node.source.value.includes(EBIZ_COMPONENTS) || path.node.source.value.includes(VIS_COMPONENTS)) {
+        if (path.node.source.value.includes(EBIZ_COMPONENTS)
+        || path.node.source.value.includes(VIS_COMPONENTS)
+        || path.node.source.value.includes(RC_COMPONENTS)
+        ) {
           path.node.specifiers.forEach(specifier => {
             if (specifier.type === 'ImportSpecifier' && specifier.imported.type === 'Identifier') {
               componentList.add(specifier.imported.name);
@@ -208,7 +212,7 @@ const componentMain = (projectInfoList) => {
 
     const fileComponentsJSON = {};
 
-    [EBIZ_COMPONENTS, VIS_COMPONENTS].forEach((componentLibName) => {
+    [EBIZ_COMPONENTS, VIS_COMPONENTS, RC_COMPONENTS].forEach((componentLibName) => {
       fileComponentsJSON[componentLibName] = {}
 
       rd.eachFileFilterSync(pathname, /(?<!\/node_modules\/.*)\.([jt]sx?|vue)$/, (filename) => {

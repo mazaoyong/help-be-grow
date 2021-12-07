@@ -54,7 +54,8 @@ const theme = createTheme({
 
 const LIB_DOC_URL: any = {
   '@youzan/vis-ui': 'https://fedoc.qima-inc.com/vis-ui#/',
-  '@youzan/ebiz-components': 'https://fedoc.qima-inc.com/ebiz-react-components/guidebook'
+  '@youzan/ebiz-components': 'https://fedoc.qima-inc.com/ebiz-react-components/guidebook',
+  '@youzan/react-components': 'https://fedoc.qima-inc.com/react-components/#/',
 };
 
 // 防抖
@@ -297,6 +298,7 @@ const SearchList = () => {
                 }}>
                   <MenuItem value="@youzan/ebiz-components">@youzan/ebiz-components</MenuItem>
                   <MenuItem value="@youzan/vis-ui">@youzan/vis-ui</MenuItem>
+                  <MenuItem value="@youzan/react-components">@youzan/react-components</MenuItem>
                 </Select>
                 <TextField
                   placeholder="请输入组件名"
