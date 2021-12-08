@@ -26,6 +26,7 @@ import { format } from 'date-fns'
 import { formatMsToStr } from '@utils'
 import ReactClipboard from 'react-clipboardjs-copy'
 import qs from 'qs'
+import ZanTracker from '@youzan/zan-web-tracker'
 
 declare type TSubmitParams = {
   targetName?: string;
@@ -50,6 +51,15 @@ const theme = createTheme({
       default: "#000",
     },
   },
+});
+
+const tracker = ZanTracker.initGlobalTracker({
+  yai: 'wsc_b',
+  app: 'help-be-grow',
+  autoEnterpage: true,
+  autoClick: true,
+  autoNodeClick: true,
+  autoNodeView: true,
 });
 
 const LIB_DOC_URL: any = {
@@ -226,6 +236,13 @@ const SearchList = () => {
     }
     return nameList.map((item) => `【${item.value}】`).join("—");
   };
+
+  tracker.setEvent({
+    data: {
+      componentName,
+      targetName,
+    }
+  });
 
   return (
     <ThemeProvider theme={theme}>
