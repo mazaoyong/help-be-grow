@@ -96,10 +96,39 @@ module.exports = () => {
     }
   })
 
+  // 驼峰转换下划线
+  function toLowerLine(name) {
+    const res = name.replace(/([A-Z])/g,"-$1").toLowerCase();
+    if (res[0] === '-') {
+      return res.slice(1)
+    }
+    return res;
+  }
+
+  function toCamel(name) {
+    return name.replace(/\-(\w)/g, function(all, letter){
+        return letter.toUpperCase();
+    });
+  }
+
+  function toAllCamel(name) {
+    return name.replace(/\-(\w)/g, function(all, letter){
+        return letter.toUpperCase();
+    }).replace(/^(\w)/g, function(all, letter){
+      return letter.toUpperCase();
+    });
+  }
+
   app.get('/findComponent', (req, res) => {
     const query = req.query;
     const componentName = query.component;
-    const targetName = query.name;
+    const _targetName = query.name;
+    const targetNameList = [
+      _targetName,
+      toLowerLine(_targetName),
+      toCamel(_targetName),
+      toAllCamel(_targetName)
+    ];
 
     const existFilename = new Set();
 
@@ -112,7 +141,7 @@ module.exports = () => {
       Object.entries(json).forEach(([cmpName, fileComponentRelationShip]) => {
         if (cmpName === componentName) {
           Object.entries(fileComponentRelationShip).forEach(([name, components]) => {
-            if (components.includes(targetName)) {
+            if (targetNameList.some(targetName => components.includes(targetName))) {
               const getAppName = url => url.split('/')[0]
               const getBusiness = url => url.split('client/pages/')[1] || ''
 
