@@ -22,7 +22,6 @@ import { LIB_DOC_URL } from './enum'
 
 import gitlab from './gitlab.svg'
 import "./style.scss"
-import { getuid } from 'process'
 
 declare type TSubmitParams = {
   targetName?: string;
