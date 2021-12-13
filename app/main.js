@@ -12,6 +12,7 @@ const traverse = require('@babel/traverse').default;
 const EBIZ_COMPONENTS = '@youzan/ebiz-components';
 const VIS_COMPONENTS = '@youzan/vis-ui';
 const RC_COMPONENTS = '@youzan/react-components';
+const VANT_COMPONENTS = 'vant';
 
 // 通过jsonApi搜索业务
 function getNavigator(appName, jsonApi) {
@@ -191,6 +192,7 @@ const astAnalysis = (astFile) => {
         if (path.node.source.value.includes(EBIZ_COMPONENTS)
         || path.node.source.value.includes(VIS_COMPONENTS)
         || path.node.source.value.includes(RC_COMPONENTS)
+        || path.node.source.value.includes(VANT_COMPONENTS)
         ) {
           path.node.specifiers.forEach(specifier => {
             if (specifier.type === 'ImportSpecifier' && specifier.imported.type === 'Identifier') {
@@ -210,25 +212,32 @@ const componentMain = (projectInfoList) => {
     const pathname = path.resolve(`app/static-project/${projectInfo.name}/client`);
     console.log(chalk.blue('组件解析 - start：', pathname));
 
+    const pathnameArr = [pathname];
+    if (projectInfo.name === 'wsc-pc-vis') {
+      pathnameArr.push(`${pathname}-h5`);
+    }
+
     const fileComponentsJSON = {};
 
-    [EBIZ_COMPONENTS, VIS_COMPONENTS, RC_COMPONENTS].forEach((componentLibName) => {
+    [EBIZ_COMPONENTS, VIS_COMPONENTS, RC_COMPONENTS, VANT_COMPONENTS].forEach((componentLibName) => {
       fileComponentsJSON[componentLibName] = {}
 
-      rd.eachFileFilterSync(pathname, /(?<!\/node_modules\/.*)\.([jt]sx?|vue)$/, (filename) => {
-        let file = fs.readFileSync(filename, { encoding: 'utf-8' });
-        if (/\.vue$/.test(filename)) {
-          file = handleVueFile(file);
-        }
+      pathnameArr.map(_pathname =>
+        rd.eachFileFilterSync(_pathname, /(?<!\/node_modules\/.*)\.([jt]sx?|vue)$/, (filename) => {
+          let file = fs.readFileSync(filename, { encoding: 'utf-8' });
+          if (/\.vue$/.test(filename)) {
+            file = handleVueFile(file);
+          }
 
-        if (file.includes(componentLibName)) {
-          // console.log('filename ->>>>>', filename);
-          const astFile = file2babelAst(file, filename);
-          const componentList = astAnalysis(astFile);
+          if (file.includes(componentLibName)) {
+            // console.log('filename ->>>>>', filename);
+            const astFile = file2babelAst(file, filename);
+            const componentList = astAnalysis(astFile);
 
-          fileComponentsJSON[componentLibName][filename] = componentList;
-        }
-      });
+            fileComponentsJSON[componentLibName][filename] = componentList;
+          }
+        })
+      )
     });
 
     fs.mkdir(path.resolve(__dirname, './output/'), () => {
