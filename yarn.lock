@@ -971,7 +971,7 @@
     "@babel/helper-validator-option" "^7.14.5"
     "@babel/plugin-transform-typescript" "^7.16.0"
 
-"@babel/runtime-corejs3@^7.15.3":
+"@babel/runtime-corejs3@7.x", "@babel/runtime-corejs3@^7.15.3":
   version "7.16.3"
   resolved "http://registry.npm.qima-inc.com/@babel/runtime-corejs3/download/@babel/runtime-corejs3-7.16.3.tgz#1e25de4fa994c57c18e5fdda6cc810dac70f5590"
   integrity sha1-HiXeT6mUxXwY5f3abMgQ2scPVZA=
@@ -1672,6 +1672,11 @@
   resolved "http://registry.npm.qima-inc.com/@types/unist/download/@types/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha1-JQp7FsO5H2cqJFUuxkZ47rHToI0=
 
+"@types/url-parse@^1.4.3":
+  version "1.4.5"
+  resolved "http://registry.npm.qima-inc.com/@types/url-parse/download/@types/url-parse-1.4.5.tgz#bda0b813cc8f79d767dc8ca645fdabc238c6ae77"
+  integrity sha1-vaC4E8yPeddn3IymRf2rwjjGrnc=
+
 "@types/utf8@2.1.6":
   version "2.1.6"
   resolved "http://registry.npm.qima-inc.com/@types/utf8/download/@types/utf8-2.1.6.tgz#430cabb71a42d0a3613cce5621324fe4f5a25753"
@@ -2279,6 +2284,15 @@
   dependencies:
     signale "^1.4.0"
 
+"@youzan/pvid-front-manager@^0.0.11":
+  version "0.0.11"
+  resolved "http://registry.npm.qima-inc.com/@youzan/pvid-front-manager/download/@youzan/pvid-front-manager-0.0.11.tgz#7c76bd74338a048e239e1a227272cb28a982cdc5"
+  integrity sha1-fHa9dDOKBI4jnhoicnLLKKmCzcU=
+  dependencies:
+    "@babel/runtime" "7.x"
+    "@babel/runtime-corejs3" "7.x"
+    uuid "^8.3.0"
+
 "@youzan/replace-cdn-webpack-plugin@^1.1.5":
   version "1.1.5"
   resolved "http://registry.npm.qima-inc.com/@youzan/replace-cdn-webpack-plugin/download/@youzan/replace-cdn-webpack-plugin-1.1.5.tgz#a478d1e7889052d507e61af0330867219e1d6a84"
@@ -2327,6 +2341,33 @@
     streamifier "0.1.1"
     underscore "1.10.2"
     utf8 "3.0.0"
+
+"@youzan/utils@^2.3.0":
+  version "2.4.6"
+  resolved "http://registry.npm.qima-inc.com/@youzan/utils/download/@youzan/utils-2.4.6.tgz#92b6b94cd6c2a7da0d300d6ecaa775b005f9442b"
+  integrity sha1-kra5TNbCp9oNMA1uyqd1sAX5RCs=
+  dependencies:
+    "@types/url-parse" "^1.4.3"
+    big.js "^5.2.2"
+    compare-versions "^3.4.0"
+    exif-js "^2.3.0"
+    fecha "^3.0.2"
+    lodash "^4.17.11"
+    query-string "5"
+    raf "^3.4.1"
+    tslib "^1.9.3"
+    url-parse "^1.4.4"
+    zan-jquery "^1.0.2"
+
+"@youzan/zan-web-tracker@1.1.18":
+  version "1.1.18"
+  resolved "http://registry.npm.qima-inc.com/@youzan/zan-web-tracker/download/@youzan/zan-web-tracker-1.1.18.tgz#06ed64776e6ea14516027043a950e093bc38a966"
+  integrity sha1-Bu1kd25uoUUWAnBDqVDgk7w4qWY=
+  dependencies:
+    "@babel/runtime" "7.x"
+    "@babel/runtime-corejs3" "7.x"
+    "@youzan/pvid-front-manager" "^0.0.11"
+    "@youzan/utils" "^2.3.0"
 
 abbrev@1:
   version "1.1.1"
@@ -3707,7 +3748,7 @@ commondir@^1.0.1:
   resolved "http://registry.npm.qima-inc.com/commondir/download/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
   integrity sha1-3dgA2gxmEnOTzKWVDqloo6rxJTs=
 
-compare-versions@^3.6.0:
+compare-versions@^3.4.0, compare-versions@^3.6.0:
   version "3.6.0"
   resolved "http://registry.npm.qima-inc.com/compare-versions/download/compare-versions-3.6.0.tgz#1a5689913685e5a87637b8d3ffca75514ec41d62"
   integrity sha1-GlaJkTaF5ah2N7jT/8p1UU7EHWI=
@@ -5161,6 +5202,11 @@ execall@^2.0.0:
   dependencies:
     clone-regexp "^2.1.0"
 
+exif-js@^2.3.0:
+  version "2.3.0"
+  resolved "http://registry.npm.qima-inc.com/exif-js/download/exif-js-2.3.0.tgz#9d10819bf571f873813e7640241255ab9ce1a814"
+  integrity sha1-nRCBm/Vx+HOBPnZAJBJVq5zhqBQ=
+
 expand-brackets@^2.1.4:
   version "2.1.4"
   resolved "http://registry.npm.qima-inc.com/expand-brackets/download/expand-brackets-2.1.4.tgz#b77735e315ce30f6b6eff0f83b04151a22449622"
@@ -5324,6 +5370,11 @@ fd-slicer@~1.1.0:
   integrity sha1-JcfInLH5B3+IkbvmHY85Dq4lbx4=
   dependencies:
     pend "~1.2.0"
+
+fecha@^3.0.2:
+  version "3.0.3"
+  resolved "http://registry.npm.qima-inc.com/fecha/download/fecha-3.0.3.tgz#fabbd416497649a42c24d34bfa726b579203a1e2"
+  integrity sha1-+rvUFkl2SaQsJNNL+nJrV5IDoeI=
 
 figgy-pudding@^3.5.1:
   version "3.5.2"
@@ -9781,6 +9832,15 @@ qs@~6.5.2:
   resolved "http://registry.npm.qima-inc.com/qs/download/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha1-yzroBuh0BERYTvFUzo7pjUA/PjY=
 
+query-string@5:
+  version "5.1.1"
+  resolved "http://registry.npm.qima-inc.com/query-string/download/query-string-5.1.1.tgz#a78c012b71c17e05f2e3fa2319dd330682efb3cb"
+  integrity sha1-p4wBK3HBfgXy4/ojGd0zBoLvs8s=
+  dependencies:
+    decode-uri-component "^0.2.0"
+    object-assign "^4.1.0"
+    strict-uri-encode "^1.0.0"
+
 querystring-es3@^0.2.0:
   version "0.2.1"
   resolved "http://registry.npm.qima-inc.com/querystring-es3/download/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
@@ -9810,6 +9870,13 @@ quick-lru@^4.0.1:
   version "4.0.1"
   resolved "http://registry.npm.qima-inc.com/quick-lru/download/quick-lru-4.0.1.tgz#5b8878f113a58217848c6482026c73e1ba57727f"
   integrity sha1-W4h48ROlgheEjGSCAmxz4bpXcn8=
+
+raf@^3.4.1:
+  version "3.4.1"
+  resolved "http://registry.npm.qima-inc.com/raf/download/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
+  integrity sha1-B0LpmkplUvRF1z4+4DKK8P8e3jk=
+  dependencies:
+    performance-now "^2.1.0"
 
 ramda@0.21.0:
   version "0.21.0"
@@ -11018,6 +11085,11 @@ streamifier@0.1.1, streamifier@^0.1.1:
   resolved "http://registry.npm.qima-inc.com/streamifier/download/streamifier-0.1.1.tgz#97e98d8fa4d105d62a2691d1dc07e820db8dfc4f"
   integrity sha1-l+mNj6TRBdYqJpHR3AfoINuN/E8=
 
+strict-uri-encode@^1.0.0:
+  version "1.1.0"
+  resolved "http://registry.npm.qima-inc.com/strict-uri-encode/download/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
+  integrity sha1-J5siXfHVgrH1TmWt3UNS4Y+qBxM=
+
 string-argv@0.3.1:
   version "0.3.1"
   resolved "http://registry.npm.qima-inc.com/string-argv/download/string-argv-0.3.1.tgz#95e2fbec0427ae19184935f816d74aaa4c5c19da"
@@ -11623,7 +11695,7 @@ tsconfig-paths@^3.11.0, tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "http://registry.npm.qima-inc.com/tslib/download/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
@@ -11903,7 +11975,7 @@ url-loader@^4.1.1:
     mime-types "^2.1.27"
     schema-utils "^3.0.0"
 
-url-parse@^1.4.3, url-parse@^1.5.3:
+url-parse@^1.4.3, url-parse@^1.4.4, url-parse@^1.5.3:
   version "1.5.3"
   resolved "http://registry.npm.qima-inc.com/url-parse/download/url-parse-1.5.3.tgz#71c1303d38fb6639ade183c2992c8cc0686df862"
   integrity sha1-ccEwPTj7Zjmt4YPCmSyMwGht+GI=
@@ -12011,6 +12083,11 @@ uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "http://registry.npm.qima-inc.com/uuid/download/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
+
+uuid@^8.3.0:
+  version "8.3.2"
+  resolved "http://registry.npm.qima-inc.com/uuid/download/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha1-gNW1ztJxu5r2xEXyGhoExgbO++I=
 
 v8-compile-cache@^2.0.3, v8-compile-cache@^2.3.0:
   version "2.3.0"
@@ -12632,6 +12709,11 @@ zan-ajax@^3.0.0:
   dependencies:
     axios "0.19.0"
     zan-json-parse "^1.0.0"
+
+zan-jquery@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.qima-inc.com/zan-jquery/download/zan-jquery-1.0.2.tgz#d9a45088d0d152cfe41729aca70b6682e30ce5cf"
+  integrity sha1-2aRQiNDRUs/kFymspwtmguMM5c8=
 
 zan-json-parse@^1.0.0:
   version "1.0.3"

@@ -234,6 +234,10 @@ export const WSC_PC_VIS_NAV = [
     value: "群打卡",
   },
   {
+    key: "multi-course",
+    value: "多科联报",
+  },
+  {
     key: "record",
     value: "信息采集记录",
     parent: "ump",
