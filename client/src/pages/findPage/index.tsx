@@ -15,13 +15,17 @@ import { ISearchListItem, IUpdateLogItem, IPrjConfigItem } from '@type'
 import { WSC_PC_VIS_NAV } from '@constants'
 import { format } from 'date-fns'
 import { formatMsToStr } from '@utils'
-import ReactClipboard from 'react-clipboardjs-copy'
 import qs from 'qs'
 import ZanTracker from '@youzan/zan-web-tracker'
 import { LIB_DOC_URL } from './enum'
+import { getCodeUrl, getUID } from './utils'
+import ClipBoardAll from './components/ClipBoardAll'
+import ClipBoardURL from './components/ClipBoardURL'
+import SelectBiz from './components/SelectBiz'
+import LibDoc from './components/LibDoc'
 
 import gitlab from './gitlab.svg'
-import "./style.scss"
+import './style.scss'
 
 declare type TSubmitParams = {
   targetName?: string;
@@ -48,16 +52,6 @@ const theme = createTheme({
   },
 });
 
-const getUID = () => {
-  const uid = window.localStorage.getItem('uid');
-  if (uid) {
-    return uid;
-  }
-  const random = Number(Math.random().toString().substr(3,length) + Date.now()).toString(36);
-  window.localStorage.setItem('uid', random);
-  return random;
-}
-
 const tracker = ZanTracker.initGlobalTracker({
   yai: 'wsc_b',
   app: 'help-be-grow',
@@ -83,15 +77,15 @@ const tracker = ZanTracker.initGlobalTracker({
 let doing: number | null = null;
 const SearchList = () => {
   const [searchAltitude, setSearchAltitude] = useState<number>(1);
-  const [isRandomBgImg, setIsRandomBgImg] = useState<boolean>(false);
   // 更新日志数据
   const [updateLog, setUpdateLog] = useState<IUpdateLogItem[]>([]);
   // 配置数据
   const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
   const [filenameList, setFilenameList] = useState<Record<string, string>[]>([]);
-
+  // 筛选条件
   const [targetName, setTargetName] = useState<string>('');
   const [componentName, setComponentName] = useState<string>('@youzan/ebiz-components');
+  const [bizName, setBizName] = useState<string>('');
 
   const handleSubmit = async (params: TSubmitParams = {}) => {
     try {
@@ -116,7 +110,7 @@ const SearchList = () => {
 
   const initSelect = async () => {
     let res: Record<string, any> = {};
-    const { componentLibName = '', name = '' } = qs.parse(window.location.href.split('?')[1]);
+    const { componentLibName = '', name = '', bizName = '' } = qs.parse(window.location.href.split('?')[1]);
 
     tracker.click({
       et: 'rule', // 事件类型
@@ -131,6 +125,7 @@ const SearchList = () => {
     });
 
     if (componentLibName) setComponentName(componentLibName as string);
+    if (bizName) setBizName(bizName as string);
     if (name) {
       setTargetName(name as string);
       res = await apiGetComponentFiles({ targetName: (name as string).trim(), component: (componentLibName || componentName) as string });
@@ -139,8 +134,6 @@ const SearchList = () => {
   };
 
   useEffect(() => {
-    const isRandomBgImg = localStorage.getItem("isRandomBgImg");
-    setIsRandomBgImg(!(isRandomBgImg === "0"));
     // 获取配置数据和更新日志
     Promise.all([apiGetProjectConfig(), apiGetUpdateLogAction(), initSelect()])
       .then(([configRes, updateLogRes, resultListRes]) => {
@@ -169,11 +162,6 @@ const SearchList = () => {
     }
     return {}
   }, [updateLog])
-
-  const getCodeUrl = (item:any) => {
-    const codeUrl = `https://gitlab.qima-inc.com/wsc-node/${item.split('/')[0]}/-/blob/master/${item.split('/').slice(1).join('/')}`;
-    return codeUrl;
-  };
 
   const getBusiness = (appName: string, business: string) => {
     let BUSINESS_DICT: TWscPcVisNav[] = [];
@@ -233,10 +221,15 @@ const SearchList = () => {
             </p>
             <div className="m-search">
               <Paper elevation={searchAltitude}>
-                <Select value={componentName} style={{ width: '100%' }} label="components" onChange={e => {
-                  setComponentName(e.target.value as string);
-                  handleSubmit({ component: e.target.value as string });
-                }}>
+                <Select
+                  value={componentName}
+                  style={{ width: '100%', paddingLeft: '8px' }}
+                  label="components"
+                  onChange={e => {
+                    setComponentName(e.target.value as string);
+                    handleSubmit({ component: e.target.value as string });
+                  }}
+                >
                   {
                     Object.keys(LIB_DOC_URL).map((i: string) => (
                       <MenuItem value={i}>{i}</MenuItem>
@@ -284,40 +277,26 @@ const SearchList = () => {
           </div>
         </div>
 
+        {/** 复制 URL */}
         {!!filenameList && !!filenameList.length && (
-          <ReactClipboard
-            style={{ color: 'rgb(0,162,222)', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => alert('复制成功')}
-            onError={e => console.log('复制失败', e)}
-            text={`${window.location.origin}${window.location.pathname}?componentLibName=${componentName}&name=${targetName}`}
-          >
-            <div>
-              一键复制 URL，发送给 Ta（推荐）
-            </div>
-          </ReactClipboard>
+          <ClipBoardURL
+            componentName={componentName}
+            targetName={targetName}
+            bizName={bizName}
+          />
         )}
 
-        {LIB_DOC_URL[componentName] && <div
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          <a
-            style={{
-              fontSize: '20px',
-              color: 'tan',
-            }}
-            href={LIB_DOC_URL[componentName]}
-            target="_blank"
-            rel="noopener"
-          >
-            组件库文档：{LIB_DOC_URL[componentName]}
-          </a>
-        </div>}
+        {/** 组件库文档 */}
+        <LibDoc componentName={componentName}/>
+
+        {/** 前端筛选业务 */}
+        {!!filenameList && !!filenameList.length && <SelectBiz bizName={bizName} setBizName={setBizName} updateLog={updateLog}/>}
 
         <div id="copy-list" className="list">
           <ul style={{ color: 'initial' }}>
-            {filenameList.map(({ fileUrl, appName, business }) => (
+            {filenameList.filter(({ fileUrl }) => {
+              return !bizName || bizName === 'all' || fileUrl.includes(bizName)
+            }).map(({ fileUrl, appName, business }) => (
               <li key={fileUrl}>
                 <div>{fileUrl.split('/app/static-project/')[1]}</div>
                 <a
@@ -334,21 +313,8 @@ const SearchList = () => {
           </ul>
         </div>
 
-        {!!filenameList && !!filenameList.length && (
-          <ReactClipboard
-            style={{ color: '#c9c0d3', cursor: 'pointer', textAlign: 'center', lineHeight: '40px' }}
-            onSuccess={e => alert('复制成功')}
-            onError={e => console.log('复制失败', e)}
-            // text={JSON.stringify(filenameList)}
-            options={{
-              target: () => document.getElementById('copy-list')
-            }}
-          >
-            <div>
-              一键复制（复制影响面，内容太多则不太推荐）
-            </div>
-          </ReactClipboard>
-        )}
+        {/** 复制全部 */}
+        {!!filenameList && !!filenameList.length && <ClipBoardAll idName='copy-list'/>}
       </div>
     </ThemeProvider>
   );
