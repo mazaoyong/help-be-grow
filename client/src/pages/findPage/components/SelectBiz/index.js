@@ -8,7 +8,7 @@ export default ({ bizName, setBizName, updateLog }) => {
   return (
     <div style={{
       width: '40%',
-      marginLeft: '20px',
+      margin: '16px auto',
       color: 'rgba(0, 0, 0, 0.87)',
       position: 'relative'
     }}>
