@@ -7,6 +7,8 @@ nohup.out
 *.DS_Store
 app/data/
 app/output/
+app/localComponentsOutput
+app/usage
 app/update_log.json
 search.test.json
 
