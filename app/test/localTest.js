@@ -1,4 +1,5 @@
 const { localComponentsMain } = require("../main");
+const { createUsage } = require("../src/usage");
 localComponentsMain([
     {
       name: 'wsc-h5-vis',
@@ -49,3 +50,4 @@ localComponentsMain([
       version: '5b6b0d554cb1e3aa26e9b2ecfe39a36c66deda46'
     }
   ]);
+createUsage()

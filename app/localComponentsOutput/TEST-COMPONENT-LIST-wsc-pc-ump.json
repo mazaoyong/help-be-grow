@@ -1,0 +1,2084 @@
+{
+  "localComponents": {
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/api/approval/index.ts": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/activity-card/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/activity-cycle/components/activity-checkbox.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/activity-share-card/index.tsx": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/approval/approval-action/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/attract-fans/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/btn-locked/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/coupon-selector/index.tsx": [
+      "external-coupon-tag"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/detail-pages/customer/columns.tsx": [
+      "retail"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/detail-pages/customer/filters.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/detail-pages/customer/index.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/detail-pages/export-result/index.tsx": [
+      "detail-pages",
+      "export-list"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/detail-pages/order/columns.tsx": [
+      "retail"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/detail-pages/order/filters.tsx": [
+      "export-dialog",
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/detail-pages/order/index.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/form-fields/banner-config-field/index.tsx": [
+      "upload-picture"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/form-fields/if-member-tag/if-member-tag-field/index.tsx": [
+      "add-tag"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/form-fields/official-account-setting/form-auto-reply-field/add-keywords/index.tsx": [
+      "form-fields",
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/form-fields/official-account-setting/form-is-need-follow-field/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/form-fields/preferential-overlay/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/game-data-export-dialog/index.tsx": [
+      "export-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/grid-selection/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/period-repeat/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/receiver-limitation/component.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/recommend-goods/field.tsx": [
+      "recommend-goods"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/recommend-goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/school-selector/selector/index.tsx": [
+      "school-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/upload/index.js": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/upload-picture/index.js": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/upload-voice/index.tsx": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/components/wx-success-page/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/base/cpns.tsx": [
+      "help-icon",
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/auction/format.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/cashback-pro/goods-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/coupon-package/custom/coupon-selector.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/coupon-split/custom/coupon-selector.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/crazy-guess/award-setting/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/groupon/format.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/groupon/goods-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/helpcut/index.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/limitdiscount/custom/goods-selector/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/lottery/award-setting/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/lucky/award-setting/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/mp-fans/custom/coupon-selector.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/mp-fans/index.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/package-buy/format.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/package-buy/goods-diy-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/package-buy/goods-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/paid-promotion/promotion-list/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/plus-buy/custom/goods-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/postagetool/custom/goods-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/reward/custom/multi-discount/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/seckill/goods-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/share-encourage/reward-table/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/constants/chain-approval/configs/tuan-back/format.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/fns/retail.tsx": [
+      "school-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/alipay-coupon/extensions/global/page-context/config.ts": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/alipay-coupon/extensions/global/page-context/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/alipay-coupon/extensions/widgets/announcement/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/alipay-coupon/extensions/widgets/bread-crumb/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/alipay-coupon/extensions/widgets/disuse-coupon/index.tsx": [
+      "disuse-coupon",
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/alipay-coupon/second-extensions/activity-list/customize-operations/index.tsx": [
+      "pop-action",
+      "btn-locked"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/app-center/components/app-list/Item.js": [
+      "channel-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/app-center/pages/All.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/app-center/pages/AllRecommend.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/app-center/pages/Dashboard.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/app-center/pages/Search.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/approval/cards/activity-card/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/approval/cards/goods-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/approval/cards/info-card/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/approval/cards/note-card/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/approval/cards/record-card/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/approval/cards/shop-select/index.tsx": [
+      "card-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/approval/index/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/components/editor/fields.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/components/editor/index.tsx": [
+      "approval",
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/components/single-goods-select/index.jsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/components/single-goods-select/render.js": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/pages/activity/index.tsx": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/pages/list/filters/index.tsx": [
+      "filters-no-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/auction/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/components/bale-promotion/poster.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/definitions/activity.ts": [
+      "goods-selector-v2",
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/definitions/api.ts": [
+      "form-fields",
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/activity/fields/activity-goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/activity/fields/smart-robot/index.tsx": [
+      "smart-goods-robot"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/activity/form/index.tsx": [
+      "advanced-fieldset",
+      "approval",
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/activity/format.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/detail/customer.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/detail/exportResult.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/detail/order.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/detail/ump-board.ts": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/list/ExportResult.tsx": [
+      "export-list"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/list/filters.tsx": [
+      "export-dialog",
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bale/pages/success/index.tsx": [
+      "success-page",
+      "subscribe-guide"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/constants/index.ts": [
+      "period-repeat",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/definitions/activity.ts": [
+      "period-repeat"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/definitions/form.ts": [
+      "period-repeat",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/components/help-desc/index.tsx": [
+      "pop-example"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/components/input-with-fix-field/index.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-one/base-info-fields/index.tsx": [
+      "shop-selector",
+      "period-repeat"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-one/delivery-rule-fields/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-one/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-one/obtain-rule-fields/obtain-type-field/index.tsx": [
+      "valid-time"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-three/img-fields/index.tsx": [
+      "upload-picture"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-three/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-three/livecode-fields/LiveQrcodeSelector.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-two/goods-fields/goods-selector-field/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-two/goods-fields/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-two/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/editor/step-wrap/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/activity/format.ts": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/list/filters.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/received-list/filters.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/received-list/goods-info/index.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/blind-box/utils.ts": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bomb-window/App.tsx": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bomb-window/pages/activity/new-activity-form/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bomb-window/pages/app/index.tsx": [
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/bomb-window/pages/manage/new-setting-form/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/constants/index.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/activity/editor/form/cashback-type/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/activity/editor/form/goods-select/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/activity/editor/form/index.tsx": [
+      "approval",
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/activity/editor/form/shop-select/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/activity/editor/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/activity/index.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/list/filters.tsx": [
+      "filters-no-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/cashback-pro/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/bottom-action-board/index.js": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/design-wrapper/index.js": [
+      "design"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/setting/SettingForm.js": [
+      "plain-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/setting/form-content-field/index.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/setting/form-daily-prize-field/PrizeSelector.js": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/setting/form-daily-prize-field/index.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/setting/form-prize-field/PrizeSelector.js": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/setting/form-prize-field/index.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/share-cofig/index.js": [
+      "share-config"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/user-list/columns/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/components/user-list/filter/index.tsx": [
+      "filters",
+      "game-data-export-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/checkin/constants/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/collect-gift/components/setting/CouponSelectorField.js": [
+      "coupon-selector",
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/collect-gift/components/setting/EntryConfigField.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/collect-gift/components/setting/PointsField.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/collect-gift/components/setting/PresentField.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/collect-gift/components/setting/index.js": [
+      "plain-field",
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/collect-gift/components/user-list/SingleAuditDialog.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/collect-gift/components/user-list/index.js": [
+      "width-disabled"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/components/promotion/poster.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/components/share-setting/GroupSpread.tsx": [
+      "share-config"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/components/share-setting/index.tsx": [
+      "share-config"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/global/page-context/config.ts": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/global/page-context/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/components/preview/wx-card.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/helpers/init.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/activity-goods/index.tsx": [
+      "approval",
+      "file-import-content",
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/applicable-scene/component.tsx": [
+      "xgj-pop-image"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/condition/component.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/date-type/component.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/max-discount/component.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/perferential-overlay/index.tsx": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/preferential-type/discount/component.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/preferential-type/random/component.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/preferential-type/reward/component.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/shops/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/base/total/component.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/index.tsx": [
+      "advanced-fieldset",
+      "approval",
+      "simple-collapse"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/expire-notice/component.tsx": [
+      "help-icon",
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/forbid-preference/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/handsel/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/if-member-tag/component.tsx": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/public-display/component.tsx": [
+      "field-desc",
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/receiver-limitation/component.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/recommend-goods/trigger.tsx": [
+      "goods-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/fields/rule/times-per-person/component.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/edit/new-form/use-submit.ts": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-edit/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/components/filters/index.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/components/title-bar/index.tsx": [
+      "coupon-refund-setting"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/components/type-slide/utils.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/list-page/columns/cols/base/index.tsx": [
+      "external-coupon-tag",
+      "help-icon",
+      "xgj-pop-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/list-page/columns/operator/index.tsx": [
+      "btn-locked",
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/list-page/columns/status/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/list-page/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/activity-list/list-page/list.tsx": [
+      "approval",
+      "grid-selection",
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/customer-list/columns.tsx": [
+      "disuse-coupon",
+      "retail"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/customer-list/index.tsx": [
+      "disuse-coupon",
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/customer-list/widgets/coupon-board/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/customer-list/widgets/customer-filters/filters.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/customer-list/widgets/customer-filters/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/edit-success/components/success-wx-group-spread/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/edit-success/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/edit-success/success.tsx": [
+      "success-page",
+      "wx-success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/pages/not-found/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/widgets/announcement/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/widgets/bread-crumb/index.tsx": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/widgets/disuse-coupon/index.tsx": [
+      "disuse-coupon",
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon/extensions/widgets/get-crumbs-lambda/index.ts": [
+      "extensions"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/components/we-app-share/index.js": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/pages/activity/field/coupon-select-field/index.js": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/pages/activity/field/index.js": [
+      "shop-selector",
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/pages/create-success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/pages/list/new-columns/cols/base/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/pages/package-detail/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-package/pages/receive-list/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/activity/form/fields/activity-custom-text/index.tsx": [
+      "help-icon",
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/activity/form/fields/coupon/index.tsx": [
+      "coupon-selector",
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/activity/form/fields/share/index.tsx": [
+      "activity-share-card"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/activity/form/fields/take-limit/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/activity/form/index.tsx": [
+      "activity-share-card",
+      "advanced-fieldset",
+      "approval",
+      "date-picker-field",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/app/index.tsx": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/create-success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/coupon-split/pages/taken/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/definitions/index.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/award-setting-form/form-award-field/award-field/index.tsx": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/award-setting-form/form-award-field/award-field/present-selector/index.tsx": [
+      "present-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/award-setting-form/index.tsx": [
+      "help-icon",
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/basic-setting-form/index.tsx": [
+      "app-action",
+      "shop-selector",
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/questions-setting-form/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/questions-setting-form/question-form-fields/fields/form-audio-field/index.tsx": [
+      "upload-voice"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/questions-setting-form/question-form-fields/fields/form-image-field/index.tsx": [
+      "upload-picture"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/activity/form/success-page/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/data-list/export-dialog.tsx": [
+      "export-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/data-list/filters.tsx": [
+      "filters",
+      "game-data-export-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/list/filters/index.tsx": [
+      "filters-no-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/crazy-guess/pages/list/index.tsx": [
+      "approval",
+      "branch-alert"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/dashboard/components/app-list/Item.js": [
+      "channel-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/dashboard/components/application/index.js": [
+      "channel-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/dashboard/pages/offline/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/dashboard/pages/online/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/dashboard/pages/simpified-wsc/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/enterprise-wechat/pages/application/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/edit/ImageField.jsx": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/edit/advanced-fields/GoodsSelector.jsx": [
+      "goods-sortable"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/edit/advanced-fields/GoodsSelectorV2.jsx": [
+      "goods-sortable"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/edit/index.jsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/edit/reward-fields/Coupon.jsx": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/list/TableList.jsx": [
+      "pop-action",
+      "text-button"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/record-table/RecordTableList.jsx": [
+      "text-button"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/evaluation-gift/components/record-table/index.jsx": [
+      "text-button"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/activity/components/FormEdit.jsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/activity/components/fields/TakeLimitField.jsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/activity/components/fields/new-goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/activity/format.js": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/activity/initial-form-data.js": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/list/List.jsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/number-list/List.jsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/number-list/index.jsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/order-list/index.jsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/fcode/pages/success/index.jsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/feature-video/pages/comment/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/feature-video/pages/subject/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/freight-insurance/components/Filter.js": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/good-thing-group/App.js": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/good-thing-group/pages/main/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/components/promotion/poster/edu/index.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/components/promotion/poster/simple/index.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/definitions/activity.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/definitions/index.ts": [
+      "recommend-goods"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/editor/advanced-config/index.tsx": [
+      "form-fields",
+      "recommend-goods"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/editor/base-config/fields/activity-time/index.tsx": [
+      "date-picker-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/editor/base-config/fields/goods-selector/index.tsx": [
+      "goods-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/editor/base-config/fields/new-goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/editor/base-config/index.tsx": [
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/editor/index.tsx": [
+      "advanced-fieldset",
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/activity/preview-block/index.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/create-success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/order-detail/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/data-stat/order-detail/order-search/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/groupon/pages/list/new-columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/App.js": [
+      "app-container",
+      "ump-vision"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/components/promotion/index.js": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/example.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/index.js": [
+      "goods-selector-v2",
+      "rise-follower-weapp-warning-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/Advance.js": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/Normal.js": [
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/FormAddTagField.js": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/FormCouponSelectorField.js": [
+      "coupon-selector",
+      "text-btn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/FormFollowField.js": [
+      "vertical-radio-group"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/FormPositiveIntInputField.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/FormVerticalRadioGroupField.js": [
+      "vertical-radio-group"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/goods-select-table-field/index.jsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/new-custom-goods/index.tsx": [
+      "goods-selector-v2",
+      "vertical-radio-group"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/form-components/new-goods-selector.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/activity/setting/index.js": [
+      "advanced-fieldset",
+      "approval",
+      "toggle-tip"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/list/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/list/list/columns/cols/base/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/list/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/list/list/create/index.tsx": [
+      "ump-vision"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/list/list/index.js": [
+      "approval",
+      "ump-vision"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/list/setting/FormJoinNumField.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/list/setting/index.js": [
+      "app-action",
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/helpcut/pages/success/index.js": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/definitions/goods-sku.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/activity/form/full-reduction/WrapperForm.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/activity/form/goods-selector/goods-group-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/activity/form/goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/activity/form/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/activity/form/limit-discount/columns.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/activity/form/limit-discount/sku-columns.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/data/overview/components/indicator/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/data/trend/components/indicator-checkbox/components/indicatrix/indicatrix.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/data/trend/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/list/columns/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/launchpad/pages/list/columns/operator.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/format/index.ts": [
+      "activity-cycle"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/interface/activity.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/interface/goods-sku.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/add-tag/index.tsx": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/count-down/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/goods-sku-selector/columns.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/goods-sku-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/goods-sku-selector/sku-columns.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/index.tsx": [
+      "activity-cycle",
+      "approval",
+      "form-fields",
+      "receiver-limitation",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/limit-buy/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/activity/form/period-repeat/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/create-success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/list/columns/cols/base/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/limitdiscount/pages/list/index.tsx": [
+      "approval",
+      "card"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/components/advance-promotion/copy/weapp.tsx": [
+      "link-btn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/components/advance-promotion/index.tsx": [
+      "link-btn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/activity-time/index.tsx": [
+      "date-picker-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/coupon/col.tsx": [
+      "stock-manage"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/coupon/index.tsx": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/goods/components/multi/stockItem.tsx": [
+      "form-kit"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/goods/components/select-goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/live-data/config.tsx": [
+      "dashboard-section"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/live-data/index.tsx": [
+      "dashboard-section"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/seckill/components/multi-sku/stockItem.tsx": [
+      "form-kit"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/base-fields/fields/seckill/components/table/index.tsx": [
+      "stock-manage"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/activity/editor/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/list/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/components/fix-basic-info-dialog/index.tsx": [
+      "link-btn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/fields/coupon/config.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/fields/coupon/index.tsx": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/fields/goods/config.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/fields/goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/fields/seckill/config.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/fields/self-living/index.tsx": [
+      "link-btn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/preview/index.tsx": [
+      "app-action",
+      "link-btn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/pages/stat/constants/config.tsx": [
+      "dashboard-section"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-assistant/utils/promotion.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/activity/editor/base-fields/fields/goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/activity/editor/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/dashboard/config.ts": [
+      "dashboard-section"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/dashboard/index.tsx": [
+      "dashboard-section"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/list/columns/cols/base/index.tsx": [
+      "stock-manage"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/list/index.tsx": [
+      "coupon-refund-setting"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-coupon/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-seckill/definitions/goods-sku.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-seckill/pages/activity/editor/base-fields/fields/goods-select/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-seckill/pages/activity/editor/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-seckill/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-seckill/pages/list/components/data/config.tsx": [
+      "dashboard-section"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-seckill/pages/list/components/data/index.tsx": [
+      "dashboard-section"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/live-seckill/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/hooks/use-submit/index.ts": [
+      "rise-follower-weapp-warning-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/fields/add-tag/index.tsx": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/fields/code-fields.tsx": [
+      "recommend-goods"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/fields/coupon-selector/index.jsx": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/fields/goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/fields/group-fields.tsx": [
+      "approval",
+      "attract-fans",
+      "recommend-goods",
+      "shop-selector",
+      "simple-collapse"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/fields/prize/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/fields/transform-goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/form/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/activity/index.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/list/components/cards/index.tsx": [
+      "card"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/list/components/filters/index.tsx": [
+      "filters-no-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/success/index.js": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lottery/pages/user-list/filters.tsx": [
+      "filters-no-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/App.js": [
+      "app-container",
+      "ump-vision"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/common/design-components.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/add-awards-dialog/AwardSelect.js": [
+      "present-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/add-awards-dialog/AwardsForm.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/add-awards-dialog/CouponField.js": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/add-image-draw/index.js": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/list-header/index.js": [
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/pop-promotion/index.js": [
+      "promotion-setting-content"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/step-four/index.js": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/step-three/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/components/step-two/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/constants/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/awards-setting/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/chance-count-config/index.jsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/design-bg-image/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/is-need-follow/index.js": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/is-need-follow-config/index.js": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/join-count/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/join-count-config/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/join-shop-field/index.js": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/join-shop-field-config/index.js": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/join-user-type/UserFilter.js": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/join-user-type-config/UserFilter.js": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/no-prize-image/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/notice-jump/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/turntable/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/wx-auto-reply/AppKeywordsField.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/field/wx-auto-reply-config/AppKeywordsField.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/pages/create/index.js": [
+      "promotion-setting-content",
+      "rise-follower-weapp-warning-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/pages/edit/index.js": [
+      "promotion-setting-content",
+      "rise-follower-weapp-warning-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/pages/list/filters/index.tsx": [
+      "ump-vision"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/pages/list/index.tsx": [
+      "approval",
+      "branch-alert",
+      "ump-vision"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/lucky/pages/record/filter.tsx": [
+      "filters",
+      "game-data-export-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/money-dilation/pages/activity/field/form-goods-selector-trigger/index.js": [
+      "goods-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/money-dilation/pages/activity/field/form-if-member-tag-field/index.js": [
+      "add-tag"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/money-dilation/pages/activity/field/index.tsx": [
+      "app-action",
+      "form-fields",
+      "goods-selector-v2",
+      "shop-selector",
+      "toggle-tip"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/money-dilation/pages/list/components/card/index.js": [
+      "card"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/money-dilation/pages/list/components/list/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/money-dilation/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/hooks/use-activity/index.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/hooks/use-submit/index.ts": [
+      "rise-follower-weapp-warning-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/activity-list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/activity-list/index.tsx": [
+      "approval",
+      "ump-vision"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/components/benefit-form/config.ts": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/components/benefit-form/fields/coupon-selector/index.tsx": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/components/benefit-form/index.tsx": [
+      "approval",
+      "goods-selector-v2",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/components/follow-buy/index.tsx": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/format.ts": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/normal/detail.tsx": [
+      "app-action",
+      "approval",
+      "rise-follower-weapp-warning-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/normal/index.tsx": [
+      "activity-card",
+      "approval",
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/wecom-setting/components/benefit-form/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/wecom-setting/config.ts": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/wecom-setting/detail.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/setting/wecom-setting/index.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/mp-fans/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/app-market/StoreForm.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/boardv2/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/list/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/manage/EditSku.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/manage/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/recon/Detail.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/setting/index.js": [
+      "footer-button-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/stat/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/update/Form.js": [
+      "footer-button-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/update/fields/delivery-times-field/DeliveryTimes.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/update/fields/img-select-field/ImgSelect.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/update/fields/local-delivery-field/LocalDelivery.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/update/fields/offline-addr-field/OfflineAddr.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/update/fields/offline-type-field/SelfFetch.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/multistore/index/containers/update/fields/time-select-field/TimeSelect.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/App.js": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/components/promotion/poster.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/activity/app.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/activity/form/diy-goods-selector/index.js": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/activity/form/diy-smart-robot/index.tsx": [
+      "smart-goods-robot"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/activity/form/exists-goods-selector/index.js": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/activity/form/exists-smart-robot/index.tsx": [
+      "smart-goods-robot"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/activity/form/index.js": [
+      "advanced-fieldset",
+      "approval",
+      "form-fields",
+      "shop-selector",
+      "upload-picture"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/combination-activity/form/goods-selector-field/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/combination-activity/form/preferential-overlay/config.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/combination-activity/form/preferential-overlay/index.tsx": [
+      "help-icon",
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/combination-activity/index.tsx": [
+      "app-action",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/list/combination/promotion/poster.jsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/list/combination/table/index.js": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/list/components/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/list/components/search-block/index.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/list/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/success/combination.js": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/package-buy/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/components/form-meet-field/goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/components/form-promotion-field/AppsField.js": [
+      "choose-apps"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/components/form-promotion-field/CouponField.js": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/components/form-promotion-field/FeatureField.js": [
+      "feature-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/components/form-promotion-field/PresentField.js": [
+      "present-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/components/form-promotion-field/PromotionField.js": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/pages/activity/index.js": [
+      "approval",
+      "form-fields",
+      "shop-selector",
+      "simple-collapse"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/pages/list/filters/index.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/paid-promotion/pages/list/index.tsx": [
+      "approval",
+      "card"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/period-buy/App.js": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/period-buy/components/promotion/index.js": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/period-buy/pages/activity/index.js": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/period-buy/pages/list/List.js": [
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/period-buy/pages/list/Setting.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/period-buy/pages/list/index.js": [
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/components/promotion/poster.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/definitions/activity.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/add/fields/activity-goods/index.tsx": [
+      "help-icon",
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/add/fields/exchange-goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/add/fields/if-member-tag/index.tsx": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/add/fields/support-multi/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/add/form.tsx": [
+      "approval",
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/add/helper.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/detail/customer.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/detail/exportResult.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/detail/order.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/detail/ump-board.ts": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/list/ExportResult.tsx": [
+      "export-list"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/list/filters.tsx": [
+      "export-dialog",
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/plus-buy/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/points-mall/pages/edit/components/basis-form/marketing-activity-overlay.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/points-mall/pages/edit/components/point-form/actions.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/points-mall/pages/edit/components/point-form/index.js": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/points-mall/pages/edit/components/points-dialog/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/points-mall/pages/index/components/points-table/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/postagetool/container/create-success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/postagetool/container/rule-edit/rule-form/fields/new-express-goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/postagetool/container/rule-edit/rule-form/fields/postage-setting-field/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/postagetool/container/rule-edit/rule-form/index.js": [
+      "approval",
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/postagetool/container/rule-edit/utils.js": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/postagetool/container/rule-list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/postagetool/container/rule-list/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/add/fields/activity-goods-field.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/add/fields/period.js": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/add/form.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/detail/filters.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/list/filters/index.tsx": [
+      "filters-no-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/present/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/price-calendar/views/Index.jsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/App.js": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/components/promotion/Promotion.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/applicable-scene/component.tsx": [
+      "xgj-pop-image"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/expire-notice/Field.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/generate/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/goods-selector/index.tsx": [
+      "file-import-content",
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/handsel/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/other-limitation/Field.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/receiver-limitation/Field.js": [
+      "add-member"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/shop-selector/index.js": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/tag/Field.js": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/fields/total/Field.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/index.js": [
+      "approval",
+      "form-fields",
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/activity/init.js": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/list/Cards.js": [
+      "card"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/list/columns/cols/base/index.tsx": [
+      "help-icon",
+      "xgj-pop-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/list/columns/status/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/list/filter/index.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/list/index.js": [
+      "approval",
+      "coupon-refund-setting",
+      "grid-selection",
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/result-list/Filter.js": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/result-list/index.js": [
+      "combine-filter-table",
+      "disuse-coupon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/stock-list/index.js": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/promocode/pages/success/index.js": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/realname-check/pages/management/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/realname-check/pages/recharge/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/realname-check/pages/statistics/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/components/promotion/index.js": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/components/coupon-field/index.js": [
+      "coupon-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/components/goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/components/meetSend-type-field/index.js": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/components/postage-field/index.js": [
+      "help-icon",
+      "postage-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/components/present-field/present-grid.js": [
+      "present-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/components/shop-selector-field/index.js": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/components/tag-field/index.js": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/index.js": [
+      "approval",
+      "form-fields",
+      "goods-selector-v2",
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/loop-reward/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/activity/setting/item.jsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/detail/customer.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/detail/exportResult.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/detail/order.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/detail/ump-board.ts": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/list/Cards.js": [
+      "card"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/list/ExportResult.tsx": [
+      "export-list"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/list/Filter.js": [
+      "export-dialog",
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/list/columns/cols/base/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/list/index.js": [
+      "approval",
+      "page-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/result-list/Filter.js": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/result-list/customer/columns.js": [
+      "retail"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/result-list/customer/filters.js": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/result-list/customer/index.js": [
+      "combine-filter-table"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/result-list/orders/columns.js": [
+      "retail"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/result-list/orders/filters.js": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/reward/pages/success/index.js": [
+      "subscribe-guide",
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/sale-management/pages/list/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/sale-management/pages/oauth/authorize/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/sale-management/pages/oauth/bind/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/sale-management/pages/oauth/choose/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/sale-management/pages/oauth/finish/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/components/ump-promotion/index.js": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/activity-fields/cancel-field/index.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/activity-fields/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/activity-fields/limit-field/index.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/goods-fields/goods-choose/goods-dialog/index.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/goods-fields/goods-choose/goods-set-dialog/no-sku/index.js": [
+      "stock-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/goods-fields/goods-choose/goods-set-dialog/sku/index.js": [
+      "help-icon",
+      "stock-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/reserve-fields/appoint-reminder-field/index.tsx": [
+      "vertical-center-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/reserve-fields/appoint-ways-field/index.tsx": [
+      "attract-fans"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity/editor/school-fields/index.tsx": [
+      "school-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity-list/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity-list/new-columns/cols/base/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/activity-list/new-columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/create-success/index.tsx": [
+      "success-page",
+      "subscribe-guide"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/seckill/pages/question/index.js": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/components/promotion-dialog/index.js": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/activity/ActivityGoodsField.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/activity/FormTagField.js": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/activity/index.js": [
+      "approval",
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/activity-list/Filter.js": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/activity-list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/activity-list/index.js": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/detail/customer.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/detail/order.tsx": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/detail/ump-board.ts": [
+      "detail-pages"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/second-half-discount/pages/success/index.jsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/components/promotion/index.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/components/promotion/share.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/components/sortable-list/goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/advance-fields/add-tag/index.tsx": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/advance-fields/expire-time/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/advance-fields/index.tsx": [
+      "advanced-fieldset"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/base-fields/group-capacity/index.tsx": [
+      "vertical-center-block",
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/base-fields/group-validity/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/base-fields/index.tsx": [
+      "advanced-fieldset",
+      "date-picker-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/coupon-fields/coupon-config/columns/helper.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/coupon-fields/coupon-config/columns/small-fields/suit-goods/goods-selector/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/coupon-fields/coupon-config/columns/sponsor.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/coupon-fields/enable-time/index.tsx": [
+      "help-icon",
+      "date-picker-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/coupon-fields/helper.tsx": [
+      "advanced-fieldset",
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/field-blocks/coupon-fields/sponsor.tsx": [
+      "advanced-fieldset",
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/share/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/advance-fields/add-tag/index.tsx": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/advance-fields/expire-time/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/advance-fields/shared-card-block/sub-title/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/advance-fields/upload/index.tsx": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/base-fields/enable-goods/index.tsx": [
+      "file-import-content",
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/base-fields/enable-time/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/base-fields/index.tsx": [
+      "form-fields",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/base-fields/share-content/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/base-fields/valid-time/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/editor/split/rule-fields/mock-friends/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/helper/share/initial.ts": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/helper/split/index.ts": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/activity/index.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/list/blocks/new/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/list/blocks/new/new-columns/cols/base/type-cols/split.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/list/blocks/new/new-columns/operator/index.tsx": [
+      "btn-locked",
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/list/blocks/old/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/list/blocks/old/new-columns/cols/base/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/list/blocks/old/new-columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/result-list/filter/index.tsx": [
+      "filters"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/splitcoupon/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tangshi/components/decoration-footer/index.jsx": [
+      "footer-button-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tangshi/container/DeskManage.jsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tangshi/container/PageDecoration.jsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/components/promotion/index.tsx": [
+      "promotion-poster"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/attach-tag-field/tag-field.tsx": [
+      "scrm-tag-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/cashback-type-field/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/preferential-overlay-field/index.tsx": [
+      "form-fields"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/shop-select-field/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/stock-detail/stock-detail-dialog.tsx": [
+      "stock-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/times-field/index.tsx": [
+      "date-picker-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/form/tuan-goods-field/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/activity/index.tsx": [
+      "preview-block"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/list/columns/operator/index.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/list/header/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/list/index.tsx": [
+      "approval"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/tuan-back/pages/success/index.tsx": [
+      "success-page"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/base-fields/fields/activity-time/index.tsx": [
+      "date-picker-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/base-fields/fields/activity-type/index.tsx": [
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/base-fields/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/coupon-fields/fields/ai-coupons/index.tsx": [
+      "coupon-selector",
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/coupon-fields/fields/ai-coupons/suitable-goods/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/coupon-fields/fields/ai-coupons/suitable-shop/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/coupon-fields/fields/normal-coupons/index.tsx": [
+      "coupon-selector",
+      "help-icon"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/decoration-fields/fields/upload-image/index.tsx": [
+      "dynamic-upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/editor/index.tsx": [
+      "app-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/activity/view/index.tsx": [
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/list/columns/operator/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/visit-gift/pages/list/index.tsx": [
+      "ump-invalid-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark/App.js": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark/components/goods-select-field/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark/components/watermark-template/index.js": [
+      "upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark/pages/editor/index.tsx": [
+      "app-action",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark/pages/goods/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark/pages/list/columns/cells/operations/actions/invalid.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark/pages/list/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark-old/App.js": [
+      "app-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark-old/components/goods-select-field/index.tsx": [
+      "goods-selector-v2"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark-old/components/watermark-template/index.js": [
+      "upload"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark-old/pages/editor/index.tsx": [
+      "app-action",
+      "shop-selector"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark-old/pages/goods/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark-old/pages/list/columns/operations.tsx": [
+      "pop-action"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-ump/client/pages/watermark-old/pages/list/index.js": []
+  }
+}

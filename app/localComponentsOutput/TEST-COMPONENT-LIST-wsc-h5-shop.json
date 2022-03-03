@@ -1,0 +1,64 @@
+{
+  "localComponents": {
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/components/login/mixins/page-mixins.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/components/video-player/VideoPlayer.vue": [
+      "slider",
+      "video-controller"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/components/video-player/VideoPlayerPc.vue": [
+      "slider",
+      "video-controller"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/common/side-bar/main.js": [
+      "side-bar"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/emptypage-recommend/App.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/shop-closed/App.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/shop-header-tool/main.js": [
+      "header-tool"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/shop-note/detail/App.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/shop-note/list/App.vue": [
+      "custom-tab-bar"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/shop-note/list/components/shopnote-list/index.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/shop-note/mixins/index.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/feature-manager/main.js": [
+      "custom-tab-bar"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/base-components/DescriptionBar.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/base-components/GoodsVideo.vue": [
+      "video-controller",
+      "video-player"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/base-components/ServiceBar.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/base-components/SkuBlock.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/base-components/calendar/containers/calendar.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/common/header-component.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/common/new-header-component.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/new-base-activity-components/Intro.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/pages/wsc/auction/config/page-component.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/pages/wsc/groupon/config/page-component.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods/pages/wsc/tuan/config/page-component.js": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods-evaluation/detail/App.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods-evaluation/detail/components/Card.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods-evaluation/detail/components/CommentList.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods-evaluation/list/App.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/goods-evaluation/list/components/Card.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/new-takeout/components/takeoutbody/Goods.vue": [
+      "input-number"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/new-takeout/components/takeoutbottom/CartRow.vue": [
+      "input-number"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/new-takeout/components/takeoutdetail/index.vue": [
+      "input-number"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/tangshi/base-components/Goods.vue": [
+      "input-number"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/tangshi/view/order-dishes/container/BodyContainer.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/tangshi/view/order-dishes/container/BottomContainer.vue": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-h5-shop/client/src/pages/showcase/wholesales/main.js": []
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "localComponents": {
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/common/local-delivery-appointment-order-field/AppointmentOrder.tsx": [
+      "pop-wrapper"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/common/special-time/index.tsx": [
+      "pop-wrapper"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/express/delivery-board/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/express/temp-list/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/components/board/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/container/Form.tsx": [
+      "footer-button-container",
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/container/LocalDeliveryForm.tsx": [
+      "footer-button-container",
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/container/fields/delivery-times-field/DeliveryTimes.tsx": [
+      "time-picker"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/container/fields/delivery-way-field/components/partner-list/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/container/fields/region-setting-field/RegionSetting.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/container/fields/store-addr-field/StoreAddr.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/container/new-local-delivery.tsx": [
+      "footer-button-container",
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/local-delivery/format.ts": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/self-fetch/board/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/self-fetch/format.ts": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/self-fetch/scan-code/modal-content.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/self-fetch/self-fetch-form/fields/self-fetch-time-field/time-span/TimeSpan.tsx": [
+      "time-picker"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/self-fetch/self-fetch-form/fields/work-time-field/WorkTime.tsx": [
+      "time-picker"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/delivery/self-fetch/self-fetch-form/index.tsx": [
+      "footer-button-container",
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/order/open-express-dialog/DeliveryInfo.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/components/order/open-express-dialog/ExpressForm.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/batch-delivery/context/CSVImportContext.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cashier/pages/app.tsx": [
+      "check-lite"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cashier/pages/guide/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cashier/pages/list/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cashier/pages/miniapp/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cashier/pages/qrcode/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cashier/pages/qrcode-edit/index.tsx": [
+      "check-lite"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cashier/pages/weapp/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/cross-border/constants/auth-step.ts": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/index/components/config-tab/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/index/pages/common/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/index/pages/config/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/index/pages/template/add.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/index/pages/template/edit.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/index/pages/template/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/self-fetch/App.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/setting/components/delivery-tab/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/setting/pages/common/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/setting/pages/express/add.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/setting/pages/express/edit.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/setting/pages/express/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/setting/pages/local-delivery/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/delivery-setting/setting/pages/self-fetch/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/express/pages/add/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/express/pages/edit/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/express/pages/index/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/express/pages/timeliness/create.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/express/pages/timeliness/edit.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/express/routes.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/components/bottom-container/index.tsx": [
+      "footer-button-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/constants/setup.ts": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/add-tax/components/goods-selector/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/add-tax/components/goods-selector-v2/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/charge/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/handwork/components/content-info/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/handwork/components/goods-selector/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/handwork/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/manage/components/record-filter-form/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/manage/pages/record/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/manage/pages/setting/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/re-certifacate/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/setup/components/steps/audit-info-form/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/setup/components/steps/audit-result/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/setup/components/steps/config-tax-class-code/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/setup/components/steps/device-install/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/setup/components/steps/device-install/upload-cert-form.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/setup/components/steps/enable-service/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/invoice/pages/setup/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/local-delivery/main.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/components/basic-order/order-item/index.tsx": [
+      "order",
+      "pop-wrapper",
+      "check-version"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/components/basic-order/order-item-header/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/components/basic-order/student-info-dialog/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/components/open-cashier/index.tsx": [
+      "check-version"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/change-price/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/check-in/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/child-order-list/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/close-order/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/delay-receive-btn/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/gift-child-order-list/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/goods-list/columns/goods.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/goods-list/columns/options.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/goods-list/helper.tsx": [
+      "check-version"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/goods-list/index.tsx": [
+      "help-pop"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/goods-list/refund-info.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/micro-transfer-button/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/modify-address/form.tsx": [
+      "form-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/order-express/pack-info.tsx": [
+      "swiper",
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/order-info/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/order-state/actions/helper.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/order-state/actions/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/order-state/desc/index.tsx": [
+      "countdown-cpn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/order-state/index.tsx": [
+      "check-version"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/period-order-sendlog-dialog/send-log-list.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/pick-order/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/preorder-btn/api.ts": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/query-address-history/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/refuse-order/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/seller-refund-dialog/index.tsx": [
+      "check-version"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/send-btn/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/star/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/detail/components/ticket/index.tsx": [
+      "pop-wrapper",
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/hotel/components/filter/index.tsx": [
+      "form-field",
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/hotel/components/new-export-dialog/QueryCondition.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/hotel/components/new-export-dialog/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/hotel/pages/list.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/hotel/type.ts": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/components/filter/index.tsx": [
+      "form-field",
+      "async-selector",
+      "order",
+      "check-version"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/components/list-item/index.tsx": [
+      "order",
+      "pop-wrapper",
+      "check-version"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/components/list-item-header/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/components/new-export-dialog/QueryCondition.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/components/new-export-dialog/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/components/student-info-dialog/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/effects/index.ts": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/pages/list.tsx": [
+      "sort-button-group"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/order/list/pages/sub-order-list.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/common/complaint.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/buyer-express/index.tsx": [
+      "trade-steps"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/footer-actions/index.tsx": [
+      "footer-button-container"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/info/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/log/index.tsx": [
+      "trade-steps",
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/open-complaint-dialog/accept/index.tsx": [
+      "rontgen-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/open-complaint-dialog/reject/index.tsx": [
+      "rontgen-dialog"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/overview/index.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/state/actions/StateButton.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/detail/components/state/actions/StateDesc.tsx": [
+      "countdown-cpn"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/export-list/App.tsx": [
+      "export-list"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/list/App.tsx": [
+      "check-lite"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/list/components/export-dialog-content.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/refund/list/components/refund-filter.tsx": [
+      "order",
+      "check-lite"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/review/App.tsx": [
+      "check-lite"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/review/components/filter/index.tsx": [
+      "form-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/self-fetch/components/list/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/self-fetch/pages/edit/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/self-fetch/pages/index/index.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/self-fetch/routes.tsx": [
+      "delivery"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/export-list/App.tsx": [
+      "export-list"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/record/pages/benefit/filter.tsx": [
+      "form-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/record/pages/ecard/filter.tsx": [
+      "form-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/record/pages/promo/filter.tsx": [
+      "order"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/record/pages/self-fetch/filter.tsx": [
+      "form-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/record/pages/vitrual-trade/filter.tsx": [
+      "form-field"
+    ],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/verify/pages/result-promo/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/verify/pages/result-selffetch/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/verify/pages/result-ticket/index.tsx": [],
+    "/Users/liangyunbin/Documents/workspace/help-be-grow/app/static-project/wsc-pc-trade/client/pages/verifycard/verify-tool/pages/verify/pages/result-virtual-trade/index.tsx": []
+  }
+}
