@@ -4,7 +4,7 @@ const fs = require('fs')
 const rd = require('rd');
 const history = require('connect-history-api-fallback');
 
-const { getApiData, getConfig } = require('./dataGetter')
+const { getApiData, getConfig, getUsageData } = require('./dataGetter')
 
 module.exports = () => {
   const app = express();
@@ -68,6 +68,23 @@ module.exports = () => {
     }
     res.send(result)
   })
+
+  // 获取组件使用数据
+  app.get('/getUsageData', (req, res) => {
+    try {
+      const usageData = getUsageData();
+      res.send({
+        code: 200,
+        data: usageData,
+        message: 'request:ok',
+      });
+    } catch (err) {
+      res.send({
+        code: 500,
+        message: '读取使用数据失败',
+      });
+    }
+  });
 
   // 安全检查
   app.get('/HB', (req, res) => {

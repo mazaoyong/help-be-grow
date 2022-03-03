@@ -1188,6 +1188,17 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
+"@material-ui/lab@^4.0.0-alpha.60":
+  version "4.0.0-alpha.60"
+  resolved "http://registry.npm.qima-inc.com/@material-ui/lab/download/@material-ui/lab-4.0.0-alpha.60.tgz#5ad203aed5a8569b0f1753945a21a05efa2234d2"
+  integrity sha1-WtIDrtWoVpsPF1OUWiGgXvoiNNI=
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@material-ui/utils" "^4.11.2"
+    clsx "^1.0.4"
+    prop-types "^15.7.2"
+    react-is "^16.8.0 || ^17.0.0"
+
 "@material-ui/styles@^4.11.4":
   version "4.11.4"
   resolved "http://registry.npm.qima-inc.com/@material-ui/styles/download/@material-ui/styles-4.11.4.tgz#eb9dfccfcc2d208243d986457dff025497afa00d"
@@ -4696,6 +4707,14 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
+
+echarts@^5.3.0:
+  version "5.3.0"
+  resolved "http://registry.npm.qima-inc.com/echarts/download/echarts-5.3.0.tgz#39342fcf0f763413fecd9d2afd1c415163de694d"
+  integrity sha1-OTQvzw92NBP+zZ0q/RxBUWPeaU0=
+  dependencies:
+    tslib "2.3.0"
+    zrender "5.3.0"
 
 ee-first@1.1.1, ee-first@~1.1.1:
   version "1.1.1"
@@ -11695,6 +11714,11 @@ tsconfig-paths@^3.11.0, tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
+tslib@2.3.0:
+  version "2.3.0"
+  resolved "http://registry.npm.qima-inc.com/tslib/download/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
+  integrity sha1-gDuM2rPhK6WBpMpByIObuw2ssJ4=
+
 tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "http://registry.npm.qima-inc.com/tslib/download/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
@@ -12719,6 +12743,13 @@ zan-json-parse@^1.0.0:
   version "1.0.3"
   resolved "http://registry.npm.qima-inc.com/zan-json-parse/download/zan-json-parse-1.0.3.tgz#d03fef9f914313cbf04397ec0e3842c352cd45e4"
   integrity sha1-0D/vn5FDE8vwQ5fsDjhCw1LNReQ=
+
+zrender@5.3.0:
+  version "5.3.0"
+  resolved "http://registry.npm.qima-inc.com/zrender/download/zrender-5.3.0.tgz#297c05dc2521362816c4ddced10a1e306646bbc8"
+  integrity sha1-KXwF3CUhNigWxN3O0QoeMGZGu8g=
+  dependencies:
+    tslib "2.3.0"
 
 zwitch@^1.0.0:
   version "1.0.5"
