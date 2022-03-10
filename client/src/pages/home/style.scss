@@ -106,3 +106,9 @@ $primary: #27ae60;
     cursor: pointer;
   }
 }
+.ms-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
