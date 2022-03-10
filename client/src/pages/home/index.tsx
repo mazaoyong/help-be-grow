@@ -11,10 +11,10 @@ import {
   Tooltip,
   IconButton
 } from '@material-ui/core'
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import { createTheme } from '@material-ui/core/styles'
 import "./style.scss"
-import { HelpOutline } from '@material-ui/icons'
+import { Close as CloseIcon } from '@material-ui/icons'
 import React from 'react'
 import { apiGetUpdateLogAction, apiGetSearchResult, apiGetProjectConfig } from '@api'
 import { ISearchListItem, ISearchCardItem, IUpdateLogItem, IPrjConfigItem } from '@type'
@@ -22,7 +22,10 @@ import { SEARCH_CARD_TITLE, APP_NAME, WSC_PC_VIS_NAV } from '@constants'
 import SearchCard from '@components/SearchCard'
 import gitlab from './gitlab.svg'
 import { format } from 'date-fns'
-import { formatMsToStr } from '@utils'
+import { deleteStorageOptions, formatMsToStr, getStorageOptions, setStorageOptions } from '@utils'
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import parse from 'autosuggest-highlight/parse';
+import match from 'autosuggest-highlight/match';
 
 const theme = createTheme({
   palette: {
@@ -49,6 +52,7 @@ const SearchList = () => {
   const [updateLog, setUpdateLog] = useState<IUpdateLogItem[]>([]);
   // 配置数据
   const [prjConfig, setPrjConfig] = useState<Record<string, string>>({})
+  const [options, setOptions] = useState<string[]>([])
 
   // 设置是否展示随机背景图片
   const handleSetIsRandomBgImg = (isSet: boolean) => {
@@ -64,6 +68,9 @@ const SearchList = () => {
           const searchList = res.data.data;
           resolve(searchList);
           setSearchList(searchList);
+          if (searchList && searchList.length) {
+            setOptions(setStorageOptions(searchList[0].jsonApi))
+          }
         })
         .catch((err) => {
           console.error(err);
@@ -109,6 +116,8 @@ const SearchList = () => {
         }, {}))
         setUpdateLog(updateLogData)
       })
+
+    setOptions(getStorageOptions())
   }, []);
 
   // 更新时间、总用时
@@ -167,6 +176,13 @@ const SearchList = () => {
     })
     return result
   }
+
+  // 删除下拉选项
+  const handleDeleteOptions = useCallback((event, option) => {
+    event.stopPropagation();
+    setOptions(deleteStorageOptions(option))
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <div className="main">
@@ -228,16 +244,47 @@ const SearchList = () => {
             </p>
             <div className="m-search">
               <Paper elevation={searchAltitude}>
-                <TextField
-                  placeholder="请输入json接口或者java接口"
-                  fullWidth
-                  variant="outlined"
-                  color="secondary"
-                  onFocus={() => setSearchAltitude(3)}
-                  onBlur={() => setSearchAltitude(1)}
-                  onChange={(e) => handleUserInput(e.target.value)}
-                  className="ms-input"
-                  type="search"
+                <Autocomplete
+                  id="combo-box-demo"
+                  options={options}
+                  freeSolo
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      placeholder="请输入json接口或者java接口"
+                      fullWidth
+                      variant="outlined"
+                      color="secondary"
+                      onFocus={() => setSearchAltitude(3)}
+                      onBlur={() => setSearchAltitude(1)}
+                      onChange={(e) => handleUserInput(e.target.value)}
+                      className="ms-input"
+                    />
+                  )}
+                  renderOption={(option, { inputValue }) => {
+                    const matches = match(option, inputValue);
+                    const parts = parse(option, matches);
+
+                    return (
+                      <div className="ms-options">
+                        <span style={{ overflow: 'hidden' }}>
+                          {parts.map((part, index) => (
+                            <span
+                              key={index}
+                              style={{
+                                color: part.highlight ? 'red' : ''
+                              }}
+                            >
+                              {part.text}
+                            </span>
+                          ))}
+                        </span>
+                        <IconButton onClick={event => handleDeleteOptions(event, option)}>
+                          <CloseIcon fontSize="small" />
+                        </IconButton>
+                      </div>
+                    );
+                  }}
                 />
               </Paper>
               <Box fontSize={12} pt={1}>
@@ -255,7 +302,7 @@ const SearchList = () => {
           ))}
         </div>
       </div>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 };
 
