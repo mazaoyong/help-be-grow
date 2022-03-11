@@ -118,6 +118,7 @@ const downloadUsageFiles = async () => {
         file
           .on('finish', () => {
             console.log(`${date}使用数文件生成成功`)
+            resolve()
           })
           .on('error', err => {
             fs.unlink(usageDirPath)
