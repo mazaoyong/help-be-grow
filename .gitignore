@@ -15,3 +15,5 @@ search.test.json
 config/version_*.json
 
 package-lock.json
+localComponentsOutput/
+usage/
