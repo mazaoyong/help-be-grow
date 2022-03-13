@@ -19,6 +19,11 @@ export const apiGetProjectConfig = () => {
   return axios.get("/getProjectConfig")
 }
 
+// 获取组件使用数据
+export const apiGetUsageData = () => {
+  return axios.get("/getUsageData")
+}
+
 export const apiGetComponentFiles = ({ targetName, component }: { targetName: string, component: string }) => {
   return axios.get('/findComponent', {
     params: {

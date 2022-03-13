@@ -1,0 +1,23 @@
+.echarts-div{
+    width: 100vw;
+    height: 80vh;
+    padding: 0 50px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.echarts-title{
+    text-align: center;
+}
+.echarts-select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        margin-left: 20px;
+    }
+}
+.echarts-com-tooltip{
+    max-height: 300px;
+    overflow-y: scroll;
+}

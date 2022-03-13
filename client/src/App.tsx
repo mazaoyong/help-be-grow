@@ -8,6 +8,7 @@ import {
 
 import Home from '@pages/home'
 import FindPage from '@pages/findPage'
+import Usage from './pages/usage'
 
 const Menu = () => (
   <div>
@@ -15,6 +16,9 @@ const Menu = () => (
       <ul>
         <li>
           <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/usage">Usage</Link>
         </li>
         <li>
           <Link to="/findPage">FindPage</Link>
@@ -31,6 +35,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/usage" element={<Usage/>}>
+        </Route>
         <Route path="/findPage" element={<FindPage/>}>
         </Route>
         <Route path="/menu" element={<Menu/>}>
