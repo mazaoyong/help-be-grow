@@ -26,11 +26,11 @@ function taskList() {
         console.log('ts文件格式转化报错：', err)
         // return
       }
-      mainTask(res)
-      // 组件库组件使用情况
-      componentMainTask(res)
-      // 项目本地client下面的components使用情况
-      localComponentsMainTask(res)
+      // mainTask(res)
+      // // 组件库组件使用情况
+      // componentMainTask(res)
+      // // 项目本地client下面的components使用情况
+      // localComponentsMainTask(res)
       // 上传当天组件使用情况文件到cdn
       createUsageAndUploadToCdn()
       // 将所有组件使用数的cdn文件下载下来做图表显示
