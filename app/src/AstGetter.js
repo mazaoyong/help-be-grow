@@ -81,7 +81,11 @@ class AstGetter {
         result = tsquery(ast, 'ClassExpression > MethodDeclaration')
       }
     } else {
-      const classDec = get(this, 'ClassDeclaration[0]', null)
+      let classDec = get(this, 'ClassDeclaration[0]', null);
+      const classExpre = get(this, 'ExpressionStatement[0].expression.right', null)
+      if (!classDec && classExpre && classExpre.type === 'ClassExpression') {
+        classDec = classExpre;
+      }
       if (classDec) {
         const methodArr = get(classDec, 'body.body', [])
         if (classDec.body.type === 'ClassBody') {
@@ -122,7 +126,7 @@ class AstGetter {
       let invoke = ''
       for (let i = 0; i < callList.length; i++) {
         const body = callList[i];
-        if (['invoke','owlInvoke'].includes(get(body, 'callee.property.name', ''))) {
+        if (['invoke', 'owlInvoke'].includes(get(body, 'callee.property.name', ''))) {
           invoke = get(body, 'arguments[0].value', '')
         }
         if (invoke) {
