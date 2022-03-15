@@ -34,7 +34,7 @@ function taskList() {
       // 上传当天组件使用情况文件到cdn
       createUsageAndUploadToCdn()
       // 将所有组件使用数的cdn文件下载下来做图表显示
-      downloadUsageFiles()
+      // downloadUsageFiles()
     })
   })
 }
