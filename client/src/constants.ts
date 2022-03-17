@@ -269,3 +269,5 @@ export const APP_NAME: Record<string, string> = {
   "wsc-pc-vis": "教育B端",
   "wsc-h5-vis": "教育C端"
 };
+
+export const SEARCHYM_OPTIONS = 'SEARCHYM_OPTIONS'
