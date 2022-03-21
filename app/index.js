@@ -52,3 +52,4 @@ schedule.scheduleJob('0 0 2 * * *', () => {
 //   service()
 //   taskList()
 // })
+service()
