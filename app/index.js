@@ -37,10 +37,11 @@ schedule.scheduleJob('0 0 2 * * *', () => {
 })
 
 // 先打包再服务器启动
-child_process.exec('npm run build', err => {
-  if (err) {
-    console.log('静态页面打包错误：', err)
-  }
-  service()
-  // taskList()
-})
+// child_process.exec('npm run build', err => {
+//   if (err) {
+//     console.log('静态页面打包错误：', err)
+//   }
+//   service()
+//   taskList()
+// })
+service()
