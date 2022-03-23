@@ -13,7 +13,7 @@ class AstGetter {
     } catch {
       controllerFile = fs.readFileSync(filePath.replace(path.extname(filePath), path.extname(filePath) === '.js' ? '.ts' : '.js')).toString()
     }
-    // 如果解析报错了，说明是ts语法
+    // 如果解析报错了，说明是ts语法，和文件后缀无关，因为一个ts文件里面可能压根没用到ts语法
     let astObj = ''
     try {
       astObj = parse(controllerFile, {
@@ -77,8 +77,15 @@ class AstGetter {
     if (this.isTs) {
       const ast = this.astObj
       result = tsquery(ast, 'ClassDeclaration > MethodDeclaration')
+      if (result.length === 0) {
+        result = tsquery(ast, 'ClassExpression > MethodDeclaration')
+      }
     } else {
-      const classDec = get(this, 'ClassDeclaration[0]', null)
+      let classDec = get(this, 'ClassDeclaration[0]', null);
+      const classExpre = get(this, 'ExpressionStatement[0].expression.right', null)
+      if (!classDec && classExpre && classExpre.type === 'ClassExpression') {
+        classDec = classExpre;
+      }
       if (classDec) {
         const methodArr = get(classDec, 'body.body', [])
         if (classDec.body.type === 'ClassBody') {
@@ -92,24 +99,34 @@ class AstGetter {
   // 根据service的函数获取接口地址
   getJavaApi(func) {
     const methodList = this.getAllAsyncMethod()
+    const astObj = this.astObj
     let javaApi = ''
     if (this.isTs) {
       const serviceFunc = methodList.find(item => item.name.escapedText === func)
-      const invokeBody = tsquery(serviceFunc.body, 'CallExpression[expression.name.escapedText="invoke"]')[0]
-      const suffix = invokeBody.arguments[0].text
-      // 获取java接口前缀的N种方法
-      const publicAst = tsquery(this.astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
-      const readonlyAst = tsquery(this.astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
-      const getAccessor = tsquery(this.astObj, 'GetAccessor[name.escapedText=/^[A-Z0-9_]+$/]')
-      const prefix = get(publicAst[0], 'initializer.text', null) || get(readonlyAst[0], 'initializer.text', null) || (getAccessor.body && get(tsquery(getAccessor.body, 'ReturnStatement')[0], expression.text, null))
-      javaApi = prefix + '#' + suffix
+      const invokeBody = keyName => tsquery(serviceFunc.body, `CallExpression[expression.name.escapedText="${keyName}"]`)[0]
+      const serviceInvoke = invokeBody('invoke') || invokeBody('owlInvoke')
+      if (serviceInvoke) {
+        const suffix = serviceInvoke.arguments[0].text || serviceInvoke.arguments[1].text
+        // 获取java接口前缀的N种方法
+        const publicAst = tsquery(astObj, 'PropertyDeclaration:has(PublicKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
+        const readonlyAst = tsquery(astObj, 'PropertyDeclaration:has(ReadonlyKeyword)[name.escapedText=/^[A-Z0-9_]+$/]')
+        const getAccessor = tsquery(astObj, 'GetAccessor[name.escapedText=/^[A-Z0-9_]+$/]')
+        const xjbmm = tsquery(astObj, 'PropertyDeclaration:has(Identifier)[name.escapedText=/^[A-Z0-9_]+$/]')
+        const prefix = get(publicAst[0], 'initializer.text', null) || get(readonlyAst[0], 'initializer.text', null) || (getAccessor[0] && getAccessor[0].body && get(tsquery(getAccessor[0].body, 'ReturnStatement')[0], 'expression.text', null)) || get(xjbmm[0], 'initializer.text', null)
+        javaApi = prefix + '#' + suffix
+      } else if (invokeBody('payInvoke')) {
+        const getKeyNameAst = keyName => tsquery(astObj, `ObjectLiteralExpression > PropertyAssignment[name.escapedText=${keyName}]`)
+        const service = get(getKeyNameAst('service')[0], 'initializer.text')
+        const method = get(getKeyNameAst('method')[0], 'initializer.text')
+        javaApi = service + '#' + method
+      }
     } else {
       const serviceFunc = methodList.find(body => body.key.name === func)
       const callList = this.getArrByCondition(serviceFunc, { type: 'CallExpression' })
       let invoke = ''
       for (let i = 0; i < callList.length; i++) {
         const body = callList[i];
-        if (get(body, 'callee.property.name', '') === 'invoke') {
+        if (['invoke', 'owlInvoke'].includes(get(body, 'callee.property.name', ''))) {
           invoke = get(body, 'arguments[0].value', '')
         }
         if (invoke) {
@@ -202,5 +219,7 @@ class AstGetter {
 
 module.exports = AstGetter
 
-// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-vis/app/services/api/uic/acl/OmniChannelService.ts')
-// console.log(test.getJavaApi('getPlatformOauthUrl'))
+// const test = new AstGetter('/Users/mazaoyong/Desktop/project/search-your-mother/app/static-project/wsc-h5-decorate/app/services/bigdata/GoodsRecommendService.ts')
+// console.log(test.getServicePath('getGoodsRecommendJson'))
+// console.log(test.getJavaApi('listRecommendGoods'))
+// console.log(test.getAllAsyncMethod())

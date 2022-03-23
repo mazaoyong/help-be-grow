@@ -1,6 +1,62 @@
-{
-  "WSC_PC_VIS": "/static-project/wsc-pc-vis",
-  "WSC_PC_VIS_CLIENT": "/static-project/wsc-pc-vis/client",
-  "WSC_PC_VIS_CLIENT_H5": "/static-project/wsc-pc-vis/client-h5",
-  "WSC_H5_VIS": "/static-project/wsc-h5-vis"
-}
+[
+  {
+    "id": 4910,
+    "name": "wsc-h5-vis",
+    "label": "【C端】教育"
+  },
+  {
+    "id": 5075,
+    "name": "wsc-pc-vis",
+    "label": "【B端】教育"
+  },
+  {
+    "id": 4947,
+    "name": "wsc-pc-shop",
+    "label": "【B端】概况和店铺"
+  },
+  {
+    "id": 4949,
+    "name": "wsc-pc-goods",
+    "label": "【B端】实物商品"
+  },
+  {
+    "id": 9989,
+    "name": "wsc-pc-decorate",
+    "label": "【B端】微页面装修"
+  },
+  {
+    "id": 4555,
+    "name": "wsc-h5-shop",
+    "label": "【C端】店铺相关"
+  },
+  {
+    "id": 4951,
+    "name": "wsc-pc-ump",
+    "label": "【B端】营销"
+  },
+  {
+    "id": 9988,
+    "name": "wsc-h5-decorate",
+    "label": "【C端】装修相关"
+  },
+  {
+    "id": 7388,
+    "name": "wsc-h5-goods",
+    "label": "【C端】实物商品"
+  },
+  {
+    "id": 4950,
+    "name": "wsc-pc-trade",
+    "label": "【B端】交易"
+  },
+  {
+    "id": 4576,
+    "name": "wsc-h5-ump",
+    "label": "【C端】营销"
+  },
+  {
+    "id": 4948,
+    "name": "wsc-pc-v4",
+    "label": "【B端】杂七杂八业务"
+  }
+]
