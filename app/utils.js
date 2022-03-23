@@ -1,5 +1,6 @@
 const path = require('path')
 const fs = require('fs')
+const chalk = require('chalk')
 
 // 获取文件目录下的所有指定类型的文件
 const getTotalFiles = (filePath, type = ['.js', '.ts']) => {
@@ -16,7 +17,7 @@ const getTotalFiles = (filePath, type = ['.js', '.ts']) => {
       if (stats.isFile() && type.includes(path.extname(filedir))) { // 文件
         fileList.push(filedir)
       } else if (stats.isDirectory()) { // 文件夹
-        fileList = [...fileList, ...getTotalFiles(filedir)]
+        fileList = [...fileList, ...getTotalFiles(filedir, type)]
       }
     })
   } catch (err) {
@@ -42,7 +43,25 @@ function delDir(path) {
   }
 }
 
+// 判断文件路径是js还是ts
+function getJsFileRealPath(filePath) {
+  let result = {
+    path: filePath,
+    isTs: false
+  }
+  try {
+    fs.accessSync(filePath, fs.constants.F_OK)
+  } catch {
+    result = {
+      path: filePath.replace(/\.js/g, '.ts'),
+      isTs: true
+    }
+  }
+  return result
+}
+
 module.exports = {
   getTotalFiles,
-  delDir
+  delDir,
+  getJsFileRealPath
 }

@@ -1,0 +1,9 @@
+{
+  "commands": {
+    "pre": {
+      "node": "v12.17.0",
+      "yarn":"1.22.10",
+      "devToolset": "7"
+    }
+  }
+}
