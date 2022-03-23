@@ -2,7 +2,7 @@
 install:
 	yarn && make gen-data
 
-## 生成数据#
+## 生成数据
 gen-data:
 	node bin/genData.js
 
